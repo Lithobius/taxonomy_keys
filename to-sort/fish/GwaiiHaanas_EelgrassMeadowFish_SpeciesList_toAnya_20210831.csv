@@ -1,0 +1,118 @@
+code,common_name,order_,suborder,family,genus,species,yoy_length
+ARGO,Arrow Goby,Perciformes,Gobioidei,Gobiidae,Clevelandia,ios,NA
+BAGO,Bay Goby,Perciformes,Gobioidei,Gobiidae,Lepidogobius,lepidus,NA
+BAPI,Bay Pipefish,Gasterosteiformes,Syngnathoidei,Syngnathidae,Syngnathus,leptorhynchus,NA
+BLGO,Blackeye Goby,Perciformes,Gobioidei,Gobiidae,Rhinogobiops,nicholsii,NA
+BLPR,Black Prickleback,Perciformes,Zoarcoidei,Stichaeidae,Xiphister,atropurpureus,NA
+BLRO,Black Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,melanops,70
+BOCC,Bocaccio,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,paucispinus,NA
+BRIL,Brown Irish Lord,Scorpaeniformes,Cottoidei,Cottidae,Hemilepidotus,spinosus,NA
+BRRO,Brown Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,auriculatus,NA
+BURO,Blue Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,mystinus,NA
+BUSC,Buffalo Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Enophrys,bison,NA
+CABE,Cabezon,Scorpaeniformes,Cottoidei,Cottidae,Scorpaenichthys,marmoratus,NA
+CARO,Canary Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,pinniger,NA
+CASC,Calico Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Clinocottus,embryum,NA
+CHIN,Chinook Salmon,Salmoniformes,Salmonoidei,Salmonidae,Oncorhynchus,tshawytscha,NA
+CHRO,China Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,nebulosus,NA
+CHUM,Chum Salmon,Salmoniformes,Salmonoidei,Salmonidae,Oncorhynchus,keta,NA
+COHO,Coho Salmon,Salmoniformes,Salmonoidei,Salmonidae,Oncorhynchus,kisutch,NA
+CORO,Copper Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,caurinus,50
+COSO,C-O Sole,Pleuronectiformes,Pleuronectoidei,Pleuronectidae,Pleuronichthys,coenosus,NA
+CRGU,Crescent Gunnel,Perciformes,Zoarcoidei,Pholididae,Pholis,laeta,NA
+CRKE,Crevice Kelpfish,Perciformes,Blennioidei,Clinidae,Gibbonsia,montereyensis,NA
+CUTT,Cutthroat Trout,Salmoniformes,Salmonoidei,Salmonidae,Oncorhynchus,clarkii,NA
+DOVA,Dolly Varden,Salmoniformes,Salmonoidei,Salmonidae,Salvelinus,malma,NA
+ENSO,English Sole,Pleuronectiformes,Pleuronectoidei,Pleuronectidae,Parophrys,vetulus,NA
+FLSC,Fluffy Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Oligocottus,snyderi,NA
+GRSC,Great Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Myoxocephalus,polyacanthocephalus,NA
+HERR,Pacific Herring,Clupeiformes,Clupeoidei,Clupeidae,Clupea,pallasi,NA
+HICO,High Cockscomb,Perciformes,Zoarcoidei,Stichaeidae,Anoplarchus,purpurescens,NA
+KECL,Kelp Clingfish,Perciformes,Gobiesocoidei,Gobiesocidae,Rimicola,muscarum,NA
+KEGR,Kelp Greenling,Scorpaeniformes,Hexagrammoidei,Hexagrammidae,Hexagrammos,decagrammus,NA
+KEPE,Kelp Surfperch,Perciformes,Labroidei,Embiotocidae,Brachyistius,frenatus,70
+LING,Lingcod,Scorpaeniformes,Hexagrammoidei,Hexagrammidae,Ophiodon,elongatus,NA
+LOSC,Longfin Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Jordania,zonope,NA
+LOSN,Lobefin Snailfish,Scorpaeniformes,Cottoidei,Liparidae,Liparis,greeni,NA
+MASC,Manacled Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Synchirus,gilli,NA
+MASN,Marbled Snailfish,Scorpaeniformes,Cottoidei,Liparidae,Liparis,dennyi,NA
+MOWA,Mosshead Warbonnet,Perciformes,Zoarcoidei,Stichaeidae,Chirolophis,nugator,NA
+NOAN,Northern Anchovy,Clupeiformes,Clupeoidei,Engraulidae,Engraulis,mordax,NA
+NOCL,Northern Clingfish,Perciformes,Gobiesocoidei,Gobiesocidae,Gobiesox,maeandricus,NA
+NSPO,Northern Spearnose Poacher,Scorpaeniformes,Cottoidei,Agonidae,Agonopsis,vulsa,NA
+PACO,Pacific Cod,Gadiformes,Gadoidei,Gadidae,Gadus,macrocephalus,NA
+PAGR,Painted Greenling,Scorpaeniformes,Hexagrammoidei,Hexagrammidae,Oxylebius,pictus,NA
+PASA,Pacific Sanddab,Pleuronectiformes,Pleuronectoidei,Paralichthyidae,Citharichthys,sordidus,NA
+PASC,Padded Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Artedius,fenestralis,NA
+PASL,Pacific Spiny Lumpsucker,Scorpaeniformes,Cottoidei,Cyclopteridae,Eumicrotremus,orbis,NA
+PECH,Peamouth Chub,Cypriniformes,Cyprinoidei,Cyprinidae,Mylocheilus,caurinus,NA
+PEGU,Penpoint Gunnel,Perciformes,Zoarcoidei,Pholididae,Apodichthys,flavidus,NA
+PILC,Pilchard,Clupeiformes,Clupeoidei,Clupeidae,Sardinops,sagax,NA
+PINK,Pink Salmon,Salmoniformes,Salmonoidei,Salmonidae,Oncorhynchus,gorbuscha,NA
+PIPE,Pile Surfperch,Perciformes,Labroidei,Embiotocidae,Rhacochilus,vacca,NA
+PLMI,Plainfin Midshipman,Batrachoidiformes,NA,Batrachoididae,Porichthys,notatus,NA
+PROW,Prowfish,Perciformes,Zoarcoidei,Zaproridae,Zaprora,silenus,NA
+PRSC,Prickly Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Cottus,asper,NA
+PYPO,Pygmy Poacher,Scorpaeniformes,Cottoidei,Agonidae,Odontopyxis,trispinosa,NA
+QURO,Quillback Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,maliger,NA
+RATF,Ratfish,Chimaeriformes,Chimaeroidei,Chimaeridae,Hydrolagus,colliei,NA
+RBSC,Roughback Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Chitonotus,pugetensis,NA
+REIL,Red Irish Lord,Scorpaeniformes,Cottoidei,Cottidae,Hemilepidotus,hemilepidotus,NA
+RISN,Ribbon Snailfish,Scorpaeniformes,Cottoidei,Liparidae,Liparis,cyclopus,NA
+ROGR,Rock Greenling,Scorpaeniformes,Hexagrammoidei,Hexagrammidae,Hexagrammos,lagocephalus,NA
+ROGU,Rockweed Gunnel,Perciformes,Zoarcoidei,Pholididae,Xererpes,fucorum,NA
+ROSC,Rosylip Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Ascelichthys,rhodorus,NA
+ROSO,Rock Sole,Pleuronectiformes,Pleuronectoidei,Pleuronectidae,Lepidopsetta,bilineata,NA
+SAGU,Saddleback Gunnel,Perciformes,Zoarcoidei,Pholididae,Pholis,ornata,NA
+SAND,Pacific Sandlance,Perciformes,Trachinoidei,Ammodytidae,Ammodytes,hexapterus,NA
+SASC,Saddleback Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Oligocottus,rimensis,NA
+SASO,Sand Sole,Pleuronectiformes,Pleuronectoidei,Pleuronectidae,Psettichthys,melanostictus,NA
+SCSC,Scalyhead Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Artedius,harringtoni,NA
+SFSC,Sailfin Sculpin,Scorpaeniformes,Cottoidei,Hemitripteridae,Nautichthys,oculofasciatus,NA
+SGRO,Silvergray Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,brevispinus,NA
+SHPE,Shiner Surfperch,Perciformes,Labroidei,Embiotocidae,Cymatogaster,aggregata,70
+SHSC,Sharpnose Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Clinocottus,acuticeps,NA
+SIPE,Silver Surfperch,Perciformes,Labroidei,Embiotocidae,Hyperprosopon,ellipticum,NA
+SISC,Silverspotted Sculpin,Scorpaeniformes,Cottoidei,Hemitripteridae,Blepsias,cirrhosus,NA
+SLCO,Slender Cockscomb,Perciformes,Zoarcoidei,Stichaeidae,Anoplarchus,insignis,NA
+SMSC,Smoothhead Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Artedius,lateralis,NA
+SNPR,Pacific Snake Prickleback,Perciformes,Zoarcoidei,Stichaeidae,Lumpenus,sagitta,NA
+SOCK,Sockeye Salmon,Salmoniformes,Salmonoidei,Salmonidae,Oncorhynchus,nerka,NA
+SPSA,Speckled Sanddab,Pleuronectiformes,Pleuronectoidei,Paralichthyidae,Citharichthys,stigmaeus,NA
+SPSC,Spinynose Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Radulinus,taylori,NA
+SPSN,Spotted Snailfish,Scorpaeniformes,Cottoidei,Liparidae,Liparis,callyodon,NA
+STFL,Starry Flounder,Pleuronectiformes,Pleuronectoidei,Pleuronectidae,Platichthys,stellatus,NA
+STKE,Striped Kelpfish,Perciformes,Blennioidei,Clinidae,Gibbonsia,metzi,NA
+STPE,Striped Seaperch,Perciformes,Labroidei,Embiotocidae,Embiotoca,lateralis,70
+STPO,Sturgeon Poacher,Scorpaeniformes,Cottoidei,Agonidae,Podothecus,accipenserinus,NA
+STSC,Staghorn Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Leptocottus,armatus,NA
+SUSM,Surf Smelt,Osmeriformes,Osmeroidei,Osmeridae,Hypomesus,pretiosus,NA
+TASC,Tadpole Sculpin,Scorpaeniformes,Cottoidei,Psychrolutidae,Psychrolutes,paradoxus,NA
+THST,Threespine Stickleback,Gasterosteiformes,Gasterosteoidei,Gasterosteidae,Gasterosteus,aculeatus,45
+TIRO,Tiger Rockfish,Scorpaenoidei,Scorpaeniformes,Scorpaenidae,Sebastes,nigrocinctus,NA
+TISC,Tidepool Sculpin,Scorpaeniformes,Cottoidei,Cottidae,Oligocottus,maculosus,NA
+TISN,Tidepool Snailfish,Scorpaeniformes,Cottoidei,Liparidae,Liparis,florae,NA
+TOMC,Tomcod,Gadiformes,Gadoidei,Gadidae,Microgadus,proximus,NA
+TUBE,Tube-Snout,Gasterosteiformes,Gasterosteoidei,Aulorhynchidae,Aulorhynchus,flavidus,NA
+TUPO,Tubenose Poacher,Scorpaeniformes,Cottoidei,Agonidae,Pallasina,barbata,NA
+UNAR,Artedius,Scorpaeniformes,Cottoidei,Cottidae,Artedius,NA,NA
+UNBG,Buffalo Or Great Sculpin,Scorpaeniformes,Cottoidei,Cottidae,NA,NA,NA
+UNCO,Cod,Gadiformes,Gadoidei,Gadidae,NA,NA,NA
+UNFI,Fish,NA,NA,NA,NA,NA,NA
+UNFL,Flatfish,NA,NA,NA,NA,NA,NA
+UNGO,Goby,Perciformes,Gobioidei,Gobiidae,NA,NA,NA
+UNGR,Greenling,Scorpaeniformes,Hexagrammoidei,Hexagrammidae,NA,NA,NA
+UNGU,Gunnel,Perciformes,Zoarcoidei,Pholididae,NA,NA,NA
+UNIL,Irish Lord,Scorpaeniformes,Cottoidei,Cottidae,Hemilepidotus,NA,NA
+UNKE,Kelpfish,Perciformes,Blennioidei,Clinidae,Gibbonsia,NA,NA
+UNLA,Larval Fish,NA,NA,NA,NA,NA,NA
+UNPO,Poacher,Scorpaeniformes,Cottoidei,Agonidae,NA,NA,NA
+UNRO,Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,NA,50
+UNSA,Salmon,Salmoniformes,Salmonoidei,Salmonidae,Oncorhynchus,NA,NA
+UNSC,Sculpin,Scorpaeniformes,Cottoidei,Cottidae,NA,NA,NA
+UNSD,Sanddab,Pleuronectiformes,Pleuronectoidei,Paralichthyidae,NA,NA,NA
+UNSN,Snailfish,Scorpaeniformes,Cottoidei,Liparidae,NA,NA,NA
+VERO,Vermilion Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,miniatus,NA
+WALL,Walleye Pollock,Gadiformes,Gadoidei,Gadidae,Theragra,chalcogramma,NA
+WHGR,Whitespotted Greenling,Scorpaeniformes,Hexagrammoidei,Hexagrammidae,Hexagrammos,stelleri,NA
+YERO,Yellowtail Rockfish,Scorpaeniformes,Scorpaenoidei,Scorpaenidae,Sebastes,flavidus,70

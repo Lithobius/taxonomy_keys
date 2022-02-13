@@ -1,0 +1,4751 @@
+1,cellularOrganisms,0,0,cellularOrganisms
+2,Eukaryota,1,1,superkingdom
+3,Metazoa,2,2,kingdom
+4,Chordata,3,3,phylum
+5,Actinopteri,4,4,class
+6,Characiformes,5,5,order
+7,Anostomidae,6,6,family
+8,Megaleporinus,7,7,genus
+9,Megaleporinus elongatus,8,8,species
+10,undef Actinopteri,5,5,order
+11,Pseudochromidae,10,6,family
+12,Labracinus,11,7,genus
+13,Labracinus cyclophthalmus,12,8,species
+14,Cypriniformes,5,5,order
+15,Nemacheilidae,14,6,family
+16,Oreonectes,15,7,genus
+17,Oreonectes platycephalus,16,8,species
+18,Perciformes,5,5,order
+19,Serranidae,18,6,family
+20,Variola,19,7,genus
+21,Variola louti,20,8,species
+22,Gobiiformes,5,5,order
+23,Eleotridae,22,6,family
+24,Oxyeleotris,23,7,genus
+25,Oxyeleotris marmorata,24,8,species
+26,Spariformes,5,5,order
+27,Sparidae,26,6,family
+28,Sparus,27,7,genus
+29,Sparus aurata,28,8,species
+30,Catostomidae,14,6,family
+31,Ictiobus,30,7,genus
+32,Ictiobus cyprinellus,31,8,species
+33,Cyprinidae,14,6,family
+34,Ctenopharyngodon,33,7,genus
+35,Ctenopharyngodon idella,34,8,species
+36,Sciaenidae,10,6,family
+37,Chrysochir,36,7,genus
+38,Chrysochir aureus,37,8,species
+39,Chondrichthyes,4,4,class
+40,Carcharhiniformes,39,5,order
+41,Carcharhinidae,40,6,family
+42,Sphyrna,41,7,genus
+43,Sphyrna lewini,42,8,species
+44,Ophidiiformes,5,5,order
+45,Ophidiidae,44,6,family
+46,Sirembo,45,7,genus
+47,Sirembo imberbis,46,8,species
+48,Spinibarbus,33,7,genus
+49,Spinibarbus sinensis,48,8,species
+50,Istiophoriformes,5,5,order
+51,Xiphiidae,50,6,family
+52,Xiphias,51,7,genus
+53,Xiphias gladius,52,8,species
+54,Tetraodontiformes,5,5,order
+55,Monacanthidae,54,6,family
+56,Paraluteres,55,7,genus
+57,Paraluteres prionurus,56,8,species
+58,Odontobutidae,22,6,family
+59,Odontobutis,58,7,genus
+60,Odontobutis platycephala,59,8,species
+61,Rhinichthys,33,7,genus
+62,Rhinichthys obtusus,61,8,species
+63,Lophiiformes,5,5,order
+64,Chaunacidae,63,6,family
+65,Chaunax,64,7,genus
+66,Chaunax pictus,65,8,species
+67,Tetraodontidae,54,6,family
+68,Auriglobus,67,7,genus
+69,Auriglobus modestus,68,8,species
+70,Scombriformes,5,5,order
+71,Nomeidae,70,6,family
+72,Psenes,71,7,genus
+73,Psenes cyanophrys,72,8,species
+74,Opsariichthys,33,7,genus
+75,Opsariichthys uncirostris,74,8,species
+76,Pomacentridae,10,6,family
+77,Amphiprion,76,7,genus
+78,Amphiprion perideraion,77,8,species
+79,Barbatula,15,7,genus
+80,Barbatula toni,79,8,species
+81,Sebastidae,18,6,family
+82,Sebastiscus,81,7,genus
+83,Sebastiscus marmoratus,82,8,species
+84,Scombridae,70,6,family
+85,Scomber,84,7,genus
+86,Scomber australasicus,85,8,species
+87,Pomacanthidae,10,6,family
+88,Centropyge,87,7,genus
+89,Centropyge venusta,88,8,species
+90,Salmoniformes,5,5,order
+91,Salmonidae,90,6,family
+92,Thymallus,91,7,genus
+93,Thymallus mertensii,92,8,species
+94,Anguilliformes,5,5,order
+95,Nemichthyidae,94,6,family
+96,Labichthys,95,7,genus
+97,Labichthys carinatus,96,8,species
+98,Balistidae,54,6,family
+99,Odonus,98,7,genus
+100,Odonus niger,99,8,species
+101,Siluriformes,5,5,order
+102,Amblycipitidae,101,6,family
+103,Liobagrus,102,7,genus
+104,Liobagrus nigricauda,103,8,species
+105,Paedocypris,33,7,genus
+106,Paedocypris progenetica,105,8,species
+107,Carangiformes,5,5,order
+108,Carangidae,107,6,family
+109,Decapterus,108,7,genus
+110,Decapterus maruadsi,109,8,species
+111,Chuanchia,33,7,genus
+112,Chuanchia labiosa,111,8,species
+113,Ptychobarbus,33,7,genus
+114,Ptychobarbus chungtienensis,113,8,species
+115,Mugiliformes,5,5,order
+116,Mugilidae,115,6,family
+117,Pseudomyxus,116,7,genus
+118,Pseudomyxus capensis,117,8,species
+119,Schizothorax,33,7,genus
+120,Schizothorax lissolabiata,119,8,species
+121,Rajiformes,39,5,order
+122,Rajidae,121,6,family
+123,Dipturus,122,7,genus
+124,Dipturus trachyderma,123,8,species
+125,Aulorhynchidae,18,6,family
+126,Aulichthys,125,7,genus
+127,Aulichthys japonicus,126,8,species
+128,Acanthuriformes,5,5,order
+129,Acanthuridae,128,6,family
+130,Zebrasoma,129,7,genus
+131,Zebrasoma flavescens,130,8,species
+132,Characidae,6,6,family
+133,Grundulus,132,7,genus
+134,Grundulus bogotensis,133,8,species
+135,Cichliformes,5,5,order
+136,Cichlidae,135,6,family
+137,Astronotus,136,7,genus
+138,Astronotus ocellatus,137,8,species
+139,Epinephelus,19,7,genus
+140,Epinephelus corallicola,139,8,species
+141,Cottidae,18,6,family
+142,Clinocottus,141,7,genus
+143,Clinocottus analis,142,8,species
+144,Takifugu,67,7,genus
+145,Takifugu chrysops,144,8,species
+146,Oneirodidae,63,6,family
+147,Oneirodes,146,7,genus
+148,Oneirodes thompsoni,147,8,species
+149,Pimelodidae,101,6,family
+150,Pseudoplatystoma,149,7,genus
+151,Pseudoplatystoma corruscans,150,8,species
+152,Bagridae,101,6,family
+153,Pseudobagrus,152,7,genus
+154,Pseudobagrus koreanus,153,8,species
+155,Opsaridium,33,7,genus
+156,Opsaridium ubangiense,155,8,species
+157,Gymnotiformes,5,5,order
+158,Hypopomidae,157,6,family
+159,Brachyhypopomus,158,7,genus
+160,Brachyhypopomus occidentalis,159,8,species
+161,Thamnaconus,55,7,genus
+162,Thamnaconus hypargyreus,161,8,species
+163,Thymallus pallasii,92,8,species
+164,Parasinilabeo,33,7,genus
+165,Parasinilabeo assimilis,164,8,species
+166,Loxodon,41,7,genus
+167,Loxodon macrorhinus,166,8,species
+168,Clupeiformes,5,5,order
+169,Clupeidae,168,6,family
+170,Tenualosa,169,7,genus
+171,Tenualosa thibaudeaui,170,8,species
+172,Amphiprion ephippium,77,8,species
+173,Congridae,94,6,family
+174,Congriscus,173,7,genus
+175,Congriscus sp. Tht2,174,8,species
+176,Cobitidae,14,6,family
+177,Cobitis,176,7,genus
+178,Cobitis takatsuensis,177,8,species
+179,Pleuronectiformes,5,5,order
+180,Rhombosoleidae,179,6,family
+181,Peltorhamphus,180,7,genus
+182,Peltorhamphus novaezeelandiae,181,8,species
+183,Oreochromis,136,7,genus
+184,Oreochromis variabilis,183,8,species
+185,Pseudotolithus,36,7,genus
+186,Pseudotolithus senegallus,185,8,species
+187,Istiophoridae,50,6,family
+188,Tetrapturus,187,7,genus
+189,Tetrapturus pfluegeri,188,8,species
+190,Ancherythroculter,33,7,genus
+191,Ancherythroculter lini,190,8,species
+192,Engraulidae,168,6,family
+193,Engraulis,192,7,genus
+194,Engraulis japonicus,193,8,species
+195,Hyperlophus,169,7,genus
+196,Hyperlophus vittatus,195,8,species
+197,Crossocheilus,33,7,genus
+198,Crossocheilus reticulatus,197,8,species
+199,Cobitis elongatoides,177,8,species
+200,Distoechodon,33,7,genus
+201,Distoechodon tumirostris,200,8,species
+202,Beloniformes,5,5,order
+203,Exocoetidae,202,6,family
+204,Exocoetus,203,7,genus
+205,Exocoetus volitans,204,8,species
+206,Vaillantellidae,14,6,family
+207,Vaillantella,206,7,genus
+208,Vaillantella maassi,207,8,species
+209,Adrianichthyidae,202,6,family
+210,Oryzias,209,7,genus
+211,Oryzias javanicus,210,8,species
+212,Notropis,33,7,genus
+213,Notropis heterolepis,212,8,species
+214,Rachycentridae,107,6,family
+215,Rachycentron,214,7,genus
+216,Rachycentron canadum,215,8,species
+217,Esociformes,5,5,order
+218,Umbridae,217,6,family
+219,Dallia,218,7,genus
+220,Dallia pectoralis,219,8,species
+221,Alosa,169,7,genus
+222,Alosa mediocris,221,8,species
+223,Centrarchiformes,5,5,order
+224,Sinipercidae,223,6,family
+225,Siniperca,224,7,genus
+226,Siniperca scherzeri x Siniperca chuatsi,225,8,species
+227,Pleuronectidae,179,6,family
+228,Hippoglossus,227,7,genus
+229,Hippoglossus stenolepis,228,8,species
+230,Hemigrammocypris,33,7,genus
+231,Hemigrammocypris rasborella,230,8,species
+232,Lutjaniformes,5,5,order
+233,Lutjanidae,232,6,family
+234,Lutjanus,233,7,genus
+235,Lutjanus carponotatus,234,8,species
+236,Atheriniformes,5,5,order
+237,Isonidae,236,6,family
+238,Iso,237,7,genus
+239,Iso hawaiiensis,238,8,species
+240,Gasterosteidae,18,6,family
+241,Pungitius,240,7,genus
+242,Pungitius tymensis,241,8,species
+243,Potamalosa,169,7,genus
+244,Potamalosa richmondia,243,8,species
+245,Capoeta,33,7,genus
+246,Capoeta aculeata,245,8,species
+247,undef Cyprinidae,33,7,genus
+248,Cyprinidae intergeneric hybrids,247,8,species
+249,Chaetodermis,55,7,genus
+250,Chaetodermis penicilligerus,249,8,species
+251,undef Sparidae,27,7,genus
+252,Acanthopagrus schlegelii x Pagrus major,251,8,species
+253,Sebastes,81,7,genus
+254,Sebastes aleutianus,253,8,species
+255,Acheilognathidae,14,6,family
+256,Acheilognathus,255,7,genus
+257,Acheilognathus rhombeus,256,8,species
+258,Schistura,15,7,genus
+259,Schistura jarutanini,258,8,species
+260,Istiophorus,187,7,genus
+261,Istiophorus albicans,260,8,species
+262,Pungitius laevis,241,8,species
+263,Scophthalmidae,179,6,family
+264,Scophthalmus,263,7,genus
+265,Scophthalmus maximus,264,8,species
+266,Gobiidae,22,6,family
+267,Scartelaos,266,7,genus
+268,Scartelaos gigas,267,8,species
+269,Oplegnathidae,223,6,family
+270,Oplegnathus,269,7,genus
+271,Oplegnathus fasciatus,270,8,species
+272,Lethrinidae,26,6,family
+273,Lethrinus,272,7,genus
+274,Lethrinus obsoletus,273,8,species
+275,Acipenseriformes,5,5,order
+276,Acipenseridae,275,6,family
+277,undef Acipenseridae,276,7,genus
+278,Huso dauricus x Acipenser schrenckii,277,8,species
+279,Glossogobius,266,7,genus
+280,Glossogobius circumspectus,279,8,species
+281,Paretroplus,136,7,genus
+282,Paretroplus maculatus,281,8,species
+283,Cleisthenes,227,7,genus
+284,Cleisthenes herzensteini,283,8,species
+285,Thymallus baicalolenensis,92,8,species
+286,Percichthyidae,223,6,family
+287,Percilia,286,7,genus
+288,Percilia irwini,287,8,species
+289,Nototheniidae,18,6,family
+290,Dissostichus,289,7,genus
+291,Dissostichus eleginoides,290,8,species
+292,Acrossocheilus,33,7,genus
+293,Acrossocheilus jishouensis,292,8,species
+294,Stromateidae,70,6,family
+295,Peprilus,294,7,genus
+296,Peprilus triacanthus,295,8,species
+297,Trichiuridae,70,6,family
+298,Benthodesmus,297,7,genus
+299,Benthodesmus tenuis,298,8,species
+300,Bythitidae,44,6,family
+301,Cataetyx,300,7,genus
+302,Cataetyx rubrirostris,301,8,species
+303,Notropis bifrenatus,212,8,species
+304,Carapidae,44,6,family
+305,Carapus,304,7,genus
+306,Carapus bermudensis,305,8,species
+307,Rhabdosargus,27,7,genus
+308,Rhabdosargus sarba,307,8,species
+309,Naso,129,7,genus
+310,Naso lopezi,309,8,species
+311,Balitoridae,14,6,family
+312,Bhavania,311,7,genus
+313,Bhavania australis,312,8,species
+314,Schistura scaturigina,258,8,species
+315,Salvelinus,91,7,genus
+316,Salvelinus leucomaenis,315,8,species
+317,Pseudogobio,33,7,genus
+318,Pseudogobio vaillanti,317,8,species
+319,Botiidae,14,6,family
+320,Leptobotia,319,7,genus
+321,Leptobotia elongata,320,8,species
+322,Osteobrama,33,7,genus
+323,Osteobrama feae,322,8,species
+324,Aphyocypris,33,7,genus
+325,Aphyocypris kikuchii,324,8,species
+326,Periophthalmus,266,7,genus
+327,Periophthalmus minutus,326,8,species
+328,undef Chondrichthyes,39,5,order
+329,Squatinidae,328,6,family
+330,Squatina,329,7,genus
+331,Squatina nebulosa,330,8,species
+332,Centropyge bispinosa,88,8,species
+333,Heterodontiformes,39,5,order
+334,Heterodontidae,333,6,family
+335,Heterodontus,334,7,genus
+336,Heterodontus zebra,335,8,species
+337,Amphiprion polymnus,77,8,species
+338,Cheilodactylidae,223,6,family
+339,Cheilodactylus,338,7,genus
+340,Cheilodactylus quadricornis,339,8,species
+341,Omegophora,67,7,genus
+342,Omegophora armilla,341,8,species
+343,Amphiprion ocellaris,77,8,species
+344,Oryzias sarasinorum,210,8,species
+345,Moronidae,10,6,family
+346,Dicentrarchus,345,7,genus
+347,Dicentrarchus labrax,346,8,species
+348,Sinocyclocheilus,33,7,genus
+349,Sinocyclocheilus ronganensis,348,8,species
+350,Syngnathiformes,5,5,order
+351,Syngnathidae,350,6,family
+352,Phycodurus,351,7,genus
+353,Phycodurus eques,352,8,species
+354,Alepocephaliformes,5,5,order
+355,Platytroctidae,354,6,family
+356,Normichthys,355,7,genus
+357,Normichthys operosus,356,8,species
+358,Copadichromis,136,7,genus
+359,Copadichromis quadrimaculatus,358,8,species
+360,Liobagrus obesus,103,8,species
+361,Amphiprion percula,77,8,species
+362,Glyphis,41,7,genus
+363,Glyphis glyphis,362,8,species
+364,Hemibarbus,33,7,genus
+365,Hemibarbus maculatus,364,8,species
+366,Bryconidae,6,6,family
+367,Brycon,366,7,genus
+368,Brycon henni,367,8,species
+369,Dipturus oxyrinchus,123,8,species
+370,Scyliorhinidae,40,6,family
+371,Scyliorhinus,370,7,genus
+372,Scyliorhinus canicula,371,8,species
+373,Salminus,366,7,genus
+374,Salminus brasiliensis,373,8,species
+375,Astyanax,132,7,genus
+376,Astyanax paranae,375,8,species
+377,Triplophysa,15,7,genus
+378,Triplophysa stewarti,377,8,species
+379,Tetragonuridae,70,6,family
+380,Tetragonurus,379,7,genus
+381,Tetragonurus cuvieri,380,8,species
+382,Arhynchobatidae,121,6,family
+383,Bathyraja,382,7,genus
+384,Bathyraja albomaculata,383,8,species
+385,Argentiniformes,5,5,order
+386,Microstomatidae,385,6,family
+387,Nansenia,386,7,genus
+388,Nansenia ardesiaca,387,8,species
+389,Leiocassis,152,7,genus
+390,Leiocassis longirostris,389,8,species
+391,Sisoridae,101,6,family
+392,Oreoglanis,391,7,genus
+393,Oreoglanis immaculatus,392,8,species
+394,Gonorynchiformes,5,5,order
+395,Kneriidae,394,6,family
+396,Kneria,395,7,genus
+397,Kneria sp. SL-2004,396,8,species
+398,Cyprinodontiformes,5,5,order
+399,Nothobranchiidae,398,6,family
+400,Scriptaphyosemion,399,7,genus
+401,Scriptaphyosemion guignardi,400,8,species
+402,Oncorhynchus,91,7,genus
+403,Oncorhynchus gorbuscha,402,8,species
+404,Centriscidae,350,6,family
+405,Macroramphosus,404,7,genus
+406,Macroramphosus scolopax,405,8,species
+407,Semionotiformes,5,5,order
+408,Lepisosteidae,407,6,family
+409,Atractosteus,408,7,genus
+410,Atractosteus tristoechus,409,8,species
+411,Zeiformes,5,5,order
+412,Zeidae,411,6,family
+413,Zenopsis,412,7,genus
+414,Zenopsis nebulosus,413,8,species
+415,Beryciformes,5,5,order
+416,Cetomimidae,415,6,family
+417,Parataeniophorus,416,7,genus
+418,Parataeniophorus gulosus,417,8,species
+419,Hexanchiformes,39,5,order
+420,Hexanchidae,419,6,family
+421,Notorynchus,420,7,genus
+422,Notorynchus cepedianus,421,8,species
+423,Pagrus,27,7,genus
+424,Pagrus auriga,423,8,species
+425,Mullidae,350,6,family
+426,Parupeneus,425,7,genus
+427,Parupeneus multifasciatus,426,8,species
+428,Alepocephalidae,354,6,family
+429,Narcetes,428,7,genus
+430,Narcetes stomias,429,8,species
+431,Pseudolaubuca,33,7,genus
+432,Pseudolaubuca engraulis,431,8,species
+433,Sicyopterus,266,7,genus
+434,Sicyopterus stiphodonoides,433,8,species
+435,Spinibarbus denticulatus,48,8,species
+436,Yasuhikotakia,319,7,genus
+437,Yasuhikotakia morleti,436,8,species
+438,Pholidae,18,6,family
+439,Pholis,438,7,genus
+440,Pholis fangi,439,8,species
+441,Gymnocypris,33,7,genus
+442,Gymnocypris scleracanthus,441,8,species
+443,Makaira,187,7,genus
+444,Makaira nigricans,443,8,species
+445,Callionymidae,350,6,family
+446,Synchiropus,445,7,genus
+447,Synchiropus splendidus,446,8,species
+448,Notacanthiformes,5,5,order
+449,Halosauridae,448,6,family
+450,Aldrovandia,449,7,genus
+451,Aldrovandia oleosa,450,8,species
+452,Nemipteridae,26,6,family
+453,Nemipterus,452,7,genus
+454,Nemipterus japonicus,453,8,species
+455,Thaumatichthyidae,63,6,family
+456,Thaumatichthys,455,7,genus
+457,Thaumatichthys pagidostomus,456,8,species
+458,Chaetodontiformes,5,5,order
+459,Chaetodontidae,458,6,family
+460,Chelmon,459,7,genus
+461,Chelmon rostratus,460,8,species
+462,Ethmalosa,169,7,genus
+463,Ethmalosa fimbriata,462,8,species
+464,Mystus,152,7,genus
+465,Mystus cavasius,464,8,species
+466,Luciogobius,266,7,genus
+467,Luciogobius platycephalus,466,8,species
+468,Assurger,297,7,genus
+469,Assurger anzac,468,8,species
+470,Bathyraja multispinis,383,8,species
+471,Gnathopogon,33,7,genus
+472,Gnathopogon nicholsi,471,8,species
+473,Orectolobiformes,39,5,order
+474,Ginglymostomatidae,473,6,family
+475,Ginglymostoma,474,7,genus
+476,Ginglymostoma cirratum,475,8,species
+477,Culaea,240,7,genus
+478,Culaea inconstans,477,8,species
+479,Ateleopodiformes,5,5,order
+480,Ateleopodidae,479,6,family
+481,Ateleopus,480,7,genus
+482,Ateleopus japonicus,481,8,species
+483,Xenophysogobio,33,7,genus
+484,Xenophysogobio boulengeri,483,8,species
+485,Labeo,33,7,genus
+486,Labeo bata,485,8,species
+487,Anabantiformes,5,5,order
+488,Channidae,487,6,family
+489,Channa,488,7,genus
+490,Channa argus,489,8,species
+491,Anguillidae,94,6,family
+492,Anguilla,491,7,genus
+493,Anguilla dieffenbachii,492,8,species
+494,Gadiformes,5,5,order
+495,Gadidae,494,6,family
+496,Pollachius,495,7,genus
+497,Pollachius virens,496,8,species
+498,Sinocyclocheilus tingi,348,8,species
+499,Pellonula,169,7,genus
+500,Pellonula leonensis,499,8,species
+501,Schizothorax prenanti,119,8,species
+502,Coregonus,91,7,genus
+503,Coregonus peled,502,8,species
+504,Pseudobagrus tenuis,153,8,species
+505,Schizothorax molesworthi,119,8,species
+506,Brycon orbignyanus,367,8,species
+507,Osphronemidae,487,6,family
+508,Betta,507,7,genus
+509,Betta splendens,508,8,species
+510,Embiotocidae,10,6,family
+511,Embiotoca,510,7,genus
+512,Embiotoca jacksoni,511,8,species
+513,Barbonymus,33,7,genus
+514,Barbonymus altus,513,8,species
+515,Megalobrama,33,7,genus
+516,Megalobrama amblycephala x (Megalobrama amblycephala x Parabramis pekinensis),515,8,species
+517,Hemigaleidae,40,6,family
+518,Hemigaleus,517,7,genus
+519,Hemigaleus microstoma,518,8,species
+520,Nibea,36,7,genus
+521,Nibea mitsukurii,520,8,species
+522,Derichthyidae,94,6,family
+523,Derichthys,522,7,genus
+524,Derichthys serpentinus,523,8,species
+525,Aluterus,55,7,genus
+526,Aluterus scriptus,525,8,species
+527,Canthigaster,67,7,genus
+528,Canthigaster coronata,527,8,species
+529,Pseudorasbora,33,7,genus
+530,Pseudorasbora parva,529,8,species
+531,Denticipitidae,168,6,family
+532,Denticeps,531,7,genus
+533,Denticeps clupeoides,532,8,species
+534,Apolemichthys,87,7,genus
+535,Apolemichthys griffisi,534,8,species
+536,Torpediniformes,39,5,order
+537,Narcinidae,536,6,family
+538,Narcine,537,7,genus
+539,Narcine brasiliensis,538,8,species
+540,Hemibarbus labeo,364,8,species
+541,Malacanthidae,10,6,family
+542,Branchiostegus,541,7,genus
+543,Branchiostegus argentatus,542,8,species
+544,Carassius auratus x Cyprinus carpio,247,8,species
+545,Thoburnia,30,7,genus
+546,Thoburnia rhothoeca,545,8,species
+547,Cynoglossidae,179,6,family
+548,Cynoglossus,547,7,genus
+549,Cynoglossus semilaevis,548,8,species
+550,Pethia,33,7,genus
+551,Pethia ticto,550,8,species
+552,Lobotiformes,5,5,order
+553,Hapalogenyidae,552,6,family
+554,Hapalogenys,553,7,genus
+555,Hapalogenys nigripinnis,554,8,species
+556,Hampala,33,7,genus
+557,Hampala macrolepidota,556,8,species
+558,Sinocyclocheilus oxycephalus,348,8,species
+559,Phoxinus,33,7,genus
+560,Phoxinus keumkang,559,8,species
+561,Caproiformes,5,5,order
+562,Caproidae,561,6,family
+563,Capros,562,7,genus
+564,Capros aper,563,8,species
+565,Saurogobio,33,7,genus
+566,Saurogobio dabryi,565,8,species
+567,Pempheriformes,5,5,order
+568,Epigonidae,567,6,family
+569,Epigonus,568,7,genus
+570,Epigonus denticulatus,569,8,species
+571,Takifugu oblongus,144,8,species
+572,Prognichthys,203,7,genus
+573,Prognichthys sealei,572,8,species
+574,Schizothorax nepalensis,119,8,species
+575,Prochilodontidae,6,6,family
+576,Prochilodus,575,7,genus
+577,Prochilodus lineatus,576,8,species
+578,Brachygobius,266,7,genus
+579,Brachygobius doriae,578,8,species
+580,Discogobio,33,7,genus
+581,Discogobio tetrabarbatus,580,8,species
+582,Carcharhinus,41,7,genus
+583,Carcharhinus macloti,582,8,species
+584,Trachurus,108,7,genus
+585,Trachurus trachurus,584,8,species
+586,Osteoglossiformes,5,5,order
+587,Osteoglossidae,586,6,family
+588,Osteoglossum,587,7,genus
+589,Osteoglossum bicirrhosum,588,8,species
+590,Cyprinus,33,7,genus
+591,Cyprinus multitaeniata,590,8,species
+592,Labeobarbus,33,7,genus
+593,Labeobarbus intermedius,592,8,species
+594,Rhyacichthyidae,22,6,family
+595,Rhyacichthys,594,7,genus
+596,Rhyacichthys aspro,595,8,species
+597,Pegasidae,350,6,family
+598,Pegasus,597,7,genus
+599,Pegasus volitans,598,8,species
+600,Odontobutis potamophila,59,8,species
+601,Rhinichthys osculus,61,8,species
+602,Squalidus,33,7,genus
+603,Squalidus gracilis,602,8,species
+604,Cottus,141,7,genus
+605,Cottus poecilopus,604,8,species
+606,Sarcocheilichthys,33,7,genus
+607,Sarcocheilichthys variegatus,606,8,species
+608,Triplophysa strauchii,377,8,species
+609,Botia,319,7,genus
+610,Botia udomritthiruji,609,8,species
+611,Squalius,33,7,genus
+612,Squalius lepidus,611,8,species
+613,Diceratiidae,63,6,family
+614,Diceratias,613,7,genus
+615,Diceratias pileatus,614,8,species
+616,Ictaluridae,101,6,family
+617,Ictalurus,616,7,genus
+618,Ictalurus punctatus,617,8,species
+619,Pagothenia,289,7,genus
+620,Pagothenia borchgrevinki,619,8,species
+621,Rhinogobio,33,7,genus
+622,Rhinogobio ventralis,621,8,species
+623,Anoplopomatidae,18,6,family
+624,Anoplopoma,623,7,genus
+625,Anoplopoma fimbria,624,8,species
+626,Scartelaos histophorus,267,8,species
+627,Notopteridae,586,6,family
+628,Xenomystus,627,7,genus
+629,Xenomystus nigri,628,8,species
+630,Epinephelus lanceolatus,139,8,species
+631,Soleidae,179,6,family
+632,Brachirus,631,7,genus
+633,Brachirus orientalis,632,8,species
+634,Osmeriformes,5,5,order
+635,Plecoglossidae,634,6,family
+636,Plecoglossus,635,7,genus
+637,Plecoglossus altivelis,636,8,species
+638,Hemigobius,266,7,genus
+639,Hemigobius hoevenii,638,8,species
+640,Labriformes,5,5,order
+641,Labridae,640,6,family
+642,Pseudolabrus,641,7,genus
+643,Pseudolabrus eoethinus,642,8,species
+644,Onychostoma,33,7,genus
+645,Onychostoma lini,644,8,species
+646,Parazenidae,411,6,family
+647,Parazen,646,7,genus
+648,Parazen pacificus,647,8,species
+649,Microphysogobio,33,7,genus
+650,Microphysogobio longidorsalis,649,8,species
+651,Cheilopogon,203,7,genus
+652,Cheilopogon spilonotopterus,651,8,species
+653,Osteobrama cunma,322,8,species
+654,Terapontidae,223,6,family
+655,Bidyanus,654,7,genus
+656,Bidyanus bidyanus,655,8,species
+657,Colocongridae,94,6,family
+658,Coloconger,657,7,genus
+659,Coloconger cadenati,658,8,species
+660,Nocomis,33,7,genus
+661,Nocomis micropogon,660,8,species
+662,Sardinella,169,7,genus
+663,Sardinella longiceps,662,8,species
+664,Pampus,294,7,genus
+665,Pampus chinensis,664,8,species
+666,Rhodeus,255,7,genus
+667,Rhodeus sericeus,666,8,species
+668,Eleginopidae,18,6,family
+669,Eleginops,668,7,genus
+670,Eleginops maclovinus,669,8,species
+671,Sebastes longispinis,253,8,species
+672,Liobagrus styani,103,8,species
+673,Galaxiiformes,5,5,order
+674,Galaxiidae,673,6,family
+675,Lovettia,674,7,genus
+676,Lovettia sealii,675,8,species
+677,Hippocampus,351,7,genus
+678,Hippocampus mohnikei,677,8,species
+679,Vieja,136,7,genus
+680,Vieja melanura,679,8,species
+681,Centropyge deborae,88,8,species
+682,Ptychobarbus dipogon,113,8,species
+683,Tropheus,136,7,genus
+684,Tropheus duboisi,683,8,species
+685,Muraenidae,94,6,family
+686,Gymnothorax,685,7,genus
+687,Gymnothorax niphostigmus,686,8,species
+688,Coregonus autumnalis,502,8,species
+689,Ameiurus,616,7,genus
+690,Ameiurus natalis,689,8,species
+691,Carcharhinus amboinensis,582,8,species
+692,Canthophrys,176,7,genus
+693,Canthophrys gongota,692,8,species
+694,Pethia conchonius,550,8,species
+695,Etroplus,136,7,genus
+696,Etroplus maculatus,695,8,species
+697,Gnathopogon elongatus,471,8,species
+698,Tetractenos,67,7,genus
+699,Tetractenos glaber,698,8,species
+700,Lamniformes,39,5,order
+701,Alopiidae,700,6,family
+702,Cetorhinus,701,7,genus
+703,Cetorhinus maximus,702,8,species
+704,Epinephelus fuscoguttatus x Epinephelus lanceolatus,139,8,species
+705,Sebastes thompsoni,253,8,species
+706,Clupanodon,169,7,genus
+707,Clupanodon thrissa,706,8,species
+708,Siluridae,101,6,family
+709,Silurus,708,7,genus
+710,Silurus glanis,709,8,species
+711,Hemibarbus umbrifer,364,8,species
+712,Epinephelus akaara x Epinephelus lanceolatus,139,8,species
+713,Hemiculter,33,7,genus
+714,Hemiculter tchangi,713,8,species
+715,Carpiodes,30,7,genus
+716,Carpiodes carpio,715,8,species
+717,Triplophysa cuneicephala,377,8,species
+718,Saccopharyngidae,94,6,family
+719,Saccopharynx,718,7,genus
+720,Saccopharynx lavenbergi,719,8,species
+721,Cyematidae,94,6,family
+722,Cyema,721,7,genus
+723,Cyema atrum,722,8,species
+724,Notemigonus,33,7,genus
+725,Notemigonus crysoleucas,724,8,species
+726,Rondeletiidae,415,6,family
+727,Rondeletia,726,7,genus
+728,Rondeletia loricata,727,8,species
+729,Pagellus,27,7,genus
+730,Pagellus erythrinus,729,8,species
+731,Aulopiformes,5,5,order
+732,Chlorophthalmidae,731,6,family
+733,Chlorophthalmus,732,7,genus
+734,Chlorophthalmus agassizi,733,8,species
+735,Synbranchiformes,5,5,order
+736,Mastacembelidae,735,6,family
+737,Macrognathus,736,7,genus
+738,Macrognathus pancalus,737,8,species
+739,Gymnocypris namensis,441,8,species
+740,Pimelodus,149,7,genus
+741,Pimelodus maculatus,740,8,species
+742,Puntius,33,7,genus
+743,Puntius eugrammus,742,8,species
+744,Serrasalmidae,6,6,family
+745,Myleus,744,7,genus
+746,Myleus cf. schomburgkii XL-2018,745,8,species
+747,Pseudogobius,266,7,genus
+748,Pseudogobius javanicus,747,8,species
+749,Heterotilapia,136,7,genus
+750,Heterotilapia buttikoferi,749,8,species
+751,Petruichthys,15,7,genus
+752,Petruichthys brevis,751,8,species
+753,Leptoderma,428,7,genus
+754,Leptoderma retropinna,753,8,species
+755,Pareuchiloglanis,391,7,genus
+756,Pareuchiloglanis anteanalis,755,8,species
+757,Schizothorax labiatus,119,8,species
+758,Trichopodus,507,7,genus
+759,Trichopodus microlepis,758,8,species
+760,Myliobatiformes,39,5,order
+761,Myliobatidae,760,6,family
+762,Aetobatus,761,7,genus
+763,Aetobatus flagellum,762,8,species
+764,Tor,33,7,genus
+765,Tor khudree,764,8,species
+766,Megalobrama amblycephala x Megalobrama hoffmanni,515,8,species
+767,Carcharhinus longimanus,582,8,species
+768,Lateolabracidae,567,6,family
+769,Lateolabrax,768,7,genus
+770,Lateolabrax latus,769,8,species
+771,Acheilognathus yamatsutae,256,8,species
+772,Lateolabrax japonicus,769,8,species
+773,Pristigasteridae,168,6,family
+774,Ilisha,773,7,genus
+775,Ilisha elongata,774,8,species
+776,Homaloptera,311,7,genus
+777,Homaloptera ogilviei,776,8,species
+778,Chaetodon,459,7,genus
+779,Chaetodon octofasciatus,778,8,species
+780,Pseudogobius fulvicaudus,747,8,species
+781,Hyporthodus,19,7,genus
+782,Hyporthodus septemfasciatus,781,8,species
+783,Epinephelus coioides x Epinephelus lanceolatus,139,8,species
+784,Sarcocheilichthys sinensis,606,8,species
+785,Bangana,33,7,genus
+786,Bangana tungting,785,8,species
+787,Lagocephalus,67,7,genus
+788,Lagocephalus inermis,787,8,species
+789,Thryssa,192,7,genus
+790,Thryssa dussumieri,789,8,species
+791,Channichthyidae,18,6,family
+792,Chaenocephalus,791,7,genus
+793,Chaenocephalus aceratus,792,8,species
+794,Amblyrhynchichthys,33,7,genus
+795,Amblyrhynchichthys truncatus,794,8,species
+796,Incisilabeo,33,7,genus
+797,Incisilabeo behri,796,8,species
+798,Triplophysa orientalis,377,8,species
+799,Clupeichthys,169,7,genus
+800,Clupeichthys perakensis,799,8,species
+801,Labiobarbus,33,7,genus
+802,Labiobarbus leptocheilus,801,8,species
+803,Thryssa baelama,789,8,species
+804,Leucaspius,33,7,genus
+805,Leucaspius delineatus,804,8,species
+806,Pampus cinereus,664,8,species
+807,Silurus asotus,709,8,species
+808,Aphyosemion,399,7,genus
+809,Aphyosemion gabunense,808,8,species
+810,Pseudopimelodidae,101,6,family
+811,Lophiosilurus,810,7,genus
+812,Lophiosilurus alexandri,811,8,species
+813,Sciaenops,36,7,genus
+814,Sciaenops ocellatus,813,8,species
+815,Lepturichthys,311,7,genus
+816,Lepturichthys fimbriata,815,8,species
+817,Lamna,701,7,genus
+818,Lamna nasus,817,8,species
+819,Gonorynchidae,394,6,family
+820,Gonorynchus,819,7,genus
+821,Gonorynchus greyi,820,8,species
+822,Microphysogobio fukiensis,649,8,species
+823,Nemateleotris,266,7,genus
+824,Nemateleotris decora,823,8,species
+825,Heterenchelyidae,94,6,family
+826,Pythonichthys,825,7,genus
+827,Pythonichthys microphthalmus,826,8,species
+828,Phenacobius,33,7,genus
+829,Phenacobius mirabilis,828,8,species
+830,Euthynnus,84,7,genus
+831,Euthynnus affinis,830,8,species
+832,Stichaeidae,18,6,family
+833,Chirolophis,832,7,genus
+834,Chirolophis japonicus,833,8,species
+835,Coptodon,136,7,genus
+836,Coptodon zillii,835,8,species
+837,Tetraodon,67,7,genus
+838,Tetraodon lineatus,837,8,species
+839,Nothobranchius,399,7,genus
+840,Nothobranchius ocellatus,839,8,species
+841,Zebrias,631,7,genus
+842,Zebrias zebra,841,8,species
+843,Centropyge flavissima,88,8,species
+844,Pennahia,36,7,genus
+845,Pennahia argentata,844,8,species
+846,Synaphobranchidae,94,6,family
+847,Simenchelys,846,7,genus
+848,Simenchelys parasitica,847,8,species
+849,Awaous,266,7,genus
+850,Awaous banana,849,8,species
+851,Fundulopanchax,399,7,genus
+852,Fundulopanchax sjostedti,851,8,species
+853,Samaridae,179,6,family
+854,Samaris,853,7,genus
+855,Samaris cristatus,854,8,species
+856,Labiobarbus lineatus,801,8,species
+857,Luciocyprinus,33,7,genus
+858,Luciocyprinus striolatus,857,8,species
+859,Hippocampus comes,677,8,species
+860,Percidae,18,6,family
+861,Perca,860,7,genus
+862,Perca fluviatilis,861,8,species
+863,Rudarius,55,7,genus
+864,Rudarius ercodes,863,8,species
+865,Verasper,227,7,genus
+866,Verasper moseri,865,8,species
+867,Symphurus,547,7,genus
+868,Symphurus orientalis,867,8,species
+869,Platycephalidae,18,6,family
+870,Platycephalus,869,7,genus
+871,Platycephalus indicus,870,8,species
+872,Gobiobotia,33,7,genus
+873,Gobiobotia naktongensis,872,8,species
+874,Coreoperca,224,7,genus
+875,Coreoperca kawamebari,874,8,species
+876,Goodeidae,398,6,family
+877,Xenotoca,876,7,genus
+878,Xenotoca eiseni,877,8,species
+879,Cynoglossus sinicus,548,8,species
+880,Lepidocephalichthys,176,7,genus
+881,Lepidocephalichthys micropogon,880,8,species
+882,Anguilla bicolor,492,8,species
+883,Gastromyzontidae,14,6,family
+884,Formosania,883,7,genus
+885,Formosania lacustris,884,8,species
+886,Schizothorax progastus,119,8,species
+887,Epinephelus malabaricus,139,8,species
+888,Rivulidae,398,6,family
+889,Kryptolebias,888,7,genus
+890,Kryptolebias hermaphroditus,889,8,species
+891,Acipenser,276,7,genus
+892,Acipenser sturio,891,8,species
+893,Eleotris,23,7,genus
+894,Eleotris acanthopoma,893,8,species
+895,Canthidermis,98,7,genus
+896,Canthidermis maculata,895,8,species
+897,Kryptopterus,708,7,genus
+898,Kryptopterus bicirrhis,897,8,species
+899,Micromesistius,495,7,genus
+900,Micromesistius poutassou,899,8,species
+901,Ponticola,266,7,genus
+902,Ponticola kessleri,901,8,species
+903,Acrossocheilus monticola,292,8,species
+904,Diploprion,19,7,genus
+905,Diploprion bifasciatum,904,8,species
+906,Auchenoglanididae,101,6,family
+907,Auchenoglanis,906,7,genus
+908,Auchenoglanis occidentalis,907,8,species
+909,Lamiopsis,41,7,genus
+910,Lamiopsis tephrodes,909,8,species
+911,Hemiramphidae,202,6,family
+912,Hyporhamphus,911,7,genus
+913,Hyporhamphus intermedius,912,8,species
+914,Alepes,108,7,genus
+915,Alepes kleinii,914,8,species
+916,Phractolaemus,395,7,genus
+917,Phractolaemus ansorgii,916,8,species
+918,Sillaginidae,10,6,family
+919,Sillago,918,7,genus
+920,Sillago japonica,919,8,species
+921,Potamothrissa,169,7,genus
+922,Potamothrissa obtusirostris,921,8,species
+923,Centropomidae,10,6,family
+924,Lates,923,7,genus
+925,Lates calcarifer,924,8,species
+926,Symphysodon,136,7,genus
+927,Symphysodon haraldi,926,8,species
+928,Megalobrama terminalis x Megalobrama amblycephala,515,8,species
+929,Chitala,627,7,genus
+930,Chitala ornata,929,8,species
+931,Lepisosteus,408,7,genus
+932,Lepisosteus osseus,931,8,species
+933,Schizothorax biddulphi,119,8,species
+934,Calotomus,641,7,genus
+935,Calotomus japonicus,934,8,species
+936,Channa gachua,489,8,species
+937,Ctenopharyngodon idella x Megalobrama amblycephala,247,8,species
+938,Silurus lanzhouensis,709,8,species
+939,Rhynchocypris,33,7,genus
+940,Rhynchocypris percnurus,939,8,species
+941,Scarus,641,7,genus
+942,Scarus forsteni,941,8,species
+943,Hyperoartia,4,4,class
+944,Petromyzontiformes,943,5,order
+945,Petromyzontidae,944,6,family
+946,Petromyzon,945,7,genus
+947,Petromyzon marinus,946,8,species
+948,Sarcocheilichthys lacustris,606,8,species
+949,Schizothorax grahami,119,8,species
+950,Schistura corica,258,8,species
+951,Labeo nasus,485,8,species
+952,Eugnathogobius,266,7,genus
+953,Eugnathogobius oligactis,952,8,species
+954,Clinostomus,33,7,genus
+955,Clinostomus elongatus,954,8,species
+956,Phoxinus phoxinus,559,8,species
+957,Nothobranchius vosseleri,839,8,species
+958,Collichthys,36,7,genus
+959,Collichthys lucidus,958,8,species
+960,Percophidae,567,6,family
+961,Acanthaphritis,960,7,genus
+962,Acanthaphritis unoorum,961,8,species
+963,Zeus,412,7,genus
+964,Zeus faber,963,8,species
+965,Notropis hudsonius,212,8,species
+966,Sphoeroides,67,7,genus
+967,Sphoeroides parvus,966,8,species
+968,Schilbeidae,101,6,family
+969,Pareutropius,968,7,genus
+970,Pareutropius debauwi,969,8,species
+971,Aplocheilidae,398,6,family
+972,Pachypanchax,971,7,genus
+973,Pachypanchax playfairii,972,8,species
+974,Clariidae,101,6,family
+975,Clarias,974,7,genus
+976,Clarias batrachus,975,8,species
+977,Acreichthys,55,7,genus
+978,Acreichthys tomentosus,977,8,species
+979,Sinorhodeus,33,7,genus
+980,Sinorhodeus microlepis,979,8,species
+981,Hepsetidae,6,6,family
+982,Hepsetus,981,7,genus
+983,Hepsetus odoe,982,8,species
+984,Centrarchidae,223,6,family
+985,Chaenobryttus,984,7,genus
+986,Chaenobryttus gulosus,985,8,species
+987,Epinephelus tukula,139,8,species
+988,Gymnocypris dobula,441,8,species
+989,Howellidae,567,6,family
+990,Howella,989,7,genus
+991,Howella brodiei,990,8,species
+992,Anematichthys,33,7,genus
+993,Anematichthys apogon,992,8,species
+994,Pareuchiloglanis sinensis,755,8,species
+995,Ictalurus furcatus,617,8,species
+996,Luciobarbus,33,7,genus
+997,Luciobarbus capito,996,8,species
+998,Stenodus,91,7,genus
+999,Stenodus leucichthys,998,8,species
+1000,Hippocampus reidi,677,8,species
+1001,Pseudobagrus crassilabris,153,8,species
+1002,Bothidae,179,6,family
+1003,Grammatobothus,1002,7,genus
+1004,Grammatobothus polyophthalmus,1003,8,species
+1005,Pollachius pollachius,496,8,species
+1006,Bathytroctes,428,7,genus
+1007,Bathytroctes breviceps,1006,8,species
+1008,Serranochromis,136,7,genus
+1009,Serranochromis robustus,1008,8,species
+1010,Pleuragramma,289,7,genus
+1011,Pleuragramma antarctica,1010,8,species
+1012,Lagocephalus lagocephalus,787,8,species
+1013,Bostockia,286,7,genus
+1014,Bostockia porosa,1013,8,species
+1015,Amoya,266,7,genus
+1016,Amoya chusanensis,1015,8,species
+1017,Umbra,218,7,genus
+1018,Umbra limi,1017,8,species
+1019,Percina,860,7,genus
+1020,Percina brevicauda,1019,8,species
+1021,Siganidae,10,6,family
+1022,Siganus,1021,7,genus
+1023,Siganus fuscescens,1022,8,species
+1024,Hemigrammus,132,7,genus
+1025,Hemigrammus bleheri,1024,8,species
+1026,Acipenser gueldenstaedtii x Acipenser baerii,891,8,species
+1027,Genicanthus,87,7,genus
+1028,Genicanthus semifasciatus,1027,8,species
+1029,Hyporhamphus dussumieri,912,8,species
+1030,Aphanopus,297,7,genus
+1031,Aphanopus carbo,1030,8,species
+1032,Atherinopsidae,236,6,family
+1033,Leuresthes,1032,7,genus
+1034,Leuresthes tenuis,1033,8,species
+1035,Creteuchiloglanis,391,7,genus
+1036,Creteuchiloglanis gongshanensis,1035,8,species
+1037,Halichoeres,641,7,genus
+1038,Halichoeres trimaculatus,1037,8,species
+1039,Menidae,10,6,family
+1040,Mene,1039,7,genus
+1041,Mene maculata,1040,8,species
+1042,Ameiurus nebulosus,689,8,species
+1043,Cottus czerskii,604,8,species
+1044,Danio,33,7,genus
+1045,Danio nigrofasciatus,1044,8,species
+1046,Mugilogobius,266,7,genus
+1047,Mugilogobius chulae,1046,8,species
+1048,Sphyrna zygaena,42,8,species
+1049,Tor tambra,764,8,species
+1050,Tanichthys,33,7,genus
+1051,Tanichthys micagemmae,1050,8,species
+1052,Macropodus,507,7,genus
+1053,Macropodus ocellatus,1052,8,species
+1054,Claea,15,7,genus
+1055,Claea dabryi,1054,8,species
+1056,Acanthorhodeus,33,7,genus
+1057,Acanthorhodeus gracilis,1056,8,species
+1058,Myxini,4,4,class
+1059,Myxiniformes,1058,5,order
+1060,Myxinidae,1059,6,family
+1061,Myxine,1060,7,genus
+1062,Myxine glutinosa,1061,8,species
+1063,Glossogobius giuris,279,8,species
+1064,Zoarcidae,18,6,family
+1065,Lycodes,1064,7,genus
+1066,Lycodes ygreknotatus,1065,8,species
+1067,Sinocyclocheilus grahami,348,8,species
+1068,Tanakia,255,7,genus
+1069,Tanakia koreensis,1068,8,species
+1070,Huso,276,7,genus
+1071,Huso dauricus,1070,8,species
+1072,Blenniiformes,5,5,order
+1073,Blenniidae,1072,6,family
+1074,Salarias,1073,7,genus
+1075,Salarias fasciatus,1074,8,species
+1076,Haemulidae,232,6,family
+1077,Plectorhinchus,1076,7,genus
+1078,Plectorhinchus lineatus,1077,8,species
+1079,Yunnanilus,15,7,genus
+1080,Yunnanilus jinxiensis,1079,8,species
+1081,Tetrapturus belone,188,8,species
+1082,Hippocampus erectus,677,8,species
+1083,Sicydium,266,7,genus
+1084,Sicydium altum,1083,8,species
+1085,Discogobio yunnanensis,580,8,species
+1086,Monodactylidae,10,6,family
+1087,Monodactylus,1086,7,genus
+1088,Monodactylus argenteus,1087,8,species
+1089,Triplophysa xiangxiensis,377,8,species
+1090,Diodontidae,54,6,family
+1091,Diodon,1090,7,genus
+1092,Diodon liturosus,1091,8,species
+1093,Homaloptera confuzona,776,8,species
+1094,Centropyge acanthops,88,8,species
+1095,Pseudecheneis,391,7,genus
+1096,Pseudecheneis sulcata,1095,8,species
+1097,Leptobotia mantschurica,320,8,species
+1098,Gobiobotia filifer,872,8,species
+1099,Poeciliidae,398,6,family
+1100,Poecilia,1099,7,genus
+1101,Poecilia reticulata,1100,8,species
+1102,Rhodeus suigensis,666,8,species
+1103,Folifer,33,7,genus
+1104,Folifer brevifilis,1103,8,species
+1105,Hypophthalmichthys,33,7,genus
+1106,Hypophthalmichthys molitrix,1105,8,species
+1107,Callichthyidae,101,6,family
+1108,Corydoras,1107,7,genus
+1109,Corydoras rabauti,1108,8,species
+1110,Thunnus,84,7,genus
+1111,Thunnus obesus,1110,8,species
+1112,Amblygaster,169,7,genus
+1113,Amblygaster sirm,1112,8,species
+1114,Chilomycterus,1090,7,genus
+1115,Chilomycterus reticulatus,1114,8,species
+1116,Sphoeroides pachygaster,966,8,species
+1117,Glyphis sp. Bangladesh,362,8,species
+1118,Apolemichthys armitagei,534,8,species
+1119,Triplophysa siluroides,377,8,species
+1120,Galaxiella,674,7,genus
+1121,Galaxiella nigrostriata,1120,8,species
+1122,Squaliobarbus curriculus x Ctenopharyngodon idella,247,8,species
+1123,Siniperca chuatsi x Siniperca knerii,225,8,species
+1124,Sorubim,149,7,genus
+1125,Sorubim cuspicaudus,1124,8,species
+1126,Galaxias,674,7,genus
+1127,Galaxias sp. 'southern',1126,8,species
+1128,Melanotaeniidae,236,6,family
+1129,Glossolepis,1128,7,genus
+1130,Glossolepis incisus,1129,8,species
+1131,Algansea,33,7,genus
+1132,Algansea lacustris,1131,8,species
+1133,Creteuchiloglanis macropterus,1035,8,species
+1134,Plectorhinchus cinctus,1077,8,species
+1135,Eleginus,495,7,genus
+1136,Eleginus gracilis,1135,8,species
+1137,Bathyraja maccaini,383,8,species
+1138,Myctophiformes,5,5,order
+1139,Myctophidae,1138,6,family
+1140,Diaphus,1139,7,genus
+1141,Diaphus splendidus,1140,8,species
+1142,Cephalopholis,19,7,genus
+1143,Cephalopholis urodeta,1142,8,species
+1144,Takifugu xanthopterus,144,8,species
+1145,Bathyraja shuntovi,383,8,species
+1146,Lutjanus fulviflamma,234,8,species
+1147,Loricariidae,101,6,family
+1148,Hypoptopoma,1147,7,genus
+1149,Hypoptopoma incognitum,1148,8,species
+1150,Trachichthyiformes,5,5,order
+1151,Monocentridae,1150,6,family
+1152,Monocentris,1151,7,genus
+1153,Monocentris japonicus,1152,8,species
+1154,Micropterus,984,7,genus
+1155,Micropterus salmoides,1154,8,species
+1156,Colistium,180,7,genus
+1157,Colistium nudipinnis,1156,8,species
+1158,Poecilia mexicana,1100,8,species
+1159,Gobiobotia intermedia,872,8,species
+1160,Capoeta damascina,245,8,species
+1161,Zebrias zebrinus,841,8,species
+1162,Triplophysa stenura,377,8,species
+1163,Platysmacheilus,33,7,genus
+1164,Platysmacheilus exiguus,1163,8,species
+1165,Hemiscylliidae,473,6,family
+1166,Hemiscyllium,1165,7,genus
+1167,Hemiscyllium ocellatum,1166,8,species
+1168,Bathygobius,266,7,genus
+1169,Bathygobius coalitus,1168,8,species
+1170,Leuciscus,33,7,genus
+1171,Leuciscus baicalensis,1170,8,species
+1172,Scatophagidae,10,6,family
+1173,Selenotoca,1172,7,genus
+1174,Selenotoca multifasciata,1173,8,species
+1175,Andinoacara,136,7,genus
+1176,Andinoacara pulcher,1175,8,species
+1177,Carassius,33,7,genus
+1178,Carassius auratus x Megalobrama amblycephala x Carassius cuvieri,1177,8,species
+1179,Centropyge heraldi,88,8,species
+1180,Sinocyclocheilus furcodorsalis,348,8,species
+1181,Leucoraja,122,7,genus
+1182,Leucoraja circularis,1181,8,species
+1183,Variola albimarginata,20,8,species
+1184,Polynemidae,10,6,family
+1185,Polynemus,1184,7,genus
+1186,Polynemus paradiseus,1185,8,species
+1187,Cobitis matsubarai,177,8,species
+1188,Pimelodus pictus,740,8,species
+1189,Parabotia,319,7,genus
+1190,Parabotia banarescui,1189,8,species
+1191,Schistura geisleri,258,8,species
+1192,Labeo pangusia,485,8,species
+1193,Uraspis,108,7,genus
+1194,Uraspis secunda,1193,8,species
+1195,Neolamprologus,136,7,genus
+1196,Neolamprologus brichardi,1195,8,species
+1197,Oreonectes furcocaudalis,16,8,species
+1198,Misgurnus,176,7,genus
+1199,Misgurnus anguillicaudatus,1198,8,species
+1200,Garra,33,7,genus
+1201,Garra salweenica,1200,8,species
+1202,Lampetra,945,7,genus
+1203,Lampetra fluviatilis,1202,8,species
+1204,Nothobranchius kuhntae,839,8,species
+1205,Lepomis,984,7,genus
+1206,Lepomis macrochirus,1205,8,species
+1207,Hemieleotris,23,7,genus
+1208,Hemieleotris latifasciata,1207,8,species
+1209,Rhinogobius,266,7,genus
+1210,Rhinogobius cliffordpopei,1209,8,species
+1211,Rasboroides,33,7,genus
+1212,Rasboroides vaterifloris,1211,8,species
+1213,Labeo boggut,485,8,species
+1214,Yuriria,33,7,genus
+1215,Yuriria alta,1214,8,species
+1216,Carcharhinus amblyrhynchoides,582,8,species
+1217,Cirrhitidae,223,6,family
+1218,Paracirrhites,1217,7,genus
+1219,Paracirrhites arcatus,1218,8,species
+1220,Pungitius sinensis,241,8,species
+1221,Exyrias,266,7,genus
+1222,Exyrias puntang,1221,8,species
+1223,Coreoperca loona,874,8,species
+1224,Coregonus nasus,502,8,species
+1225,Lycengraulis,192,7,genus
+1226,Lycengraulis grossidens,1225,8,species
+1227,Crossorhombus,1002,7,genus
+1228,Crossorhombus kobensis,1227,8,species
+1229,Cheilopogon doederleinii,651,8,species
+1230,Onychostoma rara,644,8,species
+1231,Schizothorax davidi,119,8,species
+1232,Nemipterus virgatus,453,8,species
+1233,Lutjanus malabaricus,234,8,species
+1234,Molidae,54,6,family
+1235,Masturus,1234,7,genus
+1236,Masturus lanceolatus,1235,8,species
+1237,Gadus,495,7,genus
+1238,Gadus ogac,1237,8,species
+1239,Hexagrammidae,18,6,family
+1240,Hexagrammos,1239,7,genus
+1241,Hexagrammos agrammus,1240,8,species
+1242,Isurus,701,7,genus
+1243,Isurus paucus,1242,8,species
+1244,Syncrossus,319,7,genus
+1245,Syncrossus hymenophysa,1244,8,species
+1246,Conocara,428,7,genus
+1247,Conocara murrayi,1246,8,species
+1248,Rhinichthys cataractae,61,8,species
+1249,Chrosomus,33,7,genus
+1250,Chrosomus erythrogaster,1249,8,species
+1251,Coregonus muksun,502,8,species
+1252,Acipenser nudiventris,891,8,species
+1253,Epinephelus fuscoguttatus x Epinephelus tukula,139,8,species
+1254,Triglidae,18,6,family
+1255,Lepidotrigla,1254,7,genus
+1256,Lepidotrigla microptera,1255,8,species
+1257,Opsariichthys evolans,74,8,species
+1258,Cobitis melanoleuca,177,8,species
+1259,Sicyopterus lagocephalus,433,8,species
+1260,Triakidae,40,6,family
+1261,Hemitriakis,1260,7,genus
+1262,Hemitriakis japanica,1261,8,species
+1263,Aulorhynchus,125,7,genus
+1264,Aulorhynchus flavidus,1263,8,species
+1265,Carinotetraodon,67,7,genus
+1266,Carinotetraodon salivator,1265,8,species
+1267,Selaroides,108,7,genus
+1268,Selaroides leptolepis,1267,8,species
+1269,Sarcocheilichthys davidi,606,8,species
+1270,Dentex,27,7,genus
+1271,Dentex angolensis,1270,8,species
+1272,Microphysogobio kiatingensis,649,8,species
+1273,Cirrhitichthys,1217,7,genus
+1274,Cirrhitichthys aprinus,1273,8,species
+1275,Nannoperca,286,7,genus
+1276,Nannoperca variegata,1275,8,species
+1277,Gambusia,1099,7,genus
+1278,Gambusia holbrooki,1277,8,species
+1279,Rasbora,33,7,genus
+1280,Rasbora lateristriata,1279,8,species
+1281,Chimaeriformes,39,5,order
+1282,Chimaeridae,1281,6,family
+1283,Chimaera,1282,7,genus
+1284,Chimaera monstrosa,1283,8,species
+1285,Schizothorax eurystomus,119,8,species
+1286,Solenostomidae,350,6,family
+1287,Solenostomus,1286,7,genus
+1288,Solenostomus paradoxus,1287,8,species
+1289,Tridentiger,266,7,genus
+1290,Tridentiger trigonocephalus,1289,8,species
+1291,Megalobrama amblycephala,515,8,species
+1292,Ompok,708,7,genus
+1293,Ompok bimaculatus,1292,8,species
+1294,Chaetobranchopsis,136,7,genus
+1295,Chaetobranchopsis bitaeniatus,1294,8,species
+1296,Thunnus alalunga,1110,8,species
+1297,Homatula,15,7,genus
+1298,Homatula berezowskii,1297,8,species
+1299,Macrouridae,494,6,family
+1300,Cetonurus,1299,7,genus
+1301,Cetonurus globiceps,1300,8,species
+1302,Trypauchen,266,7,genus
+1303,Trypauchen vagina,1302,8,species
+1304,Cyprinus carpio,590,8,species
+1305,Larimichthys,36,7,genus
+1306,Larimichthys crocea,1305,8,species
+1307,Carassius auratus x Megalobrama amblycephala tetraploid hybrid,247,8,species
+1308,Doradidae,101,6,family
+1309,Amblydoras,1308,7,genus
+1310,Amblydoras gonzalezi,1309,8,species
+1311,Cottus hangiongensis,604,8,species
+1312,Pseudobagrus medianalis,153,8,species
+1313,Thamnaconus tessellatus,161,8,species
+1314,Oreochromis esculentus,183,8,species
+1315,Lutjanus argentimaculatus,234,8,species
+1316,Opsopoeodus,33,7,genus
+1317,Opsopoeodus emiliae,1316,8,species
+1318,Narcine entemedor,538,8,species
+1319,Carassius auratus x Megalobrama amblycephala triploid hybrid,247,8,species
+1320,Megalobrama amblycephala x Megalobrama pellegrini,515,8,species
+1321,Metzia,33,7,genus
+1322,Metzia lineata,1321,8,species
+1323,Squalidus wolterstorffi,602,8,species
+1324,Tetraodon biocellatus,837,8,species
+1325,Sillago sinica,919,8,species
+1326,Glyphis sp. Borneo,362,8,species
+1327,Tor tor,764,8,species
+1328,Stegostomatidae,473,6,family
+1329,Stegostoma,1328,7,genus
+1330,Stegostoma fasciatum,1329,8,species
+1331,Selar,108,7,genus
+1332,Selar crumenophthalmus,1331,8,species
+1333,Gila,33,7,genus
+1334,Gila robusta,1333,8,species
+1335,Apteronotidae,157,6,family
+1336,Apteronotus,1335,7,genus
+1337,Apteronotus albifrons,1336,8,species
+1338,Berycidae,415,6,family
+1339,Beryx,1338,7,genus
+1340,Beryx mollis,1339,8,species
+1341,Sphyrnidae,40,6,family
+1342,Eusphyra,1341,7,genus
+1343,Eusphyra blochii,1342,8,species
+1344,Chimaera fulva,1283,8,species
+1345,Chiloscyllium,1165,7,genus
+1346,Chiloscyllium griseum,1345,8,species
+1347,Discherodontus,33,7,genus
+1348,Discherodontus ashmeadi,1347,8,species
+1349,Priacanthiformes,5,5,order
+1350,Priacanthidae,1349,6,family
+1351,Priacanthus,1350,7,genus
+1352,Priacanthus tayenus,1351,8,species
+1353,Diplacanthopoma,300,7,genus
+1354,Diplacanthopoma brachysoma,1353,8,species
+1355,Epinephelus bontoides,139,8,species
+1356,Hippocampus spinosissimus,677,8,species
+1357,Neoscopelidae,1138,6,family
+1358,Scopelengys,1357,7,genus
+1359,Scopelengys tristis,1358,8,species
+1360,Seriolina,108,7,genus
+1361,Seriolina nigrofasciata,1360,8,species
+1362,Cheilochromis,136,7,genus
+1363,Cheilochromis euchilus,1362,8,species
+1364,Hemilepidotus,141,7,genus
+1365,Hemilepidotus gilberti,1364,8,species
+1366,Oncorhynchus mykiss,402,8,species
+1367,Nematalosa,169,7,genus
+1368,Nematalosa japonica,1367,8,species
+1369,Triacanthidae,54,6,family
+1370,Triacanthus,1369,7,genus
+1371,Triacanthus biaculeatus,1370,8,species
+1372,Schistura reticulofasciata,258,8,species
+1373,Datnioididae,552,6,family
+1374,Datnioides,1373,7,genus
+1375,Datnioides microlepis,1374,8,species
+1376,Dipturus chilensis,123,8,species
+1377,Synodontidae,731,6,family
+1378,Saurida,1377,7,genus
+1379,Saurida microlepis,1378,8,species
+1380,Trichopodus leerii,758,8,species
+1381,Oreoglanis jingdongensis,392,8,species
+1382,Sebastes trivittatus,253,8,species
+1383,Potamotrygonidae,760,6,family
+1384,Taeniura,1383,7,genus
+1385,Taeniura lymma,1384,8,species
+1386,Myrocongridae,94,6,family
+1387,Myroconger,1386,7,genus
+1388,Myroconger compressus,1387,8,species
+1389,Cranoglanididae,101,6,family
+1390,Cranoglanis,1389,7,genus
+1391,Cranoglanis bouderius,1390,8,species
+1392,Hypophthalmichthys nobilis x Hypophthalmichthys molitrix,1105,8,species
+1393,Hemiculterella,33,7,genus
+1394,Hemiculterella sauvagei,1393,8,species
+1395,Scarus rubroviolaceus,941,8,species
+1396,Diretmidae,1150,6,family
+1397,Diretmus,1396,7,genus
+1398,Diretmus argenteus,1397,8,species
+1399,Coregonus chadary,502,8,species
+1400,Zebrias crossolepis,841,8,species
+1401,Stomiiformes,5,5,order
+1402,Stomiidae,1401,6,family
+1403,Stomias,1402,7,genus
+1404,Stomias atriventer,1403,8,species
+1405,Triplophysa yarkandensis,377,8,species
+1406,Acrossocheilus spinifer,292,8,species
+1407,Eurypegasus,597,7,genus
+1408,Eurypegasus draconis,1407,8,species
+1409,Perca schrenkii,861,8,species
+1410,Sebastes nigrocinctus,253,8,species
+1411,Raja,122,7,genus
+1412,Raja rhina,1411,8,species
+1413,Tachysurus,152,7,genus
+1414,Tachysurus nitidus,1413,8,species
+1415,Claroteidae,101,6,family
+1416,Chrysichthys,1415,7,genus
+1417,Chrysichthys nigrodigitatus,1416,8,species
+1418,Glyptothorax,391,7,genus
+1419,Glyptothorax sinensis,1418,8,species
+1420,Lavinia,33,7,genus
+1421,Lavinia exilicauda,1420,8,species
+1422,Holocentriformes,5,5,order
+1423,Holocentridae,1422,6,family
+1424,Sargocentron,1423,7,genus
+1425,Sargocentron spiniferum,1424,8,species
+1426,Petroscirtes,1073,7,genus
+1427,Petroscirtes breviceps,1426,8,species
+1428,Cladistia,4,4,class
+1429,Polypteriformes,1428,5,order
+1430,Polypteridae,1429,6,family
+1431,Erpetoichthys,1430,7,genus
+1432,Erpetoichthys calabaricus,1431,8,species
+1433,Gadopsis,286,7,genus
+1434,Gadopsis bispinosus,1433,8,species
+1435,Crenimugil,116,7,genus
+1436,Crenimugil crenilabis,1435,8,species
+1437,Hyporhamphus limbatus,912,8,species
+1438,Gempylidae,70,6,family
+1439,Nesiarchus,1438,7,genus
+1440,Nesiarchus nasutus,1439,8,species
+1441,Bramidae,70,6,family
+1442,Eumegistus,1441,7,genus
+1443,Eumegistus illustris,1442,8,species
+1444,Acanthogobius,266,7,genus
+1445,Acanthogobius hasta,1444,8,species
+1446,Konia,136,7,genus
+1447,Konia dikume,1446,8,species
+1448,Mylopharyngodon,33,7,genus
+1449,Mylopharyngodon piceus,1448,8,species
+1450,Reinhardtius,227,7,genus
+1451,Reinhardtius hippoglossoides,1450,8,species
+1452,Kareius,227,7,genus
+1453,Kareius bicoloratus,1452,8,species
+1454,Aethaloperca,19,7,genus
+1455,Aethaloperca rogaa,1454,8,species
+1456,Tropheus moorii,683,8,species
+1457,Scortum,654,7,genus
+1458,Scortum barcoo,1457,8,species
+1459,Botia lohachata,609,8,species
+1460,Megaleporinus piavussu,8,8,species
+1461,Uaru,136,7,genus
+1462,Uaru amphiacanthoides,1461,8,species
+1463,Melanotaenia,1128,7,genus
+1464,Melanotaenia praecox,1463,8,species
+1465,Centrolophidae,70,6,family
+1466,Hyperoglyphe,1465,7,genus
+1467,Hyperoglyphe japonica,1466,8,species
+1468,Sphyrna tiburo,42,8,species
+1469,Chlorophthalmus nigromarginatus,733,8,species
+1470,Kyphosidae,223,6,family
+1471,Labracoglossa,1470,7,genus
+1472,Labracoglossa argenteiventris,1471,8,species
+1473,Sahyadria,33,7,genus
+1474,Sahyadria chalakkudiensis,1473,8,species
+1475,Odontamblyopus,266,7,genus
+1476,Odontamblyopus rebecca,1475,8,species
+1477,Xenocypris,33,7,genus
+1478,Xenocypris davidi,1477,8,species
+1479,Halichoeres melanurus,1037,8,species
+1480,Saurida wanieso,1378,8,species
+1481,Channa punctata,489,8,species
+1482,Coelacanthimorpha,4,4,class
+1483,Coelacanthiformes,1482,5,order
+1484,Coelacanthidae,1483,6,family
+1485,Latimeria,1484,7,genus
+1486,Latimeria menadoensis,1485,8,species
+1487,Ptychidio,33,7,genus
+1488,Ptychidio jordani,1487,8,species
+1489,Psenopsis,1465,7,genus
+1490,Psenopsis anomala,1489,8,species
+1491,Fundulopanchax gardneri,851,8,species
+1492,Oxynoemacheilus,15,7,genus
+1493,Oxynoemacheilus angorae,1492,8,species
+1494,Channa striata,489,8,species
+1495,Ilyophis,846,7,genus
+1496,Ilyophis brunneus,1495,8,species
+1497,Pungitius hellenicus,241,8,species
+1498,Copadichromis virginalis,358,8,species
+1499,Percopsiformes,5,5,order
+1500,Percopsidae,1499,6,family
+1501,Percopsis,1500,7,genus
+1502,Percopsis transmontana,1501,8,species
+1503,Homalopteroides,311,7,genus
+1504,Homalopteroides smithi,1503,8,species
+1505,Campostoma,33,7,genus
+1506,Campostoma anomalum,1505,8,species
+1507,Lethenteron,945,7,genus
+1508,Lethenteron reissneri,1507,8,species
+1509,Carassius cuvieri,1177,8,species
+1510,Chauliodus,1402,7,genus
+1511,Chauliodus sloani,1510,8,species
+1512,Heteromycteris,631,7,genus
+1513,Heteromycteris japonicus,1512,8,species
+1514,Scomberomorus,84,7,genus
+1515,Scomberomorus cavalla,1514,8,species
+1516,Trichodontidae,18,6,family
+1517,Arctoscopus,1516,7,genus
+1518,Arctoscopus japonicus,1517,8,species
+1519,Gobio,33,7,genus
+1520,Gobio gobio,1519,8,species
+1521,Salangidae,634,6,family
+1522,Salangichthys,1521,7,genus
+1523,Salangichthys microdon,1522,8,species
+1524,Prosopium,91,7,genus
+1525,Prosopium williamsoni,1524,8,species
+1526,Squalidus multimaculatus,602,8,species
+1527,Hypsibarbus,33,7,genus
+1528,Hypsibarbus vernayi,1527,8,species
+1529,Ancherythroculter nigrocauda,190,8,species
+1530,Raiamas,33,7,genus
+1531,Raiamas guttatus,1530,8,species
+1532,Horadandia,33,7,genus
+1533,Horadandia atukorali,1532,8,species
+1534,Sarcocheilichthys nigripinnis,606,8,species
+1535,Rhodeus shitaiensis,666,8,species
+1536,Onychostoma fangi,644,8,species
+1537,Dasyatidae,760,6,family
+1538,Pateobatis,1537,7,genus
+1539,Pateobatis jenkinsii,1538,8,species
+1540,Plagiognathops,33,7,genus
+1541,Plagiognathops microlepis,1540,8,species
+1542,Elassomatidae,223,6,family
+1543,Elassoma,1542,7,genus
+1544,Elassoma evergladei,1543,8,species
+1545,Potamotrygon,1383,7,genus
+1546,Potamotrygon magdalenae,1545,8,species
+1547,Eleotris oxycephala,893,8,species
+1548,Johnius,36,7,genus
+1549,Johnius borneensis,1548,8,species
+1550,Atrobucca,36,7,genus
+1551,Atrobucca nibe,1550,8,species
+1552,Microdevario,33,7,genus
+1553,Microdevario nana,1552,8,species
+1554,Monotrete,67,7,genus
+1555,Monotrete cochinchinensis,1554,8,species
+1556,Mobula,761,7,genus
+1557,Mobula tarapacana,1556,8,species
+1558,Oryzias latipes,210,8,species
+1559,Scaphiodonichthys,33,7,genus
+1560,Scaphiodonichthys acanthopterus,1559,8,species
+1561,Sebastes rubrivinctus,253,8,species
+1562,Genicanthus lamarck,1027,8,species
+1563,Hypselobarbus,33,7,genus
+1564,Hypselobarbus thomassi,1563,8,species
+1565,Dicentrarchus punctatus,346,8,species
+1566,Pempheridae,567,6,family
+1567,Pempheris,1566,7,genus
+1568,Pempheris schwenkii,1567,8,species
+1569,Ariidae,101,6,family
+1570,Bagre,1569,7,genus
+1571,Bagre panamensis,1570,8,species
+1572,Oostethus,351,7,genus
+1573,Oostethus manadensis,1572,8,species
+1574,Trachidermus,141,7,genus
+1575,Trachidermus fasciatus,1574,8,species
+1576,Squalogadus,1299,7,genus
+1577,Squalogadus modificatus,1576,8,species
+1578,Anacanthobatidae,121,6,family
+1579,Sinobatis,1578,7,genus
+1580,Sinobatis borneensis,1579,8,species
+1581,Carcharhinus acronotus,582,8,species
+1582,Leptobotia microphthalma,320,8,species
+1583,Saurogobio dumerili,565,8,species
+1584,Scombropidae,70,6,family
+1585,Scombrops,1584,7,genus
+1586,Scombrops boops,1585,8,species
+1587,Seriola,108,7,genus
+1588,Seriola rivoliana,1587,8,species
+1589,Pseudorasbora pumila,529,8,species
+1590,Euchiloglanis,391,7,genus
+1591,Euchiloglanis davidi,1590,8,species
+1592,Hippocampus histrix,677,8,species
+1593,Oryzias sinensis,210,8,species
+1594,Mormyridae,586,6,family
+1595,Gnathonemus,1594,7,genus
+1596,Gnathonemus petersii,1595,8,species
+1597,Acheilognathus intermedia,256,8,species
+1598,Tilodon,1470,7,genus
+1599,Tilodon sexfasciatum,1598,8,species
+1600,Etheostoma,860,7,genus
+1601,Etheostoma chuckwachatte,1600,8,species
+1602,Tenualosa toli,170,8,species
+1603,Epinephelus chlorostigma,139,8,species
+1604,Sinocyclocheilus anophthalmus,348,8,species
+1605,Prionace,41,7,genus
+1606,Prionace glauca,1605,8,species
+1607,Balistapus,98,7,genus
+1608,Balistapus undulatus,1607,8,species
+1609,Chaunax abei,65,8,species
+1610,Eleotris amblyopsis,893,8,species
+1611,Oryzias minutillus,210,8,species
+1612,Acropomatidae,567,6,family
+1613,Synagrops,1612,7,genus
+1614,Synagrops japonicus,1613,8,species
+1615,Dawkinsia,33,7,genus
+1616,Dawkinsia tambraparniei,1615,8,species
+1617,Cottus amblystomopsis,604,8,species
+1618,Sardinella maderensis,662,8,species
+1619,Fundulidae,398,6,family
+1620,Fundulus,1619,7,genus
+1621,Fundulus notatus,1620,8,species
+1622,Acentrogobius,266,7,genus
+1623,Acentrogobius chlorostigmatoides,1622,8,species
+1624,Solegnathus,351,7,genus
+1625,Solegnathus hardwickii,1624,8,species
+1626,Lefua,15,7,genus
+1627,Lefua costata,1626,8,species
+1628,Hypseleotris,23,7,genus
+1629,Hypseleotris klunzingeri,1628,8,species
+1630,Culter alburnus x Ancherythroculter nigrocauda,247,8,species
+1631,Xiphophorus,1099,7,genus
+1632,Xiphophorus maculatus,1631,8,species
+1633,natural gynogenetic Carassius auratus red var.,247,8,species
+1634,Liobagrus marginatoides,103,8,species
+1635,Bangana decora,785,8,species
+1636,Melanotaenia australis,1463,8,species
+1637,Taenioides,266,7,genus
+1638,Taenioides anguillaris,1637,8,species
+1639,Helostomatidae,487,6,family
+1640,Helostoma,1639,7,genus
+1641,Helostoma temminkii,1640,8,species
+1642,Okamejei,122,7,genus
+1643,Okamejei kenojei,1642,8,species
+1644,Mustelus,1260,7,genus
+1645,Mustelus mustelus,1644,8,species
+1646,Polymixiiformes,5,5,order
+1647,Polymixiidae,1646,6,family
+1648,Polymixia,1647,7,genus
+1649,Polymixia japonica,1648,8,species
+1650,Siniperca knerii,225,8,species
+1651,Repomucenus,445,7,genus
+1652,Repomucenus curvicornis,1651,8,species
+1653,Acrossocheilus kreyenbergii,292,8,species
+1654,Pseudopungtungia,33,7,genus
+1655,Pseudopungtungia tenuicorpus,1654,8,species
+1656,Periophthalmus magnuspinnatus,326,8,species
+1657,Clupeichthys aesarnensis,799,8,species
+1658,Belligobio,33,7,genus
+1659,Belligobio nummifer,1658,8,species
+1660,Macrhybopsis,33,7,genus
+1661,Macrhybopsis hyostoma,1660,8,species
+1662,Gillichthys,266,7,genus
+1663,Gillichthys seta,1662,8,species
+1664,Labeo gonius,485,8,species
+1665,Catostomus,30,7,genus
+1666,Catostomus commersonii,1665,8,species
+1667,Thamnaconus modestus,161,8,species
+1668,Lythrurus,33,7,genus
+1669,Lythrurus fumeus,1668,8,species
+1670,Hemibagrus,152,7,genus
+1671,Hemibagrus spilopterus,1670,8,species
+1672,Glyptothorax zanaensis,1418,8,species
+1673,Labeo lineatus,485,8,species
+1674,Pseudaspius,33,7,genus
+1675,Pseudaspius leptocephalus,1674,8,species
+1676,Tampichthys,33,7,genus
+1677,Tampichthys ipni,1676,8,species
+1678,Maccullochella,286,7,genus
+1679,Maccullochella mariensis,1678,8,species
+1680,Scaphirhynchus,276,7,genus
+1681,Scaphirhynchus cf. albus,1680,8,species
+1682,Oncorhynchus masou,402,8,species
+1683,Sphyraenidae,10,6,family
+1684,Sphyraena,1683,7,genus
+1685,Sphyraena jello,1684,8,species
+1686,Misgurnus nikolskyi,1198,8,species
+1687,Lepisosteus oculatus,931,8,species
+1688,Schizopygopsis,33,7,genus
+1689,Schizopygopsis anteroventris,1688,8,species
+1690,Thunnus tonggol,1110,8,species
+1691,Gasterosteus,240,7,genus
+1692,Gasterosteus aculeatus,1691,8,species
+1693,Tylerius,67,7,genus
+1694,Tylerius spinosissimus,1693,8,species
+1695,Himantura,1537,7,genus
+1696,Himantura uarnak,1695,8,species
+1697,Maccullochella macquariensis,1678,8,species
+1698,Discocheilus,33,7,genus
+1699,Discocheilus wui,1698,8,species
+1700,Takifugu exascurus,144,8,species
+1701,Rasbora sumatrana,1279,8,species
+1702,Spratelloides,169,7,genus
+1703,Spratelloides delicatulus,1702,8,species
+1704,Lagocephalus lunaris,787,8,species
+1705,Cyprinus acutidorsalis,590,8,species
+1706,Yongeichthys,266,7,genus
+1707,Yongeichthys criniger,1706,8,species
+1708,Orectolobidae,473,6,family
+1709,Orectolobus,1708,7,genus
+1710,Orectolobus japonicus,1709,8,species
+1711,Abudefduf,76,7,genus
+1712,Abudefduf bengalensis,1711,8,species
+1713,Pterygoplichthys,1147,7,genus
+1714,Pterygoplichthys disjunctivus,1713,8,species
+1715,Prochilodus costatus,576,8,species
+1716,Conger,173,7,genus
+1717,Conger japonicus,1716,8,species
+1718,Labiobarbus ocellatus,801,8,species
+1719,Acheilognathus typus,256,8,species
+1720,Luciogobius grandis,466,8,species
+1721,Discherodontus schroederi,1347,8,species
+1722,Hippoglossus hippoglossus,228,8,species
+1723,Neosalanx,1521,7,genus
+1724,Neosalanx taihuensis,1723,8,species
+1725,Alopias,701,7,genus
+1726,Alopias pelagicus,1725,8,species
+1727,Aracanidae,54,6,family
+1728,Anoplocapros,1727,7,genus
+1729,Anoplocapros lenticularis,1728,8,species
+1730,Nettastomatidae,94,6,family
+1731,Hoplunnis,1730,7,genus
+1732,Hoplunnis punctata,1731,8,species
+1733,Sarcocheilichthys kiangsiensis,606,8,species
+1734,Taeniura meyeni,1384,8,species
+1735,Triplophysa venusta,377,8,species
+1736,Rhinogobius leavelli,1209,8,species
+1737,Salvelinus malma,315,8,species
+1738,Odaxothrissa,169,7,genus
+1739,Odaxothrissa vittata,1738,8,species
+1740,Squaliformes,39,5,order
+1741,Squalidae,1740,6,family
+1742,Squalus,1741,7,genus
+1743,Squalus brevirostris,1742,8,species
+1744,Dipturus innominatus,123,8,species
+1745,Carcharhinus melanopterus,582,8,species
+1746,Raiamas senegalensis,1530,8,species
+1747,Glyptothorax lanceatus,1418,8,species
+1748,Potamothrissa acutirostris,921,8,species
+1749,Paralichthyidae,179,6,family
+1750,Paralichthys,1749,7,genus
+1751,Paralichthys olivaceus,1750,8,species
+1752,Polyodontidae,275,6,family
+1753,Psephurus,1752,7,genus
+1754,Psephurus gladius,1753,8,species
+1755,Lepisosteus platyrhincus,931,8,species
+1756,Sagamichthys,355,7,genus
+1757,Sagamichthys abei,1756,8,species
+1758,Pampus sp. LY-2009,664,8,species
+1759,Squalidus argentatus,602,8,species
+1760,Liza,116,7,genus
+1761,Liza carinata,1760,8,species
+1762,Acipenser ruthenus,891,8,species
+1763,Esomus,33,7,genus
+1764,Esomus metallicus,1763,8,species
+1765,Cottus dzungaricus,604,8,species
+1766,Belonidae,202,6,family
+1767,Ablennes,1766,7,genus
+1768,Ablennes hians,1767,8,species
+1769,Lutjanus kasmira,234,8,species
+1770,Lythrurus ardens,1668,8,species
+1771,Pristiophoridae,328,6,family
+1772,Pristiophorus,1771,7,genus
+1773,Pristiophorus japonicus,1772,8,species
+1774,Tanakia himantegus,1068,8,species
+1775,Coilia,192,7,genus
+1776,Coilia brachygnathus,1775,8,species
+1777,Hiodontiformes,5,5,order
+1778,Hiodontidae,1777,6,family
+1779,Hiodon,1778,7,genus
+1780,Hiodon alosoides,1779,8,species
+1781,Dunckerocampus,351,7,genus
+1782,Dunckerocampus dactyliophorus,1781,8,species
+1783,Pseudochondrostoma,33,7,genus
+1784,Pseudochondrostoma polylepis,1783,8,species
+1785,Squatina squatina,330,8,species
+1786,Osmeridae,634,6,family
+1787,Hypomesus,1786,7,genus
+1788,Hypomesus nipponensis,1787,8,species
+1789,Pseudorasbora elongata,529,8,species
+1790,Sternopygidae,157,6,family
+1791,Eigenmannia,1790,7,genus
+1792,Eigenmannia sp. CBM-ZF-10620,1791,8,species
+1793,Cetostoma,416,7,genus
+1794,Cetostoma regani,1793,8,species
+1795,Pronothobranchius,399,7,genus
+1796,Pronothobranchius seymouri,1795,8,species
+1797,Beaufortia,883,7,genus
+1798,Beaufortia kweichowensis,1797,8,species
+1799,Tachysurus fulvidraco x Tachysurus vachelli,1413,8,species
+1800,Mochokidae,101,6,family
+1801,Synodontis,1800,7,genus
+1802,Synodontis schoutedeni,1801,8,species
+1803,Dipturus maugeanus,123,8,species
+1804,Scomber colias,85,8,species
+1805,Spinibarbus caldwelli,48,8,species
+1806,Coilia nasus,1775,8,species
+1807,Etroplus suratensis,695,8,species
+1808,Siniperca chuatsi,225,8,species
+1809,Procypris,33,7,genus
+1810,Procypris rabaudi,1809,8,species
+1811,Barbuccidae,14,6,family
+1812,Barbucca,1811,7,genus
+1813,Barbucca diabolica,1812,8,species
+1814,Genyochromis,136,7,genus
+1815,Genyochromis mento,1814,8,species
+1816,Pristolepididae,487,6,family
+1817,Pristolepis,1816,7,genus
+1818,Pristolepis rubripinnis,1817,8,species
+1819,Sphoeroides annulatus,966,8,species
+1820,Ancherythroculter kurematsui,190,8,species
+1821,Kajikia,187,7,genus
+1822,Kajikia albida,1821,8,species
+1823,Uranoscopiformes,5,5,order
+1824,Uranoscopidae,1823,6,family
+1825,Uranoscopus,1824,7,genus
+1826,Uranoscopus japonicus,1825,8,species
+1827,Labeo altivelis,485,8,species
+1828,Citharinidae,6,6,family
+1829,Ichthyborus,1828,7,genus
+1830,Ichthyborus sp. NM-2010,1829,8,species
+1831,Hypophthalmichthys nobilis,1105,8,species
+1832,Gobiocypris,33,7,genus
+1833,Gobiocypris rarus,1832,8,species
+1834,Hydrolagus,1282,7,genus
+1835,Hydrolagus lemures,1834,8,species
+1836,Holacanthus,87,7,genus
+1837,Holacanthus passer,1836,8,species
+1838,Lythrurus umbratilis,1668,8,species
+1839,Cottus rhenanus,604,8,species
+1840,Mystacoleucus,33,7,genus
+1841,Mystacoleucus marginatus,1840,8,species
+1842,Alepes djedaba,914,8,species
+1843,Schistura sikmaiensis,258,8,species
+1844,Agonidae,18,6,family
+1845,Ulcina,1844,7,genus
+1846,Ulcina olrikii,1845,8,species
+1847,Acipenser medirostris,891,8,species
+1848,Halosauropsis,449,7,genus
+1849,Halosauropsis macrochir,1848,8,species
+1850,Bathytroctes macrolepis,1006,8,species
+1851,Triplophysa dalaica,377,8,species
+1852,Scomber japonicus,85,8,species
+1853,Hippocampus hippocampus,677,8,species
+1854,Thunnus thynnus,1110,8,species
+1855,Torquigener,67,7,genus
+1856,Torquigener pleurogramma,1855,8,species
+1857,Retropinnidae,634,6,family
+1858,Retropinna,1857,7,genus
+1859,Retropinna retropinna,1858,8,species
+1860,Bothus,1002,7,genus
+1861,Bothus pantherinus,1860,8,species
+1862,Chiasmodontidae,70,6,family
+1863,Dysalotus,1862,7,genus
+1864,Dysalotus alcocki,1863,8,species
+1865,Lamprogrammus,45,7,genus
+1866,Lamprogrammus niger,1865,8,species
+1867,Pangio,176,7,genus
+1868,Pangio anguillaris,1867,8,species
+1869,Rhynchocypris lagowskii,939,8,species
+1870,Tetraodon nigroviridis,837,8,species
+1871,Anguilla marmorata,492,8,species
+1872,Oryzias luzonensis,210,8,species
+1873,Ameiurus catus,689,8,species
+1874,Pseudohemiculter,33,7,genus
+1875,Pseudohemiculter dispar,1874,8,species
+1876,Phoxinus ujmonensis,559,8,species
+1877,Rhinogobio cylindricus,621,8,species
+1878,Microdevario kubotai,1552,8,species
+1879,Chrosomus eos,1249,8,species
+1880,Holacanthus ciliaris,1836,8,species
+1881,Schizopygopsis younghusbandi,1688,8,species
+1882,Scaphirhynchus suttkusi,1680,8,species
+1883,Neolissochilus,33,7,genus
+1884,Neolissochilus hexagonolepis,1883,8,species
+1885,Triplophysa rosa,377,8,species
+1886,Achiridae,179,6,family
+1887,Achirus,1886,7,genus
+1888,Achirus lineatus,1887,8,species
+1889,Epiplatys,399,7,genus
+1890,Epiplatys grahami,1889,8,species
+1891,Taractes,1441,7,genus
+1892,Taractes rubescens,1891,8,species
+1893,Gobiomorus,23,7,genus
+1894,Gobiomorus maculatus,1893,8,species
+1895,Plesiopidae,10,6,family
+1896,Trachinops,1895,7,genus
+1897,Trachinops taeniatus,1896,8,species
+1898,Cyphomyrus,1594,7,genus
+1899,Cyphomyrus discorhynchus,1898,8,species
+1900,Labeo coubie,485,8,species
+1901,Hexagrammos otakii,1240,8,species
+1902,Vanmanenia,883,7,genus
+1903,Vanmanenia stenosoma,1902,8,species
+1904,Triso,19,7,genus
+1905,Triso dermopterus,1904,8,species
+1906,Pseudobagrus trilineatus,153,8,species
+1907,Etheostoma spectabile,1600,8,species
+1908,Hippocampus sindonis,677,8,species
+1909,Rasbora aprotaenia,1279,8,species
+1910,Phoxinus steindachneri,559,8,species
+1911,Takifugu vermicularis,144,8,species
+1912,Sinibotia,319,7,genus
+1913,Sinibotia robusta,1912,8,species
+1914,Noturus,616,7,genus
+1915,Noturus taylori,1914,8,species
+1916,Atherinidae,236,6,family
+1917,Craterocephalus,1916,7,genus
+1918,Craterocephalus stramineus,1917,8,species
+1919,Rasbora trilineata,1279,8,species
+1920,Gobiobotia pappenheimi,872,8,species
+1921,Parazacco,33,7,genus
+1922,Parazacco spilurus,1921,8,species
+1923,Lactariidae,10,6,family
+1924,Lactarius,1923,7,genus
+1925,Lactarius lactarius,1924,8,species
+1926,Alectis,108,7,genus
+1927,Alectis indica,1926,8,species
+1928,Scomberomorus sierra,1514,8,species
+1929,Atherinosoma,1916,7,genus
+1930,Atherinosoma microstoma,1929,8,species
+1931,Exoglossum,33,7,genus
+1932,Exoglossum maxillingua,1931,8,species
+1933,Cryptoheros,136,7,genus
+1934,Cryptoheros cutteri,1933,8,species
+1935,Amphilophus,136,7,genus
+1936,Amphilophus citrinellus,1935,8,species
+1937,Acrossocheilus stenotaeniatus,292,8,species
+1938,Luciosoma,33,7,genus
+1939,Luciosoma bleekeri,1938,8,species
+1940,Centropyge vrolikii,88,8,species
+1941,Pangio oblonga,1867,8,species
+1942,Sinocrossocheilus,33,7,genus
+1943,Sinocrossocheilus labiatus,1942,8,species
+1944,Decapterus tabl,109,8,species
+1945,Acipenser brevirostrum,891,8,species
+1946,Bengana rendahli,785,8,species
+1947,Pampus minor,664,8,species
+1948,Ctenopharyngodon idellus x Elopichthys bambusa,247,8,species
+1949,Scolopsis,452,7,genus
+1950,Scolopsis ciliata,1949,8,species
+1951,Atractosteus tropicus,409,8,species
+1952,Sarotherodon,136,7,genus
+1953,Sarotherodon linnellii,1952,8,species
+1954,Aphyosemion cyanostictum,808,8,species
+1955,Hippocampus jayakari,677,8,species
+1956,Cyprinodontidae,398,6,family
+1957,Cyprinodon,1956,7,genus
+1958,Cyprinodon diabolis,1957,8,species
+1959,Lutjanus peru,234,8,species
+1960,Chlorurus,641,7,genus
+1961,Chlorurus sordidus,1960,8,species
+1962,Hemiculter bleekeri,713,8,species
+1963,Cyclocheilichthys,33,7,genus
+1964,Cyclocheilichthys heteronema,1963,8,species
+1965,Squalus acanthias,1742,8,species
+1966,Pseudalutarius,55,7,genus
+1967,Pseudalutarius nasicornis,1966,8,species
+1968,Cymatogaster,510,7,genus
+1969,Cymatogaster aggregata,1968,8,species
+1970,Scaphiodonichthys burmanicus,1559,8,species
+1971,Amphiprion frenatus,77,8,species
+1972,Tanichthys albonubes,1050,8,species
+1973,Puntigrus,33,7,genus
+1974,Puntigrus partipentazona,1973,8,species
+1975,Rhincodontidae,473,6,family
+1976,Rhincodon,1975,7,genus
+1977,Rhincodon typus,1976,8,species
+1978,Bathytroctes michaelsarsi,1006,8,species
+1979,Pristiformes/Rhiniformes group,39,5,order
+1980,Rhinobatidae,1979,6,family
+1981,Rhinobatos,1980,7,genus
+1982,Rhinobatos schlegelii,1981,8,species
+1983,undef Cichlidae,136,7,genus
+1984,Paraneetroplus synspilus x Amphilophus citrinellus,1983,8,species
+1985,Rhinichthys atratulus,61,8,species
+1986,Microphysogobio liaohensis,649,8,species
+1987,Opisthoproctidae,385,6,family
+1988,Bathylychnops,1987,7,genus
+1989,Bathylychnops exilis,1988,8,species
+1990,Lates japonicus,924,8,species
+1991,Engraulis ringens,193,8,species
+1992,Grammistes,19,7,genus
+1993,Grammistes sexlineatus,1992,8,species
+1994,Huigobio,33,7,genus
+1995,Huigobio chenhsienensis,1994,8,species
+1996,Ecsenius,1073,7,genus
+1997,Ecsenius bicolor,1996,8,species
+1998,Scardinius,33,7,genus
+1999,Scardinius erythrophthalmus,1998,8,species
+2000,Batrachoidiformes,5,5,order
+2001,Batrachoididae,2000,6,family
+2002,Porichthys,2001,7,genus
+2003,Porichthys myriaster,2002,8,species
+2004,Sardina,169,7,genus
+2005,Sardina pilchardus,2004,8,species
+2006,Notropis atherinoides,212,8,species
+2007,Kurtiformes,5,5,order
+2008,Apogonidae,2007,6,family
+2009,Jaydia,2008,7,genus
+2010,Jaydia lineata,2009,8,species
+2011,Parabramis,33,7,genus
+2012,Parabramis pekinensis,2011,8,species
+2013,Couesius,33,7,genus
+2014,Couesius plumbeus,2013,8,species
+2015,Telatrygon,1537,7,genus
+2016,Telatrygon zugei,2015,8,species
+2017,Hexanchus,420,7,genus
+2018,Hexanchus nakamurai,2017,8,species
+2019,Helicolenus,81,7,genus
+2020,Helicolenus hilgendorfi,2019,8,species
+2021,Oreichthys,33,7,genus
+2022,Oreichthys crenuchoides,2021,8,species
+2023,Icelus,141,7,genus
+2024,Icelus toyamensis,2023,8,species
+2025,Choerodon,641,7,genus
+2026,Choerodon schoenleinii,2025,8,species
+2027,Triplophysa tenuis,377,8,species
+2028,Ladislavia,33,7,genus
+2029,Ladislavia taczanowskii,2028,8,species
+2030,Carcharhinus obscurus,582,8,species
+2031,Zacco,33,7,genus
+2032,Zacco platypus,2031,8,species
+2033,Herzensteinia,33,7,genus
+2034,Herzensteinia microcephalus,2033,8,species
+2035,Epiplatys spilargyreius,1889,8,species
+2036,Plesiops,1895,7,genus
+2037,Plesiops nakaharae,2036,8,species
+2038,Opistognathidae,10,6,family
+2039,Opistognathus,2038,7,genus
+2040,Opistognathus jacksoniensis,2039,8,species
+2041,Branchiostegus albus,542,8,species
+2042,Tanakia limbata,1068,8,species
+2043,Ammodytidae,1823,6,family
+2044,Ammodytes,2043,7,genus
+2045,Ammodytes americanus,2044,8,species
+2046,Neohomaloptera,311,7,genus
+2047,Neohomaloptera johorensis,2046,8,species
+2048,Solea,631,7,genus
+2049,Solea ovata,2048,8,species
+2050,Paramisgurnus,176,7,genus
+2051,Paramisgurnus dabryanus,2050,8,species
+2052,Pholis nebulosa,439,8,species
+2053,Trichopodus pectoralis,758,8,species
+2054,Alburnus,33,7,genus
+2055,Alburnus istanbulensis,2054,8,species
+2056,Lutjanus rivulatus,234,8,species
+2057,Paraplagusia,547,7,genus
+2058,Paraplagusia bilineata,2057,8,species
+2059,Acrossocheilus beijiangensis,292,8,species
+2060,Conocara macropterum,1246,8,species
+2061,Rhinomuraena,685,7,genus
+2062,Rhinomuraena quaesita,2061,8,species
+2063,Galaxias platei,1126,8,species
+2064,Albuliformes,5,5,order
+2065,Albulidae,2064,6,family
+2066,Albula,2065,7,genus
+2067,Albula glossodonta,2066,8,species
+2068,Aphyosemion cognatum,808,8,species
+2069,Pachychilon,33,7,genus
+2070,Pachychilon pictum,2069,8,species
+2071,Triacanthodidae,54,6,family
+2072,Triacanthodes,2071,7,genus
+2073,Triacanthodes anomalus,2072,8,species
+2074,Hemibarbus barbus,364,8,species
+2075,Silurus soldatovi,709,8,species
+2076,Pteroplatytrygon,1537,7,genus
+2077,Pteroplatytrygon violacea,2076,8,species
+2078,Leptoclinus,832,7,genus
+2079,Leptoclinus maculatus,2078,8,species
+2080,Acipenser baerii,891,8,species
+2081,Epinephelus moara x Epinephelus tukula,139,8,species
+2082,Sicyopterus franouxi,433,8,species
+2083,Saurogobio immaculatus,565,8,species
+2084,Collichthys niveatus,958,8,species
+2085,Istiompax,187,7,genus
+2086,Istiompax indica,2085,8,species
+2087,Micropterus floridanus,1154,8,species
+2088,Hemiculter leucisculus,713,8,species
+2089,Lophiidae,63,6,family
+2090,Lophiodes,2089,7,genus
+2091,Lophiodes caulinaris,2090,8,species
+2092,Myleus sp. NM-2010,745,8,species
+2093,Brachaluteres,55,7,genus
+2094,Brachaluteres ulvarum,2093,8,species
+2095,Pholis crassispina,439,8,species
+2096,Cobitis nalbanti,177,8,species
+2097,Trachyrincus,1299,7,genus
+2098,Trachyrincus murrayi,2097,8,species
+2099,Trichiurus,297,7,genus
+2100,Trichiurus japonicus,2099,8,species
+2101,Chaetodontoplus,87,7,genus
+2102,Chaetodontoplus septentrionalis,2101,8,species
+2103,Elassoma zonatum,1543,8,species
+2104,Canthigaster rivulata,527,8,species
+2105,Brevoortia,169,7,genus
+2106,Brevoortia tyrannus,2105,8,species
+2107,Gonostomatidae,1401,6,family
+2108,Sigmops,2107,7,genus
+2109,Sigmops gracilis,2108,8,species
+2110,Tinca,33,7,genus
+2111,Tinca tinca,2110,8,species
+2112,Henicorhynchus,33,7,genus
+2113,Henicorhynchus lineatus,2112,8,species
+2114,Callorhinchidae,1281,6,family
+2115,Callorhinchus,2114,7,genus
+2116,Callorhinchus callorynchus,2115,8,species
+2117,Lampetra appendix,1202,8,species
+2118,Varicorhinus,33,7,genus
+2119,Varicorhinus maroccanus,2118,8,species
+2120,Clupeoides,169,7,genus
+2121,Clupeoides borneensis,2120,8,species
+2122,Pseudobrama,33,7,genus
+2123,Pseudobrama simoni,2122,8,species
+2124,Coregonus clupeaformis,502,8,species
+2125,Oreosomatidae,411,6,family
+2126,Allocyttus,2125,7,genus
+2127,Allocyttus niger,2126,8,species
+2128,Opsariichthys acutipinnis,74,8,species
+2129,Hippocampus kelloggi,677,8,species
+2130,Tridentiger obscurus,1289,8,species
+2131,Champsocephalus,791,7,genus
+2132,Champsocephalus gunnari,2131,8,species
+2133,Pomatomidae,70,6,family
+2134,Pomatomus,2133,7,genus
+2135,Pomatomus saltatrix,2134,8,species
+2136,Parapristipoma,1076,7,genus
+2137,Parapristipoma trilineatum,2136,8,species
+2138,Acheilognathus macropterus,256,8,species
+2139,Oreochromis macrochir,183,8,species
+2140,Odontobutis sinensis,59,8,species
+2141,Nibea miichthioides,520,8,species
+2142,Callorhinchus milii,2115,8,species
+2143,Amphiprion bicinctus,77,8,species
+2144,Cirrhinus mrigala x Labeo rohita,247,8,species
+2145,Lutjanus bengalensis,234,8,species
+2146,Pervagor,55,7,genus
+2147,Pervagor janthinosoma,2146,8,species
+2148,Acrossocheilus yunnanensis,292,8,species
+2149,Sahyadria denisonii,1473,8,species
+2150,Pterocryptis,708,7,genus
+2151,Pterocryptis cochinchinensis,2150,8,species
+2152,Bajacalifornia,428,7,genus
+2153,Bajacalifornia megalops,2152,8,species
+2154,Iksookimia,176,7,genus
+2155,Iksookimia longicorpa,2154,8,species
+2156,Pseudotropheus,136,7,genus
+2157,Pseudotropheus crabro,2156,8,species
+2158,Micronemacheilus,15,7,genus
+2159,Micronemacheilus cruciatus,2158,8,species
+2160,Schizopygopsis thermalis,1688,8,species
+2161,Spinachia,240,7,genus
+2162,Spinachia spinachia,2161,8,species
+2163,Poropuntius,33,7,genus
+2164,Poropuntius normani,2163,8,species
+2165,Alburnus tarichi,2054,8,species
+2166,Coregonus artedi,502,8,species
+2167,Amphiprion sebae,77,8,species
+2168,Hypomesus olidus,1787,8,species
+2169,Scriptaphyosemion cauveti,400,8,species
+2170,Dipnoi,4,4,class
+2171,Ceratodontiformes,2170,5,order
+2172,Ceratodontidae,2171,6,family
+2173,Neoceratodus,2172,7,genus
+2174,Neoceratodus forsteri,2173,8,species
+2175,Atule,108,7,genus
+2176,Atule mate,2175,8,species
+2177,Odacidae,640,6,family
+2178,Olisthops,2177,7,genus
+2179,Olisthops cyanomelas,2178,8,species
+2180,Garra kempi,1200,8,species
+2181,Pomoxis,984,7,genus
+2182,Pomoxis nigromaculatus,2181,8,species
+2183,Carinotetraodon travancoricus,1265,8,species
+2184,Anguilla megastoma,492,8,species
+2185,Latimeria chalumnae,1485,8,species
+2186,Coregonus lavaretus,502,8,species
+2187,Epinephelus fuscoguttatus,139,8,species
+2188,Huso huso,1070,8,species
+2189,Mobula japanica,1556,8,species
+2190,Paratrypauchen,266,7,genus
+2191,Paratrypauchen microcephalus,2190,8,species
+2192,Chaetodon auripes,778,8,species
+2193,Cobitis striata,177,8,species
+2194,Hemitrygon,1537,7,genus
+2195,Dasyatis akajei,2194,8,species
+2196,Anguilla rostrata,492,8,species
+2197,Homatula variegata,1297,8,species
+2198,Schizopyge,33,7,genus
+2199,Schizopyge dolichonema,2198,8,species
+2200,Ambassidae,10,6,family
+2201,Ambassis,2200,7,genus
+2202,Ambassis gymnocephalus,2201,8,species
+2203,Oedalechilus,116,7,genus
+2204,Oedalechilus labeo,2203,8,species
+2205,Odontesthes,1032,7,genus
+2206,Odontesthes sp. Odsp-001,2205,8,species
+2207,Liobagrus kingi,103,8,species
+2208,Hasemania,132,7,genus
+2209,Hasemania nana,2208,8,species
+2210,Gymnocanthus,141,7,genus
+2211,Gymnocanthus herzensteini,2210,8,species
+2212,Cyprinella,33,7,genus
+2213,Cyprinella galactura,2212,8,species
+2214,Squalomugil,116,7,genus
+2215,Squalomugil nasutus,2214,8,species
+2216,Parakneria,395,7,genus
+2217,Parakneria cameronensis,2216,8,species
+2218,Neolissochilus stracheyi,1883,8,species
+2219,Labeo batesii,485,8,species
+2220,Silurus microdorsalis,709,8,species
+2221,Triplophysa xichangensis,377,8,species
+2222,Sewellia,883,7,genus
+2223,Sewellia albisuera,2222,8,species
+2224,Beryx decadactylus,1339,8,species
+2225,Auchenipteridae,101,6,family
+2226,Duringlanis,2225,7,genus
+2227,Duringlanis perugiae,2226,8,species
+2228,Miichthys,36,7,genus
+2229,Miichthys miiuy,2228,8,species
+2230,Glyphis siamensis,362,8,species
+2231,Barbatula barbatula,79,8,species
+2232,Amarsipidae,70,6,family
+2233,Amarsipus,2232,7,genus
+2234,Amarsipus carlsbergi,2233,8,species
+2235,Ditrema,510,7,genus
+2236,Ditrema temminckii,2235,8,species
+2237,Rhodeus notatus,666,8,species
+2238,Megalobrama skolokovii x Megalobrama amblycephala,515,8,species
+2239,Amblypharyngodon,33,7,genus
+2240,Amblypharyngodon mola,2239,8,species
+2241,Clupea,169,7,genus
+2242,Clupea pallasii,2241,8,species
+2243,Oostethus brachyurus,1572,8,species
+2244,Prochilodus vimboides,576,8,species
+2245,Cirrhinus,33,7,genus
+2246,Cirrhinus mrigala,2245,8,species
+2247,Cyprinion,33,7,genus
+2248,Cyprinion semiplotum,2247,8,species
+2249,Gadus chalcogrammus,1237,8,species
+2250,Serrivomeridae,94,6,family
+2251,Serrivomer,2250,7,genus
+2252,Serrivomer beanii,2251,8,species
+2253,Beryx splendens,1339,8,species
+2254,Dionda,33,7,genus
+2255,Dionda episcopa,2254,8,species
+2256,Sillago indica,919,8,species
+2257,Eurypharyngidae,94,6,family
+2258,Eurypharynx,2257,7,genus
+2259,Eurypharynx pelecanoides,2258,8,species
+2260,Pomacanthus,87,7,genus
+2261,Pomacanthus imperator,2260,8,species
+2262,Lobocheilos,33,7,genus
+2263,Lobocheilos melanotaenia,2262,8,species
+2264,Hippocampus barbouri,677,8,species
+2265,Osteochilus,33,7,genus
+2266,Osteochilus hasseltii,2265,8,species
+2267,Electrona,1139,7,genus
+2268,Electrona carlsbergi,2267,8,species
+2269,Pampus punctatissimus,664,8,species
+2270,Champsodontidae,567,6,family
+2271,Champsodon,2270,7,genus
+2272,Champsodon cf. snyderi CBM-ZF 10876,2271,8,species
+2273,Conger myriaster,1716,8,species
+2274,Onychostoma barbatum,644,8,species
+2275,Scomberomorus niphonius,1514,8,species
+2276,Cottus volki,604,8,species
+2277,Kyphosus,1470,7,genus
+2278,Kyphosus cinerascens,2277,8,species
+2279,Clarias sp. NM-2010,975,8,species
+2280,Pleurogrammus,1239,7,genus
+2281,Pleurogrammus azonus,2280,8,species
+2282,Lepomis punctatus,1205,8,species
+2283,Aphyosemion cameronense,808,8,species
+2284,Amiiformes,5,5,order
+2285,Amiidae,2284,6,family
+2286,Amia,2285,7,genus
+2287,Amia calva,2286,8,species
+2288,Sinocyclocheilus altishoulderus,348,8,species
+2289,Xiphophorus hellerii,1631,8,species
+2290,Nicholsicypris,33,7,genus
+2291,Nicholsicypris normalis,2290,8,species
+2292,Sawbwa,33,7,genus
+2293,Sawbwa resplendens,2292,8,species
+2294,Chilodontidae,6,6,family
+2295,Chilodus,2294,7,genus
+2296,Chilodus punctatus,2295,8,species
+2297,Echeneidae,107,6,family
+2298,Echeneis,2297,7,genus
+2299,Echeneis naucrates,2298,8,species
+2300,Caranx,108,7,genus
+2301,Caranx tille,2300,8,species
+2302,Chelidonichthys,1254,7,genus
+2303,Chelidonichthys kumu,2302,8,species
+2304,Henicorhynchus siamensis,2112,8,species
+2305,Helicolenus avius,2019,8,species
+2306,Melamphaidae,415,6,family
+2307,Poromitra,2306,7,genus
+2308,Poromitra oscitans,2307,8,species
+2309,Maulisia,355,7,genus
+2310,Maulisia mauli,2309,8,species
+2311,Ceratiidae,63,6,family
+2312,Ceratias,2311,7,genus
+2313,Ceratias uranoscopus,2312,8,species
+2314,Gymnothorax minor,686,8,species
+2315,Arius,1569,7,genus
+2316,Arius maculatus,2315,8,species
+2317,Lutjanus vitta,234,8,species
+2318,Metzia formosae,1321,8,species
+2319,Erimystax,33,7,genus
+2320,Erimystax dissimilis,2319,8,species
+2321,Garra orientalis,1200,8,species
+2322,Takifugu fasciatus,144,8,species
+2323,Lagocephalus sceleratus,787,8,species
+2324,Barbatula nuda,79,8,species
+2325,Diptychus,33,7,genus
+2326,Diptychus maculatus,2325,8,species
+2327,Microphysogobio rapidus,649,8,species
+2328,Cyprinella leedsi,2212,8,species
+2329,Hemiculter eigenmanni,713,8,species
+2330,Mitsukurinidae,700,6,family
+2331,Mitsukurina,2330,7,genus
+2332,Mitsukurina owstoni,2331,8,species
+2333,Tetraodon miurus,837,8,species
+2334,Hyporthodus octofasciatus,781,8,species
+2335,undef Bagridae,152,7,genus
+2336,Leiocassis longirostris x Tachysurus fulvidraco,2335,8,species
+2337,Lutjanus johnii,234,8,species
+2338,Siniperca knerii x Siniperca chuatsi,225,8,species
+2339,Sarcocheilichthys parvus,606,8,species
+2340,Sicyopterus eudentatus,433,8,species
+2341,Procetichthys,416,7,genus
+2342,Procetichthys kreffti,2341,8,species
+2343,Elopiformes,5,5,order
+2344,Megalopidae,2343,6,family
+2345,Megalops,2344,7,genus
+2346,Megalops atlanticus,2345,8,species
+2347,Acipenser schrenckii,891,8,species
+2348,Acrossocheilus fasciatus,292,8,species
+2349,Caesio,233,7,genus
+2350,Caesio cuning,2349,8,species
+2351,Rita,152,7,genus
+2352,Rita rita,2351,8,species
+2353,Phoxinus semotilus,559,8,species
+2354,Microphysogobio brevirostris,649,8,species
+2355,Leuciscus oxyrrhis,1170,8,species
+2356,Chlamydoselachidae,419,6,family
+2357,Chlamydoselachus,2356,7,genus
+2358,Chlamydoselachus anguineus,2357,8,species
+2359,Tarimichthys,15,7,genus
+2360,Tarimichthys bombifrons,2359,8,species
+2361,Thymallus yaluensis,92,8,species
+2362,Lepomis auritus,1205,8,species
+2363,Paramormyrops,1594,7,genus
+2364,Paramormyrops gabonensis,2363,8,species
+2365,Epinephelus trimaculatus,139,8,species
+2366,Biwia,33,7,genus
+2367,Biwia springeri,2366,8,species
+2368,Polypterus,1430,7,genus
+2369,Polypterus palmas,2368,8,species
+2370,Ventrifossa,1299,7,genus
+2371,Ventrifossa garmani,2370,8,species
+2372,Systomus,33,7,genus
+2373,Systomus orphoides,2372,8,species
+2374,Lagocephalus laevigatus,787,8,species
+2375,Astyanax giton,375,8,species
+2376,Poeciliopsis,1099,7,genus
+2377,Poeciliopsis occidentalis,2376,8,species
+2378,Eleotris klunzingerii,893,8,species
+2379,Cyclocheilichthys enoplos,1963,8,species
+2380,Squaliobarbus,33,7,genus
+2381,Squaliobarbus curriculus,2380,8,species
+2382,Morone,345,7,genus
+2383,Morone americana,2382,8,species
+2384,Barbodes,33,7,genus
+2385,Barbodes binotatus,2384,8,species
+2386,Pseudaesopia,631,7,genus
+2387,Pseudaesopia japonica,2386,8,species
+2388,Trachichthyidae,1150,6,family
+2389,Hoplostethus,2388,7,genus
+2390,Hoplostethus japonicus,2389,8,species
+2391,Ostraciidae,54,6,family
+2392,Ostracion,2391,7,genus
+2393,Ostracion immaculatus,2392,8,species
+2394,Cynoglossus itinus,548,8,species
+2395,Rasbora steineri,1279,8,species
+2396,Pangio cf. anguillaris CBM ZF 11605,1867,8,species
+2397,Percina macrolepida,1019,8,species
+2398,Amblyglyphidodon,76,7,genus
+2399,Amblyglyphidodon curacao,2398,8,species
+2400,Verasper variegatus,865,8,species
+2401,Synodus,1377,7,genus
+2402,Synodus variegatus,2401,8,species
+2403,Carassius auratus x Cyprinus carpio x Carassius cuvieri,247,8,species
+2404,Tridentiger bifasciatus,1289,8,species
+2405,Ogcocephalidae,63,6,family
+2406,Coelophrys,2405,7,genus
+2407,Coelophrys brevicaudata,2406,8,species
+2408,Sardinella albella,662,8,species
+2409,Retroculus,136,7,genus
+2410,Retroculus lapidifer,2409,8,species
+2411,Schizopyge nukiangensis,2198,8,species
+2412,Enteromius,33,7,genus
+2413,Enteromius trimaculatus,2412,8,species
+2414,Elopidae,2343,6,family
+2415,Elops,2414,7,genus
+2416,Elops hawaiensis,2415,8,species
+2417,Protosalanx,1521,7,genus
+2418,Protosalanx chinensis,2417,8,species
+2419,Megalops cyprinoides,2345,8,species
+2420,Gastromyzon,883,7,genus
+2421,Gastromyzon scitulus,2420,8,species
+2422,Cantherhines,55,7,genus
+2423,Cantherhines pardalis,2422,8,species
+2424,Polypterus endlicherii,2368,8,species
+2425,Nelusetta,55,7,genus
+2426,Nelusetta ayraudi,2425,8,species
+2427,Galaxias truttaceus,1126,8,species
+2428,Oplegnathus punctatus,270,8,species
+2429,Moridae,494,6,family
+2430,Physiculus,2429,7,genus
+2431,Physiculus japonicus,2430,8,species
+2432,Polypterus ansorgii,2368,8,species
+2433,Arnoglossus,1002,7,genus
+2434,Arnoglossus polyspilus,2433,8,species
+2435,Erilepis,623,7,genus
+2436,Erilepis zonifer,2435,8,species
+2437,Pagellus bogaraveo,729,8,species
+2438,Procypris mera,1809,8,species
+2439,Carangoides,108,7,genus
+2440,Carangoides malabaricus,2439,8,species
+2441,Salvelinus fontinalis,315,8,species
+2442,Homalosoma,311,7,genus
+2443,Homalosoma hainanensis,2442,8,species
+2444,Glossogobius olivaceus,279,8,species
+2445,Bodianus,641,7,genus
+2446,Bodianus oxycephalus,2445,8,species
+2447,Aphredoderidae,1499,6,family
+2448,Aphredoderus,2447,7,genus
+2449,Aphredoderus sayanus,2448,8,species
+2450,Oxyurichthys,266,7,genus
+2451,Oxyurichthys formosanus,2450,8,species
+2452,Hemibagrus wyckioides,1670,8,species
+2453,Scatophagus,1172,7,genus
+2454,Scatophagus argus,2453,8,species
+2455,Kurtidae,2007,6,family
+2456,Kurtus,2455,7,genus
+2457,Kurtus gulliveri,2456,8,species
+2458,Ruvettus,1438,7,genus
+2459,Ruvettus pretiosus,2458,8,species
+2460,Hemibarbus medius,364,8,species
+2461,Hippocampus capensis,677,8,species
+2462,Petrocephalus,1594,7,genus
+2463,Petrocephalus soudanensis,2462,8,species
+2464,Scaphognathops,33,7,genus
+2465,Scaphognathops bandanensis,2464,8,species
+2466,Sicyopterus cynocephalus,433,8,species
+2467,Myoxocephalus,141,7,genus
+2468,Myoxocephalus scorpius,2467,8,species
+2469,Semotilus,33,7,genus
+2470,Semotilus atromaculatus,2469,8,species
+2471,Nothobranchius virgatus,839,8,species
+2472,Pavoraja,382,7,genus
+2473,Pavoraja nitida,2472,8,species
+2474,Triplophysa wuweiensis,377,8,species
+2475,Marilyna,67,7,genus
+2476,Marilyna darwinii,2475,8,species
+2477,Chionodraco,791,7,genus
+2478,Chionodraco hamatus,2477,8,species
+2479,Ehirava,169,7,genus
+2480,Ehirava fluviatilis,2479,8,species
+2481,Thymallus brevirostris,92,8,species
+2482,Macrorhamphosodes,2071,7,genus
+2483,Macrorhamphosodes uradoi,2482,8,species
+2484,Uranoscopus cognatus,1825,8,species
+2485,Acantopsis,176,7,genus
+2486,Acantopsis choirorhynchos,2485,8,species
+2487,Anchoviella,192,7,genus
+2488,Anchoviella sp. LBP 2297,2487,8,species
+2489,Tachysurus eupogon,1413,8,species
+2490,Cephalopholis boenak,1142,8,species
+2491,Myctophum,1139,7,genus
+2492,Myctophum affine,2491,8,species
+2493,Nemipterus bathybius,453,8,species
+2494,Scaphirhynchus albus,1680,8,species
+2495,Sinocyclocheilus anshuiensis,348,8,species
+2496,Doederleinia,1612,7,genus
+2497,Doederleinia berycoides,2496,8,species
+2498,Hoplichthyidae,18,6,family
+2499,Hoplichthys,2498,7,genus
+2500,Hoplichthys gilberti,2499,8,species
+2501,Scleropages,587,7,genus
+2502,Scleropages jardinii,2501,8,species
+2503,Melanotaenia splendida,1463,8,species
+2504,Enteromius eburneensis,2412,8,species
+2505,Anguilla interioris,492,8,species
+2506,Pseudobagrus albomarginatus,153,8,species
+2507,Himantura microphthalma,1695,8,species
+2508,Gobiobotia brevibarba,872,8,species
+2509,Chanodichthys,33,7,genus
+2510,Chanodichthys ilishaeformis,2509,8,species
+2511,Pareuchiloglanis longicauda,755,8,species
+2512,Taractichthys,1441,7,genus
+2513,Taractichthys steindachneri,2512,8,species
+2514,Pterophyllum,136,7,genus
+2515,Pterophyllum altum,2514,8,species
+2516,Himantura dalyensis,1695,8,species
+2517,Odontaspididae,700,6,family
+2518,Carcharias,2517,7,genus
+2519,Carcharias taurus,2518,8,species
+2520,Elopichthys,33,7,genus
+2521,Elopichthys bambusa,2520,8,species
+2522,Leiodon,67,7,genus
+2523,Leiodon cutcutia,2522,8,species
+2524,Nematalosa nasus,1367,8,species
+2525,Sinocyclocheilus bicornutus,348,8,species
+2526,Jordanella,1956,7,genus
+2527,Jordanella floridae,2526,8,species
+2528,Xenocypris yunnanensis,1477,8,species
+2529,Monacoa,1987,7,genus
+2530,Monacoa grimaldii,2529,8,species
+2531,Copadichromis mloto,358,8,species
+2532,Leiognathidae,458,6,family
+2533,Gazza,2532,7,genus
+2534,Gazza minuta,2533,8,species
+2535,Notacanthidae,448,6,family
+2536,Polyacanthonotus,2535,7,genus
+2537,Polyacanthonotus rissoanus,2536,8,species
+2538,Tachysurus tokiensis,1413,8,species
+2539,Pundamilia,136,7,genus
+2540,Pundamilia nyererei,2539,8,species
+2541,Ataxolepis,416,7,genus
+2542,Ataxolepis apus,2541,8,species
+2543,Pardachirus,631,7,genus
+2544,Pardachirus pavoninus,2543,8,species
+2545,Holacanthus tricolor,1836,8,species
+2546,Rexea,1438,7,genus
+2547,Rexea solandri,2546,8,species
+2548,Microphysogobio alticorpus,649,8,species
+2549,Tachysurus fulvidraco,1413,8,species
+2550,Tanakia tanago,1068,8,species
+2551,Zenionidae,411,6,family
+2552,Zenion,2551,7,genus
+2553,Zenion japonicum,2552,8,species
+2554,Ariommatidae,70,6,family
+2555,Ariomma,2554,7,genus
+2556,Ariomma lurida,2555,8,species
+2557,Labeo dussumieri,485,8,species
+2558,Mastacembelus,736,7,genus
+2559,Mastacembelus erythrotaenia,2558,8,species
+2560,Polypterus delhezi,2368,8,species
+2561,Pterophyllum scalare,2514,8,species
+2562,Balistoides,98,7,genus
+2563,Balistoides conspicillum,2562,8,species
+2564,Koreocobitis,176,7,genus
+2565,Koreocobitis naktongensis,2564,8,species
+2566,Thryssa vitrirostris,789,8,species
+2567,Genicanthus bellus,1027,8,species
+2568,Alepocephalus,428,7,genus
+2569,Alepocephalus umbriceps,2568,8,species
+2570,Anyperodon,19,7,genus
+2571,Anyperodon leucogrammicus,2570,8,species
+2572,Dimidiochromis,136,7,genus
+2573,Dimidiochromis kiwinge,2572,8,species
+2574,Etheostoma caeruleum,1600,8,species
+2575,Opsariichthys pachycephalus,74,8,species
+2576,Clupeichthys goniognathus,799,8,species
+2577,Bathyprion,428,7,genus
+2578,Bathyprion danae,2577,8,species
+2579,Scleropages formosus,2501,8,species
+2580,Lefua nikkonis,1626,8,species
+2581,Mastacembelus armatus,2558,8,species
+2582,Sinogastromyzon,311,7,genus
+2583,Sinogastromyzon puliensis,2582,8,species
+2584,Kraemeriidae,22,6,family
+2585,Kraemeria,2584,7,genus
+2586,Kraemeria cunicularia,2585,8,species
+2587,Polypterus retropinnis,2368,8,species
+2588,Indostomidae,735,6,family
+2589,Indostomus,2588,7,genus
+2590,Indostomus paradoxus,2589,8,species
+2591,Gadus morhua,1237,8,species
+2592,Poropuntius bantamensis,2163,8,species
+2593,Lagocephalus suezensis,787,8,species
+2594,Ilisha africana,774,8,species
+2595,Paraconger,173,7,genus
+2596,Paraconger notialis,2595,8,species
+2597,Acheilognathus omeiensis,256,8,species
+2598,Labeo senegalensis,485,8,species
+2599,Rhinogobius similis,1209,8,species
+2600,Onychostoma alticorpus,644,8,species
+2601,Craterocephalus eyresii,1917,8,species
+2602,Cyclopteridae,18,6,family
+2603,Aptocyclus,2602,7,genus
+2604,Aptocyclus ventricosus,2603,8,species
+2605,Tuberoschistura,15,7,genus
+2606,Tuberoschistura baenzigeri,2605,8,species
+2607,Prosopium cylindraceum,1524,8,species
+2608,Epinephelus akaara,139,8,species
+2609,Parajulis,641,7,genus
+2610,Parajulis poecilepterus,2609,8,species
+2611,Garra congoensis,1200,8,species
+2612,Cheilopogon arcticeps,651,8,species
+2613,Niwaella,176,7,genus
+2614,Niwaella delicata,2613,8,species
+2615,Megalaspis,108,7,genus
+2616,Megalaspis cordyla,2615,8,species
+2617,Hippocampus abdominalis,677,8,species
+2618,Ambastaia,319,7,genus
+2619,Ambastaia sidthimunki,2618,8,species
+2620,Synanceiidae,18,6,family
+2621,Synanceia,2620,7,genus
+2622,Synanceia verrucosa,2621,8,species
+2623,Anarhichadidae,18,6,family
+2624,Anarhichas,2623,7,genus
+2625,Anarhichas denticulatus,2624,8,species
+2626,Garra poecilura,1200,8,species
+2627,Enteromius hulstaerti,2412,8,species
+2628,Minimugil,116,7,genus
+2629,Minimugil cascasia,2628,8,species
+2630,Solea senegalensis,2048,8,species
+2631,Callionymus,445,7,genus
+2632,Callionymus enneactis,2631,8,species
+2633,Scomberomorus munroi x Scomberomorus semifasciatus,1514,8,species
+2634,Chionodraco rastrospinosus,2477,8,species
+2635,Alepocephalus bicolor,2568,8,species
+2636,Lates niloticus,924,8,species
+2637,Cyprinodon rubrofluviatilis,1957,8,species
+2638,Salvelinus alpinus,315,8,species
+2639,Moxostoma,30,7,genus
+2640,Moxostoma poecilurum,2639,8,species
+2641,Hypselecara,136,7,genus
+2642,Hypselecara temporalis,2641,8,species
+2643,Sicyopterus marquesensis,433,8,species
+2644,Citharidae,179,6,family
+2645,Citharoides,2644,7,genus
+2646,Citharoides macrolepidotus,2645,8,species
+2647,Labeo cyclorhynchus,485,8,species
+2648,Scolopsis vosmeri,1949,8,species
+2649,Ageneiosus,2225,7,genus
+2650,Ageneiosus pardalis,2649,8,species
+2651,Harengula,169,7,genus
+2652,Harengula jaguana,2651,8,species
+2653,Carassius gibelio,1177,8,species
+2654,Netuma,1569,7,genus
+2655,Netuma thalassina,2654,8,species
+2656,Onychostoma barbatulum,644,8,species
+2657,Rhinochimaeridae,1281,6,family
+2658,Rhinochimaera,2657,7,genus
+2659,Rhinochimaera pacifica,2658,8,species
+2660,Gerreiformes,5,5,order
+2661,Gerreidae,2660,6,family
+2662,Gerres,2661,7,genus
+2663,Gerres filamentosus,2662,8,species
+2664,Schizothorax curvilabiatus,119,8,species
+2665,Pterocaesio,233,7,genus
+2666,Pterocaesio tile,2665,8,species
+2667,Takifugu fasciatus x Takifugu flavidus,144,8,species
+2668,Rhodeus sinensis,666,8,species
+2669,Terapon,654,7,genus
+2670,Terapon jarbua,2669,8,species
+2671,Mulloidichthys,425,7,genus
+2672,Mulloidichthys vanicolensis,2671,8,species
+2673,Emmelichthyidae,10,6,family
+2674,Emmelichthys,2673,7,genus
+2675,Emmelichthys struhsakeri,2674,8,species
+2676,Dorosoma,169,7,genus
+2677,Dorosoma petenense,2676,8,species
+2678,Mystus vittatus,464,8,species
+2679,Cheilodactylus zonatus,339,8,species
+2680,Ostichthys,1423,7,genus
+2681,Ostichthys japonicus,2680,8,species
+2682,Ephippiformes,5,5,order
+2683,Ephippidae,2682,6,family
+2684,Ephippus,2683,7,genus
+2685,Ephippus orbis,2684,8,species
+2686,Mobula eregoodootenkee,1556,8,species
+2687,Sebastes steindachneri,253,8,species
+2688,Anguilla bengalensis,492,8,species
+2689,Carcharhinus plumbeus,582,8,species
+2690,Minytrema,30,7,genus
+2691,Minytrema melanops,2690,8,species
+2692,Sillago aeolus,919,8,species
+2693,Otolithes,36,7,genus
+2694,Otolithes ruber,2693,8,species
+2695,Squalius cephalus,611,8,species
+2696,Rasbora daniconius,1279,8,species
+2697,Albulichthys,33,7,genus
+2698,Albulichthys albuloides,2697,8,species
+2699,Danio margaritatus,1044,8,species
+2700,Platygobio,33,7,genus
+2701,Platygobio gracilis,2700,8,species
+2702,Thymallus grubii,92,8,species
+2703,Cyprinus carpio wuyuanensis x Carassius auratus,247,8,species
+2704,Brevimyrus,1594,7,genus
+2705,Brevimyrus niger,2704,8,species
+2706,Prochilodus argenteus,576,8,species
+2707,Lamna ditropis,817,8,species
+2708,Sinibrama,33,7,genus
+2709,Sinibrama macrops,2708,8,species
+2710,Culter,33,7,genus
+2711,Culter alburnus,2710,8,species
+2712,Hexagrammos lagocephalus,1240,8,species
+2713,Macrochirichthys,33,7,genus
+2714,Macrochirichthys macrochirus,2713,8,species
+2715,Pseudoplatystoma magdaleniatum,150,8,species
+2716,Acrossocheilus iridescens,292,8,species
+2717,Istiophorus platypterus,260,8,species
+2718,Macropodus opercularis,1052,8,species
+2719,Odontobutis haifengensis,59,8,species
+2720,Aplocheilus,971,7,genus
+2721,Aplocheilus panchax,2720,8,species
+2722,Anguilla luzonensis,492,8,species
+2723,Hirundichthys,203,7,genus
+2724,Hirundichthys rondeletii,2723,8,species
+2725,Lepidoblepharon,2644,7,genus
+2726,Lepidoblepharon ophthalmolepis,2725,8,species
+2727,Schizopyge niger,2198,8,species
+2728,Kentrocapros,1727,7,genus
+2729,Kentrocapros aculeatus,2728,8,species
+2730,Cyprinodon tularosa,1957,8,species
+2731,Heptranchias,420,7,genus
+2732,Heptranchias perlo,2731,8,species
+2733,Abbottina,33,7,genus
+2734,Abbottina rivularis,2733,8,species
+2735,Herwigia,428,7,genus
+2736,Herwigia kreffti,2735,8,species
+2737,Stemonidium,2250,7,genus
+2738,Stemonidium hypomelas,2737,8,species
+2739,Planiliza,116,7,genus
+2740,Planiliza haematocheilus,2739,8,species
+2741,Macquaria,286,7,genus
+2742,Macquaria ambigua,2741,8,species
+2743,Lethrinus laticaudis,273,8,species
+2744,Triplophysa stoliczkai,377,8,species
+2745,Pomacanthus xanthometopon,2260,8,species
+2746,Fundulus diaphanus,1620,8,species
+2747,Gymnosarda,84,7,genus
+2748,Gymnosarda unicolor,2747,8,species
+2749,Takifugu rubripes,144,8,species
+2750,Eutaeniophorus,416,7,genus
+2751,Eutaeniophorus festivus,2750,8,species
+2752,Trematocranus,136,7,genus
+2753,Trematocranus placodon,2752,8,species
+2754,Cirrhinus molitorella,2245,8,species
+2755,Canthigaster valentini,527,8,species
+2756,Siganus vulpinus,1022,8,species
+2757,Mobula thurstoni,1556,8,species
+2758,Sicyopterus japonicus,433,8,species
+2759,Dendrophysa,36,7,genus
+2760,Dendrophysa russelii,2759,8,species
+2761,Thymallus arcticus,92,8,species
+2762,Mesocottus,141,7,genus
+2763,Mesocottus haitej,2762,8,species
+2764,Sicyopterus squamosissimus,433,8,species
+2765,Cheilopogon pinnatibarbatus,651,8,species
+2766,Rastrelliger,84,7,genus
+2767,Rastrelliger kanagurta,2766,8,species
+2768,undef Serranidae,19,7,genus
+2769,Serranidae sp. JL-2015,2768,8,species
+2770,Nemachilichthys,15,7,genus
+2771,Nemachilichthys rueppelli,2770,8,species
+2772,Nemichthys,95,7,genus
+2773,Nemichthys scolopaceus,2772,8,species
+2774,Salmostoma,33,7,genus
+2775,Salmostoma bacalia,2774,8,species
+2776,Oryzias dancena,210,8,species
+2777,Limanda,227,7,genus
+2778,Limanda aspera,2777,8,species
+2779,Stiphodon,266,7,genus
+2780,Stiphodon alcedo,2779,8,species
+2781,Scomberomorus semifasciatus,1514,8,species
+2782,Jinshaia,311,7,genus
+2783,Jinshaia sinensis,2782,8,species
+2784,Trichopodus trichopterus,758,8,species
+2785,Evoxymetopon,297,7,genus
+2786,Evoxymetopon poeyi,2785,8,species
+2787,Caulophrynidae,63,6,family
+2788,Caulophryne,2787,7,genus
+2789,Caulophryne jordani,2788,8,species
+2790,Chlopsidae,94,6,family
+2791,Robinsia,2790,7,genus
+2792,Robinsia catherinae,2791,8,species
+2793,Salvelinus namaycush,315,8,species
+2794,Thynnichthys,33,7,genus
+2795,Thynnichthys polylepis,2794,8,species
+2796,Lefua echigonia,1626,8,species
+2797,Oxygymnocypris,33,7,genus
+2798,Oxygymnocypris stewartii,2797,8,species
+2799,Hemipristis,517,7,genus
+2800,Hemipristis elongata,2799,8,species
+2801,Curimatidae,6,6,family
+2802,Curimata,2801,7,genus
+2803,Curimata mivartii,2802,8,species
+2804,Coilia mystus,1775,8,species
+2805,Sarotherodon lohbergeri,1952,8,species
+2806,Centropyge nox,88,8,species
+2807,Romanogobio,33,7,genus
+2808,Romanogobio tenuicorpus,2807,8,species
+2809,Liobagrus marginatus,103,8,species
+2810,Acestrorhynchidae,6,6,family
+2811,Acestrorhynchus,2810,7,genus
+2812,Acestrorhynchus sp. NM-2010,2811,8,species
+2813,Alepocephalus tenebrosus,2568,8,species
+2814,Bovichtidae,18,6,family
+2815,Bovichtus,2814,7,genus
+2816,Bovichtus argentinus,2815,8,species
+2817,Parachanna,488,7,genus
+2818,Parachanna insignis,2817,8,species
+2819,Chitala blanci,929,8,species
+2820,Siganus puellus,1022,8,species
+2821,Glyptothorax granosus,1418,8,species
+2822,Premnas,76,7,genus
+2823,Premnas biaculeatus,2822,8,species
+2824,Dorosoma cepedianum,2676,8,species
+2825,Aphyosemion australe,808,8,species
+2826,Escualosa,169,7,genus
+2827,Escualosa thoracata,2826,8,species
+2828,Schistura kaysonei,258,8,species
+2829,Stomatepia,136,7,genus
+2830,Stomatepia pindu,2829,8,species
+2831,Sebastes hubbsi,253,8,species
+2832,Cyprinodon variegatus,1957,8,species
+2833,Gnathopogon imberbis,471,8,species
+2834,Himantolophidae,63,6,family
+2835,Himantolophus,2834,7,genus
+2836,Himantolophus groenlandicus,2835,8,species
+2837,Glyptothorax annandalei,1418,8,species
+2838,Leptobarbus,33,7,genus
+2839,Leptobarbus hoevenii,2838,8,species
+2840,Triphoturus,1139,7,genus
+2841,Triphoturus mexicanus,2840,8,species
+2842,Cephalopholis sexmaculata,1142,8,species
+2843,Cololabis,1766,7,genus
+2844,Cololabis saira,2843,8,species
+2845,Clarias dussumieri,975,8,species
+2846,Plesiomyzon,883,7,genus
+2847,Plesiomyzon baotingensis,2846,8,species
+2848,Pseudobagrus brevicaudatus,153,8,species
+2849,Menidia,1032,7,genus
+2850,Menidia menidia,2849,8,species
+2851,Galaxias maculatus,1126,8,species
+2852,Ictiobus bubalus,31,8,species
+2853,Comephorus,141,7,genus
+2854,Comephorus dybowskii,2853,8,species
+2855,Chrysiptera,76,7,genus
+2856,Chrysiptera biocellata,2855,8,species
+2857,Pseudopleuronectes,227,7,genus
+2858,Pseudopleuronectes yokohamae,2857,8,species
+2859,Plectropomus,19,7,genus
+2860,Plectropomus leopardus,2859,8,species
+2861,Cyclopsetta,1749,7,genus
+2862,Cyclopsetta fimbriata,2861,8,species
+2863,Chromobotia,319,7,genus
+2864,Chromobotia macracanthus,2863,8,species
+2865,Clarias fuscus,975,8,species
+2866,Gobiesocidae,1072,6,family
+2867,Arcos,2866,7,genus
+2868,Arcos sp. KU 149,2867,8,species
+2869,Alburnus alburnus,2054,8,species
+2870,Mugil,116,7,genus
+2871,Mugil curema,2870,8,species
+2872,Epinnula,1438,7,genus
+2873,Epinnula magistralis,2872,8,species
+2874,undef Cobitidae,176,7,genus
+2875,Misgurnus anguillicaudatus x Paramisgurnus dabryanus,2874,8,species
+2876,Megalobrama terminalis,515,8,species
+2877,Cromileptes altivelis x Epinephelus lanceolatus,2768,8,species
+2878,Gillichthys mirabilis,1662,8,species
+2879,Petenia,136,7,genus
+2880,Petenia splendida,2879,8,species
+2881,Maccullochella ikei,1678,8,species
+2882,Cyprinella lutrensis,2212,8,species
+2883,Sicyopterus microcephalus,433,8,species
+2884,Vanmanenia pingchowensis,1902,8,species
+2885,Liobagrus andersoni,103,8,species
+2886,Megalobrama amblycephala x Ancherythroculter nigrocauda,247,8,species
+2887,Cyprinus carpio 'Furong' x Carassius auratus red var.,247,8,species
+2888,Metahomaloptera,311,7,genus
+2889,Metahomaloptera omeiensis,2888,8,species
+2890,Tachysurus ussuriensis,1413,8,species
+2891,Opisthopterus,773,7,genus
+2892,Opisthopterus tardoore,2891,8,species
+2893,Koreocobitis rotundicaudata,2564,8,species
+2894,Diplomystidae,101,6,family
+2895,Diplomystes,2894,7,genus
+2896,Diplomystes nahuelbutaensis,2895,8,species
+2897,Rhodeus fangi,666,8,species
+2898,Yaoshania,883,7,genus
+2899,Yaoshania pachychilus,2898,8,species
+2900,Sardinella fijiensis,662,8,species
+2901,Amblychaeturichthys,266,7,genus
+2902,Amblychaeturichthys hexanema,2901,8,species
+2903,Rhodeus ocellatus,666,8,species
+2904,Alopias superciliosus,1725,8,species
+2905,Schizothorax plagiostomus,119,8,species
+2906,Lotidae,494,6,family
+2907,Lota,2906,7,genus
+2908,Lota lota,2907,8,species
+2909,Aborichthys,15,7,genus
+2910,Aborichthys elongatus,2909,8,species
+2911,Thymallus thymallus,92,8,species
+2912,Oreochromis niloticus x Oreochromis aureus,183,8,species
+2913,Pseudexostoma,391,7,genus
+2914,Pseudexostoma yunnanense,2913,8,species
+2915,Pagellus acarne,729,8,species
+2916,Oncorhynchus tshawytscha,402,8,species
+2917,Doryrhamphus,351,7,genus
+2918,Doryrhamphus japonicus,2917,8,species
+2919,Paralichthys lethostigma,1750,8,species
+2920,Raja asterias,1411,8,species
+2921,Ancherythroculter wangi,190,8,species
+2922,Herichthys,136,7,genus
+2923,Herichthys cyanoguttatus,2922,8,species
+2924,Nibea coibor,520,8,species
+2925,Arripidae,70,6,family
+2926,Arripis,2925,7,genus
+2927,Arripis trutta,2926,8,species
+2928,Osteobrama belangeri,322,8,species
+2929,Xenocypris argentea,1477,8,species
+2930,Luciogobius pallidus,466,8,species
+2931,Osteochilus schlegelii,2265,8,species
+2932,Tribolodon,33,7,genus
+2933,Tribolodon hakonensis,2932,8,species
+2934,Uraspis helvola,1193,8,species
+2935,Schistura pridii,258,8,species
+2936,Thyrsitoides,1438,7,genus
+2937,Thyrsitoides marleyi,2936,8,species
+2938,Odontobutis yaluensis,59,8,species
+2939,Sicyopterus aiensis,433,8,species
+2940,Boleophthalmus,266,7,genus
+2941,Boleophthalmus pectinirostris,2940,8,species
+2942,Acanthopagrus,27,7,genus
+2943,Acanthopagrus schlegelii,2942,8,species
+2944,Sinocrossocheilus bamaensis,1942,8,species
+2945,Leptobotia pellegrini,320,8,species
+2946,Acanthorhodeus chankaensis,1056,8,species
+2947,Yunnanilus sichuanensis,1079,8,species
+2948,Rhynchopelates,654,7,genus
+2949,Rhynchopelates oxyrhynchus,2948,8,species
+2950,Labeo calbasu,485,8,species
+2951,Aphyosemion coeleste,808,8,species
+2952,Atractosteus spatula,409,8,species
+2953,Catlocarpio,33,7,genus
+2954,Catlocarpio siamensis,2953,8,species
+2955,Pseudopungtungia nigra,1654,8,species
+2956,Bothus myriaster,1860,8,species
+2957,Maccullochella peelii,1678,8,species
+2958,Puntius snyderi,742,8,species
+2959,Esocidae,217,6,family
+2960,Esox,2959,7,genus
+2961,Esox lucius,2960,8,species
+2962,Sillago asiatica,919,8,species
+2963,Sikukia,33,7,genus
+2964,Sikukia gudgeri,2963,8,species
+2965,Epiplatys dageti,1889,8,species
+2966,Scaphirhynchus platorynchus,1680,8,species
+2967,Epinephelus stictus,139,8,species
+2968,Pristidae,1979,6,family
+2969,Anoxypristis,2968,7,genus
+2970,Anoxypristis cuspidata,2969,8,species
+2971,Cheilodactylus variegatus,339,8,species
+2972,Homatula potanini,1297,8,species
+2973,Aeoliscus,404,7,genus
+2974,Aeoliscus strigatus,2973,8,species
+2975,Scorpaenidae,18,6,family
+2976,Scorpaenopsis,2975,7,genus
+2977,Scorpaenopsis cirrosa,2976,8,species
+2978,Centropyge loricula,88,8,species
+2979,Diretmoides,1396,7,genus
+2980,Diretmoides veriginae,2979,8,species
+2981,Hydrolycus,132,7,genus
+2982,Hydrolycus scomberoides,2981,8,species
+2983,Coilia reynaldi,1775,8,species
+2984,Alestidae,6,6,family
+2985,Micralestes,2984,7,genus
+2986,Micralestes sp. NM-2010,2985,8,species
+2987,Gila conspersa,1333,8,species
+2988,Rastrelliger brachysoma,2766,8,species
+2989,Bothrocara,1064,7,genus
+2990,Bothrocara hollandi,2989,8,species
+2991,Epinephelus bleekeri,139,8,species
+2992,Carangoides equula,2439,8,species
+2993,Cynoglossus abbreviatus,548,8,species
+2994,Atlantoraja,382,7,genus
+2995,Atlantoraja castelnaui,2994,8,species
+2996,Pseudoplatystoma reticulatum,150,8,species
+2997,Aesopia,631,7,genus
+2998,Aesopia cornuta,2997,8,species
+2999,Carassius auratus x Megalobrama amblycephala pentaploid hybrid,247,8,species
+3000,Oxymonacanthus,55,7,genus
+3001,Oxymonacanthus longirostris,3000,8,species
+3002,Mystus rhegma,464,8,species
+3003,Moolgarda,116,7,genus
+3004,Moolgarda cunnesius,3003,8,species
+3005,Schismatogobius,266,7,genus
+3006,Schismatogobius marmoratus,3005,8,species
+3007,Alectis ciliaris,1926,8,species
+3008,Schizothorax gongshanensis,119,8,species
+3009,Liobagrus mediadiposalis,103,8,species
+3010,diploid Megalobrama amblycephala x Xenocypris davidi,247,8,species
+3011,Glyphis fowlerae,362,8,species
+3012,Rhynchobatidae,1979,6,family
+3013,Rhynchobatus,3012,7,genus
+3014,Rhynchobatus australiae,3013,8,species
+3015,Lampriformes,5,5,order
+3016,Trachipteridae,3015,6,family
+3017,Trachipterus,3016,7,genus
+3018,Trachipterus trachypterus,3017,8,species
+3019,Notropis chrosomus,212,8,species
+3020,Seriola lalandi,1587,8,species
+3021,Acentrogobius pflaumii,1622,8,species
+3022,Barbodes lateristriga,2384,8,species
+3023,Trichiurus lepturus,2099,8,species
+3024,Tribolodon nakamurai,2932,8,species
+3025,Sinocyclocheilus jii,348,8,species
+3026,Polydactylus,1184,7,genus
+3027,Polydactylus sextarius,3026,8,species
+3028,Takifugu chinensis,144,8,species
+3029,Clypeobarbus,33,7,genus
+3030,Clypeobarbus pleuropholis,3029,8,species
+3031,Chascanopsetta,1002,7,genus
+3032,Chascanopsetta lugubris,3031,8,species
+3033,Oryzias curvinotus,210,8,species
+3034,Acanthurus,129,7,genus
+3035,Acanthurus lineatus,3034,8,species
+3036,Salvelinus fontinalis x Salvelinus malma,315,8,species
+3037,Archiaphyosemion,399,7,genus
+3038,Archiaphyosemion guineense,3037,8,species
+3039,Acheilognathus signifer,256,8,species
+3040,Arnoglossus tenuis,2433,8,species
+3041,Rectoris,33,7,genus
+3042,Rectoris posehensis,3041,8,species
+3043,Paraplagusia blochii,2057,8,species
+3044,Acheilognathus majusculus,256,8,species
+3045,Argyrosomus,36,7,genus
+3046,Argyrosomus amoyensis,3045,8,species
+3047,Moringuidae,94,6,family
+3048,Moringua,3047,7,genus
+3049,Moringua edwardsi,3048,8,species
+3050,Makaira mazara,443,8,species
+3051,Pangio cuneovirgata,1867,8,species
+3052,Barbonymus schwanefeldii,513,8,species
+3053,Aulostomidae,350,6,family
+3054,Aulostomus,3053,7,genus
+3055,Aulostomus chinensis,3054,8,species
+3056,Odontobutis interrupta,59,8,species
+3057,Chionodraco myersi,2477,8,species
+3058,Thunnus maccoyii,1110,8,species
+3059,Exostoma,391,7,genus
+3060,Exostoma labiatum,3059,8,species
+3061,Cyprinus carpio specularis x Carassius cuvieri,247,8,species
+3062,Metzia mesembrinum,1321,8,species
+3063,Taractes asper,1891,8,species
+3064,Mesonoemacheilus,15,7,genus
+3065,Mesonoemacheilus triangularis,3064,8,species
+3066,Triplophysa tibetana,377,8,species
+3067,Boreogadus,495,7,genus
+3068,Boreogadus saida,3067,8,species
+3069,Bagarius,391,7,genus
+3070,Bagarius yarrelli,3069,8,species
+3071,Centropyge multicolor,88,8,species
+3072,Sprattus,169,7,genus
+3073,Sprattus muelleri,3072,8,species
+3074,Channa maculata,489,8,species
+3075,Barbourisiidae,415,6,family
+3076,Barbourisia,3075,7,genus
+3077,Barbourisia rufa,3076,8,species
+3078,Pleurogrammus monopterygius,2280,8,species
+3079,Mylocheilus,33,7,genus
+3080,Mylocheilus caurinus,3079,8,species
+3081,Konosirus,169,7,genus
+3082,Konosirus punctatus,3081,8,species
+3083,Schizothorax taliensis,119,8,species
+3084,Glaridoglanis,391,7,genus
+3085,Glaridoglanis andersonii,3084,8,species
+3086,Carassius langsdorfii,1177,8,species
+3087,Cryodraco,791,7,genus
+3088,Cryodraco antarcticus,3087,8,species
+3089,Ammodytes dubius,2044,8,species
+3090,Coregonus migratorius,502,8,species
+3091,Anarhichas minor,2624,8,species
+3092,Sebastes fasciatus,253,8,species
+3093,Diplophidae,1401,6,family
+3094,Diplophos,3093,7,genus
+3095,Diplophos taenia,3094,8,species
+3096,Rhinidae,1979,6,family
+3097,Rhina,3096,7,genus
+3098,Rhina ancylostoma,3097,8,species
+3099,Nipponocypris,33,7,genus
+3100,Nipponocypris sieboldii,3099,8,species
+3101,Amphiliidae,101,6,family
+3102,Amphilius,3101,7,genus
+3103,Amphilius sp. NM-2010,3102,8,species
+3104,Merlucciidae,494,6,family
+3105,Merluccius,3104,7,genus
+3106,Merluccius merluccius,3105,8,species
+3107,Etheostoma jessiae,1600,8,species
+3108,Heniochus,459,7,genus
+3109,Heniochus diphreutes,3108,8,species
+3110,Holacanthus africanus,1836,8,species
+3111,Raja pulchra,1411,8,species
+3112,Eleutheronema,1184,7,genus
+3113,Eleutheronema tetradactylum,3112,8,species
+3114,Epinephelus sexfasciatus,139,8,species
+3115,Heterodontus francisci,335,8,species
+3116,Carcharhinus leucas,582,8,species
+3117,Ictalurus cf. pricei USON-01115-1,617,8,species
+3118,Barilius,33,7,genus
+3119,Barilius bendelisis,3118,8,species
+3120,Pseudorhombus,1749,7,genus
+3121,Pseudorhombus dupliciocellatus,3120,8,species
+3122,Coelorinchus,1299,7,genus
+3123,Coelorinchus kishinouyei,3122,8,species
+3124,Siniperca obscura,225,8,species
+3125,Parupeneus chrysopleuron,426,8,species
+3126,Branchiostegus japonicus,542,8,species
+3127,Creteuchiloglanis kamengensis,1035,8,species
+3128,Oncorhynchus kisutch,402,8,species
+3129,Plectorhinchus orientalis,1077,8,species
+3130,Mallotus,1521,7,genus
+3131,Mallotus villosus,3130,8,species
+3132,Polypterus mokelembembe,2368,8,species
+3133,Acipenser sinensis,891,8,species
+3134,Channa marulius,489,8,species
+3135,Sinocyclocheilus wumengshanensis,348,8,species
+3136,Nocomis biguttatus,660,8,species
+3137,Lophiomus,2089,7,genus
+3138,Lophiomus setigerus,3137,8,species
+3139,Gerres oyena,2662,8,species
+3140,Toxabramis,33,7,genus
+3141,Toxabramis houdemeri,3140,8,species
+3142,Amazonsprattus,192,7,genus
+3143,Amazonsprattus scintilla,3142,8,species
+3144,Puntius sahyadriensis,742,8,species
+3145,Girella,1470,7,genus
+3146,Girella punctata,3145,8,species
+3147,Sargocentron rubrum,1424,8,species
+3148,Nimbapanchax,399,7,genus
+3149,Nimbapanchax petersi,3148,8,species
+3150,Myomyrus,1594,7,genus
+3151,Myomyrus macrops,3150,8,species
+3152,Sinogastromyzon szechuanensis,2582,8,species
+3153,Siniperca undulata,225,8,species
+3154,Garra flavatra,1200,8,species
+3155,Macropodus erythropterus,1052,8,species
+3156,Glyphis gangeticus,362,8,species
+3157,Hemibagrus nemurus,1670,8,species
+3158,Sander,860,7,genus
+3159,Sander vitreus,3158,8,species
+3160,Grasseichthys,395,7,genus
+3161,Grasseichthys gabonensis,3160,8,species
+3162,Gambusia affinis,1277,8,species
+3163,Pristipomoides,233,7,genus
+3164,Pristipomoides multidens,3163,8,species
+3165,Epiplatys multifasciatus,1889,8,species
+3166,Devario,33,7,genus
+3167,Devario devario,3166,8,species
+3168,Sphyrna mokarran,42,8,species
+3169,Melanogrammus,495,7,genus
+3170,Melanogrammus aeglefinus,3169,8,species
+3171,Perccottus,58,7,genus
+3172,Perccottus glenii,3171,8,species
+3173,Datnioides undecimradiatus,1374,8,species
+3174,Anoplogasteridae,1150,6,family
+3175,Anoplogaster,3174,7,genus
+3176,Anoplogaster cornuta,3175,8,species
+3177,Labeo rohita,485,8,species
+3178,Sinocyclocheilus huizeensis,348,8,species
+3179,Aspredinidae,101,6,family
+3180,Bunocephalus,3179,7,genus
+3181,Bunocephalus coracoideus,3180,8,species
+3182,Pseudobalistes,98,7,genus
+3183,Pseudobalistes fuscus,3182,8,species
+3184,Boleophthalmus boddarti,2940,8,species
+3185,Triplophysa dorsalis,377,8,species
+3186,Bathyraja meridionalis,383,8,species
+3187,Halichoeres hartzfeldii,1037,8,species
+3188,Schizothorax integrilabiatus,119,8,species
+3189,Polyspina,67,7,genus
+3190,Polyspina piosae,3189,8,species
+3191,Micropercops,58,7,genus
+3192,Micropercops swinhonis,3191,8,species
+3193,Triplophysa bleekeri,377,8,species
+3194,Oxyeleotris lineolata,24,8,species
+3195,Doryichthys,351,7,genus
+3196,Doryichthys boaja,3195,8,species
+3197,Triplophysa pappenheimi,377,8,species
+3198,Microphysogobio tafangensis,649,8,species
+3199,Halaelurus,370,7,genus
+3200,Halaelurus buergeri,3199,8,species
+3201,Alepocephalus productus,2568,8,species
+3202,Marcusenius,1594,7,genus
+3203,Marcusenius senegalensis,3202,8,species
+3204,Pterois,2975,7,genus
+3205,Pterois volitans,3204,8,species
+3206,Salanx,1521,7,genus
+3207,Salanx ariakensis,3206,8,species
+3208,Papyrocranus,627,7,genus
+3209,Papyrocranus congoensis,3208,8,species
+3210,Sprattus antipodum,3072,8,species
+3211,Hiodon tergisus,1779,8,species
+3212,Syngnathus,351,7,genus
+3213,Syngnathus typhle,3212,8,species
+3214,diploid Xenocypris davidi x Megalobrama amblycephala,247,8,species
+3215,Lamiopsis temminckii,909,8,species
+3216,Lepomis cyanellus,1205,8,species
+3217,Paralaubuca,33,7,genus
+3218,Paralaubuca typus,3217,8,species
+3219,Epalzeorhynchos,33,7,genus
+3220,Epalzeorhynchos frenatus,3219,8,species
+3221,Mustelus griseus,1644,8,species
+3222,Arius arius,2315,8,species
+3223,Takifugu poecilonotus,144,8,species
+3224,Gigantactinidae,63,6,family
+3225,Gigantactis,3224,7,genus
+3226,Gigantactis vanhoeffeni,3225,8,species
+3227,Glyptothorax longinema,1418,8,species
+3228,Periophthalmus argentilineatus,326,8,species
+3229,Bathyraja griseocauda,383,8,species
+3230,Tetraodon mbu,837,8,species
+3231,Psettodidae,179,6,family
+3232,Psettodes,3231,7,genus
+3233,Psettodes erumei,3232,8,species
+3234,Cottus bairdii,604,8,species
+3235,Acanthocobitis,15,7,genus
+3236,Acanthocobitis botia,3235,8,species
+3237,Nothobranchius furzeri,839,8,species
+3238,Notothenia,289,7,genus
+3239,Notothenia coriiceps,3238,8,species
+3240,Kuhliidae,223,6,family
+3241,Kuhlia,3240,7,genus
+3242,Kuhlia mugil,3241,8,species
+3243,Takifugu ocellatus,144,8,species
+3244,Platytroctes,355,7,genus
+3245,Platytroctes apus,3244,8,species
+3246,Garra qiaojiensis,1200,8,species
+3247,Oreochromis aureus,183,8,species
+3248,Scomberomorus concolor,1514,8,species
+3249,Garra imberba,1200,8,species
+3250,Carassius auratus,1177,8,species
+3251,Gudusia,169,7,genus
+3252,Gudusia chapra,3251,8,species
+3253,Epinephelus awoara,139,8,species
+3254,Johnius belangerii,1548,8,species
+3255,Platysmacheilus longibarbatus,1163,8,species
+3256,Macropodus chinensis,1052,8,species
+3257,Genyomyrus,1594,7,genus
+3258,Genyomyrus donnyi,3257,8,species
+3259,Apogon,2008,7,genus
+3260,Apogon semilineatus,3259,8,species
+3261,Leptocephalus,1730,7,genus
+3262,Leptocephalus sp. 'type II larva',3261,8,species
+3263,Fundulus heteroclitus,1620,8,species
+3264,Meuschenia,55,7,genus
+3265,Meuschenia hippocrepis,3264,8,species
+3266,Leuciscus burdigalensis,1170,8,species
+3267,Anabantidae,487,6,family
+3268,Anabas,3267,7,genus
+3269,Anabas testudineus,3268,8,species
+3270,Thorichthys,136,7,genus
+3271,Thorichthys aureus,3270,8,species
+3272,Paracentropyge,87,7,genus
+3273,Paracentropyge multifasciata,3272,8,species
+3274,Schedophilus,1465,7,genus
+3275,Schedophilus velaini,3274,8,species
+3276,Larimichthys polyactis,1305,8,species
+3277,Megalobrama amblycephala x Parabramis pekinensis,247,8,species
+3278,Alosa alabamae,221,8,species
+3279,Aspasma,2866,7,genus
+3280,Aspasma minima,3279,8,species
+3281,Amanses,55,7,genus
+3282,Amanses scopas,3281,8,species
+3283,Comephorus baicalensis,2853,8,species
+3284,Gymnocephalus,860,7,genus
+3285,Gymnocephalus cernua,3284,8,species
+3286,Chirostoma,1032,7,genus
+3287,Chirostoma humboldtianum,3286,8,species
+3288,Anguilla japonica,492,8,species
+3289,Sicyopterus stimpsoni,433,8,species
+3290,Urogymnus,1537,7,genus
+3291,Urogymnus granulatus,3290,8,species
+3292,Holacanthus clarionensis,1836,8,species
+3293,Anguilla mossambica,492,8,species
+3294,Sladenia,2089,7,genus
+3295,Sladenia gardineri,3294,8,species
+3296,Leiopotherapon,654,7,genus
+3297,Leiopotherapon unicolor,3296,8,species
+3298,Platysmacheilus nudiventris,1163,8,species
+3299,Pungu,136,7,genus
+3300,Pungu maclareni,3299,8,species
+3301,Zanclidae,128,6,family
+3302,Zanclus,3301,7,genus
+3303,Zanclus cornutus,3302,8,species
+3304,Elops saurus,2415,8,species
+3305,Labeo catla,485,8,species
+3306,Thunnus atlanticus,1110,8,species
+3307,Oryzias melastigma,210,8,species
+3308,Pseudobagrus ondon,153,8,species
+3309,Hemisalanx,1521,7,genus
+3310,Hemisalanx brachyrostralis,3309,8,species
+3311,Schizopygopsis pylzovi,1688,8,species
+3312,Chanodichthys dabryi,2509,8,species
+3313,Planiliza affinis,2739,8,species
+3314,Epiplatys togolensis,1889,8,species
+3315,Megalobrama amblycephala x Megalobrama skolkovii,515,8,species
+3316,Bassozetus,45,7,genus
+3317,Bassozetus zenkevitchi,3316,8,species
+3318,Dentex tumifrons,1270,8,species
+3319,Pastinachus,1537,7,genus
+3320,Pastinachus atrus,3319,8,species
+3321,Copadichromis trimaculatus,358,8,species
+3322,Rocio,136,7,genus
+3323,Rocio octofasciata,3322,8,species
+3324,Heteropneustidae,101,6,family
+3325,Heteropneustes,3324,7,genus
+3326,Heteropneustes fossilis,3325,8,species
+3327,Crossorhombus valderostratus,1227,8,species
+3328,Hemitrygon bennettii,2194,8,species
+3329,Odontamblyopus lacepedii,1475,8,species
+3330,Centropyge eibli,88,8,species
+3331,Fundulopanchax filamentosus,851,8,species
+3332,Horabagrus,152,7,genus
+3333,Horabagrus brachysoma,3332,8,species
+3334,Anguilla anguilla,492,8,species
+3335,Sicyopterus punctissimus,433,8,species
+3336,Balantiocheilos,33,7,genus
+3337,Balantiocheilos melanopterus,3336,8,species
+3338,Luvaridae,128,6,family
+3339,Luvarus,3338,7,genus
+3340,Luvarus imperialis,3339,8,species
+3341,Pseudogastromyzon,883,7,genus
+3342,Pseudogastromyzon myersi,3341,8,species
+3343,Sphyraena japonica,1684,8,species
+3344,Mugilogobius myxodermus,1046,8,species
+3345,Cynoglossus senegalensis,548,8,species
+3346,Glyphis sp. Pakistan,362,8,species
+3347,Carangoides armatus,2439,8,species
+3348,Lythrurus lirus,1668,8,species
+3349,undef Characiformes,6,6,family
+3350,Distichodus,3349,7,genus
+3351,Distichodus sexfasciatus,3350,8,species
+3352,Ictalurus pricei,617,8,species
+3353,Leuciscus waleckii,1170,8,species
+3354,Hemibarbus longirostris,364,8,species
+3355,Siniperca chuatsi x Siniperca scherzeri,225,8,species
+3356,Stolephorus,192,7,genus
+3357,Stolephorus commersonnii,3356,8,species
+3358,Epinephelus epistictus,139,8,species
+3359,Schizothorax oconnori,119,8,species
+3360,Pseudomonacanthus,55,7,genus
+3361,Pseudomonacanthus peroni,3360,8,species
+3362,Tachysurus argentivittatus,1413,8,species
+3363,Facciolella,1730,7,genus
+3364,Facciolella oxyrhyncha,3363,8,species
+3365,Citharinus,1828,7,genus
+3366,Citharinus congicus,3365,8,species
+3367,Takifugu obscurus x Takifugu rubripes,144,8,species
+3368,Scarus schlegeli,941,8,species
+3369,Merlangius,495,7,genus
+3370,Merlangius merlangus,3369,8,species
+3371,Biwia zezera,2366,8,species
+3372,Toxotidae,10,6,family
+3373,Toxotes,3372,7,genus
+3374,Toxotes chatareus,3373,8,species
+3375,Coregonus sp. 'cluncaformis',502,8,species
+3376,Acanthopagrus latus,2942,8,species
+3377,Glyptothorax macromaculatus,1418,8,species
+3378,Arothron,67,7,genus
+3379,Arothron manilensis,3378,8,species
+3380,Lepidosireniformes,2170,5,order
+3381,Protopteridae,3380,6,family
+3382,Protopterus,3381,7,genus
+3383,Protopterus annectens,3382,8,species
+3384,Gyrinomimus,416,7,genus
+3385,Gyrinomimus sp. UW 113191,3384,8,species
+3386,Anguilla malgumora,492,8,species
+3387,Sicydium salvini,1083,8,species
+3388,Sundasalanx,169,7,genus
+3389,Sundasalanx sp. Chao Phraya,3388,8,species
+3390,Caulophryne pelagica,2788,8,species
+3391,Bufoceratias,613,7,genus
+3392,Bufoceratias thele,3391,8,species
+3393,Xiphophorus couchianus,1631,8,species
+3394,Nannoperca obscura,1275,8,species
+3395,Chaetodontoplus mesoleucus,2101,8,species
+3396,Sicyopterus parvei,433,8,species
+3397,Ichthyomyzon,945,7,genus
+3398,Ichthyomyzon gagei,3397,8,species
+3399,Epinephelus merra,139,8,species
+3400,Pygoplites,87,7,genus
+3401,Pygoplites diacanthus,3400,8,species
+3402,Saurida umeyoshii,1378,8,species
+3403,Narcetes erimelas,429,8,species
+3404,Sinibotia pulchra,1912,8,species
+3405,Scomberomorus munroi,1514,8,species
+3406,Phenacogrammus,2984,7,genus
+3407,Phenacogrammus interruptus,3406,8,species
+3408,Pellona,773,7,genus
+3409,Pellona flavipinnis,3408,8,species
+3410,Neosalanx tangkahkeii,1723,8,species
+3411,Nothobranchius thierryi,839,8,species
+3412,Schistura notostigma,258,8,species
+3413,Cobitis sinensis,177,8,species
+3414,Sander canadensis,3158,8,species
+3415,Pareuchiloglanis macrotrema,755,8,species
+3416,Amblyraja,122,7,genus
+3417,Amblyraja georgiana,3416,8,species
+3418,Mylochromis,136,7,genus
+3419,Mylochromis lateristriga,3418,8,species
+3420,Crossorhombus azureus,1227,8,species
+3421,Salvelinus kuznetzovi,315,8,species
+3422,Astatotilapia,136,7,genus
+3423,Astatotilapia calliptera,3422,8,species
+3424,Mugilogobius abei,1046,8,species
+3425,Samariscus,853,7,genus
+3426,Samariscus latus,3425,8,species
+3427,Sabanejewia,176,7,genus
+3428,Sabanejewia radnensis,3427,8,species
+3429,Fistulariidae,350,6,family
+3430,Fistularia,3429,7,genus
+3431,Fistularia petimba,3430,8,species
+3432,Parexocoetus,203,7,genus
+3433,Parexocoetus brachypterus,3432,8,species
+3434,Hybognathus,33,7,genus
+3435,Hybognathus nuchalis,3434,8,species
+3436,Osteochilus pentalineatus,2265,8,species
+3437,Gastromyzon zebrinus,2420,8,species
+3438,Gephyrocharax,132,7,genus
+3439,Gephyrocharax atracaudatus,3438,8,species
+3440,Petrocephalus microphthalmus,2462,8,species
+3441,Clupeonella,169,7,genus
+3442,Clupeonella cultriventris,3441,8,species
+3443,Buccochromis,136,7,genus
+3444,Buccochromis nototaenia,3443,8,species
+3445,Bathyraja richardsoni,383,8,species
+3446,Atherinomorus,1916,7,genus
+3447,Atherinomorus lacunosus,3446,8,species
+3448,Parahucho,91,7,genus
+3449,Parahucho perryi,3448,8,species
+3450,Tetranematichthys,2225,7,genus
+3451,Tetranematichthys quadrifilis,3450,8,species
+3452,Oreoglanis macropterus,392,8,species
+3453,Sundasalanx praecox,3388,8,species
+3454,Cheilinus,641,7,genus
+3455,Cheilinus undulatus,3454,8,species
+3456,Siganus unimaculatus,1022,8,species
+3457,Acheilognathus meridianus,256,8,species
+3458,Osmerus,1786,7,genus
+3459,Osmerus mordax,3458,8,species
+3460,Cichlasoma,136,7,genus
+3461,Cichlasoma dimerus,3460,8,species
+3462,Etheostoma okaloosae,1600,8,species
+3463,Cheilopogon unicolor,651,8,species
+3464,Gnathopogon polytaenia,471,8,species
+3465,Anarchias,685,7,genus
+3466,Anarchias sp. Ansp,3465,8,species
+3467,Monotaxis,272,7,genus
+3468,Monotaxis grandoculis,3467,8,species
+3469,Pteraclis,1441,7,genus
+3470,Pteraclis aesticola,3469,8,species
+3471,Probarbus,33,7,genus
+3472,Probarbus jullieni,3471,8,species
+3473,Hypselobarbus jerdoni,1563,8,species
+3474,Gymnothorax kidako,686,8,species
+3475,Luxilus,33,7,genus
+3476,Luxilus chrysocephalus,3475,8,species
+3477,Osteochilus nashii,2265,8,species
+3478,Sinibotia reevesae,1912,8,species
+3479,Hypoatherina,1916,7,genus
+3480,Hypoatherina tsurugae,3479,8,species
+3481,Thynnichthys thynnoides,2794,8,species
+3482,Notoraja,382,7,genus
+3483,Notoraja tobitukai,3482,8,species
+3484,Cephaloscyllium,370,7,genus
+3485,Cephaloscyllium umbratile,3484,8,species
+3486,Megaleporinus obtusidens,8,8,species
+3487,Triplophysa sp. ZP-2016,377,8,species
+3488,Zapteryx,1980,7,genus
+3489,Zapteryx exasperata,3488,8,species
+3490,Richardsonius,33,7,genus
+3491,Richardsonius balteatus,3490,8,species
+3492,Halicampus,351,7,genus
+3493,Halicampus grayi,3492,8,species
+3494,Icelus spatula,2023,8,species
+3495,Hippocampus ingens,677,8,species
+3496,Homaloptera ocellata,776,8,species
+3497,Alburnus mossulensis,2054,8,species
+3498,Hongeo,122,7,genus
+3499,Hongeo koreana,3498,8,species
+3500,Jenkinsia,169,7,genus
+3501,Jenkinsia lamprotaenia,3500,8,species
+3502,Psenes pellucidus,72,8,species
+3503,Pentacerotidae,567,6,family
+3504,Pentaceros,3503,7,genus
+3505,Pentaceros japonicus,3504,8,species
+3506,Pangio kuhlii,1867,8,species
+3507,Arapaima,587,7,genus
+3508,Arapaima gigas,3507,8,species
+3509,Puntius semifasciolatus,742,8,species
+3510,Proscylliidae,40,6,family
+3511,Proscyllium,3510,7,genus
+3512,Proscyllium habereri,3511,8,species
+3513,Bathydraconidae,18,6,family
+3514,Parachaenichthys,3513,7,genus
+3515,Parachaenichthys charcoti,3514,8,species
+3516,Cyathochromis,136,7,genus
+3517,Cyathochromis obliquidens,3516,8,species
+3518,Acrossocheilus wenchowensis,292,8,species
+3519,Schizothorax wangchiachii,119,8,species
+3520,Engraulis encrasicolus,193,8,species
+3521,Cheilopogon atrisignis,651,8,species
+3522,Chaetodontoplus conspicillatus,2101,8,species
+3523,Moringua microchir,3048,8,species
+3524,Mastacembelus favus,2558,8,species
+3525,Sinocyclocheilus qujingensis,348,8,species
+3526,Maculabatis,1537,7,genus
+3527,Himantura gerrardi,3526,8,species
+3528,Bathyclupeidae,567,6,family
+3529,Bathyclupea,3528,7,genus
+3530,Bathyclupea megaceps,3529,8,species
+3531,Pristis,2968,7,genus
+3532,Pristis pristis,3531,8,species
+3533,Erythrinidae,6,6,family
+3534,Hoplias,3533,7,genus
+3535,Hoplias intermedius,3534,8,species
+3536,Zebrias quagga,841,8,species
+3537,Pristis clavata,3531,8,species
+3538,Pareuchiloglanis gracilicaudata,755,8,species
+3539,Nimbapanchax leucopterygius,3148,8,species
+3540,Odontamblyopus rubicundus,1475,8,species
+3541,Muraenesocidae,94,6,family
+3542,Cynoponticus,3541,7,genus
+3543,Cynoponticus ferox,3542,8,species
+3544,Salmo,91,7,genus
+3545,Salmo salar,3544,8,species
+3546,Leucoraja erinacea,1181,8,species
+3547,Coreoperca herzi,874,8,species
+3548,Oreochromis sp. KM-2006,183,8,species
+3549,Gadopsis marmoratus,1433,8,species
+3550,Dactylopteridae,350,6,family
+3551,Dactyloptena,3550,7,genus
+3552,Dactyloptena peterseni,3551,8,species
+3553,Chaunax penicillatus,65,8,species
+3554,Dussumieriidae,168,6,family
+3555,Dussumieria,3554,7,genus
+3556,Dussumieria elopsoides,3555,8,species
+3557,Oreonectes daqikongensis,16,8,species
+3558,Anomalopidae,1150,6,family
+3559,Anomalops,3558,7,genus
+3560,Anomalops katoptron,3559,8,species
+3561,Pungitius platygaster,241,8,species
+3562,Paracheirodon,132,7,genus
+3563,Paracheirodon axelrodi,3562,8,species
+3564,Okamejei hollandi,1642,8,species
+3565,Gasterosteus wheatlandi,1691,8,species
+3566,Rhodeus lighti,666,8,species
+3567,Yasuhikotakia modesta,436,8,species
+3568,Acrocheilus,33,7,genus
+3569,Acrocheilus alutaceus,3568,8,species
+3570,Lethrinops,136,7,genus
+3571,Lethrinops lethrinus,3570,8,species
+3572,Chaenodraco,791,7,genus
+3573,Chaenodraco wilsoni,3572,8,species
+3574,Dipturus kwangtungensis,123,8,species
+3575,Cirrhinus microlepis,2245,8,species
+3576,Cottus asper,604,8,species
+3577,Sicyopterus pugnans,433,8,species
+3578,Pseudohomaloptera,311,7,genus
+3579,Pseudohomaloptera leonardi,3578,8,species
+3580,Stolephorus waitei,3356,8,species
+3581,Polyodon,1752,7,genus
+3582,Polyodon spathula,3581,8,species
+3583,Enteromius fasciolatus,2412,8,species
+3584,Hemiodontidae,6,6,family
+3585,Hemiodopsis,3584,7,genus
+3586,Hemiodopsis gracilis,3585,8,species
+3587,Platypharodon,33,7,genus
+3588,Platypharodon extremus,3587,8,species
+3589,Sebastes oblongus,253,8,species
+3590,Chanodichthys mongolicus,2509,8,species
+3591,Gyrinocheilidae,14,6,family
+3592,Gyrinocheilus,3591,7,genus
+3593,Gyrinocheilus pennocki,3592,8,species
+3594,Xenobalistes,98,7,genus
+3595,Xenobalistes tumidipectoris,3594,8,species
+3596,Epinephelus moara x Hyporthodus septemfasciatus,2768,8,species
+3597,Salmo obtusirostris,3544,8,species
+3598,Coilia lindmani,1775,8,species
+3599,Tachysurus vachellii,1413,8,species
+3600,Pteronotropis,33,7,genus
+3601,Pteronotropis hypselopterus,3600,8,species
+3602,Cephalopholis sonnerati,1142,8,species
+3603,Erimyzon,30,7,genus
+3604,Erimyzon oblongus,3603,8,species
+3605,Phoxinus oxycephalus,559,8,species
+3606,Piaractus,744,7,genus
+3607,Piaractus mesopotamicus,3606,8,species
+3608,Cabdio,33,7,genus
+3609,Cabdio morar,3608,8,species
+3610,Nebrius,474,7,genus
+3611,Nebrius ferrugineus,3610,8,species
+3612,Talismania,428,7,genus
+3613,Talismania bifurcata,3612,8,species
+3614,Rhinobatos hynnicephalus,1981,8,species
+3615,Centracanthidae,26,6,family
+3616,Spicara,3615,7,genus
+3617,Spicara maena,3616,8,species
+3618,Homaloptera parclitella,776,8,species
+3619,Pangasiidae,101,6,family
+3620,Pangasius,3619,7,genus
+3621,Pangasius larnaudii,3620,8,species
+3622,Hippocampus queenslandicus,677,8,species
+3623,Siniperca scherzeri,225,8,species
+3624,Anguilla reinhardtii,492,8,species
+3625,Seriola quinqueradiata,1587,8,species
+3626,Protomelas,136,7,genus
+3627,Protomelas annectens,3626,8,species
+3628,Barbus,33,7,genus
+3629,Barbus barbus,3628,8,species
+3630,Callanthiidae,10,6,family
+3631,Callanthias,3630,7,genus
+3632,Callanthias japonicus,3631,8,species
+3633,Epinephelus moara,139,8,species
+3634,Glyphis garricki,362,8,species
+3635,Cynoglossus puncticeps,548,8,species
+3636,Neoscopelus,1357,7,genus
+3637,Neoscopelus microchir,3636,8,species
+3638,Protonibea,36,7,genus
+3639,Protonibea diacanthus,3638,8,species
+3640,Chaetodontoplus poliourus,2101,8,species
+3641,Schizothorax chongi,119,8,species
+3642,Halichoeres tenuispinis,1037,8,species
+3643,Lutjanus russellii,234,8,species
+3644,Platydoras,1308,7,genus
+3645,Platydoras armatulus,3644,8,species
+3646,Squatina formosa,330,8,species
+3647,Pungtungia,33,7,genus
+3648,Pungtungia herzi,3647,8,species
+3649,Melanotaenia lacustris,1463,8,species
+3650,Chanodichthys recurviceps,2509,8,species
+3651,Abramis,33,7,genus
+3652,Abramis brama,3651,8,species
+3653,Tenualosa ilisha,170,8,species
+3654,Hemitilapia,136,7,genus
+3655,Hemitilapia oxyrhynchus,3654,8,species
+3656,Sinibrama taeniatus,2708,8,species
+3657,Parachromis,136,7,genus
+3658,Parachromis managuensis,3657,8,species
+3659,Maylandia,136,7,genus
+3660,Maylandia zebra,3659,8,species
+3661,Nematalosa come,1367,8,species
+3662,Heterotis,587,7,genus
+3663,Heterotis niloticus,3662,8,species
+3664,Barboides,33,7,genus
+3665,Barboides gracilis,3664,8,species
+3666,Bahaba,36,7,genus
+3667,Bahaba taipingensis,3666,8,species
+3668,Onychostoma meridionale,644,8,species
+3669,Galeocerdo,41,7,genus
+3670,Galeocerdo cuvier,3669,8,species
+3671,Ijimaia,480,7,genus
+3672,Ijimaia dofleini,3671,8,species
+3673,Krobia,136,7,genus
+3674,Krobia guianensis,3673,8,species
+3675,Macropharyngodon,641,7,genus
+3676,Macropharyngodon negrosensis,3675,8,species
+3677,Clupeoides sp. Chao Phraya,2120,8,species
+3678,Plotosidae,101,6,family
+3679,Plotosus,3678,7,genus
+3680,Plotosus japonicus,3679,8,species
+3681,Cheilodipterus,2008,7,genus
+3682,Cheilodipterus quinquelineatus,3681,8,species
+3683,Microphysogobio amurensis,649,8,species
+3684,Sebastes vulpes,253,8,species
+3685,Takifugu snyderi,144,8,species
+3686,Colomesus,67,7,genus
+3687,Colomesus psittacus,3686,8,species
+3688,Hemibagrus macropterus,1670,8,species
+3689,Epiplatys lamottei,1889,8,species
+3690,Myripristis,1423,7,genus
+3691,Myripristis berndti,3690,8,species
+3692,Fundulus olivaceus,1620,8,species
+3693,Myaka,136,7,genus
+3694,Myaka myaka,3693,8,species
+3695,Etheostoma radiosum,1600,8,species
+3696,Cynoglossus joyneri,548,8,species
+3697,Hapalogenys analis,554,8,species
+3698,Parabotia fasciatus,1189,8,species
+3699,Poecilia sphenops,1100,8,species
+3700,Hippocampus trimaculatus,677,8,species
+3701,Notropis imeldae,212,8,species
+3702,Zenarchopteridae,202,6,family
+3703,Dermogenys,3702,7,genus
+3704,Dermogenys pusilla,3703,8,species
+3705,Metynnis,744,7,genus
+3706,Metynnis hypsauchen,3705,8,species
+3707,Pangasianodon,3619,7,genus
+3708,Pangasianodon gigas,3707,8,species
+3709,Gymnomuraena,685,7,genus
+3710,Gymnomuraena zebra,3709,8,species
+3711,Polypterus senegalus,2368,8,species
+3712,Stiphodon pelewensis,2779,8,species
+3713,Aldrichetta,116,7,genus
+3714,Aldrichetta forsteri,3713,8,species
+3715,Sebastes koreanus,253,8,species
+3716,Pennahia macrocephalus,844,8,species
+3717,undef Salmonidae,91,7,genus
+3718,Oncorhynchus mykiss x Salmo salar,3717,8,species
+3719,Garra spilota,1200,8,species
+3720,Platichthys,227,7,genus
+3721,Platichthys stellatus,3720,8,species
+3722,Mola,1234,7,genus
+3723,Mola mola,3722,8,species
+3724,Leptoderma macrophthalmum,753,8,species
+3725,Tanakia latimarginata,1068,8,species
+3726,Plectorhinchus vittatus,1077,8,species
+3727,Takifugu porphyreus,144,8,species
+3728,Scoliodon,41,7,genus
+3729,Scoliodon macrorhynchos,3728,8,species
+3730,Aspiorhynchus,33,7,genus
+3731,Aspiorhynchus laticeps,3730,8,species
+3732,Carassioides,33,7,genus
+3733,Carassioides acuminatus,3732,8,species
+3734,Myxocyprinus,30,7,genus
+3735,Myxocyprinus asiaticus,3734,8,species
+3736,Acrossocheilus paradoxus,292,8,species
+3737,Diodon hystrix,1091,8,species
+3738,Cynoglossus gracilis,548,8,species
+3739,Luxilus cornutus,3475,8,species
+3740,Cepolidae,1349,6,family
+3741,Acanthocepola,3740,7,genus
+3742,Acanthocepola krusensternii,3741,8,species
+3743,Pangasius pangasius,3620,8,species
+3744,Percocypris,33,7,genus
+3745,Percocypris pingi,3744,8,species
+3746,Cheilopogon cyanopterus,651,8,species
+3747,Polymixia lowei,1648,8,species
+3748,Cynoglossus bilineatus,548,8,species
+3749,Ammodytes personatus,2044,8,species
+3750,Trichogaster,507,7,genus
+3751,Trichogaster lalius,3750,8,species
+3752,Cosmochilus,33,7,genus
+3753,Cosmochilus harmandi,3752,8,species
+3754,Sebastes schlegelii,253,8,species
+3755,Hemibagrus guttatus,1670,8,species
+3756,Nothobranchius foerschi,839,8,species
+3757,Bostrychus,23,7,genus
+3758,Bostrychus sinensis,3757,8,species
+3759,Cirrhigaleus,1741,7,genus
+3760,Cirrhigaleus australis,3759,8,species
+3761,Centropyge flavicauda,88,8,species
+3762,Abudefduf vaigiensis,1711,8,species
+3763,Stylephoriformes,5,5,order
+3764,Stylephoridae,3763,6,family
+3765,Stylephorus,3764,7,genus
+3766,Stylephorus chordatus,3765,8,species
+3767,Scobinichthys,55,7,genus
+3768,Scobinichthys granulatus,3767,8,species
+3769,Symphysodon aequifasciata,926,8,species
+3770,Cyprinus megalophthalmus,590,8,species
+3771,Megalobrama pellegrini,515,8,species
+3772,Asterorhombus,1002,7,genus
+3773,Asterorhombus intermedius,3772,8,species
+3774,Carcharhinus falciformis,582,8,species
+3775,Tor sinensis,764,8,species
+3776,Diplotaxodon,136,7,genus
+3777,Diplotaxodon limnothrissa,3776,8,species
+3778,Siganus guttatus,1022,8,species
+3779,Scoliodon laticaudus,3728,8,species
+3780,Periophthalmus novemradiatus,326,8,species
+3781,Thunnus orientalis,1110,8,species
+3782,Schizopygopsis stoliczkai,1688,8,species
+3783,Nothobranchius kafuensis,839,8,species
+3784,Abbottina obtusirostris,2733,8,species
+3785,Pygocentrus,744,7,genus
+3786,Pygocentrus nattereri,3785,8,species
+3787,Tanakia lanceolata,1068,8,species
+3788,Kryptopterus vitreolus,897,8,species
+3789,Thryssa setirostris,789,8,species
+3790,Hoplolatilus,541,7,genus
+3791,Hoplolatilus cuniculus,3790,8,species
+3792,Pseudanthias,19,7,genus
+3793,Pseudanthias dispar,3792,8,species
+3794,Sicyopterus lividus,433,8,species
+3795,Pungitius kaibarae,241,8,species
+3796,Schizothorax richardsonii,119,8,species
+3797,Pteragogus,641,7,genus
+3798,Pteragogus flagellifer,3797,8,species
+3799,Moxostoma congestum,2639,8,species
+3800,Rhinogobius brunneus,1209,8,species
+3801,Trachinotus,108,7,genus
+3802,Trachinotus ovatus,3801,8,species
+3803,Osphronemus,507,7,genus
+3804,Osphronemus goramy,3803,8,species
+3805,Ochetobius,33,7,genus
+3806,Ochetobius elongatus,3805,8,species
+3807,Tachysurus fulvidraco x Leiocassis longirostris,2335,8,species
+3808,Lagocephalus spadiceus,787,8,species
+3809,Ctenopharyngodon idella x Squaliobarbus curriculus,247,8,species
+3810,Dimidiochromis compressiceps,2572,8,species
+3811,Gyrinocheilus aymonieri,3592,8,species
+3812,Gymnocypris przewalskii,441,8,species
+3813,Euthynnus alletteratus,830,8,species
+3814,Squalus montalbani,1742,8,species
+3815,Leptochilichthyidae,354,6,family
+3816,Leptochilichthys,3815,7,genus
+3817,Leptochilichthys agassizii,3816,8,species
+3818,Eleotris fusca,893,8,species
+3819,Micropterus dolomieu,1154,8,species
+3820,Acheilognathus somjinensis,256,8,species
+3821,Lampridae,3015,6,family
+3822,Lampris,3821,7,genus
+3823,Lampris guttatus,3822,8,species
+3824,Dentex gibbosus,1270,8,species
+3825,Luciogobius elongatus,466,8,species
+3826,Nimbochromis,136,7,genus
+3827,Nimbochromis linni,3826,8,species
+3828,Opsariichthys bidens,74,8,species
+3829,Pseudogobio esocinus,317,8,species
+3830,Gymnuridae,760,6,family
+3831,Gymnura,3830,7,genus
+3832,Gymnura poecilura,3831,8,species
+3833,Periophthalmodon,266,7,genus
+3834,Periophthalmodon schlosseri,3833,8,species
+3835,Isurus oxyrinchus,1242,8,species
+3836,Gymnogobius,266,7,genus
+3837,Gymnogobius petschiliensis,3836,8,species
+3838,Acanthurus leucosternon,3034,8,species
+3839,Serpenticobitidae,14,6,family
+3840,Serpenticobitis,3839,7,genus
+3841,Serpenticobitis octozona,3840,8,species
+3842,Nemacheilus,15,7,genus
+3843,Nemacheilus pallidus,3842,8,species
+3844,Gymnogobius urotaenia,3836,8,species
+3845,Bujurquina,136,7,genus
+3846,Bujurquina mariae,3845,8,species
+3847,Eutaeniophorus sp. 033-Miya,2750,8,species
+3848,Anguilla celebesensis,492,8,species
+3849,Microphysogobio koreensis,649,8,species
+3850,Malapteruridae,101,6,family
+3851,Malapterurus,3850,7,genus
+3852,Malapterurus electricus,3851,8,species
+3853,Rhamphochromis,136,7,genus
+3854,Rhamphochromis esox,3853,8,species
+3855,Cephalopholis argus,1142,8,species
+3856,Paracanthurus,129,7,genus
+3857,Paracanthurus hepatus,3856,8,species
+3858,Labeo chrysophekadion,485,8,species
+3859,Epinephelus moara x Epinephelus lanceolatus,139,8,species
+3860,Microphysogobio sp. XZ-2015,649,8,species
+3861,Xenophysogobio nudicorpa,483,8,species
+3862,Harriotta,2657,7,genus
+3863,Harriotta raleighana,3862,8,species
+3864,Sebastes taczanowskii,253,8,species
+3865,Muraenesox,3541,7,genus
+3866,Muraenesox bagio,3865,8,species
+3867,Triplophysa lixianensis,377,8,species
+3868,Discogobio longibarbatus,580,8,species
+3869,Pterois miles,3204,8,species
+3870,Tetrapturus georgii,188,8,species
+3871,Melanocetidae,63,6,family
+3872,Melanocetus,3871,7,genus
+3873,Melanocetus murrayi,3872,8,species
+3874,Neoachiropsetta,180,7,genus
+3875,Neoachiropsetta milfordi,3874,8,species
+3876,Cyprinus carpio 'mirror' x Cyprinus carpio 'singuonensis',247,8,species
+3877,Epinephelus latifasciatus,139,8,species
+3878,Potamotrygon motoro,1545,8,species
+3879,Plotosus lineatus,3679,8,species
+3880,Promethichthys,1438,7,genus
+3881,Promethichthys prometheus,3880,8,species
+3882,Pseudogobius taijiangensis,747,8,species
+3883,Romanogobio ciscaucasicus,2807,8,species
+3884,Brachymystax,91,7,genus
+3885,Brachymystax tumensis,3884,8,species
+3886,Acipenser mikadoi,891,8,species
+3887,Triplophysa anterodorsalis,377,8,species
+3888,Scombrops gilberti,1585,8,species
+3889,Toxabramis swinhonis,3140,8,species
+3890,Pampus echinogaster,664,8,species
+3891,Cheilinus fasciatus,3454,8,species
+3892,Catostomus catostomus,1665,8,species
+3893,Seriolella,1465,7,genus
+3894,Seriolella porosa,3893,8,species
+3895,Andinoacara rivulatus,1175,8,species
+3896,Argyrosomus japonicus,3045,8,species
+3897,Pseudolaubuca sinensis,431,8,species
+3898,Carcharhinus tjutjot,582,8,species
+3899,Barbodes aurotaeniatus,2384,8,species
+3900,Nipponocypris temminckii,3099,8,species
+3901,Dipturus nasutus,123,8,species
+3902,Onychostoma simum,644,8,species
+3903,Acipenser oxyrinchus,891,8,species
+3904,Scopelogadus,2306,7,genus
+3905,Scopelogadus mizolepis,3904,8,species
+3906,Pseudocarchariidae,700,6,family
+3907,Pseudocarcharias,3906,7,genus
+3908,Pseudocarcharias kamoharai,3907,8,species
+3909,Misgurnus mizolepis,1198,8,species
+3910,Sufflamen,98,7,genus
+3911,Sufflamen fraenatum,3910,8,species
+3912,Epinephelus coioides,139,8,species
+3913,Pterapogon,2008,7,genus
+3914,Pterapogon kauderni,3913,8,species
+3915,Parapocryptes,266,7,genus
+3916,Parapocryptes serperaster,3915,8,species
+3917,Phractocephalus,149,7,genus
+3918,Phractocephalus hemioliopterus,3917,8,species
+3919,Metzia longinasus,1321,8,species
+3920,Acheilognathus barbatus,256,8,species
+3921,Anodontostoma,169,7,genus
+3922,Anodontostoma chacunda,3921,8,species
+3923,Gasterochisma,84,7,genus
+3924,Gasterochisma melampus,3923,8,species
+3925,Retropinna semoni,1858,8,species
+3926,Macrhybopsis meeki,1660,8,species
+3927,Eleotris picta,893,8,species
+3928,Diagramma,1076,7,genus
+3929,Diagramma picta,3928,8,species
+3930,Paracanthobrama,33,7,genus
+3931,Paracanthobrama guichenoti,3930,8,species
+3932,Sinibotia superciliaris,1912,8,species
+3933,Notropis telescopus,212,8,species
+3934,Schismatogobius ampluvinculus,3005,8,species
+3935,Silurus meridionalis,709,8,species
+3936,Hexanchus griseus,2017,8,species
+3937,Misgurnus bipartitus,1198,8,species
+3938,Paralichthys dentatus,1750,8,species
+3939,Ichthyoelephas,575,7,genus
+3940,Ichthyoelephas longirostris,3939,8,species
+3941,Glyptosternon,391,7,genus
+3942,Glyptosternon maculatum,3941,8,species
+3943,Salmo trutta,3544,8,species
+3944,Thymallus burejensis,92,8,species
+3945,Platax,2683,7,genus
+3946,Platax orbicularis,3945,8,species
+3947,Bolbometopon,641,7,genus
+3948,Bolbometopon muricatum,3947,8,species
+3949,Iberochondrostoma,33,7,genus
+3950,Iberochondrostoma lemmingii,3949,8,species
+3951,Pseudobagrus emarginatus,153,8,species
+3952,Acipenser dabryanus x Acipenser schrenckii,891,8,species
+3953,Auxis,84,7,genus
+3954,Auxis rochei,3953,8,species
+3955,Lutjanus sebae,234,8,species
+3956,Redigobius,266,7,genus
+3957,Redigobius bikolanus,3956,8,species
+3958,Salanx cuvieri,3206,8,species
+3959,Heteroconger,173,7,genus
+3960,Heteroconger hassi,3959,8,species
+3961,Pseudotolithus elongatus,185,8,species
+3962,Psettina,1002,7,genus
+3963,Psettina iijimae,3962,8,species
+3964,Tariqilabeo,33,7,genus
+3965,Tariqilabeo burmanicus,3964,8,species
+3966,Lobotidae,552,6,family
+3967,Lobotes,3966,7,genus
+3968,Lobotes surinamensis,3967,8,species
+3969,Mustelus manazo,1644,8,species
+3970,Megachasmidae,700,6,family
+3971,Megachasma,3970,7,genus
+3972,Megachasma pelagios,3971,8,species
+3973,Gymnocanthus intermedius,2210,8,species
+3974,Chilotilapia,136,7,genus
+3975,Chilotilapia rhoadesii,3974,8,species
+3976,Acipenser stellatus,891,8,species
+3977,Elagatis,108,7,genus
+3978,Elagatis bipinnulata,3977,8,species
+3979,Sinobdella,736,7,genus
+3980,Sinobdella sinensis,3979,8,species
+3981,triploid Megalobrama amblycephala x Xenocypris davidi,247,8,species
+3982,Lampadena,1139,7,genus
+3983,Lampadena atlantica,3982,8,species
+3984,Coregonus baicalensis,502,8,species
+3985,(Cyprinus carpio 'mirror' x Cyprinus carpio 'singuonensis') x Carassius auratus red var.,247,8,species
+3986,Microphysogobio yaluensis,649,8,species
+3987,Takifugu pardalis,144,8,species
+3988,Orestias,1956,7,genus
+3989,Orestias ascotanensis,3988,8,species
+3990,Gyrinomimus myersi,3384,8,species
+3991,Aluterus monoceros,525,8,species
+3992,Chitala lopis,929,8,species
+3993,Trachinotus carolinus,3801,8,species
+3994,Kichulchoia,176,7,genus
+3995,Kichulchoia multifasciata,3994,8,species
+3996,Cobitis lutheri,177,8,species
+3997,Squatina japonica,330,8,species
+3998,Cottus perifretum,604,8,species
+3999,Rhinecanthus,98,7,genus
+4000,Rhinecanthus aculeatus,3999,8,species
+4001,Gymnocypris potanini,441,8,species
+4002,Parodontidae,6,6,family
+4003,Apareiodon,4002,7,genus
+4004,Apareiodon affinis,4003,8,species
+4005,Dolichopteryx,1987,7,genus
+4006,Dolichopteryx minuscula,4005,8,species
+4007,Polynemus dubius,1185,8,species
+4008,Melanocetus johnsonii,3872,8,species
+4009,Siniperca roulei,225,8,species
+4010,Crossocheilus langei,197,8,species
+4011,Rhamphichthyidae,157,6,family
+4012,Gymnorhamphichthys,4011,7,genus
+4013,Gymnorhamphichthys sp. NM-2010,4012,8,species
+4014,Sardinella gibbosa,662,8,species
+4015,Sebastes minor,253,8,species
+4016,Stolephorus insularis,3356,8,species
+4017,Rhinogobius rubromaculatus,1209,8,species
+4018,Takifugu alboplumbeus,144,8,species
+4019,Peristediidae,18,6,family
+4020,Scalicus,4019,7,genus
+4021,Scalicus amiscus,4020,8,species
+4022,Acrossocheilus parallens,292,8,species
+4023,Pseudotriakidae,40,6,family
+4024,Pseudotriakis,4023,7,genus
+4025,Pseudotriakis microdon,4024,8,species
+4026,Schizothorax pseudoaksaiensis,119,8,species
+4027,Sarcocheilichthys biwaensis,606,8,species
+4028,Kajikia audax,1821,8,species
+4029,Umbra pygmaea,1017,8,species
+4030,Prochilodus harttii,576,8,species
+4031,Oncorhynchus clarkii,402,8,species
+4032,Eudontomyzon,945,7,genus
+4033,Eudontomyzon morii,4032,8,species
+4034,Gobiopterus,266,7,genus
+4035,Gobiopterus lacustris,4034,8,species
+4036,Chaenogobius,266,7,genus
+4037,Chaenogobius gulosus,4036,8,species
+4038,Cynotilapia,136,7,genus
+4039,Cynotilapia afra,4038,8,species
+4040,Jenkinsia sp. CL54,3500,8,species
+4041,Syngnathus schlegeli,3212,8,species
+4042,Epinephelus areolatus,139,8,species
+4043,Chaeturichthys,266,7,genus
+4044,Chaeturichthys stigmatias,4043,8,species
+4045,Gadus macrocephalus,1237,8,species
+4046,Kottelatlimia,176,7,genus
+4047,Kottelatlimia pristes,4046,8,species
+4048,Xiphister,832,7,genus
+4049,Xiphister atropurpureus,4048,8,species
+4050,Alosa sapidissima,221,8,species
+4051,Harpadon,1377,7,genus
+4052,Harpadon microchir,4051,8,species
+4053,Sphyraena barracuda,1684,8,species
+4054,Onychostoma macrolepis,644,8,species
+4055,Solenostomus cyanopterus,1287,8,species
+4056,Alepocephalus bairdii,2568,8,species
+4057,Anguilla australis,492,8,species
+4058,Lepidocephalus,176,7,genus
+4059,Lepidocephalus macrochir,4058,8,species
+4060,Pristis pectinata,3531,8,species
+4061,Chiloscyllium punctatum,1345,8,species
+4062,Planiliza macrolepis,2739,8,species
+4063,Protopterus aethiopicus,3382,8,species
+4064,Pleuronichthys,227,7,genus
+4065,Pleuronichthys cornutus,4064,8,species
+4066,Akrokolioplax,33,7,genus
+4067,Akrokolioplax bicornis,4066,8,species
+4068,Neocyttus,2125,7,genus
+4069,Neocyttus rhomboidalis,4068,8,species
+4070,Chiloscyllium plagiosum,1345,8,species
+4071,Ischikauia,33,7,genus
+4072,Ischikauia steenackeri,4071,8,species
+4073,Kali,1862,7,genus
+4074,Kali indica,4073,8,species
+4075,Lagocephalus wheeleri,787,8,species
+4076,Sebastes inermis,253,8,species
+4077,Aseraggodes,631,7,genus
+4078,Aseraggodes kobensis,4077,8,species
+4079,Cobitis biwae,177,8,species
+4080,Nannoperca australis,1275,8,species
+4081,Anguilla nebulosa,492,8,species
+4082,Petrotilapia,136,7,genus
+4083,Petrotilapia nigra,4082,8,species
+4084,Microphysogobio jeoni,649,8,species
+4085,Synaphobranchus,846,7,genus
+4086,Synaphobranchus kaupii,4085,8,species
+4087,Hyporhamphus sajori,912,8,species
+4088,Acipenser schrenckii x Huso dauricus,277,8,species
+4089,Lepidosirenidae,3380,6,family
+4090,Lepidosiren,4089,7,genus
+4091,Lepidosiren paradoxa,4090,8,species
+4092,Labiobarbus spilopleura,801,8,species
+4093,Eubalichthys,55,7,genus
+4094,Eubalichthys mosaicus,4093,8,species
+4095,Acrossocheilus hemispinus,292,8,species
+4096,Chalceidae,6,6,family
+4097,Chalceus,4096,7,genus
+4098,Chalceus macrolepidotus,4097,8,species
+4099,Thryssa hamiltonii,789,8,species
+4100,Sebastes owstoni,253,8,species
+4101,Decapterus macrosoma,109,8,species
+4102,Aphyosemion kunzi,808,8,species
+4103,Protosalanx hyalocranius,2417,8,species
+4104,Ariosoma,173,7,genus
+4105,Ariosoma shiroanago,4104,8,species
+4106,Tridentiger barbatus,1289,8,species
+4107,Rhinogobio typus,621,8,species
+4108,Synbranchidae,735,6,family
+4109,Monopterus,4108,7,genus
+4110,Monopterus albus,4109,8,species
+4111,Labeo fimbriatus,485,8,species
+4112,Channa asiatica,489,8,species
+4113,Pterothrissus,2065,7,genus
+4114,Pterothrissus gissu,4113,8,species
+4115,Takifugu stictonotus,144,8,species
+4116,Etheostoma flabellare,1600,8,species
+4117,Ophichthidae,94,6,family
+4118,Ophisurus,4117,7,genus
+4119,Ophisurus macrorhynchos,4118,8,species
+4120,Pseudobagrus truncatus,153,8,species
+4121,Neocyema,721,7,genus
+4122,Neocyema erythrosoma,4121,8,species
+4123,Leptobotia rubrilabris,320,8,species
+4124,Gymnarchidae,586,6,family
+4125,Gymnarchus,4124,7,genus
+4126,Gymnarchus niloticus,4125,8,species
+4127,Osteochilus salsburyi,2265,8,species
+4128,Cromileptes,19,7,genus
+4129,Cromileptes altivelis,4128,8,species
+4130,Cociella,869,7,genus
+4131,Cociella crocodila,4130,8,species
+4132,Enchelynassa,685,7,genus
+4133,Enchelynassa canina,4132,8,species
+4134,Euchiloglanis kishinouyei,1590,8,species
+4135,Chanodichthys erythropterus,2509,8,species
+4136,Aperioptus,176,7,genus
+4137,Aperioptus gracilentus,4136,8,species
+4138,Cheilopogon agoo,651,8,species
+4139,Stephanolepis,55,7,genus
+4140,Stephanolepis cirrhifer,4139,8,species
+4141,Arothron hispidus,3378,8,species
+4142,Gymnocypris eckloni,441,8,species
+4143,Oreoleuciscus,33,7,genus
+4144,Oreoleuciscus potanini,4143,8,species
+4145,Sundasalanx mekongensis,3388,8,species
+4146,Strongylura,1766,7,genus
+4147,Strongylura anastomella,4146,8,species
+4148,Aplocheilus lineatus,2720,8,species
+4149,Sander lucioperca,3158,8,species
+4150,Glyptothorax trilineatus,1418,8,species
+4151,Lophius,2089,7,genus
+4152,Lophius americanus,4151,8,species
+4153,Monacanthus,55,7,genus
+4154,Monacanthus chinensis,4153,8,species
+4155,Nocomis asper,660,8,species
+4156,Pseudobagrus pratti,153,8,species
+4157,Tor malabaricus,764,8,species
+4158,Misgurnus mohoity,1198,8,species
+4159,Balistes,98,7,genus
+4160,Balistes vetula,4159,8,species
+4161,Sprattus sprattus,3072,8,species
+4162,Sicyopterus longifilis,433,8,species
+4163,Hypoplectrus,19,7,genus
+4164,Hypoplectrus gemma,4163,8,species
+4165,Hypostomus,1147,7,genus
+4166,Hypostomus plecostomus,4165,8,species
+4167,Aldrovandia affinis,450,8,species
+4168,Carcharodon,701,7,genus
+4169,Carcharodon carcharias,4168,8,species
+4170,Geophagus,136,7,genus
+4171,Geophagus steindachneri,4170,8,species
+4172,Tribolodon brandtii,2932,8,species
+4173,Cyclocheilichthys janthochir,1963,8,species
+4174,Liobagrus anguillicauda,103,8,species
+4175,Alosa alosa,221,8,species
+4176,Macquaria australasica,2741,8,species
+4177,Cottiusculus,141,7,genus
+4178,Cottiusculus nihonkaiensis,4177,8,species
+4179,Morone saxatilis,2382,8,species
+4180,Sardinella lemuru,662,8,species
+4181,Halichoeres nigrescens,1037,8,species
+4182,Monotrete leiurus,1554,8,species
+4183,Paraplagusia japonica,2057,8,species
+4184,Ambloplites,984,7,genus
+4185,Ambloplites rupestris,4184,8,species
+4186,Perca flavescens,861,8,species
+4187,Paracheirodon innesi,3562,8,species
+4188,Austrolebias,888,7,genus
+4189,Austrolebias charrua,4188,8,species
+4190,Notropis chalybaeus,212,8,species
+4191,Pseudobagrus brevicorpus,153,8,species
+4192,Macrognathus aculeatus,737,8,species
+4193,Thymallus tugarinae,92,8,species
+4194,Garra rufa,1200,8,species
+4195,Siganus canaliculatus,1022,8,species
+4196,Chelonodontops,67,7,genus
+4197,Chelonodontops pleurospilus,4196,8,species
+4198,Hippocampus kuda,677,8,species
+4199,Antigonia,562,7,genus
+4200,Antigonia capros,4199,8,species
+4201,Spratelloides gracilis,1702,8,species
+4202,Rexea nakamurai,2546,8,species
+4203,Takifugu rubripes x Takifugu flavidus,144,8,species
+4204,Paratilapia,136,7,genus
+4205,Paratilapia polleni,4204,8,species
+4206,Lophiogobius,266,7,genus
+4207,Lophiogobius ocellicauda,4206,8,species
+4208,Xanthichthys,98,7,genus
+4209,Xanthichthys auromarginatus,4208,8,species
+4210,Amblyraja radiata,3416,8,species
+4211,Pelotretis,180,7,genus
+4212,Pelotretis flavilatus,4211,8,species
+4213,Pristigenys,1350,7,genus
+4214,Pristigenys niphonia,4213,8,species
+4215,Lycodes tanakae,1065,8,species
+4216,Alticorpus,136,7,genus
+4217,Alticorpus geoffreyi,4216,8,species
+4218,Linophrynidae,63,6,family
+4219,Haplophryne,4218,7,genus
+4220,Haplophryne mollis,4219,8,species
+4221,Aphyosemion kouamense,808,8,species
+4222,Sarotherodon melanotheron,1952,8,species
+4223,Carcharhinus sorrah,582,8,species
+4224,Pararasbora,33,7,genus
+4225,Pararasbora moltrechti,4224,8,species
+4226,Diodon holocanthus,1091,8,species
+4227,Psilorhynchidae,14,6,family
+4228,Psilorhynchus,4227,7,genus
+4229,Psilorhynchus pseudecheneis,4228,8,species
+4230,Microthrissa,169,7,genus
+4231,Microthrissa royauxi,4230,8,species
+4232,Rasbora argyrotaenia,1279,8,species
+4233,Sewellia lineolata,2222,8,species
+4234,Trichonotidae,22,6,family
+4235,Trichonotus,4234,7,genus
+4236,Trichonotus setiger,4235,8,species
+4237,Platax teira,3945,8,species
+4238,Enophrys,141,7,genus
+4239,Enophrys diceraus,4238,8,species
+4240,Opisthoproctus,1987,7,genus
+4241,Opisthoproctus soleatus,4240,8,species
+4242,Serrivomer sector,2251,8,species
+4243,Gobiobotia macrocephala,872,8,species
+4244,Rhodeus uyekii,666,8,species
+4245,Lactoria,2391,7,genus
+4246,Lactoria diaphana,4245,8,species
+4247,Nessorhamphus,522,7,genus
+4248,Nessorhamphus ingolfianus,4247,8,species
+4249,Danacetichthys,416,7,genus
+4250,Danacetichthys galathenus,4249,8,species
+4251,Hypentelium,30,7,genus
+4252,Hypentelium nigricans,4251,8,species
+4253,Notopterus,627,7,genus
+4254,Notopterus notopterus,4253,8,species
+4255,Glyptothorax fokiensis,1418,8,species
+4256,Oncorhynchus keta,402,8,species
+4257,Priacanthus macracanthus,1351,8,species
+4258,Amphiprion clarkii,77,8,species
+4259,Cetomimus,416,7,genus
+4260,Cetomimus sp. AMS I34481001,4259,8,species
+4261,Takifugu obscurus,144,8,species
+4262,Gymnodiptychus,33,7,genus
+4263,Gymnodiptychus dybowskii,4262,8,species
+4264,Pimephales,33,7,genus
+4265,Pimephales notatus,4264,8,species
+4266,Notropis stramineus,212,8,species
+4267,Acipenser gueldenstaedtii,891,8,species
+4268,Cichla,136,7,genus
+4269,Cichla ocellaris,4268,8,species
+4270,Cirrhinus reba,2245,8,species
+4271,Plesiobatidae,760,6,family
+4272,Plesiobatis,4271,7,genus
+4273,Plesiobatis daviesi,4272,8,species
+4274,Engraulis mordax,193,8,species
+4275,Pseudogastromyzon fasciatus,3341,8,species
+4276,Tor putitora,764,8,species
+4277,Lophius piscatorius,4151,8,species
+4278,Myrichthys,4117,7,genus
+4279,Myrichthys maculosus,4278,8,species
+4280,Placidochromis,136,7,genus
+4281,Placidochromis longimanus,4280,8,species
+4282,Salvelinus albus,315,8,species
+4283,Trigonostigma,33,7,genus
+4284,Trigonostigma espei,4283,8,species
+4285,Oreochromis mossambicus,183,8,species
+4286,Ichthyomyzon fossor,3397,8,species
+4287,Hypsibarbus salweenensis,1527,8,species
+4288,Lycothrissa,192,7,genus
+4289,Lycothrissa crocodilus,4288,8,species
+4290,Epalzeorhynchos bicolor,3219,8,species
+4291,Anarhichas lupus,2624,8,species
+4292,Glyptothorax cavia,1418,8,species
+4293,Galaxias gollumoides,1126,8,species
+4294,Tor douronensis,764,8,species
+4295,Glyptothorax laosensis,1418,8,species
+4296,Trichiurus haumela,2099,8,species
+4297,Centropyge woodheadi,88,8,species
+4298,Etmopteridae,1740,6,family
+4299,Etmopterus,4298,7,genus
+4300,Etmopterus pusillus,4299,8,species
+4301,Ethmidium,169,7,genus
+4302,Ethmidium maculatum,4301,8,species
+4303,Melichthys,98,7,genus
+4304,Melichthys vidua,4303,8,species
+4305,Channa micropeltes,489,8,species
+4306,Ptychobarbus kaznakovi,113,8,species
+4307,Nibea albiflora,520,8,species
+4308,Rhodeus amarus,666,8,species
+4309,Meda,33,7,genus
+4310,Meda fulgida,4309,8,species
+4311,Schizothorax waltoni,119,8,species
+4312,Kryptolebias marmoratus,889,8,species
+4313,Percina crypta,1019,8,species
+4314,Ptychochromoides,136,7,genus
+4315,Ptychochromoides katria,4314,8,species
+4316,Ophiodon,1239,7,genus
+4317,Ophiodon elongatus,4316,8,species
+4318,Melanotaenia parkinsoni,1463,8,species
+4319,Devario laoensis,3166,8,species
+4320,Danio albolineatus,1044,8,species
+4321,Oedalechilus labiosus,2203,8,species
+4322,Cypselurus,203,7,genus
+4323,Cypselurus hiraii,4322,8,species
+4324,Oreochromis niloticus,183,8,species
+4325,Scomber scombrus,85,8,species
+4326,Oncorhynchus nerka,402,8,species
+4327,Acrossocheilus barbodon,292,8,species
+4328,Etrumeus,3554,7,genus
+4329,Etrumeus teres,4328,8,species
+4330,Scarus ghobban,941,8,species
+4331,Ariomma indicum,2555,8,species
+4332,Dalatiidae,1740,6,family
+4333,Squaliolus,4332,7,genus
+4334,Squaliolus aliae,4333,8,species
+4335,Pimephales promelas,4264,8,species
+4336,Ompok pabda,1292,8,species
+4337,Caranx ignobilis,2300,8,species
+4338,Zacco acanthogenys,2031,8,species
+4339,Epiplatys guineensis,1889,8,species
+4340,Ellopostomatidae,14,6,family
+4341,Ellopostoma,4340,7,genus
+4342,Ellopostoma mystax,4341,8,species
+4343,Leptobotia taeniops,320,8,species
+4344,Poecilia latipinna,1100,8,species
+4345,Nipponocypris koreanus,3099,8,species
+4346,Coilia grayii,1775,8,species
+4347,Avocettina,95,7,genus
+4348,Avocettina infans,4347,8,species
+4349,Salmo ischchan,3544,8,species
+4350,Mikrogeophagus,136,7,genus
+4351,Mikrogeophagus ramirezi,4350,8,species
+4352,Symphysodon discus,926,8,species
+4353,Sicyopterus lengguru,433,8,species
+4354,Apolemichthys kingi,534,8,species
+4355,Onychostoma gerlachi,644,8,species
+4356,Anguilla obscura,492,8,species
+4357,Takifugu flavidus,144,8,species
+4358,Cultrichthys,33,7,genus
+4359,Cultrichthys compressocorpus,4358,8,species
+4360,Poroderma,370,7,genus
+4361,Poroderma pantherinum,4360,8,species
+4362,Pao,67,7,genus
+4363,Pao palembangensis,4362,8,species
+4364,Triaenodon,41,7,genus
+4365,Triaenodon obesus,4364,8,species
+4366,Coregonus ussuriensis,502,8,species
+4367,Bathylagidae,385,6,family
+4368,Lipolagus,4367,7,genus
+4369,Lipolagus ochotensis,4368,8,species
+4370,Hemibarbus mylodon,364,8,species
+4371,Neoscopelus macrolepidotus,3636,8,species
+4372,Ammodytes hexapterus,2044,8,species
+4373,Centropyge joculator,88,8,species
+4374,Danio rerio,1044,8,species
+4375,Alepocephalus australis,2568,8,species
+4376,Tetragonurus atlanticus,380,8,species
+4377,Oreochromis sp. red tilapia,183,8,species
+4378,Pungitius pungitius,241,8,species
+4379,Acipenser transmontanus,891,8,species
+4380,Lutjanus erythropterus,234,8,species
+4381,Schizopygopsis malacanthus,1688,8,species
+4382,Cottus szanaga,604,8,species
+4383,Pampus argenteus,664,8,species
+4384,Genicanthus melanospilos,1027,8,species
+4385,Enteromius pobeguini,2412,8,species
+4386,Fistularia commersonii,3430,8,species
+4387,Torquigener hypselogeneion,1855,8,species
+4388,Kaupichthys,2790,7,genus
+4389,Kaupichthys hyoproroides,4388,8,species
+4390,Nettastoma,1730,7,genus
+4391,Nettastoma parviceps,4390,8,species
+4392,Tribolodon sachalinensis,2932,8,species
+4393,Lepidotrigla kanagashira,1255,8,species
+4394,Raja polystigma,1411,8,species
+4395,Draconettidae,350,6,family
+4396,Draconetta,4395,7,genus
+4397,Draconetta xenica,4396,8,species
+4398,Polypterus ornatipinnis,2368,8,species
+4399,Arctogadus,495,7,genus
+4400,Arctogadus glacialis,4399,8,species
+4401,Johnius carouna,1548,8,species
+4402,Tylochromis,136,7,genus
+4403,Tylochromis polylepis,4402,8,species
+4404,Canthigaster jactator,527,8,species
+4405,Pseudolabrus sieboldi,642,8,species
+4406,Barbonymus gonionotus,513,8,species
+4407,Discolabeo,33,7,genus
+4408,Discolabeo wuluoheensis,4407,8,species
+4409,Petrochromis,136,7,genus
+4410,Petrochromis trewavasae,4409,8,species
+4411,Decapterus macarellus,109,8,species
+4412,Pantodontidae,586,6,family
+4413,Pantodon,4412,7,genus
+4414,Pantodon buchholzi,4413,8,species
+4415,Schistura fasciolata,258,8,species
+4416,Hucho,91,7,genus
+4417,Hucho hucho,4416,8,species
+4418,Blicca,33,7,genus
+4419,Blicca bjoerkna,4418,8,species
+4420,Trichogaster fasciata,3750,8,species
+4421,Jinshaia abbreviata,2782,8,species
+4422,Trixiphichthys,1369,7,genus
+4423,Trixiphichthys weberi,4422,8,species
+4424,Macrhybopsis storeriana,1660,8,species
+4425,Johnius grypotus,1548,8,species
+4426,Fundulopanchax scheeli,851,8,species
+4427,Gagata,391,7,genus
+4428,Gagata dolichonema,4427,8,species
+4429,Narcine bancroftii,538,8,species
+4430,Esox reichertii,2960,8,species
+4431,Chelonodontops patoca,4196,8,species
+4432,Polydactylus plebeius,3026,8,species
+4433,Sphoeroides testudineus,966,8,species
+4434,Dactyloptena tiltoni,3551,8,species
+4435,Parargyrops,27,7,genus
+4436,Parargyrops edita,4435,8,species
+4437,Abalistes,98,7,genus
+4438,Abalistes stellaris,4437,8,species
+4439,Seriola dumerili,1587,8,species
+4440,Bregmacerotidae,494,6,family
+4441,Bregmaceros,4440,7,genus
+4442,Bregmaceros nectabanus,4441,8,species
+4443,Schizothorax macropogon,119,8,species
+4444,Eucyclogobius,266,7,genus
+4445,Eucyclogobius newberryi,4444,8,species
+4446,Acrossocheilus wuyiensis,292,8,species
+4447,Acipenser fulvescens,891,8,species
+4448,Triodontidae,54,6,family
+4449,Triodon,4448,7,genus
+4450,Triodon macropterus,4449,8,species
+4451,Scaphirhynchus albus x Scaphirhynchus platorynchus,1680,8,species
+4452,Polypterus teugelsi,2368,8,species
+4453,Notacanthus,2535,7,genus
+4454,Notacanthus chemnitzii,4453,8,species
+4455,Labeo cylindricus,485,8,species
+4456,Enoplosidae,223,6,family
+4457,Enoplosus,4456,7,genus
+4458,Enoplosus armatus,4457,8,species
+4459,Scriptaphyosemion schmitti,400,8,species
+4460,Apeltes,240,7,genus
+4461,Apeltes quadracus,4460,8,species
+4462,Salvelinus curilus,315,8,species
+4463,Chelon,116,7,genus
+4464,Chelon labrosus,4463,8,species
+4465,Crossocheilus atrilimes,197,8,species
+4466,Nematalosa erebi,1367,8,species
+4467,Labeo angra,485,8,species
+4468,Sinogastromyzon sichangensis,2582,8,species
+4469,Raja clavata,1411,8,species
+4470,Puntioplites,33,7,genus
+4471,Puntioplites proctozystron,4470,8,species
+4472,Geophagus brasiliensis,4170,8,species
+4473,Stiphodon tuivi,2779,8,species
+4474,Luciobarbus sclateri,996,8,species
+4475,Psilorhynchus balitora,4228,8,species
+4476,Lepomis gibbosus,1205,8,species
+4477,Anarrhichthys,2623,7,genus
+4478,Anarrhichthys ocellatus,4477,8,species
+4479,Hucho taimen,4416,8,species
+4480,Syngnathoides,351,7,genus
+4481,Syngnathoides biaculeatus,4480,8,species
+4482,Geotria,945,7,genus
+4483,Geotria australis,4482,8,species
+4484,Trachinotus blochii,3801,8,species
+4485,Coreoleuciscus,33,7,genus
+4486,Coreoleuciscus splendidus,4485,8,species
+4487,Mogurnda,23,7,genus
+4488,Mogurnda adspersa,4487,8,species
+4489,Spinibarbus hollandi,48,8,species
+4490,Microthrissa congica,4230,8,species
+4491,Garra tibetana,1200,8,species
+4492,Occidentarius,1569,7,genus
+4493,Occidentarius platypogon,4492,8,species
+4494,Megalobrama amblycephala x (Megalobrama amblycephala x Megalobrama terminalis),515,8,species
+4495,Iksookimia yongdokensis,2154,8,species
+4496,Novumbra,218,7,genus
+4497,Novumbra hubbsi,4496,8,species
+4498,Gobio cynocephalus,1519,8,species
+4499,Pennahia pawak,844,8,species
+4500,Piaractus brachypomus,3606,8,species
+4501,Himantolophus albinares,2835,8,species
+4502,Aulopidae,731,6,family
+4503,Hime,4502,7,genus
+4504,Hime japonica,4503,8,species
+4505,Chanidae,394,6,family
+4506,Chanos,4505,7,genus
+4507,Chanos chanos,4506,8,species
+4508,Xyrauchen,30,7,genus
+4509,Xyrauchen texanus,4508,8,species
+4510,Neoceratiidae,63,6,family
+4511,Neoceratias,4510,7,genus
+4512,Neoceratias spinifer,4511,8,species
+4513,Aspiolucius,33,7,genus
+4514,Aspiolucius esocinus,4513,8,species
+4515,Syncrossus beauforti,1244,8,species
+4516,Crossocheilus siamensis,197,8,species
+4517,Iksookimia koreensis,2154,8,species
+4518,Somniosidae,1740,6,family
+4519,Somniosus,4518,7,genus
+4520,Somniosus pacificus,4519,8,species
+4521,Hypostomus francisci,4165,8,species
+4522,Trachyrhamphus,351,7,genus
+4523,Trachyrhamphus serratus,4522,8,species
+4524,Clarias gariepinus,975,8,species
+4525,Fossorochromis,136,7,genus
+4526,Fossorochromis rostratus,4525,8,species
+4527,Zu,3016,7,genus
+4528,Zu cristatus,4527,8,species
+4529,Amphiprion akallopisos,77,8,species
+4530,Cynoglossus zanzibarensis,548,8,species
+4531,Scriptaphyosemion bertholdi,400,8,species
+4532,Laeops,1002,7,genus
+4533,Laeops lanceolata,4532,8,species
+4534,Agonostomus,116,7,genus
+4535,Agonostomus monticola,4534,8,species
+4536,Misgurnus anguillicaudatus x Misgurnus bipartitus,1198,8,species
+4537,Bathygadus,1299,7,genus
+4538,Bathygadus antrodes,4537,8,species
+4539,Triplophysa robusta,377,8,species
+4540,Stichaeus,832,7,genus
+4541,Stichaeus grigorjewi,4540,8,species
+4542,Cycleptus,30,7,genus
+4543,Cycleptus elongatus,4542,8,species
+4544,Takifugu flavidus x Takifugu rubripes,144,8,species
+4545,Caranx melampygus,2300,8,species
+4546,Eptatretus,1060,7,genus
+4547,Eptatretus burgeri,4546,8,species
+4548,Leptoderma lubricum,753,8,species
+4549,Campylomormyrus,1594,7,genus
+4550,Campylomormyrus compressirostris,4549,8,species
+4551,Chaenomugil,116,7,genus
+4552,Chaenomugil proboscideus,4551,8,species
+4553,Trachurus japonicus,584,8,species
+4554,Cryptopsaras,2311,7,genus
+4555,Cryptopsaras couesii,4554,8,species
+4556,Hypselobarbus pulchellus,1563,8,species
+4557,Poecilia formosa,1100,8,species
+4558,Pictichromis,11,7,genus
+4559,Pictichromis paccagnellae,4558,8,species
+4560,Carinotetraodon lorteti,1265,8,species
+4561,Pseudopentaceros,3503,7,genus
+4562,Pseudopentaceros richardsoni,4561,8,species
+4563,Plectropomus areolatus,2859,8,species
+4564,Pangasianodon hypophthalmus,3707,8,species
+4565,Myloplus,744,7,genus
+4566,Myloplus rubripinnis,4565,8,species
+4567,Brachymystax lenok,3884,8,species
+4568,Trinectes,1886,7,genus
+4569,Trinectes maculatus,4568,8,species
+4570,Semilabeo,33,7,genus
+4571,Semilabeo obscurus,4570,8,species
+4572,Aphyocypris chinensis,324,8,species
+4573,Paramonacanthus,55,7,genus
+4574,Paramonacanthus choirocephalus,4573,8,species
+4575,Nannacara,136,7,genus
+4576,Nannacara anomala,4575,8,species
+4577,Eugnathogobius polylepis,952,8,species
+4578,Pseudorhombus cinnamoneus,3120,8,species
+4579,Pylodictis,616,7,genus
+4580,Pylodictis olivaris,4579,8,species
+4581,Pentaceros wheeleri,3504,8,species
+4582,Chagunius,33,7,genus
+4583,Chagunius chagunio,4582,8,species
+4584,Schizothorax kozlovi,119,8,species
+4585,Hucho bleekeri,4416,8,species
+4586,Raja miraletus,1411,8,species
+4587,Lebiasinidae,6,6,family
+4588,Lebiasina,4587,7,genus
+4589,Lebiasina astrigata,4588,8,species
+4590,Aulopyge,33,7,genus
+4591,Aulopyge huegelii,4590,8,species
+4592,Oreochromis andersonii,183,8,species
+4593,Sicyopterus sarasini,433,8,species
+4594,Carcharhinus brevipinna,582,8,species
+4595,Candidia,33,7,genus
+4596,Candidia barbata,4595,8,species
+4597,Acanthocobitis zonalternans,3235,8,species
+4598,Coreius,33,7,genus
+4599,Coreius heterodon,4598,8,species
+4600,Traccatichthys,15,7,genus
+4601,Traccatichthys taeniatus,4600,8,species
+4602,Alosa pseudoharengus,221,8,species
+4603,Poeciliopsis monacha,2376,8,species
+4604,Coregonus oxyrinchus,502,8,species
+4605,Danio dangila,1044,8,species
+4606,Oligosarcus,132,7,genus
+4607,Oligosarcus argenteus,4606,8,species
+4608,Lepidocephalichthys guntea,880,8,species
+4609,Katsuwonus,84,7,genus
+4610,Katsuwonus pelamis,4609,8,species
+4611,Sillago sihama,919,8,species
+4612,Melanotaenia boesemani,1463,8,species
+4613,Odaxothrissa losera,1738,8,species
+4614,Centropyge interrupta,88,8,species
+4615,Haplochromis,136,7,genus
+4616,Haplochromis burtoni,4615,8,species
+4617,Pelecus,33,7,genus
+4618,Pelecus cultratus,4617,8,species
+4619,Cubiceps,71,7,genus
+4620,Cubiceps squamiceps,4619,8,species
+4621,Saurida undosquamis,1378,8,species
+4622,Cobitis choii,177,8,species
+4623,Rhynchactis,3224,7,genus
+4624,Rhynchactis macrothrix,4623,8,species
+4625,Gnathopogon strigatus,471,8,species
+4626,Callorhinchus capensis,2115,8,species
+4627,Carassius carassius,1177,8,species
+4628,Dactyloptena orientalis,3551,8,species
+4629,Banjosidae,567,6,family
+4630,Banjos,4629,7,genus
+4631,Banjos banjos,4630,8,species
+4632,Cirrhinus cirrhosus,2245,8,species
+4633,Etheostoma olmstedi,1600,8,species
+4634,Histiopterus,3503,7,genus
+4635,Histiopterus typus,4634,8,species
+4636,Lethenteron camtschaticum,1507,8,species
+4637,Alepocephalus agassizii,2568,8,species
+4638,Epinephelus fasciatomaculosus,139,8,species
+4639,Fundulus grandis,1620,8,species
+4640,Yaoshanicus,33,7,genus
+4641,Yaoshanicus arcus,4640,8,species
+4642,Ictalurus cf. pricei USON-01120-1,617,8,species
+4643,Aulonocara,136,7,genus
+4644,Aulonocara stuartgranti,4643,8,species
+4645,Epinephelus bruneus,139,8,species
+4646,Cubiceps pauciradiatus,4619,8,species
+4647,Gnathopogon taeniellus,471,8,species
+4648,Vimba,33,7,genus
+4649,Vimba melanops,4648,8,species
+4650,Cottus reinii,604,8,species
+4651,Pseudogyrinocheilus,33,7,genus
+4652,Pseudogyrinocheilus prochilus,4651,8,species
+4653,Psilorhynchus sucatio,4228,8,species
+4654,Pseudobalistes flavimarginatus,3182,8,species
+4655,Hyporhamphus quoyi,912,8,species
+4656,Etheostoma tallapoosae,1600,8,species
+4657,Lophius litulon,4151,8,species
+4658,Setipinna,192,7,genus
+4659,Setipinna taty,4658,8,species
+4660,Dentex dentex,1270,8,species
+4661,Oxuderces,266,7,genus
+4662,Oxuderces dentatus,4661,8,species
+4663,Fundulopanchax amieti,851,8,species
+4664,Arothron firmamentum,3378,8,species
+4665,Ranzania,1234,7,genus
+4666,Ranzania laevis,4665,8,species
+4667,Lophonectes,1002,7,genus
+4668,Lophonectes gallus,4667,8,species
+4669,Lampetra aepyptera,1202,8,species
+4670,Acanthaluteres,55,7,genus
+4671,Acanthaluteres brownii,4670,8,species
+4672,Psilorhynchus homaloptera,4228,8,species
+4673,Coreius guichenoti,4598,8,species
+4674,Psammoperca,923,7,genus
+4675,Psammoperca waigiensis,4674,8,species
+4676,Leucoraja naevus,1181,8,species
+4677,Polypterus weeksii,2368,8,species
+4678,Schizothorax lantsangensis,119,8,species
+4679,Megalobrama skolkovii,515,8,species
+4680,Hippocampus camelopardalis,677,8,species
+4681,Ichthyomyzon unicuspis,3397,8,species
+4682,Torquigener brevipinnis,1855,8,species
+4683,Thunnus albacares,1110,8,species
+4684,Clupea harengus,2241,8,species
+4685,Acentrogobius caninus,1622,8,species
+4686,Lateolabrax maculatus,769,8,species
+4687,'Percalatidae',223,6,family
+4688,Percalates,4687,7,genus
+4689,Percalates novemaculeata,4688,8,species
+4690,Neosynchiropus,445,7,genus
+4691,Neosynchiropus moyeri,4690,8,species
+4692,Labeo pierrei,485,8,species
+4693,Bathytroctes microlepis,1006,8,species
+4694,Argentinidae,385,6,family
+4695,Glossanodon,4694,7,genus
+4696,Glossanodon semifasciatus,4695,8,species
+4697,Puntigrus tetrazona,1973,8,species
+4698,Ostracion rhinorhynchos,2392,8,species
+4699,Sardinops,169,7,genus
+4700,Sardinops melanostictus,4699,8,species
+4701,Alosa aestivalis,221,8,species
+4702,Gymnodiptychus pachycheilus,4262,8,species
+4703,Schizothorax esocinus,119,8,species
+4704,Channa argus x Channa maculata,489,8,species
+4705,Scorpis,1470,7,genus
+4706,Scorpis lineolata,4705,8,species
+4707,Hypoptychidae,18,6,family
+4708,Hypoptychus,4707,7,genus
+4709,Hypoptychus dybowskii,4708,8,species
+4710,Protopterus dolloi,3382,8,species
+4711,Sinocyclocheilus rhinocerous,348,8,species
+4712,Pogonichthys,33,7,genus
+4713,Pogonichthys macrolepidotus,4712,8,species
+4714,Colomesus asellus,3686,8,species
+4715,Epinephelus quoyanus,139,8,species
+4716,Microcanthus,1470,7,genus
+4717,Microcanthus strigatus,4716,8,species
+4718,Schismatorhynchos,33,7,genus
+4719,Schismatorhynchos nukta,4718,8,species
+4720,Liachirus,631,7,genus
+4721,Liachirus melanospilos,4720,8,species
+4722,Pagrus major,423,8,species
+4723,Auxis thazard,3953,8,species
+4724,Iriatherina,1128,7,genus
+4725,Iriatherina werneri,4724,8,species
+4726,Candidia pingtungensis,4595,8,species
+4727,Neotrygon,1537,7,genus
+4728,Neotrygon kuhlii,4727,8,species
+4729,Beaufortia szechuanensis,1797,8,species
+4730,Acheilognathus tonkinensis,256,8,species
+4731,Thryssa kammalensis,789,8,species
+4732,Schistura balteata,258,8,species
+4733,Bedotiidae,236,6,family
+4734,Bedotia,4733,7,genus
+4735,Bedotia geayi,4734,8,species
+4736,Pleuronichthys japonicus,4064,8,species
+4737,Gonorynchus abbreviatus,820,8,species
+4738,Acanthobrama,33,7,genus
+4739,Acanthobrama persidis,4738,8,species
+4740,Cyprinella spiloptera,2212,8,species
+4741,Tetrapturus angustirostris,188,8,species
+4742,Aequidens,136,7,genus
+4743,Aequidens metae,4742,8,species
+4744,Acipenser dabryanus,891,8,species
+4745,Hybopsis,33,7,genus
+4746,Hybopsis lineapunctata,4745,8,species
+4747,Mugil cephalus,2870,8,species
+4748,Pateobatis hortlei,1538,8,species
+4749,Pelagocephalus,67,7,genus
+4750,Pelagocephalus marki,4749,8,species
+4751,Squalus formosus,1742,8,species
