@@ -1,0 +1,196 @@
+---
+title: "hakai-rosetta"
+author: "Kate Sheridan"
+date: "8/6/2021"
+output: html_document
+---
+
+# Setting up the master database and 'Rosetta Stone'
+
+June 2022 note: as of right now I will need an updated database, etc. This script was dropped into taxonomy_keys from another repository with the output from the merge; as of today it is almost a year old. 
+One adjustment I am making here is that this script will only be for the merging of files in the database(s). So it can be skipped entirely if an already-clean version of the merge exists.
+
+
+```{r include=FALSE}
+library(tidyverse)
+library(dplyr)
+library(stringr)
+library(data.table)
+library(here)
+
+
+```
+
+## 1. Merging the multiple files comprising the Hakai Institute COI eDNA barcode database
+
+
+Load-in for this database is relatively complicated. There are two sources -- the sequences from Hakai itself and the sequences from BOLD/NCBI. They have to be read in separately, combined, and higher taxonomy assigned. The files here were updated August 2021 and may need updating.
+
+It may take a while to load the bold_genbank files as they tend to be large.
+
+```{r load-in}
+#these are all Hakai's personally barcoded samples
+#includes internal codes, taxonomic information, and collection locality
+hakailist <- read.csv(here('hakaidata','2021BLASTDatabase', 'supporting',
+                           'All_Hakai_Marine_Samples_WithCOI.csv'))
+
+#this is their 2020 taxon mapping file from BOLD and Genbank
+#there are no column names in this file
+bold_genbank_taxa <- read.delim(here('hakaidata','2020Database', 'CO1_database',
+                           'taxa_map', 'CO1.BOLD_genbank_combined.taxa_map.txt'),
+                           header = FALSE)
+```
+
+## Filter lists
+
+I'm heavily filtering the data I'm working with at the moment to taxa of interest = *marine metazoans*. I want to retain only sequences/identities from marine animals, as this is what we will be looking for in our eDNA. The rest will all be filtered out of analysis, or represents contamination/controls.
+
+This list is exclusion instead of keep in the case that the database is expanded in the future. I can't predict what to keep later, but 'Japygidae' will never be marine, for instance.
+
+NOTE: I have removed all birds (V6 == 'Aves') here. This may be undesirable. We will have to determine if there are birds we want to keep. I have also removed all insects (V6 == 'Insecta'), which may also be undesirable. I did not remove Acari as mites may show up in the data. However, it is not filtered to marine-only mites as I am not familiar with their taxonomy.
+
+```{r sort bold_genbank}
+#animals only
+bold_genbank_taxa <- bold_genbank_taxa %>%
+  subset(V4 == 'Metazoa')
+
+
+# list of land animals from class and family, depending on what should be removed
+land_animals_V6 <- c('Collembola', 'Insecta', 'Amphibia', 'Japygidae',
+                     'Diplopoda', 'Chilopoda', 'Aves', 'Lepidosauria', 'Kinosternidae',
+                     	'Emydidae', 'Metazoa incertae sedis', 'Arthropoda incertae sedis',
+                     'Chordata incertae sedis', 'Testudinidae', 'Parajapygidae',
+                     'Alligatoridae', 'Trionychidae', 'Chelidae', 'Octostigmatidae',
+                     'Geoemydidae', 'Crocodylidae', 'Podocnemididae', 'Pelomedusidae',
+                     'Udeonychophora', 'Dermatemydidae', 'Dermochelyidae', 'Chelydridae')
+
+land_animals_V7 <- c('Rodentia', 'Canidae', 'Felidae', 'Ursidae', 'Cervidae',
+                     'Hominidae', 'Procavidae', 'Vespertilionidae', 'Rhinolophidae',
+                     'Soricidae', 'Erinaceidae', 'Talpidae', 'Macropodidae', 
+                     'Suidae', 'Procyonidae', 'Daubentoniidae', 'Lemuridae', 
+                     'Tarsiidae', 'Muridae', 'Bovidae', 'Nesomyidae', 'Camelidae',
+                     'Equidae', 'Geomyidae', 'Sciuridae', 'Mustelidae', 'Caviidae',
+                     'Hippopotamidae', 'Elephantidae', 'Vombatidae', 'Tenrecidae',
+                     'Thryonomyidae', 'Spalacidae', 'Macroscelididae', 'Tupaiidae', 
+                     'Manidae', 'Cynocephalidae', 'Chrysochloridae', 'Didelphidae',
+                     'Cricetidae', 'Procaviidae', 'Phalangeridae', 'Tachyglossidae',
+                     'Ailuridae', 'Pseudocheiridae', 'Peramelidae', 'Potoroidae', 
+                     'Tayassuidae', 'Heteromyidae', 'Hylobatidae', 'Cebidae', 'Galagidae',
+                     'Aotidae', 'Cercopithecidae', 'Burramyidae', 'Ochotonidae',
+                     'Pteropodidae', 'Mephitidae', 'Tapiridae', 'Dasyuridae',
+                     'Phyllostomidae', 'Molossidae', 'Emballonuridae', 'Mormoopidae',
+                     'Echimyidae', 'Rhinocerotidae', 'Viverridae', 'Anomaluridae',
+                     'Hystricidae', 'Atelidae', 'Antilocapridae', 'Bathyergidae',
+                     'Bradypodidae', 'Caenolestidae', 'Caenolestidae', 'Calomyscidae',
+                     'Capromyidae', 'Castoridae', 'Cheirogaleidae', 'Tragulidae',
+                     'Thyropteridae', 'Thylacinidae', 'Solenodontidae', 'Rhinopomatidae',
+                     'Rhinonycteridae', 'Platacanthomyidae', 'Pitheciidae', 'Ctenomyidae',
+                     'Chlamyphoridae', 'Chiroptera', 'Chinchillidae', 'Cuniculidae',
+                     'Cyclopedidae', 'Dasypodidae', 'Dasyproctidae', 'Dipodidae',
+                     'Erethizontidae', 'Giraffidae', 'Gliridae', 'Furipteridae',
+                     'Eupleridae', 'Herpestidae', 'Hipposideridae', 'Hyaenidae',
+                     'Indriidae', 'Petauridae', 'Peroryctidae', 'Paleopropithecidae',
+                     'Orycteropodidae', 'Ornithorhynchidae', 'Octodontidae', 'Nycteridae',
+                     'Noctilionidae', 'Natalidae', 'Myrmecophagidae', 'Nandiniidae',
+                     'Myocastoridae', 'Moschidae', 'Megalonychidae', 'Mammalia incertae sedis',
+                     'Dictynidae', 'Lycosidae', 'Philodromidae', 'Salticidae', 'Tetragnathidae',
+                     'Linyphiidae', 'Thomisidae', 'Pisauridae', 'Tetranychidae', 'Agelenidae',
+                     'Araneidae', 'Pettalidae', 'Sironidae', 'Neogoveidae', 'Troglosironidae',
+                     'Buthidae', 'Euctenizidae', 'Phalangiidae', 'Heptathelidae',
+                     'Liphistiidae', 'Anyphaenidae', 'Phalangodidae', 'Epedanidae',
+                     'Gnaphosidae', 'Ctenidae',
+                     'Thelyphonidae', 'Dysderidae', 'Antrodiaetidae', 'Stylocellidae',
+                     'Pholcidae', 'Amaurobiidae', 'Theridiidae', 'Clubionidae', 'Miturgidae',
+                     'Diguetidae')
+
+#remove land animals from list
+bold_gb_marine <- bold_genbank_taxa %>%
+  subset(!(V6 %in% land_animals_V6)) %>%
+  subset(!(V7 %in% land_animals_V7))
+
+#pick all columns except unnamed rank 'Opisthokonta', rename for merge
+bold_gb_marine <- bold_gb_marine %>%
+  select(V1, V2, V4, V5, V6, V7, V8, V9) %>%
+  rename(BIN = V1,
+         Domain = V2,
+         Kingdom = V4,
+         Phylum = V5,
+         Class = V6,
+         Family = V7,
+         Genus = V8,
+         Species = V9)
+
+#find and fix any known errors
+#actinopteri == Actinopterygii for example
+bold_gb_marine <- bold_gb_marine %>%
+  mutate()
+
+```
+
+The Hakai list also needs sorting. There are many extra columns that may not be needed, and there are a few algae to remove.
+
+```{r sort hakailist}
+#reduce number of columns for other kinds of analysis
+hakailist <- hakailist %>%
+  select(Identification, Process.ID, BIN, Catalog.Num, Collection.Date,
+         Phylum, Class, Order, Family, Genus, Species, Sector, Lat, Lon)
+
+#animals only, remove others
+#again, an exclusion list instead of an inclusion list
+not_animal <- c('Rhodophyta', 'Ochrophyta', 'Ciliophora')
+hakailist <- hakailist %>%
+  subset(!(Phylum %in% not_animal))
+```
+
+## Merge bold-genbank and Hakai
+
+```{r merge boldgb and hakai}
+#Despite trying several varieties of join the best way to do it here
+bold_gb_hakai <- full_join(hakailist, bold_gb_marine)
+
+
+# write if needed
+#write.csv(bold_gb_hakai, here('hakaidata', '2021rosetta', 'raw',
+ #                             '20210812_hakai_bold_gbif_database_raw.csv'))
+
+```
+
+## Make a clean species column
+
+```{r clean columns}
+#create a verbatimTaxonRank column to retain original ranks of species
+bold_gb_hakai$verbatimTaxonRank <- bold_gb_hakai$Species
+
+
+#clean species column with all extra identifiers removed via regex
+#NOTE double escape for period special character: "\\."
+bold_gb_hakai <- bold_gb_hakai %>%
+  mutate(Species = str_replace_all(Species, c("sp\\.(.*)" = "sp\\.", "cf. " = "",
+                                              "nr. " = "",  "aff. " = "",
+                                              " var." = "", " n." = "",
+                                               " complex (.*)" = "",
+                                               " sensu (.*)" = "",
+                                              " et al\\." = "",
+                                              " [0-9]+" = "",
+                                              " [A-Z]{2}(.*)" = "",
+                                              " gen.(.*)" = "",
+                                              " group" = "",
+                                              " species" = "",
+                                              " [A-Z]{1}[0-9]{1}" = "",
+                                              " [A-Z]{1}" = "",
+                                              " environmental sample" = "",
+                                              "unclassified [a-zA-Z]+" = "",
+                                              " [\\(][a-zA-Z]+[\\)]" = "")))
+
+# fill kingdom and domain from merge
+# DO NOT DO THIS IF NOT ALREADY FILTERED FOR METAZOA
+bold_gb_hakai$Domain <- "Eukaryota"
+bold_gb_hakai$Kingdom <- "Metazoa"
+```
+
+```{r read and write clean}
+# write if needed
+write.csv(bold_gb_hakai, here('hakaidata', '2021rosetta', 'raw', 
+                              '20210812_hakai_bold_gbif_database_clean.csv'))
+
+```

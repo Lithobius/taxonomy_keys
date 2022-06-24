@@ -1,0 +1,168 @@
+---
+title: "fixing problems"
+author: "Kate Sheridan"
+date: "8/18/2021"
+output: html_document
+---
+
+# Fixing problematic taxa
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(taxize)
+library(data.table)
+library(here)
+```
+
+
+## Arthropods
+load in
+```{r}
+arthro_gbif <- read.csv(here('hakaidata', '2021rosetta', 'problems', 
+                              '20210812_arthropod-gbif_issue.csv'))
+
+arthro_prob <- read.csv(here('hakaidata', '2021rosetta', 'problems', 
+                              '20210812_arthropod-p.csv'))
+
+arthropod <- read.csv(here('hakaidata', '2021rosetta', 'taxize', 
+                              '20210812_arthropod.csv'))
+```
+
+merge easy stuff
+```{r}
+arthro_gbif_synonym <- arthro_gbif %>%
+  subset(status == 'SYNONYM' & matchtype == 'EXACT') %>%
+  select(!(c(confidence, note, usagekey,
+             canonicalname, X)))
+
+#data table merges must set as.data.table or the syntax doesn't work
+arthro_gbif_synonym <- as.data.table(arthro_gbif_synonym)
+arthropod <- as.data.table(arthropod)
+
+#Using data.table package to merge 
+#will find a dplyr method eventually...
+arthropod2 <- arthro_gbif_synonym[arthropod, 
+                         on = c(query = 'Species', 'kingdomkey' = 'kingdomkey', 'phylumkey' = 'phylumkey', 'orderkey' = 'orderkey', 'classkey' = 'classkey', 'familykey' = 'familykey', 'genuskey' = 'genuskey', acceptedusagekey = 'specieskey', rank = 'rank')][!(is.na(Phylum)), phylum := Phylum][!(is.na(Class)), class := Class][!(is.na(Order)), order := Order][!(is.na(Family)), family := Family][!(is.na(Genus)), genus := Genus]
+
+
+#back to arthropod
+arthropod <- arthropod2 %>%
+  select(!(c(status, matchtype, kingdom, phylum,
+             order, class, family, genus, species, scientificname,
+             synonym, X.1, X))) %>%
+  rename(Species = query)
+
+# fuzzy and accepted
+arthro_fuzz <- arthro_gbif_synonym <- arthro_gbif %>%
+  subset(status == 'ACCEPTED' & matchtype == 'FUZZY') %>%
+  select(!(c(confidence, note, acceptedusagekey,
+             canonicalname, X)))
+
+#data table merges must set as.data.table or the syntax doesn't work
+arthro_fuzz <- as.data.table(arthro_fuzz)
+arthropod <- as.data.table(arthropod)
+
+#Using data.table package to merge 
+#will find a dplyr method eventually...
+arthropod2 <- arthro_fuzz[arthropod, 
+                         on = c(query = 'Species', 'kingdomkey' = 'kingdomkey', 'phylumkey' = 'phylumkey', 'orderkey' = 'orderkey', 'classkey' = 'classkey', 'familykey' = 'familykey', 'genuskey' = 'genuskey', 'specieskey' = 'specieskey', 'usagekey' = 'usagekey', rank = 'rank')][!(is.na(Phylum)), phylum := Phylum][!(is.na(Class)), class := Class][!(is.na(Order)), order := Order][!(is.na(Family)), family := Family][!(is.na(Genus)), genus := Genus]
+
+
+#back to arthropod
+arthropod <- arthropod2 %>%
+  select(!(c(status, matchtype, kingdom, phylum,
+             order, class, family, genus, species, scientificname,
+             synonym))) %>%
+  rename(Species = query)
+
+
+```
+
+make new query for other databases
+```{r}
+doubt <- arthro_fuzz <- arthro_gbif  %>%
+  subset(status == 'DOUBTFUL') %>%
+  select(query)
+
+# may not be any of these
+#syn_fuzz <- arthro_gbif %>%
+#  subset(status == 'SYNONYM' & matchtype == 'FUZZY') #%>%
+    #select(query)
+
+# also might be necessary if the crossover is perfect
+#higher <- arthro_gbif  %>%
+#  subset(matchtype == 'HIGHERRANK') %>%
+#  select(query)
+
+
+newquery <- doubt$query
+
+arthro_worms <- get_wormsid_(newquery, searchtype = 'scientific', accepted = FALSE, fuzzy = TRUE)
+arthro_worms2 <- get_wormsid_(arthro_prob$x, searchtype = 'scientific', accepted = FALSE, fuzzy = TRUE)
+
+arthro_bold <- get_boldid_(newquery, includeTree = TRUE, fuzzy = TRUE)
+arthro_bold2 <- get_boldid_(arthro_prob$x, includeTree = TRUE, fuzzy = TRUE)
+
+
+#bind results
+arthro_bold_df <- dplyr::bind_rows(arthro_bold, .id = "query")
+rownames(arthro_bold_df) <- NULL
+arthro_bold_df2 <- dplyr::bind_rows(arthro_bold2, .id = "query")
+rownames(arthro_bold_df2) <- NULL
+
+arthro_bold_all <- full_join(arthro_bold_df, arthro_bold_df2)
+
+#condensed problem list
+arthro_bold_problem <- arthro_bold_all %>%
+  subset(is.na(taxon))
+
+#now trying with tol
+arthro_tol <- get_tolid_(arthro_bold_problem$query)
+
+
+arthro_tol_df <- dplyr::bind_rows(arthro_tol, .id = "query")
+rownames(arthro_tol_df) <- NULL
+
+#final condensed problem list
+arthro_prob2 <- arthro_bold_problem %>%
+  subset(!(query %in% c(arthro_tol_df$query)))
+
+
+write.csv(arthro_prob2$query, here('hakaidata', '2021rosetta', 'problems', 
+                              '20210830_arthropod_leftovers.csv'))
+```
+
+adding higher taxonomy to bold and tol
+```{r}
+#merge and populate the bold ids with higher taxonomy
+arthro_bold_all <- arthro_bold_all %>%
+  subset(!(is.na(taxon)))
+
+arthro_bold_higher <- classification(c(arthro_bold_all$taxid), db = 'bold')
+arthro_bold_higher_df <- cbind(arthro_bold_higher)
+
+
+#this one does not already attach the query
+arthro_tol_higher <- classification(c(arthro_tol_df$ott_id), db = 'tol')
+arthro_tol_higher_df <- cbind(arthro_tol_higher)
+
+arthro_tol_higher_df <- arthro_tol_higher_df %>%
+  select(domain, kingdom, phylum, class, order, family, genus,
+         domain_id, kingdom_id, phylum_id, order_id, family_id, genus_id)
+
+
+#arthro_newids <- full_join(arthro_bold_all, arthro_tol_df)
+
+```
+## Merge with rosetta again
+```{r}
+#load rosetta
+
+#join arthropods
+
+#save new rosetta
+
+
+
+```
+

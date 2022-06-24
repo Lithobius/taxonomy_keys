@@ -1,0 +1,41 @@
+---
+title: "hakai_taxize"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(taxize)
+library(dplyr)
+library(here)
+```
+```{r load-data}
+hakai <- read.csv('/Users/katesheridan/Documents/Research/local-R-projects/rawdata/CO1.BOLD_genbank_combined.splist.animals.marine.csv')
+
+#there were duplicates from manually fixing some
+hakai_sp <- unique(hakai$x)
+```
+
+```{r}
+hakai_sp_resolved <- tol_resolve(hakai_sp, context_name = 'Animals')
+
+hakai_sp_resolved
+
+table(hakai_sp_resolved$is_synonym)
+
+hakai_fixed_list <- hakai_sp_resolved$unique_name
+
+hakai_fixed_list <- unique(hakai_fixed_list)
+
+#list of species in worms but not taxize
+#Noricella scheerpeltzi, Myurellopsis columellaris, Myurellopsis kilburni, Myurellopsis undulata, Myurellopsis paucistriata,
+
+#add these to list
+hakai_fixed_list <- c(hakai_fixed_list, 'Noricella scheerpeltzi',
+                      'Myurellopsis columellaris', 'Myurellopsis kilburni', 
+                      'Myurellopsis undulata', 'Myurellopsis paucistriata')
+
+
+
+write.csv(hakai_fixed_list, '/Users/katesheridan/Documents/Research/local-R-projects/rawdata/CO1.BOLD_genbank_combined.splist.animals.marine.fixed2.csv')
+```
+
