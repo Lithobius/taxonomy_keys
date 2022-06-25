@@ -37,7 +37,6 @@ worms_search <- taxize_search %>%
 
 ```{r}
 # start with worms
-
 obis_worms <- get_wormsid_(sci_com = worms_search$query)
 # get_wormsid_ gives back null and length 0 elements
 ## first remove with compact and discard then map_dfr

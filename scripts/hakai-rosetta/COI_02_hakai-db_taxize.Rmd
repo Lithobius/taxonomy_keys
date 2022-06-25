@@ -9,13 +9,20 @@ output: html_document
 library(tidyverse)
 library(stringr)
 library(taxize)
+library(fuzzyjoin)
 library(here)
+
+# here filepaths
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
 ```
 
-```{r}
-#read if needed
-bold_gb_hakai <- read.csv(here('hakaidata', '2021rosetta', 'raw', 
-                              '20210812_hakai_bold_gbif_database_clean.csv'))
+```{r load-in}
+# load in most recent hakai db
+hakai_db <- read.csv(here(hakai_blast, 
+                              '20210812_hakai_bold_gbif_database_clean.csv'))[,-1] %>%
+  janitor::clean_names() %>%
+  select(!(verbatim_taxon_rank))
 ```
 
 
@@ -23,29 +30,30 @@ bold_gb_hakai <- read.csv(here('hakaidata', '2021rosetta', 'raw',
 
 First I will split the whole database into manageable subsets for taxize. This way I can go into depth with each subset and create lists of exceptions, and if the taxonomy of a single group changes only that group needs to be rerun, not the entire dataset.
 
-```{r include=FALSE}
-library(taxize)
-library(fuzzyjoin)
-```
+The pipeline for all groups is:
+1: Worms for higher taxonomy
+2: BOLD
+3: fetching gbif ids
+4 fetching OTL ids
+5: list of not-found
 
+```{r make-groups}
+# remove 'sp.'
+hakai_db <- hakai_db %>%
+  mutate(species = str_replace_all(species, c(" sp\\." = "")))
 
-```{r}
-#remove sp.
-bold_gb_hakai <- bold_gb_hakai %>%
-  mutate(Species = str_replace_all(Species, c(" sp\\." = "")))
+# extract relevant columns
+## note 'species' column includes entries from all taxonomic levels
+hakai_db_subset <- hakai_db %>%
+  select(species, phylum, class, family) %>%
+  filter(!(is.na(species) | species == "")) %>%
+  distinct() %>%
+  rename(taxa = species)
 
+annelid <- hakai_db_subset %>%
+  subset(phylum == 'Annelida')
 
-#how many unique species per phyla?
-uniquesp <- bold_gb_hakai %>%
-    distinct(Species, .keep_all = TRUE)
-  
-table(uniquesp$Phylum)
-
-
-
-annelid <- bold_gb_hakai %>%
-  subset(Phylum == 'Annelida')
-
+# edit later
 arthropod <- bold_gb_hakai %>%
   subset(Phylum == 'Arthropoda')
 
@@ -71,13 +79,169 @@ small_phyla <- bold_gb_hakai %>%
 ### Annelids
 
 ```{r annelids}
-#remove NAs and make list of only unique species
-annelid_sp <- annelid %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
+# 1: worms
+# first get resolved names from tol
+annelid_resolved <- tol_resolve(annelid$taxa, context_name = 'Animals') %>%
+  mutate(search_string = str_to_sentence(search_string))
 
-annelid_resolved <- tol_resolve(annelid_sp, context_name = 'Animals')
+# format for merge
+annelid_tol2 <- annelid_resolved %>%
+  select(!(c(approximate_match, number_matches))) %>%
+  # for not found list
+  filter(!(is.na(unique_name))) %>%
+  rename(taxa = search_string,
+         tol_sciname = unique_name)
+
+
+#then replace resolved
+annelid_search <- annelid %>%
+  left_join(annelid_resolved, by = c('taxa' = 'search_string')) %>%
+  select(c(taxa, unique_name, phylum, class, family)) %>%
+  #include replacements from tol and any overhanging taxa
+  mutate(taxa_query = coalesce(unique_name, taxa)) %>%
+  relocate(taxa_query) %>%
+  #remove any known introduction from tol
+  mutate(taxa_query = str_replace_all(taxa, ' \\(species in Opisthokonta\\)', "")) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxa_query)) %>%
+  select(!(c(unique_name)))
+
+
+annelid_worms <- get_wormsid_(sci_com = annelid_search$worms_query)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+annelid_worms2 <- annelid_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+annelid_worms2 <- annelid_worms2 %>%
+  left_join(annelid_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxa) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+annelid_worms2 <- annelid_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(taxa, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(taxa == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# worms classification
+annelid_worms_classify <- classification(annelid_worms2$worms_aphiaid, db = 'worms')
+
+# make and rotate dataframe 
+annelid_worms_classify2 <- map_dfr(.x = annelid_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
+  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
+  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
+  janitor::clean_names()
+
+annelid_worms3 <- annelid_worms2 %>%
+  left_join(annelid_worms_classify2) %>%
+  filter(kingdom == 'Animalia') %>%
+  janitor::remove_empty() %>%
+  #select only desired taxonomic levels and their IDs
+  ## note subgenus was empty here but it probably shouldn't be
+  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
+           phylum, class, subclass, order, family, genus, #subgenus, 
+           species,
+           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
+           wormsid_family, wormsid_genus, #wormsid_subgenus, 
+           wormsid_species,
+           authority))
+
+
+# now we'll search bold
+annelid_bold <- get_boldid_(sci = annelid_search$taxa_query, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+annelid_bold2 <- map_dfr(.x= annelid_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         taxa_query = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(taxa_query, bold_id, bold_taxon, rank)))
+
+# GBIF id
+annelid_gbifid <- get_gbifid_(sci = annelid_search$taxa_query, rows = 1)
+
+annelid_gbifid2 <- map_dfr(.x= annelid_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
+
+
+
+
+
+
+# join all updated fields
+annelid2 <- annelid_search %>%
+  #select(species) %>%
+  #rename(query = species) %>%
+  left_join(annelid_worms3) %>%
+  left_join(annelid_bold2) %>%
+  left_join(annelid_gbifid2) %>%
+  left_join(annelid_tol2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  relocate('rank', .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  select(!(worms_query))
+
+#write full
+write.csv(annelid2, here(rosetta, 'taxize', '20220624_annelid_taxonomy-full.csv'))
+
+# not-found list
+annelid_notfound <- hakai_db %>%
+  filter(phylum == 'Annelida') %>%
+  select(species, phylum, class, family) %>%
+  distinct() %>%
+  filter(!(is.na(species) | species == "")) %>%
+  #not in gbif or obis or worms
+  filter(!(species %in% annelid_gbifid2$query |
+           species %in% annelid_bold2$query | 
+           species %in% annelid_worms3$query |
+           species %in% annelid_tol2$query))
+
+# for instances where the TOL resolve wasn't actually worms-ok
+annelid_nf_worms <- annelid2 %>%
+  filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
+
+#write out not-found
+write.csv(annelid_notfound, here(rosetta, 'problems', '20220624_annelid_-not-found.csv'))
+
+###### old stuff under this line
+
+annelid_resolved <- tol_resolve(annelid$species, context_name = 'Animals')
 
 #remove any unique names with parentheses
 annelid_resolved <- annelid_resolved %>%
