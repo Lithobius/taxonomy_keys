@@ -1,0 +1,14 @@
+---
+title: "taxize-merge"
+author: "Kate Sheridan"
+date: '2022-06-27'
+output: html_document
+---
+
+
+Here we're going to take any fixed problems from problems, merge it back into the original taxonomy_full files, and merge all files to full database
+
+```{r setup, include=FALSE}
+
+```
+

@@ -1,0 +1,173 @@
+---
+title: "hakai-db-problem-fix"
+author: "Kate Sheridan"
+date: '2022-06-27'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(taxize)
+library(worrms)
+library(here)
+
+# here filepaths
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
+```
+# load in problems and worms conflicts
+
+```{r load-problems}
+
+
+
+
+
+mollusca_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_mollusca_not-found.csv'))
+
+ech_platy_nem_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_ech_platy_nem_not-found.csv'))
+
+small_phyla_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_small_phyla_not-found.csv'))
+
+
+
+
+chordata_nf_worms <- read_csv(here(rosetta, 'problems',
+                                   '20220624_chordata_worms-tol-conflict.csv'))
+
+mollusca_nf_worms <- read_csv(here(rosetta, 'problems',
+                                   '20220624_mollusca_worms-tol-conflict.csv'))
+
+ech_platy_nem_nf_worms <- read_csv(here(rosetta, 'problems',
+                                   '20220624_ech_platy_nem_worms-tol-conflict.csv'))
+
+small_phyla_nf_worms <- read_csv(here(rosetta, 'problems',
+                                   '20220624_small_phyla_worms-tol-conflict.csv'))
+
+```
+
+
+
+# Annelida
+
+```{r annelid-load}
+annelid_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_annelid_not-found.csv'))[-1]
+
+annelid_nf_worms <- read_csv(here(rosetta, 'problems',
+                                   '20220624_annelid_worms-tol-conflict.csv'))[-1]
+
+annelid_taxize <- read_csv(here(rosetta, 'taxize',
+                                '20220624_annelid_taxonomy-full.csv'))[-1]
+```
+
+```{r}
+annelid_records <- wm_records_names(c(annelid_nf_worms$tol_sciname), 
+                                 marine_only = FALSE)
+
+annelid_terr2 <- map_dfr(.x = annelid_terr, ~ data.frame(.x)) %>%
+  janitor::clean_names() %>%
+  select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+
+
+## after this is original
+
+# make worms-searchable for temp issue
+annelid_search <- annelid_nf_worms %>%
+  select(c(tol_sciname)) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", tol_sciname))
+
+# this worms search needs to be very broad
+annelid_worms_fuzzy <- get_wormsid_(sci_com = annelid_search$worms_query, 
+                                    fuzzy = TRUE, marine_only = FALSE,
+                                    accepted = FALSE)
+
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+annelid_worms2 <- annelid_worms_fuzzy %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+annelid_worms2 <- annelid_worms2 %>%
+  left_join(annelid_search, by = c('query' = 'worms_query')) %>%
+  relocate(tol_sciname) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+annelid_worms2 <- annelid_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(tol_sciname, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(tol_sciname == scientificname))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# in some instances the scientific name wasn't found
+# even though it was accepted? set aside to classify
+annelid_accepted <- annelid_worms2 %>%
+  filter(status %in% c('accepted', 'alternate representation'))
+
+
+annelid_issue <- annelid_worms2 %>%
+  filter(!(status %in% c('accepted', 'alternate representation')))
+
+table(annelid_issue$status)
+
+
+
+
+annelid_classify <- classification(annelid_alternate$worms_aphiaid, db = 'worms')
+# make and rotate dataframe 
+annelid_classify2 <- map_dfr(.x = annelid_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
+  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
+  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
+  janitor::clean_names()
+
+annelid_worms3 <- annelid_worms2 %>%
+  left_join(annelid_classify2) %>%
+  filter(kingdom == 'Animalia') %>%
+  janitor::remove_empty() %>%
+  #select only desired taxonomic levels and their IDs
+  ## note subgenus was empty here but it probably shouldn't be
+  select(c(tol_sciname, worms_aphiaid, worms_sciname,
+           phylum, class, subclass, order, family, genus, #subgenus, 
+           species,
+           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
+           wormsid_family, wormsid_genus, #wormsid_subgenus, 
+           wormsid_species,
+           authority))
+
+```
+
+
+
+
+
+
+# Arthropoda
+
+```{r}
+
+arthropod_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_arthropod_not-found.csv'))
+
+arthropod_nf_worms <- read_csv(here(rosetta, 'problems',
+                                   '20220624_arthropod_worms-tol-conflict.csv'))
+```
+
+
+# Chordata
+
+```{r}
+chordata_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_chordata_not-found.csv'))
+```
+

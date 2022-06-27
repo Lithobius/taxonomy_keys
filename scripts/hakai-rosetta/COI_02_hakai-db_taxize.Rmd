@@ -9,7 +9,7 @@ output: html_document
 library(tidyverse)
 library(stringr)
 library(taxize)
-library(fuzzyjoin)
+#library(fuzzyjoin) # i think this was from an older version?
 library(here)
 
 # here filepaths
@@ -53,23 +53,22 @@ hakai_db_subset <- hakai_db %>%
 annelid <- hakai_db_subset %>%
   subset(phylum == 'Annelida')
 
-# edit later
-arthropod <- bold_gb_hakai %>%
-  subset(Phylum == 'Arthropoda')
+arthropod <- hakai_db_subset %>%
+  subset(phylum == 'Arthropoda')
 
-mollusc <- bold_gb_hakai %>%
-  subset(Phylum == 'Mollusca')
+chordata <- hakai_db_subset %>%
+  subset(phylum == 'Chordata')
 
-chordata <- bold_gb_hakai %>%
-  subset(Phylum == 'Chordata')
+mollusca <- hakai_db_subset %>%
+  subset(phylum == 'Mollusca')
 
 # three 'larger' phyla
-ech_platy_nem <- bold_gb_hakai %>%
-  subset(Phylum %in% c('Echinodermata', 'Platyhelminthes', 'Nematoda'))
+ech_platy_nem <- hakai_db_subset %>%
+  subset(phylum %in% c('Echinodermata', 'Platyhelminthes', 'Nematoda'))
 
 #all the small phyla
-small_phyla <- bold_gb_hakai %>%
-  subset(!(Phylum %in% c('Annelida', 'Arthropoda', 'Mollusca', 'Chordata',
+small_phyla <- hakai_db_subset %>%
+  subset(!(phylum %in% c('Annelida', 'Arthropoda', 'Mollusca', 'Chordata',
                          'Echinodermata', 'Platyhelminthes', 'Nematoda')))
 
 
@@ -79,7 +78,7 @@ small_phyla <- bold_gb_hakai %>%
 ### Annelids
 
 ```{r annelids}
-# 1: worms
+# 1: tol_resolve
 # first get resolved names from tol
 annelid_resolved <- tol_resolve(annelid$taxa, context_name = 'Animals') %>%
   mutate(search_string = str_to_sentence(search_string))
@@ -106,7 +105,7 @@ annelid_search <- annelid %>%
   mutate(worms_query = gsub(" ", "+", taxa_query)) %>%
   select(!(c(unique_name)))
 
-
+# 2: worms
 annelid_worms <- get_wormsid_(sci_com = annelid_search$worms_query)
 # get_wormsid_ gives back null and length 0 elements
 ## first remove with compact and discard then map_dfr
@@ -156,7 +155,7 @@ annelid_worms3 <- annelid_worms2 %>%
            wormsid_species,
            authority))
 
-
+#3: gbif+bold ids
 # now we'll search bold
 annelid_bold <- get_boldid_(sci = annelid_search$taxa_query, 
                          includeTree = TRUE,
@@ -200,9 +199,7 @@ annelid_gbifid2 <- map_dfr(.x= annelid_gbifid, ~ data.frame(.x), .id = 'taxa_que
 
 
 
-
-
-
+#4: merge all and find problems
 # join all updated fields
 annelid2 <- annelid_search %>%
   #select(species) %>%
@@ -220,137 +217,28 @@ annelid2 <- annelid_search %>%
 #write full
 write.csv(annelid2, here(rosetta, 'taxize', '20220624_annelid_taxonomy-full.csv'))
 
+
 # not-found list
-annelid_notfound <- hakai_db %>%
-  filter(phylum == 'Annelida') %>%
-  select(species, phylum, class, family) %>%
-  distinct() %>%
-  filter(!(is.na(species) | species == "")) %>%
+annelid_notfound <- annelid %>%
+  #filter(phylum == 'Annelida') %>%
+  #select(species, phylum, class, family) %>%
+  #distinct() %>%
+  #filter(!(is.na(species) | species == "")) %>%
   #not in gbif or obis or worms
-  filter(!(species %in% annelid_gbifid2$query |
-           species %in% annelid_bold2$query | 
-           species %in% annelid_worms3$query |
-           species %in% annelid_tol2$query))
+  filter(!(taxa %in% annelid_gbifid2$taxa_query |
+           taxa %in% annelid_bold2$taxa_query | 
+           taxa %in% annelid_worms3$taxa_query |
+           taxa %in% annelid_tol2$taxa))
+
+#write out not-found
+write.csv(annelid_notfound, here(rosetta, 'problems', '20220624_annelid_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 annelid_nf_worms <- annelid2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
-#write out not-found
-write.csv(annelid_notfound, here(rosetta, 'problems', '20220624_annelid_-not-found.csv'))
-
-###### old stuff under this line
-
-annelid_resolved <- tol_resolve(annelid$species, context_name = 'Animals')
-
-#remove any unique names with parentheses
-annelid_resolved <- annelid_resolved %>%
-  mutate(unique_name = str_replace_all(unique_name, c(" [\\(][a-zA-Z]+[\\)]" = "")))
-
-# how many synonyms
-table(annelid_resolved$is_synonym)
-annelid_resolved %>% pull(unique_name)
-
-# join resolved with original
-# stringdist join lets us be off by one character: the capital letter
-# Note; search_string is necessary for the merge
-annelid <- annelid %>%
-  stringdist_left_join(., annelid_resolved %>%
-                         select(unique_name, ott_id, 
-                                is_synonym, flags, search_string),
-                  by = c('Species' = 'search_string'),
-                  max_dist = 1)
-
-# clean dataframe
-# fill with NAs, turn taxize ID into species, preserve original species
-# and remove useless search_string column, and X if it shows up
-annelid <- annelid %>%
-  na_if(., "") %>%
-  rename(Species = unique_name,
-         previousIdentifications = Species) %>%
-  select(-c(search_string))
-
-#re-pull annelid_sp
-annelid_sp <- annelid %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-## Now we'll add more useful columns by getting gbifIDs 
-# and repopulating higher taxonomy so the whole dataset is clean
-
-#re-get gbifids with get_gbifid_ to get all options
-annelid_gbifid <- get_gbifid_(sci = annelid_sp,
-                             rows = NA
-                             )
-
-#bind results
-annelid_gbifid_df2 <- dplyr::bind_rows(annelid_gbifid, .id = "query")
-rownames(annelid_gbifid_df2) <- NULL
-
-#separate out exact + found
-gbifid_found <- annelid_gbifid_df2 %>%
-  filter(status == 'ACCEPTED' & matchtype == 'EXACT') %>%
-  select(!(c(confidence, synonym, note, acceptedusagekey,
-             canonicalname)))
-
-# update to only be things not found to be exact/accepted
-# and with decent confidence
-annelid_gbifid_df2 <- annelid_gbifid_df2 %>%
-  subset(!(query %in% gbifid_found$query)) %>%
-  subset(confidence > 80)
-
-
-#data table merges must set as.data.table or the syntax doesn't work
-annelid <- as.data.table(annelid)
-gbifid_found <- as.data.table(gbifid_found)
-
-#Using data.table package to merge 
-#will find a dplyr method eventually...
-annelid2 <- gbifid_found[annelid, 
-                         on = c(query = 'Species')][!(is.na(phylum)), Phylum := phylum][!(is.na(class)), Class := class][!(is.na(order)), Order := order][!(is.na(family)), Family := family][!(is.na(genus)), Genus := genus]
-
-
-#back to annelid
-annelid <- annelid2 %>%
-  select(!(c(status, matchtype, kingdom, phylum,
-             order, class, family, genus, species))) %>%
-  rename(scientificNameID = scientificname,
-         Species = query)
-
-# Save group
-write.csv(annelid, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_annelids.csv'))
-
-
-
-
-# collect problems
-notin_tol <- annelid_resolved %>%
-  filter(is.na(unique_name)) %>%
-  select(search_string)
-
-gbif_issue <- annelid_gbifid_df2 %>%
-  select(query) %>%
-  distinct(query)
-
-notin_gbif <- annelid_sp %>%
-  enframe() %>%
-  subset(!(value %in% annelid_gbifid_df2$query)) %>%
-  subset(!(value %in% gbifid_found$query))
-
-annelid_problem <- c(notin_tol$search_string, notin_gbif$value, gbif_issue$query)
-
-# Save problems
-write.csv(annelid_problem, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_annelids-p.csv'))
-
-write.csv(annelid_gbifid_df2, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_annelids-gbif_issue.csv'))
-
-
-
-annelid_problem
+#write out worms issues
+write.csv(annelid_nf_worms, here(rosetta, 'problems', '20220624_annelid_worms-tol-conflict.csv'))
 ```
 
 
@@ -360,117 +248,173 @@ annelid_problem
 
 
 ```{r}
-#remove NAs and make list of only unique species
-arthropod_sp <- arthropod %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-arthropod_resolved <- tol_resolve(arthropod_sp, context_name = 'Animals')
-
-#remove any unique names with parentheses
-arthropod_resolved <- arthropod_resolved %>%
-  mutate(unique_name = str_replace_all(unique_name, c(" [\\(][a-zA-Z]+[\\)]" = "")))
-
-# how many synonyms
-table(arthropod_resolved$is_synonym)
-arthropod_resolved %>% pull(unique_name)
-
-# join resolved with original
-# stringdist join lets us be off by one character: the capital letter
-# Note; search_string is necessary for the merge
+# in arthropods there are some duplicates in class
 arthropod <- arthropod %>%
-  stringdist_left_join(., arthropod_resolved %>%
-                         select(unique_name, ott_id, 
-                                is_synonym, flags, search_string),
-                  by = c('Species' = 'search_string'),
-                  max_dist = 1)
+  select(!(class)) %>%
+  distinct()
 
-# clean dataframe
-# fill with NAs, turn taxize ID into species, preserve original species
-# and remove useless search_string column, and X if it shows up
-arthropod <- arthropod %>%
-  na_if(., "") %>%
-  rename(Species = unique_name,
-         previousIdentifications = Species) %>%
-  select(-c(search_string))
+# 1: worms
+# first get resolved names from tol
+arthropod_resolved <- tol_resolve(arthropod$taxa, context_name = 'Animals') %>%
+  mutate(search_string = str_to_sentence(search_string))
 
-#re-pull arthropod_sp
-arthropod_sp <- arthropod %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-## Now we'll add more useful columns by getting gbifIDs 
-# and repopulating higher taxonomy so the whole dataset is clean
-
-#re-get gbifids with get_gbifid_ to get all options
-arthropod_gbifid <- get_gbifid_(sci = arthropod_sp,
-                             rows = NA
-                             )
-
-#bind results
-arthropod_gbifid_df2 <- dplyr::bind_rows(arthropod_gbifid, .id = "query")
-rownames(arthropod_gbifid_df2) <- NULL
-
-#separate out exact + found
-gbifid_found <- arthropod_gbifid_df2 %>%
-  filter(status == 'ACCEPTED' & matchtype == 'EXACT') %>%
-  select(!(c(confidence, synonym, note, acceptedusagekey,
-             canonicalname)))
+# format for merge
+arthropod_tol2 <- arthropod_resolved %>%
+  select(!(c(approximate_match, number_matches))) %>%
+  # for not found list
+  filter(!(is.na(unique_name))) %>%
+  rename(taxa = search_string,
+         tol_sciname = unique_name)
 
 
-arthropod_gbifid_df2 <- arthropod_gbifid_df2 %>%
-  subset(!(query %in% gbifid_found$query)) %>%
-  subset(confidence > 80)
+#then replace resolved
+arthropod_search <- arthropod %>%
+  left_join(arthropod_resolved, by = c('taxa' = 'search_string')) %>%
+  select(c(taxa, unique_name, phylum, family)) %>%
+  #include replacements from tol and any overhanging taxa
+  mutate(taxa_query = coalesce(unique_name, taxa)) %>%
+  relocate(taxa_query) %>%
+  #remove any known introduction from tol
+  mutate(taxa_query = str_replace_all(taxa, ' \\(species in Opisthokonta\\)', "")) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxa_query)) %>%
+  select(!(c(unique_name)))
 
 
-#data table merges must set as.data.table or the syntax doesn't work
-arthropod <- as.data.table(arthropod)
-gbifid_found <- as.data.table(gbifid_found)
+arthropod_worms <- get_wormsid_(sci_com = arthropod_search$worms_query)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+arthropod_worms2 <- arthropod_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
 
-#Using data.table package to merge 
-#will find a dplyr method eventually...
-arthropod2 <- gbifid_found[arthropod, 
-                         on = c(query = 'Species')][!(is.na(phylum)), Phylum := phylum][!(is.na(class)), Class := class][!(is.na(order)), Order := order][!(is.na(family)), Family := family][!(is.na(genus)), Genus := genus]
+# this cleaning step is relatively temporary until they fix the curl issue
+arthropod_worms2 <- arthropod_worms2 %>%
+  left_join(arthropod_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxa) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+arthropod_worms2 <- arthropod_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(taxa, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(taxa == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# worms classification
+arthropod_worms_classify <- classification(arthropod_worms2$worms_aphiaid, db = 'worms')
+
+# make and rotate dataframe 
+arthropod_worms_classify2 <- map_dfr(.x = arthropod_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
+  distinct() %>%
+  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
+  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
+  janitor::clean_names()
+
+arthropod_worms3 <- arthropod_worms2 %>%
+  left_join(arthropod_worms_classify2) %>%
+  filter(kingdom == 'Animalia') %>%
+  janitor::remove_empty() %>%
+  #select only desired taxonomic levels and their IDs
+  ## note subgenus was empty here but it probably shouldn't be
+  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
+           phylum, class, subclass, order, family, genus, #subgenus, 
+           species,
+           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
+           wormsid_family, wormsid_genus, #wormsid_subgenus, 
+           wormsid_species,
+           authority))
+
+# now we'll search bold
+arthropod_bold <- get_boldid_(sci = arthropod_search$taxa_query, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+arthropod_bold2 <- map_dfr(.x= arthropod_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         taxa_query = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(taxa_query, bold_id, bold_taxon, rank)))
+
+# GBIF id
+arthropod_gbifid <- get_gbifid_(sci = arthropod_search$taxa_query, rows = 1)
+
+arthropod_gbifid2 <- map_dfr(.x= arthropod_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
 
 
-#back to arthropod
-arthropod <- arthropod2 %>%
-  select(!(c(status, matchtype, kingdom, phylum,
-             order, class, family, genus, species))) %>%
-  rename(scientificNameID = scientificname,
-         Species = query)
-
-# Save group
-write.csv(arthropod, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_arthropod.csv'))
 
 
 
 
-# collect problems
-notin_tol <- arthropod_resolved %>%
-  filter(is.na(unique_name)) %>%
-  select(search_string)
+# join all updated fields
+arthropod2 <- arthropod_search %>%
+  #select(species) %>%
+  #rename(query = species) %>%
+  left_join(arthropod_worms3) %>%
+  left_join(arthropod_bold2) %>%
+  left_join(arthropod_gbifid2) %>%
+  left_join(arthropod_tol2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  relocate('rank', .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  select(!(worms_query))
 
-gbif_issue <- arthropod_gbifid_df2 %>%
-  select(query) %>%
-  distinct(query)
+#write full
+write.csv(arthropod2, here(rosetta, 'taxize', '20220624_arthropod_taxonomy-full.csv'))
 
-notin_gbif <- arthropod_sp %>%
-  enframe() %>%
-  subset(!(value %in% arthropod_gbifid_df2$query)) %>%
-  subset(!(value %in% gbifid_found$query))
+# not-found list
+arthropod_notfound <- arthropod %>%
+  #filter(phylum == 'arthropoda') %>%
+  #select(species, phylum, class, family) %>%
+  #distinct() %>%
+  #filter(!(is.na(species) | species == "")) %>%
+  #not in gbif or obis or worms
+  filter(!(taxa %in% arthropod_gbifid2$taxa_query |
+           taxa %in% arthropod_bold2$taxa_query | 
+           taxa %in% arthropod_worms3$taxa_query |
+           taxa %in% arthropod_tol2$taxa))
 
-arthropod_problem <- c(notin_tol$search_string, notin_gbif$value, gbif_issue$query)
+#write out not-found
+write.csv(arthropod_notfound, here(rosetta, 'problems', '20220624_arthropod_not-found.csv'))
 
-# Save problems
-write.csv(arthropod_problem, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_arthropod-p.csv'))
+# for instances where the TOL resolve wasn't actually worms-ok
+arthropod_nf_worms <- arthropod2 %>%
+  filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
-write.csv(arthropod_gbifid_df2, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_arthropod-gbif_issue.csv'))
+#write out worms issues
+write.csv(arthropod_nf_worms, here(rosetta, 'problems', '20220624_arthropod_worms-tol-conflict.csv'))
 ```
 
 
@@ -478,233 +422,173 @@ write.csv(arthropod_gbifid_df2, here('hakaidata', '2021rosetta', 'problems',
 ### Chordates
 
 ```{r}
-#remove NAs and make list of only unique species
-chordata_sp <- chordata %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-chordata_resolved <- tol_resolve(chordata_sp, context_name = 'Animals')
-
-#remove any unique names with parentheses
-chordata_resolved <- chordata_resolved %>%
-  mutate(unique_name = str_replace_all(unique_name, c(" [\\(][a-zA-Z]+[\\)]" = "")))
-
-# how many synonyms
-table(chordata_resolved$is_synonym)
-#chordata_resolved %>% pull(unique_name)
-
-# join resolved with original
-# stringdist join lets us be off by one character: the capital letter
-# Note; search_string is necessary for the merge
+# in chordates there are some duplicates in class + family
 chordata <- chordata %>%
-  stringdist_left_join(., chordata_resolved %>%
-                         select(unique_name, ott_id, 
-                                is_synonym, flags, search_string),
-                  by = c('Species' = 'search_string'),
-                  max_dist = 1)
+  select(!(c(class, family))) %>%
+  distinct()
 
-# clean dataframe
-# fill with NAs, turn taxize ID into species, preserve original species
-# and remove useless search_string column, and X if it shows up
-chordata <- chordata %>%
-  na_if(., "") %>%
-  rename(Species = unique_name,
-         previousIdentifications = Species) %>%
-  select(-c(search_string))
+# 1: tol_resolve
+# first get resolved names from tol
+chordata_resolved <- tol_resolve(chordata$taxa, context_name = 'Animals') %>%
+  mutate(search_string = str_to_sentence(search_string))
 
-#re-pull sp list
-chordata_sp <- chordata %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
+# format for merge
+chordata_tol2 <- chordata_resolved %>%
+  select(!(c(approximate_match, number_matches))) %>%
+  # for not found list
+  filter(!(is.na(unique_name))) %>%
+  rename(taxa = search_string,
+         tol_sciname = unique_name)
 
 
+#then replace resolved
+chordata_search <- chordata %>%
+  left_join(chordata_resolved, by = c('taxa' = 'search_string')) %>%
+  select(c(taxa, unique_name, phylum)) %>%
+  #include replacements from tol and any overhanging taxa
+  mutate(taxa_query = coalesce(unique_name, taxa)) %>%
+  relocate(taxa_query) %>%
+  #remove any known introduction from tol
+  mutate(taxa_query = str_replace_all(taxa, ' \\(species in Opisthokonta\\)', "")) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxa_query)) %>%
+  select(!(c(unique_name)))
 
-###### insert gbifid stuff
+# 2: worms
+chordata_worms <- get_wormsid_(sci_com = chordata_search$worms_query)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+chordata_worms2 <- chordata_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
 
-# BRUTE FORCE / slow
-chordata_gbifid <- get_gbifid(sci = chordata_sp,
-                             #do not run interactively (yet)
-                             ask = FALSE,
-                             phylum = "Chordata"
-                             )
+# this cleaning step is relatively temporary until they fix the curl issue
+chordata_worms2 <- chordata_worms2 %>%
+  left_join(chordata_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxa) %>%
+  select(!(query))
 
-chordata_gbifid_df <- chordata_gbifid %>% 
-  as.data.frame(.) %>%
-  #add in species info
-  mutate(Species = chordata_sp)
+# now match species to sciname to remove extra rows
+chordata_worms2 <- chordata_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(taxa, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(taxa == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
 
-# put gbifids into dataframe
-chordata <- chordata %>%
-  left_join(., chordata_gbifid_df %>%
-              subset(match == 'found') %>%
-                         select(ids, Species))
+# worms classification
+chordata_worms_classify <- classification(chordata_worms2$worms_aphiaid, db = 'worms')
 
-#re-pull chordata_sp
-chordata_sp <- chordata_gbifid_df %>%
-  subset(!(match == "found")) %>%
-  pull(Species) %>%
-  unique()
+# make and rotate dataframe 
+chordata_worms_classify2 <- map_dfr(.x = chordata_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
+  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
+  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
+  janitor::clean_names()
 
-# rerun gbifid interactively so that it will ask which one to take
-# update to be get_gbifid_() in the future
-chordata_gbifid <- get_gbifid(sci = chordata_sp,
-                             #run interactively
-                             ask = TRUE,
-                             phylum = "Annelida"
-                             )
+chordata_worms3 <- chordata_worms2 %>%
+  left_join(chordata_worms_classify2) %>%
+  filter(kingdom == 'Animalia') %>%
+  janitor::remove_empty() %>%
+  #select only desired taxonomic levels and their IDs
+  ## note subgenus was empty here but it probably shouldn't be
+  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
+           phylum, class, subclass, order, family, genus, #subgenus, 
+           species,
+           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
+           wormsid_family, wormsid_genus, #wormsid_subgenus, 
+           wormsid_species,
+           authority))
 
-chordata_gbifid_df <- chordata_gbifid %>% 
-  as.data.frame(.) %>%
-  mutate(Species = chordata_sp)
+#3: gbif+bold ids
+# now we'll search bold
+chordata_bold <- get_boldid_(sci = chordata_search$taxa_query, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+chordata_bold2 <- map_dfr(.x= chordata_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         taxa_query = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(taxa_query, bold_id, bold_taxon, rank)))
 
-# put more gbifids into dataframe
-chordata <- chordata %>%
-  left_join(., chordata_gbifid_df %>%
-              subset(match == 'found') %>%
-                         select(ids, Species))
+# GBIF id
+chordata_gbifid <- get_gbifid_(sci = chordata_search$taxa_query, rows = 1)
 
-
-# Save group
-write.csv(chordata, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_chordata.csv'))
-
-
-
-
-# collect problems
-notin_tol <- chordata_resolved %>%
-  filter(is.na(unique_name)) %>%
-  select(search_string)
-
-notin_gbif <- chordata_gbifid_df %>%
-  subset(match == "not found") %>%
-  select(Species)
-
-chordata_problem <- c(notin_tol$search_string, notin_gbif$species)
+chordata_gbifid2 <- map_dfr(.x= chordata_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
 
 
 
+#4: merge all and find problems
+# join all updated fields
+chordata2 <- chordata_search %>%
+  #select(species) %>%
+  #rename(query = species) %>%
+  left_join(chordata_worms3) %>%
+  left_join(chordata_bold2) %>%
+  left_join(chordata_gbifid2) %>%
+  left_join(chordata_tol2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  relocate('rank', .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  select(!(worms_query))
 
-write.csv(arthropod_problem, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_chordata-p.csv'))
+#write full
+write.csv(chordata2, here(rosetta, 'taxize', '20220624_chordata_taxonomy-full.csv'))
+
+# not-found list
+chordata_notfound <- chordata %>%
+  #filter(phylum == 'chordataa') %>%
+  #select(species, phylum, class, family) %>%
+  #distinct() %>%
+  #filter(!(is.na(species) | species == "")) %>%
+  #not in gbif or obis or worms
+  filter(!(taxa %in% chordata_gbifid2$taxa_query |
+           taxa %in% chordata_bold2$taxa_query | 
+           taxa %in% chordata_worms3$taxa_query |
+           taxa %in% chordata_tol2$taxa))
+
+#write out not-found
+write.csv(chordata_notfound, here(rosetta, 'problems', '20220624_chordata_not-found.csv'))
+
+# for instances where the TOL resolve wasn't actually worms-ok
+chordata_nf_worms <- chordata2 %>%
+  filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
+
+#write out worms issues
+write.csv(chordata_nf_worms, here(rosetta, 'problems', '20220624_chordata_worms-tol-conflict.csv'))
 ```
 
-
-```{r}
-#remove NAs and make list of only unique species
-chordata_sp <- chordata %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-chordata_resolved <- tol_resolve(chordata_sp, context_name = 'Animals')
-
-#remove any unique names with parentheses
-chordata_resolved <- chordata_resolved %>%
-  mutate(unique_name = str_replace_all(unique_name, c(" [\\(][a-zA-Z]+[\\)]" = "")))
-
-# how many synonyms
-table(chordata_resolved$is_synonym)
-chordata_resolved %>% pull(unique_name)
-
-# join resolved with original
-# stringdist join lets us be off by one character: the capital letter
-# Note; search_string is necessary for the merge
-chordata <- chordata %>%
-  stringdist_left_join(., chordata_resolved %>%
-                         select(unique_name, ott_id, 
-                                is_synonym, flags, search_string),
-                  by = c('Species' = 'search_string'),
-                  max_dist = 1)
-
-# clean dataframe
-# fill with NAs, turn taxize ID into species, preserve original species
-# and remove useless search_string column, and X if it shows up
-chordata <- chordata %>%
-  na_if(., "") %>%
-  rename(Species = unique_name,
-         previousIdentifications = Species) %>%
-  select(-c(search_string))
-
-#re-pull chordata_sp
-chordata_sp <- chordata %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-## Now we'll add more useful columns by getting gbifIDs 
-# and repopulating higher taxonomy so the whole dataset is clean
-
-#re-get gbifids with get_gbifid_ to get all options
-chordata_gbifid <- get_gbifid_(sci = chordata_sp,
-                             rows = NA
-                             )
-
-#bind results
-chordata_gbifid_df2 <- dplyr::bind_rows(chordata_gbifid, .id = "query")
-rownames(chordata_gbifid_df2) <- NULL
-
-#separate out exact + found
-gbifid_found <- chordata_gbifid_df2 %>%
-  filter(status == 'ACCEPTED' & matchtype == 'EXACT') %>%
-  select(!(c(confidence, synonym, note, acceptedusagekey,
-             canonicalname)))
-
-
-chordata_gbifid_df2 <- chordata_gbifid_df2 %>%
-  subset(!(query %in% gbifid_found$query)) %>%
-  subset(confidence > 80)
-
-
-#data table merges must set as.data.table or the syntax doesn't work
-chordata <- as.data.table(chordata)
-gbifid_found <- as.data.table(gbifid_found)
-
-#Using data.table package to merge 
-#will find a dplyr method eventually...
-chordata2 <- gbifid_found[chordata, 
-                         on = c(query = 'Species')][!(is.na(phylum)), Phylum := phylum][!(is.na(class)), Class := class][!(is.na(order)), Order := order][!(is.na(family)), Family := family][!(is.na(genus)), Genus := genus]
-
-
-#back to chordata
-chordata <- chordata2 %>%
-  select(!(c(status, matchtype, kingdom, phylum,
-             order, class, family, genus, species))) %>%
-  rename(scientificNameID = scientificname,
-         Species = query)
-
-# Save group
-write.csv(chordata, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_chordata.csv'))
-
-
-
-
-# collect problems
-notin_tol <- chordata_resolved %>%
-  filter(is.na(unique_name)) %>%
-  select(search_string)
-
-gbif_issue <- chordata_gbifid_df2 %>%
-  select(query) %>%
-  distinct(query)
-
-notin_gbif <- chordata_sp %>%
-  enframe() %>%
-  subset(!(value %in% chordata_gbifid_df2$query)) %>%
-  subset(!(value %in% gbifid_found$query))
-
-chordata_problem <- c(notin_tol$search_string, notin_gbif$value, gbif_issue$query)
-
-# Save problems
-write.csv(chordata_problem, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_chordata-p.csv'))
-
-write.csv(chordata_gbifid_df2, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_chordata-gbif_issue.csv'))
-```
 
 
 
@@ -712,118 +596,175 @@ write.csv(chordata_gbifid_df2, here('hakaidata', '2021rosetta', 'problems',
 
 
 ```{r}
-#remove NAs and make list of only unique species
-mollusc_sp <- mollusc %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
+# in chordates there are some duplicates in class + family
+mollusca <- mollusca %>%
+  select(!(c(class, family))) %>%
+  distinct()
 
-mollusc_resolved <- tol_resolve(mollusc_sp, context_name = 'Animals')
+# 1: tol_resolve
+# first get resolved names from tol
+mollusca_resolved <- tol_resolve(mollusca$taxa, context_name = 'Animals') %>%
+  mutate(search_string = str_to_sentence(search_string))
 
-#remove any unique names with parentheses
-mollusc_resolved <- mollusc_resolved %>%
-  mutate(unique_name = str_replace_all(unique_name, c(" [\\(][a-zA-Z]+[\\)]" = "")))
-
-# how many synonyms
-table(mollusc_resolved$is_synonym)
-mollusc_resolved %>% pull(unique_name)
-
-# join resolved with original
-# stringdist join lets us be off by one character: the capital letter
-# Note; search_string is necessary for the merge
-mollusc <- mollusc %>%
-  stringdist_left_join(., mollusc_resolved %>%
-                         select(unique_name, ott_id, 
-                                is_synonym, flags, search_string),
-                  by = c('Species' = 'search_string'),
-                  max_dist = 1)
-
-# clean dataframe
-# fill with NAs, turn taxize ID into species, preserve original species
-# and remove useless search_string column, and X if it shows up
-mollusc <- mollusc %>%
-  na_if(., "") %>%
-  rename(Species = unique_name,
-         previousIdentifications = Species) %>%
-  select(-c(search_string))
-
-#re-pull mollusc_sp
-mollusc_sp <- mollusc %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-## Now we'll add more useful columns by getting gbifIDs 
-# and repopulating higher taxonomy so the whole dataset is clean
-
-#re-get gbifids with get_gbifid_ to get all options
-mollusc_gbifid <- get_gbifid_(sci = mollusc_sp,
-                             rows = NA
-                             )
-
-#bind results
-mollusc_gbifid_df2 <- dplyr::bind_rows(mollusc_gbifid, .id = "query")
-rownames(mollusc_gbifid_df2) <- NULL
-
-#separate out exact + found
-gbifid_found <- mollusc_gbifid_df2 %>%
-  filter(status == 'ACCEPTED' & matchtype == 'EXACT') %>%
-  select(!(c(confidence, synonym, note, acceptedusagekey,
-             canonicalname)))
+# format for merge
+mollusca_tol2 <- mollusca_resolved %>%
+  select(!(c(approximate_match, number_matches))) %>%
+  # for not found list
+  filter(!(is.na(unique_name))) %>%
+  rename(taxa = search_string,
+         tol_sciname = unique_name)
 
 
-mollusc_gbifid_df2 <- mollusc_gbifid_df2 %>%
-  subset(!(query %in% gbifid_found$query)) %>%
-  subset(confidence > 80)
+#then replace resolved
+mollusca_search <- mollusca %>%
+  left_join(mollusca_resolved, by = c('taxa' = 'search_string')) %>%
+  select(c(taxa, unique_name, phylum)) %>%
+  #include replacements from tol and any overhanging taxa
+  mutate(taxa_query = coalesce(unique_name, taxa)) %>%
+  relocate(taxa_query) %>%
+  #remove any known introduction from tol
+  mutate(taxa_query = str_replace_all(taxa, ' \\(species in Opisthokonta\\)', "")) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxa_query)) %>%
+  select(!(c(unique_name)))
+
+# 2: worms
+mollusca_worms <- get_wormsid_(sci_com = mollusca_search$worms_query)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+mollusca_worms2 <- mollusca_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+mollusca_worms2 <- mollusca_worms2 %>%
+  left_join(mollusca_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxa) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+mollusca_worms2 <- mollusca_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(taxa, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(taxa == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# worms classification
+mollusca_worms_classify <- classification(mollusca_worms2$worms_aphiaid, db = 'worms')
+
+# make and rotate dataframe 
+mollusca_worms_classify2 <- map_dfr(.x = mollusca_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
+  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
+  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
+  janitor::clean_names()
+
+mollusca_worms3 <- mollusca_worms2 %>%
+  left_join(mollusca_worms_classify2) %>%
+  filter(kingdom == 'Animalia') %>%
+  janitor::remove_empty() %>%
+  #select only desired taxonomic levels and their IDs
+  ## note subgenus was empty here but it probably shouldn't be
+  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
+           phylum, class, subclass, order, family, genus, #subgenus, 
+           species,
+           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
+           wormsid_family, wormsid_genus, #wormsid_subgenus, 
+           wormsid_species,
+           authority))
+
+#3: gbif+bold ids
+# now we'll search bold
+mollusca_bold <- get_boldid_(sci = mollusca_search$taxa_query, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+mollusca_bold2 <- map_dfr(.x= mollusca_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         taxa_query = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(taxa_query, bold_id, bold_taxon, rank)))
+
+# GBIF id
+mollusca_gbifid <- get_gbifid_(sci = mollusca_search$taxa_query, rows = 1)
+
+mollusca_gbifid2 <- map_dfr(.x= mollusca_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
 
 
-#data table merges must set as.data.table or the syntax doesn't work
-mollusc <- as.data.table(mollusc)
-gbifid_found <- as.data.table(gbifid_found)
 
-#Using data.table package to merge 
-#will find a dplyr method eventually...
-mollusc2 <- gbifid_found[mollusc, 
-                         on = c(query = 'Species')][!(is.na(phylum)), Phylum := phylum][!(is.na(class)), Class := class][!(is.na(order)), Order := order][!(is.na(family)), Family := family][!(is.na(genus)), Genus := genus]
+#4: merge all and find problems
+# join all updated fields
+mollusca2 <- mollusca_search %>%
+  #select(species) %>%
+  #rename(query = species) %>%
+  left_join(mollusca_worms3) %>%
+  left_join(mollusca_bold2) %>%
+  left_join(mollusca_gbifid2) %>%
+  left_join(mollusca_tol2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  relocate('rank', .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  select(!(worms_query))
 
+#write full
+write.csv(mollusca2, here(rosetta, 'taxize', '20220624_mollusca_taxonomy-full.csv'))
 
-#back to mollusc
-mollusc <- mollusc2 %>%
-  select(!(c(status, matchtype, kingdom, phylum,
-             order, class, family, genus, species))) %>%
-  rename(scientificNameID = scientificname,
-         Species = query)
+# not-found list
+mollusca_notfound <- mollusca %>%
+  #filter(phylum == 'molluscaa') %>%
+  #select(species, phylum, class, family) %>%
+  #distinct() %>%
+  #filter(!(is.na(species) | species == "")) %>%
+  #not in gbif or obis or worms
+  filter(!(taxa %in% mollusca_gbifid2$taxa_query |
+           taxa %in% mollusca_bold2$taxa_query | 
+           taxa %in% mollusca_worms3$taxa_query |
+           taxa %in% mollusca_tol2$taxa))
 
-# Save group
-write.csv(mollusc, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_mollusc.csv'))
+#write out not-found
+write.csv(mollusca_notfound, here(rosetta, 'problems', '20220624_mollusca_not-found.csv'))
 
+# for instances where the TOL resolve wasn't actually worms-ok
+mollusca_nf_worms <- mollusca2 %>%
+  filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
-
-
-# collect problems
-notin_tol <- mollusc_resolved %>%
-  filter(is.na(unique_name)) %>%
-  select(search_string)
-
-gbif_issue <- mollusc_gbifid_df2 %>%
-  select(query) %>%
-  distinct(query)
-
-notin_gbif <- mollusc_sp %>%
-  enframe() %>%
-  subset(!(value %in% mollusc_gbifid_df2$query)) %>%
-  subset(!(value %in% gbifid_found$query))
-
-mollusc_problem <- c(notin_tol$search_string, notin_gbif$value, gbif_issue$query)
-
-# Save problems
-write.csv(mollusc_problem, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_mollusc-p.csv'))
-
-write.csv(mollusc_gbifid_df2, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_mollusc-gbif_issue.csv'))
+#write out worms issues
+write.csv(mollusca_nf_worms, here(rosetta, 'problems', '20220624_mollusca_worms-tol-conflict.csv'))
 ```
+
+
+
 
 
 ### Echinoderms, Platyhelminthes, Nemerteans
@@ -832,118 +773,174 @@ These groups are done together since they are each moderate in size.
 
 
 ```{r}
-#remove NAs and make list of only unique species
-ech_platy_nem_sp <- ech_platy_nem %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-ech_platy_nem_resolved <- tol_resolve(ech_platy_nem_sp, context_name = 'Animals')
-
-#remove any unique names with parentheses
-ech_platy_nem_resolved <- ech_platy_nem_resolved %>%
-  mutate(unique_name = str_replace_all(unique_name, c(" [\\(][a-zA-Z]+[\\)]" = "")))
-
-# how many synonyms
-table(ech_platy_nem_resolved$is_synonym)
-ech_platy_nem_resolved %>% pull(unique_name)
-
-# join resolved with original
-# stringdist join lets us be off by one character: the capital letter
-# Note; search_string is necessary for the merge
+# in chordates there are some duplicates in class + family
 ech_platy_nem <- ech_platy_nem %>%
-  stringdist_left_join(., ech_platy_nem_resolved %>%
-                         select(unique_name, ott_id, 
-                                is_synonym, flags, search_string),
-                  by = c('Species' = 'search_string'),
-                  max_dist = 1)
+  select(!(c(class, family))) %>%
+  distinct()
 
-# clean dataframe
-# fill with NAs, turn taxize ID into species, preserve original species
-# and remove useless search_string column, and X if it shows up
-ech_platy_nem <- ech_platy_nem %>%
-  na_if(., "") %>%
-  rename(Species = unique_name,
-         previousIdentifications = Species) %>%
-  select(-c(search_string))
+# 1: tol_resolve
+# first get resolved names from tol
+ech_platy_nem_resolved <- tol_resolve(ech_platy_nem$taxa, context_name = 'Animals') %>%
+  mutate(search_string = str_to_sentence(search_string))
 
-#re-pull ech_platy_nem_sp
-ech_platy_nem_sp <- ech_platy_nem %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-## Now we'll add more useful columns by getting gbifIDs 
-# and repopulating higher taxonomy so the whole dataset is clean
-
-#re-get gbifids with get_gbifid_ to get all options
-ech_platy_nem_gbifid <- get_gbifid_(sci = ech_platy_nem_sp,
-                             rows = NA
-                             )
-
-#bind results
-ech_platy_nem_gbifid_df2 <- dplyr::bind_rows(ech_platy_nem_gbifid, .id = "query")
-rownames(ech_platy_nem_gbifid_df2) <- NULL
-
-#separate out exact + found
-gbifid_found <- ech_platy_nem_gbifid_df2 %>%
-  filter(status == 'ACCEPTED' & matchtype == 'EXACT') %>%
-  select(!(c(confidence, synonym, note, acceptedusagekey,
-             canonicalname)))
+# format for merge
+ech_platy_nem_tol2 <- ech_platy_nem_resolved %>%
+  select(!(c(approximate_match, number_matches))) %>%
+  # for not found list
+  filter(!(is.na(unique_name))) %>%
+  rename(taxa = search_string,
+         tol_sciname = unique_name)
 
 
-ech_platy_nem_gbifid_df2 <- ech_platy_nem_gbifid_df2 %>%
-  subset(!(query %in% gbifid_found$query)) %>%
-  subset(confidence > 80)
+#then replace resolved
+ech_platy_nem_search <- ech_platy_nem %>%
+  left_join(ech_platy_nem_resolved, by = c('taxa' = 'search_string')) %>%
+  select(c(taxa, unique_name, phylum)) %>%
+  #include replacements from tol and any overhanging taxa
+  mutate(taxa_query = coalesce(unique_name, taxa)) %>%
+  relocate(taxa_query) %>%
+  #remove any known introduction from tol
+  mutate(taxa_query = str_replace_all(taxa, ' \\(species in Opisthokonta\\)', "")) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxa_query)) %>%
+  select(!(c(unique_name)))
+
+# 2: worms
+ech_platy_nem_worms <- get_wormsid_(sci_com = ech_platy_nem_search$worms_query)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+ech_platy_nem_worms2 <- ech_platy_nem_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+ech_platy_nem_worms2 <- ech_platy_nem_worms2 %>%
+  left_join(ech_platy_nem_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxa) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+ech_platy_nem_worms2 <- ech_platy_nem_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(taxa, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(taxa == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# worms classification
+ech_platy_nem_worms_classify <- classification(ech_platy_nem_worms2$worms_aphiaid, db = 'worms')
+
+# make and rotate dataframe 
+ech_platy_nem_worms_classify2 <- map_dfr(.x = ech_platy_nem_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
+  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
+  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
+  janitor::clean_names()
+
+ech_platy_nem_worms3 <- ech_platy_nem_worms2 %>%
+  left_join(ech_platy_nem_worms_classify2) %>%
+  filter(kingdom == 'Animalia') %>%
+  janitor::remove_empty() %>%
+  #select only desired taxonomic levels and their IDs
+  ## note subgenus was empty here but it probably shouldn't be
+  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
+           phylum, class, subclass, order, family, genus, #subgenus, 
+           species,
+           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
+           wormsid_family, wormsid_genus, #wormsid_subgenus, 
+           wormsid_species,
+           authority))
+
+#3: gbif+bold ids
+# now we'll search bold
+ech_platy_nem_bold <- get_boldid_(sci = ech_platy_nem_search$taxa_query, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+ech_platy_nem_bold2 <- map_dfr(.x= ech_platy_nem_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         taxa_query = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(taxa_query, bold_id, bold_taxon, rank)))
+
+# GBIF id
+ech_platy_nem_gbifid <- get_gbifid_(sci = ech_platy_nem_search$taxa_query, rows = 1)
+
+ech_platy_nem_gbifid2 <- map_dfr(.x= ech_platy_nem_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
 
 
-#data table merges must set as.data.table or the syntax doesn't work
-ech_platy_nem <- as.data.table(ech_platy_nem)
-gbifid_found <- as.data.table(gbifid_found)
 
-#Using data.table package to merge 
-#will find a dplyr method eventually...
-ech_platy_nem2 <- gbifid_found[ech_platy_nem, 
-                         on = c(query = 'Species')][!(is.na(phylum)), Phylum := phylum][!(is.na(class)), Class := class][!(is.na(order)), Order := order][!(is.na(family)), Family := family][!(is.na(genus)), Genus := genus]
+#4: merge all and find problems
+# join all updated fields
+ech_platy_nem2 <- ech_platy_nem_search %>%
+  #select(species) %>%
+  #rename(query = species) %>%
+  left_join(ech_platy_nem_worms3) %>%
+  left_join(ech_platy_nem_bold2) %>%
+  left_join(ech_platy_nem_gbifid2) %>%
+  left_join(ech_platy_nem_tol2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  relocate('rank', .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  select(!(worms_query))
 
+#write full
+write.csv(ech_platy_nem2, here(rosetta, 'taxize', '20220624_ech_platy_nem_taxonomy-full.csv'))
 
-#back to ech_platy_nem
-ech_platy_nem <- ech_platy_nem2 %>%
-  select(!(c(status, matchtype, kingdom, phylum,
-             order, class, family, genus, species))) %>%
-  rename(scientificNameID = scientificname,
-         Species = query)
+# not-found list
+ech_platy_nem_notfound <- ech_platy_nem %>%
+  #filter(phylum == 'ech_platy_nema') %>%
+  #select(species, phylum, class, family) %>%
+  #distinct() %>%
+  #filter(!(is.na(species) | species == "")) %>%
+  #not in gbif or obis or worms
+  filter(!(taxa %in% ech_platy_nem_gbifid2$taxa_query |
+           taxa %in% ech_platy_nem_bold2$taxa_query | 
+           taxa %in% ech_platy_nem_worms3$taxa_query |
+           taxa %in% ech_platy_nem_tol2$taxa))
 
-# Save group
-write.csv(ech_platy_nem, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_ech_platy_nem.csv'))
+#write out not-found
+write.csv(ech_platy_nem_notfound, here(rosetta, 'problems', '20220624_ech_platy_nem_not-found.csv'))
 
+# for instances where the TOL resolve wasn't actually worms-ok
+ech_platy_nem_nf_worms <- ech_platy_nem2 %>%
+  filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
-
-
-# collect problems
-notin_tol <- ech_platy_nem_resolved %>%
-  filter(is.na(unique_name)) %>%
-  select(search_string)
-
-gbif_issue <- ech_platy_nem_gbifid_df2 %>%
-  select(query) %>%
-  distinct(query)
-
-notin_gbif <- ech_platy_nem_sp %>%
-  enframe() %>%
-  subset(!(value %in% ech_platy_nem_gbifid_df2$query)) %>%
-  subset(!(value %in% gbifid_found$query))
-
-ech_platy_nem_problem <- c(notin_tol$search_string, notin_gbif$value, gbif_issue$query)
-
-# Save problems
-write.csv(ech_platy_nem_problem, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_ech_platy_nem-p.csv'))
-
-write.csv(ech_platy_nem_gbifid_df2, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_ech_platy_nem-gbif_issue.csv'))
+#write out worms issues
+write.csv(ech_platy_nem_nf_worms, here(rosetta, 'problems', '20220624_ech_platy_nem_worms-tol-conflict.csv'))
 ```
+
+
 
 
 
@@ -951,122 +948,178 @@ write.csv(ech_platy_nem_gbifid_df2, here('hakaidata', '2021rosetta', 'problems',
 
 Last but not least, everything else
 
+
 ```{r}
-#remove NAs and make list of only unique species
-small_phyla_sp <- small_phyla %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-small_phyla_resolved <- tol_resolve(small_phyla_sp, context_name = 'Animals')
-
-#remove any unique names with parentheses
-small_phyla_resolved <- small_phyla_resolved %>%
-  mutate(unique_name = str_replace_all(unique_name, c(" [\\(][a-zA-Z]+[\\)]" = "")))
-
-# how many synonyms
-table(small_phyla_resolved$is_synonym)
-small_phyla_resolved %>% pull(unique_name)
-
-# join resolved with original
-# stringdist join lets us be off by one character: the capital letter
-# Note; search_string is necessary for the merge
+# in chordates there are some duplicates in class + family
 small_phyla <- small_phyla %>%
-  stringdist_left_join(., small_phyla_resolved %>%
-                         select(unique_name, ott_id, 
-                                is_synonym, flags, search_string),
-                  by = c('Species' = 'search_string'),
-                  max_dist = 1)
+  select(!(c(class, family))) %>%
+  distinct()
 
-# clean dataframe
-# fill with NAs, turn taxize ID into species, preserve original species
-# and remove useless search_string column, and X if it shows up
-small_phyla <- small_phyla %>%
-  na_if(., "") %>%
-  rename(Species = unique_name,
-         previousIdentifications = Species) %>%
-  select(-c(search_string))
+# 1: tol_resolve
+# first get resolved names from tol
+small_phyla_resolved <- tol_resolve(small_phyla$taxa, context_name = 'Animals') %>%
+  mutate(search_string = str_to_sentence(search_string))
 
-#re-pull small_phyla_sp
-small_phyla_sp <- small_phyla %>%
-  subset(!(Species == "")) %>%
-  pull(Species) %>%
-  unique()
-
-## Now we'll add more useful columns by getting gbifIDs 
-# and repopulating higher taxonomy so the whole dataset is clean
-
-#re-get gbifids with get_gbifid_ to get all options
-small_phyla_gbifid <- get_gbifid_(sci = small_phyla_sp,
-                             rows = NA
-                             )
-
-#bind results
-small_phyla_gbifid_df2 <- dplyr::bind_rows(small_phyla_gbifid, .id = "query")
-rownames(small_phyla_gbifid_df2) <- NULL
-
-#separate out exact + found
-gbifid_found <- small_phyla_gbifid_df2 %>%
-  filter(status == 'ACCEPTED' & matchtype == 'EXACT') %>%
-  select(!(c(confidence, synonym, note, acceptedusagekey,
-             canonicalname)))
+# format for merge
+small_phyla_tol2 <- small_phyla_resolved %>%
+  select(!(c(approximate_match, number_matches))) %>%
+  # for not found list
+  filter(!(is.na(unique_name))) %>%
+  rename(taxa = search_string,
+         tol_sciname = unique_name)
 
 
-small_phyla_gbifid_df2 <- small_phyla_gbifid_df2 %>%
-  subset(!(query %in% gbifid_found$query)) %>%
-  subset(confidence > 80)
+#then replace resolved
+small_phyla_search <- small_phyla %>%
+  left_join(small_phyla_resolved, by = c('taxa' = 'search_string')) %>%
+  select(c(taxa, unique_name, phylum)) %>%
+  #include replacements from tol and any overhanging taxa
+  mutate(taxa_query = coalesce(unique_name, taxa)) %>%
+  relocate(taxa_query) %>%
+  #remove any known introduction from tol
+  mutate(taxa_query = str_replace_all(taxa, ' \\(species in Opisthokonta\\)', "")) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxa_query)) %>%
+  select(!(c(unique_name)))
+
+# 2: worms
+small_phyla_worms <- get_wormsid_(sci_com = small_phyla_search$worms_query)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+small_phyla_worms2 <- small_phyla_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+small_phyla_worms2 <- small_phyla_worms2 %>%
+  left_join(small_phyla_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxa) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+small_phyla_worms2 <- small_phyla_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(taxa, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(taxa == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# worms classification
+small_phyla_worms_classify <- classification(small_phyla_worms2$worms_aphiaid, db = 'worms')
+
+# make and rotate dataframe 
+small_phyla_worms_classify2 <- map_dfr(.x = small_phyla_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
+  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
+  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
+  janitor::clean_names()
+
+small_phyla_worms3 <- small_phyla_worms2 %>%
+  left_join(small_phyla_worms_classify2) %>%
+  filter(kingdom == 'Animalia') %>%
+  janitor::remove_empty() %>%
+  #select only desired taxonomic levels and their IDs
+  ## note subgenus was empty here but it probably shouldn't be
+  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
+           phylum, class, subclass, order, family, genus, #subgenus, 
+           species,
+           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
+           wormsid_family, wormsid_genus, #wormsid_subgenus, 
+           wormsid_species,
+           authority))
+
+#3: gbif+bold ids
+# now we'll search bold
+small_phyla_bold <- get_boldid_(sci = small_phyla_search$taxa_query, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+small_phyla_bold2 <- map_dfr(.x= small_phyla_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         taxa_query = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(taxa_query, bold_id, bold_taxon, rank)))
+
+# GBIF id
+small_phyla_gbifid <- get_gbifid_(sci = small_phyla_search$taxa_query, rows = 1)
+
+small_phyla_gbifid2 <- map_dfr(.x= small_phyla_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
 
 
-#data table merges must set as.data.table or the syntax doesn't work
-small_phyla <- as.data.table(small_phyla)
-gbifid_found <- as.data.table(gbifid_found)
 
-#Using data.table package to merge 
-#will find a dplyr method eventually...
-small_phyla2 <- gbifid_found[small_phyla, 
-                         on = c(query = 'Species')][!(is.na(phylum)), Phylum := phylum][!(is.na(class)), Class := class][!(is.na(order)), Order := order][!(is.na(family)), Family := family][!(is.na(genus)), Genus := genus]
+#4: merge all and find problems
+# join all updated fields
+small_phyla2 <- small_phyla_search %>%
+  #select(species) %>%
+  #rename(query = species) %>%
+  left_join(small_phyla_worms3) %>%
+  left_join(small_phyla_bold2) %>%
+  left_join(small_phyla_gbifid2) %>%
+  left_join(small_phyla_tol2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  relocate('rank', .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  select(!(worms_query))
 
+#write full
+write.csv(small_phyla2, here(rosetta, 'taxize', '20220624_small_phyla_taxonomy-full.csv'))
 
-#back to small_phyla
-small_phyla <- small_phyla2 %>%
-  select(!(c(status, matchtype, kingdom, phylum,
-             order, class, family, genus, species))) %>%
-  rename(scientificNameID = scientificname,
-         Species = query)
+# not-found list
+small_phyla_notfound <- small_phyla %>%
+  #filter(phylum == 'small_phylaa') %>%
+  #select(species, phylum, class, family) %>%
+  #distinct() %>%
+  #filter(!(is.na(species) | species == "")) %>%
+  #not in gbif or obis or worms
+  filter(!(taxa %in% small_phyla_gbifid2$taxa_query |
+           taxa %in% small_phyla_bold2$taxa_query | 
+           taxa %in% small_phyla_worms3$taxa_query |
+           taxa %in% small_phyla_tol2$taxa))
 
-# Save group
-write.csv(small_phyla, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_small_phyla.csv'))
+#write out not-found
+write.csv(small_phyla_notfound, here(rosetta, 'problems', '20220624_small_phyla_not-found.csv'))
 
+# for instances where the TOL resolve wasn't actually worms-ok
+small_phyla_nf_worms <- small_phyla2 %>%
+  filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
-
-
-## collect problems
-notin_tol <- small_phyla_resolved %>%
-  filter(is.na(unique_name)) %>%
-  select(search_string)
-
-gbif_issue <- small_phyla_gbifid_df2 %>%
-  select(query) %>%
-  distinct(query)
-
-notin_gbif <- small_phyla_sp %>%
-  enframe() %>%
-  subset(!(value %in% small_phyla_gbifid_df2$query)) %>%
-  subset(!(value %in% gbifid_found$query))
-
-small_phyla_problem <- c(notin_tol$search_string, notin_gbif$value, gbif_issue$query)
-
-# Save problems
-write.csv(small_phyla_problem, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_small_phyla-p.csv'))
-
-write.csv(small_phyla_gbifid_df2, here('hakaidata', '2021rosetta', 'problems', 
-                              '20210812_small_phyla-gbif_issue.csv'))
+#write out worms issues
+write.csv(small_phyla_nf_worms, here(rosetta, 'problems', '20220624_small_phyla_worms-tol-conflict.csv'))
 ```
 
 
 
+This might be for a later script now, after problems are fixed
 ## Merge generated files
 
 ```{r}
