@@ -141,7 +141,7 @@ annelid_worms_classify2 <- map_dfr(.x = annelid_worms_classify, ~ data.frame(.x)
   mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
   janitor::clean_names()
 
-annelid_worms3 <- annelid_worms2 %>%
+annelid_worms3 <- annelid_ %>%
   left_join(annelid_worms_classify2) %>%
   filter(kingdom == 'Animalia') %>%
   janitor::remove_empty() %>%

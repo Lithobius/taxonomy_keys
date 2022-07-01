@@ -1,0 +1,1029 @@
+"","taxa_query","taxa","tol_sciname","rank","ott_id","is_synonym","flags"
+"1","Glycerana","Glycerana","Glaberana",NA,7873058,FALSE,"sibling_higher"
+"2","Pholoides asperus","Pholoides asperus","Pholoides asperus","species",961522,FALSE,NA
+"3","Eteone fauchaldi","Eteone fauchaldi","Hypereteone fauchaldi","species",4983723,TRUE,NA
+"4","Proceraeagropunctata","Proceraeagropunctata","Proceraea nigropunctata",NA,330933,FALSE,NA
+"5","Aricidea antennata","Aricidea antennata","Aricidea antennata","species",4978085,FALSE,"sibling_higher"
+"6","Paradexiospira violaceus","Paradexiospira violaceus","Paradexiospira violacea","species",4985914,TRUE,NA
+"7","Paradexiospira vitrea","Paradexiospira vitrea","Paradexiospira vitrea","species",617643,FALSE,NA
+"8","Dipolydora magna","Dipolydora magna","Polydora magna","species",4976456,FALSE,"sibling_higher"
+"9","Prionospio multibranchiatus","Prionospio multibranchiatus","Prionospio multibranchiata","species",4976054,FALSE,NA
+"10","Spiophanesrrisi","Spiophanesrrisi","Spiophanes norrisi",NA,349433,FALSE,NA
+"11","Dodecaceria fewkesi","Dodecaceria fewkesi","Dodecaceria fewkesi","species",4976959,FALSE,NA
+"12","Allolobophora cupulifera","Allolobophora cupulifera","Aporrectodea cupulifera","species",647852,TRUE,NA
+"13","Murchieona minuscula","Murchieona minuscula","Murchieona minuscula","species",4165426,FALSE,"incertae_sedis_inherited"
+"14","Erpobdella microstoma","Erpobdella microstoma","Erpobdella microstoma","species",7486056,FALSE,NA
+"15","Metaphire sieboldi","Metaphire sieboldi","Metaphire sieboldi","species",833400,FALSE,NA
+"16","Metaphire tosaensis","Metaphire tosaensis","Metaphire tosaensis","species",833402,FALSE,NA
+"17","Amynthas vittatus","Amynthas vittatus","Amynthas vittatus","species",191497,FALSE,"sibling_higher"
+"18","Metaphire hilgendorfi","Metaphire hilgendorfi","Metaphire hilgendorfi","species",833406,FALSE,NA
+"19","Duplodicodrilus schmardae","Duplodicodrilus schmardae","Duplodicodrilus schmardae","species",839170,FALSE,NA
+"20","Metaphire megascolidioides","Metaphire megascolidioides","Metaphire megascolidioides","species",72069,FALSE,NA
+"21","Amynthas carnosus","Amynthas carnosus","Amynthas carnosus","species",370242,FALSE,"sibling_higher"
+"22","Amynthas corticis","Amynthas corticis","Amynthas corticis","species",786614,FALSE,"sibling_higher"
+"23","Amynthas distichus","Amynthas distichus","Amynthas distichus","species",370248,FALSE,"sibling_higher"
+"24","Amynthas fuscatus","Amynthas fuscatus","Amynthas fuscatus","species",370234,FALSE,"sibling_higher"
+"25","Amynthas glabrus","Amynthas glabrus","Amynthas glabrus","species",370236,FALSE,"sibling_higher"
+"26","Amynthas gracilis","Amynthas gracilis","Amynthas gracilis","species",192732,FALSE,"sibling_higher"
+"27","Amynthas hupeiensis","Amynthas hupeiensis","Amynthas hupeiensis","species",258760,FALSE,"sibling_higher"
+"28","Amynthas micronarius","Amynthas micronarius","Amynthas micronarius","species",895388,FALSE,"sibling_higher"
+"29","Amynthas minimus","Amynthas minimus","Amynthas minimus","species",895385,FALSE,"sibling_higher"
+"30","Amynthas morrisi","Amynthas morrisi","Amynthas morrisi","species",168832,FALSE,"sibling_higher"
+"31","Amynthas phaselus","Amynthas phaselus","Amynthas phaselus","species",1051640,FALSE,"sibling_higher"
+"32","Amynthas purpuratus","Amynthas purpuratus","Amynthas purpuratus","species",593460,FALSE,"sibling_higher"
+"33","Amynthas robustus","Amynthas robustus","Amynthas robustus","species",264553,FALSE,"sibling_higher"
+"34","Amynthas tappensis","Amynthas tappensis","Amynthas tappensis","species",593464,FALSE,"sibling_higher"
+"35","Amynthas tokioensis","Amynthas tokioensis","Amynthas tokioensis","species",593462,FALSE,"sibling_higher"
+"36","Amynthas yambaruensis","Amynthas yambaruensis","Amynthas yambaruensis","species",593456,FALSE,"sibling_higher"
+"37","Amynthas yunoshimensis","Amynthas yunoshimensis","Amynthas yunoshimensis","species",593453,FALSE,"sibling_higher"
+"38","Duplodicodrilus acinctus","Duplodicodrilus acinctus","Duplodicodrilus acinctus","species",512409,FALSE,NA
+"39","Metaphire agrestis","Metaphire agrestis","Metaphire agrestis","species",593450,FALSE,NA
+"40","Metaphire californica","Metaphire californica","Metaphire californica","species",1044691,FALSE,NA
+"41","Metaphire communissima","Metaphire communissima","Metaphire communissima","species",72063,FALSE,NA
+"42","Metaphire servina","Metaphire servina","Metaphire servina","species",72054,FALSE,NA
+"43","Metaphire soulensis","Metaphire soulensis","Metaphire soulensis","species",1051645,FALSE,NA
+"44","Metaphire vesiculata","Metaphire vesiculata","Metaphire vesiculata","species",72057,FALSE,NA
+"45","Metaphire yamadai","Metaphire yamadai","Metaphire yamadai","species",72067,FALSE,NA
+"46","Perionyx excavatus","Perionyx excavatus","Perionyx excavatus","species",74165,FALSE,NA
+"47","Eisenia japonica","Eisenia japonica","Eisenia japonica","species",1051638,FALSE,NA
+"48","Metaphire","Metaphire","Metaphire","genus",518191,FALSE,NA
+"49","Drawida hattamimizu","Drawida hattamimizu","Drawida hattamimizu","species",60439,FALSE,NA
+"50","Pontoscolex corethrurus","Pontoscolex corethrurus","Pontoscolex corethrurus","species",640498,FALSE,NA
+"51","Aporrectodea trapezoides","Aporrectodea trapezoides","Aporrectodea trapezoides","species",1042242,FALSE,NA
+"52","Polypheretima taprobanae","Polypheretima taprobanae","Polypheretima taprobanae","species",808298,FALSE,NA
+"53","Drawida","Drawida","Drawida","genus",21133,FALSE,NA
+"54","Pithemera bicincta","Pithemera bicincta","Pithemera bicincta","species",821738,FALSE,NA
+"55","Lumbricidae","Lumbricidae","Lumbricidae","family",316446,FALSE,"sibling_higher"
+"56","Moniligastridae","Moniligastridae","Moniligastridae","family",363474,FALSE,NA
+"57","Gastrostomobdella monticola","Gastrostomobdella monticola","Gastrostomobdella monticola","species",700583,FALSE,NA
+"58","Erpobdella japonica","Erpobdella japonica","Erpobdella japonica","species",490339,FALSE,NA
+"59","Mimobdella japonica","Mimobdella japonica","Mimobdella japonica","species",700586,FALSE,NA
+"60","Odontobdella blanchardi","Odontobdella blanchardi","Odontobdella blanchardi","species",700576,FALSE,NA
+"61","Orobdella tsushimensis","Orobdella tsushimensis","Orobdella tsushimensis","species",240267,FALSE,NA
+"62","Orobdella esulcata","Orobdella esulcata","Orobdella esulcata","species",748829,FALSE,NA
+"63","Orobdella whitmani","Orobdella whitmani","Orobdella whitmani","species",748837,FALSE,NA
+"64","Orobdella shimadae","Orobdella shimadae","Orobdella shimadae","species",567434,FALSE,NA
+"65","Orobdella dolichopharynx","Orobdella dolichopharynx","Orobdella dolichopharynx","species",567006,FALSE,NA
+"66","Orobdella ijimai","Orobdella ijimai","Orobdella ijimai","species",748831,FALSE,NA
+"67","Orobdella kawakatsuorum","Orobdella kawakatsuorum","Orobdella kawakatsuorum","species",566592,FALSE,NA
+"68","Orobdella koikei","Orobdella koikei","Orobdella koikei","species",182139,FALSE,NA
+"69","Orobdella octonaria","Orobdella octonaria","Orobdella octonaria","species",631090,FALSE,NA
+"70","Tritetrabdella taiwana","Tritetrabdella taiwana","Tritetrabdella taiwana","species",448033,FALSE,NA
+"71","Orobdella mononoke","Orobdella mononoke","Orobdella mononoke","species",534497,FALSE,NA
+"72","Orobdella ketagalan","Orobdella ketagalan","Orobdella ketagalan","species",756115,FALSE,NA
+"73","Microscolex phosphoreus","Microscolex phosphoreus","Microscolex phosphoreus","species",657256,FALSE,NA
+"74","Ikedosoma gogoshimense","Ikedosoma gogoshimense","Ikedosoma gogoshimense","species",2848097,FALSE,NA
+"75","Ochetostoma erythrogrammon","Ochetostoma erythrogrammon","Ochetostoma erythrogrammon","species",773453,FALSE,NA
+"76","Ochetostoma","Ochetostoma","Ochetostoma","genus",773452,FALSE,NA
+"77","Thalassema owstoni","Thalassema owstoni","Thalassema owstoni","species",2848095,FALSE,NA
+"78","Ikeda taenioides","Ikeda taenioides","Ikeda taenioides","species",2848108,FALSE,"unplaced_inherited"
+"79","Ikeda","Ikeda","Ikeda","genus",2848107,FALSE,"unplaced_inherited"
+"80","Orobdella masaakikuroiwai","Orobdella masaakikuroiwai","Orobdella masaakikuroiwai","species",5723677,FALSE,NA
+"81","Ikedosoma elegans","Ikedosoma elegans","Ikedosoma elegans","species",2848109,FALSE,NA
+"82","Listriolobus sorbillans","Listriolobus sorbillans","Listriolobus sorbillans","species",2848066,FALSE,NA
+"83","Limnatis paluda","Limnatis paluda","Limnatis paluda","species",780882,FALSE,NA
+"84","Pontodrilus bermudensis","Pontodrilus bermudensis","Pontodrilus bermudensis","species",180473,FALSE,NA
+"85","Glossiphonia elegans","Glossiphonia elegans","Glossiphonia elegans","species",41061,FALSE,NA
+"86","Hemiclepsis marginata","Hemiclepsis marginata","Hemiclepsis marginata","species",774568,FALSE,NA
+"87","Calliobdella vivida","Calliobdella vivida","Calliobdella vivida","species",251554,FALSE,NA
+"88","Placobdella parasitica","Placobdella parasitica","Placobdella parasitica","species",251553,FALSE,"sibling_higher"
+"89","Theromyzon rude","Theromyzon rude","Theromyzon rude","species",251552,FALSE,NA
+"90","Cambarincola holti","Cambarincola holti","Cambarincola holti","species",251548,FALSE,NA
+"91","Haemadipsa sylvestris","Haemadipsa sylvestris","Haemadipsa sylvestris","species",495863,FALSE,NA
+"92","Chtonobdella bilineata","Chtonobdella bilineata","Chtonobdella bilineata","species",927383,FALSE,NA
+"93","Haemopis marmorata","Haemopis marmorata","Haemopis marmorata","species",674,FALSE,NA
+"94","Macrobdella decora","Macrobdella decora","Macrobdella decora","species",902887,FALSE,NA
+"95","Hirudo","Hirudo","Hirudo","genus",954041,FALSE,"sibling_higher"
+"96","Erpobdella obscura","Erpobdella obscura","Erpobdella obscura","species",340135,FALSE,NA
+"97","Erpobdella octoculata","Erpobdella octoculata","Erpobdella octoculata","species",931415,FALSE,NA
+"98","Erpobdella punctata","Erpobdella punctata","Erpobdella punctata","species",610870,FALSE,NA
+"99","Haementeria gracilis","Haementeria gracilis","Haementeria gracilis","species",401396,FALSE,NA
+"100","Glossiphonia complanata","Glossiphonia complanata","Glossiphonia complanata","species",774615,FALSE,NA
+"101","Placobdella phalera","Placobdella phalera","Placobdella phalera","species",401384,FALSE,"sibling_higher"
+"102","Theromyzon pallens","Theromyzon pallens","Theromyzon pallens","species",401387,FALSE,NA
+"103","Olavius tantulus","Olavius tantulus","Olavius tantulus","species",650495,FALSE,"sibling_higher"
+"104","Fridericia tuberosa","Fridericia tuberosa","Fridericia tuberosa","species",650499,FALSE,NA
+"105","Scolelepis squamata","Scolelepis squamata","Scolelepis squamata","species",58637,FALSE,"sibling_higher"
+"106","Ankyrodrilus legaeus","Ankyrodrilus legaeus","Ankyrodrilus legaeus","species",823794,FALSE,NA
+"107","Bdellodrilus illuminatus","Bdellodrilus illuminatus","Bdellodrilus illuminatus","species",823792,FALSE,NA
+"108","Branchiobdella parasita","Branchiobdella parasita","Branchiobdella parasita","species",198233,FALSE,NA
+"109","Branchiobdella pentadonta","Branchiobdella pentadonta","Branchiobdella pentadonta",NA,249336,FALSE,NA
+"110","Cambarincola gracilis","Cambarincola gracilis","Cambarincola gracilis","species",249347,FALSE,NA
+"111","Cambarincola mesochoreus","Cambarincola mesochoreus","Cambarincola mesochoreus","species",249346,FALSE,NA
+"112","Cambarincola montanus","Cambarincola montanus","Cambarincola montanus","species",249349,FALSE,NA
+"113","Cambarincola pamelae","Cambarincola pamelae","Cambarincola pamelae","species",249348,FALSE,NA
+"114","Cambarincola philadelphicus","Cambarincola philadelphicus","Cambarincola philadelphicus","species",249351,FALSE,NA
+"115","Ceratodrilus orphiorhysis","Ceratodrilus orphiorhysis","Ceratodrilus orphiorhysis","species",198234,FALSE,NA
+"116","Cirrodrilus sapporensis","Cirrodrilus sapporensis","Cirrodrilus sapporensis","species",198236,FALSE,NA
+"117","Magmatodrilus obscurus","Magmatodrilus obscurus","Magmatodrilus obscurus","species",198230,FALSE,NA
+"118","Oedipodrilus macbaini","Oedipodrilus macbaini","Oedipodrilus macbaini","species",198232,FALSE,NA
+"119","Pterodrilus annulatus","Pterodrilus annulatus","Pterodrilus annulatus","species",823789,FALSE,NA
+"120","Sathodrilus attenuatus","Sathodrilus attenuatus","Sathodrilus attenuatus","species",953054,FALSE,NA
+"121","Triannulata magna","Triannulata magna","Triannulata magna","species",823796,FALSE,NA
+"122","Xironidrilus formosus","Xironidrilus formosus","Xironidrilus formosus",NA,823798,FALSE,NA
+"123","Haementeria lutzi","Haementeria lutzi","Haementeria lutzi","species",624347,FALSE,NA
+"124","Haementeria ghilianii","Haementeria ghilianii","Haementeria ghilianii","species",902892,FALSE,NA
+"125","Haementeria tuberculifera","Haementeria tuberculifera","Haementeria tuberculifera","species",624350,FALSE,NA
+"126","Helobdella paranensis","Helobdella paranensis","Helobdella paranensis","species",1060336,FALSE,NA
+"127","Helobdella fusca","Helobdella fusca","Helobdella fusca","species",51293,FALSE,NA
+"128","Helobdella lineata","Helobdella lineata","Helobdella lineata","species",51292,FALSE,NA
+"129","Helobdella modesta","Helobdella modesta","Helobdella modesta","species",1043001,FALSE,NA
+"130","Helobdella stagnalis","Helobdella stagnalis","Helobdella stagnalis","species",621686,FALSE,NA
+"131","Helobdella papillata","Helobdella papillata","Helobdella papillata","species",51289,FALSE,NA
+"132","Helobdella transversa","Helobdella transversa","Helobdella transversa","species",51286,FALSE,NA
+"133","Helobdella elongata","Helobdella elongata","Helobdella elongata","species",51294,FALSE,NA
+"134","Helobdellanunununojensis","Helobdellanunununojensis","Helobdella nununununojensis",NA,51290,FALSE,NA
+"135","Helobdella sorojchi","Helobdella sorojchi","Helobdella sorojchi","species",51287,FALSE,NA
+"136","Helobdella ringueleti","Helobdella ringueleti","Helobdella ringueleti","species",51288,FALSE,NA
+"137","Helobdella bolivianita","Helobdella bolivianita","Helobdella bolivianita","species",51295,FALSE,NA
+"138","Helobdella triserialis","Helobdella triserialis","Helobdella triserialis","species",509186,FALSE,NA
+"139","Haemopis sanguisuga","Haemopis sanguisuga","Haemopis sanguisuga","species",98147,FALSE,NA
+"140","Allonais paraguayensis","Allonais paraguayensis","Allonais paraguayensis","species",1017684,FALSE,NA
+"141","Amphichaeta raptisae","Amphichaeta raptisae","Amphichaeta raptisae","species",521120,FALSE,NA
+"142","Arcteonais lomondi","Arcteonais lomondi","Arcteonais lomondi","species",521122,FALSE,NA
+"143","Chaetogaster diaphanus","Chaetogaster diaphanus","Chaetogaster diaphanus","species",102534,FALSE,NA
+"144","Chaetogaster diastrophus","Chaetogaster diastrophus","Chaetogaster diastrophus","species",735915,FALSE,NA
+"145","Chaetogaster limnaei","Chaetogaster limnaei","Chaetogaster limnaei","species",102547,FALSE,NA
+"146","Dero digitata","Dero digitata","Dero digitata","species",870821,FALSE,"sibling_higher"
+"147","Dero furcata","Dero furcata","Dero furcata","species",676633,FALSE,"sibling_higher"
+"148","Dero obtusa","Dero obtusa","Dero obtusa","species",676621,FALSE,"sibling_higher"
+"149","Dero vaga","Dero vaga","Dero vaga","species",624218,FALSE,"sibling_higher"
+"150","Dero","Dero","Dero","genus",870819,FALSE,NA
+"151","Nais bretscheri","Nais bretscheri","Nais bretscheri","species",549852,FALSE,NA
+"152","Nais communis","Nais communis","Nais communis","species",1070786,FALSE,NA
+"153","Ophidonais serpentina","Ophidonais serpentina","Ophidonais serpentina","species",549847,FALSE,NA
+"154","Pristina aequiseta","Pristina aequiseta","Pristina aequiseta","species",549856,FALSE,NA
+"155","Pristina leidyi","Pristina leidyi","Pristina leidyi","species",231967,FALSE,NA
+"156","Pristina longiseta","Pristina longiseta","Pristina longiseta","species",544393,FALSE,NA
+"157","Pristina osborni","Pristina osborni","Pristina osborni","species",975576,FALSE,NA
+"158","Ripistes parasita","Ripistes parasita","Ripistes parasita","species",975578,FALSE,NA
+"159","Slavina appendiculata","Slavina appendiculata","Slavina appendiculata","species",544391,FALSE,NA
+"160","Stylaria fossularis","Stylaria fossularis","Stylaria fossularis","species",357277,FALSE,NA
+"161","Stylaria lacustris","Stylaria lacustris","Stylaria lacustris","species",318904,FALSE,NA
+"162","Vejdovskyella comata","Vejdovskyella comata","Vejdovskyella comata","species",919320,FALSE,NA
+"163","Branchiura sowerbyi","Branchiura sowerbyi","Branchiura sowerbyi","species",536508,FALSE,NA
+"164","Manayunkia zenkewitschii","Manayunkia zenkewitschii","Manayunkia zenkewitschii","species",5127,FALSE,NA
+"165","Stylodrilus asiaticus","Stylodrilus asiaticus","Stylodrilus asiaticus","species",564551,FALSE,NA
+"166","Stylodrilus mirus","Stylodrilus mirus","Stylodrilus mirus","species",395863,FALSE,NA
+"167","Stylodrilus parvus","Stylodrilus parvus","Stylodrilus parvus","species",395864,FALSE,NA
+"168","Stylodrilus opistoannulatus","Stylodrilus opistoannulatus","Stylodrilus opistoannulatus","species",184254,FALSE,NA
+"169","Agriodrilus vermivorus","Agriodrilus vermivorus","Agriodrilus vermivorus","species",560233,FALSE,NA
+"170","Lamprodrilus polytoreutus","Lamprodrilus polytoreutus","Lamprodrilus polytoreutus","species",769001,FALSE,NA
+"171","Lamprodrilus decathecus","Lamprodrilus decathecus","Lamprodrilus decathecus","species",769000,FALSE,NA
+"172","Lamprodrilus satyriscus","Lamprodrilus satyriscus","Lamprodrilus satyriscus","species",768999,FALSE,NA
+"173","Lamprodrilus dybowskii","Lamprodrilus dybowskii","Lamprodrilus dybowskii","species",768997,FALSE,NA
+"174","Lamprodrilus wagneri","Lamprodrilus wagneri","Lamprodrilus wagneri","species",768996,FALSE,NA
+"175","Lamprodrilus","Lamprodrilus","Lamprodrilus","genus",276960,FALSE,NA
+"176","Lamprodrilus achaetus","Lamprodrilus achaetus","Lamprodrilus achaetus","species",769002,FALSE,NA
+"177","Lamprodrilus ammophagus","Lamprodrilus ammophagus","Lamprodrilus ammophagus","species",245752,FALSE,NA
+"178","Lamprodrilus stigmatias","Lamprodrilus stigmatias","Lamprodrilus stigmatias","species",245753,FALSE,NA
+"179","Teleuscolex korotneffi","Teleuscolex korotneffi","Teleuscolex korotneffi","species",587107,FALSE,NA
+"180","Teleuscolex baicalensis","Teleuscolex baicalensis","Teleuscolex baicalensis","species",587109,FALSE,NA
+"181","Rhynchelmis brachycephala","Rhynchelmis brachycephala","Rhynchelmis brachycephala","species",560232,FALSE,"sibling_higher"
+"182","Rhynchelmis shamanensis","Rhynchelmis shamanensis","Rhynchelmis shamanensis","species",392392,FALSE,"sibling_higher"
+"183","Styloscolex asymmetricus","Styloscolex asymmetricus","Styloscolex asymmetricus","species",587110,FALSE,NA
+"184","Styloscolex baicalensis","Styloscolex baicalensis","Styloscolex baicalensis","species",691977,FALSE,NA
+"185","Styloscolex chorioidalis","Styloscolex chorioidalis","Styloscolex chorioidalis","species",587111,FALSE,NA
+"186","Styloscolex kolmakovi","Styloscolex kolmakovi","Styloscolex kolmakovi","species",587112,FALSE,NA
+"187","Chaetopterusopedatus","Chaetopterusopedatus","Chaetopterus variopedatus",NA,263257,FALSE,NA
+"188","Allolobophora chlorotica","Allolobophora chlorotica","Allolobophora chlorotica","species",761874,FALSE,NA
+"189","Lumbricus terrestris","Lumbricus terrestris","Lumbricus terrestris","species",316441,FALSE,NA
+"190","Lumbricus castaneus","Lumbricus castaneus","Lumbricus castaneus","species",1056931,FALSE,NA
+"191","Lumbricus rubellus","Lumbricus rubellus","Lumbricus rubellus","species",115614,FALSE,NA
+"192","Aporrectodea longa","Aporrectodea longa","Aporrectodea longa","species",128733,FALSE,NA
+"193","Aporrectodea caliginosa","Aporrectodea caliginosa","Aporrectodea caliginosa","species",128734,FALSE,NA
+"194","Acanthobdella peledina","Acanthobdella peledina","Acanthobdella peledina","species",251545,FALSE,NA
+"195","Haemopis caeca","Haemopis caeca","Haemopis caeca","species",1060339,FALSE,NA
+"196","Eclipidrilus frigidus","Eclipidrilus frigidus","Eclipidrilus frigidus","species",42377,FALSE,NA
+"197","Theromyzon tessulatum","Theromyzon tessulatum","Theromyzon tessulatum","species",619255,FALSE,NA
+"198","Placobdella montifera","Placobdella montifera","Placobdella montifera","species",778689,FALSE,"sibling_higher"
+"199","Placobdella papillifera","Placobdella papillifera","Placobdella papillifera","species",1056221,FALSE,"sibling_higher"
+"200","Haementeria molesta","Haementeria molesta","Haementeria molesta","species",624349,FALSE,NA
+"201","Placobdella ornata","Placobdella ornata","Placobdella ornata","species",870767,FALSE,"sibling_higher"
+"202","Placobdella pediculata","Placobdella pediculata","Placobdella pediculata","species",156519,FALSE,"sibling_higher"
+"203","Placobdella transluscens","Placobdella transluscens","Placobdella transluscens","species",156518,FALSE,"sibling_higher"
+"204","Glossiphonia baicalensis","Glossiphonia baicalensis","Glossiphonia baicalensis","species",779130,FALSE,NA
+"205","Theromyzon bifarium","Theromyzon bifarium","Theromyzon bifarium","species",156515,FALSE,NA
+"206","Phascolosomagrescens","Phascolosomagrescens","Phascolosoma nigrescens",NA,862900,FALSE,"sibling_higher"
+"207","Siphonosoma cumanense","Siphonosoma cumanense","Siphonosoma cumanense","species",802121,FALSE,NA
+"208","Xenosiphon branchiatus","Xenosiphon branchiatus","Xenosiphon branchiatus","species",1012334,FALSE,NA
+"209","Lithacrosiphon cristatus","Lithacrosiphon cristatus","Lithacrosiphon cristatus","species",1012336,FALSE,NA
+"210","Phascolion cryptum","Phascolion cryptum","Phascolion cryptum","species",575837,FALSE,"sibling_higher"
+"211","Golfingia elongata","Golfingia elongata","Golfingia elongata","species",564224,FALSE,"sibling_higher"
+"212","Nephasoma rimicola","Nephasoma rimicola","Nephasoma rimicola","species",732045,FALSE,"sibling_higher"
+"213","Parergodrilus heideri","Parergodrilus heideri","Parergodrilus heideri","species",638596,FALSE,NA
+"214","Hrabeiella periglandulata","Hrabeiella periglandulata","Hrabeiella periglandulata",NA,514184,FALSE,"major_rank_conflict_inherited"
+"215","Erpobdella testacea","Erpobdella testacea","Erpobdella testacea","species",559325,FALSE,NA
+"216","Hirudo medicinalis","Hirudo medicinalis","Hirudo medicinalis","species",954042,FALSE,NA
+"217","Americobdella valdiviana","Americobdella valdiviana","Americobdella valdiviana","species",558321,FALSE,NA
+"218","Cylicobdella coccinea","Cylicobdella coccinea","Cylicobdella coccinea","species",89382,FALSE,NA
+"219","Haemadipsa picta","Haemadipsa picta","Haemadipsa picta","species",89383,FALSE,NA
+"220","Haemadipsa sumatrana","Haemadipsa sumatrana","Haemadipsa sumatrana","species",89384,FALSE,NA
+"221","Haemopis grandis","Haemopis grandis","Haemopis grandis","species",89385,FALSE,NA
+"222","Haemopis kingi","Haemopis kingi","Haemopis kingi","species",944488,FALSE,NA
+"223","Poecilobdella manillensis","Poecilobdella manillensis","Poecilobdella manillensis","species",509091,FALSE,NA
+"224","Aliolimnatis africana","Aliolimnatis africana","Aliolimnatis africana","species",89387,FALSE,NA
+"225","Limnatislotica","Limnatislotica","Limnatis nilotica",NA,89388,FALSE,NA
+"226","Macrobdella ditetra","Macrobdella ditetra","Macrobdella ditetra","species",89389,FALSE,NA
+"227","Mesobdella gemmata","Mesobdella gemmata","Mesobdella gemmata","species",89380,FALSE,NA
+"228","Oxyptychus braziliensis","Oxyptychus braziliensis","Oxyptychus braziliensis","species",663523,FALSE,NA
+"229","Semiscolex similis","Semiscolex similis","Semiscolex similis","species",191844,FALSE,NA
+"230","Patagoniobdella fraterna","Patagoniobdella fraterna","Patagoniobdella fraterna","species",191839,FALSE,NA
+"231","Erpobdella costata","Erpobdella costata","Erpobdella costata","species",42952,FALSE,NA
+"232","Mesenchytraeus solifugus","Mesenchytraeus solifugus","Mesenchytraeus solifugus","species",378300,FALSE,NA
+"233","Sigalion bandaensis","Sigalion bandaensis","Sigalion bandaensis","species",260042,FALSE,NA
+"234","Ceratonereis longiceratophora","Ceratonereis longiceratophora","Ceratonereis longiceratophora","species",260034,FALSE,NA
+"235","Metaphire yuhsii","Metaphire yuhsii","Metaphire yuhsii","species",518192,FALSE,NA
+"236","Metaphire formosae","Metaphire formosae","Metaphire formosae","species",518195,FALSE,NA
+"237","Metaphire tahanmonta","Metaphire tahanmonta","Metaphire tahanmonta","species",1044696,FALSE,NA
+"238","Metaphire paiwanna","Metaphire paiwanna","Metaphire paiwanna","species",1044694,FALSE,NA
+"239","Metaphire bununa","Metaphire bununa","Metaphire bununa","species",1044693,FALSE,NA
+"240","Metaphire trutina","Metaphire trutina","Metaphire trutina","species",839165,FALSE,NA
+"241","Hirudo troctina","Hirudo troctina","Hirudo troctina","species",536322,FALSE,NA
+"242","Barbronia gwalagwalensis","Barbronia gwalagwalensis","Barbronia gwalagwalensis","species",756058,FALSE,NA
+"243","Barbronia weberi","Barbronia weberi","Barbronia weberi","species",227463,FALSE,NA
+"244","Barbronia","Barbronia","Barbronia","genus",256304,FALSE,NA
+"245","Haemopis terrestris","Haemopis terrestris","Haemopis terrestris","species",309974,FALSE,NA
+"246","Linta be","Linta be","Linta be","species",96858,FALSE,NA
+"247","Eisenia eiseni","Eisenia eiseni","Eisenia eiseni","species",213505,FALSE,NA
+"248","Eisenia andrei","Eisenia andrei","Eisenia andrei","species",279738,FALSE,NA
+"249","Eisenia fetida","Eisenia fetida","Eisenia fetida","species",316451,FALSE,NA
+"250","Metaphire glareosa","Metaphire glareosa","Metaphire glareosa","species",839178,FALSE,NA
+"251","Metaphirenaoensis","Metaphirenaoensis","Metaphire nanaoensis",NA,839179,FALSE,NA
+"252","Metaphire taiwanensis","Metaphire taiwanensis","Metaphire taiwanensis","species",839180,FALSE,NA
+"253","Metaphire feijani","Metaphire feijani","Metaphire feijani","species",418231,FALSE,NA
+"254","Amynthas binoculatus","Amynthas binoculatus","Amynthas binoculatus","species",264568,FALSE,"sibling_higher"
+"255","Amynthas tayalis","Amynthas tayalis","Amynthas tayalis","species",264569,FALSE,"sibling_higher"
+"256","Alboglossiphonia weberi","Alboglossiphonia weberi","Alboglossiphonia weberi","species",779134,FALSE,NA
+"257","Alboglossiphonia quadrata","Alboglossiphonia quadrata","Alboglossiphonia quadrata","species",779132,FALSE,NA
+"258","Helobdella pichipanan","Helobdella pichipanan","Helobdella pichipanan","species",779129,FALSE,NA
+"259","Batracobdelloides tricarinata","Batracobdelloides tricarinata","Batracobdelloides tricarinata","species",205090,FALSE,NA
+"260","Glossiphonia concolor","Glossiphonia concolor","Glossiphonia concolor","species",205091,FALSE,NA
+"261","Glossiphonia verrucata","Glossiphonia verrucata","Glossiphonia verrucata","species",123651,FALSE,NA
+"262","Oosthuizobdella garoui","Oosthuizobdella garoui","Oosthuizobdella garoui","species",994553,FALSE,NA
+"263","Placobdella costata","Placobdella costata","Placobdella costata","species",401395,FALSE,"sibling_higher"
+"264","Placobdelloides siamensis","Placobdelloides siamensis","Placobdelloides siamensis","species",123648,FALSE,NA
+"265","Placobdelloides jaegerskioeldi","Placobdelloides jaegerskioeldi","Placobdelloides jaegerskioeldi","species",123649,FALSE,NA
+"266","Placobdella multilineata","Placobdella multilineata","Placobdella multilineata","species",728385,FALSE,"sibling_higher"
+"267","Placobdelloides fimbriata","Placobdelloides fimbriata","Placobdelloides fimbriata",NA,7486207,FALSE,NA
+"268","Pogonophora","Pogonophora","Siboglinidae",NA,1057367,TRUE,"sibling_higher"
+"269","Erpobdella vilnensis","Erpobdella vilnensis","Erpobdella vilnensis","species",172129,FALSE,NA
+"270","Erpobdellagricollis","Erpobdellagricollis","Erpobdella nigricollis",NA,172131,FALSE,NA
+"271","Erpobdella monostriata","Erpobdella monostriata","Erpobdella monostriata","species",172127,FALSE,NA
+"272","Erpobdella wuttkei","Erpobdella wuttkei","Erpobdella wuttkei",NA,172128,FALSE,NA
+"273","Trocheta haskonis","Trocheta haskonis","Trocheta haskonis","species",172134,FALSE,NA
+"274","Aporrectodea handlirschi","Aporrectodea handlirschi","Aporrectodea handlirschi","species",390579,FALSE,NA
+"275","Aporrectodea jassyensis","Aporrectodea jassyensis","Aporrectodea jassyensis","species",390575,FALSE,NA
+"276","Aporrectodea rosea","Aporrectodea rosea","Aporrectodea rosea","species",1039463,FALSE,NA
+"277","Dendrobaena octaedra","Dendrobaena octaedra","Dendrobaena octaedra","species",390576,FALSE,NA
+"278","Dendrodrilus rubidus","Dendrodrilus rubidus","Dendrodrilus rubidus","species",1098821,FALSE,NA
+"279","Octolasion lacteum","Octolasion lacteum","Octolasion lacteum","species",916284,FALSE,NA
+"280","Philobdella gracilis","Philobdella gracilis","Philobdella gracilis","species",1010463,FALSE,NA
+"281","Philobdella floridana","Philobdella floridana","Philobdella floridana","species",616322,FALSE,NA
+"282","Macrobdella diplotertia","Macrobdella diplotertia","Macrobdella diplotertia","species",616323,FALSE,NA
+"283","Mesenchytraeus pedatus","Mesenchytraeus pedatus","Mesenchytraeus pedatus","species",198607,FALSE,NA
+"284","Chaetopterus sarsii","Chaetopterus sarsii","Chaetopterus sarsii",NA,42117,FALSE,NA
+"285","Pectinaria granulata","Pectinaria granulata","Pectinaria granulata","species",953516,FALSE,NA
+"286","Amynthas lini","Amynthas lini","Amynthas lini","species",786626,FALSE,"sibling_higher"
+"287","Amynthas wulinensis","Amynthas wulinensis","Amynthas wulinensis","species",786627,FALSE,"sibling_higher"
+"288","Amynthas mayshanensis","Amynthas mayshanensis","Amynthas mayshanensis","species",786624,FALSE,"sibling_higher"
+"289","Amynthas polyglandularis","Amynthas polyglandularis","Amynthas polyglandularis","species",786625,FALSE,"sibling_higher"
+"290","Erpobdella mexicana","Erpobdella mexicana","Erpobdella mexicana","species",849665,FALSE,NA
+"291","Erpobdella ochoterenai","Erpobdella ochoterenai","Erpobdella ochoterenai","species",849666,FALSE,NA
+"292","Barbronia arcana","Barbronia arcana","Barbronia arcana","species",224442,FALSE,NA
+"293","Erpobdella triannulata","Erpobdella triannulata","Erpobdella triannulata","species",224441,FALSE,NA
+"294","Diplocardia komareki","Diplocardia komareki","Diplocardia komareki","species",982615,FALSE,NA
+"295","Diplocardia invecta","Diplocardia invecta","Diplocardia invecta","species",615956,FALSE,NA
+"296","Amynthas diffringens","Amynthas diffringens","Amynthas diffringens","species",615951,FALSE,"sibling_higher"
+"297","Apionsoma misakianum","Apionsoma misakianum","Apionsoma misakianum","species",43138,FALSE,NA
+"298","Apionsoma pectinatum","Apionsoma pectinatum","Apionsoma pectinatum","species",349858,FALSE,NA
+"299","Aspidosiphon albus","Aspidosiphon albus","Aspidosiphon albus","species",637732,FALSE,"sibling_higher"
+"300","Aspidosiphon elegans","Aspidosiphon elegans","Aspidosiphon elegans","species",637731,FALSE,"sibling_higher"
+"301","Aspidosiphon fischeri","Aspidosiphon fischeri","Aspidosiphon fischeri","species",349857,FALSE,"sibling_higher"
+"302","Aspidosiphon gosnoldi","Aspidosiphon gosnoldi","Aspidosiphon gosnoldi","species",690186,FALSE,"sibling_higher"
+"303","Aspidosiphon gracilis","Aspidosiphon gracilis","Aspidosiphon gracilis",NA,637734,FALSE,"sibling_higher"
+"304","Aspidosiphon laevis","Aspidosiphon laevis","Aspidosiphon laevis","species",564229,FALSE,"sibling_higher"
+"305","Aspidosiphon muelleri","Aspidosiphon muelleri","Aspidosiphon muelleri","species",637733,FALSE,"sibling_higher"
+"306","Aspidosiphon parvulus","Aspidosiphon parvulus","Aspidosiphon parvulus","species",342660,FALSE,"sibling_higher"
+"307","Aspidosiphon steenstrupii","Aspidosiphon steenstrupii","Aspidosiphon steenstrupii","species",564234,FALSE,"sibling_higher"
+"308","Cloeosiphon aspergillus","Cloeosiphon aspergillus","Cloeosiphon aspergillus","species",564225,FALSE,NA
+"309","Golfingia margaritacea","Golfingia margaritacea","Golfingia margaritacea","species",637736,FALSE,"sibling_higher"
+"310","Golfingia vulgaris","Golfingia vulgaris","Golfingia vulgaris","species",564227,FALSE,"sibling_higher"
+"311","Nephasoma diaphanes","Nephasoma diaphanes","Nephasoma diaphanes","species",564236,FALSE,"sibling_higher"
+"312","Nephasoma flagriferum","Nephasoma flagriferum","Nephasoma flagriferum","species",637735,FALSE,"sibling_higher"
+"313","Nephasoma pellucidum","Nephasoma pellucidum","Nephasoma pellucidum","species",637738,FALSE,"sibling_higher"
+"314","Phascolion psammophilus","Phascolion psammophilus","Phascolion psammophilus","species",167065,FALSE,"sibling_higher"
+"315","Phascolopsis gouldii","Phascolopsis gouldii","Phascolopsis gouldii","species",802123,FALSE,NA
+"316","Phascolosoma agassizii","Phascolosoma agassizii","Phascolosoma agassizii","species",167071,FALSE,"sibling_higher"
+"317","Phascolosoma albolineatum","Phascolosoma albolineatum","Phascolosoma albolineatum","species",564235,FALSE,"sibling_higher"
+"318","Phascolosoma capitatum","Phascolosoma capitatum","Phascolosoma capitatum","species",167072,FALSE,"sibling_higher"
+"319","Phascolosoma granulatum","Phascolosoma granulatum","Phascolosoma granulatum","species",247685,FALSE,"sibling_higher"
+"320","Phascolosomaduliferum","Phascolosomaduliferum","Phascolosoma noduliferum",NA,917794,FALSE,"sibling_higher"
+"321","Phascolosoma perlucens","Phascolosoma perlucens","Phascolosoma perlucens","species",6914,FALSE,"sibling_higher"
+"322","Phascolosoma scolops","Phascolosoma scolops","Phascolosoma scolops","species",917796,FALSE,"sibling_higher"
+"323","Phascolosoma stephensoni","Phascolosoma stephensoni","Phascolosoma stephensoni","species",917795,FALSE,"sibling_higher"
+"324","Phascolosoma turnerae","Phascolosoma turnerae","Phascolosoma turnerae",NA,167073,FALSE,"sibling_higher"
+"325","Siphonosoma vastum","Siphonosoma vastum","Siphonosoma vastum","species",349852,FALSE,NA
+"326","Sipunculusrvegicus","Sipunculusrvegicus","Sipunculus norvegicus",NA,167074,FALSE,"sibling_higher"
+"327","Sipunculus phalloides","Sipunculus phalloides","Sipunculus phalloides","species",167075,FALSE,"sibling_higher"
+"328","Sipunculus polymyotus","Sipunculus polymyotus","Sipunculus polymyotus","species",167076,FALSE,"sibling_higher"
+"329","Themiste dyscritum","Themiste dyscritum","Themiste dyscritum","species",377814,FALSE,"sibling_higher"
+"330","Themiste hennahi","Themiste hennahi","Themiste hennahi","species",167077,FALSE,"sibling_higher"
+"331","Themiste lageniformis","Themiste lageniformis","Themiste lageniformis","species",486288,FALSE,"sibling_higher"
+"332","Themiste minor","Themiste minor","Themiste minor","species",917803,FALSE,"sibling_higher"
+"333","Themiste pyroides","Themiste pyroides","Themiste pyroides","species",690188,FALSE,"sibling_higher"
+"334","Marenzelleriaglecta","Marenzelleriaglecta","Marenzelleria arctia",NA,288720,FALSE,NA
+"335","Eunice antennata","Eunice antennata","Eunice antennata","species",687270,FALSE,NA
+"336","Eunice cariboea","Eunice cariboea","Eunice cariboea","species",687273,FALSE,NA
+"337","Pectinaria auricoma","Pectinaria auricoma","Pectinaria auricoma","species",40349,FALSE,NA
+"338","Pectinaria koreni","Pectinaria koreni","Pectinaria koreni","species",5972939,FALSE,NA
+"339","Gyptis mediterranea","Gyptis mediterranea","Gyptis mediterranea","species",1009759,FALSE,NA
+"340","Gyptis rosea","Gyptis rosea","Gyptis rosea","species",585346,FALSE,NA
+"341","Ophiodromus flexuosus","Ophiodromus flexuosus","Ophiodromus flexuosus","species",518640,FALSE,NA
+"342","Metaphire tschiliensis","Metaphire tschiliensis","Metaphire tschiliensis","species",619490,FALSE,NA
+"343","Crangonobdella spitzbergensis","Crangonobdella spitzbergensis","Crangonobdella spitzbergensis","species",269149,FALSE,NA
+"344","Helobdella robusta","Helobdella robusta","Helobdella robusta","species",870792,FALSE,NA
+"345","Helobdella","Helobdella","Helobdella","genus",870779,FALSE,NA
+"346","Amynthas axillis","Amynthas axillis","Amynthas axillis","species",21150,FALSE,"sibling_higher"
+"347","Amynthas triastriatus","Amynthas triastriatus","Amynthas triastriatus","species",690145,FALSE,"sibling_higher"
+"348","Amynthas lautus","Amynthas lautus","Amynthas lautus","species",21152,FALSE,"sibling_higher"
+"349","Amynthas dactilicus","Amynthas dactilicus","Amynthas dactilicus","species",690129,FALSE,"sibling_higher"
+"350","Amynthas incongruus","Amynthas incongruus","Amynthas incongruus","species",264557,FALSE,"sibling_higher"
+"351","Amynthas kiangensis","Amynthas kiangensis","Amynthas kiangensis","species",1071444,FALSE,"sibling_higher"
+"352","Amynthas heterochaetus","Amynthas heterochaetus","Amynthas heterochaetus","species",542148,FALSE,"sibling_higher"
+"353","Amynthas plantoporophoratus","Amynthas plantoporophoratus","Amynthas plantoporophoratus","species",542154,FALSE,"sibling_higher"
+"354","Amynthas benignus","Amynthas benignus","Amynthas benignus","species",1071459,FALSE,"sibling_higher"
+"355","Amynthas limellus","Amynthas limellus","Amynthas limellus","species",258927,FALSE,"sibling_higher"
+"356","Amynthas homochaetus","Amynthas homochaetus","Amynthas homochaetus","species",430765,FALSE,"sibling_higher"
+"357","Amynthas hawayanus","Amynthas hawayanus","Amynthas hawayanus","species",430932,FALSE,"sibling_higher"
+"358","Amynthas tuberculatus","Amynthas tuberculatus","Amynthas tuberculatus","species",690143,FALSE,"sibling_higher"
+"359","Amynthas pongchii","Amynthas pongchii","Amynthas pongchii","species",168835,FALSE,"sibling_higher"
+"360","Amynthas asacceus","Amynthas asacceus","Amynthas asacceus",NA,1042262,FALSE,"sibling_higher"
+"361","Amynthas loti","Amynthas loti","Amynthas loti","species",1042266,FALSE,"sibling_higher"
+"362","Drawida japonica","Drawida japonica","Drawida japonica","species",21134,FALSE,NA
+"363","Bimastos parvus","Bimastos parvus","Bimastos parvus","species",21131,FALSE,NA
+"364","Ilyodrilus templetoni","Ilyodrilus templetoni","Ilyodrilus templetoni","species",980699,FALSE,NA
+"365","Tubifex ignotus","Tubifex ignotus","Tubifex ignotus","species",531291,FALSE,"sibling_higher"
+"366","Amblyosyllis formosa","Amblyosyllis formosa","Amblyosyllis formosa","species",567349,FALSE,NA
+"367","Geminosyllis ohma","Geminosyllis ohma","Geminosyllis ohma","species",124079,FALSE,NA
+"368","Pionosyllis enigmatica","Pionosyllis enigmatica","Pionosyllis enigmatica","species",1093865,FALSE,NA
+"369","Pionosyllis lamelligera","Pionosyllis lamelligera","Pionosyllis lamelligera","species",1093862,FALSE,NA
+"370","Syllis ehlersioides","Syllis ehlersioides","Syllis ehlersioides","species",608545,FALSE,NA
+"371","Syllis monilata","Syllis monilata","Syllis monilata","species",455736,FALSE,NA
+"372","Syllispponica","Syllispponica","Syllis pontica",NA,4982616,FALSE,"hidden"
+"373","Trypanosyllis coeliaca","Trypanosyllis coeliaca","Trypanosyllis coeliaca","species",723709,FALSE,"sibling_higher"
+"374","Diplocardia","Diplocardia","Diplocardia","genus",640502,FALSE,NA
+"375","Diplocardia fuscula","Diplocardia fuscula","Diplocardia fuscula","species",177334,FALSE,NA
+"376","Megascolecid","Megascolecid","Megascolecida",NA,5681404,FALSE,"barren, sibling_higher, merged"
+"377","Diplocardia sylvicola","Diplocardia sylvicola","Diplocardia sylvicola","species",1052779,FALSE,NA
+"378","Diplocardia ornata","Diplocardia ornata","Diplocardia ornata","species",704293,FALSE,NA
+"379","Diplocardia eiseni","Diplocardia eiseni","Diplocardia eiseni","species",615948,FALSE,NA
+"380","Diplocardia smithi","Diplocardia smithi","Diplocardia smithi","species",77653,FALSE,NA
+"381","Diplocardia caroliniana","Diplocardia caroliniana","Diplocardia caroliniana","species",77648,FALSE,NA
+"382","Diplocardia hulberti","Diplocardia hulberti","Diplocardia hulberti","species",651643,FALSE,NA
+"383","Diplocardia longiseta","Diplocardia longiseta","Diplocardia longiseta","species",640503,FALSE,NA
+"384","Diplocardia rugosa","Diplocardia rugosa","Diplocardia rugosa","species",146348,FALSE,NA
+"385","Diplocardia pettiboneae","Diplocardia pettiboneae","Diplocardia pettiboneae","species",651646,FALSE,NA
+"386","Moorebdellina biannulata","Moorebdellina biannulata","Moorebdellina biannulata","species",373544,FALSE,"sibling_higher"
+"387","Hirudo orientalis","Hirudo orientalis","Hirudo orientalis","species",996873,FALSE,NA
+"388","Hirudo verbana","Hirudo verbana","Hirudo verbana","species",1037686,FALSE,NA
+"389","Ophryotrocha permanni","Ophryotrocha permanni","Ophryotrocha permanni","species",399252,FALSE,NA
+"390","Ophryotrochatoglandulata","Ophryotrochatoglandulata","Ophryotrocha notoglandulata",NA,399253,FALSE,NA
+"391","Asetocalamyzas laonicola","Asetocalamyzas laonicola","Asetocalamyzas laonicola","species",76439,FALSE,NA
+"392","Phascolosoma esculenta","Phascolosoma esculenta","Phascolosoma esculenta","species",927586,FALSE,"sibling_higher"
+"393","Hormogaster elisae","Hormogaster elisae","Hormogaster elisae","species",368543,FALSE,NA
+"394","Hormogaster riojana","Hormogaster riojana","Hormogaster riojana","species",368542,FALSE,NA
+"395","Hormogaster praetiosa","Hormogaster praetiosa","Hormogaster praetiosa","species",368539,FALSE,NA
+"396","Clitellio arenarius","Clitellio arenarius","Clitellio arenarius","species",887883,FALSE,NA
+"397","Chtonobdella whitmani","Chtonobdella whitmani","Chtonobdella whitmani","species",532382,FALSE,NA
+"398","Diestecostoma magna","Diestecostoma magna","Diestecostoma magna","species",62620,FALSE,NA
+"399","Diestecostoma mexicana","Diestecostoma mexicana","Diestecostoma mexicana","species",62621,FALSE,NA
+"400","Diestecostoma trujillensis","Diestecostoma trujillensis","Diestecostoma trujillensis","species",62618,FALSE,NA
+"401","Haemadipsa interrupta","Haemadipsa interrupta","Haemadipsa interrupta","species",62619,FALSE,NA
+"402","Chtonobdella seychellensis","Chtonobdella seychellensis","Chtonobdella seychellensis",NA,62623,FALSE,NA
+"403","Chtonobdella fallax","Chtonobdella fallax","Chtonobdella fallax","species",831379,FALSE,NA
+"404","Chtonobdella skottsbergi","Chtonobdella skottsbergi","Chtonobdella skottsbergi",NA,62614,FALSE,NA
+"405","Xerobdella lecomtei","Xerobdella lecomtei","Xerobdella lecomtei","species",227461,FALSE,NA
+"406","Lumbrineris tetraura","Lumbrineris tetraura","Lumbrineris tetraura","species",760652,FALSE,NA
+"407","Bhawania reyssi","Bhawania reyssi","Bhawania reyssi","species",1027581,FALSE,NA
+"408","Glyceracobarica","Glyceracobarica","Glycera nicobarica",NA,562606,FALSE,NA
+"409","Flota","Flota","Flota","genus",783451,FALSE,NA
+"410","Poeobius meseres","Poeobius meseres","Poeobius meseres","species",523510,FALSE,NA
+"411","Isolda pulchella","Isolda pulchella","Isolda pulchella","species",349838,FALSE,NA
+"412","Parandalia","Parandalia","Parandalia","genus",499834,FALSE,NA
+"413","Simplisetia erythraensis","Simplisetia erythraensis","Simplisetia erythraensis",NA,4981618,FALSE,"hidden"
+"414","Diopatraapolitana","Diopatraapolitana","Diopatra neapolitana",NA,356114,FALSE,NA
+"415","Helobdella octatestisaca","Helobdella octatestisaca","Helobdella octatestisaca","species",321052,FALSE,NA
+"416","Helobdella europaea","Helobdella europaea","Helobdella europaea","species",295295,FALSE,NA
+"417","Helobdella melananus","Helobdella melananus","Helobdella melananus",NA,321058,FALSE,NA
+"418","Lumbricus festivus","Lumbricus festivus","Lumbricus festivus","species",128739,FALSE,NA
+"419","Aporrectodea icterica","Aporrectodea icterica","Aporrectodea icterica","species",280280,FALSE,NA
+"420","Aporrectodea tuberculata","Aporrectodea tuberculata","Aporrectodea tuberculata","species",915040,FALSE,NA
+"421","Dendrobaena attemsi","Dendrobaena attemsi","Dendrobaena attemsi","species",1091901,FALSE,NA
+"422","Eisenia lucens","Eisenia lucens","Eisenia lucens","species",389420,FALSE,NA
+"423","Eisenoides carolinensis","Eisenoides carolinensis","Eisenoides carolinensis","species",141904,FALSE,NA
+"424","Eisenia zebra","Eisenia zebra","Eisenia zebra","species",389406,FALSE,NA
+"425","Dendrobaena veneta","Dendrobaena veneta","Dendrobaena veneta","species",854788,FALSE,NA
+"426","Helodrilus oculatus","Helodrilus oculatus","Helodrilus oculatus","species",389423,FALSE,NA
+"427","Dendrobaena clujensis","Dendrobaena clujensis","Dendrobaena clujensis","species",874813,FALSE,NA
+"428","Octolasion","Octolasion","Octolasion","genus",42146,FALSE,NA
+"429","Stylodrilus heringianus","Stylodrilus heringianus","Stylodrilus heringianus","species",487763,FALSE,NA
+"430","Oligochaeta","Oligochaeta","Oligochaeta (subclass in Opisthokonta)",NA,840747,FALSE,NA
+"431","Haemopis","Haemopis","Haemopis","genus",675,FALSE,NA
+"432","Astacopsidrilus ryuteki","Astacopsidrilus ryuteki","Astacopsidrilus ryuteki",NA,305021,FALSE,NA
+"433","Spirosperma apapillatus","Spirosperma apapillatus","Spirosperma apapillatus","species",642969,FALSE,NA
+"434","Embolocephaluskolskyi","Embolocephaluskolskyi","Embolocephalus nikolskyi",NA,562324,FALSE,NA
+"435","Embolocephalus yamaguchii","Embolocephalus yamaguchii","Embolocephalus yamaguchii","species",69657,FALSE,NA
+"436","Baikalodrilus digitatus","Baikalodrilus digitatus","Baikalodrilus digitatus","species",69654,FALSE,NA
+"437","Rhyacodriloides abyssalis","Rhyacodriloides abyssalis","Rhyacodriloides abyssalis","species",225104,FALSE,NA
+"438","Rhyacodriloides","Rhyacodriloides","Rhyacodriloides","genus",399938,FALSE,NA
+"439","Aporrectodeacturna","Aporrectodeacturna","Aporrectodea nocturna",NA,245040,FALSE,NA
+"440","Baikalodrilus wereschtschagini","Baikalodrilus wereschtschagini","Baikalodrilus wereschtschagini","species",1088088,FALSE,NA
+"441","Nicomache lokii","Nicomache lokii","Nicomache lokii","species",1085510,FALSE,NA
+"442","Melinna cristata","Melinna cristata","Melinna cristata","species",974917,FALSE,NA
+"443","Piguetiella michiganensis","Piguetiella michiganensis","Piguetiella michiganensis","species",951321,FALSE,NA
+"444","Specaria josinae","Specaria josinae","Specaria josinae","species",49226,FALSE,NA
+"445","Vejdovskyella","Vejdovskyella","Vejdovskyella","genus",919321,FALSE,NA
+"446","Aliolimnatis michaelseni","Aliolimnatis michaelseni","Aliolimnatis michaelseni","species",1060327,FALSE,NA
+"447","Aliolimnatis oligodonta","Aliolimnatis oligodonta","Aliolimnatis oligodonta","species",780894,FALSE,NA
+"448","Aliolimnatis buntonensis","Aliolimnatis buntonensis","Aliolimnatis buntonensis","species",780890,FALSE,NA
+"449","Asiaticobdella fenestrata","Asiaticobdella fenestrata","Asiaticobdella fenestrata","species",257875,FALSE,"extinct_inherited, incertae_sedis"
+"450","Goddardobdella elegans","Goddardobdella elegans","Goddardobdella elegans","species",257872,FALSE,NA
+"451","Limnobdella mexicana","Limnobdella mexicana","Limnobdella mexicana","species",257869,FALSE,NA
+"452","Erpobdella montezuma","Erpobdella montezuma","Erpobdella montezuma","species",780892,FALSE,NA
+"453","Xana omodeoi","Xana omodeoi","Xana omodeoi","species",272861,FALSE,NA
+"454","Palpiphitime lipovskyae","Palpiphitime lipovskyae","Palpiphitime lipovskyae","species",665754,FALSE,NA
+"455","Palpiphitime lobifera","Palpiphitime lobifera","Palpiphitime lobifera","species",1057427,FALSE,NA
+"456","Lacydonia laureci","Lacydonia laureci","Lacydonia laureci","species",374564,FALSE,NA
+"457","Lacydonia","Lacydonia","Lacydonia","genus",1049551,FALSE,"sibling_higher"
+"458","Eunice rubra","Eunice rubra","Eunice rubra","species",494520,FALSE,NA
+"459","Eunice lucei","Eunice lucei","Eunice lucei","species",934487,FALSE,NA
+"460","Eunice miurai","Eunice miurai","Eunice miurai","species",1070834,FALSE,NA
+"461","Eunice limosa","Eunice limosa","Leodice limosa",NA,4978366,TRUE,NA
+"462","Eunice antarctica","Eunice antarctica","Eunice antarctica","species",773151,FALSE,NA
+"463","Eunice antillensis","Eunice antillensis","Eunice websteri",NA,4978390,TRUE,NA
+"464","Eunice valens","Eunice valens","Eunice valens",NA,494522,FALSE,NA
+"465","Eunice insularis","Eunice insularis","Nicidion insularis",NA,4978555,TRUE,NA
+"466","Eunice amoureuxi","Eunice amoureuxi","Eunice amoureuxi","species",773149,FALSE,NA
+"467","Eunice torquata","Eunice torquata","Eunice torquata","species",1086522,FALSE,NA
+"468","Eunice mutilata","Eunice mutilata","Eunice mutilata","species",494526,FALSE,NA
+"469","Marphysa disjuncta","Marphysa disjuncta","Marphysa disjuncta","species",1020325,FALSE,"sibling_higher"
+"470","Marphysa angeli","Marphysa angeli","Marphysa angeli","species",494516,FALSE,"sibling_higher"
+"471","Marphysa hentscheli","Marphysa hentscheli","Nicidion hentscheli",NA,4978634,TRUE,NA
+"472","Eunice mikeli","Eunice mikeli","Eunice mikeli","species",1070832,FALSE,NA
+"473","Eunice americana","Eunice americana","Eunice americana","species",773147,FALSE,NA
+"474","Eunice thomasiana","Eunice thomasiana","Eunice thomasiana","species",494518,FALSE,NA
+"475","Procerasteamatodes","Procerasteamatodes","Procerastea nematodes",NA,440586,FALSE,NA
+"476","Epigamia macrophtalma","Epigamia macrophtalma","Epigamia macrophtalma","species",390013,FALSE,NA
+"477","Glossoscolecidae","Glossoscolecidae","Glossoscolecidae","family",798109,FALSE,"sibling_higher"
+"478","Ocnerodrilidae","Ocnerodrilidae","Ocnerodrilidae","family",517,FALSE,"sibling_higher"
+"479","Acanthodrilidae","Acanthodrilidae","Acanthodrilidae","family",335151,FALSE,"sibling_higher"
+"480","Lumbricus centralis","Lumbricus centralis","Lumbricus centralis","species",249564,FALSE,NA
+"481","Lumbricus friendi","Lumbricus friendi","Lumbricus friendi","species",249567,FALSE,NA
+"482","Sparganophilidae","Sparganophilidae","Sparganophilidae","family",531297,FALSE,NA
+"483","Almidae","Almidae","Almidae","family",999959,FALSE,"sibling_higher"
+"484","Octolasion cyaneum","Octolasion cyaneum","Octolasion cyaneum","species",128736,FALSE,NA
+"485","Semiscolex intermedius","Semiscolex intermedius","Semiscolex intermedius","species",780888,FALSE,NA
+"486","Semiscolex lamothei","Semiscolex lamothei","Semiscolex lamothei","species",780886,FALSE,NA
+"487","Aglaophamus elamellata","Aglaophamus elamellata","Aglaophamus elamellata",NA,131958,FALSE,NA
+"488","Aglaophamus rubellus","Aglaophamus rubellus","Aglaophamus rubellus","species",776950,FALSE,NA
+"489","Micronephthys stammeri","Micronephthys stammeri","Micronephthys stammeri","species",69290,FALSE,NA
+"490","Bipalponephtys cornuta","Bipalponephtys cornuta","Bipalponephtys cornuta","species",69298,FALSE,NA
+"491","Aglaophamus pulchra","Aglaophamus pulchra","Aglaophamus pulchra","species",69294,FALSE,NA
+"492","Polychaeta","Polychaeta","Polychaeta (class in Lophotrochozoa)","class",941618,FALSE,"sibling_higher"
+"493","Terebellida","Terebellida","Terebellida","order",466490,FALSE,NA
+"494","Antillesoma antillarum","Antillesoma antillarum","Antillesoma antillarum","species",43140,FALSE,NA
+"495","Lamprodrilus melanotus","Lamprodrilus melanotus","Lamprodrilus melanotus","species",5320541,FALSE,NA
+"496","Lamprodrilusgrescens","Lamprodrilusgrescens","Lamprodrilus nigrescens",NA,5320540,FALSE,NA
+"497","Rhynchelmis alyonae","Rhynchelmis alyonae","Rhynchelmis alyonae","species",564542,FALSE,"sibling_higher"
+"498","Scolelepis daphoinos","Scolelepis daphoinos","Scolelepis daphoinos","species",527100,FALSE,"sibling_higher"
+"499","Myxobdella annandalei","Myxobdella annandalei","Myxobdella annandalei","species",556215,FALSE,NA
+"500","Pintobdella chiapasensis","Pintobdella chiapasensis","Pintobdella chiapasensis","species",743071,FALSE,NA
+"501","Tyrannobdella rex","Tyrannobdella rex","Tyrannobdella rex","species",556228,FALSE,NA
+"502","Achaeta affinis","Achaeta affinis","Achaeta affinis","species",882742,FALSE,NA
+"503","Buchholzia appendiculata","Buchholzia appendiculata","Buchholzia appendiculata","species",495899,FALSE,NA
+"504","Cernosvitoviella atrata","Cernosvitoviella atrata","Cernosvitoviella atrata","species",407573,FALSE,NA
+"505","Chamaedrilus sphagnetorum","Chamaedrilus sphagnetorum","Chamaedrilus sphagnetorum",NA,407580,FALSE,NA
+"506","Fridericia galba","Fridericia galba","Fridericia galba","species",407575,FALSE,NA
+"507","Mesenchytraeus pelicensis","Mesenchytraeus pelicensis","Mesenchytraeus pelicensis","species",407577,FALSE,NA
+"508","Eclipidrilus pacificus","Eclipidrilus pacificus","Eclipidrilus pacificus","species",202743,FALSE,NA
+"509","Eclipidrilus palustris","Eclipidrilus palustris","Eclipidrilus palustris","species",949439,FALSE,NA
+"510","Guestphalinus","Guestphalinus","Guestphalinus","genus",843123,FALSE,NA
+"511","Kincaidiana hexatheca","Kincaidiana hexatheca","Kincaidiana hexatheca","species",843115,FALSE,NA
+"512","Rhynchelmis rostrata","Rhynchelmis rostrata","Rhynchelmis rostrata","species",949427,FALSE,"sibling_higher"
+"513","Rhynchelmis elrodi","Rhynchelmis elrodi","Rhynchelmis elrodi","species",446785,FALSE,"sibling_higher"
+"514","Rhynchelmis glandula","Rhynchelmis glandula","Rhynchelmis glandula","species",202749,FALSE,"sibling_higher"
+"515","Rhynchelmis gustafsoni","Rhynchelmis gustafsoni","Rhynchelmis gustafsoni","species",446783,FALSE,"sibling_higher"
+"516","Rhynchelmis saxosa","Rhynchelmis saxosa","Rhynchelmis saxosa","species",949429,FALSE,"sibling_higher"
+"517","Rhynchelmis tetratheca","Rhynchelmis tetratheca","Rhynchelmis tetratheca","species",818842,FALSE,"sibling_higher"
+"518","Rhynchelmis utahensis","Rhynchelmis utahensis","Rhynchelmis utahensis","species",324353,FALSE,"sibling_higher"
+"519","Rhynchelmis yakimorum","Rhynchelmis yakimorum","Rhynchelmis yakimorum","species",324351,FALSE,"sibling_higher"
+"520","Scoloplos acutus","Scoloplos acutus","Scoloplos acutus","species",409893,FALSE,"sibling_higher"
+"521","Pholoe minuta","Pholoe minuta","Pholoe minuta","species",398716,FALSE,NA
+"522","Pholoe baltica","Pholoe baltica","Pholoe baltica","species",538435,FALSE,NA
+"523","Pectinaria hyperborea","Pectinaria hyperborea","Pectinaria hyperborea","species",898499,FALSE,NA
+"524","Autolytus","Autolytus","Autolytus","genus",27242,FALSE,"sibling_higher"
+"525","Diplocirrus longisetosus","Diplocirrus longisetosus","Diplocirrus longisetosus","species",1040976,FALSE,NA
+"526","Bipalponephtysotena","Bipalponephtysotena","Bipalponephtys neotena",NA,340547,FALSE,NA
+"527","Amphitrite cirrata","Amphitrite cirrata","Amphitrite cirrata","species",214044,FALSE,NA
+"528","Euclymene zonalis","Euclymene zonalis","Clymenella zonalis","species",4977389,TRUE,NA
+"529","Pista flexuosa","Pista flexuosa","Pista flexuosa",NA,1040988,FALSE,"sibling_higher"
+"530","Achaeta aberrans","Achaeta aberrans","Achaeta aberrans","species",975032,FALSE,NA
+"531","Achaeta bibulba","Achaeta bibulba","Achaeta bibulba","species",354381,FALSE,NA
+"532","Achaeta bifollicula","Achaeta bifollicula","Achaeta bifollicula","species",975028,FALSE,NA
+"533","Achaeta bohemica","Achaeta bohemica","Achaeta bohemica","species",276967,FALSE,NA
+"534","Achaeta brevivasa","Achaeta brevivasa","Achaeta brevivasa",NA,6326555,FALSE,NA
+"535","Achaeta camerani","Achaeta camerani","Achaeta camerani","species",975024,FALSE,NA
+"536","Achaeta iberica","Achaeta iberica","Achaeta iberica","species",975026,FALSE,NA
+"537","Achaeta unibulba","Achaeta unibulba","Achaeta unibulba","species",975047,FALSE,NA
+"538","Buchholzia fallax","Buchholzia fallax","Buchholzia fallax","species",1020271,FALSE,NA
+"539","Cernosvitoviella aggtelekiensis","Cernosvitoviella aggtelekiensis","Cernosvitoviella aggtelekiensis","species",975049,FALSE,NA
+"540","Chamaedrilus cognettii","Chamaedrilus cognettii","Chamaedrilus cognettii",NA,382710,FALSE,NA
+"541","Enchytraeus buchholzi","Enchytraeus buchholzi","Enchytraeus buchholzi","species",621681,FALSE,NA
+"542","Enchytraeus bulbosus","Enchytraeus bulbosus","Enchytraeus bulbosus","species",249066,FALSE,NA
+"543","Enchytraeus japonensis","Enchytraeus japonensis","Enchytraeus japonensis","species",152979,FALSE,NA
+"544","Enchytraeus luxuriosus","Enchytraeus luxuriosus","Enchytraeus luxuriosus","species",843477,FALSE,NA
+"545","Enchytraeusrvegicus","Enchytraeusrvegicus","Enchytraeus norvegicus",NA,249073,FALSE,NA
+"546","Enchytraeus crypticus","Enchytraeus crypticus","Enchytraeus crypticus","species",249077,FALSE,NA
+"547","Enchytronia parva","Enchytronia parva","Enchytronia parva","species",869452,FALSE,NA
+"548","Fridericia bisetosa","Fridericia bisetosa","Fridericia bisetosa","species",276965,FALSE,NA
+"549","Fridericia renatae","Fridericia renatae","Fridericia maculata","species",7912006,TRUE,NA
+"550","Fridericia christeri","Fridericia christeri","Fridericia christeri","species",249084,FALSE,NA
+"551","Fridericia connata","Fridericia connata","Fridericia connata","species",823552,FALSE,NA
+"552","Fridericia digitata","Fridericia digitata","Fridericia digitata","species",533932,FALSE,NA
+"553","Fridericia heliota","Fridericia heliota","Fridericia heliota","species",147153,FALSE,NA
+"554","Fridericia isseli","Fridericia isseli","Fridericia isseli","species",823556,FALSE,NA
+"555","Fridericia magna","Fridericia magna","Fridericia magna","species",823558,FALSE,NA
+"556","Fridericiamoralis","Fridericiamoralis","Fridericia nemoralis",NA,823544,FALSE,NA
+"557","Fridericia perrieri","Fridericia perrieri","Fridericia perrieri","species",823550,FALSE,NA
+"558","Fridericia sardorum","Fridericia sardorum","Fridericia sardorum","species",432854,FALSE,NA
+"559","Fridericia sylvatica","Fridericia sylvatica","Fridericia sylvatica","species",299092,FALSE,NA
+"560","Fridericia waldenstroemi","Fridericia waldenstroemi","Fridericia waldenstroemi","species",432860,FALSE,NA
+"561","Haplotaxis gordioides","Haplotaxis gordioides","Haplotaxis gordioides","species",276962,FALSE,NA
+"562","Hemienchytraeus","Hemienchytraeus","Hemienchytraeus","genus",328403,FALSE,NA
+"563","Henlea andreae","Henlea andreae","Henlea andreae",NA,7912120,FALSE,"sibling_higher"
+"564","Henlea ventriculosa","Henlea ventriculosa","Henlea ventriculosa","species",299098,FALSE,"sibling_higher"
+"565","Marionina minutissima","Marionina minutissima","Marionina minutissima",NA,2846772,FALSE,NA
+"566","Marioninavisensis","Marioninavisensis","Marionina nevisensis",NA,874112,FALSE,NA
+"567","Marionina riparia","Marionina riparia","Globulidrilus riparius",NA,2846803,TRUE,NA
+"568","Marionina clavata","Marionina clavata","Marionina clavata","species",874108,FALSE,NA
+"569","Marionina filiformis","Marionina filiformis","Marionina filiformis","species",874104,FALSE,NA
+"570","Mesenchytraeus flavus","Mesenchytraeus flavus","Mesenchytraeus flavus","species",198614,FALSE,NA
+"571","Mesenchytraeus straminicolus","Mesenchytraeus straminicolus","Mesenchytraeus straminicolus","species",874110,FALSE,NA
+"572","Nais alpina","Nais alpina","Nais alpina","species",713985,FALSE,NA
+"573","Oconnorella cambrensis","Oconnorella cambrensis","Oconnorella cambrensis","species",328386,FALSE,NA
+"574","Oconnorella tubifera","Oconnorella tubifera","Oconnorella tubifera","species",328388,FALSE,NA
+"575","Propappus volki","Propappus volki","Propappus volki","species",320549,FALSE,NA
+"576","Rhyacodrilus coccineus","Rhyacodrilus coccineus","Rhyacodrilus coccineus","species",139726,FALSE,NA
+"577","Lumbricus meliboeus","Lumbricus meliboeus","Lumbricus meliboeus","species",647847,FALSE,NA
+"578","Aporrectodea cupulifera","Aporrectodea cupulifera","Aporrectodea cupulifera","species",647852,FALSE,NA
+"579","Octodrilus juvyi","Octodrilus juvyi","Octodrilus juvyi","species",647850,FALSE,NA
+"580","Aporrectodea","Aporrectodea","Aporrectodea","genus",1039469,FALSE,NA
+"581","Parvidrilus spelaeus","Parvidrilus spelaeus","Parvidrilus spelaeus",NA,292287,FALSE,NA
+"582","Parvidrilus jugeti","Parvidrilus jugeti","Parvidrilus jugeti",NA,292286,FALSE,NA
+"583","Parvidrilus meyssonnieri","Parvidrilus meyssonnieri","Parvidrilus meyssonnieri",NA,968093,FALSE,NA
+"584","Drawida ghilarovi","Drawida ghilarovi","Drawida ghilarovi","species",5693493,FALSE,NA
+"585","Eudrilus eugeniae","Eudrilus eugeniae","Eudrilus eugeniae","species",522303,FALSE,NA
+"586","Perionyx","Perionyx","Perionyx","genus",74164,FALSE,NA
+"587","Dina lyhnida","Dina lyhnida","Dina lyhnida","species",903051,FALSE,NA
+"588","Dina","Dina","Dina","genus",227458,FALSE,NA
+"589","Dina krilata","Dina krilata","Dina krilata","species",377989,FALSE,NA
+"590","Erpobdella","Erpobdella","Erpobdella","genus",737591,FALSE,NA
+"591","Dina lepinja","Dina lepinja","Dina lepinja","species",378002,FALSE,NA
+"592","Dina ohridana","Dina ohridana","Dina ohridana","species",903049,FALSE,NA
+"593","Dina lineata","Dina lineata","Dina lineata","species",227459,FALSE,NA
+"594","Dina latestriata","Dina latestriata","Dina latestriata","species",378000,FALSE,NA
+"595","Dina svilesta","Dina svilesta","Dina svilesta","species",1023098,FALSE,NA
+"596","Erpobdella johanssoni","Erpobdella johanssoni","Erpobdella johanssoni",NA,5574,FALSE,NA
+"597","Batracobdella algira","Batracobdella algira","Batracobdella algira","species",903055,FALSE,NA
+"598","Placobdella ali","Placobdella ali","Placobdella ali","species",553354,FALSE,"sibling_higher"
+"599","Haplotaxida","Haplotaxida","Haplotaxida","order",840750,FALSE,NA
+"600","Octolasion tyrtaeum","Octolasion tyrtaeum","Octolasion tyrtaeum","species",42145,FALSE,NA
+"601","Eiseniella tetraedra","Eiseniella tetraedra","Eiseniella tetraedra","species",2845389,FALSE,NA
+"602","Amphitrite figulus","Amphitrite figulus","Amphitrite figulus","species",409889,FALSE,NA
+"603","Satchellius mammalis","Satchellius mammalis","Satchellius mammalis","species",121709,FALSE,NA
+"604","Aulodrilus pluriseta","Aulodrilus pluriseta","Aulodrilus pluriseta","species",986495,FALSE,NA
+"605","Psammoryctides barbatus","Psammoryctides barbatus","Psammoryctides barbatus","species",201041,FALSE,NA
+"606","Brada villosa","Brada villosa","Brada villosa","species",805996,FALSE,NA
+"607","Exogone molesta","Exogone molesta","Exogone molesta","species",442052,FALSE,"sibling_higher"
+"608","Malmgreniellagralba","Malmgreniellagralba","Malmgreniella nigralba",NA,2540,FALSE,"sibling_higher"
+"609","Megalomma splendida","Megalomma splendida","Megalomma splendida","species",781947,FALSE,NA
+"610","Micronereisnaimoensis","Micronereisnaimoensis","Micronereis nanaimoensis",NA,417897,FALSE,NA
+"611","Protolaeospira eximia","Protolaeospira eximia","Protolaeospira eximia","species",395638,FALSE,NA
+"612","Travisia pupa","Travisia pupa","Travisia pupa","species",471709,FALSE,NA
+"613","Pholoe","Pholoe","Pholoe","genus",398717,FALSE,NA
+"614","Potamillaglecta","Potamillaglecta","Potamilla neglecta",NA,4986999,FALSE,NA
+"615","Rhinodrilus alatus","Rhinodrilus alatus","Rhinodrilus alatus","species",596334,FALSE,NA
+"616","Rhinodrilus motucu","Rhinodrilus motucu","Rhinodrilus motucu","species",596336,FALSE,NA
+"617","Travisia forbesii","Travisia forbesii","Travisia forbesii","species",444808,FALSE,NA
+"618","Asabellides","Asabellides","Asabellides","genus",646141,FALSE,"sibling_higher"
+"619","Aphroditella hastata","Aphroditella hastata","Aphroditella hastata",NA,409890,FALSE,NA
+"620","Ophioglycera gigantea","Ophioglycera gigantea","Ophioglycera gigantea",NA,409884,FALSE,NA
+"621","Polycirrus eximius","Polycirrus eximius","Polycirrus eximius","species",409886,FALSE,NA
+"622","Lumbricus herculeus","Lumbricus herculeus","Lumbricus herculeus","species",367350,FALSE,NA
+"623","Helobdella atli","Helobdella atli","Helobdella atli","species",50551,FALSE,NA
+"624","Helobdella virginiae","Helobdella virginiae","Helobdella virginiae","species",146400,FALSE,NA
+"625","Helobdella socimulcensis","Helobdella socimulcensis","Helobdella socimulcensis","species",50553,FALSE,NA
+"626","Domanibdella palmyrae","Domanibdella palmyrae","Domanibdella palmyrae","species",1082089,FALSE,NA
+"627","Chtonobdella","Chtonobdella","Chtonobdella","genus",62613,FALSE,NA
+"628","Chtonobdella pungens","Chtonobdella pungens","Chtonobdella pungens",NA,1082091,FALSE,NA
+"629","Neoterrabdella australis","Neoterrabdella australis","Neoterrabdella australis","species",1082094,FALSE,NA
+"630","Chtonobdella tanae","Chtonobdella tanae","Chtonobdella tanae",NA,555625,FALSE,NA
+"631","Domanibdella","Domanibdella","Domanibdella","genus",1082096,FALSE,NA
+"632","Haemadipsa cavatuses","Haemadipsa cavatuses","Haemadipsa cavatuses","species",1031568,FALSE,NA
+"633","Haemadipsa limuna","Haemadipsa limuna","Haemadipsa limuna","species",505559,FALSE,NA
+"634","Haemadipsa crenata","Haemadipsa crenata","Haemadipsa crenata","species",505555,FALSE,NA
+"635","Haemadipsa japonica","Haemadipsa japonica","Haemadipsa japonica","species",505557,FALSE,NA
+"636","Haemadipsa trimaculosa","Haemadipsa trimaculosa","Haemadipsa trimaculosa","species",505565,FALSE,NA
+"637","Haemadipsa zeylanica","Haemadipsa zeylanica","Haemadipsa zeylanica","species",790912,FALSE,NA
+"638","Haemadipsa rjukjuana","Haemadipsa rjukjuana","Haemadipsa rjukjuana","species",801030,FALSE,NA
+"639","Haemadipsa ornata","Haemadipsa ornata","Haemadipsa ornata","species",505563,FALSE,NA
+"640","Haemadipsa montana","Haemadipsa montana","Haemadipsa montana","species",505561,FALSE,NA
+"641","Chtonobdella mediorubra","Chtonobdella mediorubra","Chtonobdella mediorubra",NA,1082097,FALSE,NA
+"642","Chtonobdellaarchosorum","Chtonobdellaarchosorum","Chtonobdella niarchosorum",NA,831374,FALSE,NA
+"643","Chtonobdella vagans","Chtonobdella vagans","Chtonobdella vagans",NA,831371,FALSE,NA
+"644","Chtonobdella gloriosi","Chtonobdella gloriosi","Chtonobdella gloriosi",NA,1082087,FALSE,NA
+"645","Haemadipsa cochiniana","Haemadipsa cochiniana","Haemadipsa cochiniana","species",1031566,FALSE,NA
+"646","Chtonobdella grandis","Chtonobdella grandis","Limnobdella grandis",NA,7911777,FALSE,NA
+"647","Planobdella","Planobdella","Planobdella","genus",555627,FALSE,NA
+"648","Leiobdella","Leiobdella","Leiobdella","genus",555629,FALSE,NA
+"649","Tritetrabdella scandens","Tritetrabdella scandens","Tritetrabdella scandens","species",1031550,FALSE,NA
+"650","Haemadipsa hainana","Haemadipsa hainana","Haemadipsa hainana","species",801028,FALSE,NA
+"651","Flabelligera mundata","Flabelligera mundata","Flabelligera mundata","species",1045798,FALSE,"sibling_higher"
+"652","Coppingeria","Coppingeria","Coppingeria","genus",49581,FALSE,NA
+"653","Salifa perspicax","Salifa perspicax","Salifa perspicax","species",631094,FALSE,NA
+"654","Erpobdella annulata","Erpobdella annulata","Erpobdella annulata","species",631087,FALSE,NA
+"655","Lumbricina","Lumbricina","Lumbricina",NA,316449,FALSE,"sibling_higher"
+"656","Maoridrilus felix","Maoridrilus felix","Maoridrilus felix","species",503893,FALSE,NA
+"657","Octochaetus kenleei","Octochaetus kenleei","Octochaetus kenleei","species",503896,FALSE,NA
+"658","Deinodrilus gorgon","Deinodrilus gorgon","Deinodrilus gorgon","species",503890,FALSE,NA
+"659","Hormogaster redii","Hormogaster redii","Hormogaster redii","species",1048533,FALSE,NA
+"660","Hormogaster arenicola","Hormogaster arenicola","Hormogaster arenicola","species",791643,FALSE,NA
+"661","Hormogaster catalaunensis","Hormogaster catalaunensis","Hormogaster catalaunensis","species",791647,FALSE,NA
+"662","Hormogaster gallica","Hormogaster gallica","Hormogaster gallica","species",791658,FALSE,NA
+"663","Hormogaster eserana","Hormogaster eserana","Hormogaster eserana","species",791656,FALSE,NA
+"664","Hemigastrodrilus monicae","Hemigastrodrilus monicae","Hemigastrodrilus monicae","species",512553,FALSE,NA
+"665","Hormogaster huescana","Hormogaster huescana","Hormogaster huescana","species",1089445,FALSE,NA
+"666","Hormogaster sylvestris","Hormogaster sylvestris","Hormogaster sylvestris","species",512550,FALSE,NA
+"667","Hormogaster pretiosiformis","Hormogaster pretiosiformis","Hormogaster pretiosiformis","species",1089452,FALSE,NA
+"668","Hormogaster oroeli","Hormogaster oroeli","Hormogaster oroeli","species",1089443,FALSE,NA
+"669","Hormogasterjaformis","Hormogasterjaformis","Hormogaster najaformis",NA,1089441,FALSE,NA
+"670","Vignysa vedovinii","Vignysa vedovinii","Vignysa vedovinii","species",512555,FALSE,NA
+"671","Hormogaster pretiosaleida","Hormogaster pretiosaleida","Hormogaster praetiosa nigra",NA,1089449,FALSE,"infraspecific"
+"672","Hormogaster castillana","Hormogaster castillana","Hormogaster castillana","species",791645,FALSE,NA
+"673","Vignysa teres","Vignysa teres","Vignysa teres","species",512557,FALSE,NA
+"674","Hormogaster samnitica","Hormogaster samnitica","Hormogaster samnitica","species",512547,FALSE,NA
+"675","Hormogaster ireguana","Hormogaster ireguana","Hormogaster ireguana","species",1089447,FALSE,NA
+"676","Helobdella californica","Helobdella californica","Helobdella californica","species",376476,FALSE,NA
+"677","Aeolosoma","Aeolosoma","Aeolosoma","genus",327544,FALSE,NA
+"678","Typosyllis","Typosyllis","Typosyllis","genus",839640,FALSE,"sibling_higher"
+"679","Octolasium","Octolasium","Octolasion",NA,42146,TRUE,NA
+"680","Diplocardia singularis","Diplocardia singularis","Geodrilus singularis","species",7912606,TRUE,"unplaced"
+"681","Natsushima bifurcata","Natsushima bifurcata","Natsushima bifurcata","species",318064,FALSE,NA
+"682","Shinkai fontefridae","Shinkai fontefridae","Shinkai fontefridae",NA,773750,FALSE,NA
+"683","Laubierus alvini","Laubierus alvini","Laubierus alvini",NA,199657,FALSE,NA
+"684","Natsushima sashai","Natsushima sashai","Natsushima sashai",NA,773749,FALSE,NA
+"685","Shinkai longipedata","Shinkai longipedata","Shinkai longipedata","species",386760,FALSE,NA
+"686","Iheyomytilidicola lauensis","Iheyomytilidicola lauensis","Iheyomytilidicola lauensis",NA,199659,FALSE,NA
+"687","Eranno chilensis","Eranno chilensis","Eranno chilensis",NA,264303,FALSE,NA
+"688","Idanthyrsus macropalea","Idanthyrsus macropalea","Idanthyrsus macropalea","species",1009065,FALSE,NA
+"689","Thelepus plagiostoma","Thelepus plagiostoma","Thelepus plagiostoma","species",1009062,FALSE,NA
+"690","Typosyllis patriciae","Typosyllis patriciae","Typosyllis patriciae","species",738274,FALSE,NA
+"691","Typosyllis busseltonensis","Typosyllis busseltonensis","Typosyllis busseltonensis","species",738266,FALSE,NA
+"692","Sipuncula","Sipuncula","Sipuncula","class",377817,FALSE,NA
+"693","Archinome storchi","Archinome storchi","Archinome storchi","species",368399,FALSE,NA
+"694","Travoscolides chengannures","Travoscolides chengannures","Travoscolides chengannures","species",259972,FALSE,NA
+"695","Hormogaster","Hormogaster","Hormogaster","genus",573153,FALSE,NA
+"696","Axiokebuita millsi","Axiokebuita millsi","Axiokebuita millsi","species",910580,FALSE,NA
+"697","Bryodrilus diverticulatus","Bryodrilus diverticulatus","Bryodrilus diverticulatus","species",430224,FALSE,NA
+"698","Bryodrilus parvus","Bryodrilus parvus","Bryodrilus parvus","species",430226,FALSE,NA
+"699","Bryodrilus librus","Bryodrilus librus","Bryodrilus librus","species",2846791,FALSE,NA
+"700","Neogaster","Neogaster","Neogaster","genus",2848722,FALSE,NA
+"701","Rhinodrilus","Rhinodrilus","Rhinodrilus","genus",295132,FALSE,"sibling_higher"
+"702","Atatina","Atatina","Atatina","genus",35777,FALSE,"sibling_higher"
+"703","Martiodrilus","Martiodrilus","Martiodrilus","genus",2847695,FALSE,"sibling_higher"
+"704","Martiodrilus tenkatei","Martiodrilus tenkatei","Martiodrilus tenkatei","species",5705841,FALSE,NA
+"705","Dichogaster andina","Dichogaster andina","Dichogaster andina","species",5705680,FALSE,NA
+"706","Glossodrilus","Glossodrilus","Glossodrilus","genus",611428,FALSE,"sibling_higher"
+"707","Nouraguesia","Nouraguesia","Nouraguesia","genus",5693522,FALSE,"sibling_higher"
+"708","Righiodrilus","Righiodrilus","Righiodrilus","genus",2848686,FALSE,"sibling_higher"
+"709","Wegeneriona","Wegeneriona","Wegeneriona","genus",2848463,FALSE,NA
+"710","Haplotaxis","Haplotaxis","Haplotaxis","genus",276964,FALSE,NA
+"711","Urobenus","Urobenus","Urobenus","genus",1023072,FALSE,"sibling_higher"
+"712","Dichogaster","Dichogaster","Dichogaster","genus",521,FALSE,NA
+"713","Pontoscolex","Pontoscolex","Pontoscolex","genus",640497,FALSE,"sibling_higher"
+"714","Poecilobdella javanica","Poecilobdella javanica","Poecilobdella javanica","species",780884,FALSE,NA
+"715","Amphiduros pacificus","Amphiduros pacificus","Amphiduros pacificus","species",987702,FALSE,NA
+"716","Gyptis pacifica","Gyptis pacifica","Gyptis pacifica","species",987704,FALSE,NA
+"717","Bryodrilus ehlersi","Bryodrilus ehlersi","Bryodrilus ehlersi","species",721533,FALSE,NA
+"718","Drawida gracilis","Drawida gracilis","Drawida gracilis","species",749884,FALSE,NA
+"719","Megascolex cochinensis","Megascolex cochinensis","Megascolex cochinensis","species",851178,FALSE,"sibling_higher"
+"720","Hoplochaetella stuarti","Hoplochaetella stuarti","Hoplochaetella stuarti","species",875475,FALSE,NA
+"721","Drawida bullata","Drawida bullata","Drawida bullata","species",152539,FALSE,NA
+"722","Marioninathachaeta","Marioninathachaeta","Marionina nothachaeta",NA,729765,FALSE,NA
+"723","Aporrectodea limicola","Aporrectodea limicola","Aporrectodea limicola","species",245046,FALSE,NA
+"724","Aporrectodea molleri","Aporrectodea molleri","Aporrectodea molleri","species",245042,FALSE,NA
+"725","Haementeria lopezi","Haementeria lopezi","Haementeria lopezi","species",511724,FALSE,NA
+"726","Haementeria acuecueyetzin","Haementeria acuecueyetzin","Haementeria acuecueyetzin","species",511785,FALSE,NA
+"727","Haementeria officinalis","Haementeria officinalis","Haementeria officinalis","species",509176,FALSE,NA
+"728","Haementeria depressa","Haementeria depressa","Haementeria depressa","species",800460,FALSE,NA
+"729","Haementeria paraguayensis","Haementeria paraguayensis","Haementeria paraguayensis","species",511795,FALSE,NA
+"730","Oligobdella brasiliensis","Oligobdella brasiliensis","Oligobdella brasiliensis","species",942427,FALSE,NA
+"731","Malmgreniella mcintoshi","Malmgreniella mcintoshi","Malmgreniella mcintoshi","species",874314,FALSE,"sibling_higher"
+"732","Pisionidens","Pisionidens","Pisionidens",NA,13288,FALSE,NA
+"733","Nephasoma abyssorum","Nephasoma abyssorum","Nephasoma abyssorum","species",161043,FALSE,"sibling_higher"
+"734","Nephasoma columbaris","Nephasoma columbaris","Nephasoma columbaris","species",161041,FALSE,"sibling_higher"
+"735","Onchnesoma steenstrupii","Onchnesoma steenstrupii","Onchnesoma steenstrupii","species",637730,FALSE,NA
+"736","Aspidosiphon spinalis","Aspidosiphon spinalis","Aspidosiphon elegans",NA,637731,TRUE,"sibling_higher"
+"737","Phascolion gerardi","Phascolion gerardi","Phascolion gerardi","species",637729,FALSE,"sibling_higher"
+"738","Aporrectodea smaragdina","Aporrectodea smaragdina","Aporrectodea smaragdina","species",121723,FALSE,NA
+"739","Microscolex dubius","Microscolex dubius","Microscolex dubius","species",67076,FALSE,NA
+"740","Ophryotrochauarchus","Ophryotrochauarchus","Ophryotrocha nauarchus",NA,607587,FALSE,NA
+"741","Annelida","Annelida","Annelida","phylum",941620,FALSE,NA
+"742","Drawida gisti","Drawida gisti","Drawida gisti","species",617414,FALSE,NA
+"743","Nais christinae","Nais christinae","Nais christinae","species",269916,FALSE,NA
+"744","Nais barbata","Nais barbata","Nais barbata","species",160973,FALSE,NA
+"745","Nais stolci","Nais stolci","Nais stolci","species",269918,FALSE,NA
+"746","Hirudinaria","Hirudinaria","Hirudinaria (genus in Holozoa)","genus",870766,FALSE,"sibling_higher"
+"747","Aporrectodea giardi","Aporrectodea giardi","Aporrectodea giardi","species",973362,FALSE,NA
+"748","Nicodrilus carochensis","Nicodrilus carochensis","Nicodrilus carochensis","species",973353,FALSE,NA
+"749","Nicodrilus monticola","Nicodrilus monticola","Nicodrilus monticola","species",973355,FALSE,NA
+"750","Nicodrilus tetramammalis","Nicodrilus tetramammalis","Nicodrilus tetramammalis","species",973357,FALSE,NA
+"751","Amynthas aspergillus","Amynthas aspergillus","Amynthas aspergillus","species",264560,FALSE,"sibling_higher"
+"752","Hydroides triversiculosa","Hydroides triversiculosa","Hydroides triversiculosa",NA,682548,FALSE,NA
+"753","Thysanocardiagra","Thysanocardiagra","Thysanocardia nigra",NA,917792,FALSE,NA
+"754","Metaphire magna","Metaphire magna","Metaphire magna","species",1046973,FALSE,NA
+"755","Amynthas","Amynthas","Amynthas","genus",536507,FALSE,NA
+"756","Amynthas kinmenensis","Amynthas kinmenensis","Amynthas kinmenensis","species",700457,FALSE,"sibling_higher"
+"757","Amynthas wuhumontis","Amynthas wuhumontis","Amynthas wuhumontis","species",700458,FALSE,"sibling_higher"
+"758","Amynthas wujhouensis","Amynthas wujhouensis","Amynthas wujhouensis","species",700456,FALSE,"sibling_higher"
+"759","Amynthas zonarius","Amynthas zonarius","Amynthas zonarius",NA,271181,FALSE,"sibling_higher"
+"760","Amynthas wuzhimontis","Amynthas wuzhimontis","Amynthas wuzhimontis",NA,271182,FALSE,"sibling_higher"
+"761","Archinome rosacea","Archinome rosacea","Archinome rosacea","species",593255,FALSE,NA
+"762","Archinome levinae","Archinome levinae","Archinome levinae","species",5263474,FALSE,NA
+"763","Archinome jasoni","Archinome jasoni","Archinome jasoni","species",5263475,FALSE,NA
+"764","Archinome tethyana","Archinome tethyana","Archinome tethyana","species",5263476,FALSE,NA
+"765","Amynthas diaoluomontis","Amynthas diaoluomontis","Amynthas diaoluomontis","species",5224431,FALSE,"sibling_higher"
+"766","Amynthas zhangi","Amynthas zhangi","Amynthas zhangi","species",5224435,FALSE,"sibling_higher"
+"767","Calamyzas amphictenicola","Calamyzas amphictenicola","Calamyzas amphictenicola","species",4983209,FALSE,NA
+"768","Amynthas octopapillatus","Amynthas octopapillatus","Amynthas octopapillatus","species",5224427,FALSE,"sibling_higher"
+"769","Amynthas lingshuiensis","Amynthas lingshuiensis","Amynthas lingshuiensis",NA,5224426,FALSE,"sibling_higher"
+"770","Harmothoe bathydomus","Harmothoe bathydomus","Harmothoe bathydomus","species",4984351,FALSE,"sibling_higher"
+"771","Oxyptychus","Oxyptychus","Oxyptychus","genus",663524,FALSE,"sibling_higher"
+"772","Protodrilus draco","Protodrilus draco","Protodrilus draco",NA,5321636,FALSE,"hidden_inherited, sibling_higher"
+"773","Amynthas amis","Amynthas amis","Amynthas amis","species",4165190,FALSE,"sibling_higher"
+"774","Amynthas hongyehensis","Amynthas hongyehensis","Amynthas hongyehensis","species",4165189,FALSE,"sibling_higher"
+"775","Amynthas mutabilitas","Amynthas mutabilitas","Amynthas mutabilitas","species",4165195,FALSE,"sibling_higher"
+"776","Pomatoceros triqueter","Pomatoceros triqueter","Pomatoceros triqueter","species",1025234,FALSE,NA
+"777","Amynthas stricosus","Amynthas stricosus","Amynthas stricosus","species",5224430,FALSE,"sibling_higher"
+"778","Amynthas trapezoides","Amynthas trapezoides","Amynthas trapezoides","species",5224429,FALSE,"sibling_higher"
+"779","Amynthas hainanicus","Amynthas hainanicus","Amynthas hainanicus",NA,5705710,FALSE,"sibling_higher"
+"780","Amynthas mediocus","Amynthas mediocus","Amynthas mediocus","species",5705681,FALSE,"sibling_higher"
+"781","Perinereisntia","Perinereisntia","Perinereis nuntia",NA,313671,FALSE,"sibling_higher"
+"782","Melinna albicincta","Melinna albicincta","Melinna albicincta","species",4166747,FALSE,NA
+"783","Mugga wahrbergi","Mugga wahrbergi","Mugga wahrbergi","species",4166752,FALSE,NA
+"784","Sabellides octocirrata","Sabellides octocirrata","Sabellides octocirrata","species",4166750,FALSE,NA
+"785","Perionyx sansibaricus","Perionyx sansibaricus","Perionyx sansibaricus","species",5224416,FALSE,NA
+"786","Glyphidrilus annandalei","Glyphidrilus annandalei","Glyphidrilus annandalei","species",5224413,FALSE,NA
+"787","Eunice samoae","Eunice samoae","Eunice samoae","species",5705611,FALSE,NA
+"788","Dichogaster bolaui","Dichogaster bolaui","Dichogaster bolaui","species",4974331,FALSE,NA
+"789","Perionyx foveatus","Perionyx foveatus","Perionyx foveatus","species",5321610,FALSE,NA
+"790","Metaphire peguana","Metaphire peguana","Metaphire peguana","species",5224417,FALSE,NA
+"791","Metaphire bahli","Metaphire bahli","Metaphire bahli","species",5224418,FALSE,NA
+"792","Protodrilus ovarium","Protodrilus ovarium","Protodrilus ovarium",NA,5477611,FALSE,"hidden_inherited, sibling_higher"
+"793","Diurodrilus subterraneus","Diurodrilus subterraneus","Diurodrilus subterraneus","species",4166847,FALSE,NA
+"794","Amynthas taiwumontis","Amynthas taiwumontis","Amynthas taiwumontis","species",5705715,FALSE,"sibling_higher"
+"795","Amynthas longisiphonus","Amynthas longisiphonus","Amynthas longisiphonus","species",5705747,FALSE,"sibling_higher"
+"796","Amynthas szechuanensis","Amynthas szechuanensis","Amynthas szechuanensis","species",5705702,FALSE,"sibling_higher"
+"797","Amynthas omeimontis","Amynthas omeimontis","Amynthas omeimontis","species",5705689,FALSE,"sibling_higher"
+"798","Metaphire exilis","Metaphire exilis","Metaphire exilis","species",5705679,FALSE,NA
+"799","Amynthas endophilus","Amynthas endophilus","Amynthas endophilus",NA,5705756,FALSE,"sibling_higher"
+"800","Rhyacodrilus subterraneus","Rhyacodrilus subterraneus","Rhyacodrilus subterraneus","species",139724,FALSE,NA
+"801","Manayunkia godlewskii","Manayunkia godlewskii","Manayunkia godlewskii","species",5705239,FALSE,NA
+"802","Potamothrix vejdovskyi","Potamothrix vejdovskyi","Potamothrix vejdovskyi","species",2846184,FALSE,NA
+"803","Potamothrix moldaviensis","Potamothrix moldaviensis","Potamothrix moldaviensis","species",2846188,FALSE,NA
+"804","Potamothrix bedoti","Potamothrix bedoti","Potamothrix bedoti","species",2846177,FALSE,NA
+"805","Potamothrix heuscheri","Potamothrix heuscheri","Potamothrix heuscheri","species",2846190,FALSE,NA
+"806","Euclymene robusta","Euclymene robusta","Euclymene robusta","species",4977439,FALSE,"sibling_higher"
+"807","Euclymene santandarensis","Euclymene santandarensis","Euclymene santandarensis","species",4977429,FALSE,"sibling_higher"
+"808","Scolelepis foliosa","Scolelepis foliosa","Scolelepis foliosa","species",4976073,FALSE,"sibling_higher"
+"809","Amynthas daeari","Amynthas daeari","Amynthas daeari","species",5224433,FALSE,"sibling_higher"
+"810","Tonoscolex birmanicus","Tonoscolex birmanicus","Tonoscolex birmanicus","species",5262671,FALSE,"sibling_higher"
+"811","Laonicergensis","Laonicergensis","Laonice norgensis",NA,4976364,FALSE,NA
+"812","Placobdella cryptobranchii","Placobdella cryptobranchii","Placobdella cryptobranchii","species",2847230,FALSE,"sibling_higher"
+"813","Chamaedrilus chalupskyi","Chamaedrilus chalupskyi","Chamaedrilus chalupskyi","species",5705872,FALSE,NA
+"814","Chamaedrilus pseudosphagnetorum","Chamaedrilus pseudosphagnetorum","Chamaedrilus pseudosphagnetorum",NA,5705871,FALSE,NA
+"815","Chamaedrilus lapponicus","Chamaedrilus lapponicus","Chamaedrilus lapponicus","species",5492562,FALSE,NA
+"816","Helobdella bowermani","Helobdella bowermani","Helobdella bowermani","species",5492585,FALSE,NA
+"817","Helobdella simplex","Helobdella simplex","Helobdella simplex","species",5492582,FALSE,NA
+"818","Eiseniona gerardoi","Eiseniona gerardoi","Eiseniona gerardoi","species",5501677,FALSE,NA
+"819","Placobdella hollensis","Placobdella hollensis","Placobdella hollensis","species",2847216,FALSE,"sibling_higher"
+"820","Glycinderdmanni","Glycinderdmanni","Glycinde nordmanni",NA,4980696,FALSE,NA
+"821","Magelona minuta","Magelona minuta","Magelona minuta","species",4976744,FALSE,NA
+"822","Tritetrabdella kinabaluensis","Tritetrabdella kinabaluensis","Tritetrabdella kinabaluensis","species",5723679,FALSE,NA
+"823","Pelagobia longicirrata","Pelagobia longicirrata","Pelagobia longicirrata","species",19215,FALSE,NA
+"824","Placobdella sophieae","Placobdella sophieae","Placobdella sophieae","species",5492580,FALSE,"sibling_higher"
+"825","Euclymene oerstedi","Euclymene oerstedi","Euclymene oerstedi","species",60511,FALSE,"sibling_higher"
+"826","Clymenura clypeata","Clymenura clypeata","Clymenura clypeata","species",365430,FALSE,NA
+"827","Protodrilus schneideri","Protodrilus schneideri","Protodrilus schneideri",NA,4985519,FALSE,"hidden_inherited, sibling_higher"
+"828","Protodrilus gracilis","Protodrilus gracilis","Protodrilus gracilis",NA,4985535,FALSE,"hidden_inherited, sibling_higher"
+"829","Protodrilus hypoleucus","Protodrilus hypoleucus","Protodrilus hypoleucus",NA,4985530,FALSE,"hidden_inherited, sibling_higher"
+"830","Protodrilus adhaerens","Protodrilus adhaerens","Protodrilus adhaerens",NA,4985529,FALSE,"hidden_inherited, sibling_higher"
+"831","Protodriloides symbioticus","Protodriloides symbioticus","Protodriloides symbioticus","species",444806,FALSE,"hidden_inherited"
+"832","Hormogaster joseantonioi","Hormogaster joseantonioi","Hormogaster joseantonioi","species",5705821,FALSE,NA
+"833","Eisenia muranyii","Eisenia muranyii","Eisenia muranyii (species in Opisthokonta)",NA,5723639,FALSE,NA
+"834","Eisenia storkani","Eisenia storkani","Eisenia storkani","species",5723647,FALSE,NA
+"835","Notopharyngoides aruensis","Notopharyngoides aruensis","Notopharyngoides aruensis","species",552733,FALSE,NA
+"836","Notopharyngoides platypus","Notopharyngoides platypus","Notopharyngoides platypus","species",4952495,FALSE,NA
+"837","Myzostoma attenuatum","Myzostoma attenuatum","Myzostoma attenuatum","species",4952624,FALSE,NA
+"838","Hypomyzostomanseni","Hypomyzostomanseni","Hypomyzostoma nanseni",NA,5677144,FALSE,NA
+"839","Myzostoma ambiguum","Myzostoma ambiguum","Myzostoma ambiguum","species",976486,FALSE,NA
+"840","Myzostoma australe","Myzostoma australe","Myzostoma australe","species",4952530,FALSE,NA
+"841","Myzostoma bicorne","Myzostoma bicorne","Myzostoma bicorne","species",4952576,FALSE,NA
+"842","Myzostoma divisor","Myzostoma divisor","Myzostoma divisor","species",4952513,FALSE,NA
+"843","Myzostoma insigne","Myzostoma insigne","Myzostoma insigne","species",4952555,FALSE,NA
+"844","Myzostoma testudo","Myzostoma testudo","Myzostoma testudo","species",4952619,FALSE,NA
+"845","Myzostomagromaculatum","Myzostomagromaculatum","Myzostoma nigromaculatum",NA,976488,FALSE,NA
+"846","Alboglossiphonia papillosa","Alboglossiphonia papillosa","Alboglossiphonia papillosa","species",2847197,FALSE,NA
+"847","Tylorrhynchus heterochaetus","Tylorrhynchus heterochaetus","Tylorrhynchus heterochaetus","species",992902,FALSE,NA
+"848","Endomyzostoma scotia","Endomyzostoma scotia","Endomyzostoma scotia","species",5677149,FALSE,NA
+"849","Hypomyzostoma jasoni","Hypomyzostoma jasoni","Hypomyzostoma jasoni","species",5677142,FALSE,NA
+"850","Hypomyzostoma jonathoni","Hypomyzostoma jonathoni","Hypomyzostoma jonathoni","species",5677143,FALSE,NA
+"851","Hemifridericia bivesiculata","Hemifridericia bivesiculata","Hemifridericia bivesiculata","species",5705869,FALSE,NA
+"852","Lepidonotus humilis","Lepidonotus humilis","Lepidonotus humilis","species",4984551,FALSE,"sibling_higher"
+"853","Maoridrilus transalpinus","Maoridrilus transalpinus","Maoridrilus transalpinus",NA,2845121,FALSE,NA
+"854","Chamaedrilus glandulosus","Chamaedrilus glandulosus","Chamaedrilus glandulosus","species",407584,FALSE,NA
+"855","Sabellomma cupoculata","Sabellomma cupoculata","Sabellomma cupoculata","species",5972849,FALSE,NA
+"856","Olavius longissimus","Olavius longissimus","Olavius longissimus","species",2846352,FALSE,"sibling_higher"
+"857","Ailoscolex lacteospumosus","Ailoscolex lacteospumosus","Ailoscolex lacteospumosus","species",192655,FALSE,NA
+"858","Sphaerodorum flavum","Sphaerodorum flavum","Sphaerodorum flavum","species",649024,FALSE,NA
+"859","Sphaerodoropsis minuta","Sphaerodoropsis minuta","Sphaerodoropsis minuta","species",4980145,FALSE,NA
+"860","Sphaerodoridium fauchaldi","Sphaerodoridium fauchaldi","Sphaerodoridium fauchaldi","species",4980225,FALSE,NA
+"861","Drawida koreana","Drawida koreana","Drawida koreana","species",5693491,FALSE,NA
+"862","Trichodrilus strandi","Trichodrilus strandi","Trichodrilus strandi","species",2845045,FALSE,NA
+"863","Trichodrilus leruthi","Trichodrilus leruthi","Trichodrilus leruthi",NA,2845060,FALSE,NA
+"864","Stylodrilus lemani","Stylodrilus lemani","Stylodrilus lemani",NA,2845039,FALSE,NA
+"865","Stylodrilus sanguineus","Stylodrilus sanguineus","Stylodrilus sanguineus",NA,2845100,FALSE,NA
+"866","Amynthasonmontis","Amynthasonmontis","Amynthas nhonmontis",NA,5705686,FALSE,"sibling_higher"
+"867","Metaphire tecta","Metaphire tecta","Metaphire tecta",NA,7487901,FALSE,NA
+"868","Aricidea wassi","Aricidea wassi","Aricidea wassi","species",186258,FALSE,"sibling_higher"
+"869","Marphysa bellii","Marphysa bellii","Marphysa bellii","species",438824,FALSE,"sibling_higher"
+"870","Scolelepis eltaninae","Scolelepis eltaninae","Scolelepis eltaninae","species",4976106,FALSE,"sibling_higher"
+"871","Amynthas cucullatus","Amynthas cucullatus","Amynthas cucullatus",NA,5972676,FALSE,"sibling_higher"
+"872","Amynthas pectiniferus","Amynthas pectiniferus","Amynthas pectiniferus",NA,5972679,FALSE,"sibling_higher"
+"873","Pheretima philippina","Pheretima philippina","Pheretima philippina",NA,5972693,FALSE,NA
+"874","Dichogaster modigliani","Dichogaster modigliani","Dichogaster modigliani","species",5972684,FALSE,NA
+"875","Drawida impertusa","Drawida impertusa","Drawida impertusa","species",5972740,FALSE,NA
+"876","Metaphire houlleti","Metaphire houlleti","Metaphire houlleti","species",2845428,FALSE,NA
+"877","Drawidapalensis","Drawidapalensis","Drawida nepalensis",NA,5972741,FALSE,NA
+"878","Glyphidrilus spelaeotes","Glyphidrilus spelaeotes","Glyphidrilus spelaeotes","species",5972664,FALSE,NA
+"879","Amynthas jiriensis","Amynthas jiriensis","Amynthas jiriensis","species",5972678,FALSE,"sibling_higher"
+"880","Dendrobaena byblica","Dendrobaena byblica","Dendrobaena byblica","species",5723614,FALSE,NA
+"881","Dendrobaena ganglbaueri","Dendrobaena ganglbaueri","Dendrobaena ganglbaueri",NA,6326498,FALSE,NA
+"882","Dendrobaena pentheri","Dendrobaena pentheri","Dendrobaena pentheri","species",5723611,FALSE,NA
+"883","Helodrilus patriarchalis","Helodrilus patriarchalis","Helodrilus patriarchalis","species",2845224,FALSE,NA
+"884","Hirudo sulukii","Hirudo sulukii","Hirudo sulukii",NA,5972658,FALSE,NA
+"885","Amynthas alexandri","Amynthas alexandri","Amynthas alexandri","species",5972675,FALSE,"sibling_higher"
+"886","Amynthas papulosus","Amynthas papulosus","Amynthas papulosus","species",2845407,FALSE,"sibling_higher"
+"887","Fridericia phaeostriata","Fridericia phaeostriata","Fridericia phaeostriata",NA,5972710,FALSE,NA
+"888","Fridericia longiducta","Fridericia longiducta","Fridericia longiducta",NA,5972709,FALSE,NA
+"889","Fridericia connatiformis","Fridericia connatiformis","Fridericia connatiformis",NA,5972706,FALSE,NA
+"890","Phascolosoma pacificum","Phascolosoma pacificum","Phascolosoma pacificum","species",2848287,FALSE,"sibling_higher"
+"891","Glyphidrilus chiensis","Glyphidrilus chiensis","Glyphidrilus chiensis","species",7486952,FALSE,NA
+"892","Glyphidrilus huailuangensis","Glyphidrilus huailuangensis","Glyphidrilus huailuangensis","species",7486954,FALSE,NA
+"893","Glyphidrilus mekongensis","Glyphidrilus mekongensis","Glyphidrilus mekongensis","species",7486961,FALSE,NA
+"894","Glyphidrilus quadratus","Glyphidrilus quadratus","Glyphidrilus quadratus","species",7486967,FALSE,NA
+"895","Glyphidrilus vangviengensis","Glyphidrilus vangviengensis","Glyphidrilus vangviengensis","species",7486995,FALSE,NA
+"896","Glyphidrilus jamiesoni","Glyphidrilus jamiesoni","Glyphidrilus jamiesoni","species",7486955,FALSE,NA
+"897","Glyphidrilus kralanhensis","Glyphidrilus kralanhensis","Glyphidrilus kralanhensis","species",7486958,FALSE,NA
+"898","Allolobophora sturanyi","Allolobophora sturanyi","Allolobophora sturanyi",NA,5723624,FALSE,NA
+"899","Aporrectodea dubiosa","Aporrectodea dubiosa","Aporrectodea dubiosa","species",2845265,FALSE,NA
+"900","Capitellanatoi","Capitellanatoi","Capitella nonatoi",NA,7490104,FALSE,NA
+"901","Capitellaoaciculata","Capitellaoaciculata","Capitella aciculata",NA,4977873,FALSE,NA
+"902","Syllis magellanica","Syllis magellanica","Syllis magellanica","species",7489501,FALSE,NA
+"903","Eulepethusnhaiensis","Eulepethusnhaiensis","Eulepethus nanhaiensis",NA,7488564,FALSE,NA
+"904","Globulidrilus riparius","Globulidrilus riparius","Globulidrilus riparius","species",2846803,FALSE,NA
+"905","Enchytraeus coronatus","Enchytraeus coronatus","Enchytraeus coronatus","species",1071823,FALSE,NA
+"906","Allolobophoridella eiseni","Allolobophoridella eiseni","Allolobophoridella eiseni","species",4165424,FALSE,NA
+"907","Bimastos heimburgeri","Bimastos heimburgeri","Bimastos heimburgeri","species",7487337,FALSE,NA
+"908","Bimastos palustris","Bimastos palustris","Bimastos palustris","species",5723619,FALSE,NA
+"909","Bimastos tumidus","Bimastos tumidus","Bimastos tumidus","species",7487342,FALSE,NA
+"910","Dendrobaena alpina","Dendrobaena alpina","Dendrobaena alpina","species",7487343,FALSE,NA
+"911","Healyella jordanis","Healyella jordanis","Healyella jordanis","species",5723664,FALSE,NA
+"912","Healyella syriaca","Healyella syriaca","Healyella syriaca","species",6326553,FALSE,NA
+"913","Spermophorodrilus antiquus","Spermophorodrilus antiquus","Spermophorodrilus antiquus",NA,7487443,FALSE,"extinct_inherited, incertae_sedis"
+"914","Bimastos longicinctus","Bimastos longicinctus","Bimastos longicinctus",NA,7487338,FALSE,NA
+"915","Bimastos schwerti","Bimastos schwerti","Bimastos schwerti",NA,7487339,FALSE,NA
+"916","Eisenoides lonnbergi","Eisenoides lonnbergi","Eisenoides lonnbergi","species",5723634,FALSE,NA
+"917","Fitzingeria platyura","Fitzingeria platyura","Fitzingeria platyura","species",4165441,FALSE,NA
+"918","Treadwellius bifidus","Treadwellius bifidus","Treadwellius bifidus","species",4985325,FALSE,NA
+"919","Limnodrilus claparedianus","Limnodrilus claparedianus","Limnodrilus claparedianus","species",166766,FALSE,NA
+"920","Limnodrilus maumeensis","Limnodrilus maumeensis","Limnodrilus maumeensis","species",2846439,FALSE,NA
+"921","Achaeta tothi","Achaeta tothi","Achaeta tothi",NA,7487461,FALSE,NA
+"922","Achaeta danica","Achaeta danica","Achaeta danica","species",7487448,FALSE,NA
+"923","Dero borellii","Dero borellii","Dero borellii",NA,2846158,FALSE,"sibling_higher"
+"924","Allonais gwaliorensis","Allonais gwaliorensis","Allonais gwaliorensis",NA,7488000,FALSE,NA
+"925","Branchiodrilus hortensis","Branchiodrilus hortensis","Branchiodrilus hortensis","species",2847577,FALSE,NA
+"926","Piguetiella blanci","Piguetiella blanci","Piguetiella blanci","species",139727,FALSE,NA
+"927","Uncinais uncinata","Uncinais uncinata","Uncinais uncinata","species",563209,FALSE,NA
+"928","Trieminentia corderoi","Trieminentia corderoi","Trieminentia corderoi","species",915905,FALSE,NA
+"929","Limnodrilus grandisetosus","Limnodrilus grandisetosus","Limnodrilus grandisetosus","species",7488097,FALSE,NA
+"930","Limnodrilus rubripenis","Limnodrilus rubripenis","Limnodrilus rubripenis","species",2846441,FALSE,NA
+"931","Limnodrilus silvani","Limnodrilus silvani","Limnodrilus silvani","species",2846436,FALSE,NA
+"932","Limnodrilus udekemianus","Limnodrilus udekemianus","Limnodrilus udekemianus","species",42373,FALSE,NA
+"933","Alexandrovia onegensis","Alexandrovia onegensis","Alexandrovia onegensis",NA,2847828,FALSE,NA
+"934","Aulodrilus acutus","Aulodrilus acutus","Aulodrilus acutus",NA,7488074,FALSE,NA
+"935","Bothrioneurum vejdovskyanum","Bothrioneurum vejdovskyanum","Bothrioneurum vejdovskyanum","species",1020273,FALSE,NA
+"936","Epirodrilus pygmaeus","Epirodrilus pygmaeus","Epirodrilus pygmaeus","species",139730,FALSE,NA
+"937","Spirosperma ferox","Spirosperma ferox","Spirosperma ferox","species",508576,FALSE,NA
+"938","Tubifexwaensis","Tubifexwaensis","Tubifex newaensis",NA,4974449,FALSE,"sibling_higher"
+"939","Pisione bulbifera","Pisione bulbifera","Pisione bulbifera","species",4981007,FALSE,NA
+"940","Pisione guanche","Pisione guanche","Pisione guanche","species",4981023,FALSE,NA
+"941","Pisione hartmannschroederae","Pisione hartmannschroederae","Pisione hartmannschroederae","species",4981035,FALSE,NA
+"942","Pisione papuensis","Pisione papuensis","Pisione papuensis","species",4981037,FALSE,NA
+"943","Pisione puzae","Pisione puzae","Pisione puzae","species",4981028,FALSE,NA
+"944","Pisione remota","Pisione remota","Pisione remota","species",518643,FALSE,NA
+"945","Pisione wolfi","Pisione wolfi","Pisione wolfi","species",4981022,FALSE,NA
+"946","Vanadis crystallina","Vanadis crystallina","Vanadis crystallina","species",4980089,FALSE,NA
+"947","Branchiobdella italica","Branchiobdella italica","Branchiobdella italica",NA,690179,FALSE,NA
+"948","Ozobranchus jantseanus","Ozobranchus jantseanus","Ozobranchus jantseanus","species",2847038,FALSE,NA
+"949","Melinna maculata","Melinna maculata","Melinna maculata","species",4975491,FALSE,NA
+"950","Myrianida paradesi","Myrianida paradesi","Myrianida paradesi",NA,7489299,FALSE,NA
+"951","Trilobodriluspponicus","Trilobodriluspponicus","Trilobodrilus nipponicus",NA,4977102,FALSE,NA
+"952","Salifa motokawai","Salifa motokawai","Salifa motokawai",NA,5972653,FALSE,NA
+"953","Siphonosoma funafuti","Siphonosoma funafuti","Siphonosoma funafuti","species",2848238,FALSE,NA
+"954","Diplocirruscolaji","Diplocirruscolaji","Diplocirrus nicolaji",NA,5972831,FALSE,NA
+"955","Tritetrabdella longiducta","Tritetrabdella longiducta","Tritetrabdella longiducta",NA,5972657,FALSE,NA
+"956","Orobdella brachyepididymis","Orobdella brachyepididymis","Orobdella brachyepididymis",NA,5972648,FALSE,NA
+"957","Orobdellakahamai","Orobdellakahamai","Orobdella nakahamai",NA,5972649,FALSE,NA
+"958","Orobdella okanoi","Orobdella okanoi","Orobdella okanoi",NA,5972651,FALSE,NA
+"959","Orobdella yamaneae","Orobdella yamaneae","Orobdella yamaneae",NA,5972652,FALSE,NA
+"960","Pheretima apoensis","Pheretima apoensis","Pheretima apoensis",NA,5972687,FALSE,NA
+"961","Pheretima boaensis","Pheretima boaensis","Pheretima boaensis",NA,5972688,FALSE,NA
+"962","Pheretima vergrandis","Pheretima vergrandis","Pheretima vergrandis",NA,5972700,FALSE,NA
+"963","Pheretima malindangensis","Pheretima malindangensis","Pheretima malindangensis",NA,5972691,FALSE,NA
+"964","Pheretima boniaoi","Pheretima boniaoi","Pheretima boniaoi",NA,5972689,FALSE,NA
+"965","Pheretima camiguinensis","Pheretima camiguinensis","Pheretima camiguinensis",NA,5972690,FALSE,NA
+"966","Pheretima timpoongensis","Pheretima timpoongensis","Pheretima timpoongensis",NA,5972699,FALSE,NA
+"967","Saccocirrus uchidai","Saccocirrus uchidai","Saccocirrus uchidai",NA,5693365,FALSE,NA
+"968","Poecilobdellanjingensis","Poecilobdellanjingensis","Poecilobdella nanjingensis",NA,7486659,FALSE,NA
+"969","Orobdella kanaekoikeae","Orobdella kanaekoikeae","Orobdella kanaekoikeae",NA,7486143,FALSE,NA
+"970","Myxobdella sinanensis","Myxobdella sinanensis","Myxobdella sinanensis","species",790933,FALSE,NA
+"971","Gastrostomobdella ampunganensis","Gastrostomobdella ampunganensis","Gastrostomobdella ampunganensis",NA,7486139,FALSE,NA
+"972","Gastrostomobdella extenta","Gastrostomobdella extenta","Gastrostomobdella extenta",NA,7486140,FALSE,NA
+"973","Amynthas lalashan","Amynthas lalashan","Amynthas lalashan",NA,7487470,FALSE,"sibling_higher"
+"974","Amynthas fusing","Amynthas fusing","Amynthas fusing",NA,7487467,FALSE,"sibling_higher"
+"975","Amynthas lioujia","Amynthas lioujia","Amynthas lioujia",NA,7487471,FALSE,"sibling_higher"
+"976","Amynthas majia","Amynthas majia","Amynthas majia",NA,7487475,FALSE,"sibling_higher"
+"977","Orobdella meisai","Orobdella meisai","Orobdella meisai",NA,7486144,FALSE,NA
+"978","Asteriomyzostomum hercules","Asteriomyzostomum hercules","Asteriomyzostomum hercules","species",7488637,FALSE,NA
+"979","Asteriomyzostomum monroeae","Asteriomyzostomum monroeae","Asteriomyzostomum monroeae","species",7488639,FALSE,NA
+"980","Asteriomyzostomum jinshou","Asteriomyzostomum jinshou","Asteriomyzostomum jinshou","species",7488638,FALSE,NA
+"981","Orobdella angustata","Orobdella angustata","Orobdella angustata",NA,7486141,FALSE,NA
+"982","Torix tukubana","Torix tukubana","Torix tukubana",NA,7486210,FALSE,NA
+"983","Placobdella lamothei","Placobdella lamothei","Placobdella lamothei","species",5972662,FALSE,"sibling_higher"
+"984","Embolocephalus velutinus","Embolocephalus velutinus","Embolocephalus velutinus",NA,152546,FALSE,NA
+"985","Tasserkidrilus kessleri","Tasserkidrilus kessleri","Tasserkidrilus kessleri",NA,2847665,FALSE,NA
+"986","Pristina jenkinae","Pristina jenkinae","Pristina jenkinae","species",713983,FALSE,NA
+"987","Nais pseudobtusa","Nais pseudobtusa","Nais pseudobtusa","species",4974440,FALSE,NA
+"988","Aporrectodea terrestris","Aporrectodea terrestris","Aporrectodea terrestris","species",7487334,FALSE,NA
+"989","Fridericia szoevenyii","Fridericia szoevenyii","Fridericia szoevenyii",NA,7486863,FALSE,NA
+"990","Placobdellachalis","Placobdellachalis","Placobdella nuchalis",NA,2847217,FALSE,"sibling_higher"
+"991","Fridericia raxiensis","Fridericia raxiensis","Fridericia raxiensis","species",7486830,FALSE,NA
+"992","Amphitrite ornata","Amphitrite ornata","Amphitrite ornata","species",941282,FALSE,NA
+"993","Terebellides williamsae","Terebellides williamsae","Terebellides williamsae",NA,7491025,FALSE,NA
+"994","Lampito mauritii","Lampito mauritii","Lampito mauritii","species",367300,FALSE,NA
+"995","Haemadipsa tianmushana","Haemadipsa tianmushana","Haemadipsa tianmushana",NA,7486651,FALSE,NA
+"996","Hesione pantherina","Hesione pantherina","Hesione pantherina",NA,4980414,FALSE,NA
+"997","Neanthes wilsonchani","Neanthes wilsonchani","Neanthes wilsonchani",NA,7488670,FALSE,NA
+"998","Enchytronia baloghi","Enchytronia baloghi","Enchytronia baloghi","species",7486814,FALSE,NA
+"999","Enchytronia christenseni","Enchytronia christenseni","Enchytronia christenseni","species",7486815,FALSE,NA
+"1000","Hemienchytraeus koreanus","Hemienchytraeus koreanus","Hemienchytraeus koreanus",NA,7486869,FALSE,NA
+"1001","Hemienchytraeus quadratus","Hemienchytraeus quadratus","Hemienchytraeus quadratus",NA,7486870,FALSE,NA
+"1002","Xetadrilus aphanus","Xetadrilus aphanus","Xetadrilus aphanus",NA,6326964,FALSE,NA
+"1003","Polygordiusapolitanus","Polygordiusapolitanus","Polygordius neapolitanus",NA,4985581,FALSE,"hidden_inherited"
+"1004","Fridericia semisetosa","Fridericia semisetosa","Fridericia semisetosa","species",810201,FALSE,NA
+"1005","Enchytraeus polatdemiri","Enchytraeus polatdemiri","Enchytraeus polatdemiri",NA,7486811,FALSE,NA
+"1006","Erpobdella adani","Erpobdella adani","Erpobdella adani",NA,7486055,FALSE,NA
+"1007","Placobdella ringueleti","Placobdella ringueleti","Placobdella ringueleti",NA,7486201,FALSE,"sibling_higher"
+"1008","Pontoscolex spiralis","Pontoscolex spiralis","Pontoscolex spiralis","species",222701,FALSE,NA
+"1009","Nicomache minor","Nicomache minor","Nicomache minor","species",4977349,FALSE,NA
+"1010","Octodrilus tergestinus","Octodrilus tergestinus","Octodrilus tergestinus","species",7487418,FALSE,NA
+"1011","Octodrilus zicsiniello","Octodrilus zicsiniello","Octodrilus zicsiniello",NA,7487419,FALSE,NA
+"1012","Octodrilus mimus","Octodrilus mimus","Octodrilus mimus","species",7487417,FALSE,NA
+"1013","Octodrilus istrianus","Octodrilus istrianus","Octodrilus istrianus","species",7487416,FALSE,NA
+"1014","Drawida alishanensis","Drawida alishanensis","Drawida alishanensis",NA,7488262,FALSE,NA
+"1015","Drawida fenqihuensis","Drawida fenqihuensis","Drawida fenqihuensis",NA,7488264,FALSE,NA
+"1016","Hermadion truncata","Hermadion truncata","Hermadion truncata","species",4984870,FALSE,NA
+"1017","Dendrobaena hortensis","Dendrobaena hortensis","Dendrobaena hortensis","species",5723612,FALSE,NA
+"1018","Dendrobaena hrabei","Dendrobaena hrabei","Dendrobaena hrabei",NA,7487345,FALSE,NA
+"1019","Dendrobaena orientalis","Dendrobaena orientalis","Dendrobaena orientalis","species",6326503,FALSE,NA
+"1020","Dendrobaena pantaleonis","Dendrobaena pantaleonis","Dendrobaena pantaleonis",NA,7487348,FALSE,NA
+"1021","Dendrobaena pavliceki","Dendrobaena pavliceki","Dendrobaena pavliceki",NA,7487349,FALSE,NA
+"1022","Dendrobaena semitica","Dendrobaena semitica","Dendrobaena semitica",NA,6326508,FALSE,NA
+"1023","Dendrobaena karacadagi","Dendrobaena karacadagi","Dendrobaena karacadagi",NA,7487346,FALSE,NA
+"1024","Ostreobdella californiana","Ostreobdella californiana","Ostreobdella californiana",NA,7486687,FALSE,NA
+"1025","Heptacyclus diminutus","Heptacyclus diminutus","Heptacyclus diminutus",NA,7486682,FALSE,NA
+"1026","Branchiodrilus cleistochaeta","Branchiodrilus cleistochaeta","Branchiodrilus cleistochaeta",NA,7488001,FALSE,NA
+"1027","Chamaedrilus asloae","Chamaedrilus asloae","Chamaedrilus asloae",NA,7486712,FALSE,NA
+"1028","Eisenia salairica","Eisenia salairica","Eisenia salairica (species in Opisthokonta)",NA,7487360,FALSE,NA

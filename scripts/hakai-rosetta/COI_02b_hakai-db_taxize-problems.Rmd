@@ -5,84 +5,504 @@ date: '2022-06-27'
 output: html_document
 ---
 
+This script deals with conflicts between what's found in TOL and WoRMS
+Generally, this is because the taxa is terrestrial or freshwater. 
+
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(taxize)
 library(worrms)
 library(here)
 
+# for when i get a modified verison to work
+#source(here('scripts',"get_wormsid_mod.R"))
+
 # here filepaths
 hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
 rosetta <- here('species_lists', 'hakai', '2022rosetta')
+tol_conflict <- here('species_lists', 'hakai', '2022rosetta', 'problems', 'tol_conflict')
 ```
 # load in problems and worms conflicts
 
 ```{r load-problems}
 
-
-
-
-
-mollusca_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_mollusca_not-found.csv'))
-
-ech_platy_nem_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_ech_platy_nem_not-found.csv'))
-
-small_phyla_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_small_phyla_not-found.csv'))
-
-
-
-
-chordata_nf_worms <- read_csv(here(rosetta, 'problems',
+chordata_nf_worms <- read_csv(here(tol_conflict,
                                    '20220624_chordata_worms-tol-conflict.csv'))
 
-mollusca_nf_worms <- read_csv(here(rosetta, 'problems',
+mollusca_nf_worms <- read_csv(here(tol_conflict,
                                    '20220624_mollusca_worms-tol-conflict.csv'))
 
-ech_platy_nem_nf_worms <- read_csv(here(rosetta, 'problems',
+ech_platy_nem_nf_worms <- read_csv(here(tol_conflict,
                                    '20220624_ech_platy_nem_worms-tol-conflict.csv'))
 
-small_phyla_nf_worms <- read_csv(here(rosetta, 'problems',
-                                   '20220624_small_phyla_worms-tol-conflict.csv'))
+
 
 ```
 
+```{r worrms-function}
+## requires worrms to be loaded
+# input is vector of species names
+# use wm_records_names to extract 
+# this doesn't need the + signs
 
+# right now this breaks if not-found
+search_records_worms <- function(spnames) {
+  search <- tibble()
+  for (i in spnames) {
+    print(paste0('searching for ', i))
+    record <- wm_records_names(i, marine_only = FALSE)
+    message('done')
+    search <- append(search, record)
+  }
+  names(search) <- spnames
+  search_output <- map_dfr(.x = search, ~ data.frame(.x), .id = 'query') %>%
+    janitor::clean_names() %>%
+    select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+  return(search_output)
+}
+```
 
-# Annelida
+# annelids
 
 ```{r annelid-load}
-annelid_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_annelid_not-found.csv'))[-1]
+# remove known problems at load-in
+annelid_nf_worms <- read_csv(here(tol_conflict,
+                                   '20220624_annelid_worms-tol-conflict.csv'))[-1] %>%
+    mutate(tol_sciname = str_replace_all(tol_sciname, ' \\(genus in Holozoa\\)', "")) %>%
+  mutate(tol_sciname = str_replace_all(tol_sciname, ' \\(class in Lophotrochozoa\\)', "")) %>%
+  mutate(tol_sciname = str_replace_all(tol_sciname, ' \\(species in Opisthokonta\\)', "")) %>%
+  mutate(tol_sciname = str_replace_all(tol_sciname, ' \\(subclass in Opisthokonta\\)', ""))
 
-annelid_nf_worms <- read_csv(here(rosetta, 'problems',
-                                   '20220624_annelid_worms-tol-conflict.csv'))[-1]
 
-annelid_taxize <- read_csv(here(rosetta, 'taxize',
-                                '20220624_annelid_taxonomy-full.csv'))[-1]
+
 ```
 
-```{r}
-annelid_records <- wm_records_names(c(annelid_nf_worms$tol_sciname), 
-                                 marine_only = FALSE)
-
-annelid_terr2 <- map_dfr(.x = annelid_terr, ~ data.frame(.x)) %>%
-  janitor::clean_names() %>%
-  select(!(c(url, taxon_rank_id, citation, lsid, modified)))
-
-
-## after this is original
-
+```{r annelid-fixes}
 # make worms-searchable for temp issue
 annelid_search <- annelid_nf_worms %>%
   select(c(tol_sciname)) %>%
   ## temporary issue requires replacing whitespace with '+'
   mutate(worms_query = gsub(" ", "+", tol_sciname))
 
+# first pass to find anything that shouod have been found
+annelid_worms_fuzzy <- get_wormsid_(annelid_search$worms_query, 
+                                marine_only = FALSE, ask = FALSE,
+                                accepted = FALSE)
+
+
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+annelid_worms2 <- annelid_worms_fuzzy %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+annelid_worms2 <- annelid_worms2 %>%
+  left_join(annelid_search, by = c('query' = 'worms_query')) %>%
+  relocate(tol_sciname) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+annelid_worms2 <- annelid_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(tol_sciname, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(tol_sciname == scientificname))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# now use my loop to pull anything found
+annelid_records <- search_records_worms(annelid_worms2$tol_sciname)
+
+# generate terrestrial-only and freshwater-only columns
+annelid_records <- annelid_records %>%
+  filter(kingdom == 'Animalia') %>%
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct()
+
+# generate list of genera + terrestrial/marine status
+## this will let us automatically classify some not-in-worms species
+annelid_genera <- annelid_records %>%
+  filter(rank == 'Genus') %>%
+  select(query, valid_name, status, terrestrial_only, freshwater_only, aphia_id) %>%
+  distinct()
+
+# reassess not-found list again
+annelid_nf_worms2 <- annelid_nf_worms %>%
+  filter(!(tol_sciname %in% annelid_records$query)) %>%
+  # extract genus names so we can test them
+  separate(tol_sciname, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  left_join(annelid_genera, by = c('genus_split' = 'query'))
+
+#extract list of terrestrial/fresh onlys
+annelid_terrfresh <- annelid_nf_worms2 %>%
+  filter(terrestrial_only == 1 | freshwater_only == 1)
+
+# filter to who's left
+annelid_nf_worms2 <- annelid_nf_worms2 %>%
+  filter(!(tol_sciname %in% annelid_terrfresh$tol_sciname))
+
+# get higher taxonomy for these
+annelid_ottclassify <- classification(annelid_nf_worms2$tol_sciname, db = 'tol')
+
+annelid_nf_classify <- ottclassifytest %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query') %>%
+  filter(!(rank == 'no rank')) %>%
+  pivot_wider(id_cols = query, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'ottid_')) %>%
+  select(query, phylum, class, subclass, order, family, genus, species, ottid_species)
+
+#select only families to search
+annelid_nf_family <- annelid_nf_classify %>%
+  select(family) %>%
+  distinct()
+
+# which families have worms ids?
+annelid_family <- get_wormsid_(annelid_nf_family$family)
+
+annelid_family2 <- annelid_family %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query') %>%
+  filter(!(!(query == scientificname)))
+
+annelid_family_records <- search_records_worms(annelid_family2$query)
+
+#generate conflict list at family level
+annelid_family_found <- annelid_nf_classify %>%
+  select(query, family, ottid_species) %>%
+  mutate(family = as.character(family)) %>%
+  right_join(annelid_family_records, by = 'family') %>%
+  select(!(query.y)) %>%
+  rename(query = query.x)
+
+# generate not-found list at family level
+annelid_notfound2 <- annelid_nf_classify %>%
+  filter(!(family %in% annelid_family2$scientificname)) %>%
+  select(query, phylum, class, order, family, genus) %>%
+  mutate(across(c(phylum, class, order, family, genus), ~ as.character(.)))
+```
+
+```{r annelid-save}
+# ready to merge
+write_csv(annelid_records, here(rosetta, 'problems', 'resolved', 
+                                  '20220630_annelid_worms_tol-resolved.csv'))
+
+# outstanding conflicts
+write_csv(annelid_family_found, here(rosetta, 'problems', 'tol_conflict', 
+                                  '20220630_annelid_worms_tol-conflict-family.csv'))
+
+# fresh-terrestrial
+write_csv(annelid_terrfresh, here(rosetta, 'problems', 'fresh_terrestrial', 
+                                  '20220630_annelid_fresh-terr.csv'))
+
+
+# still not found in worms
+write_csv(annelid_notfound2, here(rosetta, 'problems', 'not_found', 
+                                  '20220630_annelid_not_found-tol.csv'))
+
+```
+
+
+
+
+# Arthropoda
+
+```{r}
+arthropod_nf_worms <- read_csv(here(tol_conflict,
+                                   '20220624_arthropod_worms-tol-conflict.csv'))
+```
+
+
+```{r}
+# make worms-searchable for temp issue
+arthropod_search <- arthropod_nf_worms %>%
+  select(c(tol_sciname)) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", tol_sciname))
+
+# first pass to find anything that shouod have been found
+arthropod_worms_fuzzy <- get_wormsid_(arthropod_search$worms_query, 
+                                marine_only = FALSE, ask = FALSE,
+                                accepted = FALSE)
+
+
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+arthropod_worms2 <- arthropod_worms_fuzzy %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+arthropod_worms2 <- arthropod_worms2 %>%
+  left_join(arthropod_search, by = c('query' = 'worms_query')) %>%
+  relocate(tol_sciname) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+arthropod_worms2 <- arthropod_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(tol_sciname, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(tol_sciname == scientificname))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# now use my loop to pull anything found
+arthropod_records <- search_records_worms(arthropod_worms2$tol_sciname)
+
+# generate terrestrial-only and freshwater-only columns
+arthropod_records <- arthropod_records %>%
+  filter(kingdom == 'Animalia') %>%
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct()
+
+# generate list of genera + terrestrial/marine status
+## this will let us automatically classify some not-in-worms species
+arthropod_genera <- arthropod_records %>%
+  filter(rank == 'Genus') %>%
+  select(query, valid_name, status, terrestrial_only, freshwater_only, aphia_id) %>%
+  distinct()
+
+# reassess not-found list again
+arthropod_nf_worms2 <- arthropod_nf_worms %>%
+  filter(!(tol_sciname %in% arthropod_records$query)) %>%
+  # extract genus names so we can test them
+  separate(tol_sciname, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  left_join(arthropod_genera, by = c('genus_split' = 'query'))
+
+#extract list of terrestrial/fresh onlys
+arthropod_terrfresh <- arthropod_nf_worms2 %>%
+  filter(terrestrial_only == 1 | freshwater_only == 1)
+
+# filter to who's left
+arthropod_nf_worms2 <- arthropod_nf_worms2 %>%
+  filter(!(tol_sciname %in% arthropod_terrfresh$tol_sciname))
+
+# get higher taxonomy for these
+arthropod_ottclassify <- classification(arthropod_nf_worms2$tol_sciname, db = 'tol')
+
+arthropod_nf_classify <- ottclassifytest %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query') %>%
+  filter(!(rank == 'no rank')) %>%
+  pivot_wider(id_cols = query, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'ottid_')) %>%
+  select(query, phylum, class, subclass, order, family, genus, species, ottid_species)
+
+#select only families to search
+arthropod_nf_family <- arthropod_nf_classify %>%
+  select(family) %>%
+  distinct()
+
+# which families have worms ids?
+arthropod_family <- get_wormsid_(arthropod_nf_family$family)
+
+arthropod_family2 <- arthropod_family %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query') %>%
+  filter(!(!(query == scientificname)))
+
+arthropod_family_records <- search_records_worms(arthropod_family2$query)
+
+#generate conflict list at family level
+arthropod_family_found <- arthropod_nf_classify %>%
+  select(query, family, ottid_species) %>%
+  mutate(family = as.character(family)) %>%
+  right_join(arthropod_family_records, by = 'family') %>%
+  select(!(query.y)) %>%
+  rename(query = query.x)
+
+# generate not-found list at family level
+arthropod_notfound2 <- arthropod_nf_classify %>%
+  filter(!(family %in% arthropod_family2$scientificname)) %>%
+  select(query, phylum, class, order, family, genus) %>%
+  mutate(across(c(phylum, class, order, family, genus), ~ as.character(.)))
+```
+
+
+
+
+# Chordata
+
+```{r}
+
+```
+
+
+
+# Small phyla
+
+```{r}
+smallphyla_nf_worms <- read_csv(here(tol_conflict,
+                                   '20220624_small_phyla_worms-tol-conflict.csv'))
+```
+
+
+
+```{r}
+# make worms-searchable for temp issue
+smallphyla_search <- smallphyla_nf_worms %>%
+  select(c(tol_sciname)) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", tol_sciname))
+
+# first pass to find anything that shouod have been found
+smallphyla_worms_fuzzy <- get_wormsid_(smallphyla_search$worms_query, 
+                                marine_only = FALSE, ask = FALSE,
+                                accepted = FALSE)
+
+
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+smallphyla_worms2 <- smallphyla_worms_fuzzy %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+smallphyla_worms2 <- smallphyla_worms2 %>%
+  left_join(smallphyla_search, by = c('query' = 'worms_query')) %>%
+  relocate(tol_sciname) %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+smallphyla_worms2 <- smallphyla_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(tol_sciname, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(tol_sciname == scientificname))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# now use my loop to pull anything found
+smallphyla_records <- search_records_worms(smallphyla_worms2$tol_sciname)
+
+# generate terrestrial-only and freshwater-only columns
+smallphyla_records <- smallphyla_records %>%
+  filter(kingdom == 'Animalia') %>%
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct()
+
+# generate list of genera + terrestrial/marine status
+## this will let us automatically classify some not-in-worms species
+smallphyla_genera <- smallphyla_records %>%
+  filter(rank == 'Genus') %>%
+  select(query, valid_name, status, terrestrial_only, freshwater_only, aphia_id) %>%
+  distinct()
+
+# reassess not-found list again
+smallphyla_nf_worms2 <- smallphyla_nf_worms %>%
+  filter(!(tol_sciname %in% smallphyla_records$query)) %>%
+  # extract genus names so we can test them
+  separate(tol_sciname, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  left_join(smallphyla_genera, by = c('genus_split' = 'query'))
+
+#extract list of terrestrial/fresh onlys
+smallphyla_terrfresh <- smallphyla_nf_worms2 %>%
+  filter(terrestrial_only == 1 | freshwater_only == 1)
+
+# filter to who's left
+smallphyla_nf_worms2 <- smallphyla_nf_worms2 %>%
+  filter(!(tol_sciname %in% smallphyla_terrfresh$tol_sciname))
+
+# get higher taxonomy for these
+smallphyla_ottclassify <- classification(smallphyla_nf_worms2$tol_sciname, db = 'tol')
+
+smallphyla_nf_classify <- ottclassifytest %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query') %>%
+  filter(!(rank == 'no rank')) %>%
+  pivot_wider(id_cols = query, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'ottid_')) %>%
+  select(query, phylum, class, subclass, order, family, genus, species, ottid_species)
+
+#select only families to search
+smallphyla_nf_family <- smallphyla_nf_classify %>%
+  select(family) %>%
+  distinct()
+
+# which families have worms ids?
+smallphyla_family <- get_wormsid_(smallphyla_nf_family$family)
+
+smallphyla_family2 <- smallphyla_family %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query') %>%
+  filter(!(!(query == scientificname)))
+
+smallphyla_family_records <- search_records_worms(smallphyla_family2$query)
+
+#generate conflict list at family level
+smallphyla_family_found <- smallphyla_nf_classify %>%
+  select(query, family, ottid_species) %>%
+  mutate(family = as.character(family)) %>%
+  right_join(smallphyla_family_records, by = 'family') %>%
+  select(!(query.y)) %>%
+  rename(query = query.x)
+
+# generate not-found list at family level
+smallphyla_notfound2 <- smallphyla_nf_classify %>%
+  filter(!(family %in% smallphyla_family2$scientificname)) %>%
+  select(query, phylum, class, order, family, genus) %>%
+  mutate(across(c(phylum, class, order, family, genus), ~ as.character(.)))
+```
+
+
+
+
+
+# scratch work
+
+these are the original loops and functions to extract data; more efficient than the taxize call but can't handle 204:NAs at the moment
+```{r}
+
+for (i in annelid_issue$tol_sciname) {
+  print(paste0('searching for ', i))
+  record <- wm_records_names(i, marine_only = FALSE)
+  print('done')
+  search <- append(search, record)
+}
+
+annelid_search <- map_dfr(.x = search, ~ data.frame(.x)) %>%
+  janitor::clean_names() %>%
+  select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+```
+
+
+
+
+
+
+this is what I wrote for the annelid chunk before rewriting the taxize call
+keep for now until i know I don't need it
+```{r original-annelid}
+annelid_search3 <- annelid_search[10:15,]
+
+annelid_search2 <- annelid_worms2[4:7,] %>%
+  select(tol_sciname) %>%
+  filter(!(is.na(tol_sciname))) %>%
+  distinct() %>%
+  mutate(worms_query = gsub(" ", "+", tol_sciname))
+
 # this worms search needs to be very broad
-annelid_worms_fuzzy <- get_wormsid_(sci_com = annelid_search$worms_query, 
+annelid_worms_fuzzy <- get_wormsid_(sci_com = annelid_search3$worms_query, 
                                     fuzzy = TRUE, marine_only = FALSE,
                                     accepted = FALSE)
 
@@ -143,31 +563,8 @@ annelid_worms3 <- annelid_worms2 %>%
            wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
            wormsid_family, wormsid_genus, #wormsid_subgenus, 
            wormsid_species,
-           authority))
+           authority)) %>%
+  
 
-```
-
-
-
-
-
-
-# Arthropoda
-
-```{r}
-
-arthropod_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_arthropod_not-found.csv'))
-
-arthropod_nf_worms <- read_csv(here(rosetta, 'problems',
-                                   '20220624_arthropod_worms-tol-conflict.csv'))
-```
-
-
-# Chordata
-
-```{r}
-chordata_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_chordata_not-found.csv'))
 ```
 

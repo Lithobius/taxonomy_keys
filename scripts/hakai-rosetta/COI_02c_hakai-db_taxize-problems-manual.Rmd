@@ -1,0 +1,43 @@
+---
+title: "hakai-db taxize fix 2"
+author: "Kate Sheridan"
+date: '2022-06-30'
+output: html_document
+---
+
+Here we'll load in all the outstanding problems to be manually resolved
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(stringr)
+library(taxize)
+library(here)
+
+# here filepaths
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
+```
+
+```{r}
+annelid_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_annelid_not-found.csv'))
+
+arthropod_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_arthropod_not-found.csv'))
+chordata_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_chordata_not-found.csv'))
+
+mollusca_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_mollusca_not-found.csv'))
+
+ech_platy_nem_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_ech_platy_nem_not-found.csv'))
+
+small_phyla_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_small_phyla_not-found.csv'))
+
+
+
+
+```
+

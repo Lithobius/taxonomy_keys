@@ -1,0 +1,151 @@
+---
+title: "get_wormsid work"
+author: "Kate Sheridan"
+date: '2022-06-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(taxize)
+library(worrms)
+library(here)
+
+# here filepaths
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
+```
+
+
+```{r}
+
+```
+
+
+
+```{r edit-get_wormsid}
+#change to make:
+# in command get_wormsid add:
+# line 49: include all desired columns
+# line 116: add columns to loop output
+# line 123: change structure to dataframe
+# lines 46 and 61ish add wmdf <- c(NA, NA...number of columns)
+#basically, copypasta from get_wormsid_mod.R
+
+
+trace(get_wormsid, edit = TRUE)
+
+# the output now requires some editing;
+# both functions require the output, the search
+
+notfoundlist <- function(worms_output, worms_search) {
+  new_df <- worms_output %>%
+    filter(is.na(aphia_id)) %>%
+    select(query, found) %>%
+    left_join(worms_search, by = c('query' = 'worms_query')) %>%
+    relocate(tol_sciname) %>%
+    select(!(query))
+  return(new_df)
+}
+
+
+
+separate_rows(rank,status, valid_name, kingdom, 
+                phylum, class, order, family, genus, sep = "\"") %>%
+    separate_rows(unacceptreason, sep = "\"") %>%
+    separate_rows(aphia_id, valid_aphiaid,
+                ismarine, isbrackish, isfreshwater,
+                isterrestrial, isextinct)
+
+fix_wormsid_output <- function(worms_output, worms_search){
+  new_df <- worms_output %>%
+    mutate(across(.fns = ~gsub('c\\(|\\)', '', .))) %>%
+    mutate(across(.fns = ~gsub(',",', '",', .))) %>%
+    separate_rows(rank,status, valid_name, kingdom, 
+                phylum, class, order, family, genus, sep = "\"") %>%
+    separate_rows(unacceptreason, sep = "\"") %>%
+    separate_rows(aphia_id, valid_aphiaid,
+                ismarine, isbrackish, isfreshwater,
+                isterrestrial, isextinct, sep = ",\\s*") %>%
+    filter(!rank %in% c(')','c(', '', ', ')) %>%
+    filter(!aphia_id %in% c('c', '')) %>%
+    filter(!(aphia_id == valid_aphiaid & status == 'unaccepted' | 
+             aphia_id != valid_aphiaid & status == 'accepted')) %>%
+    filter(!unacceptreason %in% c(')')) %>%
+    mutate_all(., funs(replace(., . %in% c('c(NA, ', 'NA'), NA))) %>%
+    filter(!(is.na(unacceptreason) == TRUE & status == 'unaccepted' | 
+             is.na(unacceptreason) == FALSE & status == 'accepted')) %>%
+  left_join(worms_search, by = c('query' = 'worms_query')) %>%
+  relocate(tol_sciname) %>%
+  select(!(query))
+  
+  return(new_df)
+
+}
+
+```
+
+
+
+# Annelida
+
+```{r annelid-load}
+annelid_notfound <- read_csv(here(rosetta, 'problems',
+                                        '20220624_annelid_not-found.csv'))[-1]
+
+annelid_nf_worms <- read_csv(here(rosetta, 'problems',
+                                   '20220624_annelid_worms-tol-conflict.csv'))[-1]
+```
+
+
+```{r}
+# make worms-searchable for temp issue
+annelid_search <- annelid_nf_worms %>%
+  select(c(tol_sciname)) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", tol_sciname))
+
+annelid_records <- get_wormsid(annelid_search$worms_query, 
+                                marine_only = FALSE, ask = FALSE,
+                                accepted = FALSE)
+
+annelid_nf_worms2 <- notfoundlist(annelid_records, annelid_search)
+annelid_records4 <- fix_wormsid_output(annelid_records, annelid_search)
+
+
+
+annelid_test <- annelid_records[30:50,]
+annelid_records[48,]
+
+new_df <- annelid_test %>%
+    mutate(across(.fns = ~gsub('c\\(|\\)', '', .))) %>%
+    mutate(across(.fns = ~gsub(',",', ',', .))) %>%
+  separate_rows(rank,
+                #status, 
+                #valid_name, 
+                kingdom, 
+                phylum, class, order, family, 
+                genus, 
+                sep = "\"") %>%
+    filter(!(str_detect(query, " ") == FALSE & rank %in% c('Species', 'Subspecies'))) %>%
+    separate_rows(unacceptreason, sep = ",") %>%
+    separate_rows(aphia_id, valid_aphiaid,
+                ismarine, isbrackish, isfreshwater,
+                isterrestrial, isextinct, sep = ",\\s*") %>%
+  mutate(across(.fns = ~gsub(',', '', .))) %>%
+    filter(!rank %in% c(')','c(', '', ', ', ', NA, ', "\\s+")) %>%
+    filter(!aphia_id %in% c('c', '')) %>%
+
+    filter(!(aphia_id == valid_aphiaid & status == 'unaccepted' | 
+             aphia_id != valid_aphiaid & status == 'accepted')) %>%
+    filter(!unacceptreason %in% c(')')) %>%
+    mutate_all(., funs(replace(., . %in% c('c(NA, ', 'NA'), NA))) %>%
+    filter(!(is.na(unacceptreason) == TRUE & status == 'unaccepted' | 
+             is.na(unacceptreason) == FALSE & status == 'accepted')) %>%
+  distinct() #%>%
+  left_join(worms_search, by = c('query' = 'worms_query')) %>%
+  relocate(tol_sciname) %>%
+  select(!(query))
+
+glimpse(annelid_records3)
+```
