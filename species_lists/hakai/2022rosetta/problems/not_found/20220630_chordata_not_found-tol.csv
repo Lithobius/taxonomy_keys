@@ -1,0 +1,104 @@
+query,phylum,class,order,family,genus
+Gnatholebias zonatus,Chordata,Actinopteri,Acanthomorphata,NULL,Gnatholebias
+Gnatholebias zonatus,Chordata,Actinopteri,Cyprinodontiformes,NULL,Gnatholebias
+Micromoema xiphophorus,Chordata,Actinopteri,Acanthomorphata,NULL,Micromoema
+Micromoema xiphophorus,Chordata,Actinopteri,Cyprinodontiformes,NULL,Micromoema
+Anchonastus,Arthropoda,Arachnida,Araneae,Sparassidae,Anchonastus
+Hemiodopsis gracilis,Chordata,Actinopteri,Characiformes,Hemiodontidae,Hemiodopsis
+Lebiasina astrigata,Chordata,Actinopteri,Characiformes,Lebiasinidae,Lebiasina
+Percalates novemaculeata,Chordata,Actinopteri,Acanthomorphata,NULL,Percalates
+Percalates novemaculeata,Chordata,Actinopteri,Centrarchiformes,NULL,Percalates
+Moenkhausia australe,Chordata,Actinopteri,Characiformes,Characidae,Moenkhausia
+Diplomystes mesembrinus,Chordata,Actinopteri,Siluriformes,Diplomystidae,Diplomystes
+Schizodon (genus in Opisthokonta,Chordata,Actinopteri,Characiformes,Anostomidae,Schizodon
+Lepus europaeus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Sylvilagus floridanus,Chordata,Mammalia,Lagomorpha,Leporidae,Sylvilagus
+Chandata,Arthropoda,Insecta,Lepidoptera,Noctuidae,Chandata
+Parechthistatus,Arthropoda,Insecta,Coleoptera,Cerambycidae,Parechthistatus
+Astyanax hubbsi,Chordata,Actinopteri,Characiformes,Characidae,Astyanax
+Astyanax belizanus,Chordata,Actinopteri,Characiformes,Characidae,Astyanax
+Astyanax petenensis,Chordata,Actinopteri,Characiformes,Characidae,Astyanax
+Amblyceps arunchalensis,Chordata,Actinopteri,Siluriformes,Amblycipitidae,Amblyceps
+Heliocausus,Arthropoda,Insecta,Hymenoptera,Crabronidae,Heliocausus
+Nycticebus bengalensis,Chordata,Mammalia,Primates,Lorisidae,Nycticebus
+Nycticebus pygmaeus,Chordata,Mammalia,Primates,Lorisidae,Nycticebus
+Platysternon megacephalum,Chordata,NULL,Sauria,Platysternidae,Platysternon
+Platysternon megacephalum,Chordata,NULL,Testudines,Platysternidae,Platysternon
+Astyanax intermedius,Chordata,Actinopteri,Characiformes,Characidae,Astyanax
+Myleus schomburgkii,Chordata,Actinopteri,Characiformes,Serrasalmidae,Myleus
+Lepus peguensis,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus hainanus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepilemur hubbardorum,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepus oiostolus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus comus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus mandshuricus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus yarkandensis,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus sinensis,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Hemigrammocharax ocellicauda,Chordata,Actinopteri,Characiformes,NULL,Hemigrammocharax
+Hemigrammocharax uniocellatus,Chordata,Actinopteri,Characiformes,NULL,Hemigrammocharax
+Megaderma spasma,Chordata,Mammalia,Chiroptera,Megadermatidae,Megaderma
+Lepilemur fleuretae,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur leucopus,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur edwardsi,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur dorsalis,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur randrianasoloi,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur petteri,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur otto,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur milanoii,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur betsileo,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur septentrionalis,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur mittermeieri,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur grewcockorum,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur wrightae,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur ahmansonorum,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur ruficaudatus,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur tymerlachsoni,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur jamesorum,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur scottorum,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur hollandorum,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Lepilemur microdon,Chordata,Mammalia,Primates,Lepilemuridae,Lepilemur
+Hodostates,Arthropoda,Insecta,Hymenoptera,Ichneumonidae,Hodostates
+Sotolensis,Arthropoda,Insecta,Hemiptera,Miridae,Sotolensis
+Cardioderma cor,Chordata,Mammalia,Chiroptera,Megadermatidae,Cardioderma
+Lepus arcticus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Megaderma lyra,Chordata,Mammalia,Chiroptera,Megadermatidae,Megaderma
+Sylvilagus brasiliensis,Chordata,Mammalia,Lagomorpha,Leporidae,Sylvilagus
+Pero nasuta,Arthropoda,Insecta,Lepidoptera,Geometridae,Pero
+Tomistoma schlegelii,Chordata,NULL,Sauria,Gavialidae,Tomistoma
+Tomistoma schlegelii,Chordata,NULL,Crocodylia,Gavialidae,Tomistoma
+Parabotia bimaculata,Chordata,Actinopteri,Cypriniformes,Botiidae,Parabotia
+Schizodontus,Arthropoda,Insecta,Coleoptera,Cerambycidae,Schizodontus
+Cyphocharax corumbae,Chordata,Actinopteri,Characiformes,Curimatidae,Cyphocharax
+Cyphocharax nagelii,Chordata,Actinopteri,Characiformes,Curimatidae,Cyphocharax
+Tetragonopterus (genus in Deuterostomia,Chordata,Actinopteri,Characiformes,Characidae,Tetragonopterus
+Loris lydekkerianus,Chordata,Mammalia,Primates,Lorisidae,Loris
+Lepus coreanus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Piabina thomasi,Chordata,Actinopteri,Characiformes,Characidae,Piabina
+Nannaethiops gracilis,Chordata,Actinopteri,Characiformes,NULL,Nannaethiops
+Lepus microtis,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus granatensis,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus americanus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Notoryctes caurinus,Chordata,Mammalia,Notoryctemorphia,Notoryctidae,Notoryctes
+Megaladapis edwardsi,Chordata,Mammalia,Primates,Lepilemuridae,NULL
+Earrana,Arthropoda,Insecta,Hymenoptera,NULL,Earrana
+Lepus tolai,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Sebastoessus,Chordata,NULL,NULL,NULL,NULL
+Lepus californicus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Lepus flavigularis,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Curimatopsis crypticus,Chordata,Actinopteri,Characiformes,Curimatidae,Curimatopsis
+Sylvilagus bachmani,Chordata,Mammalia,Lagomorpha,Leporidae,Sylvilagus
+Sylvilagus audubonii,Chordata,Mammalia,Lagomorpha,Leporidae,Sylvilagus
+Carea zonata,Arthropoda,Insecta,Lepidoptera,Nolidae,Carea
+Lepus tibetanus,Chordata,Mammalia,Lagomorpha,Leporidae,Lepus
+Eretmobrycon terrabensis,Chordata,Actinopteri,Characiformes,Characidae,Eretmobrycon
+Myleus arnoldi,Chordata,Actinopteri,Characiformes,Serrasalmidae,Myleus
+Myleus rhomboidalis,Chordata,Actinopteri,Characiformes,Serrasalmidae,Myleus
+Myleus tiete,Chordata,Actinopteri,Characiformes,Serrasalmidae,Myleus
+Eretmobrycon gonzalezi,Chordata,Actinopteri,Characiformes,Characidae,Eretmobrycon
+Eretmobrycon brevirostris,Chordata,Actinopteri,Characiformes,Characidae,Eretmobrycon
+Eretmobrycon emperador,Chordata,Actinopteri,Characiformes,Characidae,Eretmobrycon
+Eretmobrycon guaytarae,Chordata,Actinopteri,Characiformes,Characidae,Eretmobrycon
+Eretmobrycon peruanus,Chordata,Actinopteri,Characiformes,Characidae,Eretmobrycon
+Eretmobrycon scleroparius,Chordata,Actinopteri,Characiformes,Characidae,Eretmobrycon
+Hemibrycon galvisi,Chordata,Actinopteri,Characiformes,Characidae,Hemibrycon
+Piabarchus stramineus,Chordata,Actinopteri,Characiformes,Characidae,Piabarchus

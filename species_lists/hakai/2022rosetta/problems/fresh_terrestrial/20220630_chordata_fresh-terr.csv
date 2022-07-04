@@ -1,0 +1,16 @@
+taxa_query,taxa,tol_sciname,genus_split,rank,ott_id,is_synonym,flags,valid_name,status,terrestrial_only,freshwater_only,aphia_id
+Aphyosemion festivum,Aphyosemion festivum,Aphyosemion festivum,Aphyosemion,NA,744421,FALSE,NA,Aphyosemion,accepted,0,1,268343
+Danio choprai,Danio choprai,Danio choprai,Danio,NA,620178,FALSE,NA,Danio,accepted,0,1,268949
+Leporinus silvestrii,Leporinus silvestrii,Leporinus silvestrii,Leporinus,NA,506596,FALSE,NA,Leporinus,accepted,0,1,269644
+Pareiorhaphis calmoni,Pareiorhaphis calmoni,Pareiorhaphis calmoni,Pareiorhaphis,NA,108989,FALSE,NA,Pareiorhaphis,accepted,0,1,270284
+Bryconamericus lethostigmus,Bryconamericus lethostigmus,Bryconamericus lethostigmus,Bryconamericus,species,573826,FALSE,NA,Bryconamericus,accepted,0,1,268610
+Synodontis membranacea,Synodontis membranacea,Synodontis membranacea,Synodontis,species,975705,FALSE,NA,Synodontis,accepted,0,1,271023
+Synodontisgromaculata,Synodontisgromaculata,Synodontis nigromaculata,Synodontis,NA,577014,FALSE,NA,Synodontis,accepted,0,1,271023
+Schizothorax lissolabiata,Schizothorax lissolabiata,Schizothorax lissolabiata,Schizothorax,species,709850,FALSE,NA,Schizothorax,accepted,0,1,270830
+Paretroplus damiiambirano,Paretroplus damiiambirano,Paretroplus cf. damii 'Sambirano',Paretroplus,NA,470634,FALSE,NA,Paretroplus,accepted,0,1,270288
+Labiobarbus spilopleura,Labiobarbus spilopleura,Labiobarbus spilopleura,Labiobarbus,NA,372814,FALSE,NA,Labiobarbus,accepted,0,1,269587
+Pollimyrus osborni,Pollimyrus osborni,Pollimyrus osborni,Pollimyrus,NA,5543982,FALSE,NA,Pollimyrus,accepted,0,1,270472
+Bryconamericus maromba,Bryconamericus maromba,Bryconamericus maromba,Bryconamericus,species,7065153,FALSE,NA,Bryconamericus,accepted,0,1,268610
+Bryconamericus orinocoense,Bryconamericus orinocoense,Bryconamericus orinocoense,Bryconamericus,species,3625208,FALSE,NA,Bryconamericus,accepted,0,1,268610
+Knodus alpha,Knodus alpha,Knodus alpha,Knodus,species,7065289,FALSE,NA,Knodus,accepted,0,1,269563
+Trichomycterus guacamayoensis,Trichomycterus guacamayoensis,Trichomycterus guacamayoensis,Trichomycterus,species,7065894,FALSE,NA,Trichomycterus,accepted,0,1,271141
