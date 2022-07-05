@@ -1,0 +1,63 @@
+query,phylum,class,family,ottid_species,aphia_id,scientificname,authority,status,unacceptreason,rank,valid_aphia_id,valid_name,valid_authority,parent_name_usage_id,kingdom,order,genus,is_marine,is_brackish,is_freshwater,is_terrestrial,is_extinct,match_type
+Naisabilis,Annelida,Clitellata,Naididae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sipunculusdus,Annelida,Polychaeta,Sipunculidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ninoegripes,Annelida,Polychaeta,Lumbrineridae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lysidicenetta,Annelida,Polychaeta,Eunicidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Epigamiaroi,Annelida,Polychaeta,Syllidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sibloglinidaeyclobrachia,Annelida,Polychaeta,Siboglinidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eumidachala,Annelida,Polychaeta,Phyllodocidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eunicervegica,Annelida,Polychaeta,Eunicidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eunicetata,Annelida,Polychaeta,Eunicidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Henleasuta,Annelida,Clitellata,Enchytraeidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Graniaochaeta,Annelida,Clitellata,Enchytraeidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aricidealani,Annelida,Polychaeta,Paraonidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Stercutusveus,Annelida,Clitellata,Enchytraeidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eumidatata,Annelida,Polychaeta,Phyllodocidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eunoedosa,Annelida,Polychaeta,Polynoidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pseudonereisegata,Annelida,Polychaeta,Nereididae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chamaedrilussetosus,Annelida,Clitellata,Enchytraeidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ceratonereis longiceratophora,Annelida,Polychaeta,Nereididae,NA,22496,Nereididae,"Blainville, 1818",accepted,NA,Family,22496,Nereididae,"Blainville, 1818",928,Animalia,Phyllodocida,NA,1,1,1,1,0,exact
+Apionsoma misakianum,Annelida,NA,Phascolosomatidae,NA,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",accepted,NA,Family,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",1268,Animalia,Sipuncula,NA,1,0,0,0,NA,exact
+Apionsoma pectinatum,Annelida,NA,Phascolosomatidae,NA,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",accepted,NA,Family,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",1268,Animalia,Sipuncula,NA,1,0,0,0,NA,exact
+Phascolosoma capitatum,Annelida,NA,Phascolosomatidae,NA,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",accepted,NA,Family,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",1268,Animalia,Sipuncula,NA,1,0,0,0,NA,exact
+Crangonobdella spitzbergensis,Annelida,Clitellata,Piscicolidae,NA,2043,Piscicolidae,"Johnston, 1865",accepted,NA,Family,2043,Piscicolidae,"Johnston, 1865",2117,Animalia,Rhynchobdellida,NA,1,1,1,0,NA,exact
+Syllis ehlersioides,Annelida,Polychaeta,Syllidae,NA,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Syllis monilata,Annelida,Polychaeta,Syllidae,NA,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Moorebdellina biannulata,Annelida,Clitellata,Piscicolidae,NA,2043,Piscicolidae,"Johnston, 1865",accepted,NA,Family,2043,Piscicolidae,"Johnston, 1865",2117,Animalia,Rhynchobdellida,NA,1,1,1,0,NA,exact
+Ophryotrocha permanni,Annelida,Polychaeta,Dorvilleidae,NA,971,Dorvilleidae,"Chamberlin, 1919",accepted,NA,Family,971,Dorvilleidae,"Chamberlin, 1919",895,Animalia,Eunicida,NA,1,0,0,0,0,exact
+Simplisetia erythraensis,Annelida,Polychaeta,Nereididae,NA,22496,Nereididae,"Blainville, 1818",accepted,NA,Family,22496,Nereididae,"Blainville, 1818",928,Animalia,Phyllodocida,NA,1,1,1,1,0,exact
+Baikalodrilus wereschtschagini,Annelida,Clitellata,Naididae,NA,2039,Naididae,"Ehrenberg, 1831",accepted,NA,Family,2039,Naididae,"Ehrenberg, 1831",2119,Animalia,Tubificida,NA,1,1,1,1,NA,exact
+Nicomache lokii,Annelida,Polychaeta,Maldanidae,NA,923,Maldanidae,"Malmgren, 1867",accepted,NA,Family,923,Maldanidae,"Malmgren, 1867",183607,Animalia,NA,NA,1,0,0,0,0,exact
+Epigamia macrophtalma,Annelida,Polychaeta,Syllidae,NA,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Aglaophamus elamellata,Annelida,Polychaeta,Nephtyidae,NA,956,Nephtyidae,"Grube, 1850",accepted,NA,Family,956,Nephtyidae,"Grube, 1850",930,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Aglaophamus pulchra,Annelida,Polychaeta,Nephtyidae,NA,956,Nephtyidae,"Grube, 1850",accepted,NA,Family,956,Nephtyidae,"Grube, 1850",930,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Scolelepis daphoinos,Annelida,Polychaeta,Spionidae,NA,913,Spionidae,"Grube, 1850",accepted,NA,Family,913,Spionidae,"Grube, 1850",909,Animalia,Spionida,NA,1,0,0,0,0,exact
+Protolaeospira eximia,Annelida,Polychaeta,Serpulidae,NA,988,Serpulidae,"Rafinesque, 1815",accepted,NA,Family,988,Serpulidae,"Rafinesque, 1815",901,Animalia,Sabellida,NA,1,1,1,0,0,exact
+Eranno chilensis,Annelida,Polychaeta,Lumbrineridae,NA,967,Lumbrineridae,"Schmarda, 1861",accepted,NA,Family,967,Lumbrineridae,"Schmarda, 1861",895,Animalia,Eunicida,NA,1,0,0,0,0,exact
+Idanthyrsus macropalea,Annelida,Polychaeta,Sabellariidae,NA,979,Sabellariidae,"Johnston, 1865",accepted,NA,Family,979,Sabellariidae,"Johnston, 1865",154974,Animalia,NA,NA,1,0,0,0,0,exact
+Typosyllis patriciae,Annelida,Polychaeta,Syllidae,NA,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Typosyllis busseltonensis,Annelida,Polychaeta,Syllidae,NA,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Gyptis pacifica,Annelida,Polychaeta,Hesionidae,NA,946,Hesionidae,"Grube, 1850",accepted,NA,Family,946,Hesionidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Nephasoma columbaris,Annelida,NA,Golfingiidae,NA,2032,Golfingiidae,"Stephen & Edmonds, 1972",accepted,NA,Family,2032,Golfingiidae,"Stephen & Edmonds, 1972",1268,Animalia,Sipuncula,NA,1,0,0,0,NA,exact
+Hydroides triversiculosa,Annelida,Polychaeta,Serpulidae,NA,988,Serpulidae,"Rafinesque, 1815",accepted,NA,Family,988,Serpulidae,"Rafinesque, 1815",901,Animalia,Sabellida,NA,1,1,1,0,0,exact
+Euclymene santandarensis,Annelida,Polychaeta,Maldanidae,NA,923,Maldanidae,"Malmgren, 1867",accepted,NA,Family,923,Maldanidae,"Malmgren, 1867",183607,Animalia,NA,NA,1,0,0,0,0,exact
+Chamaedrilus lapponicus,Annelida,Clitellata,Enchytraeidae,NA,2038,Enchytraeidae,"d'Udekem, 1855",accepted,NA,Family,2038,Enchytraeidae,"d'Udekem, 1855",468017,Animalia,Enchytraeida,NA,1,1,1,1,NA,exact
+Notopharyngoides aruensis,Annelida,NA,Myzostomatidae,NA,22609,Myzostomatidae,"Benham, 1896",accepted,NA,Family,22609,Myzostomatidae,"Benham, 1896",233983,Animalia,Myzostomida,NA,1,0,0,0,0,exact
+Hypomyzostoma nanseni,Annelida,NA,Myzostomatidae,NA,22609,Myzostomatidae,"Benham, 1896",accepted,NA,Family,22609,Myzostomatidae,"Benham, 1896",233983,Animalia,Myzostomida,NA,1,0,0,0,0,exact
+Syllis magellanica,Annelida,Polychaeta,Syllidae,NA,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Treadwellius bifidus,Annelida,Polychaeta,Flabelligeridae,NA,976,Flabelligeridae,"de Saint-Joseph, 1894",accepted,NA,Family,976,Flabelligeridae,"de Saint-Joseph, 1894",155087,Animalia,Terebellida,NA,1,0,0,0,0,exact
+Myrianida paradesi,Annelida,Polychaeta,Syllidae,NA,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Phyllodocida,NA,1,0,0,0,0,exact
+Neanthes wilsonchani,Annelida,Polychaeta,Nereididae,NA,22496,Nereididae,"Blainville, 1818",accepted,NA,Family,22496,Nereididae,"Blainville, 1818",928,Animalia,Phyllodocida,NA,1,1,1,1,0,exact
+Enchytraeus polatdemiri,Annelida,Clitellata,Enchytraeidae,NA,2038,Enchytraeidae,"d'Udekem, 1855",accepted,NA,Family,2038,Enchytraeidae,"d'Udekem, 1855",468017,Animalia,Enchytraeida,NA,1,1,1,1,NA,exact
+Ostreobdella californiana,Annelida,Clitellata,Piscicolidae,NA,2043,Piscicolidae,"Johnston, 1865",accepted,NA,Family,2043,Piscicolidae,"Johnston, 1865",2117,Animalia,Rhynchobdellida,NA,1,1,1,0,NA,exact
+Heptacyclus diminutus,Annelida,Clitellata,Piscicolidae,NA,2043,Piscicolidae,"Johnston, 1865",accepted,NA,Family,2043,Piscicolidae,"Johnston, 1865",2117,Animalia,Rhynchobdellida,NA,1,1,1,0,NA,exact
+Cambarincola holti,Annelida,Clitellata,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Branchiobdellida,Cambarincola,NA,NA,NA,NA,NA,NA
+Cambarincola gracilis,Annelida,Clitellata,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Branchiobdellida,Cambarincola,NA,NA,NA,NA,NA,NA
+Cambarincola mesochoreus,Annelida,Clitellata,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Branchiobdellida,Cambarincola,NA,NA,NA,NA,NA,NA
+Cambarincola montanus,Annelida,Clitellata,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Branchiobdellida,Cambarincola,NA,NA,NA,NA,NA,NA
+Cambarincola pamelae,Annelida,Clitellata,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Branchiobdellida,Cambarincola,NA,NA,NA,NA,NA,NA
+Cambarincola philadelphicus,Annelida,Clitellata,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Branchiobdellida,Cambarincola,NA,NA,NA,NA,NA,NA
+Phascolion cryptum,Annelida,Polychaeta,Phascolionidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Golfingiida,Phascolion,NA,NA,NA,NA,NA,NA
+Phascolion psammophilus,Annelida,Polychaeta,Phascolionidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Golfingiida,Phascolion,NA,NA,NA,NA,NA,NA
+Themiste dyscritum,Annelida,Polychaeta,Themistidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Golfingiida,Themiste,NA,NA,NA,NA,NA,NA
+Phascolion gerardi,Annelida,Polychaeta,Phascolionidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Golfingiida,Phascolion,NA,NA,NA,NA,NA,NA

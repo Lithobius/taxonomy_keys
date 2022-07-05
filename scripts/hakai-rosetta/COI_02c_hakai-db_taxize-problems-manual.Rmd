@@ -14,30 +14,570 @@ library(taxize)
 library(here)
 
 # here filepaths
-hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+# here filepaths
+problems <- here('species_lists', 'hakai', '2022rosetta', 'problems')
 rosetta <- here('species_lists', 'hakai', '2022rosetta')
+tol_conflict <- here('species_lists', 'hakai', '2022rosetta', 'problems', 'tol_conflict')
+```
+
+
+# tol-worms family level conflicts
+
+Some of the conflicts are at the family or genus level.
+First we resolve the ones we know about; if genus in fresh/terrestrial file then add anything from not-found. Then we'll see what's left, look them up at a family level, manually add them ot fresh/terrestrial. if marine, set aside for later.
+
+```{r annelid-loadin}
+annelid_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                                   '20220630_annelid_fresh-terr.csv'))
+
+annelid_family <- read_csv(here(tol_conflict,
+                                        '20220630_annelid_worms_tol-conflict-family.csv'))
+
+annelid_notfound <- read_csv(here(problems, 'not_found',
+                                        '20220624_annelid_not-found.csv'))[-1]%>%
+  rename(query = taxa)
+
+annelid_notfound_tol <- read_csv(here(problems, 'not_found',
+                                        '20220630_annelid_not_found-tol.csv')) 
+
+
+annelid_conflicts <- full_join(annelid_notfound, annelid_family) %>%
+  relocate(query) %>%
+  full_join(annelid_notfound_tol)
+```
+
+
+```{r annelid-freshterr}
+# list of freshwater/terrestrial genera
+annelid_freshterr_gen <- annelid_freshterr %>%
+  select(genus_split, freshwater_only, terrestrial_only) %>%
+  distinct()
+
+# filter for known fresh/terr genera
+annelid_conflicts2 <- annelid_conflicts %>%
+  filter(!(is.na(query))) %>%
+  # extract genus names so we can test them
+  separate(query, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(annelid_freshterr_gen)
+
+# merge generic level finds to original
+annelid_freshterr2 <- annelid_conflicts2 %>%
+  filter(!((freshwater_only %in% c(NA)) & (terrestrial_only %in% c(NA)))) %>%
+  select(query, phylum, class, order, family, genus_split,
+         freshwater_only, terrestrial_only) %>%
+  rename(taxa_query = query) %>%
+  full_join(annelid_freshterr)
+
+# look at remaining
+annelid_conflicts_family <- annelid_conflicts %>%
+  filter(!(query %in% annelid_freshterr2$taxa_query)) %>%
+  select(family) %>%
+  distinct()
+
+
+# manually populate freshwater, terrestrial, and marine columns
+annelid_conflicts_family <- annelid_conflicts_family %>%
+  mutate(freshwater_only = ifelse(family %in% c('Branchiobdellidae', 'Glossiphoniidae',
+                                                'Lumbriculidae', 'Cylicobdellidae',
+                                                'Hirudinidae', 'Orobdellidae',
+                                                'Gastrostomobdellidae', 
+                                                'Salifidae', 'Semiscolecidae',
+                                                'Xerobdellidae'), '1', 
+                                  ifelse(family %in% c('Almidae', 'Acanthodrilidae', 'Dorvilleidae',
+                                                       'Eunicidae', 'Flabelligeridae',
+                                                       'Golfingiidae', 'Hesionidae',
+                                                       'Haemadipsidae',
+                                                       'Lumbricidae', 'Hormogastridae',
+                                                       'Lumbrineridae', 'Maldanidae',
+                                                       'Megascolecidae', 'Myzostomatidae',
+                                                       'Nephtyidae', 'Paraonidae',
+                                                       'Phascolosomatidae', 'Phascolionidae',
+                                                       'Phyllodocidae',
+                                                       'Polynoidae', 'Sabellariidae',
+                                                       'Siboglinidae', 'Spionidae',
+                                                       'Sipunculidae','Syllidae', 'Themistidae'), '0', NA))) %>%
+  mutate(terrestrial_only = ifelse(family %in% c('Americobdellidae', 'Almidae', 'Acanthodrilidae',
+                                                 'Hormogastridae', 'Cylicobdellidae',
+                                                 'Lumbricidae', 'Cicadellidae',
+                                                 'Megascolecidae', 'Haemadipsidae',
+                                                 'Orobdellidae', 'Octochaetidae', 'Xerobdellidae'), '1', 
+                                  ifelse(family %in% c('Branchiobdellidae', 
+                                                       'Dorvilleidae', 'Eunicidae',
+                                                       'Flabelligeridae', 'Glossiphoniidae',
+                                                       'Golfingiidae', 'Hesionidae',
+                                                       'Hirudinidae', 'Lumbrineridae',
+                                                       'Maldanidae', 'Myzostomatidae',
+                                                       'Nephtyidae', 'Paraonidae',
+                                                       'Phascolosomatidae', 'Phascolionidae',
+                                                       'Phyllodocidae',
+                                                       'Piscicolidae', 'Polynoidae',
+                                                       'Sipunculidae','Syllidae', 'Salifidae',
+                                                       'Serpulidae', 'Siboglinidae',
+                                                       'Sabellariidae', 'Semiscolecidae',
+                                                       'Spionidae', 'Lumbriculidae', 'Themistidae'),
+                                         '0', NA))) %>%
+  mutate(is_marine = ifelse(family %in% c('Dorvilleidae','Eunicidae', 'Flabelligeridae',
+                                          'Golfingiidae', 'Hesionidae', 'Lumbrineridae',
+                                          'Maldanidae', 'Myzostomatidae', 'Nephtyidae',
+                                          'Paraonidae', 'Phascolosomatidae', 'Phascolionidae',
+                                          'Phyllodocidae', 'Polynoidae', 'Sabellariidae',
+                                          'Siboglinidae', 'Spionidae',
+                                          'Sipunculidae','Syllidae', 'Themistidae'), '1', 
+                                  ifelse(family %in% c('Lumbriculidae', 'Almidae', 'Acanthodrilidae',
+                                                       'Branchiobdellidae', 'Americobdellidae',
+                                                       'Cylicobdellidae',
+                                                       'Glossiphoniidae', 'Hirudinidae',
+                                                       'Haemadipsidae', 'Gastrostomobdellidae',
+                                                       'Lumbricidae', 'Hormogastridae',
+                                                       'Megascolecidae', 'Octochaetidae',
+                                                       'Salifidae', 'Semiscolecidae',
+                                                       'Xerobdellidae'), '0', NA)))
+
+# note; some marine but not all: Enchytraeidae, Naididae, Nereididae, piscicolidae, Serpulidae
+# note themistidae, phascolionidae unaccepted; now golfingiidae
+
+# filter conflicts again, merge with previous list
+annelid_freshterr3 <- annelid_conflicts %>%
+  filter(!(query %in% annelid_freshterr2$taxa_query)) %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(annelid_conflicts_family) %>%
+  select(query, phylum, class, order, family,
+         freshwater_only, terrestrial_only) %>%
+  filter(freshwater_only == 1 | terrestrial_only == 1) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  rename(taxa_query = query) %>%
+  full_join(annelid_freshterr2)
+
+write_csv(annelid_freshterr3, here(problems, 'fresh_terrestrial',
+                                   '20220704_annelid_fresh-terr.csv'))
+
+```
+
+```{r annelid-manual}
+# what's left is potentially marine but still not found in worms
+## note that quick checks show freshwater, entirely not found, and genus (subgenus) species issues.
+annelid_conflicts4 <- annelid_conflicts %>%
+  filter(!(query %in% annelid_freshterr3$taxa_query))
+
+write_csv(annelid_conflicts4, here(problems, 'not_found',
+                                   '20220704_annelid_not-found_outstanding.csv'))
+```
+
+
+
+
+# arthropods
+
+```{r arthropods-loadin}
+arthropod_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                                   '20220630_arthropod_fresh-terr.csv'))
+
+arthropod_family <- read_csv(here(tol_conflict,
+                                        '20220630_arthropod_worms_tol-conflict-family.csv'))
+
+arthropod_notfound <- read_csv(here(problems, 'not_found',
+                                        '20220624_arthropod_not-found.csv'))[-1] %>%
+  rename(query = taxa)
+
+arthropod_notfound_tol <- read_csv(here(problems, 'not_found',
+                                        '20220630_arthropod_not_found-tol.csv')) 
+
+arthropod_conflicts <- full_join(arthropod_notfound, arthropod_family) %>%
+  relocate(query) %>%
+  full_join(arthropod_notfound_tol)
+```
+
+
+
+```{r}
+# list of freshwater/terrestrial genera
+arthropod_freshterr_gen <- arthropod_freshterr %>%
+  select(genus_split, freshwater_only, terrestrial_only) %>%
+  distinct()
+
+# filter for known fresh/terr genera
+arthropod_conflicts2 <- arthropod_conflicts %>%
+  filter(!(is.na(query))) %>%
+  # extract genus names so we can test them
+  separate(query, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(arthropod_freshterr_gen)
+
+# merge generic level finds to original
+arthropod_freshterr2 <- arthropod_conflicts2 %>%
+  filter(!((freshwater_only %in% c(NA)) & (terrestrial_only %in% c(NA)))) %>%
+  select(query, phylum, class, order, family, genus_split,
+         freshwater_only, terrestrial_only) %>%
+  rename(taxa_query = query) %>%
+  full_join(arthropod_freshterr)
+
+# look at remaining
+# start with order for arthropods
+arthropod_conflicts_order <- arthropod_conflicts %>%
+  filter(!(query %in% arthropod_freshterr2$taxa_query)) %>%
+  select(order) %>%
+  distinct()
+
+
+# manually populate freshwater, terrestrial, and marine columns
+arthropod_conflicts_order <- arthropod_conflicts_order %>%
+  mutate(freshwater_only = ifelse(order %in% c(), '1', 
+                                  ifelse(order %in% c('Cumacea','Opiliones'), '0', NA))) %>%
+  mutate(terrestrial_only = ifelse(order %in% c('Opiliones'), '1', 
+                                  ifelse(order %in% c('Cumacea'), '0', NA))) %>%
+  mutate(is_marine = ifelse(order %in% c('Cumacea'), '1', 
+                                  ifelse(order %in% c('Opiliones'), '0', NA)))
+
+
+# filter conflicts again, merge with previous list
+arthropod_freshterr3 <- arthropod_conflicts %>%
+  filter(!(query %in% arthropod_freshterr2$taxa_query)) %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(arthropod_conflicts_order) %>%
+  select(query, phylum, class, order, family,
+         freshwater_only, terrestrial_only) %>%
+  filter(freshwater_only == 1 | terrestrial_only == 1) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  rename(taxa_query = query) %>%
+  full_join(arthropod_freshterr2)
+
+write_csv(arthropod_freshterr3, here(problems, 'fresh_terrestrial',
+                                   '20220704_arthropod_fresh-terr.csv'))
+```
+
+
+```{r}
+arthropod_conflicts4 <- arthropod_conflicts %>%
+  filter(!(query %in% arthropod_freshterr3$taxa_query))
+
+write_csv(arthropod_conflicts4, here(problems, 'not_found',
+                                   '20220704_arthropod_not-found_outstanding.csv'))
+```
+
+
+
+
+# Chordata
+
+Chordates did not have conflicts at the family level. Instead, the only not-found 
+
+```{r}
+chordata_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                                   '20220630_chordata_fresh-terr.csv'))
+
+#chordata_family <- read_csv(here(tol_conflict,
+#                                        '20220630_chordata_worms_tol-conflict-family.csv'))
+
+chordata_notfound <- read_csv(here(problems, 'not_found',
+                                        '20220624_chordata_not-found.csv'))[-1] %>%
+  rename(query = taxa)
+
+chordata_notfound_tol <- read_csv(here(problems, 'not_found',
+                                        '20220630_chordata_not_found-tol.csv')) 
+
+#chordata_conflicts <- full_join(chordata_notfound, chordata_family) %>%
+#  relocate(query)
+
+# no family level conflicts?
+chordata_conflicts <- chordata_notfound
+```
+
+
+```{r chordata-manual}
+
+
+```
+
+
+# Mollusca
+
+```{r}
+
+mollusca_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                                   '20220630_mollusca_fresh-terr.csv'))
+
+mollusca_family <- read_csv(here(tol_conflict,
+                                        '20220630_mollusca_worms_tol-conflict-family.csv'))
+
+mollusca_notfound <- read_csv(here(problems, 'not_found',
+                                        '20220624_mollusca_not-found.csv'))[-1] %>%
+  rename(query = taxa)
+
+mollusca_notfound_tol <- read_csv(here(problems, 'not_found',
+                                        '20220630_mollusca_not_found-tol.csv')) 
+
+mollusca_conflicts <- full_join(mollusca_notfound, mollusca_family) %>%
+  relocate(query) %>%
+  full_join(mollusca_notfound_tol)
+```
+
+
+
+```{r mollusca-freshterr}
+# list of freshwater/terrestrial genera
+mollusca_freshterr_gen <- mollusca_freshterr %>%
+  select(genus_split, freshwater_only, terrestrial_only) %>%
+  distinct()
+
+# filter for known fresh/terr genera
+mollusca_conflicts2 <- mollusca_conflicts %>%
+  filter(!(is.na(query))) %>%
+  # extract genus names so we can test them
+  separate(query, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(mollusca_freshterr_gen)
+
+# merge generic level finds to original
+mollusca_freshterr2 <- mollusca_conflicts2 %>%
+  filter(!((freshwater_only %in% c(NA)) & (terrestrial_only %in% c(NA)))) %>%
+  select(query, phylum, class, order, family, genus_split,
+         freshwater_only, terrestrial_only) %>%
+  rename(taxa_query = query) %>%
+  full_join(mollusca_freshterr)
+
+# look at remaining
+# start with order for molluscas
+mollusca_conflicts_order <- mollusca_conflicts %>%
+  filter(!(query %in% mollusca_freshterr2$taxa_query)) %>%
+  select(order) %>%
+  distinct()
+
+
+# manually populate freshwater, terrestrial, and marine columns
+mollusca_conflicts_order <- mollusca_conflicts_order %>%
+  mutate(freshwater_only = ifelse(order %in% c(), '1', 
+                                  ifelse(order %in% c('Cumacea','Opiliones'), '0', NA))) %>%
+  mutate(terrestrial_only = ifelse(order %in% c('Opiliones'), '1', 
+                                  ifelse(order %in% c('Cumacea'), '0', NA))) %>%
+  mutate(is_marine = ifelse(order %in% c('Cumacea'), '1', 
+                                  ifelse(order %in% c('Opiliones'), '0', NA)))
+
+
+# filter conflicts again, merge with previous list
+mollusca_freshterr3 <- mollusca_conflicts %>%
+  filter(!(query %in% mollusca_freshterr2$taxa_query)) %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(mollusca_conflicts_order) %>%
+  select(query, phylum, class, order, family,
+         freshwater_only, terrestrial_only) %>%
+  filter(freshwater_only == 1 | terrestrial_only == 1) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  rename(taxa_query = query) %>%
+  full_join(mollusca_freshterr2)
+
+write_csv(mollusca_freshterr3, here(problems, 'fresh_terrestrial',
+                                   '20220704_mollusca_fresh-terr.csv'))
 ```
 
 ```{r}
-annelid_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_annelid_not-found.csv'))
+mollusca_conflicts4 <- mollusca_conflicts %>%
+  filter(!(query %in% mollusca_freshterr3$taxa_query)) 
 
-arthropod_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_arthropod_not-found.csv'))
-chordata_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_chordata_not-found.csv'))
-
-mollusca_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_mollusca_not-found.csv'))
-
-ech_platy_nem_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_ech_platy_nem_not-found.csv'))
-
-small_phyla_notfound <- read_csv(here(rosetta, 'problems',
-                                        '20220624_small_phyla_not-found.csv'))
+write_csv(mollusca_conflicts4, here(problems, 'not_found',
+                                   '20220704_mollusca_not-found_outstanding.csv'))
+```
 
 
 
+# Echinoderms, platyhelminthes, Nemerteans
 
+```{r}
+ech_platy_nem_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                                   '20220630_ech_platy_nem_fresh-terr.csv'))
+
+ech_platy_nem_family <- read_csv(here(tol_conflict,
+                                        '20220630_ech_platy_nem_worms_tol-conflict-family.csv'))
+
+ech_platy_nem_notfound <- read_csv(here(problems, 'not_found',
+                                        '20220624_ech_platy_nem_not-found.csv'))[-1] %>%
+  rename(query = taxa)
+
+ech_platy_nem_notfound_tol <- read_csv(here(problems, 'not_found',
+                                        '20220630_ech_platy_nem_not_found-tol.csv')) 
+
+ech_platy_nem_conflicts <- full_join(ech_platy_nem_notfound, ech_platy_nem_family) %>%
+  relocate(query) %>%
+  full_join(ech_platy_nem_notfound_tol)
+```
+
+
+```{r echplatynem-freshterr}
+# list of freshwater/terrestrial genera
+ech_platy_nem_freshterr_gen <- ech_platy_nem_freshterr %>%
+  select(genus_split, freshwater_only, terrestrial_only) %>%
+  distinct()
+
+# filter for known fresh/terr genera
+ech_platy_nem_conflicts2 <- ech_platy_nem_conflicts %>%
+  filter(!(is.na(query))) %>%
+  # extract genus names so we can test them
+  separate(query, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(ech_platy_nem_freshterr_gen)
+
+# merge generic level finds to original
+ech_platy_nem_freshterr2 <- ech_platy_nem_conflicts2 %>%
+  filter(!((freshwater_only %in% c(NA)) & (terrestrial_only %in% c(NA)))) %>%
+  select(query, phylum, class, order, family, genus_split,
+         freshwater_only, terrestrial_only) %>%
+  rename(taxa_query = query) %>%
+  full_join(ech_platy_nem_freshterr)
+
+# look at remaining
+# start with order for ech_platy_nems
+ech_platy_nem_conflicts_order <- ech_platy_nem_conflicts %>%
+  filter(!(query %in% ech_platy_nem_freshterr2$taxa_query)) %>%
+  select(order) %>%
+  distinct()
+
+
+# manually populate freshwater, terrestrial, and marine columns
+ech_platy_nem_conflicts_order <- ech_platy_nem_conflicts_order %>%
+  mutate(freshwater_only = ifelse(order %in% c(), '1', 
+                                  ifelse(order %in% c('Araneae', 'Ophiurida'), '0', NA))) %>%
+  mutate(terrestrial_only = ifelse(order %in% c('Araneae'), '1', 
+                                  ifelse(order %in% c('Ophiurida'), '0', NA))) %>%
+  mutate(is_marine = ifelse(order %in% c('Ophiurida'), '1', 
+                                  ifelse(order %in% c('Araneae'), '0', NA)))%>%
+  mutate(internal_parasite = ifelse(order %in% c('Cyclophyllidea'), '1', 
+                                  ifelse(order %in% c('Ophiurida'), '0', NA))) %>%
+  mutate(is_marine = as.numeric(is_marine))
+
+# filter conflicts again, merge with previous list
+ech_platy_nem_freshterr3 <- ech_platy_nem_conflicts %>%
+  filter(!(query %in% ech_platy_nem_freshterr2$taxa_query)) %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(ech_platy_nem_conflicts_order) %>%
+  select(query, phylum, class, order, family,
+         freshwater_only, terrestrial_only) %>%
+  filter(freshwater_only == 1 | terrestrial_only == 1) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  rename(taxa_query = query) %>%
+  full_join(ech_platy_nem_freshterr2)
+
+write_csv(ech_platy_nem_freshterr3, here(problems, 'fresh_terrestrial',
+                                   '20220704_ech_platy_nem_fresh-terr.csv'))
+
+
+
+ech_platy_nem_parasites <- ech_platy_nem_conflicts %>%
+  left_join(ech_platy_nem_conflicts_order) %>%
+  filter(internal_parasite == 1) %>%
+  select(query, phylum, class, order, family,
+         internal_parasite)
+
+
+write_csv(ech_platy_nem_parasites, here(problems, 'fresh_terrestrial',
+                                   '20220704_ech_platy_nem_internal-parasites.csv'))
+```
+
+
+```{r}
+ech_platy_nem_conflicts4 <- ech_platy_nem_conflicts %>%
+  filter(!(query %in% ech_platy_nem_freshterr3$taxa_query)) %>%
+  filter(!(query %in% ech_platy_nem_parasites$query))
+
+write_csv(ech_platy_nem_conflicts4, here(problems, 'not_found',
+                                   '20220704_ech_platy_nem_not-found_outstanding.csv'))
+```
+
+
+
+
+# Small Phyla
+
+```{r}
+smallphyla_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                                   '20220630_smallphyla_fresh-terr.csv'))
+
+smallphyla_family <- read_csv(here(tol_conflict,
+                                        '20220630_smallphyla_worms_tol-conflict-family.csv'))
+
+smallphyla_notfound <- read_csv(here(problems, 'not_found',
+                                        '20220624_smallphyla_not-found.csv'))[-1] %>%
+  rename(query = taxa)
+
+smallphyla_notfound_tol <- read_csv(here(problems, 'not_found',
+                                        '20220630_smallphyla_not_found-tol.csv')) 
+
+smallphyla_conflicts <- full_join(smallphyla_notfound, smallphyla_family) %>%
+  relocate(query) %>%
+  full_join(smallphyla_notfound_tol)
+```
+
+
+```{r smallphyla-freshterr}
+# list of freshwater/terrestrial genera
+smallphyla_freshterr_gen <- smallphyla_freshterr %>%
+  select(genus_split, freshwater_only, terrestrial_only) %>%
+  distinct()
+
+# filter for known fresh/terr genera
+smallphyla_conflicts2 <- smallphyla_conflicts %>%
+  filter(!(is.na(query))) %>%
+  # extract genus names so we can test them
+  separate(query, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(smallphyla_freshterr_gen)
+
+# merge generic level finds to original
+smallphyla_freshterr2 <- smallphyla_conflicts2 %>%
+  filter(!((freshwater_only %in% c(NA)) & (terrestrial_only %in% c(NA)))) %>%
+  select(query, phylum, class, order, family, genus_split,
+         freshwater_only, terrestrial_only) %>%
+  rename(taxa_query = query) %>%
+  full_join(smallphyla_freshterr)
+
+# look at remaining
+# start with order for smallphylas
+smallphyla_conflicts_order <- smallphyla_conflicts %>%
+  filter(!(query %in% smallphyla_freshterr2$taxa_query)) %>%
+  select(order) %>%
+  distinct()
+
+
+# manually populate freshwater, terrestrial, and marine columns
+smallphyla_conflicts_order <- smallphyla_conflicts_order %>%
+  mutate(freshwater_only = ifelse(order %in% c(), '1', 
+                                  ifelse(order %in% c('Cumacea','Opiliones'), '0', NA))) %>%
+  mutate(terrestrial_only = ifelse(order %in% c('Opiliones'), '1', 
+                                  ifelse(order %in% c('Cumacea'), '0', NA))) %>%
+  mutate(is_marine = ifelse(order %in% c('Cumacea'), '1', 
+                                  ifelse(order %in% c('Opiliones'), '0', NA)))
+
+
+# filter conflicts again, merge with previous list
+smallphyla_freshterr3 <- smallphyla_conflicts %>%
+  filter(!(query %in% smallphyla_freshterr2$taxa_query)) %>%
+  select(!(c(is_marine, is_freshwater, is_brackish, is_terrestrial))) %>%
+  left_join(smallphyla_conflicts_order) %>%
+  select(query, phylum, class, order, family,
+         freshwater_only, terrestrial_only) %>%
+  filter(freshwater_only == 1 | terrestrial_only == 1) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  rename(taxa_query = query) %>%
+  full_join(smallphyla_freshterr2)
+
+write_csv(smallphyla_freshterr3, here(problems, 'fresh_terrestrial',
+                                   '20220704_smallphyla_fresh-terr.csv'))
+```
+
+```{r}
+smallphyla_conflicts4 <- smallphyla_conflicts %>%
+  filter(!(query %in% smallphyla_freshterr3$taxa_query)) 
+
+write_csv(smallphyla_conflicts4, here(problems, 'not_found',
+                                   '20220704_smallphyla_not-found_outstanding.csv'))
 ```
 

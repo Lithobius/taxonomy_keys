@@ -9,6 +9,133 @@ output: html_document
 Here we're going to take any fixed problems from problems, merge it back into the original taxonomy_full files, and merge all files to full database
 
 ```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+
+# here filepaths
+problems <- here('species_lists', 'hakai', '2022rosetta', 'problems')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
+tol_conflict <- here('species_lists', 'hakai', '2022rosetta', 'problems', 'tol_conflict')
+```
+
+# load in previous
+```{r}
+annelid <- read_csv(here(rosetta, 'taxize',
+                         '20220624_annelid_taxonomy-full.csv'))[-1]
+arthropod <- read_csv(here(rosetta, 'taxize',
+                         '20220624_arthropod_taxonomy-full.csv'))[-1]
+chordata <- read_csv(here(rosetta, 'taxize',
+                         '20220624_chordata_taxonomy-full.csv'))[-1]
+mollusca <- read_csv(here(rosetta, 'taxize',
+                         '20220624_mollusca_taxonomy-full.csv'))[-1]
+ech_platy_nem <- read_csv(here(rosetta, 'taxize',
+                         '20220624_ech_platy_nem_taxonomy-full.csv'))[-1]
+smallphyla <- read_csv(here(rosetta, 'taxize',
+                         '20220624_smallphyla_taxonomy-full.csv'))[-1]
+
+# merge all tables
+all_taxa <- full_join(annelid, arthropod) %>%
+  full_join(chordata) %>%
+  full_join(mollusca) %>%
+  full_join(ech_platy_nem) %>%
+  full_join(smallphyla)
+```
+
+
+# load in fixed
+
+
+```{r load-in-resolved}
+annelid_res <- read_csv(here(problems, 'resolved',
+                         '20220630_annelid_worms_tol-resolved.csv'))
+arthropod_res <- read_csv(here(problems, 'resolved',
+                         '20220630_arthropod_worms_tol-resolved.csv'))
+chordata_res <- read_csv(here(problems, 'resolved',
+                         '20220630_chordata_worms_tol-resolved.csv'))
+mollusca_res <- read_csv(here(problems, 'resolved',
+                         '20220630_mollusca_worms_tol-resolved.csv'))
+ech_platy_nem_res <- read_csv(here(problems, 'resolved',
+                         '20220630_ech_platy_nem_worms_tol-resolved.csv'))
+smallphyla_res <- read_csv(here(problems, 'resolved',
+                         '20220630_smallphyla_worms_tol-resolved.csv'))
+
+
+# merge all tables
+all_taxa_res <- full_join(annelid_res, arthropod_res) %>%
+  full_join(chordata_res) %>%
+  full_join(mollusca_res) %>%
+  full_join(ech_platy_nem_res) %>%
+  full_join(smallphyla_res) %>%
+  rename(taxa_query = query,
+         worms_aphiaid = aphia_id,
+         worms_sciname = scientificname) %>%
+  # merge valid and regular
+  mutate(valid_taxa = coalesce(valid_name, worms_sciname)) %>%
+  mutate(valid_aphiaid = coalesce(valid_aphia_id, worms_aphiaid)) %>%
+  mutate(valid_authority = coalesce(valid_authority, authority)) %>%
+  select(!(c(kingdom, parent_name_usage_id, match_type, 
+             valid_aphia_id, valid_name,
+             is_marine, is_freshwater, is_brackish, is_terrestrial, 
+             is_extinct)))
+```
+
+
+# join first and second round of resolved
+
+```{r}
+all_taxa_res2 <- full_join(all_taxa, all_taxa_res) %>%
+  # valid taxa, keys
+  mutate(valid_taxa = coalesce(valid_taxa, taxa)) %>%
+  mutate(valid_aphiaid = coalesce(valid_aphiaid, worms_aphiaid)) %>%
+  mutate(valid_authority = coalesce(valid_authority, authority)) %>%
+  relocate(valid_taxa, .before = rank) %>%
+  relocate(valid_aphiaid, .before = worms_aphiaid) %>%
+  relocate(valid_authority, .before = authority) %>%
+  select(!(c(taxa)))
+```
+
+
+# freshwater and terrestrial keys
+
+```{r}
+annelid_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                         '20220630_annelid_fresh-terr.csv'))
+arthropod_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                         '20220630_arthropod_fresh-terr.csv'))
+chordata_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                         '20220630_chordata_fresh-terr.csv'))
+mollusca_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                         '20220630_mollusca_fresh-terr.csv'))
+ech_platy_nem_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                         '20220630_ech_platy_nem_fresh-terr.csv'))
+smallphyla_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
+                         '20220630_smallphyla_fresh-terr.csv'))
+
+all_freshterr <- full_join(annelid_freshterr, arthropod_freshterr) %>%
+  full_join(chordata_freshterr) %>%
+  full_join(mollusca_freshterr) %>%
+  full_join(ech_platy_nem_freshterr) %>%
+  full_join(smallphyla_freshterr) %>%
+    rename(worms_genus = aphia_id) %>%
+  select(taxa_query, ott_id, genus_split, worms_genus, terrestrial_only, freshwater_only) %>%
+  rename(genus = genus_split)
+  
+write_csv(all_freshterr, here('latest-keys', '20220704_freshwater_terrestrial.csv'))
 
 ```
+
+
+```{r}
+# populate freshwater/tererestrial columns on all
+all_taxa_res2 <- all_taxa_res2 %>%
+  left_join(all_freshterr)
+
+# write out draft
+
+write_csv(all_taxa_res2, here(rosetta, 'current_draft',
+                              '20220704_blast-db_taxonomy-all.csv'))
+```
+
+
+
 

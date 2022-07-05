@@ -1,0 +1,470 @@
+taxa_query,phylum,class,order,family,freshwater_only,terrestrial_only,genus_split,taxa,tol_sciname,rank,ott_id,is_synonym,flags,valid_name,status,aphia_id
+Paranonychidae,Arthropoda,Arachnida,Opiliones,Paranonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fumontana deprehendor,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Monomontia,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sclerobunus nondimorphicus,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zuma acuta,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum vittatum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chinquipellobunus,Arthropoda,Arachnida,Opiliones,Stygnopsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Vonones,Arthropoda,Arachnida,Opiliones,Cosmetidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Erebomaster acanthinus,Arthropoda,Arachnida,Opiliones,Cladonychiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Speleonychia sengeri,Arthropoda,Arachnida,Opiliones,Travuniidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acuclavella,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acuclavella merickeli,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acuclavella quattuor,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acuclavella cosmetoides,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon simoni,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon cavicolens,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyptobunus cavicolens,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sclerobunus robustus,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pantopsalis,Arthropoda,Arachnida,Opiliones,Monoscutidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Marthana,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ceratolasma tricantha,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Taracus,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nemastoma hankiewiczii,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nemastomella dubia,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ortholasma,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anelasmocephalus cambridgei,Arthropoda,Arachnida,Opiliones,Trogulidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Trogulus nepaeiformis,Arthropoda,Arachnida,Opiliones,Trogulidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Holoscotolemon jaqueti,Arthropoda,Arachnida,Opiliones,Cladonychiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Trojanella serbica,Arthropoda,Arachnida,Opiliones,NULL,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Synthetonychia,Arthropoda,Arachnida,Opiliones,Synthetonychiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Larifuga capensis,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Triaenobunus,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Triaenobunus armstrongi,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gnomulus latoperculum,Arthropoda,Arachnida,Opiliones,Sandokanidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Conomma oedipus,Arthropoda,Arachnida,Opiliones,Pyramidopidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Avima albiornata,Arthropoda,Arachnida,Opiliones,Agoristenidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Heterocranaus,Arthropoda,Arachnida,Opiliones,Cranaidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Santinezia serratotibialis,Arthropoda,Arachnida,Opiliones,Cranaidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pachyloides thorellii,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhopalocranaus albilineatus,Arthropoda,Arachnida,Opiliones,Manaosbiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Quindina,Arthropoda,Arachnida,Opiliones,Nomoclastidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Huasteca rugosa,Arthropoda,Arachnida,Opiliones,Stygnopsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metabiantes,Arthropoda,Arachnida,Opiliones,Biantidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Baculigerus,Arthropoda,Arachnida,Opiliones,Escadabiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pellobunus insularis,Arthropoda,Arachnida,Opiliones,Samoidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Stygnomma,Arthropoda,Arachnida,Opiliones,Stygnommatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pirassunungoleptes calcaratus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acropsopilio chilensis,Arthropoda,Arachnida,Opiliones,Caddidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Erebomaster flavescens,Arthropoda,Arachnida,Opiliones,Cladonychiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Theromaster,Arthropoda,Arachnida,Opiliones,Cladonychiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cryptomaster leviathan,Arthropoda,Arachnida,Opiliones,Cladonychiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Speleomaster lexi,Arthropoda,Arachnida,Opiliones,Cladonychiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Briggsus flavescens,Arthropoda,Arachnida,Opiliones,Briggsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paranonychus brunneus,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metanonychus setulus,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zuma tioga,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyptobunus ungulatus,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sclerobunus,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Caddo agilis,Arthropoda,Arachnida,Opiliones,Caddidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum ventricosum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ogovea cameroonensis,Arthropoda,Arachnida,Opiliones,Ogoveidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lomanius longipalpus,Arthropoda,Arachnida,Opiliones,Podoctidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Santobius,Arthropoda,Arachnida,Opiliones,Podoctidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxida,Arthropoda,Arachnida,Opiliones,Petrobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tithaeus kokutnus,Arthropoda,Arachnida,Opiliones,Tithaeidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tithaeus,Arthropoda,Arachnida,Opiliones,Tithaeidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metatithaeus rubidus,Arthropoda,Arachnida,Opiliones,Tithaeidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Torreana spinata,Arthropoda,Arachnida,Opiliones,Agoristenidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acutisoma longipes,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Megapachylus grandis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Stygnopsis,Arthropoda,Arachnida,Opiliones,Stygnopsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Arulla,Arthropoda,Arachnida,Opiliones,Assamiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lacurbs,Arthropoda,Arachnida,Opiliones,Biantidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Badessa,Arthropoda,Arachnida,Opiliones,Samoidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Stygnomma teapense,Arthropoda,Arachnida,Opiliones,Stygnommatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Guasinia,Arthropoda,Arachnida,Opiliones,Guasiniidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Icaleptes,Arthropoda,Arachnida,Opiliones,Icaleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Kimula goodnightiorum,Arthropoda,Arachnida,Opiliones,Kimulidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Epedanoidea,Arthropoda,Arachnida,Opiliones,NULL,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gonyleptoidea,Arthropoda,Arachnida,Opiliones,NULL,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ischyropsalis pyrenaea,Arthropoda,Arachnida,Opiliones,Ischyropsalididae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunidae,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sclerosomatidae,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Trogulus nepaeformis,Arthropoda,Arachnida,Opiliones,Trogulidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ischyropsalis,Arthropoda,Arachnida,Opiliones,Ischyropsalididae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Trogulus,Arthropoda,Arachnida,Opiliones,Trogulidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fissiphallius chicoi,Arthropoda,Arachnida,Opiliones,Fissiphalliidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis insularis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis kaktinsae,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis perditus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis princeps,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis mitobatipes,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis cuspanalis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis robustus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis pygmaeus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis darwinensis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis cardwellensis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis falcifer,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis furcifer,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis dammermani,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ethobunus foliatus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ethobunus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ethobunus brevis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ethobunus tuberculatus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis bendis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pachylicus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis kotys,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ethobunus tarsalis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pachylicus spinatus,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fissiphallius,Arthropoda,Arachnida,Opiliones,Fissiphalliidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Parascotolemon,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phalangodinella,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxoidea,Arthropoda,Arachnida,Opiliones,NULL,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Traiania,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Costabrimma,Arthropoda,Arachnida,Opiliones,NULL,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Zalmoxis gebeleizis,Arthropoda,Arachnida,Opiliones,Zalmoxidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eurybunus brunneus,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dalquestia grasshoffi,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gyas titanus,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nelima doriae,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nelima paessleri,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nelima aokii,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nelima parva,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nelima similis,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Systenocentrus japonicus,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum montanum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum kohyai,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum curvipalpi,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum tohokuense,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum townsendi,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum desertum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Krusa metallica,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum politum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum verrucosum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum flavum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum formosum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hadrobunus,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eumesosoma ocalense,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eumesosoma roeweri,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leuronychus pacificus,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ischyropsalis carli,Arthropoda,Arachnida,Opiliones,Ischyropsalididae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ischyropsalis hellwigii,Arthropoda,Arachnida,Opiliones,Ischyropsalididae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hesperonemastoma kepharti,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon astoriensis,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon briggsi,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon imamurai,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon mitchelli,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon occidentalis,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon pasonianus,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon paradoxus,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon siskiyou,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sabacon viscayanus,Arthropoda,Arachnida,Opiliones,Sabaconidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acuclavella leonardi,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acuclavella makah,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acuclavella sheari,Arthropoda,Arachnida,Opiliones,Ceratolasmatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pachylospeleus strinati,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hernandaria armatifrons,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ampheres luteus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pristocnemus farinosus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mischonyx cuspidatus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Triglochinura curvispina,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Multumbo dimorphicus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hypophyllonomus longipes,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gonyleptellus bimaculatus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Roeweria virescens,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metarthrodes pulcherrimus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhioxyna zoppei,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Adhynastes tenuis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Liogonyleptoides inermis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ogloblinia loretoensis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eusarcus insperatus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Piassagera brieni,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Daguerreia inermis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metavononoides albisectus,Arthropoda,Arachnida,Opiliones,Cosmetidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Goodnightiella impar,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ruschia maculata,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metarthrodes longipes,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pseudogyndesoides latus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metagonyleptes calcar,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mitogoniella modesta,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Parapachyloides uncinatus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tapacochana insignita,Arthropoda,Arachnida,Opiliones,Metasarcidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hyperpachylus mirabilis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Heteropachylus inexpectabilis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Incasarcus dianae,Arthropoda,Arachnida,Opiliones,Metasarcidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bourguyia trochanteralis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cobania picea,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pseudopucrolia mutica,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Goniosoma unicolor,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sadocus polyacanthus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bourguyia hamata,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Iporangaia pustulosa,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Napostygnus bispinosus,Arthropoda,Arachnida,Opiliones,Metasarcidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acanthogonyleptes pulcher,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pseudotrogulus funebris,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Parampheres bimaculatus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ampheres leucopheus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Magnispina neptunus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pachylus paessleri,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sodreana caipora,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eusarcus hastatus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metalibitia paraguayensis,Arthropoda,Arachnida,Opiliones,Cosmetidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Carlotta serratipes,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mitobates pulcher,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metamitobates squalidus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Graphinotus ornatus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mitobates triangulus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Arthrodes xanthopygus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Andrescava sturmi,Arthropoda,Arachnida,Opiliones,Agoristenidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bourguyia albiornata,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Serracutisoma spelaeum,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gonyleptoides marumbiensis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Longiperna insperata,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Iguapeia melanocephala,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acanthoprocta pustulata,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neosadocus maximus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Longiperna coxalis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Longiperna cancellata,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hutamaia caramaschi,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cajamarca uniseriata,Arthropoda,Arachnida,Opiliones,Metasarcidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cynortellana pulchra,Arthropoda,Arachnida,Opiliones,Cosmetidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metagyndes martensii,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neoancistrotus gracilis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phareicranaus hermosa,Arthropoda,Arachnida,Opiliones,Cranaidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Junicus gerhardi,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fonckia processigera,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tumbesia aculeata,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neogonyleptes karschii,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Barrona williamsi,Arthropoda,Arachnida,Opiliones,Manaosbiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ventripila marginata,Arthropoda,Arachnida,Opiliones,Cranaidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Yania metatarsalis,Arthropoda,Arachnida,Opiliones,Cranaidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Forsteropsalis wattsi,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Forsteropsalis pureora,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pantopsalis listeri,Arthropoda,Arachnida,Opiliones,Monoscutidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Forsteropsalis inconstans,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mangatangi parvum,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Forsteropsalis chiltoni,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Megalopsalis turneri,Arthropoda,Arachnida,Opiliones,Monoscutidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Forsteropsalis,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Forsteropsalis marplesi,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pantopsalis phocator,Arthropoda,Arachnida,Opiliones,Monoscutidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Forsteropsalis fabulosa,Arthropoda,Arachnida,Opiliones,Neopilionidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pantopsalis snaresensis,Arthropoda,Arachnida,Opiliones,Monoscutidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum exillipes,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karamea tricerata,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hendea myersi,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karamea lobata,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Triregia fairburni,Arthropoda,Arachnida,Opiliones,Triaenonychidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Jarmilana pecki,Arthropoda,Arachnida,Opiliones,Pyramidopidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nemastoma bidentatum,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum blackwalli,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paranemastoma quadripunctatum,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nemastoma bimaculatum,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mitostoma chrysomelas,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nemastoma lugubre,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum religiosum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum rotundum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nemastoma triste,Arthropoda,Arachnida,Opiliones,Nemastomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Astrobunus laevipes,Arthropoda,Arachnida,Opiliones,Sclerosomatidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum limbatum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nelima silvatica,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mitogoniella taquara,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bandona boninensis,Arthropoda,Arachnida,Opiliones,Assamiidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tegipiolus pachypus,Arthropoda,Arachnida,Opiliones,Kimulidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Relictopiolus galadriel,Arthropoda,Arachnida,Opiliones,Kimulidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum globosum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobunum manubriatum,Arthropoda,Arachnida,Opiliones,Leiobunidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tithaeus odysseus,Arthropoda,Arachnida,Opiliones,Tithaeidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sodreana glaucoi,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sodreana inscripta,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sodreana barbiellinii,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sodreana curupira,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Progonyleptoidellus orguensis,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Multumbo terrenus,Arthropoda,Arachnida,Opiliones,Gonyleptidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnadopsis parvispinusuchanan,Arthropoda,NA,NA,Limnadiidae,1,0,Limnadopsis,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnadopsis tateiitanic,Arthropoda,NA,NA,Limnadiidae,1,0,Limnadopsis,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnadopsis tateiarters,Arthropoda,NA,NA,Limnadiidae,1,0,Limnadopsis,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhipicephalus microplus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus microplus,Rhipicephalus microplus,species,621053,FALSE,NA,Rhipicephalus,accepted,1505438
+Nephila antipodiana,NA,NA,NA,NA,NA,1,Nephila,Nephila antipodiana,Nephila antipodiana,NA,156510,FALSE,NA,Nephila,accepted,1491362
+Nephila clavata,NA,NA,NA,NA,NA,1,Nephila,Nephila clavata,Nephila clavata,NA,997305,FALSE,NA,Nephila,accepted,1491362
+Rhipicephalus evertsi,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus evertsi,Rhipicephalus evertsi,species,176530,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus annulatus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus annulatus,Rhipicephalus annulatus,species,493150,FALSE,NA,Rhipicephalus,accepted,1505438
+Rhipicephalus decoloratus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus decoloratus,Rhipicephalus decoloratus,species,737616,FALSE,NA,Rhipicephalus,accepted,1505438
+Rhipicephalus appendiculatus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus appendiculatus,Rhipicephalus appendiculatus,species,543035,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus compositus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus compositus,Rhipicephalus compositus,species,83652,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus pravus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus pravus,Rhipicephalus pravus,species,1001868,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus punctatus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus punctatus,Rhipicephalus punctatus,species,658143,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus simus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus simus,Rhipicephalus simus,species,658145,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus turanicus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus turanicus,Rhipicephalus turanicus,species,543038,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Orconectes jeffersoni,NA,NA,NA,NA,1,0,Orconectes,Orconectes jeffersoni,Orconectes jeffersoni,species,827726,FALSE,NA,Orconectes,accepted,234097
+Orconectes placidus,NA,NA,NA,NA,1,0,Orconectes,Orconectes placidus,Orconectes placidus,species,827729,FALSE,NA,Orconectes,accepted,234097
+Orconectes sanbornii,NA,NA,NA,NA,1,0,Orconectes,Orconectes sanbornii,Orconectes sanbornii,species,77974,FALSE,NA,Orconectes,accepted,234097
+Dermanyssus hirundinis,NA,NA,NA,NA,NA,1,Dermanyssus,Dermanyssus hirundinis,Dermanyssus hirundinis,species,110285,FALSE,NA,Dermanyssus,accepted,1513098
+Dermanyssus longipes,NA,NA,NA,NA,NA,1,Dermanyssus,Dermanyssus longipes,Dermanyssus longipes,species,110275,FALSE,NA,Dermanyssus,accepted,1513098
+Dermanyssus carpathicus,NA,NA,NA,NA,NA,1,Dermanyssus,Dermanyssus carpathicus,Dermanyssus carpathicus,species,110279,FALSE,NA,Dermanyssus,accepted,1513098
+Dermanyssus hirsutus,NA,NA,NA,NA,NA,1,Dermanyssus,Dermanyssus hirsutus,Dermanyssus hirsutus,species,1065976,FALSE,NA,Dermanyssus,accepted,1513098
+Dermanyssus quintus,NA,NA,NA,NA,NA,1,Dermanyssus,Dermanyssus quintus,Dermanyssus quintus,species,1052927,FALSE,NA,Dermanyssus,accepted,1513098
+Rhipicephalus geigyi,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus geigyi,Rhipicephalus geigyi,species,1057151,FALSE,NA,Rhipicephalus,accepted,1505438
+Rhipicephalus maculatus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus maculatus,Rhipicephalus maculatus,species,389187,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus pulchellus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus pulchellus,Rhipicephalus pulchellus,species,83661,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus zambeziensis,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus zambeziensis,Rhipicephalus zambeziensis,species,176527,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus pumilio,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus pumilio,Rhipicephalus pumilio,species,389189,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Nephila pilipes,NA,NA,NA,NA,NA,1,Nephila,Nephila pilipes,Nephila pilipes,species,371941,FALSE,NA,Nephila,accepted,1491362
+Aegla schmitti,NA,NA,NA,NA,1,0,Aegla,Aegla schmitti,Aegla schmitti,NA,70048,FALSE,NA,Aegla,accepted,366970
+Orconectes harrisoni,NA,NA,NA,NA,1,0,Orconectes,Orconectes harrisoni,Orconectes harrisoni,species,665180,FALSE,NA,Orconectes,accepted,234097
+Orconectes sloanii,NA,NA,NA,NA,1,0,Orconectes,Orconectes sloanii,Orconectes sloanii,species,665179,FALSE,NA,Orconectes,accepted,234097
+Orconectes maletae,NA,NA,NA,NA,1,0,Orconectes,Orconectes maletae,Orconectes maletae,species,90907,FALSE,NA,Orconectes,accepted,234097
+Orconectes palmeri,NA,NA,NA,NA,1,0,Orconectes,Orconectes palmeri,Orconectes palmeri,species,716944,FALSE,NA,Orconectes,accepted,234097
+Orconectes alabamensis,NA,NA,NA,NA,1,0,Orconectes,Orconectes alabamensis,Orconectes alabamensis,species,716935,FALSE,NA,Orconectes,accepted,234097
+Orconectes compressus,NA,NA,NA,NA,1,0,Orconectes,Orconectes compressus,Orconectes compressus,species,142687,FALSE,NA,Orconectes,accepted,234097
+Orconectes mississippiensis,NA,NA,NA,NA,1,0,Orconectes,Orconectes mississippiensis,Orconectes mississippiensis,species,142685,FALSE,NA,Orconectes,accepted,234097
+Orconectes acares,NA,NA,NA,NA,1,0,Orconectes,Orconectes acares,Orconectes acares,species,559788,FALSE,NA,Orconectes,accepted,234097
+Orconectes barrenensis,NA,NA,NA,NA,1,0,Orconectes,Orconectes barrenensis,Orconectes barrenensis,species,559789,FALSE,NA,Orconectes,accepted,234097
+Orconectes forceps,NA,NA,NA,NA,1,0,Orconectes,Orconectes forceps,Orconectes forceps,species,559792,FALSE,NA,Orconectes,accepted,234097
+Orconectes hylas,NA,NA,NA,NA,1,0,Orconectes,Orconectes hylas,Orconectes hylas,species,559793,FALSE,NA,Orconectes,accepted,234097
+Orconectes longidigitus,NA,NA,NA,NA,1,0,Orconectes,Orconectes longidigitus,Orconectes longidigitus,species,1057925,FALSE,NA,Orconectes,accepted,234097
+Orconectes luteus,NA,NA,NA,NA,1,0,Orconectes,Orconectes luteus,Orconectes luteus,species,1057924,FALSE,NA,Orconectes,accepted,234097
+Orconectes macrus,NA,NA,NA,NA,1,0,Orconectes,Orconectes macrus,Orconectes macrus,species,1057917,FALSE,NA,Orconectes,accepted,234097
+Orconectes medius,NA,NA,NA,NA,1,0,Orconectes,Orconectes medius,Orconectes medius,species,1042373,FALSE,NA,Orconectes,accepted,234097
+Orconectes menae,NA,NA,NA,NA,1,0,Orconectes,Orconectes menae,Orconectes menae,species,97039,FALSE,NA,Orconectes,accepted,234097
+Orconectes mirus,NA,NA,NA,NA,1,0,Orconectes,Orconectes mirus,Orconectes mirus,species,516034,FALSE,NA,Orconectes,accepted,234097
+Orconectes peruncus,NA,NA,NA,NA,1,0,Orconectes,Orconectes peruncus,Orconectes peruncus,species,828547,FALSE,NA,Orconectes,accepted,234097
+Orconectes punctimanus,NA,NA,NA,NA,1,0,Orconectes,Orconectes punctimanus,Orconectes punctimanus,species,1057913,FALSE,NA,Orconectes,accepted,234097
+Orconectes putnami,NA,NA,NA,NA,1,0,Orconectes,Orconectes putnami,Orconectes putnami,species,516038,FALSE,NA,Orconectes,accepted,234097
+Orconectes quadruncus,NA,NA,NA,NA,1,0,Orconectes,Orconectes quadruncus,Orconectes quadruncus,species,516035,FALSE,NA,Orconectes,accepted,234097
+Orconectes spinosus,NA,NA,NA,NA,1,0,Orconectes,Orconectes spinosus,Orconectes spinosus,species,566548,FALSE,NA,Orconectes,accepted,234097
+Orconectes validus,NA,NA,NA,NA,1,0,Orconectes,Orconectes validus,Orconectes validus,species,836137,FALSE,NA,Orconectes,accepted,234097
+Lepidurus couesii,NA,NA,NA,NA,1,NA,Lepidurus,Lepidurus couesii,Lepidurus couesii,species,709235,FALSE,NA,Lepidurus,accepted,1561142
+Unionicola foili,NA,NA,NA,NA,1,NA,Unionicola,Unionicola foili,Unionicola foili,species,709564,FALSE,NA,Unionicola,accepted,158469
+Unionicola formosa,NA,NA,NA,NA,1,NA,Unionicola,Unionicola formosa,Unionicola formosa,species,3107,FALSE,NA,Unionicola,accepted,158469
+Unionicola dimocki,NA,NA,NA,NA,1,NA,Unionicola,Unionicola dimocki,Unionicola dimocki,species,552777,FALSE,NA,Unionicola,accepted,158469
+Unionicola parkeri,NA,NA,NA,NA,1,NA,Unionicola,Unionicola parkeri,Unionicola parkeri,species,552773,FALSE,NA,Unionicola,accepted,158469
+Stereotydeus villosus,NA,NA,NA,NA,1,1,Stereotydeus,Stereotydeus villosus,Stereotydeus villosus,species,278825,FALSE,NA,Stereotydeus,accepted,886513
+Cyzicus setosa,NA,NA,NA,NA,1,NA,Cyzicus,Cyzicus setosa,Cyzicus setosa,NA,7113872,FALSE,NA,Cyzicus,accepted,593225
+Troglocaris intermedia,NA,NA,NA,NA,1,0,Troglocaris,Troglocaris intermedia,Troglocaris intermedia,NA,755822,FALSE,sibling_higher,Troglocaris,accepted,586496
+Troglocaris inermis,NA,NA,NA,NA,1,0,Troglocaris,Troglocaris inermis,Troglocaris inermis,NA,755821,FALSE,sibling_higher,Troglocaris,accepted,586496
+Troglocaris pretneri,NA,NA,NA,NA,1,0,Troglocaris,Troglocaris pretneri,Troglocaris pretneri,species,232803,FALSE,NA,Troglocaris,accepted,586496
+Triops simplex,NA,NA,NA,NA,1,NA,Triops,Triops simplex,Triops simplex,NA,203025,FALSE,NA,Triops,accepted,724676
+Lynceus macleyanus,NA,NA,NA,NA,1,0,Lynceus,Lynceus macleyanus,Lynceus macleyanus,species,1019795,FALSE,NA,Lynceus,accepted,593145
+Eulimnadia braueriana,NA,NA,NA,NA,1,0,Eulimnadia,Eulimnadia braueriana,Eulimnadia braueriana,species,376785,FALSE,NA,Eulimnadia,accepted,1459816
+Eubranchipus vernalis,NA,NA,NA,NA,1,NA,Eubranchipus,Eubranchipus vernalis,Eubranchipus vernalis,species,788790,FALSE,NA,Eubranchipus,accepted,1325174
+Unionicola tumida,NA,NA,NA,NA,1,NA,Unionicola,Unionicola tumida,Unionicola tumida,species,515940,FALSE,NA,Unionicola,accepted,158469
+Unionicola smithae,NA,NA,NA,NA,1,NA,Unionicola,Unionicola smithae,Unionicola smithae,species,247967,FALSE,NA,Unionicola,accepted,158469
+Unionicola serrata,NA,NA,NA,NA,1,NA,Unionicola,Unionicola serrata,Unionicola serrata,species,515942,FALSE,NA,Unionicola,accepted,158469
+Unionicola crassipes,NA,NA,NA,NA,1,NA,Unionicola,Unionicola crassipes,Unionicola crassipes,species,515931,FALSE,NA,Unionicola,accepted,158469
+Unionicola arcuata,NA,NA,NA,NA,1,NA,Unionicola,Unionicola arcuata,Unionicola arcuata,species,794071,FALSE,NA,Unionicola,accepted,158469
+Unionicola aculeata,NA,NA,NA,NA,1,NA,Unionicola,Unionicola aculeata,Unionicola aculeata,species,515933,FALSE,NA,Unionicola,accepted,158469
+Unionicola abnormipes,NA,NA,NA,NA,1,NA,Unionicola,Unionicola abnormipes,Unionicola abnormipes,species,515935,FALSE,NA,Unionicola,accepted,158469
+Nesticus obcaecatus,NA,NA,NA,NA,NA,1,Nesticus,Nesticus obcaecatus,Nesticus obcaecatus,NA,734407,FALSE,NA,Nesticus,accepted,231925
+Nesticus luquei,NA,NA,NA,NA,NA,1,Nesticus,Nesticus luquei,Nesticus luquei,NA,734411,FALSE,NA,Nesticus,accepted,231925
+Nesticus ionescui,NA,NA,NA,NA,NA,1,Nesticus,Nesticus ionescui,Nesticus ionescui,species,734413,FALSE,NA,Nesticus,accepted,231925
+Loxosceles caribbaea,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles caribbaea,Loxosceles caribbaea,species,1069415,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles baja,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles baja,Loxosceles baja,species,1017853,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles kaiba,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles kaiba,Loxosceles kaiba,species,1069381,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles arizonica,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles arizonica,Loxosceles arizonica,species,120964,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles blanda,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles blanda,Loxosceles blanda,species,1069407,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles apachea,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles apachea,Loxosceles apachea,species,1017855,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles sabina,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles sabina,Loxosceles sabina,species,541801,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles deserta,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles deserta,Loxosceles deserta,species,313889,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles colima,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles colima,Loxosceles colima,species,1069397,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles reclusa,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles reclusa,Loxosceles reclusa,species,673746,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles chinateca,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles chinateca,Loxosceles chinateca,species,1069393,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles lacta,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles lacta,Loxosceles lacta,species,1069385,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles amazonica,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles amazonica,Loxosceles amazonica,species,932151,FALSE,NA,Loxosceles,accepted,1491329
+Loxoscelesegata,NA,NA,NA,NA,NA,1,Loxosceles,Loxoscelesegata,Loxosceles baja,NA,1017853,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles intermedia,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles intermedia,Loxosceles intermedia,species,653111,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles spadicea,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles spadicea,Loxosceles spadicea,species,917989,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles hirsuta,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles hirsuta,Loxosceles hirsuta,species,1069390,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles laeta,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles laeta,Loxosceles laeta,species,653131,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles vonwredei,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles vonwredei,Loxosceles vonwredei,species,461653,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles spinulosa,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles spinulosa,Loxosceles spinulosa,species,1068112,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles speluncarum,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles speluncarum,Loxosceles speluncarum,species,917979,FALSE,NA,Loxosceles,accepted,1491329
+Limnadia lenticularis,NA,NA,NA,NA,1,0,Limnadia,Limnadia lenticularis,Limnadia lenticularis,species,401740,FALSE,NA,Limnadia,accepted,1459821
+Eulimnadia cylindrova,NA,NA,NA,NA,1,0,Eulimnadia,Eulimnadia cylindrova,Eulimnadia cylindrova,species,427149,FALSE,NA,Eulimnadia,accepted,1459816
+Eulimnadia dahli,NA,NA,NA,NA,1,0,Eulimnadia,Eulimnadia dahli,Eulimnadia dahli,NA,630870,FALSE,NA,Eulimnadia,accepted,1459816
+Limnadopsis parvispinus,NA,NA,NA,NA,1,0,Limnadopsis,Limnadopsis parvispinus,Limnadopsis parvispinus,species,952924,FALSE,NA,Limnadopsis,accepted,1459824
+Limnadia sordida,NA,NA,NA,NA,1,0,Limnadia,Limnadia sordida,Limnadia sordida,species,802312,FALSE,NA,Limnadia,accepted,1459821
+Limnadia badia,NA,NA,NA,NA,1,0,Limnadia,Limnadia badia,Limnadia badia,species,746551,FALSE,NA,Limnadia,accepted,1459821
+Limnadopsis tatei,NA,NA,NA,NA,1,0,Limnadopsis,Limnadopsis tatei,Limnadopsis tatei,species,222972,FALSE,NA,Limnadopsis,accepted,1459824
+Limnadiapponica,NA,NA,NA,NA,1,0,Limnadia,Limnadiapponica,Limnadia nipponica,NA,230072,FALSE,NA,Limnadia,accepted,1459821
+Eulimnadia africana,NA,NA,NA,NA,1,0,Eulimnadia,Eulimnadia africana,Eulimnadia africana,species,630871,FALSE,NA,Eulimnadia,accepted,1459816
+Eulimnadia diversa,NA,NA,NA,NA,1,0,Eulimnadia,Eulimnadia diversa,Eulimnadia diversa,NA,952926,FALSE,NA,Eulimnadia,accepted,1459816
+Cyzicus gynecia,NA,NA,NA,NA,1,NA,Cyzicus,Cyzicus gynecia,Cyzicus gynecia,species,952922,FALSE,NA,Cyzicus,accepted,593225
+Limnadopsis birchii,NA,NA,NA,NA,1,0,Limnadopsis,Limnadopsis birchii,Limnadopsis birchii,species,964999,FALSE,NA,Limnadopsis,accepted,1459824
+Limnadopsis paradoxa,NA,NA,NA,NA,1,0,Limnadopsis,Limnadopsis paradoxa,Limnadopsis paradoxa,species,1021583,FALSE,NA,Limnadopsis,accepted,1459824
+Loxosceles gaucho,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles gaucho,Loxosceles gaucho,species,653133,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles mrazig,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles mrazig,Loxosceles mrazig,species,47316,FALSE,NA,Loxosceles,accepted,1491329
+Dermanyssus apodis,NA,NA,NA,NA,NA,1,Dermanyssus,Dermanyssus apodis,Dermanyssus apodis,species,463955,FALSE,NA,Dermanyssus,accepted,1513098
+Loxosceles foutadjalloni,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles foutadjalloni,Loxosceles foutadjalloni,species,166785,FALSE,NA,Loxosceles,accepted,1491329
+Nesticus silvestrii,NA,NA,NA,NA,NA,1,Nesticus,Nesticus silvestrii,Nesticus silvestrii,species,623348,FALSE,NA,Nesticus,accepted,231925
+Nesticus archeri,NA,NA,NA,NA,NA,1,Nesticus,Nesticus archeri,Nesticus archeri,species,50532,FALSE,NA,Nesticus,accepted,231925
+Nesticus pecki,NA,NA,NA,NA,NA,1,Nesticus,Nesticus pecki,Nesticus pecki,species,253354,FALSE,NA,Nesticus,accepted,231925
+Nesticus georgia,NA,NA,NA,NA,NA,1,Nesticus,Nesticus georgia,Nesticus georgia,species,623339,FALSE,NA,Nesticus,accepted,231925
+Nesticus furtivus,NA,NA,NA,NA,NA,1,Nesticus,Nesticus furtivus,Nesticus furtivus,species,50535,FALSE,NA,Nesticus,accepted,231925
+Nesticus stygius,NA,NA,NA,NA,NA,1,Nesticus,Nesticus stygius,Nesticus stygius,species,996646,FALSE,NA,Nesticus,accepted,231925
+Nesticus jonesi,NA,NA,NA,NA,NA,1,Nesticus,Nesticus jonesi,Nesticus jonesi,species,623341,FALSE,NA,Nesticus,accepted,231925
+Nesticus barri,NA,NA,NA,NA,NA,1,Nesticus,Nesticus barri,Nesticus barri,species,50533,FALSE,NA,Nesticus,accepted,231925
+Heteropoda maxima,NA,NA,NA,NA,NA,1,Heteropoda,Heteropoda maxima,Heteropoda maxima,species,395339,FALSE,sibling_higher,Heteropoda,accepted,1491356
+Heteropoda tetrica,NA,NA,NA,NA,NA,1,Heteropoda,Heteropoda tetrica,Heteropoda tetrica,species,395345,FALSE,sibling_higher,Heteropoda,accepted,1491356
+Heteropoda dagmarae,NA,NA,NA,NA,NA,1,Heteropoda,Heteropoda dagmarae,Heteropoda dagmarae,species,395337,FALSE,sibling_higher,Heteropoda,accepted,1491356
+Heteropoda aemulans,NA,NA,NA,NA,NA,1,Heteropoda,Heteropoda aemulans,Heteropoda aemulans,species,395335,FALSE,sibling_higher,Heteropoda,accepted,1491356
+Heteropoda simplex,NA,NA,NA,NA,NA,1,Heteropoda,Heteropoda simplex,Heteropoda simplex,species,395341,FALSE,sibling_higher,Heteropoda,accepted,1491356
+Heteropoda steineri,NA,NA,NA,NA,NA,1,Heteropoda,Heteropoda steineri,Heteropoda steineri,species,395343,FALSE,sibling_higher,Heteropoda,accepted,1491356
+Sperchon violaceus,NA,NA,NA,NA,1,NA,Sperchon,Sperchon violaceus,Sperchon violaceus,species,1088721,FALSE,NA,Sperchon,accepted,593105
+Unionicola hoesei,NA,NA,NA,NA,1,NA,Unionicola,Unionicola hoesei,Unionicola hoesei,species,75815,FALSE,NA,Unionicola,accepted,158469
+Unionicola vamana,NA,NA,NA,NA,1,NA,Unionicola,Unionicola vamana,Unionicola vamana,species,597069,FALSE,NA,Unionicola,accepted,158469
+Unionicola vikitra,NA,NA,NA,NA,1,NA,Unionicola,Unionicola vikitra,Unionicola vikitra,species,597067,FALSE,NA,Unionicola,accepted,158469
+Unionicola kavanaghi,NA,NA,NA,NA,1,NA,Unionicola,Unionicola kavanaghi,Unionicola kavanaghi,species,75817,FALSE,NA,Unionicola,accepted,158469
+Unionicola amandita,NA,NA,NA,NA,1,NA,Unionicola,Unionicola amandita,Unionicola amandita,species,876012,FALSE,NA,Unionicola,accepted,158469
+Unionicola gailae,NA,NA,NA,NA,1,NA,Unionicola,Unionicola gailae,Unionicola gailae,species,75811,FALSE,NA,Unionicola,accepted,158469
+Unionicola tupara,NA,NA,NA,NA,1,NA,Unionicola,Unionicola tupara,Unionicola tupara,species,75819,FALSE,NA,Unionicola,accepted,158469
+Unionicola fulleri,NA,NA,NA,NA,1,NA,Unionicola,Unionicola fulleri,Unionicola fulleri,species,75813,FALSE,NA,Unionicola,accepted,158469
+Balaustium medicagoense,NA,NA,NA,NA,1,1,Balaustium,Balaustium medicagoense,Balaustium medicagoense,species,54189,FALSE,NA,Balaustium,accepted,150453
+Eubranchipus bundyi,NA,NA,NA,NA,1,NA,Eubranchipus,Eubranchipus bundyi,Eubranchipus bundyi,species,959820,FALSE,NA,Eubranchipus,accepted,1325174
+Nephila constricta,NA,NA,NA,NA,NA,1,Nephila,Nephila constricta,Nephila constricta,species,952193,FALSE,NA,Nephila,accepted,1491362
+Nephila edulis,NA,NA,NA,NA,NA,1,Nephila,Nephila edulis,Nephila edulis,NA,952212,FALSE,NA,Nephila,accepted,1491362
+Nephila fenestrata,NA,NA,NA,NA,NA,1,Nephila,Nephila fenestrata,Nephila fenestrata,NA,952214,FALSE,NA,Nephila,accepted,1491362
+Nephila inaurata,NA,NA,NA,NA,NA,1,Nephila,Nephila inaurata,Nephila inaurata,NA,189516,FALSE,NA,Nephila,accepted,1491362
+Nephila plumipes,NA,NA,NA,NA,NA,1,Nephila,Nephila plumipes,Nephila plumipes,NA,894465,FALSE,NA,Nephila,accepted,1491362
+Nephila senegalensis,NA,NA,NA,NA,NA,1,Nephila,Nephila senegalensis,Nephila senegalensis,NA,499088,FALSE,NA,Nephila,accepted,1491362
+Vejdovskybathynella edelweiss,NA,NA,NA,NA,1,0,Vejdovskybathynella,Vejdovskybathynella edelweiss,Vejdovskybathynella edelweiss,species,843465,FALSE,NA,Vejdovskybathynella,accepted,1039203
+Iberobathynella imuniensis,NA,NA,NA,NA,1,0,Iberobathynella,Iberobathynella imuniensis,Iberobathynella imuniensis,species,105734,FALSE,NA,Iberobathynella,accepted,1039268
+Iberobathynella cantabriensis,NA,NA,NA,NA,1,0,Iberobathynella,Iberobathynella cantabriensis,Iberobathynella cantabriensis,species,105718,FALSE,NA,Iberobathynella,accepted,1039268
+Iberobathynella magna,NA,NA,NA,NA,1,0,Iberobathynella,Iberobathynella magna,Iberobathynella magna,species,1021342,FALSE,NA,Iberobathynella,accepted,1039268
+Iberobathynella burgalensis,NA,NA,NA,NA,1,0,Iberobathynella,Iberobathynella burgalensis,Iberobathynella burgalensis,species,105716,FALSE,NA,Iberobathynella,accepted,1039268
+Iberobathynella celiana,NA,NA,NA,NA,1,0,Iberobathynella,Iberobathynella celiana,Iberobathynella celiana,species,105732,FALSE,NA,Iberobathynella,accepted,1039268
+Hexabathynella sevillaensis,NA,NA,NA,NA,1,0,Hexabathynella,Hexabathynella sevillaensis,Hexabathynella sevillaensis,species,627094,FALSE,NA,Hexabathynella,accepted,1039132
+Limnadopsis parvispinusaroo,NA,NA,NA,NA,1,0,Limnadopsis,Limnadopsis parvispinusaroo,Limnadopsis parvispinus,NA,952924,FALSE,NA,Limnadopsis,accepted,1459824
+Nephila turneri,NA,NA,NA,NA,NA,1,Nephila,Nephila turneri,Nephila turneri,NA,611616,FALSE,NA,Nephila,accepted,1491362
+Unionicola minor,NA,NA,NA,NA,1,NA,Unionicola,Unionicola minor,Unionicola minor,species,3532696,FALSE,sibling_higher,Unionicola,accepted,158469
+Nesticus coreanus,NA,NA,NA,NA,NA,1,Nesticus,Nesticus coreanus,Nesticus coreanus,species,975612,FALSE,NA,Nesticus,accepted,231925
+Nesticus kyongkeomsanensis,NA,NA,NA,NA,NA,1,Nesticus,Nesticus kyongkeomsanensis,Nesticus kyongkeomsanensis,species,205455,FALSE,NA,Nesticus,accepted,231925
+Brevisomabathynella uramurdahensis,NA,NA,NA,NA,1,0,Brevisomabathynella,Brevisomabathynella uramurdahensis,Brevisomabathynella uramurdahensis,NA,1046345,FALSE,NA,Brevisomabathynella,accepted,1039150
+Brevisomabathynella cunyuensis,NA,NA,NA,NA,1,0,Brevisomabathynella,Brevisomabathynella cunyuensis,Brevisomabathynella cunyuensis,species,469738,FALSE,NA,Brevisomabathynella,accepted,1039150
+Limnadopsis bloodwoodensis,NA,NA,NA,NA,1,0,Limnadopsis,Limnadopsis bloodwoodensis,Limnadopsis bloodwoodensis,species,989258,FALSE,NA,Limnadopsis,accepted,1459824
+Limnadopsis brevirostris,NA,NA,NA,NA,1,0,Limnadopsis,Limnadopsis brevirostris,Limnadopsis brevirostris,species,989256,FALSE,NA,Limnadopsis,accepted,1459824
+Rhipicephalus haemaphysaloides,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus haemaphysaloides,Rhipicephalus haemaphysaloides,species,911537,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus rossicus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus rossicus,Rhipicephalus rossicus,species,145895,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Amphisopus annectans,NA,NA,NA,NA,1,0,Amphisopus,Amphisopus annectans,Amphisopus annectans,species,213426,FALSE,NA,Amphisopus,accepted,248407
+Vejdovskybathynella vasconica,NA,NA,NA,NA,1,0,Vejdovskybathynella,Vejdovskybathynella vasconica,Vejdovskybathynella vasconica,NA,5755381,FALSE,NA,Vejdovskybathynella,accepted,1039203
+Vejdovskybathynella caroloi,NA,NA,NA,NA,1,0,Vejdovskybathynella,Vejdovskybathynella caroloi,Vejdovskybathynella caroloi,species,5755383,FALSE,NA,Vejdovskybathynella,accepted,1039203
+Iberobathynella parasturiensis,NA,NA,NA,NA,1,0,Iberobathynella,Iberobathynella parasturiensis,Iberobathynella parasturiensis,species,4675427,FALSE,NA,Iberobathynella,accepted,1039268
+Rhipicephalus australis,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus australis,Rhipicephalus australis,species,250979,FALSE,NA,Rhipicephalus,accepted,1505438
+Rhipicephalus kohlsi,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus kohlsi,Rhipicephalus kohlsi,species,389191,FALSE,NA,Rhipicephalus,accepted,1505438
+Eulimnadia belki,NA,NA,NA,NA,1,0,Eulimnadia,Eulimnadia belki,Eulimnadia belki,species,5231579,FALSE,NA,Eulimnadia,accepted,1459816
+Rhipicephalus bursa,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus bursa,Rhipicephalus bursa,species,470255,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus leporis,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus leporis,Rhipicephalus leporis,species,467642,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Iberobathynella cornejoensis,NA,NA,NA,NA,1,0,Iberobathynella,Iberobathynella cornejoensis,Iberobathynella cornejoensis,species,7122482,FALSE,NA,Iberobathynella,accepted,1039268
+Scytodes lugubris,NA,NA,NA,NA,NA,1,Scytodes,Scytodes lugubris,Scytodes lugubris,species,3541779,FALSE,NA,Scytodes,accepted,1491351
+Rhipicephalus sulcatus,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus sulcatus,Rhipicephalus sulcatus,species,150387,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Nephila sexpunctata,NA,NA,NA,NA,NA,1,Nephila,Nephila sexpunctata,Nephila sexpunctata,NA,3572012,FALSE,NA,Nephila,accepted,1491362
+Scytodes thoracica,NA,NA,NA,NA,NA,1,Scytodes,Scytodes thoracica,Scytodes thoracica,species,946500,FALSE,NA,Scytodes,accepted,1491351
+Heteropodabilis,NA,NA,NA,NA,NA,1,Heteropoda,Heteropodabilis,Heteropoda debilis,NA,3550971,FALSE,sibling_higher,Heteropoda,accepted,1491356
+Nesticus holsingeri,NA,NA,NA,NA,NA,1,Nesticus,Nesticus holsingeri,Nesticus holsingeri,species,673637,FALSE,NA,Nesticus,accepted,231925
+Triops sinensis,NA,NA,NA,NA,1,NA,Triops,Triops sinensis,Triops sinensis,NA,7114074,FALSE,NA,Triops,accepted,724676
+Sperchon fuxiensis,NA,NA,NA,NA,1,NA,Sperchon,Sperchon fuxiensis,Sperchon fuxiensis,species,7095361,FALSE,NA,Sperchon,accepted,593105
+Sperchon plumifer,NA,NA,NA,NA,1,NA,Sperchon,Sperchon plumifer,Sperchon plumifer,species,3533092,FALSE,NA,Sperchon,accepted,593105
+Sperchon rostratus,NA,NA,NA,NA,1,NA,Sperchon,Sperchon rostratus,Sperchon rostratus,species,6166092,FALSE,NA,Sperchon,accepted,593105
+Rhipicephalus duttoni,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus duttoni,Rhipicephalus duttoni,NA,3525365,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Rhipicephalus senegalensis,NA,NA,NA,NA,NA,1,Rhipicephalus,Rhipicephalus senegalensis,Rhipicephalus senegalensis,NA,3525393,FALSE,sibling_higher,Rhipicephalus,accepted,1505438
+Loxosceles persica,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles persica,Loxosceles persica,species,7108343,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles taino,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles taino,Loxosceles taino,species,3540610,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles cubana,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles cubana,Loxosceles cubana,species,3540616,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles jamaica,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles jamaica,Loxosceles jamaica,species,3540658,FALSE,NA,Loxosceles,accepted,1491329
+Loxosceles jarmila,NA,NA,NA,NA,NA,1,Loxosceles,Loxosceles jarmila,Loxosceles jarmila,species,3540632,FALSE,NA,Loxosceles,accepted,1491329
+Sperchon glandulosus,NA,NA,NA,NA,1,NA,Sperchon,Sperchon glandulosus,Sperchon glandulosus,species,3533107,FALSE,NA,Sperchon,accepted,593105

@@ -1,0 +1,311 @@
+taxa_query,phylum,class,order,family,freshwater_only,terrestrial_only,genus_split,taxa,tol_sciname,rank,ott_id,is_synonym,flags,valid_name,status,aphia_id
+Hirudopponia,Annelida,Clitellata,NA,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Patagoniobdellaabilis,Annelida,Clitellata,NA,Semiscolecidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lumbriculusegatus,Annelida,Clitellata,NA,Lumbriculidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Progizzardusdiamensis,Annelida,Clitellata,NA,Almidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Duplodicodrilus schmardae,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Duplodicodrilus acinctus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Polypheretima taprobanae,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pithemera bicincta,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Glossiphonia elegans,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Theromyzon rude,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria gracilis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella phalera,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria lutzi,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria ghilianii,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria tuberculifera,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Stylodrilus opistoannulatus,Annelida,Clitellata,Lumbriculida,Lumbriculidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Styloscolex chorioidalis,Annelida,Clitellata,Lumbriculida,Lumbriculidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella montifera,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella papillifera,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria molesta,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella transluscens,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Glossiphonia baicalensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Theromyzon bifarium,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Alboglossiphonia weberi,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Alboglossiphonia quadrata,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oosthuizobdella garoui,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella costata,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdelloides siamensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdelloides jaegerskioeldi,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdelloides fimbriata,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eclipidrilus palustris,Annelida,Clitellata,Lumbriculida,Lumbriculidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Batracobdella algira,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella ali,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Travoscolides chengannures,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria lopezi,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria acuecueyetzin,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria officinalis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria depressa,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria paraguayensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oligobdella brasiliensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tonoscolex birmanicus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella cryptobranchii,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella hollensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Alboglossiphonia papillosa,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pheretima apoensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pheretima boaensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pheretima camiguinensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pheretima timpoongensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella lamothei,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella nuchalis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdella ringueleti,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Glaberana,Arthropoda,Insecta,Hemiptera,Cicadellidae,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gastrostomobdella monticola,Annelida,Clitellata,Hirudinida,Gastrostomobdellidae,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Odontobdella blanchardi,Annelida,Clitellata,Hirudinida,Salifidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella tsushimensis,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella esulcata,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella whitmani,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella shimadae,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella dolichopharynx,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella ijimai,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella kawakatsuorum,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella koikei,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella octonaria,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tritetrabdella taiwana,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella mononoke,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella ketagalan,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella masaakikuroiwai,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnatis paluda,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa sylvestris,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella bilineata,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ankyrodrilus legaeus,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bdellodrilus illuminatus,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Branchiobdella pentadonta,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ceratodrilus orphiorhysis,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cirrodrilus sapporensis,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Magmatodrilus obscurus,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oedipodrilus macbaini,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pterodrilus annulatus,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sathodrilus attenuatus,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Triannulata magna,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Xironidrilus formosus,Annelida,Clitellata,Branchiobdellida,Branchiobdellidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Americobdella valdiviana,Annelida,Clitellata,Hirudinida,Americobdellidae,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicobdella coccinea,Annelida,Clitellata,Hirudinida,Cylicobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa sumatrana,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Poecilobdella manillensis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aliolimnatis africana,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mesobdella gemmata,Annelida,Clitellata,Hirudinida,Xerobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Semiscolex similis,Annelida,Clitellata,Hirudinida,Semiscolecidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Patagoniobdella fraterna,Annelida,Clitellata,Hirudinida,Semiscolecidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eisenia eiseni,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Philobdella gracilis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Philobdella floridana,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Macrobdella diplotertia,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bimastos parvus,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella whitmani,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Diestecostoma magna,Annelida,Clitellata,Hirudinida,Xerobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Diestecostoma mexicana,Annelida,Clitellata,Hirudinida,Xerobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Diestecostoma trujillensis,Annelida,Clitellata,Hirudinida,Xerobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa interrupta,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella seychellensis,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella fallax,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella skottsbergi,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Xerobdella lecomtei,Annelida,Clitellata,Hirudinida,Xerobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eisenoides carolinensis,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eisenia zebra,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aliolimnatis michaelseni,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aliolimnatis oligodonta,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aliolimnatis buntonensis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Asiaticobdella fenestrata,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Goddardobdella elegans,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnobdella mexicana,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Semiscolex intermedius,Annelida,Clitellata,Hirudinida,Semiscolecidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Semiscolex lamothei,Annelida,Clitellata,Hirudinida,Semiscolecidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Myxobdella annandalei,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pintobdella chiapasensis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tyrannobdella rex,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octodrilus juvyi,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Domanibdella palmyrae,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella pungens,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neoterrabdella australis,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella tanae,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Domanibdella,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa cavatuses,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa limuna,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa crenata,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa japonica,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa trimaculosa,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa rjukjuana,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa ornata,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa montana,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella mediorubra,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella niarchosorum,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella vagans,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella gloriosi,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa cochiniana,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnobdella grandis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Planobdella,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobdella,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tritetrabdella scandens,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa hainana,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Salifa perspicax,Annelida,Clitellata,Hirudinida,Salifidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Maoridrilus felix,Annelida,Clitellata,Haplotaxida,Acanthodrilidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octochaetus kenleei,Annelida,Clitellata,Haplotaxida,Octochaetidae,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Deinodrilus gorgon,Annelida,Clitellata,Haplotaxida,Acanthodrilidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Vignysa teres,Annelida,Clitellata,Haplotaxida,Hormogastridae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Poecilobdella javanica,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hoplochaetella stuarti,Annelida,Clitellata,Haplotaxida,Octochaetidae,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eiseniona gerardoi,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tritetrabdella kinabaluensis,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eisenia storkani,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bimastos heimburgeri,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bimastos tumidus,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Healyella jordanis,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Healyella syriaca,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Spermophorodrilus antiquus,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bimastos longicinctus,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eisenoides lonnbergi,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Salifa motokawai,Annelida,Clitellata,Hirudinida,Salifidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tritetrabdella longiducta,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella brachyepididymis,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella nakahamai,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella okanoi,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella yamaneae,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Poecilobdella nanjingensis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella kanaekoikeae,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Myxobdella sinanensis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gastrostomobdella ampunganensis,Annelida,Clitellata,Hirudinida,Gastrostomobdellidae,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gastrostomobdella extenta,Annelida,Clitellata,Hirudinida,Gastrostomobdellidae,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella meisai,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Orobdella angustata,Annelida,Clitellata,Hirudinida,Orobdellidae,1,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemadipsa tianmushana,Annelida,Clitellata,Hirudinida,Haemadipsidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octodrilus tergestinus,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octodrilus zicsiniello,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octodrilus mimus,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dendrobaena hrabei,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Erpobdella microstoma,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella microstoma,Erpobdella microstoma,species,7486056,FALSE,NA,Erpobdella,accepted,160006
+Metaphire sieboldi,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire sieboldi,Metaphire sieboldi,species,833400,FALSE,NA,Metaphire,accepted,1062143
+Metaphire tosaensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire tosaensis,Metaphire tosaensis,species,833402,FALSE,NA,Metaphire,accepted,1062143
+Amynthas vittatus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas vittatus,Amynthas vittatus,species,191497,FALSE,sibling_higher,Amynthas,accepted,1062218
+Metaphire hilgendorfi,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire hilgendorfi,Metaphire hilgendorfi,species,833406,FALSE,NA,Metaphire,accepted,1062143
+Metaphire megascolidioides,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire megascolidioides,Metaphire megascolidioides,species,72069,FALSE,NA,Metaphire,accepted,1062143
+Amynthas carnosus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas carnosus,Amynthas carnosus,species,370242,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas distichus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas distichus,Amynthas distichus,species,370248,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas fuscatus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas fuscatus,Amynthas fuscatus,species,370234,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas glabrus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas glabrus,Amynthas glabrus,species,370236,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas hupeiensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas hupeiensis,Amynthas hupeiensis,species,258760,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas micronarius,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas micronarius,Amynthas micronarius,species,895388,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas minimus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas minimus,Amynthas minimus,species,895385,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas morrisi,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas morrisi,Amynthas morrisi,species,168832,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas phaselus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas phaselus,Amynthas phaselus,species,1051640,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas purpuratus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas purpuratus,Amynthas purpuratus,species,593460,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas tappensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas tappensis,Amynthas tappensis,species,593464,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas tokioensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas tokioensis,Amynthas tokioensis,species,593462,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas yambaruensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas yambaruensis,Amynthas yambaruensis,species,593456,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas yunoshimensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas yunoshimensis,Amynthas yunoshimensis,species,593453,FALSE,sibling_higher,Amynthas,accepted,1062218
+Metaphire agrestis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire agrestis,Metaphire agrestis,species,593450,FALSE,NA,Metaphire,accepted,1062143
+Metaphire californica,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire californica,Metaphire californica,species,1044691,FALSE,NA,Metaphire,accepted,1062143
+Metaphire communissima,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire communissima,Metaphire communissima,species,72063,FALSE,NA,Metaphire,accepted,1062143
+Metaphire servina,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire servina,Metaphire servina,species,72054,FALSE,NA,Metaphire,accepted,1062143
+Metaphire soulensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire soulensis,Metaphire soulensis,species,1051645,FALSE,NA,Metaphire,accepted,1062143
+Metaphire vesiculata,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire vesiculata,Metaphire vesiculata,species,72057,FALSE,NA,Metaphire,accepted,1062143
+Metaphire yamadai,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire yamadai,Metaphire yamadai,species,72067,FALSE,NA,Metaphire,accepted,1062143
+Erpobdella japonica,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella japonica,Erpobdella japonica,species,490339,FALSE,NA,Erpobdella,accepted,160006
+Erpobdella obscura,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella obscura,Erpobdella obscura,species,340135,FALSE,NA,Erpobdella,accepted,160006
+Helobdella paranensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella paranensis,Helobdella paranensis,species,1060336,FALSE,NA,Helobdella,accepted,160018
+Helobdella fusca,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella fusca,Helobdella fusca,species,51293,FALSE,NA,Helobdella,accepted,160018
+Helobdella lineata,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella lineata,Helobdella lineata,species,51292,FALSE,NA,Helobdella,accepted,160018
+Helobdella papillata,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella papillata,Helobdella papillata,species,51289,FALSE,NA,Helobdella,accepted,160018
+Helobdella transversa,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella transversa,Helobdella transversa,species,51286,FALSE,NA,Helobdella,accepted,160018
+Helobdella nununununojensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Helobdella sorojchi,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella sorojchi,Helobdella sorojchi,species,51287,FALSE,NA,Helobdella,accepted,160018
+Helobdella ringueleti,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella ringueleti,Helobdella ringueleti,species,51288,FALSE,NA,Helobdella,accepted,160018
+Helobdella bolivianita,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella bolivianita,Helobdella bolivianita,species,51295,FALSE,NA,Helobdella,accepted,160018
+Dero furcata,Annelida,Clitellata,Tubificida,Naididae,1,NA,Dero,Dero furcata,Dero furcata,species,676633,FALSE,sibling_higher,Dero,accepted,993490
+Lamprodrilus decathecus,Annelida,Clitellata,Lumbriculida,Lumbriculidae,1,0,Lamprodrilus,Lamprodrilus decathecus,Lamprodrilus decathecus,species,769000,FALSE,NA,Lamprodrilus,accepted,1040063
+Erpobdella costata,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella costata,Erpobdella costata,species,42952,FALSE,NA,Erpobdella,accepted,160006
+Metaphire yuhsii,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire yuhsii,Metaphire yuhsii,species,518192,FALSE,NA,Metaphire,accepted,1062143
+Metaphire formosae,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire formosae,Metaphire formosae,species,518195,FALSE,NA,Metaphire,accepted,1062143
+Metaphire glareosa,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire glareosa,Metaphire glareosa,species,839178,FALSE,NA,Metaphire,accepted,1062143
+Helobdella pichipanan,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella pichipanan,Helobdella pichipanan,species,779129,FALSE,NA,Helobdella,accepted,160018
+Erpobdella wuttkei,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella wuttkei,Erpobdella wuttkei,NA,172128,FALSE,NA,Erpobdella,accepted,160006
+Amynthas lini,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas lini,Amynthas lini,species,786626,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas mayshanensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas mayshanensis,Amynthas mayshanensis,species,786624,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas polyglandularis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas polyglandularis,Amynthas polyglandularis,species,786625,FALSE,sibling_higher,Amynthas,accepted,1062218
+Erpobdella mexicana,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella mexicana,Erpobdella mexicana,species,849665,FALSE,NA,Erpobdella,accepted,160006
+Erpobdella ochoterenai,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella ochoterenai,Erpobdella ochoterenai,species,849666,FALSE,NA,Erpobdella,accepted,160006
+Amynthas diffringens,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas diffringens,Amynthas diffringens,species,615951,FALSE,sibling_higher,Amynthas,accepted,1062218
+Metaphire tschiliensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire tschiliensis,Metaphire tschiliensis,species,619490,FALSE,NA,Metaphire,accepted,1062143
+Amynthas axillis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas axillis,Amynthas axillis,species,21150,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas triastriatus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas triastriatus,Amynthas triastriatus,species,690145,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas lautus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas lautus,Amynthas lautus,species,21152,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas dactilicus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas dactilicus,Amynthas dactilicus,species,690129,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas incongruus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas incongruus,Amynthas incongruus,species,264557,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas kiangensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas kiangensis,Amynthas kiangensis,species,1071444,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas plantoporophoratus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas plantoporophoratus,Amynthas plantoporophoratus,species,542154,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas benignus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas benignus,Amynthas benignus,species,1071459,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas limellus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas limellus,Amynthas limellus,species,258927,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas homochaetus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas homochaetus,Amynthas homochaetus,species,430765,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas tuberculatus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas tuberculatus,Amynthas tuberculatus,species,690143,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas pongchii,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas pongchii,Amynthas pongchii,species,168835,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas asacceus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas asacceus,Amynthas asacceus,NA,1042262,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas loti,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas loti,Amynthas loti,species,1042266,FALSE,sibling_higher,Amynthas,accepted,1062218
+Diplocardia eiseni,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Diplocardia,Diplocardia eiseni,Diplocardia eiseni,species,615948,FALSE,NA,Diplocardia,accepted,1062007
+Diplocardia smithi,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Diplocardia,Diplocardia smithi,Diplocardia smithi,species,77653,FALSE,NA,Diplocardia,accepted,1062007
+Diplocardia caroliniana,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Diplocardia,Diplocardia caroliniana,Diplocardia caroliniana,species,77648,FALSE,NA,Diplocardia,accepted,1062007
+Helobdella octatestisaca,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella octatestisaca,Helobdella octatestisaca,species,321052,FALSE,NA,Helobdella,accepted,160018
+Helobdella melananus,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella melananus,Helobdella melananus,NA,321058,FALSE,NA,Helobdella,accepted,160018
+Erpobdella montezuma,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella montezuma,Erpobdella montezuma,species,780892,FALSE,NA,Erpobdella,accepted,160006
+Dina lyhnida,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,1,Dina,Dina lyhnida,Dina lyhnida,species,903051,FALSE,NA,Dina,accepted,1290570
+Dina krilata,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,1,Dina,Dina krilata,Dina krilata,species,377989,FALSE,NA,Dina,accepted,1290570
+Dina lepinja,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,1,Dina,Dina lepinja,Dina lepinja,species,378002,FALSE,NA,Dina,accepted,1290570
+Dina ohridana,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,1,Dina,Dina ohridana,Dina ohridana,species,903049,FALSE,NA,Dina,accepted,1290570
+Dina latestriata,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,1,Dina,Dina latestriata,Dina latestriata,species,378000,FALSE,NA,Dina,accepted,1290570
+Dina svilesta,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,1,Dina,Dina svilesta,Dina svilesta,species,1023098,FALSE,NA,Dina,accepted,1290570
+Erpobdella johanssoni,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella johanssoni,Erpobdella johanssoni,NA,5574,FALSE,NA,Erpobdella,accepted,160006
+Helobdella atli,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella atli,Helobdella atli,species,50551,FALSE,NA,Helobdella,accepted,160018
+Helobdella virginiae,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella virginiae,Helobdella virginiae,species,146400,FALSE,NA,Helobdella,accepted,160018
+Helobdella socimulcensis,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella socimulcensis,Helobdella socimulcensis,species,50553,FALSE,NA,Helobdella,accepted,160018
+Erpobdella annulata,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella annulata,Erpobdella annulata,species,631087,FALSE,NA,Erpobdella,accepted,160006
+Helobdella californica,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella californica,Helobdella californica,species,376476,FALSE,NA,Helobdella,accepted,160018
+Amynthas zhangi,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas zhangi,Amynthas zhangi,species,5224435,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas lingshuiensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas lingshuiensis,Amynthas lingshuiensis,NA,5224426,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas stricosus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas stricosus,Amynthas stricosus,species,5224430,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas trapezoides,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas trapezoides,Amynthas trapezoides,species,5224429,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas hainanicus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas hainanicus,Amynthas hainanicus,NA,5705710,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas mediocus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas mediocus,Amynthas mediocus,species,5705681,FALSE,sibling_higher,Amynthas,accepted,1062218
+Metaphire peguana,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire peguana,Metaphire peguana,species,5224417,FALSE,NA,Metaphire,accepted,1062143
+Metaphire bahli,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire bahli,Metaphire bahli,species,5224418,FALSE,NA,Metaphire,accepted,1062143
+Amynthas longisiphonus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas longisiphonus,Amynthas longisiphonus,species,5705747,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas szechuanensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas szechuanensis,Amynthas szechuanensis,species,5705702,FALSE,sibling_higher,Amynthas,accepted,1062218
+Metaphire exilis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire exilis,Metaphire exilis,species,5705679,FALSE,NA,Metaphire,accepted,1062143
+Amynthas daeari,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas daeari,Amynthas daeari,species,5224433,FALSE,sibling_higher,Amynthas,accepted,1062218
+Helobdella bowermani,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella bowermani,Helobdella bowermani,species,5492585,FALSE,NA,Helobdella,accepted,160018
+Helobdella simplex,Annelida,Clitellata,Rhynchobdellida,Glossiphoniidae,1,1,Helobdella,Helobdella simplex,Helobdella simplex,species,5492582,FALSE,NA,Helobdella,accepted,160018
+Metaphire tecta,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire tecta,Metaphire tecta,NA,7487901,FALSE,NA,Metaphire,accepted,1062143
+Amynthas pectiniferus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas pectiniferus,Amynthas pectiniferus,NA,5972679,FALSE,sibling_higher,Amynthas,accepted,1062218
+Dichogaster modigliani,Annelida,Clitellata,Crassiclitellata,Megascolecidae,1,1,Dichogaster,Dichogaster modigliani,Dichogaster modigliani,species,5972684,FALSE,NA,Dichogaster,accepted,1040124
+Metaphire houlleti,Annelida,Clitellata,Crassiclitellata,Megascolecidae,NA,1,Metaphire,Metaphire houlleti,Metaphire houlleti,species,2845428,FALSE,NA,Metaphire,accepted,1062143
+Amynthas jiriensis,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas jiriensis,Amynthas jiriensis,species,5972678,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas alexandri,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas alexandri,Amynthas alexandri,species,5972675,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas papulosus,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas papulosus,Amynthas papulosus,species,2845407,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas lalashan,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas lalashan,Amynthas lalashan,NA,7487470,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas fusing,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas fusing,Amynthas fusing,NA,7487467,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas lioujia,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas lioujia,Amynthas lioujia,NA,7487471,FALSE,sibling_higher,Amynthas,accepted,1062218
+Amynthas majia,Annelida,Clitellata,Crassiclitellata,Megascolecidae,0,1,Amynthas,Amynthas majia,Amynthas majia,NA,7487475,FALSE,sibling_higher,Amynthas,accepted,1062218
+Erpobdella adani,Annelida,Clitellata,Arhynchobdellida,Erpobdellidae,1,NA,Erpobdella,Erpobdella adani,Erpobdella adani,NA,7486055,FALSE,NA,Erpobdella,accepted,160006
+Drawida hattamimizu,Annelida,Clitellata,Moniligastrida,Moniligastridae,1,1,Drawida,Drawida hattamimizu,Drawida hattamimizu,species,60439,FALSE,NA,Drawida,accepted,1027687
+Aporrectodea trapezoides,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,Aporrectodea,Aporrectodea trapezoides,Aporrectodea trapezoides,species,1042242,FALSE,NA,Aporrectodea,accepted,994659
+Haemopis kingi,Annelida,Clitellata,Hirudinida,Haemopidae,1,1,Haemopis,Haemopis kingi,Haemopis kingi,species,944488,FALSE,NA,Haemopis,accepted,1382833
+Oxyptychus braziliensis,Annelida,Clitellata,Hirudinida,Hirudinidae,1,NA,Oxyptychus,Oxyptychus braziliensis,Oxyptychus braziliensis,species,663523,FALSE,NA,Oxyptychus,accepted,1439623
+Hirudo troctina,Annelida,Clitellata,Hirudinida,Hirudinidae,1,0,Hirudo,Hirudo troctina,Hirudo troctina,species,536322,FALSE,NA,Hirudo,accepted,370714
+Barbronia gwalagwalensis,Annelida,Clitellata,Hirudinida,Salifidae,1,NA,Barbronia,Barbronia gwalagwalensis,Barbronia gwalagwalensis,species,756058,FALSE,NA,Barbronia,accepted,1511282
+Haemopis terrestris,Annelida,Clitellata,Hirudinida,Haemopidae,1,1,Haemopis,Haemopis terrestris,Haemopis terrestris,species,309974,FALSE,NA,Haemopis,accepted,1382833
+Barbronia arcana,Annelida,Clitellata,Hirudinida,Salifidae,1,NA,Barbronia,Barbronia arcana,Barbronia arcana,species,224442,FALSE,NA,Barbronia,accepted,1511282
+Hormogaster elisae,Annelida,Clitellata,Haplotaxida,Hormogastridae,0,1,Hormogaster,Hormogaster elisae,Hormogaster elisae,species,368543,FALSE,NA,Hormogaster,accepted,1062083
+Aporrectodea nocturna,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,Aporrectodea,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hormogaster oroeli,Annelida,Clitellata,Haplotaxida,Hormogastridae,0,1,Hormogaster,Hormogaster oroeli,Hormogaster oroeli,species,1089443,FALSE,NA,Hormogaster,accepted,1062083
+Hormogaster praetiosa nigra,Annelida,Clitellata,Haplotaxida,Hormogastridae,0,1,Hormogaster,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hormogaster ireguana,Annelida,Clitellata,Haplotaxida,Hormogastridae,0,1,Hormogaster,Hormogaster ireguana,Hormogaster ireguana,species,1089447,FALSE,NA,Hormogaster,accepted,1062083
+Martiodrilus tenkatei,Annelida,Clitellata,Haplotaxida,Glossoscolecidae,0,1,Martiodrilus,Martiodrilus tenkatei,Martiodrilus tenkatei,species,5705841,FALSE,NA,Martiodrilus,accepted,1062131
+Aporrectodea molleri,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,Aporrectodea,Aporrectodea molleri,Aporrectodea molleri,species,245042,FALSE,NA,Aporrectodea,accepted,994659
+Aporrectodea giardi,Annelida,Clitellata,Haplotaxida,Lumbricidae,0,1,Aporrectodea,Aporrectodea giardi,Aporrectodea giardi,species,973362,FALSE,NA,Aporrectodea,accepted,994659
+Drawida koreana,Annelida,Clitellata,Moniligastrida,Moniligastridae,1,1,Drawida,Drawida koreana,Drawida koreana,species,5693491,FALSE,NA,Drawida,accepted,1027687
+Drawida impertusa,Annelida,Clitellata,Moniligastrida,Moniligastridae,1,1,Drawida,Drawida impertusa,Drawida impertusa,species,5972740,FALSE,NA,Drawida,accepted,1027687
+Drawida alishanensis,Annelida,Clitellata,Moniligastrida,Moniligastridae,1,1,Drawida,Drawida alishanensis,Drawida alishanensis,NA,7488262,FALSE,NA,Drawida,accepted,1027687
+Drawida fenqihuensis,Annelida,Clitellata,Moniligastrida,Moniligastridae,1,1,Drawida,Drawida fenqihuensis,Drawida fenqihuensis,NA,7488264,FALSE,NA,Drawida,accepted,1027687
+Helobdellanunununojensis,NA,NA,NA,NA,1,1,Helobdella,Helobdellanunununojensis,Helobdella nununununojensis,NA,51290,FALSE,NA,Helobdella,accepted,160018
+Aporrectodeacturna,NA,NA,NA,NA,0,1,Aporrectodea,Aporrectodeacturna,Aporrectodea nocturna,NA,245040,FALSE,NA,Aporrectodea,accepted,994659
+Hormogaster pretiosaleida,NA,NA,NA,NA,0,1,Hormogaster,Hormogaster pretiosaleida,Hormogaster praetiosa nigra,NA,1089449,FALSE,infraspecific,Hormogaster,accepted,1062083
