@@ -137,5 +137,12 @@ write_csv(all_taxa_res2, here(rosetta, 'current_draft',
 ```
 
 
+```{r}
+
+all_taxa_res2<-read_csv(here(rosetta, 'current_draft',
+                              '20220704_blast-db_taxonomy-all.csv'))
+```
+
+
 
 
