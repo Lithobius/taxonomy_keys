@@ -62,62 +62,80 @@ Organisms selected to filter are in a csv "not-marine-metazoa_db-filter.csv" whi
 no_record <- bold_genbank_taxa %>%
   filter((is.na(kingdom)) | ((class == "" & genus == "")))  %>%
   select(accession, taxonID, phylum) %>% 
-  separate(accession, into = c('accession_1','accession_2'), sep = '[|]', fill = 'right')
+  separate(accession, into = c('accession_1','accession_2'), sep = '[|]', fill = 'right') %>%
+  mutate(across(.cols = everything(),
+                .fns = ~ na_if(., "")))
 
 write.csv(no_record, here(rosetta, 'problems', 'not_found', '20220716_db_accessions_no-id.csv'))
 
-
+# clean the bold_genbank database and subset to only marine metazoa
 bold_genbank_taxa2 <- bold_genbank_taxa %>%
   subset(kingdom == "Metazoa") %>%
   filter(!(phylum == "")) %>%
   filter(!(class == "" & genus == "")) %>%
   #filter for marine metazoa using list
-  filter(!(class %in% not_mm$taxa | order %in% not_mm$taxa | family %in% not_mm$taxa))
-
-
-
-
-glimpse(bold_genbank_taxa2)
-
-unique(bold_genbank_taxa2$order)
+  filter(!(class %in% not_mm$taxa | order %in% not_mm$taxa | family %in% not_mm$taxa)) %>%
+  mutate(across(.cols = everything(),
+                .fns = ~ na_if(., ""))) %>%
+  # generate identification column that is lowest possible ID
+  mutate(identification = coalesce(species, genus)) %>%
+  mutate(identification = coalesce(identification, family)) %>%
+  mutate(identification = coalesce(identification, order)) %>%
+  mutate(identification = coalesce(identification, class)) %>%
+  mutate(identification = coalesce(identification, phylum)) %>%
+  clean_names()
 ```
 
 
 The Hakai list also needs sorting. There are many extra columns that may not be needed, and there are a few algae to remove.
 
+Here I am also making a csv version that is reduced for other analyses/species lists.
+
 ```{r sort hakailist}
 #reduce number of columns for other kinds of analysis
 hakailist <- hakailist %>%
-  select(Identification, Process.ID, BIN, Catalog.Num, Collection.Date,
-         Phylum, Class, Order, Family, Genus, Species, Sector, Lat, Lon)
+  select(identification, sample_id, bin,
+         phylum, class, order, family, genus, species,
+         state_province, region, sector, exact_site, lat, lon) %>%
+  filter(!(class %in% not_mm$taxa | order %in% not_mm$taxa | family %in% not_mm$taxa |
+             phylum %in% not_mm$taxa)) %>%
+    mutate(across(.cols = everything(),
+                .fns = ~ na_if(., "")))
 
-#animals only, remove others
-#again, an exclusion list instead of an inclusion list
-not_animal <- c('Rhodophyta', 'Ochrophyta', 'Ciliophora')
-hakailist <- hakailist %>%
-  subset(!(Phylum %in% not_animal))
+# write out the hakai records with coords for later analysis
+write_csv(hakailist, here(hakai_blast, '20220716_hakai_all_marine_samples-metazoa.csv'))
 ```
 
 ## Merge bold-genbank and Hakai
 
-```{r merge boldgb and hakai}
+```{r merge and clean boldgb and hakai}
 #Despite trying several varieties of join the best way to do it here
-bold_gb_hakai <- full_join(hakailist, bold_gb_marine)
-
+bold_gb_hakai <- full_join(hakailist, bold_genbank_taxa2) %>%
+  select(!(c(state_province, region, sector, exact_site, lat, lon, superkingdom, kingdom))) %>%
+  relocate(c(accession, taxon_id), .before = phylum)
 
 # write if needed
-#write.csv(bold_gb_hakai, here('hakaidata', '2021rosetta', 'raw',
- #                             '20210812_hakai_bold_gbif_database_raw.csv'))
+write.csv(bold_gb_hakai, here(hakai_blast,
+                             '20220716_hakai_bold_gbif_database_raw.csv'))
+#read back in to save memory
+#bold_gb_hakai <- read_csv(here(hakai_blast,
+#                             '20220716_hakai_bold_gbif_database_raw.csv'))[-1]
+
+# for this cleaning we just want unique identifications, no id#s
+bold_gb_hakai2 <- bold_gb_hakai %>%
+  mutate(verbatim_identification = identification) %>%
+  select(identification, verbatim_identification) %>%
+  distinct() %>%
+  
+  
+
+
 
 ```
 
 ## Make a clean species column
 
 ```{r clean columns}
-#create a verbatimTaxonRank column to retain original ranks of species
-bold_gb_hakai$verbatimTaxonRank <- bold_gb_hakai$Species
-
-
 #clean species column with all extra identifiers removed via regex
 #NOTE double escape for period special character: "\\."
 ## note note i think some of these made issues with the merged database; I need to rewrite this call
@@ -140,10 +158,7 @@ bold_gb_hakai <- bold_gb_hakai %>%
                                               "unclassified [a-zA-Z]+" = "",
                                               " [\\(][a-zA-Z]+[\\)]" = "")))
 
-# fill kingdom and domain from merge
-# DO NOT DO THIS IF NOT ALREADY FILTERED FOR METAZOA
-bold_gb_hakai$Domain <- "Eukaryota"
-bold_gb_hakai$Kingdom <- "Metazoa"
+
 ```
 
 ```{r read and write clean}
