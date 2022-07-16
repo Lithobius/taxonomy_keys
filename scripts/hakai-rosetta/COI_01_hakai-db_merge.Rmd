@@ -58,102 +58,30 @@ Organisms selected to filter are in a csv "not-marine-metazoa_db-filter.csv" whi
 
 
 ```{r clean-bold-genbank}
+# extract problem entries
+no_record <- bold_genbank_taxa %>%
+  filter((is.na(kingdom)) | ((class == "" & genus == "")))  %>%
+  select(accession, taxonID, phylum) %>% 
+  separate(accession, into = c('accession_1','accession_2'), sep = '[|]', fill = 'right')
+
+write.csv(no_record, here(rosetta, 'problems', 'not_found', '20220716_db_accessions_no-id.csv'))
+
+
 bold_genbank_taxa2 <- bold_genbank_taxa %>%
   subset(kingdom == "Metazoa") %>%
   filter(!(phylum == "")) %>%
-  filter(!(class == "" & genus == ""))
-
-unique(bold_genbank_taxa2$class)
-
-
-no_record <- bold_genbank_taxa %>%
-  filter(is.na(kingdom)) %>%
-  select(accession) %>% 
-  separate(accession, into = c('accession_1','accession_2'), sep = '[|]', fill = 'right')
+  filter(!(class == "" & genus == "")) %>%
+  #filter for marine metazoa using list
+  filter(!(class %in% not_mm$taxa | order %in% not_mm$taxa | family %in% not_mm$taxa))
 
 
+
+
+glimpse(bold_genbank_taxa2)
+
+unique(bold_genbank_taxa2$order)
 ```
 
-
-
-
-```{r sort bold_genbank}
-#animals only
-bold_genbank_taxa <- bold_genbank_taxa %>%
-  subset(V4 == 'Metazoa')
-
-
-# list of land animals from class and family, depending on what should be removed
-land_animals_V6 <- c('Collembola', 'Insecta', 'Amphibia', 'Japygidae',
-                     'Diplopoda', 'Chilopoda', 'Aves', 'Lepidosauria', 'Kinosternidae',
-                     	'Emydidae', 'Metazoa incertae sedis', 'Arthropoda incertae sedis',
-                     'Chordata incertae sedis', 'Testudinidae', 'Parajapygidae',
-                     'Alligatoridae', 'Trionychidae', 'Chelidae', 'Octostigmatidae',
-                     'Geoemydidae', 'Crocodylidae', 'Podocnemididae', 'Pelomedusidae',
-                     'Udeonychophora', 'Dermatemydidae', 'Dermochelyidae', 'Chelydridae')
-
-land_animals_V7 <- c('Rodentia', 'Canidae', 'Felidae', 'Ursidae', 'Cervidae',
-                     'Hominidae', 'Procavidae', 'Vespertilionidae', 'Rhinolophidae',
-                     'Soricidae', 'Erinaceidae', 'Talpidae', 'Macropodidae', 
-                     'Suidae', 'Procyonidae', 'Daubentoniidae', 'Lemuridae', 
-                     'Tarsiidae', 'Muridae', 'Bovidae', 'Nesomyidae', 'Camelidae',
-                     'Equidae', 'Geomyidae', 'Sciuridae', 'Mustelidae', 'Caviidae',
-                     'Hippopotamidae', 'Elephantidae', 'Vombatidae', 'Tenrecidae',
-                     'Thryonomyidae', 'Spalacidae', 'Macroscelididae', 'Tupaiidae', 
-                     'Manidae', 'Cynocephalidae', 'Chrysochloridae', 'Didelphidae',
-                     'Cricetidae', 'Procaviidae', 'Phalangeridae', 'Tachyglossidae',
-                     'Ailuridae', 'Pseudocheiridae', 'Peramelidae', 'Potoroidae', 
-                     'Tayassuidae', 'Heteromyidae', 'Hylobatidae', 'Cebidae', 'Galagidae',
-                     'Aotidae', 'Cercopithecidae', 'Burramyidae', 'Ochotonidae',
-                     'Pteropodidae', 'Mephitidae', 'Tapiridae', 'Dasyuridae',
-                     'Phyllostomidae', 'Molossidae', 'Emballonuridae', 'Mormoopidae',
-                     'Echimyidae', 'Rhinocerotidae', 'Viverridae', 'Anomaluridae',
-                     'Hystricidae', 'Atelidae', 'Antilocapridae', 'Bathyergidae',
-                     'Bradypodidae', 'Caenolestidae', 'Caenolestidae', 'Calomyscidae',
-                     'Capromyidae', 'Castoridae', 'Cheirogaleidae', 'Tragulidae',
-                     'Thyropteridae', 'Thylacinidae', 'Solenodontidae', 'Rhinopomatidae',
-                     'Rhinonycteridae', 'Platacanthomyidae', 'Pitheciidae', 'Ctenomyidae',
-                     'Chlamyphoridae', 'Chiroptera', 'Chinchillidae', 'Cuniculidae',
-                     'Cyclopedidae', 'Dasypodidae', 'Dasyproctidae', 'Dipodidae',
-                     'Erethizontidae', 'Giraffidae', 'Gliridae', 'Furipteridae',
-                     'Eupleridae', 'Herpestidae', 'Hipposideridae', 'Hyaenidae',
-                     'Indriidae', 'Petauridae', 'Peroryctidae', 'Paleopropithecidae',
-                     'Orycteropodidae', 'Ornithorhynchidae', 'Octodontidae', 'Nycteridae',
-                     'Noctilionidae', 'Natalidae', 'Myrmecophagidae', 'Nandiniidae',
-                     'Myocastoridae', 'Moschidae', 'Megalonychidae', 'Mammalia incertae sedis',
-                     'Dictynidae', 'Lycosidae', 'Philodromidae', 'Salticidae', 'Tetragnathidae',
-                     'Linyphiidae', 'Thomisidae', 'Pisauridae', 'Tetranychidae', 'Agelenidae',
-                     'Araneidae', 'Pettalidae', 'Sironidae', 'Neogoveidae', 'Troglosironidae',
-                     'Buthidae', 'Euctenizidae', 'Phalangiidae', 'Heptathelidae',
-                     'Liphistiidae', 'Anyphaenidae', 'Phalangodidae', 'Epedanidae',
-                     'Gnaphosidae', 'Ctenidae',
-                     'Thelyphonidae', 'Dysderidae', 'Antrodiaetidae', 'Stylocellidae',
-                     'Pholcidae', 'Amaurobiidae', 'Theridiidae', 'Clubionidae', 'Miturgidae',
-                     'Diguetidae')
-
-#remove land animals from list
-bold_gb_marine <- bold_genbank_taxa %>%
-  subset(!(V6 %in% land_animals_V6)) %>%
-  subset(!(V7 %in% land_animals_V7))
-
-#pick all columns except unnamed rank 'Opisthokonta', rename for merge
-bold_gb_marine <- bold_gb_marine %>%
-  select(V1, V2, V4, V5, V6, V7, V8, V9) %>%
-  rename(BIN = V1,
-         Domain = V2,
-         Kingdom = V4,
-         Phylum = V5,
-         Class = V6,
-         Family = V7,
-         Genus = V8,
-         Species = V9)
-
-#find and fix any known errors
-#actinopteri == Actinopterygii for example
-bold_gb_marine <- bold_gb_marine %>%
-  mutate()
-
-```
 
 The Hakai list also needs sorting. There are many extra columns that may not be needed, and there are a few algae to remove.
 
