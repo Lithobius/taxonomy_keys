@@ -15,6 +15,7 @@ One adjustment I am making here is that this script will only be for the merging
 library(tidyverse)
 library(dplyr)
 library(stringr)
+library(janitor)
 library(data.table)
 library(here)
 
@@ -26,22 +27,23 @@ rosetta <- here('species_lists', 'hakai', '2022rosetta')
 ## 1. Merging the multiple files comprising the Hakai Institute COI eDNA barcode database
 
 
-Load-in for this database is relatively complicated. There are two sources -- the sequences from Hakai itself and the sequences from BOLD/NCBI. They have to be read in separately, combined, and higher taxonomy assigned. The files here were updated August 2021 and may need updating.
+Load-in for this database is relatively complicated. There are two sources -- the sequences from Hakai itself and the sequences from BOLD/NCBI. They have to be read in separately, combined, and higher taxonomy assigned. The files here were updated August 2021 and may need updating. 
 
-It may take a while to load the bold_genbank files as they tend to be large.
+It may take a while to load the bold_genbank files as they tend to be large. Also, it says that it contains the Hakai barcodes but I'm going to merge the two anyway, it seems to be either missing some or is having trouble finding them when I search.
 
 ```{r load-in}
 #these are all Hakai's personally barcoded samples
 #includes internal codes, taxonomic information, and collection locality
 hakailist <- read.csv(here(hakai_blast,
-                           'All_Hakai_Marine_Samples_March2021-WithCOI.csv'))
+                           'All_Hakai_Marine_Samples_March2021-WithCOI.csv')) %>% clean_names()
 
 #this is their 2020 taxon mapping file from BOLD and Genbank
 #there are no column names in this file
 ## update: this might actually be a newer file? compare to file above?
 bold_genbank_taxa <- read.delim(here(hakai_blast,
-                           'taxa_map', 'CO1.BOLD_genbank_combined.taxa_map.w_hakai_barcodes.sunday_lab.txt'),
-                           header = FALSE)
+                           'CO1.BOLD_genbank_combined.taxa_map.w_hakai_barcodes.sunday_lab.txt'))
+
+not_mm <- read_csv(here(hakai_blast, 'not-marine-metazoa_db-filter.csv'))
 ```
 
 ## Filter lists
@@ -51,6 +53,29 @@ I'm heavily filtering the data I'm working with at the moment to taxa of interes
 This list is exclusion instead of keep in the case that the database is expanded in the future. I can't predict what to keep later, but 'Japygidae' will never be marine, for instance.
 
 NOTE: I have removed all birds (V6 == 'Aves') here. This may be undesirable. We will have to determine if there are birds we want to keep. I have also removed all insects (V6 == 'Insecta'), which may also be undesirable. I did not remove Acari as mites may show up in the data. However, it is not filtered to marine-only mites as I am not familiar with their taxonomy.
+
+Organisms selected to filter are in a csv "not-marine-metazoa_db-filter.csv" which is separate from the regular key, as it is for filtering the database itself rather than BLAST results. I may need to make a longer version by unique accession number as entries with both bold and genbank IDs often have the two separated with a | rather than uniquely identified, but this will not change the key at just the taxonomy stage.
+
+
+```{r clean-bold-genbank}
+bold_genbank_taxa2 <- bold_genbank_taxa %>%
+  subset(kingdom == "Metazoa") %>%
+  filter(!(phylum == "")) %>%
+  filter(!(class == "" & genus == ""))
+
+unique(bold_genbank_taxa2$class)
+
+
+no_record <- bold_genbank_taxa %>%
+  filter(is.na(kingdom)) %>%
+  select(accession) %>% 
+  separate(accession, into = c('accession_1','accession_2'), sep = '[|]', fill = 'right')
+
+
+```
+
+
+
 
 ```{r sort bold_genbank}
 #animals only
