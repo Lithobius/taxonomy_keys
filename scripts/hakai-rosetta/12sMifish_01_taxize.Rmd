@@ -1,0 +1,196 @@
+---
+title: "12s_Mifish_01_taxize"
+author: "Kate Sheridan"
+date: '2022-07-13'
+output: html_document
+---
+
+This uses the Midori RDP classifier list
+This will include more than fish, but 12S Mifish does pick up more than fish anyway.
+
+The Midori classifier does have taxonomy built in, but we want the output to match the COI output, and especially WoRMS taxonomy. Assumedly, there will be a lot here with only OTT codes as few of the non-fish vertebrates will be marine.
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(stringr)
+library(taxize)
+library(here)
+
+# here filepaths
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
+```
+
+```{r load-in}
+midori <- read_csv(here(hakai_blast, '20211216_midori_all_sp.csv'))
+```
+
+```{r otl-worms}
+midori_search <- midori %>%
+  select(species) %>%
+  # remove 'sp'
+  mutate(species = str_remove_all(species, c("( sp)$"))) %>%
+  distinct()
+
+#split into smaller sections to guarantee finishing
+
+#msearch1 <- midori_search[1:7000,]
+#msearch2 <- midori_search[7001:30000,]
+#msearch3 <- midori_search[30001:60000,]
+#msearch4 <- midori_search[60001:100000,]
+#msearch5 <- midori_search[100001:140000,]
+#msearch6 <- midori_search[140001:180000,]
+#msearch7 <- midori_search[180001:210000,]
+msearch8 <- midori_search[210001:246284,]
+
+#temp
+msearch9 <- midori_search %>%
+  filter(!(species %in% mresolved$search_string))
+
+
+# resolve with open tree of life, all domains to filter out fungi, etc.
+midori_resolved <- tol_resolve(msearch9$species) %>%
+  mutate(search_string = str_to_sentence(search_string))
+
+
+# manually set temp variables to merge later
+#mresolved1 <- midori_resolved
+#mresolved2 <- midori_resolved
+#mresolved3 <- midori_resolved
+#mresolved4 <- midori_resolved
+#mresolved5 <- midori_resolved
+#mresolved6 <- midori_resolved
+#mresolved7 <- midori_resolved
+#mresolved8 <- midori_resolved
+#temp
+mresolved9 <- midori_resolved
+
+
+mresolved <- mresolved1 %>%
+  bind_rows(mresolved2, mresolved3, mresolved4,
+            mresolved5, mresolved6, mresolved7,
+            mresolved8)
+
+#write_rds(mresolved, here('temp_midori.rds'))
+
+# extract 'failures'
+mresolved_fail <- mresolved9 %>%
+  filter(is.na(unique_name))
+
+# run through gbif
+mresolve_gbif <- get_gbifid_(sci = mresolved_fail$search_string)
+
+mresolve_gbif2 <- map_dfr(.x= mresolve_gbif, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(scientificname, status, confidence, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_taxa = canonicalname)
+  
+mresolved_fail <- mresolved_fail %>%
+  filter(!(search_string %in% mresolve_gbif2$taxa_query))
+
+# run through BOLD
+mresolve_bold <- get_boldid_(sci = mresolved_fail$search_string)
+
+mresolve_bold2 <- map_dfr(.x= mresolve_bold, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(!(is.na(taxid))) %>%
+  select(taxa_query, taxon, taxid, tax_rank, tax_division) %>%
+    rename(bold_id = taxid,
+         bold_taxa = taxon,
+         rank = tax_rank)
+
+mresolved_fail <- mresolved_fail %>%
+  filter(!(search_string %in% mresolve_bold2$taxa_query))
+
+
+```
+
+## Problems
+```{r problems}
+# now we'll extract the first word in each taxa here, presumably the genus, and try searching that way.
+## Many of these issues are with insects, and what really matters is that we can sort out insects from our results.
+
+mresolved_fail_gen <- mresolved_fail %>%
+  select(search_string) %>%
+  # extract genus names so we can test them
+  separate(search_string, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  # remove brackets?
+  mutate(genus_split = str_remove_all(genus_split, "[\\[\\]]")) 
+
+fail_gen_search <- mresolved_fail_gen %>%
+  select(genus_split)%>%
+  distinct()
+
+# run through gbif
+mresolve_gbif_gen <- get_gbifid_(sci = fail_gen_search$genus_split)
+
+mresolve_gbif_gen2 <- map_dfr(.x= mresolve_gbif_gen, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(scientificname, status, confidence, matchtype, kingdomkey,
+             phylumkey, orderkey,
+             classkey, familykey, genuskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_taxa = canonicalname,
+         genus_split = taxa_query)
+  
+mresolved_fail_gen2 <- mresolved_fail_gen %>%
+  left_join(mresolve_gbif_gen2)
+
+mresolved_fail <- mresolved_fail_gen %>%
+  filter(is.na(gbif_key))
+
+fail_gen_search <- fail_gen_search %>%
+  filter(genus_split %in% mresolved_fail$genus_split)
+
+# bold
+mresolve_bold_gen <- get_boldid_(sci = fail_gen_search$genus_split)
+
+mresolve_bold_gen2 <- map_dfr(.x= mresolve_bold_gen, ~ data.frame(.x), .id = 'taxa_query')
+
+# TOL
+mresolve_eol_gen <- get_eolid_(fail_gen_search$genus_split)
+mresolve_eol_gen2 <- map_dfr(.x= mresolve_eol_gen, ~ data.frame(.x), .id = 'taxa_query')
+
+mresolve_eol_classify <- classification(mresolve_eol_gen2$eolid, db = 'eol')
+mresolve_eol_class2 <- map_dfr(.x = mresolve_eol_classify, ~ data.frame(.x), .id = 'eolid') %>%
+  # fix the bug that doesn't have ranks 
+  mutate(rank = ifelse(name %in% c('Fungi'), 'kingdom', rank)) %>%
+  mutate(rank = ifelse(name %in% c('Arthropoda', 'Chordata'), 'phylum', rank)) %>%
+  mutate(rank = ifelse(name %in% c('Insecta', 'Reptilia'), 'class', rank)) %>%
+  mutate(rank = ifelse(name %in% c('Disholandricus', 'Rossmanomyces',
+                                   'Ornithuroscincus'), 'genus', rank)) %>%
+  filter(rank %in% c('kingdom', 'phylum', 'class', 
+                     'order', 'family', 'genus', 'species')) %>%
+  select(!(id)) %>%
+  filter(!(name %in% c('Dipnotetrapodomorpha', 'Sarcopterygii'))) %>%
+  distinct() %>%
+  pivot_wider(id_cols = eolid, names_from = rank, values_from = name) %>%
+  select(!(c(species))) %>%
+  distinct(genus, .keep_all = TRUE) %>%
+  filter(!(is.na(genus))) %>%
+  rename(genus_split = genus)
+
+mresolved_fail_gen2 <- mresolved_fail_gen %>%
+  left_join(mresolve_eol_class2, by = 'genus_split')
+
+
+glimpse(mresolve_eol_class2)
+
+
+midori_resolved_gen <- tol_resolve(fail_gen_search$genus_split) %>%
+  mutate(search_string = str_to_sentence(search_string))
+
+```
+
+
+
