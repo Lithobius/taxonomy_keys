@@ -164,6 +164,8 @@ bold_gb_hakai$verbatimTaxonRank <- bold_gb_hakai$Species
 
 #clean species column with all extra identifiers removed via regex
 #NOTE double escape for period special character: "\\."
+## note note i think some of these made issues with the merged database; I need to rewrite this call
+## maybe to str_remove_all in multiple rows?
 bold_gb_hakai <- bold_gb_hakai %>%
   mutate(Species = str_replace_all(Species, c("sp\\.(.*)" = "sp\\.", "cf. " = "",
                                               "nr. " = "",  "aff. " = "",

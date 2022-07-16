@@ -9,7 +9,6 @@ output: html_document
 library(tidyverse)
 library(stringr)
 library(taxize)
-#library(fuzzyjoin) # i think this was from an older version?
 library(here)
 
 # here filepaths
@@ -25,6 +24,30 @@ hakai_db <- read.csv(here(hakai_blast,
   select(!(verbatim_taxon_rank))
 ```
 
+```{r worms-function}
+library(worrms)
+
+## requires worrms to be loaded
+# input is vector of species names
+# use wm_records_names to extract 
+# this doesn't need the + signs
+
+# right now this breaks if not-found
+search_records_worms <- function(spnames) {
+  search <- tibble()
+  for (i in spnames) {
+    print(paste0('searching for ', i))
+    record <- wm_records_names(i, marine_only = FALSE)
+    message('done')
+    search <- append(search, record)
+  }
+  names(search) <- spnames
+  search_output <- map_dfr(.x = search, ~ data.frame(.x), .id = 'query') %>%
+    janitor::clean_names() %>%
+    select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+  return(search_output)
+}
+```
 
 ## Taxize by group
 
@@ -455,7 +478,7 @@ chordata_search <- chordata %>%
   select(!(c(unique_name)))
 
 # 2: worms
-chordata_worms <- get_wormsid_(sci_com = chordata_search$worms_query)
+chordata_worms <- get_wormsid_(sci_com = chordata_search$worms_query, marine_only = FALSE, accepted = FALSE)
 # get_wormsid_ gives back null and length 0 elements
 ## first remove with compact and discard then map_dfr
 chordata_worms2 <- chordata_worms %>% 
@@ -479,30 +502,29 @@ chordata_worms2 <- chordata_worms2 %>%
         worms_sciname = scientificname) %>%
   distinct()
 
-# worms classification
-chordata_worms_classify <- classification(chordata_worms2$worms_aphiaid, db = 'worms')
+# extract higher and info about freshwater
+chordata_records <- search_records_worms(chordata_worms2$worms_sciname)
 
-# make and rotate dataframe 
-chordata_worms_classify2 <- map_dfr(.x = chordata_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
-  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
-  rename_with(~ str_replace(.x, 'name_', '')) %>%
-  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
-  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
-  janitor::clean_names()
-
-chordata_worms3 <- chordata_worms2 %>%
-  left_join(chordata_worms_classify2) %>%
+# refine results to be useful
+chordata_records <- chordata_records %>%
+  # only animal hits
   filter(kingdom == 'Animalia') %>%
-  janitor::remove_empty() %>%
-  #select only desired taxonomic levels and their IDs
-  ## note subgenus was empty here but it probably shouldn't be
-  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
-           phylum, class, subclass, order, family, genus, #subgenus, 
-           species,
-           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
-           wormsid_family, wormsid_genus, #wormsid_subgenus, 
-           wormsid_species,
-           authority))
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(taxa_query = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(valid_name, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
 
 #3: gbif+bold ids
 # now we'll search bold
