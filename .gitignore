@@ -39,3 +39,4 @@ vignettes/*.pdf
 .Renviron
 fish/.DS_Store
 .DS_Store
+species_lists/hakai/2021_blast-db/CO1.BOLD_genbank_combined.taxa_map.w_hakai_barcodes.sunday_lab.txt
