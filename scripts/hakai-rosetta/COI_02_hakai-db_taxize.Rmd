@@ -526,9 +526,12 @@ chordata_records <- chordata_records %>%
   # rank lowercase
   mutate(rank = tolower(rank))
 
+
+chordata_search2 <- chordata_search[1:500,]
+
 #3: gbif+bold ids
 # now we'll search bold
-chordata_bold <- get_boldid_(sci = chordata_search$taxa_query, 
+chordata_bold <- get_boldid_(sci = chordata_search2$taxa_query, 
                          includeTree = TRUE,
                          divison = 'Animalia')
 #bind up lists into a dataframe
@@ -551,7 +554,7 @@ chordata_bold2 <- map_dfr(.x= chordata_bold, ~ data.frame(.x)) %>%
   select((c(taxa_query, bold_id, bold_taxon, rank)))
 
 # GBIF id
-chordata_gbifid <- get_gbifid_(sci = chordata_search$taxa_query, rows = 1)
+chordata_gbifid <- get_gbifid_(sci = chordata_search2$taxa_query, rows = 1)
 
 chordata_gbifid2 <- map_dfr(.x= chordata_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
   filter(kingdom == "Animalia") %>%

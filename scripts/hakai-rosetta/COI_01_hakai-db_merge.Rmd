@@ -18,7 +18,9 @@ library(stringr)
 library(data.table)
 library(here)
 
-
+# here filepaths
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
 ```
 
 ## 1. Merging the multiple files comprising the Hakai Institute COI eDNA barcode database
@@ -31,13 +33,14 @@ It may take a while to load the bold_genbank files as they tend to be large.
 ```{r load-in}
 #these are all Hakai's personally barcoded samples
 #includes internal codes, taxonomic information, and collection locality
-hakailist <- read.csv(here('hakaidata','2021BLASTDatabase', 'supporting',
-                           'All_Hakai_Marine_Samples_WithCOI.csv'))
+hakailist <- read.csv(here(hakai_blast,
+                           'All_Hakai_Marine_Samples_March2021-WithCOI.csv'))
 
 #this is their 2020 taxon mapping file from BOLD and Genbank
 #there are no column names in this file
-bold_genbank_taxa <- read.delim(here('hakaidata','2020Database', 'CO1_database',
-                           'taxa_map', 'CO1.BOLD_genbank_combined.taxa_map.txt'),
+## update: this might actually be a newer file? compare to file above?
+bold_genbank_taxa <- read.delim(here(hakai_blast,
+                           'taxa_map', 'CO1.BOLD_genbank_combined.taxa_map.w_hakai_barcodes.sunday_lab.txt'),
                            header = FALSE)
 ```
 
