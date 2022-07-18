@@ -109,6 +109,23 @@ write_csv(hakailist, here(hakai_blast, '20220716_hakai_all_marine_samples-metazo
 
 ## Merge bold-genbank and Hakai
 
+Note here that right now my regex call is a mess. This is fine for now because it works and I havent had a chance to assess where the issues in the other script were coming from (calling multiple removes in the same call had unexpected results). Goal in the future is to make a .csv with these calls so that I can load it in and say 'if in csv, remove', but for now brute force is ok. I'm slowly seeing the patterns.
+
+Also a key note here is that the order in which the removals are made has a really important effect on the results. I suspect that the unexpected behavior from the previous scripts had to do with the calls not occuring in the order I laid out, which means there may need to be another strategy considered even when the patterns are better identified and CSV made.
+
+I will also have to remove all the calls and add them in one by one to find the outdated ones. I have added some newer regex towards the top over hte course of this process that renders lower calls unnecessary. However I do not have time right now to figure that out as this database needs to be cleaned ASAP so that I can make my ESA poster. Future Kate, have fun lolololol.
+
+For future me this is my process right now:
+- separate the unique entries by lowest taxonomy only
+- run current iteration
+- sort by fixed identification so that same things cluster together; easier to see problems
+- manually scroll and eyeball problems
+- add to regex
+- rinse and repeat
+
+I am mostly sorting with sp. because most of the problems are coming from varieties etc that are incomplete identifications. Most of the common issues eg var. gen. cf. aff. will get searched over time but sp. has been the most informative.
+
+
 ```{r merge and clean boldgb and hakai}
 #Despite trying several varieties of join the best way to do it here
 bold_gb_hakai <- full_join(hakailist, bold_genbank_taxa2) %>%
@@ -119,8 +136,8 @@ bold_gb_hakai <- full_join(hakailist, bold_genbank_taxa2) %>%
 write.csv(bold_gb_hakai, here(hakai_blast,
                              '20220716_hakai_bold_gbif_database_raw.csv'))
 #read back in to save memory
-#bold_gb_hakai <- read_csv(here(hakai_blast,
-#                             '20220716_hakai_bold_gbif_database_raw.csv'))[-1]
+bold_gb_hakai <- read_csv(here(hakai_blast,
+                             '20220716_hakai_bold_gbif_database_raw.csv'))[-1]
 
 # for this cleaning we just want unique identifications, no id#s
 bold_gb_hakai2 <- bold_gb_hakai %>%
@@ -142,16 +159,20 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( gen\\. )")) %>%
   mutate(identification = str_remove_all(identification, "( fam.)")) %>%
   mutate(identification = str_remove_all(identification, "( Var)$")) %>%
+  mutate(identification = str_remove_all(identification, "( var\\.)")) %>%
+  mutate(identification = str_remove_all(identification, "( species complex)")) %>%
   mutate(identification = str_remove_all(identification, "( complex)$")) %>%
   mutate(identification = str_remove_all(identification, "( complex )")) %>%
   mutate(identification = str_remove_all(identification, "( complex type)")) %>%
   mutate(identification = str_remove_all(identification, "( complexnew)")) %>%
   mutate(identification = str_remove_all(identification, "( complexc)")) %>%
   mutate(identification = str_remove_all(identification, "( complex Nakuru)")) %>%
-  mutate(identification = str_remove_all(identification, "( type)")) %>%
-  mutate(identification = str_remove_all(identification, "( type[0-9]{2})")) %>%
+  mutate(identification = str_remove_all(identification, "( type )")) %>%
+  mutate(identification = str_remove_all(identification, "(type[0-9]{2})")) %>%
   mutate(identification = str_remove_all(identification, "(-type)")) %>%
+  mutate(identification = str_remove_all(identification, "( clade [A-Z]{1} )")) %>%
   mutate(identification = str_remove_all(identification, "( clade )")) %>%
+  mutate(identification = str_remove_all(identification, "( clade-)")) %>%
   mutate(identification = str_remove_all(identification, "( clade)$")) %>%
   mutate(identification = str_remove_all(identification, "( clade[0-9]{1})")) %>%
   mutate(identification = str_remove_all(identification, "( hybrid )")) %>%
@@ -159,19 +180,25 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( n )")) %>%
   mutate(identification = str_remove_all(identification, "( new)$")) %>%
   mutate(identification = str_remove_all(identification, "( nov\\.)")) %>%
+  mutate(identification = str_remove_all(identification, "( nov )")) %>%
   mutate(identification = str_remove_all(identification, "( unid\\.)")) %>%
   mutate(identification = str_remove_all(identification, "( sensu)")) %>%
   mutate(identification = str_remove_all(identification, "( Group )")) %>%
   mutate(identification = str_remove_all(identification, "( group )")) %>%
+  mutate(identification = str_remove_all(identification, "( group)$")) %>%
   mutate(identification = str_remove_all(identification, "( gr\\.)")) %>%
   mutate(identification = str_remove_all(identification, "( nr\\.)")) %>%
   mutate(identification = str_remove_all(identification, "( voucher )")) %>%
   mutate(identification = str_remove_all(identification, "( lineage )")) %>%
   mutate(identification = str_remove_all(identification, "( und)$")) %>%
+  mutate(identification = str_remove_all(identification, "( undet)$")) %>%
+  mutate(identification = str_remove_all(identification, "( und_[0-9]{1})$")) %>%
   mutate(identification = str_remove_all(identification, "( unk)$")) %>%
-  mutate(identification = str_remove_all(identification, "( unk_)$")) %>%
+  mutate(identification = str_remove_all(identification, "( unk_[0-9]{1})$")) %>%
   mutate(identification = str_remove_all(identification, "( intermediate )")) %>%
   mutate(identification = str_remove_all(identification, "( morphotype)")) %>%
+  mutate(identification = str_remove_all(identification, "(_sample_)")) %>%
+  mutate(identification = str_remove_all(identification, "( \\(nomen nudum\\))")) %>%
   #ID numbers
   mutate(identification = str_remove_all(identification, " [A-Z].*[A-Z]")) %>%
   mutate(identification = str_remove_all(identification, "([0-9]{4}[a-z]{1})")) %>%
@@ -207,12 +234,13 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( To)$")) %>%
   mutate(identification = str_remove_all(identification, "( kas)$")) %>%
   mutate(identification = str_remove_all(identification, "( Po)$")) %>%
-  mutate(identification = str_remove_all(identification, "( chnak)")) %>%
   mutate(identification = str_remove_all(identification, "( kcm)$")) %>%
   mutate(identification = str_remove_all(identification, "( Izu)$")) %>%
   mutate(identification = str_remove_all(identification, "( Lau)$")) %>%
   mutate(identification = str_remove_all(identification, " MOLL")) %>%
   mutate(identification = str_remove_all(identification, "(AM)")) %>%
+  mutate(identification = str_remove_all(identification, "(KS)")) %>%
+  mutate(identification = str_remove_all(identification, "(M)$")) %>%
   mutate(identification = str_remove_all(identification, "(AV)")) %>%
   mutate(identification = str_remove_all(identification, "(AC)")) %>%
   mutate(identification = str_remove_all(identification, "(AU)")) %>%
@@ -223,6 +251,7 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "app\\)")) %>%
   mutate(identification = str_remove_all(identification, "(AS)")) %>%
   mutate(identification = str_remove_all(identification, "(A)$")) %>%
+  mutate(identification = str_remove_all(identification, "( A )")) %>%
   mutate(identification = str_remove_all(identification, "(B)$")) %>%
   mutate(identification = str_remove_all(identification, "( biv)$")) %>%
   mutate(identification = str_remove_all(identification, "( F)$")) %>%
@@ -232,14 +261,21 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "(BIO)")) %>%
   mutate(identification = str_remove_all(identification, "( a)$")) %>%
   mutate(identification = str_remove_all(identification, "( b)$")) %>%
+  mutate(identification = str_remove_all(identification, "(\\(be\\))$")) %>%
   mutate(identification = str_remove_all(identification, "( c)$")) %>%
+  mutate(identification = str_remove_all(identification, "(C)$")) %>%
   mutate(identification = str_remove_all(identification, "( cIWP)$")) %>%
   mutate(identification = str_remove_all(identification, "( C)$")) %>%
   mutate(identification = str_remove_all(identification, "C\\)")) %>%
   mutate(identification = str_remove_all(identification, "( CM)$")) %>%
   mutate(identification = str_remove_all(identification, "( d)$")) %>%
+  mutate(identification = str_remove_all(identification, "(D)$")) %>%
+  mutate(identification = str_remove_all(identification, "( e)$")) %>%
   mutate(identification = str_remove_all(identification, "( e )")) %>%
+  mutate(identification = str_remove_all(identification, "(E)$")) %>%
+  mutate(identification = str_remove_all(identification, "( \\(ECF\\))")) %>%
   mutate(identification = str_remove_all(identification, "( f )")) %>%
+  mutate(identification = str_remove_all(identification, "( f)$")) %>%
   mutate(identification = str_remove_all(identification, "(Gh)$")) %>%
   mutate(identification = str_remove_all(identification, "(Ga)$")) %>%
   mutate(identification = str_remove_all(identification, "(Gb)$")) %>%
@@ -247,8 +283,12 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( hw)$")) %>%
   mutate(identification = str_remove_all(identification, "( ke)$")) %>%
   mutate(identification = str_remove_all(identification, "(JW)")) %>%
+  mutate(identification = str_remove_all(identification, "(LEC)")) %>%
+  mutate(identification = str_remove_all(identification, "( Mel)$")) %>%
   mutate(identification = str_remove_all(identification, "(MIO)")) %>%
   mutate(identification = str_remove_all(identification, "(MZM)")) %>%
+  mutate(identification = str_remove_all(identification, "( MB)$")) %>%
+  mutate(identification = str_remove_all(identification, "(MOZ)")) %>%
   mutate(identification = str_remove_all(identification, "( nsp)$")) %>%
   mutate(identification = str_remove_all(identification, "( o )")) %>%
   mutate(identification = str_remove_all(identification, "( o)$")) %>%
@@ -257,14 +297,16 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( p)$")) %>%
   mutate(identification = str_remove_all(identification, "( Pia)")) %>%
   mutate(identification = str_remove_all(identification, "( pol)$")) %>%
+  mutate(identification = str_remove_all(identification, "( ris)$")) %>%
+  mutate(identification = str_remove_all(identification, "(RU)$")) %>%
   mutate(identification = str_remove_all(identification, "( spm)$")) %>%
+  mutate(identification = str_remove_all(identification, "( Sspp)$")) %>%
   mutate(identification = str_remove_all(identification, "( te)$")) %>%
   mutate(identification = str_remove_all(identification, "( \\(te\\))$")) %>%
   mutate(identification = str_remove_all(identification, "( ww)$")) %>%
   mutate(identification = str_remove_all(identification, "(Zi)$")) %>%
   mutate(identification = str_remove_all(identification, "(Zu)$")) %>%
   mutate(identification = str_remove_all(identification, "(ZA)")) %>%
-  mutate(identification = str_remove_all(identification, "( MB)$")) %>%
   mutate(identification = str_remove_all(identification, "(CH)")) %>%
   mutate(identification = str_remove_all(identification, "(BOLD)")) %>%
   mutate(identification = str_remove_all(identification, "(BIOUGB)")) %>%
@@ -289,17 +331,21 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( SCSN)$")) %>%
   mutate(identification = str_remove_all(identification, "(Tap)$")) %>%
   mutate(identification = str_remove_all(identification, "(Tar)$")) %>%
-  mutate(identification = str_remove_all(identification, "(WOLVES)")) %>%
+  mutate(identification = str_remove_all(identification, "(WOLV)")) %>%
   mutate(identification = str_remove_all(identification, "( YCMP)$")) %>%
   mutate(identification = str_remove_all(identification, "(Xin)$")) %>%
   mutate(identification = str_remove_all(identification, " undetR")) %>%
+  mutate(identification = str_remove_all(identification, "( zpl)$")) %>%
   mutate(identification = str_remove_all(identification, "( spot)")) %>%
   mutate(identification = str_remove_all(identification, "( barred)")) %>%
   mutate(identification = str_remove_all(identification, " black")) %>%
   mutate(identification = str_remove_all(identification, "( blond)")) %>%
+  mutate(identification = str_remove_all(identification, " bulky head")) %>%
   mutate(identification = str_remove_all(identification, "( chocolate)")) %>%
   mutate(identification = str_remove_all(identification, "( Cribrimorphlike)")) %>%
   mutate(identification = str_remove_all(identification, "( dwarf)")) %>%
+  mutate(identification = str_remove_all(identification, "( eyes)$")) %>%
+  mutate(identification = str_remove_all(identification, "( larva)")) %>%
   mutate(identification = str_remove_all(identification, "( green)")) %>%
   mutate(identification = str_remove_all(identification, "(prey of)")) %>%
   mutate(identification = str_remove_all(identification, "( Porcupine)")) %>%
@@ -307,9 +353,13 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( pinnules)$")) %>%
   mutate(identification = str_remove_all(identification, "( rosy)")) %>%
   mutate(identification = str_remove_all(identification, "( sagami)")) %>%
+  mutate(identification = str_remove_all(identification, "( crescent)$")) %>%
+  mutate(identification = str_remove_all(identification, "( ophiolite)$")) %>%
   mutate(identification = str_remove_all(identification, "( spiral)$")) %>%
+  mutate(identification = str_remove_all(identification, " sawfin shiner")) %>%
   mutate(identification = str_remove_all(identification, "( white)")) %>%
   mutate(identification = str_remove_all(identification, "( White)")) %>%
+  mutate(identification = str_remove_all(identification, "( \\(White \\))")) %>%
   mutate(identification = str_remove_all(identification, "( Yellow)")) %>%
   mutate(identification = str_remove_all(identification, "( yellowback)")) %>%
   mutate(identification = str_remove_all(identification, "( yellowcollar)")) %>%
@@ -317,6 +367,7 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, "( chimpanzeecA)")) %>%
   mutate(identification = str_remove_all(identification, "( gibbongA)")) %>%
   mutate(identification = str_remove_all(identification, " environmental sample")) %>%
+  mutate(identification = str_remove_all(identification, "( ex Sooretamys angouya)$")) %>%
   mutate(identification = str_remove_all(identification, " brassy jumprock")) %>%
   mutate(identification = str_remove_all(identification, "(collar)")) %>%
   mutate(identification = str_remove_all(identification, "( yellowback)")) %>%
@@ -326,10 +377,16 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, " undetRAC")) %>%
   # localities that didn't get filtered
   mutate(identification = str_remove_all(identification, " acific")) %>%
+  mutate(identification = str_remove_all(identification, "( alearics)$")) %>%
+  mutate(identification = str_remove_all(identification, "( anaries)$")) %>%
+  mutate(identification = str_remove_all(identification, "( asque)$")) %>%
+  mutate(identification = str_remove_all(identification, "( akabo)$")) %>%
   mutate(identification = str_remove_all(identification, "( Amami)")) %>%
   mutate(identification = str_remove_all(identification, "( et al)")) %>%
+  mutate(identification = str_remove_all(identification, "( ausc)$")) %>%
   mutate(identification = str_remove_all(identification, " Amamilevii")) %>%
   mutate(identification = str_remove_all(identification, " Achenwald")) %>%
+  mutate(identification = str_remove_all(identification, " Akaebi")) %>%
   mutate(identification = str_remove_all(identification, " Acla")) %>%
   mutate(identification = str_remove_all(identification, " Argis")) %>%
   mutate(identification = str_remove_all(identification, " Austria")) %>%
@@ -346,24 +403,31 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, " Bangladesh")) %>%
   mutate(identification = str_remove_all(identification, " Bocas")) %>%
   mutate(identification = str_remove_all(identification, " Borneo")) %>%
+  mutate(identification = str_remove_all(identification, " Bugwe")) %>%
   mutate(identification = str_remove_all(identification, " blueiver")) %>%
   mutate(identification = str_remove_all(identification, " Beysehir")) %>%
   mutate(identification = str_remove_all(identification, " Boncourt")) %>%
   mutate(identification = str_remove_all(identification, " Calibasis")) %>%
+  mutate(identification = str_remove_all(identification, " Caracol")) %>%
   mutate(identification = str_remove_all(identification, "( Cape)")) %>%
   mutate(identification = str_remove_all(identification, "( cific)$")) %>%
+  mutate(identification = str_remove_all(identification, "( Cris)$")) %>%
   mutate(identification = str_remove_all(identification, " Cayman")) %>%
   mutate(identification = str_remove_all(identification, " Cambuta river")) %>%
   mutate(identification = str_remove_all(identification, " Cameta")) %>%
   mutate(identification = str_remove_all(identification, " casmbe")) %>%
+  mutate(identification = str_remove_all(identification, "( chnak)")) %>%
   mutate(identification = str_remove_all(identification, " Caroline Spring")) %>%
   mutate(identification = str_remove_all(identification, " Chiriqui")) %>%
+  mutate(identification = str_remove_all(identification, " Contulmo")) %>%
   mutate(identification = str_remove_all(identification, " Dabaisha")) %>%
   mutate(identification = str_remove_all(identification, " Dorsey")) %>%
   mutate(identification = str_remove_all(identification, " Dawson \\(\\)")) %>%
   mutate(identification = str_remove_all(identification, "( depth)")) %>%
+  mutate(identification = str_remove_all(identification, " Degbf")) %>%
   mutate(identification = str_remove_all(identification, " Doeggingen")) %>%
   mutate(identification = str_remove_all(identification, " Dossenbach")) %>%
+  mutate(identification = str_remove_all(identification, " Djevojacka")) %>%
   mutate(identification = str_remove_all(identification, " Dunlopustralia")) %>%
   mutate(identification = str_remove_all(identification, " Eberstadt")) %>%
   mutate(identification = str_remove_all(identification, " Essequibo")) %>%
@@ -375,9 +439,12 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, " Fujian")) %>%
   mutate(identification = str_remove_all(identification, " Fareteuiraahiti")) %>%
   mutate(identification = str_remove_all(identification, " Girona")) %>%
+  mutate(identification = str_remove_all(identification, " Gogdeliprings")) %>%
   mutate(identification = str_remove_all(identification, " Halton")) %>%
   mutate(identification = str_remove_all(identification, " Harvey")) %>%
+  mutate(identification = str_remove_all(identification, " Hungary")) %>%
   mutate(identification = str_remove_all(identification, " Halsp")) %>%
+  mutate(identification = str_remove_all(identification, " hachijo")) %>%
   mutate(identification = str_remove_all(identification, " Hinterfallbach")) %>%
   mutate(identification = str_remove_all(identification, " Iguassub")) %>%
   mutate(identification = str_remove_all(identification, " Incheon")) %>%
@@ -387,6 +454,7 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, " \\(Johor\\)")) %>%
   mutate(identification = str_remove_all(identification, " Karianga")) %>%
   mutate(identification = str_remove_all(identification, " Kawakatsu")) %>%
+  mutate(identification = str_remove_all(identification, " Keith")) %>%
   mutate(identification = str_remove_all(identification, " Kolodyne")) %>%
   mutate(identification = str_remove_all(identification, "\\(Khor Zawrah\\)")) %>%
   mutate(identification = str_remove_all(identification, "( Kuro)")) %>%
@@ -413,13 +481,18 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, " Maranhao")) %>%
   mutate(identification = str_remove_all(identification, " Martinique")) %>%
   mutate(identification = str_remove_all(identification, " Maranho")) %>%
+  mutate(identification = str_remove_all(identification, " Mehuin")) %>%
+  mutate(identification = str_remove_all(identification, " Mile")) %>%
   mutate(identification = str_remove_all(identification, " Monobe")) %>%
   mutate(identification = str_remove_all(identification, " Myanmar")) %>%
   mutate(identification = str_remove_all(identification, " Miya")) %>%
+  mutate(identification = str_remove_all(identification, "( Mel)$")) %>%
   mutate(identification = str_remove_all(identification, " Mexico")) %>%
   mutate(identification = str_remove_all(identification, " Montenegro")) %>%
   mutate(identification = str_remove_all(identification, " Madeira")) %>%
   mutate(identification = str_remove_all(identification, " Nogumai")) %>%
+  mutate(identification = str_remove_all(identification, "( ndalusia)$")) %>%
+  mutate(identification = str_remove_all(identification, "(Nakuru)$")) %>%
   mutate(identification = str_remove_all(identification, "( Negro)$")) %>%
   mutate(identification = str_remove_all(identification, " Nguru")) %>%
   mutate(identification = str_remove_all(identification, " Neckarrems")) %>%
@@ -428,6 +501,10 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, " Oheimb")) %>%
   mutate(identification = str_remove_all(identification, " Oyapock")) %>%
   mutate(identification = str_remove_all(identification, " Oshoro")) %>%
+  mutate(identification = str_remove_all(identification, "( orocco)$")) %>%
+  mutate(identification = str_remove_all(identification, "( ortugal)$")) %>%
+  mutate(identification = str_remove_all(identification, " Oregon")) %>%
+  mutate(identification = str_remove_all(identification, " Oman")) %>%
   mutate(identification = str_remove_all(identification, " Oreobasis")) %>%
   mutate(identification = str_remove_all(identification, " orinocot")) %>%
   mutate(identification = str_remove_all(identification, " Patrocnica spring")) %>%
@@ -436,39 +513,65 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   mutate(identification = str_remove_all(identification, " Perlen")) %>%
   mutate(identification = str_remove_all(identification, " Persia")) %>%
   mutate(identification = str_remove_all(identification, " Pannawonica")) %>%
+  mutate(identification = str_remove_all(identification, " Philippines")) %>%
   mutate(identification = str_remove_all(identification, " Paraguay")) %>%
+  mutate(identification = str_remove_all(identification, " Pamisou river springs")) %>%
   mutate(identification = str_remove_all(identification, " Pindare")) %>%
+  mutate(identification = str_remove_all(identification, " Pohnpei")) %>%
+  mutate(identification = str_remove_all(identification, "( Pol)$")) %>%
+  mutate(identification = str_remove_all(identification, " Pomablue")) %>%
+  mutate(identification = str_remove_all(identification, " Puyehue")) %>%
+  mutate(identification = str_remove_all(identification, " Quebec")) %>%
   mutate(identification = str_remove_all(identification, "(RCPeru)")) %>%
   mutate(identification = str_remove_all(identification, "(RCPanama)")) %>%
   mutate(identification = str_remove_all(identification, " Rio Supamo")) %>%
+  mutate(identification = str_remove_all(identification, "( ribbean)$")) %>%
   mutate(identification = str_remove_all(identification, " Rheinfelden")) %>%
+  mutate(identification = str_remove_all(identification, " Reversing Falls miniature")) %>%
   mutate(identification = str_remove_all(identification, " Ranomafana")) %>%
   mutate(identification = str_remove_all(identification, " Sanya")) %>%
   mutate(identification = str_remove_all(identification, " Singapore")) %>%
   mutate(identification = str_remove_all(identification, "\\(Singapore\\)")) %>%
   mutate(identification = str_remove_all(identification, " Schwangau")) %>%
+  mutate(identification = str_remove_all(identification, "( \\(Sowerby \\))")) %>%
   mutate(identification = str_remove_all(identification, " South")) %>%
+  mutate(identification = str_remove_all(identification, "( Sac)$")) %>%
   mutate(identification = str_remove_all(identification, " Stepian")) %>%
   mutate(identification = str_remove_all(identification, " Stepien")) %>%
   mutate(identification = str_remove_all(identification, "( Suji)")) %>%
   mutate(identification = str_remove_all(identification, "( Suiyo)")) %>%
   mutate(identification = str_remove_all(identification, " Surinam")) %>%
+  mutate(identification = str_remove_all(identification, " Temuco")) %>%
   mutate(identification = str_remove_all(identification, " Tocantins")) %>%
   mutate(identification = str_remove_all(identification, " Tobogan")) %>%
-  mutate(identification = str_remove_all(identification, " Tuiriel")) %>%
+  mutate(identification = str_remove_all(identification, " Tuirial")) %>%
   mutate(identification = str_remove_all(identification, " Tuirivang")) %>%
   mutate(identification = str_remove_all(identification, " Thailand")) %>%
+  mutate(identification = str_remove_all(identification, " Tlawng")) %>%
   mutate(identification = str_remove_all(identification, " Taiwanese barbel steed")) %>%
   mutate(identification = str_remove_all(identification, " Taiwan")) %>%
+  mutate(identification = str_remove_all(identification, " Tahiti")) %>%
+  mutate(identification = str_remove_all(identification, " Mtahiti")) %>%
+  mutate(identification = str_remove_all(identification, " Oroferoahiti")) %>%
+  mutate(identification = str_remove_all(identification, " Piraeahiti")) %>%
+  mutate(identification = str_remove_all(identification, " Punaruuahiti")) %>%
+  mutate(identification = str_remove_all(identification, " Tereiaahiti")) %>%
+  mutate(identification = str_remove_all(identification, " Vaiaravaahiti")) %>%
   mutate(identification = str_remove_all(identification, " Tiscar")) %>%
+  mutate(identification = str_remove_all(identification, " Tufi")) %>%
+  mutate(identification = str_remove_all(identification, " Terryn")) %>%
   mutate(identification = str_remove_all(identification, " upperpring")) %>%
+  mutate(identification = str_remove_all(identification, "( urcia)$")) %>%
   mutate(identification = str_remove_all(identification, " Vanuatu")) %>%
   mutate(identification = str_remove_all(identification, " Vevembe")) %>%
   mutate(identification = str_remove_all(identification, " Vermelho stream")) %>%
   mutate(identification = str_remove_all(identification, "( Wo)")) %>%
+  mutate(identification = str_remove_all(identification, " Wangen")) %>%
+  mutate(identification = str_remove_all(identification, "( zores)$")) %>%
   mutate(identification = str_remove_all(identification, " china ")) %>%
   
   mutate(identification = str_remove_all(identification, " from Polypogon monspeliensis")) %>%
+  mutate(identification = str_remove_all(identification, "( \\(\\))$")) %>%
   
   
   
@@ -493,6 +596,7 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
                                                             'Antecaridinaimor' = 'Antecaridina',
                                                             'Asplanchnaa' = 'Asplanchna',
                                                             'Asplanchnab' = 'Asplanchna',
+                                                            'Asterostegusype' = 'Asterostegus',
                                                             'AeolidiidaeA' = 'Aeolidiidae',
                                                             'Aeolidiidaealba' = 'Aeolidiida ealba',
                                                             'Aeolidiidaejaponica' = 'Aeolidiidae japonica',
@@ -507,6 +611,7 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
                                                             'Bulinussland' = 'Bulinus',
                                                             'Carcharhinusarc' = 'Carcharhinus',
                                                             'Cerebratulusay' = 'Cerebratulus',
+                                                            'Cepheidaetokiki' = 'Cepheidae',
                                                             'Clupeoideshraya' = 'Clupeoides',
                                                             'Contradensec' = 'Contradens',
                                                             'Copidognathusc' = 'Copidognathus',
@@ -517,12 +622,14 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
                                                             'Cryptocentrusyers \\)' = 'Cryptocentrus',
                                                             'maruadsitype' = 'maruadsi',
                                                             'DexaminidaeDexaminidaeNZD' = 'Dexaminidae',
+                                                            'Diopisthoporusnsp' = 'Diopisthoporus',
                                                             'Discosomaisc' = 'Discosoma',
                                                             'Ensidensec' = 'Ensidens',
                                                             'Epiactisnid' = 'Epiactis',
                                                             'Etmopterustevens' = 'Etmopterus',
                                                             'Eurythenesuryt' = 'Eurythenes',
                                                             'EusiridaeEusiridaeNZD' = 'Eusiridae',
+                                                            'Fistularia petimbatype' = 'Fistularia petimba',
                                                             'Heleobiaaguna' = 'Helobia',
                                                             'Heleobiaali' = 'Helobia',
                                                             'Heleobiaebada' = 'Helobia',
@@ -531,22 +638,42 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
                                                             'Heleobiauilimari' = 'Helobia',
                                                             'Heleobiaur' = 'Helobia',
                                                             'Hirundichthysshop' = 'Hirundichthys',
+                                                            'Henleaspm' = 'Henlea',
                                                             'IschyroceridaeIschyroceridaeNZD' = 'Ischyroceridae',
                                                             'Jugauga' = 'Juga',
                                                             'Knemidokoptesne' = 'Knemidokoptes',
+                                                            'Leptocephalus type' = 'Leptocephalus',
                                                             'Lasaeaarbor' = 'Lasaea',
+                                                            'Leptotrombidiumchigger' = 'Leptotrombidium',
                                                             'Limaxlps' = 'Limax',
                                                             'Lunellaustralia' = 'Lunella',
                                                             'LysianassidaeLysianassidaeNZD' = 'Lysianassidae',
+                                                            'Lirceoluspring' = 'Lirceolus',
+                                                            'Labeoiver' = 'Labeo',
                                                             'Macrostylisso' ='Macrostylis',
+                                                            'Melamphaidae Melamphaes' = 'Melamphaidae',
+                                                            'Nematomeniaol' = 'Nematomenia',
                                                             'OedicerotidaeOedicerotidaeNZD' = 'Oedicerotidae',
                                                             'Oreochromisshop' = 'Oreochromis',
+                                                            'Oithonakkeshi' = 'Oithona',
                                                             'ParabathynellidaeA' = 'Parabathynellidae',
                                                             'westermanitype' = 'westermani',
                                                             'Photopectoralisaiwan' = 'Photopectoralis',
                                                             'PhoxocephalidaePhoxocephalidaeNZD' = 'Phoxocephalidae',
                                                             'Phymorhynchusala' = 'Phymorhynchus',
                                                             'Pilsbryoconchase' = 'Pilsbryoconcha',
+                                                            'Plectostylusadi' = 'Plectostylus',
+                                                            'Plectostylusal' = 'Plectostylus',
+                                                            'Plectostyluseco' = 'Plectostylus',
+                                                            'Plectostylush' = 'Plectostylus',
+                                                            'Plectostylusncol' = 'Plectostylus',
+                                                            'Plectostylusnes' ='Plectostylus',
+                                                            'Plectostylusojas' = 'Plectostylus',
+                                                            'Plectostylusosque' = 'Plectostylus',
+                                                            'Plectostylusuermos' = 'Plectostylus',
+                                                            'Plectostylusueules' = 'Plectostylus',
+                                                            'Plectostylusuiles' = 'Plectostylus',
+                                                            'PoeciliaAcla' = 'Poecilia',
                                                             'indicustype' = 'indicus',
                                                             'lineatustype' = 'lineatus',
                                                             'Poropuntiusian' = 'Poropuntius',
@@ -556,16 +683,23 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
                                                             'Rhipicephaluswd' = 'Rhipicephalus',
                                                             'Rhodopeol' = 'Rhodope',
                                                             'argustype' = 'argus',
-                                                            'Schizocarpushi' = 'Schizocarpus'
+                                                            'Schizocarpushi' = 'Schizocarpus', 
+                                                            'vosmeritype' = 'vosmeri',
+                                                            'Sundasalanxhraya' = 'Sundasalanx',
+                                                            'SynopiidaeSynopiidaeNZD' = 'Synopiidae',
+                                                            'Thunnusrestaurant' = 'Thunnus',
+                                                            'Typhlopseudothelphusayph' = 'Typhlopseudothelphusa'
                                                             ))) %>%
   
 
   mutate(identification = trimws(identification))
   
   
-  
 
 
+bold_gb_hakai_sp <- bold_gb_hakai2 %>%
+  select(identification) %>%
+  distinct()
 
 ```
 
