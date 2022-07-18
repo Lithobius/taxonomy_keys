@@ -25,7 +25,7 @@ rosetta <- here('species_lists', 'hakai', '2022rosetta')
 midori <- read_csv(here(hakai_blast, '20211216_midori_all_sp.csv'))
 ```
 
-```{r otl-worms}
+```{r tol_resolve}
 midori_search <- midori %>%
   select(species) %>%
   # remove 'sp'
@@ -69,11 +69,58 @@ mresolved9 <- midori_resolved
 mresolved <- mresolved1 %>%
   bind_rows(mresolved2, mresolved3, mresolved4,
             mresolved5, mresolved6, mresolved7,
-            mresolved8)
+            mresolved8, mresolved9
+            )
 
 #write_rds(mresolved, here('temp_midori.rds'))
 
+# classify found IDs, will probably need split again
+
+midori_notfound <- mresolved %>%
+  filter(is.na(unique_name))
+
+# sort out unique names
+mresolved_classify <- mresolved %>%
+  filter(!(is.na(unique_name))) %>% 
+  select(unique_name) %>%
+  distinct()
+
+# do the splitting-babysitting-thing again
+#mresolved_classify1 <- midori_resolved_classify[1:7000,]
+#mresolved_classify2 <- midori_resolved_classify[7001:30000,]
+#mresolved_classify3 <- midori_resolved_classify[30001:60000,]
+#mresolved_classify4 <- midori_resolved_classify[60001:100000,]
+#mresolved_classify5 <- midori_resolved_classify[100001:140000,]
+#mresolved_classify6 <- midori_resolved_classify[140001:180000,]
+#mresolved_classify7 <- midori_resolved_classify[180001:210000,]
+mresolved_classify8 <- midori_resolved_classify[210001:246284,]
+
+midori_classify <- classification(mresolved_classify$unique_name, db = 'tol')
+
+# manually set temp variables to merge later
+#mclassify1 <- midori_classify
+#mclassify2 <- midori_classify
+#mclassify3 <- midori_classify
+#mclassify4 <- midori_classify
+#mclassify5 <- midori_classify
+#mclassify6 <- midori_classify
+#mclassify7 <- midori_classify
+#mclassify8 <- midori_classify
+
+#bind rows and save again
+```
+
+## Problems
+
+Anything not found needs resolved
+Here we're running what TOL didn't find through several databases to identify them. In the COI script, we would have run it through WORMS here but we don't have it filtered to marine species yet.
+Anything found is classified by the respective database, because at this stage we're looking to filter out not-fish. Then the remaining fish will be stripped of higher taxonomy and run through worms.
+
+```{r problems}
 # extract 'failures'
+# mresolved9 is a rerun list of not-found
+# in a future version we'll replace this with a filtered object
+## filtered object made, redo this section with midori_notfound
 mresolved_fail <- mresolved9 %>%
   filter(is.na(unique_name))
 
@@ -99,20 +146,21 @@ mresolved_fail <- mresolved_fail %>%
 mresolve_bold <- get_boldid_(sci = mresolved_fail$search_string)
 
 mresolve_bold2 <- map_dfr(.x= mresolve_bold, ~ data.frame(.x), .id = 'taxa_query') %>%
-  filter(!(is.na(taxid))) %>%
-  select(taxa_query, taxon, taxid, tax_rank, tax_division) %>%
-    rename(bold_id = taxid,
-         bold_taxa = taxon,
-         rank = tax_rank)
+    rename(bold_taxa = input)
+
+# classify found with bold
+mresolve_bold_classify <- classification(mresolve_bold2$bold_taxa, db = 'bold')
+
+mresolve_bold_classify2 <- map_dfr(.x= mresolve_bold_classify, ~ data.frame(.x), 
+                                   .id = 'taxa_query') %>%
+  distinct() %>%
+  pivot_wider(names_from = rank, values_from = name, id_cols = taxa_query)
+
 
 mresolved_fail <- mresolved_fail %>%
   filter(!(search_string %in% mresolve_bold2$taxa_query))
 
 
-```
-
-## Problems
-```{r problems}
 # now we'll extract the first word in each taxa here, presumably the genus, and try searching that way.
 ## Many of these issues are with insects, and what really matters is that we can sort out insects from our results.
 
@@ -131,6 +179,7 @@ fail_gen_search <- mresolved_fail_gen %>%
 # run through gbif
 mresolve_gbif_gen <- get_gbifid_(sci = fail_gen_search$genus_split)
 
+#rotate and prep
 mresolve_gbif_gen2 <- map_dfr(.x= mresolve_gbif_gen, ~ data.frame(.x), .id = 'taxa_query') %>%
   filter(matchtype == 'EXACT') %>%
   # strip higher taxonomy from gbif bc it doesn't match worms/bold
@@ -143,27 +192,30 @@ mresolve_gbif_gen2 <- map_dfr(.x= mresolve_gbif_gen, ~ data.frame(.x), .id = 'ta
          gbif_taxa = canonicalname,
          genus_split = taxa_query)
   
-mresolved_fail_gen2 <- mresolved_fail_gen %>%
-  left_join(mresolve_gbif_gen2)
+mresolved_gbif_gen3 <- mresolved_fail_gen %>%
+  left_join(mresolve_gbif_gen2, by = 'genus_split') %>%
+  filter(!(is.na(gbif_key)))
 
-mresolved_fail <- mresolved_fail_gen %>%
-  filter(is.na(gbif_key))
+mresolved_fail_gen <-mresolved_fail_gen %>%
+  filter(!(genus_split %in% mresolved_gbif_gen3$genus_split))
 
 fail_gen_search <- fail_gen_search %>%
-  filter(genus_split %in% mresolved_fail$genus_split)
+  filter(genus_split %in% mresolved_fail_gen$genus_split)
 
-# bold
-mresolve_bold_gen <- get_boldid_(sci = fail_gen_search$genus_split)
 
-mresolve_bold_gen2 <- map_dfr(.x= mresolve_bold_gen, ~ data.frame(.x), .id = 'taxa_query')
 
-# TOL
+
+# EOL
+# eol has some of the ncbi entries that can be odd
+## find ID's and classify
 mresolve_eol_gen <- get_eolid_(fail_gen_search$genus_split)
 mresolve_eol_gen2 <- map_dfr(.x= mresolve_eol_gen, ~ data.frame(.x), .id = 'taxa_query')
 
 mresolve_eol_classify <- classification(mresolve_eol_gen2$eolid, db = 'eol')
+
+# rotate and clean
 mresolve_eol_class2 <- map_dfr(.x = mresolve_eol_classify, ~ data.frame(.x), .id = 'eolid') %>%
-  # fix the bug that doesn't have ranks 
+  # fix the entries that doesn't have ranks 
   mutate(rank = ifelse(name %in% c('Fungi'), 'kingdom', rank)) %>%
   mutate(rank = ifelse(name %in% c('Arthropoda', 'Chordata'), 'phylum', rank)) %>%
   mutate(rank = ifelse(name %in% c('Insecta', 'Reptilia'), 'class', rank)) %>%
@@ -180,15 +232,31 @@ mresolve_eol_class2 <- map_dfr(.x = mresolve_eol_classify, ~ data.frame(.x), .id
   filter(!(is.na(genus))) %>%
   rename(genus_split = genus)
 
+
 mresolved_fail_gen2 <- mresolved_fail_gen %>%
-  left_join(mresolve_eol_class2, by = 'genus_split')
+  left_join(mresolve_eol_class2, by = 'genus_split') %>%
+  filter(!(is.na(eolid))) %>%
+  rename(taxa_query = search_string)
+
+## extract what's still failing to look at later
+outstanding_fails <- mresolved_fail_gen %>%
+  filter(!(search_string %in% mresolved_fail_gen2$taxa_query))
+
+write_csv(outstanding_fails, here(rosetta, 'problems',
+                                  'not_found', '20220718_midori_mifish_notfound.csv'))
+
+# consolidate problems
+problems_classified <- mresolve_gbif2 %>%
+  bind_rows(mresolve_gbif_gen2, mresolve_bold_classify2, 
+            mresolved_fail_gen2) %>%
+  mutate(kingdom = ifelse(phylum %in% c('Annelida', 'Arthropoda', 'Chordata',
+                                        'Cnidaria', 'Mollusca', 'Nematoda',
+                                        'Tardigrada'), 
+                          'Animalia', kingdom)) %>%
+  # just in case any slipped through
+  filter(!(taxa_query %in% outstanding_fails$search_string))
 
 
-glimpse(mresolve_eol_class2)
-
-
-midori_resolved_gen <- tol_resolve(fail_gen_search$genus_split) %>%
-  mutate(search_string = str_to_sentence(search_string))
 
 ```
 
