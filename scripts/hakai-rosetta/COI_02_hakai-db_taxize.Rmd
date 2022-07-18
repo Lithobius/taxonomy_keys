@@ -269,8 +269,9 @@ write.csv(annelid_nf_worms, here(rosetta, 'problems', '20220716_annelid_worms-to
 ```{r}
 # in arthropods there are some duplicates in class
 arthropod <- arthropod %>%
-  select(!(class)) %>%
-  distinct()
+  select(!(c(class, family))) %>%
+  distinct() %>%
+  mutate(taxa = as.character(taxa))
 
 # 1: worms
 # first get resolved names from tol
@@ -289,7 +290,7 @@ arthropod_tol2 <- arthropod_resolved %>%
 #then replace resolved
 arthropod_search <- arthropod %>%
   left_join(arthropod_resolved, by = c('taxa' = 'search_string')) %>%
-  select(c(taxa, unique_name, phylum, family)) %>%
+  select(c(taxa, unique_name, phylum)) %>%
   #include replacements from tol and any overhanging taxa
   mutate(taxa_query = coalesce(unique_name, taxa)) %>%
   relocate(taxa_query) %>%
