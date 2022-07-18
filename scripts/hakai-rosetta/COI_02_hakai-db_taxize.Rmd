@@ -808,7 +808,8 @@ These groups are done together since they are each moderate in size.
 # in chordates there are some duplicates in class + family
 ech_platy_nem <- ech_platy_nem %>%
   select(!(c(class, family))) %>%
-  distinct()
+  distinct() %>%
+  mutate(taxa = as.character(taxa))
 
 # 1: tol_resolve
 # first get resolved names from tol
@@ -991,7 +992,8 @@ Last but not least, everything else
 # in chordates there are some duplicates in class + family
 small_phyla <- small_phyla %>%
   select(!(c(class, family))) %>%
-  distinct()
+  distinct() %>%
+  mutate(taxa = as.character(taxa))
 
 # 1: tol_resolve
 # first get resolved names from tol
@@ -1047,7 +1049,7 @@ small_phyla_worms2 <- small_phyla_worms2 %>%
 
 # extract higher and info about freshwater
 small_phyla_records <- search_records_worms(small_phyla_worms2$worms_sciname)
-
+0
 # refine results to be useful
 small_phyla_records <- small_phyla_records %>%
   # only animal hits
