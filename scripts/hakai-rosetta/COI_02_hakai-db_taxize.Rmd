@@ -19,9 +19,7 @@ rosetta <- here('species_lists', 'hakai', '2022rosetta')
 ```{r load-in}
 # load in most recent hakai db
 hakai_db <- read.csv(here(hakai_blast, 
-                              '20210812_hakai_bold_gbif_database_clean.csv'))[,-1] %>%
-  janitor::clean_names() %>%
-  select(!(verbatim_taxon_rank))
+                              '20220718_hakai_bold_gbif_database_clean.csv'))[,-1]
 ```
 
 ```{r worms-function}
@@ -61,20 +59,16 @@ The pipeline for all groups is:
 5: list of not-found
 
 ```{r make-groups}
-# remove 'sp.'
-hakai_db <- hakai_db %>%
-  mutate(species = str_replace_all(species, c(" sp\\." = "")))
 
 # extract relevant columns
-## note 'species' column includes entries from all taxonomic levels
+## note 'identification' column includes entries from all taxonomic levels
 hakai_db_subset <- hakai_db %>%
-  select(species, phylum, class, family) %>%
-  filter(!(is.na(species) | species == "")) %>%
+  select(identification, phylum, class, family) %>%
   distinct() %>%
-  rename(taxa = species)
+  rename(taxa = identification)
 
 annelid <- hakai_db_subset %>%
-  subset(phylum == 'Annelida')
+  subset(phylum %in% c('Annelida', 'Sipuncula'))
 
 arthropod <- hakai_db_subset %>%
   subset(phylum == 'Arthropoda')
@@ -92,8 +86,7 @@ ech_platy_nem <- hakai_db_subset %>%
 #all the small phyla
 small_phyla <- hakai_db_subset %>%
   subset(!(phylum %in% c('Annelida', 'Arthropoda', 'Mollusca', 'Chordata',
-                         'Echinodermata', 'Platyhelminthes', 'Nematoda')))
-
+                         'Echinodermata', 'Platyhelminthes', 'Nematoda', 'Sipuncula')))
 
 ```
 
@@ -331,31 +324,32 @@ arthropod_worms2 <- arthropod_worms2 %>%
         worms_sciname = scientificname) %>%
   distinct()
 
-# worms classification
-arthropod_worms_classify <- classification(arthropod_worms2$worms_aphiaid, db = 'worms')
 
-# make and rotate dataframe 
-arthropod_worms_classify2 <- map_dfr(.x = arthropod_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
-  distinct() %>%
-  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
-  rename_with(~ str_replace(.x, 'name_', '')) %>%
-  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
-  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
-  janitor::clean_names()
+# extract higher and info about freshwater
+arthropod_records <- search_records_worms(arthropod_worms2$worms_sciname)
 
-arthropod_worms3 <- arthropod_worms2 %>%
-  left_join(arthropod_worms_classify2) %>%
+# refine results to be useful
+arthropod_records <- arthropod_records %>%
+  # only animal hits
   filter(kingdom == 'Animalia') %>%
-  janitor::remove_empty() %>%
-  #select only desired taxonomic levels and their IDs
-  ## note subgenus was empty here but it probably shouldn't be
-  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
-           phylum, class, subclass, order, family, genus, #subgenus, 
-           species,
-           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
-           wormsid_family, wormsid_genus, #wormsid_subgenus, 
-           wormsid_species,
-           authority))
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(taxa_query = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
+
 
 # now we'll search bold
 arthropod_bold <- get_boldid_(sci = arthropod_search$taxa_query, 
@@ -402,23 +396,27 @@ arthropod_gbifid2 <- map_dfr(.x= arthropod_gbifid, ~ data.frame(.x), .id = 'taxa
 
 
 
-
+#4: merge all and find problems
 # join all updated fields
 arthropod2 <- arthropod_search %>%
   #select(species) %>%
   #rename(query = species) %>%
-  left_join(arthropod_worms3) %>%
+  left_join(arthropod_records) %>%
   left_join(arthropod_bold2) %>%
   left_join(arthropod_gbifid2) %>%
   left_join(arthropod_tol2) %>%
   relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
   relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
-  relocate('rank', .before = 'worms_aphiaid') %>%
+  #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
+  mutate(found_taxa = coalesce(worms_sciname, tol_sciname)) %>%
+  relocate(c('found_taxa', 'rank'), .before = 'worms_aphiaid') %>%
   relocate('family', .before = 'genus') %>%
-  select(!(worms_query))
+  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
+  select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
+
 
 #write full
-write.csv(arthropod2, here(rosetta, 'taxize', '20220624_arthropod_taxonomy-full.csv'))
+write.csv(arthropod2, here(rosetta, 'taxize', '20220718_arthropod_taxonomy-full.csv'))
 
 # not-found list
 arthropod_notfound <- arthropod %>%
@@ -429,18 +427,18 @@ arthropod_notfound <- arthropod %>%
   #not in gbif or obis or worms
   filter(!(taxa %in% arthropod_gbifid2$taxa_query |
            taxa %in% arthropod_bold2$taxa_query | 
-           taxa %in% arthropod_worms3$taxa_query |
+           taxa %in% arthropod_records$taxa_query |
            taxa %in% arthropod_tol2$taxa))
 
 #write out not-found
-write.csv(arthropod_notfound, here(rosetta, 'problems', '20220624_arthropod_not-found.csv'))
+write.csv(arthropod_notfound, here(rosetta, 'problems', '20220718_arthropod_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 arthropod_nf_worms <- arthropod2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(arthropod_nf_worms, here(rosetta, 'problems', '20220624_arthropod_worms-tol-conflict.csv'))
+write.csv(arthropod_nf_worms, here(rosetta, 'problems', '20220718_arthropod_worms-tol-conflict.csv'))
 ```
 
 
@@ -591,7 +589,7 @@ chordata2 <- chordata_search %>%
   select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
 
 #write full
-write.csv(chordata2, here(rosetta, 'taxize', '20220716_chordata_taxonomy-full.csv'))
+write.csv(chordata2, here(rosetta, 'taxize', '20220718_chordata_taxonomy-full.csv'))
 
 # not-found list
 chordata_notfound <- chordata %>%
@@ -606,14 +604,14 @@ chordata_notfound <- chordata %>%
            taxa %in% chordata_tol2$taxa))
 
 #write out not-found
-write.csv(chordata_notfound, here(rosetta, 'problems', '20220716_chordata_not-found.csv'))
+write.csv(chordata_notfound, here(rosetta, 'problems', '20220718_chordata_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 chordata_nf_worms <- chordata2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(chordata_nf_worms, here(rosetta, 'problems', '20220716_chordata_worms-tol-conflict.csv'))
+write.csv(chordata_nf_worms, here(rosetta, 'problems', '20220718_chordata_worms-tol-conflict.csv'))
 ```
 
 
@@ -680,30 +678,32 @@ mollusca_worms2 <- mollusca_worms2 %>%
         worms_sciname = scientificname) %>%
   distinct()
 
-# worms classification
-mollusca_worms_classify <- classification(mollusca_worms2$worms_aphiaid, db = 'worms')
 
-# make and rotate dataframe 
-mollusca_worms_classify2 <- map_dfr(.x = mollusca_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
-  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
-  rename_with(~ str_replace(.x, 'name_', '')) %>%
-  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
-  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
-  janitor::clean_names()
+# extract higher and info about freshwater
+mollusca_records <- search_records_worms(mollusca_worms2$worms_sciname)
 
-mollusca_worms3 <- mollusca_worms2 %>%
-  left_join(mollusca_worms_classify2) %>%
+# refine results to be useful
+mollusca_records <- mollusca_records %>%
+  # only animal hits
   filter(kingdom == 'Animalia') %>%
-  janitor::remove_empty() %>%
-  #select only desired taxonomic levels and their IDs
-  ## note subgenus was empty here but it probably shouldn't be
-  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
-           phylum, class, subclass, order, family, genus, #subgenus, 
-           species,
-           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
-           wormsid_family, wormsid_genus, #wormsid_subgenus, 
-           wormsid_species,
-           authority))
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(taxa_query = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
+
 
 #3: gbif+bold ids
 # now we'll search bold
@@ -754,18 +754,22 @@ mollusca_gbifid2 <- map_dfr(.x= mollusca_gbifid, ~ data.frame(.x), .id = 'taxa_q
 mollusca2 <- mollusca_search %>%
   #select(species) %>%
   #rename(query = species) %>%
-  left_join(mollusca_worms3) %>%
+  left_join(mollusca_records) %>%
   left_join(mollusca_bold2) %>%
   left_join(mollusca_gbifid2) %>%
   left_join(mollusca_tol2) %>%
   relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
   relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
-  relocate('rank', .before = 'worms_aphiaid') %>%
+  #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
+  mutate(found_taxa = coalesce(worms_sciname, tol_sciname)) %>%
+  relocate(c('found_taxa', 'rank'), .before = 'worms_aphiaid') %>%
   relocate('family', .before = 'genus') %>%
-  select(!(worms_query))
+  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
+  select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
+
 
 #write full
-write.csv(mollusca2, here(rosetta, 'taxize', '20220624_mollusca_taxonomy-full.csv'))
+write.csv(mollusca2, here(rosetta, 'taxize', '20220718_mollusca_taxonomy-full.csv'))
 
 # not-found list
 mollusca_notfound <- mollusca %>%
@@ -776,18 +780,18 @@ mollusca_notfound <- mollusca %>%
   #not in gbif or obis or worms
   filter(!(taxa %in% mollusca_gbifid2$taxa_query |
            taxa %in% mollusca_bold2$taxa_query | 
-           taxa %in% mollusca_worms3$taxa_query |
+           taxa %in% mollusca_records$taxa_query |
            taxa %in% mollusca_tol2$taxa))
 
 #write out not-found
-write.csv(mollusca_notfound, here(rosetta, 'problems', '20220624_mollusca_not-found.csv'))
+write.csv(mollusca_notfound, here(rosetta, 'problems', '20220718_mollusca_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 mollusca_nf_worms <- mollusca2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(mollusca_nf_worms, here(rosetta, 'problems', '20220624_mollusca_worms-tol-conflict.csv'))
+write.csv(mollusca_nf_worms, here(rosetta, 'problems', '20220718_mollusca_worms-tol-conflict.csv'))
 ```
 
 
@@ -857,30 +861,32 @@ ech_platy_nem_worms2 <- ech_platy_nem_worms2 %>%
         worms_sciname = scientificname) %>%
   distinct()
 
-# worms classification
-ech_platy_nem_worms_classify <- classification(ech_platy_nem_worms2$worms_aphiaid, db = 'worms')
 
-# make and rotate dataframe 
-ech_platy_nem_worms_classify2 <- map_dfr(.x = ech_platy_nem_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
-  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
-  rename_with(~ str_replace(.x, 'name_', '')) %>%
-  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
-  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
-  janitor::clean_names()
+# extract higher and info about freshwater
+ech_platy_nem_records <- search_records_worms(ech_platy_nem_worms2$worms_sciname)
 
-ech_platy_nem_worms3 <- ech_platy_nem_worms2 %>%
-  left_join(ech_platy_nem_worms_classify2) %>%
+# refine results to be useful
+ech_platy_nem_records <- ech_platy_nem_records %>%
+  # only animal hits
   filter(kingdom == 'Animalia') %>%
-  janitor::remove_empty() %>%
-  #select only desired taxonomic levels and their IDs
-  ## note subgenus was empty here but it probably shouldn't be
-  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
-           phylum, class, subclass, order, family, genus, #subgenus, 
-           species,
-           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
-           wormsid_family, wormsid_genus, #wormsid_subgenus, 
-           wormsid_species,
-           authority))
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(taxa_query = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
+
 
 #3: gbif+bold ids
 # now we'll search bold
@@ -931,18 +937,22 @@ ech_platy_nem_gbifid2 <- map_dfr(.x= ech_platy_nem_gbifid, ~ data.frame(.x), .id
 ech_platy_nem2 <- ech_platy_nem_search %>%
   #select(species) %>%
   #rename(query = species) %>%
-  left_join(ech_platy_nem_worms3) %>%
+  left_join(ech_platy_nem_records) %>%
   left_join(ech_platy_nem_bold2) %>%
   left_join(ech_platy_nem_gbifid2) %>%
   left_join(ech_platy_nem_tol2) %>%
   relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
   relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
-  relocate('rank', .before = 'worms_aphiaid') %>%
+  #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
+  mutate(found_taxa = coalesce(worms_sciname, tol_sciname)) %>%
+  relocate(c('found_taxa', 'rank'), .before = 'worms_aphiaid') %>%
   relocate('family', .before = 'genus') %>%
-  select(!(worms_query))
+  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
+  select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
+
 
 #write full
-write.csv(ech_platy_nem2, here(rosetta, 'taxize', '20220624_ech_platy_nem_taxonomy-full.csv'))
+write.csv(ech_platy_nem2, here(rosetta, 'taxize', '20220718_ech_platy_nem_taxonomy-full.csv'))
 
 # not-found list
 ech_platy_nem_notfound <- ech_platy_nem %>%
@@ -953,18 +963,18 @@ ech_platy_nem_notfound <- ech_platy_nem %>%
   #not in gbif or obis or worms
   filter(!(taxa %in% ech_platy_nem_gbifid2$taxa_query |
            taxa %in% ech_platy_nem_bold2$taxa_query | 
-           taxa %in% ech_platy_nem_worms3$taxa_query |
+           taxa %in% ech_platy_nem_records$taxa_query |
            taxa %in% ech_platy_nem_tol2$taxa))
 
 #write out not-found
-write.csv(ech_platy_nem_notfound, here(rosetta, 'problems', '20220624_ech_platy_nem_not-found.csv'))
+write.csv(ech_platy_nem_notfound, here(rosetta, 'problems', '20220718_ech_platy_nem_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 ech_platy_nem_nf_worms <- ech_platy_nem2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(ech_platy_nem_nf_worms, here(rosetta, 'problems', '20220624_ech_platy_nem_worms-tol-conflict.csv'))
+write.csv(ech_platy_nem_nf_worms, here(rosetta, 'problems', '20220718_ech_platy_nem_worms-tol-conflict.csv'))
 ```
 
 
@@ -1034,30 +1044,32 @@ small_phyla_worms2 <- small_phyla_worms2 %>%
         worms_sciname = scientificname) %>%
   distinct()
 
-# worms classification
-small_phyla_worms_classify <- classification(small_phyla_worms2$worms_aphiaid, db = 'worms')
+# extract higher and info about freshwater
+small_phyla_records <- search_records_worms(small_phyla_worms2$worms_sciname)
 
-# make and rotate dataframe 
-small_phyla_worms_classify2 <- map_dfr(.x = small_phyla_worms_classify, ~ data.frame(.x), .id = 'worms_aphiaid') %>%
-  pivot_wider(id_cols = worms_aphiaid, names_from = rank, values_from = c(name, id)) %>%
-  rename_with(~ str_replace(.x, 'name_', '')) %>%
-  rename_with(~ str_replace(.x, 'id_', 'wormsid_')) %>%
-  mutate(worms_aphiaid = as.numeric(worms_aphiaid)) %>%
-  janitor::clean_names()
-
-small_phyla_worms3 <- small_phyla_worms2 %>%
-  left_join(small_phyla_worms_classify2) %>%
+# refine results to be useful
+small_phyla_records <- small_phyla_records %>%
+  # only animal hits
   filter(kingdom == 'Animalia') %>%
-  janitor::remove_empty() %>%
-  #select only desired taxonomic levels and their IDs
-  ## note subgenus was empty here but it probably shouldn't be
-  select(c(taxa_query, taxa, worms_aphiaid, worms_sciname,
-           phylum, class, subclass, order, family, genus, #subgenus, 
-           species,
-           wormsid_phylum, wormsid_class, wormsid_subclass, wormsid_order,
-           wormsid_family, wormsid_genus, #wormsid_subgenus, 
-           wormsid_species,
-           authority))
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(taxa_query = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
+
+
 
 #3: gbif+bold ids
 # now we'll search bold
@@ -1104,22 +1116,27 @@ small_phyla_gbifid2 <- map_dfr(.x= small_phyla_gbifid, ~ data.frame(.x), .id = '
 
 
 #4: merge all and find problems
+#4: merge all and find problems
 # join all updated fields
 small_phyla2 <- small_phyla_search %>%
   #select(species) %>%
   #rename(query = species) %>%
-  left_join(small_phyla_worms3) %>%
+  left_join(small_phyla_records) %>%
   left_join(small_phyla_bold2) %>%
   left_join(small_phyla_gbifid2) %>%
   left_join(small_phyla_tol2) %>%
   relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
   relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
-  relocate('rank', .before = 'worms_aphiaid') %>%
+  #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
+  mutate(found_taxa = coalesce(worms_sciname, tol_sciname)) %>%
+  relocate(c('found_taxa', 'rank'), .before = 'worms_aphiaid') %>%
   relocate('family', .before = 'genus') %>%
-  select(!(worms_query))
+  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
+  select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
+
 
 #write full
-write.csv(small_phyla2, here(rosetta, 'taxize', '20220624_small_phyla_taxonomy-full.csv'))
+write.csv(small_phyla2, here(rosetta, 'taxize', '20220718_small_phyla_taxonomy-full.csv'))
 
 # not-found list
 small_phyla_notfound <- small_phyla %>%
@@ -1130,18 +1147,18 @@ small_phyla_notfound <- small_phyla %>%
   #not in gbif or obis or worms
   filter(!(taxa %in% small_phyla_gbifid2$taxa_query |
            taxa %in% small_phyla_bold2$taxa_query | 
-           taxa %in% small_phyla_worms3$taxa_query |
+           taxa %in% small_phyla_records$taxa_query |
            taxa %in% small_phyla_tol2$taxa))
 
 #write out not-found
-write.csv(small_phyla_notfound, here(rosetta, 'problems', '20220624_small_phyla_not-found.csv'))
+write.csv(small_phyla_notfound, here(rosetta, 'problems', '20220718_small_phyla_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 small_phyla_nf_worms <- small_phyla2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(small_phyla_nf_worms, here(rosetta, 'problems', '20220624_small_phyla_worms-tol-conflict.csv'))
+write.csv(small_phyla_nf_worms, here(rosetta, 'problems', '20220718_small_phyla_worms-tol-conflict.csv'))
 ```
 
 

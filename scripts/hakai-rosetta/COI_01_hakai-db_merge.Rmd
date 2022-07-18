@@ -21,7 +21,6 @@ library(here)
 
 # here filepaths
 hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
-rosetta <- here('species_lists', 'hakai', '2022rosetta')
 ```
 
 ## 1. Merging the multiple files comprising the Hakai Institute COI eDNA barcode database
@@ -696,44 +695,26 @@ bold_gb_hakai2 <- bold_gb_hakai %>%
   
   
 
+# to check
+#bold_gb_hakai_sp <- bold_gb_hakai2 %>%
+#  select(identification) %>%
+#  distinct()
 
-bold_gb_hakai_sp <- bold_gb_hakai2 %>%
-  select(identification) %>%
-  distinct()
 
-```
 
-## Make a clean species column
-
-```{r clean columns}
-#clean species column with all extra identifiers removed via regex
-#NOTE double escape for period special character: "\\."
-## note note i think some of these made issues with the merged database; I need to rewrite this call
-## maybe to str_remove_all in multiple rows?
+# merge clean column back in
 bold_gb_hakai <- bold_gb_hakai %>%
-  mutate(Species = str_replace_all(Species, c("sp\\.(.*)" = "sp\\.", "cf. " = "",
-                                              "nr. " = "",  "aff. " = "",
-                                              " var." = "", " n." = "",
-                                               " complex (.*)" = "",
-                                               " sensu (.*)" = "",
-                                              " et al\\." = "",
-                                              " [0-9]+" = "",
-                                              " [A-Z]{2}(.*)" = "",
-                                              " gen.(.*)" = "",
-                                              " group" = "",
-                                              " species" = "",
-                                              " [A-Z]{1}[0-9]{1}" = "",
-                                              " [A-Z]{1}" = "",
-                                              " environmental sample" = "",
-                                              "unclassified [a-zA-Z]+" = "",
-                                              " [\\(][a-zA-Z]+[\\)]" = "")))
+  mutate(verbatim_identification = identification) %>%
+  select(!(identification)) %>%
+  left_join(bold_gb_hakai2) %>%
+  relocate(c('identification', 'verbatim_identification'), .before = 'sample_id')
 
 
 ```
 
 ```{r read and write clean}
 # write if needed
-write.csv(bold_gb_hakai, here('hakaidata', '2021rosetta', 'raw', 
-                              '20210812_hakai_bold_gbif_database_clean.csv'))
+write.csv(bold_gb_hakai, here(hakai_blast, 
+                              '20220718_hakai_bold_gbif_database_clean.csv'))
 
 ```
