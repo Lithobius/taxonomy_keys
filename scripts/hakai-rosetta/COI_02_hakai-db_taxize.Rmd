@@ -234,7 +234,7 @@ annelid2 <- annelid_search %>%
   select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
 
 #write full
-write.csv(annelid2, here(rosetta, 'taxize', '20220716_annelid_taxonomy-full.csv'))
+write.csv(annelid2, here(rosetta, 'taxize', '20220718_annelid_taxonomy-full.csv'))
 
 
 # not-found list
@@ -250,14 +250,14 @@ annelid_notfound <- annelid %>%
            taxa %in% annelid_tol2$taxa))
 
 #write out not-found
-write.csv(annelid_notfound, here(rosetta, 'problems', '20220716_annelid_not-found.csv'))
+write.csv(annelid_notfound, here(rosetta, 'problems', '20220718_annelid_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 annelid_nf_worms <- annelid2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(annelid_nf_worms, here(rosetta, 'problems', '20220716_annelid_worms-tol-conflict.csv'))
+write.csv(annelid_nf_worms, here(rosetta, 'problems', '20220718_annelid_worms-tol-conflict.csv'))
 ```
 
 
