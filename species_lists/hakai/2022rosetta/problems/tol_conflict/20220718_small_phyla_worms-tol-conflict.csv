@@ -1,0 +1,483 @@
+"","taxa_query","found_taxa","rank","worms_aphiaid","bold_id","gbif_key","ott_id","worms_sciname","tol_sciname","bold_taxon","gbif_sciname","phylum","status","unacceptreason","is_synonym","flags","valid_authority","kingdom","class","order","family","genus","freshwater_only","terrestrial_only"
+"1","Callopora horrida","Tegella horrida",NA,NA,NA,NA,2935710,NA,"Tegella horrida",NA,NA,"Bryozoa",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"2","Bowerbankia","Bowerbankia",NA,NA,NA,NA,401890,NA,"Bowerbankia",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"3","Urticina lofotensis","Urticina lofotensis",NA,NA,NA,NA,278329,NA,"Urticina lofotensis",NA,NA,"Cnidaria",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"4","Balanophyllia elegans","Balanophyllia elegans",NA,NA,NA,NA,192310,NA,"Balanophyllia elegans",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"5","Bougainvillia glorietta","Bougainvillia glorietta",NA,NA,NA,NA,3681607,NA,"Bougainvillia glorietta",NA,NA,"Cnidaria",NA,NA,FALSE,"hidden",NA,NA,NA,NA,NA,NA,NA,NA
+"6","Abietinariaei","Abietinaria",NA,NA,NA,NA,788002,NA,"Abietinaria",NA,NA,"Cnidaria",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"7","Haliclystus californiensis","Haliclystus californiensis","species",NA,302950,5842372,922281,NA,"Haliclystus californiensis","Haliclystus californiensis","Haliclystus californiensis Kahn, Matsumoto, Hirano & Collins, 2010","Cnidaria","nomen nudum",NA,FALSE,"",NA,"Animalia","Staurozoa","Stauromedusae","Haliclystidae","Haliclystus","0","0"
+"8","Haliclystus sanjuanensis","Haliclystus sanjuanensis",NA,NA,NA,NA,309092,NA,"Haliclystus sanjuanensis",NA,NA,"Cnidaria",NA,NA,FALSE,"hidden",NA,NA,NA,NA,NA,NA,NA,NA
+"9","Tubulanus ruber","Tubulanus ruber",NA,NA,NA,NA,7502743,NA,"Tubulanus ruber",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"10","Haliclona cinerea","Haliclona cinerea",NA,NA,NA,NA,305411,NA,"Haliclona cinerea",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"11","Halichondria bowerbanki","Halichondria bowerbanki",NA,NA,NA,NA,338349,NA,"Halichondria bowerbanki",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"12","Halichondria panicea","Halichondria panicea",NA,NA,NA,NA,708370,NA,"Halichondria panicea",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"13","Laqueus californianus","Laqueus californianus",NA,NA,NA,NA,474208,NA,"Laqueus californianus",NA,NA,"Brachiopoda",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"14","Mycetophyllia daniana","Mycetophyllia danaana",NA,NA,NA,NA,654383,NA,"Mycetophyllia danaana",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"15","Acanthastrea rotundaflora","Acanthastrea rotundaflora",NA,NA,NA,NA,28686,NA,"Acanthastrea rotundaflora",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"16","Favites valenciennesi","Favites valenciennesi",NA,NA,NA,NA,906677,NA,"Favites valenciennesi",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"17","Gordius","Gordius",NA,NA,NA,NA,894253,NA,"Gordius",NA,NA,"Nematomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"18","Macracanthorhynchus ingens","Macracanthorhynchus ingens",NA,NA,NA,NA,562171,NA,"Macracanthorhynchus ingens",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"19","Asplanchna silvestrii","Asplanchna silvestrii",NA,NA,NA,NA,245637,NA,"Asplanchna silvestrii",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"20","Lepadella quadricarinata","Lepadella quadricarinata",NA,NA,NA,NA,2941351,NA,"Lepadella quadricarinata",NA,NA,"Rotifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"21","Plationus patulus","Plationus patulus",NA,NA,NA,NA,937964,NA,"Plationus patulus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"22","Lecane leontina","Lecane leontina",NA,NA,NA,NA,1090177,NA,"Lecane leontina",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"23","Brachionus havanaensis","Brachionus havanaensis",NA,NA,NA,NA,700604,NA,"Brachionus havanaensis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"24","Brachionus caudatus","Brachionus caudatus",NA,NA,NA,NA,197558,NA,"Brachionus caudatus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"25","Brachionus angularis","Brachionus angularis",NA,NA,NA,NA,837275,NA,"Brachionus angularis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"26","Keratella americana","Keratella americana",NA,NA,NA,NA,1023633,NA,"Keratella americana",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"27","Lecane bulla","Lecane bulla",NA,NA,NA,NA,532775,NA,"Lecane bulla",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"28","Lecane crepida","Lecane crepida",NA,NA,NA,NA,429871,NA,"Lecane crepida",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"29","Lecane luna","Lecane luna",NA,NA,NA,NA,316622,NA,"Lecane luna",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"30","Macrochaetus","Macrochaetus",NA,NA,NA,NA,563702,NA,"Macrochaetus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"31","Lecane monostyla","Lecane monostyla",NA,NA,NA,NA,581951,NA,"Lecane monostyla",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"32","Lecane hamata","Lecane hamata",NA,NA,NA,NA,429874,NA,"Lecane hamata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"33","Euchlanis dilatata","Euchlanis dilatata",NA,NA,NA,NA,1018357,NA,"Euchlanis dilatata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"34","Lecane cornuta","Lecane cornuta",NA,NA,NA,NA,429869,NA,"Lecane cornuta",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"35","Lecane curvicornis","Lecane curvicornis",NA,NA,NA,NA,620080,NA,"Lecane curvicornis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"36","Lecane papuana","Lecane papuana",NA,NA,NA,NA,581949,NA,"Lecane papuana",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"37","Lepadella ovalis","Lepadella ovalis",NA,NA,NA,NA,2941354,NA,"Lepadella ovalis",NA,NA,"Rotifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"38","Brachionus falcatus","Brachionus falcatus",NA,NA,NA,NA,700608,NA,"Brachionus falcatus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"39","Lecane hastata","Lecane hastata",NA,NA,NA,NA,701563,NA,"Lecane hastata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"40","Kellicottia bostoniensis","Kellicottia bostoniensis",NA,NA,NA,NA,672796,NA,"Kellicottia bostoniensis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"41","Brachionus calyciflorus","Brachionus calyciflorus",NA,NA,NA,NA,939320,NA,"Brachionus calyciflorus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"42","Ascomorpha ovalis","Ascomorpha ovalis",NA,NA,NA,NA,513186,NA,"Ascomorpha ovalis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"43","Trichocerca stylata","Trichocerca stylata",NA,NA,NA,NA,672791,NA,"Trichocerca stylata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"44","Brachionus bidentatus","Brachionus bidentatus",NA,NA,NA,NA,620076,NA,"Brachionus bidentatus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"45","Asplanchna sieboldi","Asplanchna sieboldi",NA,NA,NA,NA,251968,NA,"Asplanchna sieboldi",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"46","Brachionus urceolaris","Brachionus urceolaris",NA,NA,NA,NA,169314,NA,"Brachionus urceolaris",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"47","Plationus","Plationus",NA,NA,NA,NA,937966,NA,"Plationus",NA,NA,"Rotifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"48","Beauchampiella eudactylota","Beauchampiella eudactylota",NA,NA,NA,NA,738316,NA,"Beauchampiella eudactylota",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"49","Lepadella patella","Lepadella patella",NA,NA,NA,NA,1018359,NA,"Lepadella patella",NA,NA,"Rotifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"50","Trichocerca longiseta","Trichocerca longiseta",NA,NA,NA,NA,352613,NA,"Trichocerca longiseta",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"51","Filinia","Filinia",NA,NA,NA,NA,424467,NA,"Filinia",NA,NA,"Rotifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"52","Keratella morenoi","Keratella morenoi",NA,NA,NA,NA,620072,NA,"Keratella morenoi",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"53","Keratella cochlearis","Keratella cochlearis",NA,NA,NA,NA,169319,NA,"Keratella cochlearis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"54","Brachionus variabilis","Brachionus variabilis",NA,NA,NA,NA,620078,NA,"Brachionus variabilis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"55","Lecane spinulifera","Lecane spinulifera",NA,NA,NA,NA,581939,NA,"Lecane spinulifera",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"56","Poseidonemertes is","Poseidonemertes",NA,NA,NA,NA,5496,NA,"Poseidonemertes",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"57","Zygonemertes simonae","Zygonemertes simonae",NA,NA,NA,NA,130100,NA,"Zygonemertes simonae",NA,NA,"Nemertea",NA,NA,FALSE,"extinct_inherited, incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"58","Strongylacidon bermudae","Strongylacidon bermudae",NA,NA,NA,NA,879843,NA,"Strongylacidon bermudae",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"59","Macrobiotidae","Macrobiotidae",NA,NA,NA,NA,111444,NA,"Macrobiotidae",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"60","Halisarca dujardini","Halisarca dujardini",NA,NA,NA,NA,832875,NA,"Halisarca dujardini",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"61","Bugula flabellata","Bugula flabellata",NA,NA,NA,NA,542311,NA,"Bugula flabellata",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"62","Macrobiotus hufelandi","Macrobiotus hufelandi",NA,NA,NA,NA,998162,NA,"Macrobiotus hufelandi",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"63","Mastigias remengesaui","Mastigias sp. remengesaui",NA,NA,NA,NA,149852,NA,"Mastigias sp. remengesaui",NA,NA,"Cnidaria",NA,NA,FALSE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"64","Mastigias remeliiki","Mastigias sp. remeliiki",NA,NA,NA,NA,149856,NA,"Mastigias sp. remeliiki",NA,NA,"Cnidaria",NA,NA,FALSE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"65","Kellicottia","Kellicottia",NA,NA,NA,NA,672795,NA,"Kellicottia",NA,NA,"Rotifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"66","Hydra vulgaris","Hydra vulgaris",NA,NA,NA,NA,111442,NA,"Hydra vulgaris",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"67","Aiptasia pulchella","Aiptasia pulchella",NA,NA,NA,NA,135925,NA,"Aiptasia pulchella",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"68","Pelophila borealis","Pelophila borealis",NA,NA,NA,NA,5421009,NA,"Pelophila borealis",NA,NA,"Xenacoelomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"69","Dipleuchlanis propatula","Dipleuchlanis propatula",NA,NA,NA,NA,2942300,NA,"Dipleuchlanis propatula",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"70","Eunapiusor","Euryparyphes",NA,NA,NA,NA,53667,NA,"Euryparyphes",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"71","Rotaria rotatoria","Rotaria rotatoria",NA,NA,NA,NA,1018353,NA,"Rotaria rotatoria",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"72","Rotaria socialis","Rotaria socialis",NA,NA,NA,NA,48507,NA,"Rotaria socialis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"73","Rotaria sordida","Rotaria sordida",NA,NA,NA,NA,48506,NA,"Rotaria sordida",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"74","Rotaria tardigrada","Rotaria tardigrada",NA,NA,NA,NA,48499,NA,"Rotaria tardigrada",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"75","Echiniscidae","Echiniscidae",NA,NA,NA,NA,963273,NA,"Echiniscidae",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"76","Bradyscela clauda","Bradyscela clauda",NA,NA,NA,NA,991847,NA,"Bradyscela clauda",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"77","Adineta","Adineta",NA,NA,NA,NA,681218,NA,"Adineta",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"78","Adineta steineri","Adineta steineri",NA,NA,NA,NA,743723,NA,"Adineta steineri",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"79","Adineta vaga","Adineta vaga",NA,NA,NA,NA,681215,NA,"Adineta vaga",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"80","Hymeniacidon sinapium","Hymeniacidon sinapium",NA,NA,NA,NA,372516,NA,"Hymeniacidon sinapium",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"81","Echiniscus testudo","Echiniscus testudo",NA,NA,NA,NA,66117,NA,"Echiniscus testudo",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"82","Lubomirskia baikalensis","Lubomirskia baikalensis",NA,NA,NA,NA,2835174,NA,"Lubomirskia baikalensis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"83","Swartschewskia papyracea","Swartschewskia papyracea",NA,NA,NA,NA,386303,NA,"Swartschewskia papyracea",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"84","Echiniscus blumi","Echiniscus blumi",NA,NA,NA,NA,279871,NA,"Echiniscus blumi",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"85","Rotaria macroceros","Rotaria macroceros",NA,NA,NA,NA,755138,NA,"Rotaria macroceros",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"86","Rotaria magnacalcarata","Rotaria magnacalcarata",NA,NA,NA,NA,48505,NA,"Rotaria magnacalcarata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"87","Richtersius coronifer","Richtersius coronifer",NA,NA,NA,NA,176559,NA,"Richtersius coronifer",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"88","Favia danae","Dipsastraea danai",NA,NA,NA,NA,826595,NA,"Dipsastraea danai",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"89","Favia favus","Dipsastraea favus",NA,NA,NA,NA,145361,NA,"Dipsastraea favus",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"90","Favites paraflexuosa","Favites paraflexuosus",NA,NA,NA,NA,98779,NA,"Favites paraflexuosus",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"91","Favia laxa","Dipsastraea laxa",NA,NA,NA,NA,3675701,NA,"Dipsastraea laxa",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"92","Favia","Favia","genus",NA,29901,10241599,992408,NA,"Favia","Favia","Favia De Blainville, 1820","Cnidaria","accepted",NA,FALSE,"",NA,"Animalia","Anthozoa","Scleractinia","Scleractinia incertae sedis","Favia","0","0"
+"93","Borealibius zetlandicus","Borealibius zetlandicus",NA,NA,NA,NA,37214,NA,"Borealibius zetlandicus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"94","Gelatinella toanensis","Gelatinella toanensis",NA,NA,NA,NA,1089103,NA,"Gelatinella toanensis",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"95","Pectinatella magnifica","Pectinatella magnifica",NA,NA,NA,NA,189631,NA,"Pectinatella magnifica",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"96","Cristatella mucedo","Cristatella mucedo",NA,NA,NA,NA,320347,NA,"Cristatella mucedo",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"97","Lophopus crystallinus","Lophopus crystallinus",NA,NA,NA,NA,935704,NA,"Lophopus crystallinus",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"98","Macrotrachela quadricornifera","Macrotrachela quadricornifera",NA,NA,NA,NA,681209,NA,"Macrotrachela quadricornifera",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"99","Pleuretra lineata","Pleuretra lineata",NA,NA,NA,NA,790553,NA,"Pleuretra lineata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"100","Milnesium tardigradum","Milnesium tardigradum",NA,NA,NA,NA,13567,NA,"Milnesium tardigradum",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"101","Myopea callaeum","Myopea caleum",NA,NA,NA,NA,3663422,NA,"Myopea caleum",NA,NA,"Xenacoelomorpha",NA,NA,FALSE,"hidden",NA,NA,NA,NA,NA,NA,NA,NA
+"102","Caulophacella tenuis","Caulophacella tenuis",NA,NA,NA,NA,103769,NA,"Caulophacella tenuis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"103","Caulophacus weddelli","Caulophacus weddelli",NA,NA,NA,NA,612405,NA,"Caulophacus weddelli",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"104","Caulophacus valdiviae","Caulophacus valdiviae",NA,NA,NA,NA,103768,NA,"Caulophacus valdiviae",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"105","Semperella schulzei","Semperella schulzei",NA,NA,NA,NA,154403,NA,"Semperella schulzei",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"106","Favia leptophylla","Favia leptophylla",NA,NA,NA,NA,706976,NA,"Favia leptophylla",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"107","Echinopora pacificus","Echinopora pacificus",NA,NA,NA,NA,601947,NA,"Echinopora pacificus",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"108","Favia stelligera","Goniastrea stelligera",NA,NA,NA,NA,50365,NA,"Goniastrea stelligera",NA,NA,"Cnidaria",NA,NA,TRUE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"109","Favia pallida","Dipsastraea pallida",NA,NA,NA,NA,601934,NA,"Dipsastraea pallida",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"110","Meandrina braziliensis","Meandrina braziliensis",NA,NA,NA,NA,973244,NA,"Meandrina braziliensis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"111","Stephanocoenia michelinii","Stephanocoenia michelinii",NA,NA,NA,NA,292624,NA,"Stephanocoenia michelinii",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"112","Forskalia edwardsi","Forskalia edwardsi",NA,NA,NA,NA,986301,NA,"Forskalia edwardsi",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"113","Scapophyllia cylindrica","Scapophyllia cylindrica",NA,NA,NA,NA,1065035,NA,"Scapophyllia cylindrica",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"114","Chrysaorah","Chrysaora",NA,NA,NA,NA,983584,NA,"Chrysaora",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"115","Favia maxima","Dipsastraea maxima",NA,NA,NA,NA,98786,NA,"Dipsastraea maxima",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"116","Chrysaora chesapeake","Chrysaora chesapeakei",NA,NA,NA,NA,7509042,NA,"Chrysaora chesapeakei",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"117","Anthopleura midori","Anthopleura anjunae",NA,NA,NA,NA,136455,NA,"Anthopleura anjunae",NA,NA,"Cnidaria",NA,NA,TRUE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"118","Dendronephthya putteri","Dendronephthya putteri",NA,NA,NA,NA,947312,NA,"Dendronephthya putteri",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"119","Eunicella cavolinii","Eunicella cavolini",NA,NA,NA,NA,115759,NA,"Eunicella cavolini",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"120","Chrysaorast","Chrysaora",NA,NA,NA,NA,983584,NA,"Chrysaora",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"121","Rhodactis mussoides","Platyzoanthus mussoides",NA,NA,NA,NA,145355,NA,"Platyzoanthus mussoides",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"122","Craspedacusta sowerbii","Craspedacusta sowerbii",NA,NA,NA,NA,127047,NA,"Craspedacusta sowerbii",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"123","Leptastrea pruinosa","Leptastrea pruinosa",NA,NA,NA,NA,878037,NA,"Leptastrea pruinosa",NA,NA,"Cnidaria",NA,NA,FALSE,"incertae_sedis_inherited",NA,NA,NA,NA,NA,NA,NA,NA
+"124","Euphyllia divisa","Euphyllia divisa",NA,NA,NA,NA,878033,NA,"Euphyllia divisa",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"125","Euphyllia ancora","Euphyllia ancora",NA,NA,NA,NA,313607,NA,"Euphyllia ancora",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"126","Coscinaraea columna","Coscinaraea columna",NA,NA,NA,NA,555521,NA,"Coscinaraea columna",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"127","Halipteris","Halipteris",NA,NA,NA,NA,364267,NA,"Halipteris",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"128","Pennatula grandis","Pennatula grandis",NA,NA,NA,NA,3680007,NA,"Pennatula grandis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"129","Olindias phosphorica","Olindias phosphorica",NA,NA,NA,NA,757863,NA,"Olindias phosphorica",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"130","Porites panamensis","Porites panamensis","species",NA,211888,5184795,1008765,NA,"Porites panamensis","Porites panamensis","Porites panamensis Verrill, 1866","Cnidaria","unavailable name",NA,FALSE,"",NA,"Animalia","Anthozoa","Scleractinia","Poritidae","Porites","0","0"
+"131","Porites duerdeni","Porites duerdeni",NA,NA,NA,NA,348411,NA,"Porites duerdeni",NA,NA,"Cnidaria",NA,NA,FALSE,"hidden",NA,NA,NA,NA,NA,NA,NA,NA
+"132","Tropidocyathus lessoni","Tropidocyathus lessoni",NA,NA,NA,NA,242139,NA,"Tropidocyathus lessoni",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"133","Stephanocyathus spiniger","Stephanocyathus spiniger",NA,NA,NA,NA,496905,NA,"Stephanocyathus spiniger",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"134","Fungiacyathus turbinolioides","Fungiacyathus turbinolioides",NA,NA,NA,NA,765451,NA,"Fungiacyathus turbinolioides",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"135","Fungiacyathus stephanus","Fungiacyathus stephanus",NA,NA,NA,NA,765453,NA,"Fungiacyathus stephanus",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"136","Fungiacyathus pusillus","Fungiacyathus pusillus",NA,NA,NA,NA,765457,NA,"Fungiacyathus pusillus",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"137","Fungiacyathus fragilis","Fungiacyathus fragilis",NA,NA,NA,NA,765443,NA,"Fungiacyathus fragilis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"138","Flabellum vaughani","Flabellum vaughani",NA,NA,NA,NA,765445,NA,"Flabellum vaughani",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"139","Flabellum tuthilli","Flabellum tuthilli",NA,NA,NA,NA,765447,NA,"Flabellum tuthilli",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"140","Flabellum lowekeyesi","Flabellum lowekeyesi",NA,NA,NA,NA,765449,NA,"Flabellum lowekeyesi",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"141","Flabellum lamellulosum","Flabellum lamellulosum",NA,NA,NA,NA,191130,NA,"Flabellum lamellulosum",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"142","Flabellum folkesoni","Flabellum folkesoni",NA,NA,NA,NA,191128,NA,"Flabellum folkesoni",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"143","Flabellum deludens","Flabellum deludens",NA,NA,NA,NA,606961,NA,"Flabellum deludens",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"144","Flabellum magnificum","Flabellum magnificum",NA,NA,NA,NA,606963,NA,"Flabellum magnificum",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"145","Flabellum arcuatile","Flabellum arcuatile",NA,NA,NA,NA,191134,NA,"Flabellum arcuatile",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"146","Flabellum apertum","Flabellum apertum",NA,NA,NA,NA,191132,NA,"Flabellum apertum",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"147","Favia truncatus","Dipsastraea truncata",NA,NA,NA,NA,191138,NA,"Dipsastraea truncata",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"148","Caryophyllia ralphae","Caryophyllia ralphae",NA,NA,NA,NA,191136,NA,"Caryophyllia ralphae",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"149","Caryophyllia diomedeae","Caryophyllia diomedeae",NA,NA,NA,NA,614550,NA,"Caryophyllia diomedeae",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"150","Caryophyllia atlantica","Caryophyllia atlantica",NA,NA,NA,NA,614552,NA,"Caryophyllia atlantica",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"151","Caulastraea tumida","Caulastraea tumida",NA,NA,NA,NA,959864,NA,"Caulastraea tumida",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"152","Hydra viridissima","Hydra viridissima",NA,NA,NA,NA,767778,NA,"Hydra viridissima",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"153","Stegopoma plicatile","Ptychogena crocea",NA,NA,NA,NA,709322,NA,"Ptychogena crocea",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"154","Craspedacusta","Craspedacusta",NA,NA,NA,NA,997626,NA,"Craspedacusta",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"155","Hydra oligactis","Hydra oligactis",NA,NA,NA,NA,861529,NA,"Hydra oligactis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"156","Hydra circumcincta","Hydra circumcincta",NA,NA,NA,NA,149372,NA,"Hydra circumcincta",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"157","Pelagia benovici","Mawia benovici",NA,NA,NA,NA,5424632,NA,"Mawia benovici",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"158","Hydra oxycnida","Hydra oxycnida",NA,NA,NA,NA,89758,NA,"Hydra oxycnida",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"159","Echinophyllia echinata","Echinophyllia echinata",NA,NA,NA,NA,250798,NA,"Echinophyllia echinata",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"160","Oxypora glabra","Oxypora glabra",NA,NA,NA,NA,3675959,NA,"Oxypora glabra",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"161","Hydra hymanae","Hydra hymanae",NA,NA,NA,NA,1055040,NA,"Hydra hymanae",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"162","Hydra utahensis","Hydra utahensis",NA,NA,NA,NA,1055038,NA,"Hydra utahensis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"163","Agalma okeni","Agalma okeni",NA,NA,NA,NA,536351,NA,"Agalma okeni",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"164","Clytia languida","Clytia hemisphaerica",NA,NA,NA,NA,33385,NA,"Clytia hemisphaerica",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"165","Corallium elatius","Corallium elatius",NA,NA,NA,NA,1093502,NA,"Corallium elatius",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"166","Halistemma amphytridis","Halistemma foliacea",NA,NA,NA,NA,320482,NA,"Halistemma foliacea",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"167","Lilyopsis rosea","Lilyopsis medusa",NA,NA,NA,NA,1068356,NA,"Lilyopsis medusa",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"168","Goniopora stutchburyi","Bernardpora stutchburyi",NA,NA,NA,NA,3675414,NA,"Bernardpora stutchburyi",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"169","Poritipora paliformis","Poritipora paliformis",NA,NA,NA,NA,7507262,NA,"Poritipora paliformis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"170","Velkovrhia enigmatica","Velkovrhia enigmatica",NA,NA,NA,NA,4712583,NA,"Velkovrhia enigmatica",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"171","Turritopsis chevalense","Oceania armata",NA,NA,NA,NA,3681251,NA,"Oceania armata",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"172","Corallium kishinouyei","Corallium kishinouyei",NA,NA,NA,NA,548213,NA,"Corallium kishinouyei",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"173","Corallium secundum","Corallium secundum",NA,NA,NA,NA,474450,NA,"Corallium secundum",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"174","Favia helianthoides","Dipsastraea helianthoides",NA,NA,NA,NA,826597,NA,"Dipsastraea helianthoides",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"175","Rhizophysa eysenhardti","Rhizophysa eysenhardti",NA,NA,NA,NA,338557,NA,"Rhizophysa eysenhardti",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"176","Pocillopora eydouxi","Pocillopora grandis",NA,NA,NA,NA,390556,NA,"Pocillopora grandis",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"177","Lobophyllia pachysepta","Acanthastrea pachysepta",NA,NA,NA,NA,654390,NA,"Acanthastrea pachysepta",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"178","Earleria quadrata","Earleria quadrata",NA,NA,NA,NA,4712567,NA,"Earleria quadrata",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"179","Cyclocanna welshi","Cyclocanna producta",NA,NA,NA,NA,358499,NA,"Cyclocanna producta",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"180","Cauloramphus spinifer","Cauloramphus spinifer",NA,NA,NA,NA,933159,NA,"Cauloramphus spinifer",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"181","Adineta gracilis","Adineta gracilis",NA,NA,NA,NA,991846,NA,"Adineta gracilis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"182","Philodina gregaria","Philodina gregaria",NA,NA,NA,NA,4953041,NA,"Philodina gregaria",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"183","Sagitta bedoti","Sagitta bedoti",NA,NA,NA,NA,390617,NA,"Sagitta bedoti",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"184","Sagitta enflata","Sagitta enflata",NA,NA,NA,NA,273695,NA,"Sagitta enflata",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"185","Redudasys","Redudasys",NA,NA,NA,NA,876318,NA,"Redudasys",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"186","Abrochtha meselsoni","Abrochtha meselsoni",NA,NA,NA,NA,688001,NA,"Abrochtha meselsoni",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"187","Abrochtha sonneborni","Abrochtha sonneborni",NA,NA,NA,NA,785906,NA,"Abrochtha sonneborni",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"188","Didymodactylos carnosus","Didymodactylos carnosus",NA,NA,NA,NA,693524,NA,"Didymodactylos carnosus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"189","Habrotrocha bidens","Habrotrocha bidens",NA,NA,NA,NA,267241,NA,"Habrotrocha bidens",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"190","Macrotrachela papillosa","Macrotrachela papillosa",NA,NA,NA,NA,267232,NA,"Macrotrachela papillosa",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"191","Mniobia magna","Mniobia magna",NA,NA,NA,NA,4953124,NA,"Mniobia magna",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"192","Mniobia russeola","Mniobia russeola",NA,NA,NA,NA,961833,NA,"Mniobia russeola",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"193","Diphascon puniceum","Diphascon puniceum",NA,NA,NA,NA,530430,NA,"Diphascon puniceum",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"194","Echiniscus","Echiniscus",NA,NA,NA,NA,963281,NA,"Echiniscus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"195","Diphascon","Diphascon",NA,NA,NA,NA,988095,NA,"Diphascon",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"196","Tsitsikamma favus","Tsitsikamma favus",NA,NA,NA,NA,253100,NA,"Tsitsikamma favus",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"197","Baikalospongia bacillifera","Baikalospongia bacillifera",NA,NA,NA,NA,1091131,NA,"Baikalospongia bacillifera",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"198","Macrotrachela habita","Macrotrachela habita",NA,NA,NA,NA,267237,NA,"Macrotrachela habita",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"199","Plumatella fungosa","Plumatella fungosa",NA,NA,NA,NA,886995,NA,"Plumatella fungosa",NA,NA,"Bryozoa",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"200","Polyarthra dolichoptera","Polyarthra dolichoptera",NA,NA,NA,NA,967150,NA,"Polyarthra dolichoptera",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"201","Cephalothrix fasciculus","Cephalothrix fasciculus",NA,NA,NA,NA,208407,NA,"Cephalothrix fasciculus",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"202","Radiella sarsi","Radiella sarsi",NA,NA,NA,NA,2839101,NA,"Radiella sarsi",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"203","Hebesoma violentum","Hebesoma violentum",NA,NA,NA,NA,4951364,NA,"Hebesoma violentum",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"204","Membranipora chesapeakensis","Membranipora chesapeakensis",NA,NA,NA,NA,115648,NA,"Membranipora chesapeakensis",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"205","Membranipora tenuis","Membranipora tenuis",NA,NA,NA,NA,115644,NA,"Membranipora tenuis",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"206","Plumatellidae","Plumatellidae",NA,NA,NA,NA,463358,NA,"Plumatellidae",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"207","Ototyphlonemertes americana","Ototyphlonemertes americana",NA,NA,NA,NA,2930647,NA,"Ototyphlonemertes americana",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"208","Ototyphlonemertes fila","Ototyphlonemertes fila",NA,NA,NA,NA,113424,NA,"Ototyphlonemertes fila",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"209","Ototyphlonemertes lactea","Ototyphlonemertes lactea",NA,NA,NA,NA,154490,NA,"Ototyphlonemertes lactea",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"210","Ototyphlonemertes macintoshi","Ototyphlonemertes macintoshi",NA,NA,NA,NA,847363,NA,"Ototyphlonemertes macintoshi",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"211","Prostoma graecense","Prostoma graecense",NA,NA,NA,NA,734400,NA,"Prostoma graecense",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"212","Asbestopluma bihamatifera","Asbestopluma bihamatifera",NA,NA,NA,NA,5975656,NA,"Asbestopluma bihamatifera",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"213","Asbestopluma belgicae","Asbestopluma belgicae",NA,NA,NA,NA,2837754,NA,"Asbestopluma belgicae",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"214","Asbestopluma cupressiformis","Asbestopluma cupressiformis",NA,NA,NA,NA,2837745,NA,"Asbestopluma cupressiformis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"215","Asbestopluma desmophora","Asbestopluma desmophora",NA,NA,NA,NA,2837759,NA,"Asbestopluma desmophora",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"216","Asbestopluma furcata","Asbestopluma furcata",NA,NA,NA,NA,2837757,NA,"Asbestopluma furcata",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"217","Asbestopluma infundibulum","Asbestopluma infundibulum",NA,NA,NA,NA,2837749,NA,"Asbestopluma infundibulum",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"218","Asbestopluma lycopodium","Asbestopluma lycopodium",NA,NA,NA,NA,2837736,NA,"Asbestopluma lycopodium",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"219","Asbestopluma pennatula","Asbestopluma pennatula",NA,NA,NA,NA,2837761,NA,"Asbestopluma pennatula",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"220","Chondrocladia fatimae","Chondrocladia fatimae",NA,NA,NA,NA,2837832,NA,"Chondrocladia fatimae",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"221","Chondrocladia gigantea","Chondrocladia gigantea",NA,NA,NA,NA,2837799,NA,"Chondrocladia gigantea",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"222","Chondrocladia lyra","Chondrocladia lyra",NA,NA,NA,NA,4939309,NA,"Chondrocladia lyra",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"223","Chondrocladia nani","Chondrocladia nani",NA,NA,NA,NA,2837772,NA,"Chondrocladia nani",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"224","Chondrocladia robertballardi","Chondrocladia robertballardi",NA,NA,NA,NA,5975662,NA,"Chondrocladia robertballardi",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"225","Chondrocladia vaceleti","Chondrocladia vaceleti",NA,NA,NA,NA,2837839,NA,"Chondrocladia vaceleti",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"226","Clathria prolifera","Clathria prolifera",NA,NA,NA,NA,2836842,NA,"Clathria prolifera",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"227","Clathria reinwardti","Clathria reinwardti",NA,NA,NA,NA,157576,NA,"Clathria reinwardti",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"228","Echinodictyum cancellatum","Echinodictyum cancellatum",NA,NA,NA,NA,1034728,NA,"Echinodictyum cancellatum",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"229","Ephydatia fluviatilis","Ephydatia fluviatilis",NA,NA,NA,NA,388857,NA,"Ephydatia fluviatilis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"230","Halichondria okadai","Halichondria okadai",NA,NA,NA,NA,395419,NA,"Halichondria okadai",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"231","Haliclona amboinensis","Haliclona amboinensis",NA,NA,NA,NA,2835000,NA,"Haliclona amboinensis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"232","Hamacantha falcula","Hamacantha falcula",NA,NA,NA,NA,2841239,NA,"Hamacantha falcula",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"233","Tedania ignis","Tedania ignis",NA,NA,NA,NA,304274,NA,"Tedania ignis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"234","Milnesium alpigenum","Milnesium alpigenum",NA,NA,NA,NA,7485547,NA,"Milnesium alpigenum",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"235","Petrosia ficiformis","Petrosia ficiformis",NA,NA,NA,NA,389380,NA,"Petrosia ficiformis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"236","Brachionus rubens","Brachionus rubens",NA,NA,NA,NA,700609,NA,"Brachionus rubens",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"237","Acutuncus antarcticus","Acutuncus antarcticus",NA,NA,NA,NA,988097,NA,"Acutuncus antarcticus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"238","Macrobiotus","Macrobiotus",NA,NA,NA,NA,661258,NA,"Macrobiotus",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"239","Chordodes morgani","Chordodes morgani",NA,NA,NA,NA,998436,NA,"Chordodes morgani",NA,NA,"Nematomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"240","Stichopathes lutkeni","Stichopathes lutkeni",NA,NA,NA,NA,1057618,NA,"Stichopathes lutkeni",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"241","Anacropora matthai","Anacropora matthai",NA,NA,NA,NA,794336,NA,"Anacropora matthai",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"242","Turbinaria peltata","Turbinaria peltata",NA,NA,NA,NA,304253,NA,"Turbinaria peltata",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"243","Pseudosiderastrea tayami","Pseudosiderastrea tayami",NA,NA,NA,NA,7507399,NA,"Pseudosiderastrea tayami",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"244","Scleronephthya gracillimum","Scleronephthya gracillimum",NA,NA,NA,NA,338807,NA,"Scleronephthya gracillimum",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"245","Narella hawaiinensis","Narella hawaiinensis",NA,NA,NA,NA,515386,NA,"Narella hawaiinensis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"246","Corallium konojoi","Corallium konojoi",NA,NA,NA,NA,428004,NA,"Corallium konojoi",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"247","Hydra sinensis","Hydra sinensis",NA,NA,NA,NA,146309,NA,"Hydra sinensis",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"248","Paragordius amicus","Paragordius amicus",NA,NA,NA,NA,7076917,NA,"Paragordius amicus",NA,NA,"Nematomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"249","Pycnophyes kielensis","Pycnophyes kielensis",NA,NA,NA,NA,52135,NA,"Pycnophyes kielensis",NA,NA,"Kinorhyncha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"250","Hypsibius dujardini","Hypsibius dujardini",NA,NA,NA,NA,977540,NA,"Hypsibius dujardini",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"251","Thulinius","Thulinius",NA,NA,NA,NA,963276,NA,"Thulinius",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"252","Macracanthorhynchus hirudinaceus","Macracanthorhynchus hirudinaceus",NA,NA,NA,NA,567375,NA,"Macracanthorhynchus hirudinaceus",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"253","Oncicola luehei","Oncicola luehei",NA,NA,NA,NA,974045,NA,"Oncicola luehei",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"254","Centrorhynchus aluconis","Centrorhynchus aluconis",NA,NA,NA,NA,4951593,NA,"Centrorhynchus aluconis",NA,NA,"Acanthocephala",NA,NA,FALSE,"extinct_inherited, incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"255","Plagiorhynchus transversus","Plagiorhynchus transversus",NA,NA,NA,NA,5972645,NA,"Plagiorhynchus transversus",NA,NA,"Acanthocephala",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"256","Polyacanthorhynchus caballeroi","Polyacanthorhynchus caballeroi",NA,NA,NA,NA,1079974,NA,"Polyacanthorhynchus caballeroi",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"257","Membranipora grandicella","Membranipora grandicella",NA,NA,NA,NA,547654,NA,"Membranipora grandicella",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"258","Loxocorone allax","Loxocorone allax",NA,NA,NA,NA,122346,NA,"Loxocorone allax",NA,NA,"Entoprocta",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"259","Prosadenoporus spectaculum","Prosadenoporus spectaculum",NA,NA,NA,NA,5476482,NA,"Prosadenoporus spectaculum",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"260","Agelas schmidti","Agelas schmidti",NA,NA,NA,NA,693838,NA,"Agelas schmidti",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"261","Ptilocaulis walpersi","Ptilocaulis walpersi",NA,NA,NA,NA,928144,NA,"Ptilocaulis walpersi",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"262","Callyspongia plicifera","Callyspongia plicifera",NA,NA,NA,NA,1031747,NA,"Callyspongia plicifera",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"263","Crella elegans","Crella elegans",NA,NA,NA,NA,373942,NA,"Crella elegans",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"264","Baikalospongia intermedia","Baikalospongia intermedia",NA,NA,NA,NA,363844,NA,"Baikalospongia intermedia",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"265","Lubomirskia","Lubomirskia",NA,NA,NA,NA,386307,NA,"Lubomirskia",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"266","Rezinkovia echinata","Rezinkovia echinata",NA,NA,NA,NA,561989,NA,"Rezinkovia echinata",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"267","Ephydatia muelleri","Ephydatia muelleri",NA,NA,NA,NA,588770,NA,"Ephydatia muelleri",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"268","Eunapius subterraneus","Eunapius subterraneus",NA,NA,NA,NA,518053,NA,"Eunapius subterraneus",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"269","Archaphanostoma ylvae","Archaphanostoma ylvae",NA,NA,NA,NA,5665563,NA,"Archaphanostoma ylvae",NA,NA,"Xenacoelomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"270","Isodiametra pulchra","Isodiametra pulchra",NA,NA,NA,NA,431879,NA,"Isodiametra pulchra",NA,NA,"Xenacoelomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"271","Philodina citrina","Philodina citrina",NA,NA,NA,NA,342351,NA,"Philodina citrina",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"272","Tedania charcoti","Tedania charcoti",NA,NA,NA,NA,2838858,NA,"Tedania charcoti",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"273","Limnias ceratophylli","Limnias ceratophylli",NA,NA,NA,NA,2942165,NA,"Limnias ceratophylli",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"274","Limnias melicerta","Limnias melicerta",NA,NA,NA,NA,2942157,NA,"Limnias melicerta",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"275","Adineta grandis","Adineta grandis",NA,NA,NA,NA,991851,NA,"Adineta grandis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"276","Brachionus quadridentatus","Brachionus quadridentatus",NA,NA,NA,NA,1047970,NA,"Brachionus quadridentatus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"277","Macrotrachela","Macrotrachela",NA,NA,NA,NA,681212,NA,"Macrotrachela",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"278","Pseudechiniscus islandicus","Pseudechiniscus islandicus",NA,NA,NA,NA,164110,NA,"Pseudechiniscus islandicus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"279","Pseudechiniscus suillus","Pseudechiniscus suillus",NA,NA,NA,NA,2942779,NA,"Pseudechiniscus suillus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"280","Hebesuncus","Hebesuncus",NA,NA,NA,NA,629707,NA,"Hebesuncus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"281","Hypsibius","Hypsibius",NA,NA,NA,NA,339797,NA,"Hypsibius",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"282","Pseudechiniscus","Pseudechiniscus",NA,NA,NA,NA,666072,NA,"Pseudechiniscus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"283","Lophelia","Lophelia",NA,NA,NA,NA,348413,NA,"Lophelia",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"284","Pallisentis celatus","Pallisentis celatus",NA,NA,NA,NA,751490,NA,"Pallisentis celatus",NA,NA,"Acanthocephala",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"285","Sagartia ornata","Sagartia ornata",NA,NA,NA,NA,1097015,NA,"Sagartia ornata",NA,NA,"Cnidaria",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"286","Brachionus patulus","Brachionus patulus",NA,NA,NA,NA,263248,NA,"Brachionus patulus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"287","Watersipora edmondsoni","Watersipora edmondsoni",NA,NA,NA,NA,942671,NA,"Watersipora edmondsoni",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"288","Keratella hiemalis","Keratella hiemalis",NA,NA,NA,NA,743643,NA,"Keratella hiemalis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"289","Keratella quadrata","Keratella quadrata",NA,NA,NA,NA,59521,NA,"Keratella quadrata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"290","Antarctonemertes varverae","Antarctonemertes varverae",NA,NA,NA,NA,1053026,NA,"Antarctonemertes varverae",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"291","Eunapius fragilis","Eunapius fragilis",NA,NA,NA,NA,692174,NA,"Eunapius fragilis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"292","Spongilla lacustris","Spongilla lacustris",NA,NA,NA,NA,588761,NA,"Spongilla lacustris",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"293","Mycale fibrexilis","Mycale fibrexilis",NA,NA,NA,NA,173161,NA,"Mycale fibrexilis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"294","Murrayon pullari","Murrayon pullari",NA,NA,NA,NA,874005,NA,"Murrayon pullari",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"295","Paratimea duplex()","Paratimea duplex",NA,NA,NA,NA,2839151,NA,"Paratimea duplex",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"296","Clathria armata","Clathria armata",NA,NA,NA,NA,2836974,NA,"Clathria armata",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"297","Clathria barleei","Clathria barleei",NA,NA,NA,NA,878716,NA,"Clathria barleei",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"298","Cephalothrix alba","Cephalothrix alba",NA,NA,NA,NA,2931213,NA,"Cephalothrix alba",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"299","Lissodendoryx complicata","Lissodendoryx complicata",NA,NA,NA,NA,2838099,NA,"Lissodendoryx complicata",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"300","Haliclona plakophila","Haliclona plakophila",NA,NA,NA,NA,7509412,NA,"Haliclona plakophila",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"301","Tubella variabilis","Tubella variabilis",NA,NA,NA,NA,2834543,NA,"Tubella variabilis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"302","Ichthydium squamigerum","Ichthydium squamigerum",NA,NA,NA,NA,744031,NA,"Ichthydium squamigerum",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"303","Ichthydium skandicum","Ichthydium skandicum",NA,NA,NA,NA,744028,NA,"Ichthydium skandicum",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"304","Chaetonotus microchaetus","Chaetonotus microchaetus",NA,NA,NA,NA,521412,NA,"Chaetonotus microchaetus",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"305","Chaetonotus sphagnophilus","Chaetonotus sphagnophilus",NA,NA,NA,NA,2844466,NA,"Chaetonotus sphagnophilus",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"306","Chaetonotus laroides","Chaetonotus laroides",NA,NA,NA,NA,520947,NA,"Chaetonotus laroides",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"307","Chaetonotus similis","Chaetonotus similis",NA,NA,NA,NA,300138,NA,"Chaetonotus similis",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"308","Polymerurus rhomboides","Polymerurus rhomboides",NA,NA,NA,NA,470577,NA,"Polymerurus rhomboides",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"309","Chaetonotus maximus","Chaetonotus maximus",NA,NA,NA,NA,2844476,NA,"Chaetonotus maximus",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"310","Chaetonotus oculifer","Chaetonotus oculifer",NA,NA,NA,NA,2844427,NA,"Chaetonotus oculifer",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"311","Dasydytes papaveroi","Dasydytes papaveroi",NA,NA,NA,NA,168580,NA,"Dasydytes papaveroi",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"312","Dasydytes carvalhoae","Dasydytes carvalhoae",NA,NA,NA,NA,168504,NA,"Dasydytes carvalhoae",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"313","Ornamentula paraensis","Ornamentula paraensis",NA,NA,NA,NA,744042,NA,"Ornamentula paraensis",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"314","Chaetonotus dispar","Chaetonotus dispar",NA,NA,NA,NA,2844441,NA,"Chaetonotus dispar",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"315","Chaetonotus daphnes","Chaetonotus daphnes",NA,NA,NA,NA,520721,NA,"Chaetonotus daphnes",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"316","Chaetonotus heideri","Chaetonotus heideri",NA,NA,NA,NA,1046091,NA,"Chaetonotus heideri",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"317","Corvospongilla ultima","Corvospongilla ultima",NA,NA,NA,NA,2834617,NA,"Corvospongilla ultima",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"318","Clathria toxitenuis","Clathria toxitenuis",NA,NA,NA,NA,2837032,NA,"Clathria toxitenuis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"319","Raspailia viminalis","Raspailia viminalis",NA,NA,NA,NA,2837221,NA,"Raspailia viminalis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"320","Spongia nitens","Spongia nitens",NA,NA,NA,NA,2836296,NA,"Spongia nitens",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"321","Spongia officinalis","Spongia officinalis",NA,NA,NA,NA,373931,NA,"Spongia officinalis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"322","Haliclona fibulata","Haliclona fibulata",NA,NA,NA,NA,480722,NA,"Haliclona fibulata",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"323","Neopetrosia exigua","Neopetrosia exigua",NA,NA,NA,NA,4939010,NA,"Neopetrosia exigua",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"324","Callyspongia diffusa","Callyspongia diffusa",NA,NA,NA,NA,2834448,NA,"Callyspongia diffusa",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"325","Hubrechtidae","Hubrechtidae",NA,NA,NA,NA,108675,NA,"Hubrechtidae",NA,NA,"Nemertea",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"326","Enopla","Enopla",NA,NA,NA,NA,971440,NA,"Enopla",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"327","Argonemertes australiensis","Argonemertes australiensis",NA,NA,NA,NA,564231,NA,"Argonemertes australiensis",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"328","Geonemertes","Geonemertes",NA,NA,NA,NA,529261,NA,"Geonemertes",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"329","Stelligera rigida","Stelligera rigida",NA,NA,NA,NA,503514,NA,"Stelligera rigida",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"330","Tedania","Tedania",NA,NA,NA,NA,304275,NA,"Tedania",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"331","Racekiela montemflumina","Racekiela montemflumina",NA,NA,NA,NA,7509651,NA,"Racekiela montemflumina",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"332","Ototyphlonemertes tsukagoshii","Ototyphlonemertes tsukagoshii",NA,NA,NA,NA,7502655,NA,"Ototyphlonemertes tsukagoshii",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"333","Ototyphlonemertes nakaoae","Ototyphlonemertes nakaoae",NA,NA,NA,NA,7502645,NA,"Ototyphlonemertes nakaoae",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"334","Ototyphlonemertes lei","Ototyphlonemertes lei",NA,NA,NA,NA,7502643,NA,"Ototyphlonemertes lei",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"335","Ototyphlonemertes norenburgi","Ototyphlonemertes norenburgi",NA,NA,NA,NA,7502646,NA,"Ototyphlonemertes norenburgi",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"336","Ototyphlonemertes envalli","Ototyphlonemertes envalli",NA,NA,NA,NA,7502642,NA,"Ototyphlonemertes envalli",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"337","Lissodendoryx hawaiiana","Lissodendoryx hawaiiana",NA,NA,NA,NA,7509514,NA,"Lissodendoryx hawaiiana",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"338","Haliclona aquaeductus","Haliclona aquaeductus",NA,NA,NA,NA,531041,NA,"Haliclona aquaeductus",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"339","Callyspongia pseudotoxa","Callyspongia pseudotoxa",NA,NA,NA,NA,2834382,NA,"Callyspongia pseudotoxa",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"340","Hypsibius klebelsbergi","Hypsibius klebelsbergi",NA,NA,NA,NA,11617,NA,"Hypsibius klebelsbergi",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"341","Eothinia elongata","Eothinia elongata",NA,NA,NA,NA,460955,NA,"Eothinia elongata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"342","Gnathostomula axi","Gnathostomula axi",NA,NA,NA,NA,576384,NA,"Gnathostomula axi",NA,NA,"Gnathostomulida",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"343","Lubomirskiidae","Lubomirskiidae",NA,NA,NA,NA,386308,NA,"Lubomirskiidae",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"344","Baikalospongia martinsoni","Baikalospongia martinsoni",NA,NA,NA,NA,561986,NA,"Baikalospongia martinsoni",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"345","Baikalospongia fungiformis","Baikalospongia fungiformis",NA,NA,NA,NA,561980,NA,"Baikalospongia fungiformis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"346","Bifidochaetus arcticus","Bifidochaetus arcticus",NA,NA,NA,NA,5973084,NA,"Bifidochaetus arcticus",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"347","Chaetonotus jaceki","Chaetonotus jaceki",NA,NA,NA,NA,7491496,NA,"Chaetonotus jaceki",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"348","Chaetonotus subtilis","Chaetonotus subtilis",NA,NA,NA,NA,7491507,NA,"Chaetonotus subtilis",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"349","Chaetonotus borealis","Chaetonotus borealis",NA,NA,NA,NA,7491491,NA,"Chaetonotus borealis",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"350","Chaetonotus bombardus","Chaetonotus bombardus",NA,NA,NA,NA,7491490,NA,"Chaetonotus bombardus",NA,NA,"Gastrotricha",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"351","Chondrocladia verticillata","Chondrocladia verticillata",NA,NA,NA,NA,2837795,NA,"Chondrocladia verticillata",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"352","Pycnophyes dentatus","Pycnophyes dentatus",NA,NA,NA,NA,3583627,NA,"Pycnophyes dentatus",NA,NA,"Kinorhyncha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"353","Cephalionotus kisielewskii","Cephalionotus kisielewskii",NA,NA,NA,NA,6337333,NA,"Cephalionotus kisielewskii",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"354","Macrobiotus macrocalix","Macrobiotus macrocalix",NA,NA,NA,NA,143255,NA,"Macrobiotus macrocalix",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"355","Macrobiotus vladimiri","Macrobiotus vladimiri",NA,NA,NA,NA,4168699,NA,"Macrobiotus vladimiri",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"356","Minibiotus furcatus","Minibiotus furcatus",NA,NA,NA,NA,960828,NA,"Minibiotus furcatus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"357","Ramazzottius varieornatus","Ramazzottius varieornatus",NA,NA,NA,NA,320817,NA,"Ramazzottius varieornatus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"358","Echiniscus quadrispinosus","Echiniscus quadrispinosus",NA,NA,NA,NA,2942603,NA,"Echiniscus quadrispinosus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"359","Pseudechiniscus facettalis","Pseudechiniscus facettalis",NA,NA,NA,NA,960822,NA,"Pseudechiniscus facettalis",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"360","Pseudobiotus spinifer","Pseudobiotus spinifer",NA,NA,NA,NA,5692464,NA,"Pseudobiotus spinifer",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"361","Milnesium variefidum","Milnesium variefidum",NA,NA,NA,NA,5972619,NA,"Milnesium variefidum",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"362","Mesocrista revelata","Mesocrista revelata",NA,NA,NA,NA,7485621,NA,"Mesocrista revelata",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"363","Pilatobius recamieri","Pilatobius recamieri",NA,NA,NA,NA,5004626,NA,"Pilatobius recamieri",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"364","Mesobiotus hilariae","Mesobiotus hilariae",NA,NA,NA,NA,7485712,NA,"Mesobiotus hilariae",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"365","Isohypsibius pushkini","Isohypsibius pushkini",NA,NA,NA,NA,5004454,NA,"Isohypsibius pushkini",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"366","Echiniscus mediantus","Echiniscus mediantus",NA,NA,NA,NA,2942663,NA,"Echiniscus mediantus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"367","Echiniscus canadensis","Echiniscus canadensis",NA,NA,NA,NA,565770,NA,"Echiniscus canadensis",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"368","Macrobiotus canaricus","Macrobiotus canaricus",NA,NA,NA,NA,7485677,NA,"Macrobiotus canaricus",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"369","Macrobiotus recens","Macrobiotus recens",NA,NA,NA,NA,5004279,NA,"Macrobiotus recens",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"370","Macrobiotus hannae","Macrobiotus hannae",NA,NA,NA,NA,7485689,NA,"Macrobiotus hannae",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"371","Mesobiotus ethiopicus","Mesobiotus ethiopicus",NA,NA,NA,NA,7485705,NA,"Mesobiotus ethiopicus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"372","Mesobiotus harmsworthi","Mesobiotus harmsworthi",NA,NA,NA,NA,911310,NA,"Mesobiotus harmsworthi",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"373","Mesobiotus radiatus","Mesobiotus radiatus",NA,NA,NA,NA,5004238,NA,"Mesobiotus radiatus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"374","Mesobiotus romani","Mesobiotus romani",NA,NA,NA,NA,7485739,NA,"Mesobiotus romani",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"375","Ramazzottius oberhaeuseri","Ramazzottius oberhaeuseri",NA,NA,NA,NA,1086323,NA,"Ramazzottius oberhaeuseri",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"376","Diploechiniscus oihonnae","Diploechiniscus oihonnae",NA,NA,NA,NA,2942619,NA,"Diploechiniscus oihonnae",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"377","Pseudoacanthocephalus toshimai","Pseudoacanthocephalus toshimai",NA,NA,NA,NA,6326242,NA,"Pseudoacanthocephalus toshimai",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"378","Pseudoacanthocephalus lucidus","Pseudoacanthocephalus lucidus",NA,NA,NA,NA,4952091,NA,"Pseudoacanthocephalus lucidus",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"379","Acanthocephalus nanus","Acanthocephalus nanus",NA,NA,NA,NA,4952103,NA,"Acanthocephalus nanus",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"380","Sagitta setosa","Sagitta setosa",NA,NA,NA,NA,476668,NA,"Sagitta setosa",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"381","Sagitta ferox","Sagitta ferox",NA,NA,NA,NA,476664,NA,"Sagitta ferox",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"382","Sagitta elegans","Sagitta elegans",NA,NA,NA,NA,49627,NA,"Sagitta elegans",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"383","Sagitta robusta","Sagitta robusta",NA,NA,NA,NA,476670,NA,"Sagitta robusta",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"384","Micrura albocephala","Micrura sp. albocephala",NA,NA,NA,NA,7502835,NA,"Micrura sp. albocephala",NA,NA,"Nemertea",NA,NA,FALSE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"385","Paranemertes californica","Paranemertes californica",NA,NA,NA,NA,2930628,NA,"Paranemertes californica",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"386","Brachionus sericus","Brachionus sericus",NA,NA,NA,NA,797562,NA,"Brachionus sericus",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"387","Beauchampia crucigera","Beauchampia crucigera",NA,NA,NA,NA,2942150,NA,"Beauchampia crucigera",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"388","Dissotrocha macrostyla","Dissotrocha macrostyla",NA,NA,NA,NA,621248,NA,"Dissotrocha macrostyla",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"389","Philodina megalotrocha","Philodina megalotrocha",NA,NA,NA,NA,400740,NA,"Philodina megalotrocha",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"390","Rotaria megarostris","Rotaria megarostris",NA,NA,NA,NA,7506309,NA,"Rotaria megarostris",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"391","Rotaria mento","Rotaria mento",NA,NA,NA,NA,4953161,NA,"Rotaria mento",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"392","Rotaria neptunia","Rotaria neptunia",NA,NA,NA,NA,1018354,NA,"Rotaria neptunia",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"393","Rotaria ovata","Rotaria ovata",NA,NA,NA,NA,4953163,NA,"Rotaria ovata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"394","Habrotrocha antarctica","Habrotrocha antarctica",NA,NA,NA,NA,5974478,NA,"Habrotrocha antarctica",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"395","Synchaeta tremuloida","Synchaeta tremuloida",NA,NA,NA,NA,2940827,NA,"Synchaeta tremuloida",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"396","Conochiloides","Conochiloides",NA,NA,NA,NA,2942174,NA,"Conochiloides",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"397","Habrotrocha lata","Habrotrocha lata",NA,NA,NA,NA,267235,NA,"Habrotrocha lata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"398","Macrotrachela plicata","Macrotrachela plicata",NA,NA,NA,NA,790558,NA,"Macrotrachela plicata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"399","Sinantherina socialis","Sinantherina socialis",NA,NA,NA,NA,107177,NA,"Sinantherina socialis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"400","Synchaeta oblonga","Synchaeta oblonga",NA,NA,NA,NA,2940814,NA,"Synchaeta oblonga",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"401","Chondrocladia grandis","Chondrocladia grandis",NA,NA,NA,NA,2837842,NA,"Chondrocladia grandis",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"402","Sagitta lyra","Sagitta lyra",NA,NA,NA,NA,476674,NA,"Sagitta lyra",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"403","Chordodes","Chordodes",NA,NA,NA,NA,998437,NA,"Chordodes",NA,NA,"Nematomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"404","Gordionus alpestris","Gordionus alpestris",NA,NA,NA,NA,363642,NA,"Gordionus alpestris",NA,NA,"Nematomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"405","Gordionus wolterstorffii","Gordionus wolterstorffii",NA,NA,NA,NA,298886,NA,"Gordionus wolterstorffii",NA,NA,"Nematomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"406","Drepanophorus spectabilis","Drepanophorus spectabilis",NA,NA,NA,NA,254629,NA,"Drepanophorus spectabilis",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"407","Nipponnemertes pulchra","Nipponnemertes pulchra",NA,NA,NA,NA,604573,NA,"Nipponnemertes pulchra",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"408","Nipponemertes","Nipponemertes",NA,NA,NA,NA,7502589,NA,"Nipponemertes",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"409","Lubomirskia abietina","Lubomirskia abietina",NA,NA,NA,NA,386302,NA,"Lubomirskia abietina",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"410","Paramacrobiotus richtersi","Paramacrobiotus richtersi",NA,NA,NA,NA,498723,NA,"Paramacrobiotus richtersi",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"411","Paramacrobiotus spatialis","Paramacrobiotus spatialis",NA,NA,NA,NA,7485767,NA,"Paramacrobiotus spatialis",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"412","Paramacrobiotus depressus","Paramacrobiotus depressus",NA,NA,NA,NA,7485751,NA,"Paramacrobiotus depressus",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"413","Paramacrobiotus celsus","Paramacrobiotus celsus",NA,NA,NA,NA,7485749,NA,"Paramacrobiotus celsus",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"414","Paramacrobiotus arduus","Paramacrobiotus arduus",NA,NA,NA,NA,7485748,NA,"Paramacrobiotus arduus",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"415","Ramphogordius lacteus","Ramphogordius lacteus",NA,NA,NA,NA,604592,NA,"Ramphogordius lacteus",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"416","Sphaerirostris picae","Sphaerirostris picae",NA,NA,NA,NA,4951605,NA,"Sphaerirostris picae",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"417","Brentisentis yangtzensis","Brentisentis yangtzensis",NA,NA,NA,NA,4951950,NA,"Brentisentis yangtzensis",NA,NA,"Acanthocephala",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"418","Centrorhynchus milvus","Centrorhynchus milvus",NA,NA,NA,NA,4951547,NA,"Centrorhynchus milvus",NA,NA,"Acanthocephala",NA,NA,FALSE,"extinct_inherited, incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"419","Lepidodermella intermedia","Lepidodermella intermedia",NA,NA,NA,NA,997125,NA,"Lepidodermella intermedia",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"420","Heterolepidoderma macrops","Heterolepidoderma macrops",NA,NA,NA,NA,997121,NA,"Heterolepidoderma macrops",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"421","Lepidodermella minus","Lepidodermella minus",NA,NA,NA,NA,997115,NA,"Lepidodermella minus",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"422","Heterolepidoderma acidophilum","Heterolepidoderma acidophilum",NA,NA,NA,NA,997127,NA,"Heterolepidoderma acidophilum",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"423","Lepidochaetus zelinkai","Lepidochaetus zelinkai",NA,NA,NA,NA,470572,NA,"Lepidochaetus zelinkai",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"424","Stylochaeta scirtetica","Stylochaeta scirtetica",NA,NA,NA,NA,1047152,NA,"Stylochaeta scirtetica",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"425","Polymerurus nodicaudus","Polymerurus nodicaudus",NA,NA,NA,NA,470575,NA,"Polymerurus nodicaudus",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"426","Aspidiophorus tetrachaetus","Aspidiophorus tetrachaetus",NA,NA,NA,NA,997123,NA,"Aspidiophorus tetrachaetus",NA,NA,"Gastrotricha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"427","Mytilina ventralis","Mytilina ventralis",NA,NA,NA,NA,937969,NA,"Mytilina ventralis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"428","Phoronis vancouverensis","Phoronis vancouverensis",NA,NA,NA,NA,280864,NA,"Phoronis vancouverensis",NA,NA,"Phoronida",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"429","Schizomavella linearis","Schizomavella linearis",NA,NA,NA,NA,401904,NA,"Schizomavella linearis",NA,NA,"Bryozoa",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"430","Rotaria macrura","Rotaria macrura",NA,NA,NA,NA,621262,NA,"Rotaria macrura",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"431","Adineta tuberculosa","Adineta tuberculosa",NA,NA,NA,NA,653951,NA,"Adineta tuberculosa",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"432","Synchaeta grandis","Synchaeta grandis",NA,NA,NA,NA,154828,NA,"Synchaeta grandis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"433","Synchaeta kitina","Synchaeta kitina",NA,NA,NA,NA,390795,NA,"Synchaeta kitina",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"434","Haplogonaria viridis","Haplogonaria viridis",NA,NA,NA,NA,179692,NA,"Haplogonaria viridis",NA,NA,"Xenacoelomorpha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"435","Lineus bilineatus","Lineus bilineatus",NA,NA,NA,NA,283799,NA,"Lineus bilineatus",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"436","Lineus ruberviridis","Lineus fuscoviridis",NA,NA,NA,NA,2931401,NA,"Lineus fuscoviridis",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"437","Endectyon delaubenfelsi","Endectyon delaubenfelsi",NA,NA,NA,NA,776733,NA,"Endectyon delaubenfelsi",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"438","Hymeraphia verticillata","Hymeraphia verticillata",NA,NA,NA,NA,303946,NA,"Hymeraphia verticillata",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"439","Raspailia hispida","Raspailia hispida",NA,NA,NA,NA,353965,NA,"Raspailia hispida",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"440","Raspailia ramosa","Raspailia ramosa",NA,NA,NA,NA,353967,NA,"Raspailia ramosa",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"441","Haliclona oculata","Haliclona oculata",NA,NA,NA,NA,588759,NA,"Haliclona oculata",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"442","Echinospongilla brichardi","Echinospongilla brichardi",NA,NA,NA,NA,584830,NA,"Echinospongilla brichardi",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"443","Baikalospongia recta","Baikalospongia recta",NA,NA,NA,NA,561987,NA,"Baikalospongia recta",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"444","Tetrastemma albidum","Tetrastemma albidum",NA,NA,NA,NA,794761,NA,"Tetrastemma albidum",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"445","Prosorhochmus belizeanus","Prosorhochmus belizeanus",NA,NA,NA,NA,220036,NA,"Prosorhochmus belizeanus",NA,NA,"Nemertea",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"446","Embata","Embata",NA,NA,NA,NA,841827,NA,"Embata",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"447","Sagitta crassa","Sagitta crassa",NA,NA,NA,NA,321958,NA,"Sagitta crassa",NA,NA,"Chaetognatha",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"448","Caulophacus arcticus","Caulophacus arcticus",NA,NA,NA,NA,612407,NA,"Caulophacus arcticus",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"449","Eosphora ehrenbergi","Eosphora ehrenbergi",NA,NA,NA,NA,107179,NA,"Eosphora ehrenbergi",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"450","Echiniscus trisetosus","Echiniscus trisetosus",NA,NA,NA,NA,565774,NA,"Echiniscus trisetosus",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"451","Minibiotus gumersindoi","Minibiotus gumersindoi",NA,NA,NA,NA,960826,NA,"Minibiotus gumersindoi",NA,NA,"Tardigrada",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"452","Richtersius","Richtersius",NA,NA,NA,NA,176560,NA,"Richtersius",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"453","Minibiotus","Minibiotus",NA,NA,NA,NA,486361,NA,"Minibiotus",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"454","Clathria rugosa","Clathria rugosa",NA,NA,NA,NA,357716,NA,"Clathria rugosa",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"455","Clathria conectens","Clathria conectens",NA,NA,NA,NA,357718,NA,"Clathria conectens",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"456","Clathria kylista","Clathria kylista",NA,NA,NA,NA,145754,NA,"Clathria kylista",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"457","Clathria cervicornis","Clathria cervicornis",NA,NA,NA,NA,882485,NA,"Clathria cervicornis",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"458","Clathria abietina","Clathria abietina",NA,NA,NA,NA,895457,NA,"Clathria abietina",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"459","Craniella leptoderma","Antarctotetilla leptoderma",NA,NA,NA,NA,6374546,NA,"Antarctotetilla leptoderma",NA,NA,"Porifera",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"460","Epiphanes senta","Epiphanes senta",NA,NA,NA,NA,368450,NA,"Epiphanes senta",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"461","Cyrtonia tuba","Cyrtonia tuba",NA,NA,NA,NA,958183,NA,"Cyrtonia tuba",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"462","Proales fallaciosa","Proales fallaciosa",NA,NA,NA,NA,958190,NA,"Proales fallaciosa",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"463","Proales daphnicola","Proales daphnicola",NA,NA,NA,NA,958185,NA,"Proales daphnicola",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"464","Tetilla leptoderma","Tetilla leptoderma",NA,NA,NA,NA,155896,NA,"Tetilla leptoderma",NA,NA,"Porifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"465","Macrobiotus sandrae","Macrobiotus sandrae",NA,NA,NA,NA,4168696,NA,"Macrobiotus sandrae",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"466","Lecane ohioensis","Lecane ohioensis",NA,NA,NA,NA,296324,NA,"Lecane ohioensis",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"467","Macrochaetus collinsi","Macrochaetus collinsi",NA,NA,NA,NA,563703,NA,"Macrochaetus collinsi",NA,NA,"Rotifera",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"468","Hydra","Hydra",NA,NA,NA,NA,767784,NA,"Hydra",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"469","Limnocnida tanganjicae","Limnocnida tanganjicae",NA,NA,NA,NA,696569,NA,"Limnocnida tanganjicae",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"470","Hyalinella punctata","Hyalinella punctata",NA,NA,NA,NA,886994,NA,"Hyalinella punctata",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"471","Lophopodidae","Lophopodidae",NA,NA,NA,NA,935653,NA,"Lophopodidae",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"472","Amphiporus hastatus","Amphiporus hastatus",NA,NA,NA,NA,604721,NA,"Amphiporus hastatus",NA,NA,"Nemertea",NA,NA,FALSE,"extinct_inherited, incertae_sedis, sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"473","Hadromerida","Heteroscleromorpha",NA,NA,NA,NA,588758,NA,"Heteroscleromorpha",NA,NA,"Porifera",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"474","Fredericellidae","Fredericellidae",NA,NA,NA,NA,87795,NA,"Fredericellidae",NA,NA,"Bryozoa",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"475","Myxilla incrustans","Myxilla incrustans",NA,NA,NA,NA,945413,NA,"Myxilla incrustans",NA,NA,"Porifera",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"476","Euphyllia paraancora","Euphyllia paraancora",NA,NA,NA,NA,3676311,NA,"Euphyllia paraancora",NA,NA,"Cnidaria",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"477","Sagartia troglodytes","Sagartia troglodytes",NA,NA,NA,NA,73939,NA,"Sagartia troglodytes",NA,NA,"Cnidaria",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"478","Sagartiogeton laceratus","Sagartiogeton laceratus",NA,NA,NA,NA,303352,NA,"Sagartiogeton laceratus",NA,NA,"Cnidaria",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"479","Sagartiogeton undatus","Sagartiogeton undatus",NA,NA,NA,NA,593508,NA,"Sagartiogeton undatus",NA,NA,"Cnidaria",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"480","Sagartiogeton viduatus","Sagartiogeton viduatus",NA,NA,NA,NA,3673969,NA,"Sagartiogeton viduatus",NA,NA,"Cnidaria",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"481","Macrobiotus terminalis","Macrobiotus terminalis",NA,NA,NA,NA,874016,NA,"Macrobiotus terminalis",NA,NA,"Tardigrada",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"482","Anthomedusae","Anthoathecata",NA,NA,NA,NA,590271,NA,"Anthoathecata",NA,NA,"Cnidaria",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA

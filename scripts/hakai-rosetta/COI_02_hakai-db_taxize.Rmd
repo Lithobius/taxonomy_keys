@@ -250,14 +250,16 @@ annelid_notfound <- annelid %>%
            taxa %in% annelid_tol2$taxa))
 
 #write out not-found
-write.csv(annelid_notfound, here(rosetta, 'problems', '20220718_annelid_not-found.csv'))
+write.csv(annelid_notfound, here(rosetta, 'problems', 'not_found',
+                                 '20220718_annelid_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 annelid_nf_worms <- annelid2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(annelid_nf_worms, here(rosetta, 'problems', '20220718_annelid_worms-tol-conflict.csv'))
+write.csv(annelid_nf_worms, here(rosetta, 'problems', 'tol_conflict',
+                                 '20220718_annelid_worms-tol-conflict.csv'))
 ```
 
 
@@ -432,14 +434,16 @@ arthropod_notfound <- arthropod %>%
            taxa %in% arthropod_tol2$taxa))
 
 #write out not-found
-write.csv(arthropod_notfound, here(rosetta, 'problems', '20220718_arthropod_not-found.csv'))
+write.csv(arthropod_notfound, here(rosetta, 'problems', 'not_found',
+                                   '20220718_arthropod_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 arthropod_nf_worms <- arthropod2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(arthropod_nf_worms, here(rosetta, 'problems', '20220718_arthropod_worms-tol-conflict.csv'))
+write.csv(arthropod_nf_worms, here(rosetta, 'problems', 'tol_conflict',
+                                   '20220718_arthropod_worms-tol-conflict.csv'))
 ```
 
 
@@ -605,14 +609,16 @@ chordata_notfound <- chordata %>%
            taxa %in% chordata_tol2$taxa))
 
 #write out not-found
-write.csv(chordata_notfound, here(rosetta, 'problems', '20220718_chordata_not-found.csv'))
+write.csv(chordata_notfound, here(rosetta, 'problems', 'not_found',
+                                  '20220718_chordata_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 chordata_nf_worms <- chordata2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(chordata_nf_worms, here(rosetta, 'problems', '20220718_chordata_worms-tol-conflict.csv'))
+write.csv(chordata_nf_worms, here(rosetta, 'problems', 'tol_conflict',
+                                  '20220718_chordata_worms-tol-conflict.csv'))
 ```
 
 
@@ -785,14 +791,16 @@ mollusca_notfound <- mollusca %>%
            taxa %in% mollusca_tol2$taxa))
 
 #write out not-found
-write.csv(mollusca_notfound, here(rosetta, 'problems', '20220718_mollusca_not-found.csv'))
+write.csv(mollusca_notfound, here(rosetta, 'problems', 'not_found',
+                                  '20220718_mollusca_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 mollusca_nf_worms <- mollusca2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(mollusca_nf_worms, here(rosetta, 'problems', '20220718_mollusca_worms-tol-conflict.csv'))
+write.csv(mollusca_nf_worms, here(rosetta, 'problems','tol_conflict',
+                                  '20220718_mollusca_worms-tol-conflict.csv'))
 ```
 
 
@@ -969,14 +977,16 @@ ech_platy_nem_notfound <- ech_platy_nem %>%
            taxa %in% ech_platy_nem_tol2$taxa))
 
 #write out not-found
-write.csv(ech_platy_nem_notfound, here(rosetta, 'problems', '20220718_ech_platy_nem_not-found.csv'))
+write.csv(ech_platy_nem_notfound, here(rosetta, 'problems', 'not_found',
+                                       '20220718_ech_platy_nem_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 ech_platy_nem_nf_worms <- ech_platy_nem2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(ech_platy_nem_nf_worms, here(rosetta, 'problems', '20220718_ech_platy_nem_worms-tol-conflict.csv'))
+write.csv(ech_platy_nem_nf_worms, here(rosetta, 'problems','tol_conflict',
+                                       '20220718_ech_platy_nem_worms-tol-conflict.csv'))
 ```
 
 
@@ -1154,14 +1164,16 @@ small_phyla_notfound <- small_phyla %>%
            taxa %in% small_phyla_tol2$taxa))
 
 #write out not-found
-write.csv(small_phyla_notfound, here(rosetta, 'problems', '20220718_small_phyla_not-found.csv'))
+write.csv(small_phyla_notfound, here(rosetta, 'problems', 'not_found',
+                                     '20220718_small_phyla_not-found.csv'))
 
 # for instances where the TOL resolve wasn't actually worms-ok
 small_phyla_nf_worms <- small_phyla2 %>%
   filter(is.na(worms_aphiaid) == TRUE & is.na(ott_id) == FALSE)
 
 #write out worms issues
-write.csv(small_phyla_nf_worms, here(rosetta, 'problems', '20220718_small_phyla_worms-tol-conflict.csv'))
+write.csv(small_phyla_nf_worms, here(rosetta, 'problems','tol_conflict',
+                                     '20220718_small_phyla_worms-tol-conflict.csv'))
 ```
 
 
@@ -1169,41 +1181,33 @@ write.csv(small_phyla_nf_worms, here(rosetta, 'problems', '20220718_small_phyla_
 This might be for a later script now, after problems are fixed
 ## Merge generated files
 
-```{r}
-# merge files
-#this method seems slow so maybe turn into a dplyr join or whatever
-rosetta <- merge(merge(merge(merge(merge(annelid, 
-                                   arthropod, all = TRUE), 
-                 chordata, all = TRUE),
-                 mollusc, all = TRUE),
-                 ech_platy_nem, all = TRUE),
-                 small_phyla, all = TRUE)
-
-# rename columns
-#note that as of right now species column is the full epithet rather than 
-# just the specific epithet as darwincore would like. 
-# at a later date I will add a line to make the specific epithet then 
-#turn "species" this into an ID column or something
-rosetta <- rosetta %>%
-  select(BIN, Process.ID, Catalog.Num, ott_id,
-         Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species, 
-         verbatimTaxonRank, previousIdentifications, is_synonym) %>%
-  rename(associatedSequences = BIN,
-         recordNumber = Process.ID,
-         catalogNumber = Catalog.Num,
-         domain = Domain,
-         kingdom = Kingdom,
-         phylum = Phylum,
-         class = Class,
-         order = Order,
-         family = Family,
-         genus = Genus,
-         species = Species) %>%
-  na_if(., "")
-
-# save
-write_csv(rosetta, here('hakaidata', '2021rosetta', 'taxize', 
-                              '20210812_rosetta.csv'))
+```{r read-in-if-needed}
+annelid <- read_csv(here(rosetta, 'taxize', '20220718_annelid_taxonomy-full.csv'))[-1]
+arthropod <- read_csv(here(rosetta, 'taxize', '20220718_arthropod_taxonomy-full.csv'))[-1]
+chordata = read_csv(here(rosetta, 'taxize', '20220718_chordata_taxonomy-full.csv'))[-1]
+mollusc <- read_csv(here(rosetta, 'taxize', '20220718_mollusca_taxonomy-full.csv'))[-1]
+ech_platy_nem <- read_csv(here(rosetta, 'taxize', '20220718_ech_platy_nem_taxonomy-full.csv'))[-1]
+small_phyla = read_csv(here(rosetta, 'taxize', '20220718_small_phyla_taxonomy-full.csv'))[-1]
 ```
 
-maybe write a python script for if you only updated one file
+
+```{r}
+# merge files
+rosetta <- annelid %>%
+  bind_rows(arthropod, chordata, mollusc, 
+            ech_platy_nem, small_phyla)
+
+# fix up; move columns around to make sense
+rosetta <- rosetta %>%
+  select(!(kingdom)) %>%
+  relocate(c('phylum', 'class', 'order', 'family', 'genus'), .before = 'worms_aphiaid') %>%
+  relocate('valid_authority', .before = 'worms_sciname') %>%
+  relocate('taxa_query', .before = 'status') 
+
+
+# save
+write_csv(rosetta, here('species_lists', 'hakai', '2022rosetta', 'current_draft', 
+                              '20210719_coi_rosetta_draft.csv'))
+```
+
+maybe write a python script for if you only updated one file?
