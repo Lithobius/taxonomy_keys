@@ -175,28 +175,42 @@ annelid2 <- annelid_nf_worms %>%
   select(!(c(worms_match, original_aphiaid, kingdom)))
 
 
+# generate list of genera + terrestrial/marine status
+## this will let us automatically classify some not-in-worms species
+annelid_genera <- annelid2 %>%
+  filter(rank == 'genus') %>%
+  select(!(c(ott_id, tol_sciname, flags, is_synonym, taxa_query))) %>%
+  distinct()
+
+
+# reassess not-found list again
+annelid_tol_worms2 <- annelid_nf_worms %>%
+  select(taxa_query, ott_id, is_synonym, flags, tol_sciname) %>%
+  filter(!(tol_sciname %in% annelid_records$taxa_query)) %>%
+  # extract genus names so we can test them
+  separate(tol_sciname, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop') %>%
+  left_join(annelid_genera, by = c('genus_split' = 'genus')) %>%
+  filter(!(is.na(found_taxa))) %>%
+  select(!(genus_split)) %>%
+  mutate(rank = ifelse(tol_sciname == found_taxa, 'genus', 'species')) %>%
+  mutate(found_taxa = ifelse(tol_sciname == found_taxa, found_taxa, tol_sciname)) %>%
+  relocate(c('ott_id', 'taxa_query'), .before = 'status') %>%
+  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
+  relocate('tol_sciname', .before = 'bold_taxon')
+
+# bind generic resolutions
+annelid2 <- annelid2 %>%
+  bind_rows(annelid_tol_worms2)
+
 # ready to merge
 write_csv(annelid2, here(rosetta, 'problems', 'resolved', 
                                   '20220719_annelid_worms_tol-resolved.csv'))
 ```
 
 
-```{r}
-# generate list of genera + terrestrial/marine status
-## this will let us automatically classify some not-in-worms species
-annelid_genera <- annelid_records %>%
-  filter(rank == 'Genus') %>%
-  select(query, valid_name, status, terrestrial_only, freshwater_only, aphia_id) %>%
-  distinct()
+```{r annelid generic-search}
 
-
-# reassess not-found list again
-annelid_nf_worms2 <- annelid_nf_worms %>%
-  filter(!(tol_sciname %in% annelid_records$query)) %>%
-  # extract genus names so we can test them
-  separate(tol_sciname, into = 'genus_split', " ", 1, 
-           remove = FALSE, extra = 'drop') %>%
-  left_join(annelid_genera, by = c('genus_split' = 'query'))
 
 #extract list of terrestrial/fresh onlys
 annelid_terrfresh <- annelid_nf_worms2 %>%
