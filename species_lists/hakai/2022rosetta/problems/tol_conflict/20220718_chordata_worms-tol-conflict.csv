@@ -1,0 +1,177 @@
+"","taxa_query","found_taxa","rank","worms_aphiaid","bold_id","gbif_key","ott_id","worms_sciname","tol_sciname","bold_taxon","gbif_sciname","phylum","status","unacceptreason","is_synonym","flags","valid_authority","kingdom","class","order","family","genus","freshwater_only","terrestrial_only"
+"1","Perophoraensis","Ecteinascidia",NA,NA,NA,NA,862622,NA,"Ecteinascidia",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"2","Soricomorpha","Eulipotyphla",NA,NA,NA,NA,796664,NA,"Eulipotyphla",NA,NA,"Chordata",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"3","Sylvilagus brasiliensis","Sylvilagus brasiliensis",NA,NA,NA,NA,634572,NA,"Sylvilagus brasiliensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"4","Ostracion immaculatus","Ostracion immaculatus",NA,NA,NA,NA,1044207,NA,"Ostracion immaculatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"5","Sylvilagus floridanus","Sylvilagus floridanus",NA,NA,NA,NA,864591,NA,"Sylvilagus floridanus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"6","Lepus europaeus","Lepus europaeus",NA,NA,NA,NA,864607,NA,"Lepus europaeus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"7","Nematolebiasi","Nematolebias",NA,NA,NA,NA,495849,NA,"Nematolebias",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"8","Gnatholebias zonatus","Gnatholebias zonatus",NA,NA,NA,NA,1018493,NA,"Gnatholebias zonatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"9","Synchiropus papilio","Synchiropus papilio",NA,NA,NA,NA,3632757,NA,"Synchiropus papilio",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"10","Hippocampusi","Hippocampus",NA,NA,NA,NA,1007058,NA,"Hippocampus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"11","Glaucostegus formosensis","Glaucostegus formosensis",NA,NA,NA,NA,444666,NA,"Glaucostegus formosensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"12","Coreopercaheadi","Coreoperca herzi",NA,NA,NA,NA,114860,NA,"Coreoperca herzi",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"13","Labeo catla","Labeo catla",NA,NA,NA,NA,719907,NA,"Labeo catla",NA,NA,"Chordata",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"14","Astyanax intermedius","Astyanax intermedius",NA,NA,NA,NA,341087,NA,"Astyanax intermedius",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"15","Barbus rionicus","Barbus rionicus",NA,NA,NA,NA,7066408,NA,"Barbus rionicus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"16","Capoeta heratensis","Capoeta heratensis",NA,NA,NA,NA,679797,NA,"Capoeta heratensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"17","Capoeta macrolepis","Capoeta macrolepis",NA,NA,NA,NA,7066441,NA,"Capoeta macrolepis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"18","Bathyaethiopsi","Bathyaethiops",NA,NA,NA,NA,1062378,NA,"Bathyaethiops",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"19","Cyprinus multitaeniata","Cyprinus multitaeniata",NA,NA,NA,NA,310585,NA,"Cyprinus multitaeniata",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"20","Garra gymnothorax","Garra gymnothorax",NA,NA,NA,NA,5839001,NA,"Garra gymnothorax",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"21","Garra sindhi","Garra sindhi",NA,NA,NA,NA,6142119,NA,"Garra sindhi",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"22","Incisilabeo behri","Incisilabeo behri",NA,NA,NA,NA,388881,NA,"Incisilabeo behri",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"23","Phoxinus lumaireul","Phoxinus lumaireul",NA,NA,NA,NA,1031056,NA,"Phoxinus lumaireul",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"24","Rhynchocypris percnurus","Rhynchocypris percnurus",NA,NA,NA,NA,44672,NA,"Rhynchocypris percnurus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"25","Rutilus lacustris","Rutilus lacustris",NA,NA,NA,NA,7066940,NA,"Rutilus lacustris",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"26","Rutilus prespensis","Rutilus prespensis",NA,NA,NA,NA,379558,NA,"Rutilus prespensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"27","Schizothorax lissolabiata","Schizothorax lissolabiata",NA,NA,NA,NA,709850,NA,"Schizothorax lissolabiata",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"28","Puntius chelynoides","Puntius chelynoides",NA,NA,NA,NA,198330,NA,"Puntius chelynoides",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"29","Ilyodoni","Ilyodon",NA,NA,NA,NA,617467,NA,"Ilyodon",NA,NA,"Chordata",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"30","Comephorus baicalensis","Comephorus baicalensis",NA,NA,NA,NA,1019835,NA,"Comephorus baicalensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"31","Ostracion solorensis","Ostracion solorensis",NA,NA,NA,NA,893596,NA,"Ostracion solorensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"32","Hypsolebias trilineatus","Hypsolebias trilineatus",NA,NA,NA,NA,1018477,NA,"Hypsolebias trilineatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"33","Tachysurus aurantiacus","Tachysurus aurantiacus",NA,NA,NA,NA,804529,NA,"Tachysurus aurantiacus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"34","Congriscus megastomus","Congriscus megastomus",NA,NA,NA,NA,182991,NA,"Congriscus megastomus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"35","Bryconamericus lethostigmus","Bryconamericus lethostigmus",NA,NA,NA,NA,573826,NA,"Bryconamericus lethostigmus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"36","Piabarchus stramineus","Piabarchus stramineus",NA,NA,NA,NA,7065216,NA,"Piabarchus stramineus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"37","Lepturichthys fimbriata","Lepturichthys fimbriata",NA,NA,NA,NA,377085,NA,"Lepturichthys fimbriata",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"38","Indoreonectes keralensis","Indoreonectes keralensis",NA,NA,NA,NA,3627986,NA,"Indoreonectes keralensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"39","Nemachilichthys rueppelli","Nemachilichthys rueppelli",NA,NA,NA,NA,148107,NA,"Nemachilichthys rueppelli",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"40","Paracanthocobitis mooreh","Paracanthocobitis mooreh",NA,NA,NA,NA,6141983,NA,"Paracanthocobitis mooreh",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"41","Petruichthys brevis","Petruichthys brevis",NA,NA,NA,NA,1004236,NA,"Petruichthys brevis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"42","Triplophysa stoliczkai","Triplophysa stoliczkai",NA,NA,NA,NA,502550,NA,"Triplophysa stoliczkai",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"43","Triplophysa yarkandensis","Triplophysa yarkandensis",NA,NA,NA,NA,4138459,NA,"Triplophysa yarkandensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"44","Chaetodon e","Chaetozone",NA,NA,NA,NA,40429,NA,"Chaetozone",NA,NA,"Chordata",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"45","Tachysurus eupogon","Tachysurus eupogon",NA,NA,NA,NA,876095,NA,"Tachysurus eupogon",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"46","Synodontis membranacea","Synodontis membranacea",NA,NA,NA,NA,975705,NA,"Synodontis membranacea",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"47","Lobotes pacificus","Lobotes pacificus",NA,NA,NA,NA,890162,NA,"Lobotes pacificus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"48","Oostethus manadensis","Oostethus manadensis",NA,NA,NA,NA,3642139,NA,"Oostethus manadensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"49","Cheimarrichthys fosteri","Cheimarrichthys fosteri",NA,NA,NA,NA,685721,NA,"Cheimarrichthys fosteri",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"50","Anematichthys apogon","Anematichthys apogon",NA,NA,NA,NA,328162,NA,"Anematichthys apogon",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"51","Pomatoschistus adriaticus","Pomatoschistus adriaticus",NA,NA,NA,NA,7062839,NA,"Pomatoschistus adriaticus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"52","Lebiasina astrigata","Lebiasina astrigata",NA,NA,NA,NA,278606,NA,"Lebiasina astrigata",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"53","Tachysurus vachellii","Tachysurus vachellii",NA,NA,NA,NA,203399,NA,"Tachysurus vachellii",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"54","Aurigequula longispina","Aurigequula longispina",NA,NA,NA,NA,885825,NA,"Aurigequula longispina",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"55","Tachysurus ussuriensis","Tachysurus ussuriensis",NA,NA,NA,NA,804534,NA,"Tachysurus ussuriensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"56","Glyptothorax interspinalus","Glyptothorax interspinalus",NA,NA,NA,NA,343766,NA,"Glyptothorax interspinalus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"57","Epalzeorhynchos kalopterus","Epalzeorhynchos kalopterus",NA,NA,NA,NA,899928,NA,"Epalzeorhynchos kalopterus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"58","Paratilapia manombo","Paratilapia sp. 'manombo'",NA,NA,NA,NA,396150,NA,"Paratilapia sp. 'manombo'",NA,NA,"Chordata",NA,NA,FALSE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"59","Glossolepis incisus","Glossolepis incisus",NA,NA,NA,NA,976546,NA,"Glossolepis incisus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"60","Moxostoma duquesnii","Moxostoma duquesnii",NA,NA,NA,NA,941351,NA,"Moxostoma duquesnii",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"61","Bryconalestes bartoni","Bryconalestes bartoni",NA,NA,NA,NA,7064701,NA,"Bryconalestes bartoni",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"62","Bryconalestes tholloni","Bryconalestes tholloni",NA,NA,NA,NA,7064702,NA,"Bryconalestes tholloni",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"63","Cyclocheilos enoplos","Cyclocheilos enoplos",NA,NA,NA,NA,7066457,NA,"Cyclocheilos enoplos",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"64","Lampetra geminis","Lampetra geminis",NA,NA,NA,NA,1015586,NA,"Lampetra geminis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"65","Erimystax xpunctatus","Erimystax x-punctatus",NA,NA,NA,NA,834264,NA,"Erimystax x-punctatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"66","Heptapterus panamensis","Heptapterus panamensis",NA,NA,NA,NA,512361,NA,"Heptapterus panamensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"67","Lebiasina boruca","Lebiasina boruca",NA,NA,NA,NA,3624454,NA,"Lebiasina boruca",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"68","Lebiasina festae","Lebiasina festae",NA,NA,NA,NA,3624459,NA,"Lebiasina festae",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"69","Hypostomus aspidolepis","Hypostomus aspidolepis",NA,NA,NA,NA,7065776,NA,"Hypostomus aspidolepis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"70","Trichomycterus guacamayoensis","Trichomycterus guacamayoensis",NA,NA,NA,NA,7065894,NA,"Trichomycterus guacamayoensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"71","Salmostoma bacalia","Salmostoma bacalia",NA,NA,NA,NA,541598,NA,"Salmostoma bacalia",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"72","Chrysichthys congicus","Chrysichthys congicus",NA,NA,NA,NA,3624334,NA,"Chrysichthys congicus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"73","Oreochromis tarangire","Oreochromis sp. 'tarangire'",NA,NA,NA,NA,336601,NA,"Oreochromis sp. 'tarangire'",NA,NA,"Chordata",NA,NA,FALSE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"74","Pseudolaguvia tuberculatus","Pseudolaguvia tuberculatus",NA,NA,NA,NA,343440,NA,"Pseudolaguvia tuberculatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"75","Stephanolepis auratus","Stephanolepis auratus",NA,NA,NA,NA,3631336,NA,"Stephanolepis auratus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"76","Pagetopsis maculatus","Pagetopsis maculatus",NA,NA,NA,NA,299652,NA,"Pagetopsis maculatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"77","Danio pantheri","Danio sp. 'pantheri'",NA,NA,NA,NA,332650,NA,"Danio sp. 'pantheri'",NA,NA,"Chordata",NA,NA,TRUE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"78","Cynoglossus arelmacrolepidotus","Cynoglossus macrolepidotus",NA,NA,NA,NA,3640587,NA,"Cynoglossus macrolepidotus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"79","Barbus escherichii","Barbus escherichii",NA,NA,NA,NA,7066405,NA,"Barbus escherichii",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"80","Paracobitis rhadinaeus","Paracobitis rhadinaeus",NA,NA,NA,NA,3628091,NA,"Paracobitis rhadinaeus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"81","Paracobitis abrishamchiani","Paracobitis abrishamchiani",NA,NA,NA,NA,7066330,NA,"Paracobitis abrishamchiani",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"82","Sasanidus kermanshahensis","Sasanidus kermanshahensis",NA,NA,NA,NA,849277,NA,"Sasanidus kermanshahensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"83","Ladigesocypris ghigii","Ladigesocypris ghigii",NA,NA,NA,NA,571931,NA,"Ladigesocypris ghigii",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"84","Luciobarbus lorteti","Luciobarbus lorteti",NA,NA,NA,NA,3626410,NA,"Luciobarbus lorteti",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"85","Atherina punctuata","Atherina sp. 'punctuata'",NA,NA,NA,NA,173111,NA,"Atherina sp. 'punctuata'",NA,NA,"Chordata",NA,NA,FALSE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"86","Herichthys labridens","Herichthys labridens",NA,NA,NA,NA,722212,NA,"Herichthys labridens",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"87","Symphurus rafinesque","Symphurus sp. 'rafinesque'",NA,NA,NA,NA,151331,NA,"Symphurus sp. 'rafinesque'",NA,NA,"Chordata",NA,NA,TRUE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"88","Champsodono","Champsodon",NA,NA,NA,NA,91526,NA,"Champsodon",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"89","Onigocian","Onigocia",NA,NA,NA,NA,776090,NA,"Onigocia",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"90","Platysternon megacephalum","Platysternon megacephalum",NA,NA,NA,NA,619860,NA,"Platysternon megacephalum",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"91","Ciona roulei","Ciona roulei",NA,NA,NA,NA,724109,NA,"Ciona roulei",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"92","Rineloricaria steinbachi","Rineloricaria steinbachi",NA,NA,NA,NA,7065838,NA,"Rineloricaria steinbachi",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"93","Astyanax belizanus","Astyanax belizanus",NA,NA,NA,NA,1014923,NA,"Astyanax belizanus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"94","Synodontis thamalakalensis","Synodontis thamalakanensis",NA,NA,NA,NA,3623160,NA,"Synodontis thamalakanensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"95","Nannaethiops gracilis","Nannaethiops gracilis",NA,NA,NA,NA,3624645,NA,"Nannaethiops gracilis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"96","Erethistes koladynensis","Erethistes koladynensis",NA,NA,NA,NA,7066106,NA,"Erethistes koladynensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"97","Lepus capensis","Lepus capensis",NA,NA,NA,NA,864613,NA,"Lepus capensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"98","Lepus californicus","Lepus californicus",NA,NA,NA,NA,923732,NA,"Lepus californicus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"99","Lepus flavigularis","Lepus flavigularis",NA,NA,NA,NA,836256,NA,"Lepus flavigularis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"100","Lepus alleni","Lepus alleni",NA,NA,NA,NA,638208,NA,"Lepus alleni",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"101","Lepus americanus","Lepus americanus",NA,NA,NA,NA,923734,NA,"Lepus americanus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"102","Phascolarctos cinereus","Phascolarctos cinereus",NA,NA,NA,NA,327624,NA,"Phascolarctos cinereus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"103","Sylvilagus bachmani","Sylvilagus bachmani",NA,NA,NA,NA,634755,NA,"Sylvilagus bachmani",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"104","Sylvilagus audubonii","Sylvilagus audubonii",NA,NA,NA,NA,532394,NA,"Sylvilagus audubonii",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"105","Lepus hainanus","Lepus hainanus",NA,NA,NA,NA,426408,NA,"Lepus hainanus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"106","Lepus peguensis","Lepus peguensis",NA,NA,NA,NA,3611221,NA,"Lepus peguensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"107","Acrobates pygmaeus","Acrobates pygmaeus",NA,NA,NA,NA,432839,NA,"Acrobates pygmaeus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"108","Lepus othus","Lepus othus",NA,NA,NA,NA,167569,NA,"Lepus othus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"109","Lepus granatensis","Lepus granatensis",NA,NA,NA,NA,29167,NA,"Lepus granatensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"110","Lepus arcticus","Lepus arcticus",NA,NA,NA,NA,638196,NA,"Lepus arcticus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"111","Lepus corsicanus","Lepus corsicanus",NA,NA,NA,NA,29165,NA,"Lepus corsicanus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"112","Notoryctes caurinus","Notoryctes caurinus",NA,NA,NA,NA,257243,NA,"Notoryctes caurinus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"113","Lepus tibetanus","Lepus tibetanus",NA,NA,NA,NA,3611223,NA,"Lepus tibetanus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"114","Lepus sinensis","Lepus sinensis",NA,NA,NA,NA,636670,NA,"Lepus sinensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"115","Lepus mandshuricus","Lepus mandshuricus",NA,NA,NA,NA,525087,NA,"Lepus mandshuricus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"116","Lepus timidus","Lepus timidus",NA,NA,NA,NA,167565,NA,"Lepus timidus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"117","Lepus yarkandensis","Lepus yarkandensis",NA,NA,NA,NA,192736,NA,"Lepus yarkandensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"118","Lepus comus","Lepus comus",NA,NA,NA,NA,542002,NA,"Lepus comus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"119","Lepus oiostolus","Lepus oiostolus",NA,NA,NA,NA,114754,NA,"Lepus oiostolus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"120","Delphinus capensis","Delphinus capensis","species",NA,211503,NA,1094064,NA,"Delphinus capensis","Delphinus capensis",NA,"Chordata","nomen dubium","incertae sedis",FALSE,"sibling_higher",NA,"Animalia","Mammalia","Cetartiodactyla","Delphinidae","Delphinus",NA,NA
+"121","Gonorhynchus adiscus","Gonorhynchus adiscus",NA,NA,NA,NA,5925453,NA,"Gonorhynchus adiscus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"122","Xenotilapia spiloptera","Xenotilapia spiloptera",NA,NA,NA,NA,795809,NA,"Xenotilapia spiloptera",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"123","Petrochromisla","Petrochromis",NA,NA,NA,NA,841736,NA,"Petrochromis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"124","Aborichthys denisoni","Nemacheilus denisoni",NA,NA,NA,NA,5342828,NA,"Nemacheilus denisoni",NA,NA,"Chordata",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"125","Gonorhynchus diplochilus","Gonorhynchus diplochilus",NA,NA,NA,NA,771979,NA,"Gonorhynchus diplochilus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"126","Puntius schanicus","Puntius schanicus",NA,NA,NA,NA,3627252,NA,"Puntius schanicus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"127","Tomistoma schlegelii","Tomistoma schlegelii",NA,NA,NA,NA,1035823,NA,"Tomistoma schlegelii",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"128","Natator depressus","Natator depressus",NA,NA,NA,NA,895624,NA,"Natator depressus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"129","Lepus coreanus","Lepus coreanus",NA,NA,NA,NA,575440,NA,"Lepus coreanus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"130","Lepus townsendii","Lepus townsendii",NA,NA,NA,NA,747875,NA,"Lepus townsendii",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"131","Lepus tolai","Lepus tolai",NA,NA,NA,NA,426231,NA,"Lepus tolai",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"132","Phoca fasciata","Phoca fasciata",NA,NA,NA,NA,664065,NA,"Phoca fasciata",NA,NA,"Chordata",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"133","Myrmecobius fasciatus","Myrmecobius fasciatus",NA,NA,NA,NA,70811,NA,"Myrmecobius fasciatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"134","Distoechurus pennatus","Distoechurus pennatus",NA,NA,NA,NA,852215,NA,"Distoechurus pennatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"135","Tarsipes rostratus","Tarsipes rostratus",NA,NA,NA,NA,901943,NA,"Tarsipes rostratus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"136","Dromiciops gliroides","Dromiciops gliroides",NA,NA,NA,NA,905267,NA,"Dromiciops gliroides",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"137","Notoryctes typhlops","Notoryctes typhlops",NA,NA,NA,NA,306795,NA,"Notoryctes typhlops",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"138","Facciolella oxyrhyncha","Facciolella oxyrhyncha",NA,NA,NA,NA,950729,NA,"Facciolella oxyrhyncha",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"139","Percalates novemaculeata","Percalates novemaculeata",NA,NA,NA,NA,113385,NA,"Percalates novemaculeata",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"140","Takifugu fasciatus","Takifugu fasciatus",NA,NA,NA,NA,598737,NA,"Takifugu fasciatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"141","Tachysurus tokiensis","Tachysurus tokiensis",NA,NA,NA,NA,804531,NA,"Tachysurus tokiensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"142","Aphanotorulus emarginatus","Aphanotorulus emarginatus",NA,NA,NA,NA,698179,NA,"Aphanotorulus emarginatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"143","Neomonachus schauinslandi","Neomonachus schauinslandi",NA,NA,NA,NA,180367,NA,"Neomonachus schauinslandi",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"144","Hypostomus cochliodonap","Hypostomus cochliodon",NA,NA,NA,NA,440107,NA,"Hypostomus cochliodon",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"145","Hypostomus cochliodonin","Hypostomus cochliodon",NA,NA,NA,NA,440107,NA,"Hypostomus cochliodon",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"146","Hypostomus cochliodonar","Hypostomus cochliodon",NA,NA,NA,NA,440107,NA,"Hypostomus cochliodon",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"147","Gerres macracanthusr","Gerres macracanthus",NA,NA,NA,NA,142710,NA,"Gerres macracanthus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"148","Lepus habessinicus","Lepus habessinicus",NA,NA,NA,NA,29169,NA,"Lepus habessinicus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"149","Lacustricola hutereaui","Lacustricola hutereaui",NA,NA,NA,NA,777421,NA,"Lacustricola hutereaui",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"150","Anematichthys armatus","Anematichthys armatus",NA,NA,NA,NA,789513,NA,"Anematichthys armatus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"151","Pseudobagrus brevicorpus","Pseudobagrus brevicorpus",NA,NA,NA,NA,804526,NA,"Pseudobagrus brevicorpus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"152","Chimarrichthys kishinouyei","Chimarrichthys kishinouyei",NA,NA,NA,NA,7066110,NA,"Chimarrichthys kishinouyei",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"153","Chanodichthys recurviceps","Chanodichthys recurviceps",NA,NA,NA,NA,664352,NA,"Chanodichthys recurviceps",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"154","Vieja melanura","Vieja melanura",NA,NA,NA,NA,293230,NA,"Vieja melanura",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"155","Schizopyge dolichonema","Schizopyge dolichonema",NA,NA,NA,NA,269461,NA,"Schizopyge dolichonema",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"156","Aperioptus gracilentus","Aperioptus gracilentus",NA,NA,NA,NA,910515,NA,"Aperioptus gracilentus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"157","Cobitis matsubarai","Cobitis matsubarai",NA,NA,NA,NA,117087,NA,"Cobitis matsubarai",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"158","Schizopyge nukiangensis","Schizopyge nukiangensis",NA,NA,NA,NA,269469,NA,"Schizopyge nukiangensis",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"159","Zacco acanthogenys","Zacco acanthogenys",NA,NA,NA,NA,5925502,NA,"Zacco acanthogenys",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"160","Neoniphon vexillarium","Neoniphon vexillarium",NA,NA,NA,NA,589843,NA,"Neoniphon vexillarium",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"161","Tampichthys dichromus","Tampichthys dichromus",NA,NA,NA,NA,746102,NA,"Tampichthys dichromus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"162","Paretroplus ventitry","Paretroplus petiti",NA,NA,NA,NA,3636423,NA,"Paretroplus petiti",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"163","Devario giraffe","Devario sp. 'giraffe'",NA,NA,NA,NA,276098,NA,"Devario sp. 'giraffe'",NA,NA,"Chordata",NA,NA,TRUE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"164","Ophichthus zophistius","Ophichthus zophistius",NA,NA,NA,NA,483995,NA,"Ophichthus zophistius",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"165","Notropisei","Notropis",NA,NA,NA,NA,351749,NA,"Notropis",NA,NA,"Chordata",NA,NA,FALSE,"sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"166","Pteronotropis harperi","Pteronotropis harperi",NA,NA,NA,NA,338655,NA,"Pteronotropis harperi",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"167","Alestopetersius mbuji","Brycinus abeli",NA,NA,NA,NA,3625754,NA,"Brycinus abeli",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"168","Herklotsichthys spilurus","Herklotsichthys spilurus",NA,NA,NA,NA,367792,NA,"Herklotsichthys spilurus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"169","Idiacanthus atroventer","Idiacanthus sp. 'atroventer'",NA,NA,NA,NA,135512,NA,"Idiacanthus sp. 'atroventer'",NA,NA,"Chordata",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"170","Oreochromis mossambicus x niloticus","Oreochromis mossambicus x niloticus",NA,NA,NA,NA,4948850,NA,"Oreochromis mossambicus x niloticus",NA,NA,"Chordata",NA,NA,FALSE,"hybrid, sibling_higher",NA,NA,NA,NA,NA,NA,NA,NA
+"171","Labiobarbus spilopleura","Labiobarbus spilopleura",NA,NA,NA,NA,372814,NA,"Labiobarbus spilopleura",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"172","Gobiodon exigua","Gobiodon sp. 'exigua'",NA,NA,NA,NA,969956,NA,"Gobiodon sp. 'exigua'",NA,NA,"Chordata",NA,NA,TRUE,"incertae_sedis",NA,NA,NA,NA,NA,NA,NA,NA
+"173","Quietula ycauda","Quietula y-cauda",NA,NA,NA,NA,387066,NA,"Quietula y-cauda",NA,NA,"Chordata",NA,NA,TRUE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"174","Himantolophusus","Himantolophus",NA,NA,NA,NA,726672,NA,"Himantolophus",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"175","Baldwinella eos","Baldwinella eos",NA,NA,NA,NA,3633909,NA,"Baldwinella eos",NA,NA,"Chordata",NA,NA,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA
+"176","Enterogona","Enterogona","order",NA,228,NA,526356,NA,"Enterogona","Enterogona",NA,"Chordata","unaccepted","no longer in use",FALSE,"",NA,"Animalia","Ascidiacea","Enterogona",NA,NA,"0","0"
