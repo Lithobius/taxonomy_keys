@@ -26,30 +26,94 @@ midori <- read_csv(here(hakai_blast, '20211216_midori_all_sp.csv'))
 ```
 
 ```{r tol_resolve}
-midori_search <- midori %>%
+midori_key <- midori %>%
   select(species) %>%
+  mutate(species_verbatim = species) %>%
   # remove 'sp'
   mutate(species = str_remove_all(species, c("( sp)$"))) %>%
+  mutate(species = str_remove_all(species, " sp[0-9]")) %>%
+  mutate(species = str_remove_all(species, " sensu lato")) %>%
+  mutate(species = str_remove_all(species, " sesu lato")) %>%
+  mutate(species = str_remove_all(species, " sensu stricto")) %>%
+  mutate(species = str_remove_all(species, " genotype")) %>%
+  mutate(species = str_remove_all(species, " group")) %>%
+  mutate(species = str_remove_all(species, " lineage")) %>%
+  # remove brackets, still getting the odd behavior in one call?
+  mutate(species = str_remove_all(species, "\\[")) %>%
+  mutate(species = str_remove_all(species, "\\]")) %>%
+  # a few known strings
+  # remove all numbers
+  mutate(species = str_remove_all(species, "[0-9]")) %>%
+  mutate(species = trimws(species)) %>%
+  #remove the last character if its a capital letter many times
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  # in case multiple 'words'
+  mutate(species = trimws(species)) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  mutate(species = str_remove_all(species, "([A-Z])$")) %>%
+  #any sp that is left?
+  mutate(species = str_remove_all(species, "( sp)$")) %>%
+  # specific strings that are left
+  mutate(species = str_remove_all(species, "( AHSp)$")) %>%
+  mutate(species = str_remove_all(species, "( CAhyb)$")) %>%
+  mutate(species = str_remove_all(species, "( Rs)$")) %>%
+  mutate(species = str_remove_all(species, "( SCa)$")) %>%
+  mutate(species = str_remove_all(species, "( SAc)")) %>%
+  mutate(species = str_remove_all(species, "( SAg)")) %>%
+  mutate(species = str_remove_all(species, "( SHo)")) %>%
+  mutate(species = str_remove_all(species, "( SIm)$")) %>%
+  mutate(species = str_remove_all(species, "( SSg)")) %>%
+  mutate(species = str_remove_all(species, "( Ssp)")) %>%
+  mutate(species = str_remove_all(species, "( Ste)$")) %>%
+  mutate(species = str_remove_all(species, "( STi)$")) %>%
+  mutate(species = str_remove_all(species, "( Tas)$")) %>%
+  mutate(species = str_remove_all(species, "( Hmargsl)$")) %>%
+  mutate(species = str_remove_all(species, "( Hyp)$")) %>%
+  mutate(species = str_remove_all(species, "( [a-z]{1})$")) %>%
+  mutate(species = str_remove_all(species, "^fossil")) %>%
+  mutate(species = str_remove_all(species, "(unnamed genus  penumbrata sensu Scoble)$")) %>%
+  mutate(species = str_replace_all(species, 
+                                   c('mycorrhizal symbiont of Neuwiedia veratrifolia' = 'Fungi',
+                                     'mycorrhizal isolate' = 'Fungi',
+                                     'orange sea anemone' = 'Actiniaria',
+                                     'hormathiid anemone strain VenAnem' = 'Hormathiidae',
+                                              'tophaceataAHIt' = 'tophaceata',
+                                     'liliputanusg' = 'liliputanus'))) %>%
+  # remove trailing whitespaces
+  mutate(species = trimws(species)) %>%
   distinct()
+
+
+midori_search <- midori_key %>%
+  select(species) %>%
+  distinct()
+
 
 #split into smaller sections to guarantee finishing
 
-#msearch1 <- midori_search[1:7000,]
-#msearch2 <- midori_search[7001:30000,]
-#msearch3 <- midori_search[30001:60000,]
-#msearch4 <- midori_search[60001:100000,]
-#msearch5 <- midori_search[100001:140000,]
-#msearch6 <- midori_search[140001:180000,]
-#msearch7 <- midori_search[180001:210000,]
-msearch8 <- midori_search[210001:246284,]
+msearch1 <- midori_search[1:7000,]
+msearch2 <- midori_search[7001:30000,]
+msearch3 <- midori_search[30001:60000,]
+msearch4 <- midori_search[60001:100000,]
+msearch5 <- midori_search[100001:140000,]
+msearch6 <- midori_search[140001:180000,]
+msearch7 <- midori_search[180001:210000,]
+msearch8 <- midori_search[210001:245519,]
 
 #temp
-msearch9 <- midori_search %>%
-  filter(!(species %in% mresolved$search_string))
+#msearch9 <- midori_search %>%
+#  filter(!(species %in% mresolved$search_string))
 
 
 # resolve with open tree of life, all domains to filter out fungi, etc.
-midori_resolved <- tol_resolve(msearch9$species) %>%
+midori_resolved <- tol_resolve(msearch8$species) %>%
   mutate(search_string = str_to_sentence(search_string))
 
 
@@ -61,17 +125,18 @@ midori_resolved <- tol_resolve(msearch9$species) %>%
 #mresolved5 <- midori_resolved
 #mresolved6 <- midori_resolved
 #mresolved7 <- midori_resolved
-#mresolved8 <- midori_resolved
+mresolved8 <- midori_resolved
 #temp
-mresolved9 <- midori_resolved
+#mresolved9 <- midori_resolved
 
 
 mresolved <- mresolved1 %>%
   bind_rows(mresolved2, mresolved3, mresolved4,
             mresolved5, mresolved6, mresolved7,
-            mresolved8, mresolved9
+            mresolved8#, mresolved9
             )
 
+#save intermediate just in case!
 #write_rds(mresolved, here('temp_midori.rds'))
 
 # classify found IDs, will probably need split again
@@ -85,21 +150,25 @@ mresolved_classify <- mresolved %>%
   select(unique_name) %>%
   distinct()
 
-# do the splitting-babysitting-thing again
-#mresolved_classify1 <- midori_resolved_classify[1:7000,]
-#mresolved_classify2 <- midori_resolved_classify[7001:30000,]
-#mresolved_classify3 <- midori_resolved_classify[30001:60000,]
-#mresolved_classify4 <- midori_resolved_classify[60001:100000,]
-#mresolved_classify5 <- midori_resolved_classify[100001:140000,]
-#mresolved_classify6 <- midori_resolved_classify[140001:180000,]
-#mresolved_classify7 <- midori_resolved_classify[180001:210000,]
-mresolved_classify8 <- midori_resolved_classify[210001:246284,]
+#for some reason its a 'match.names' object 
+mresolved_classify <- as.tibble(mresolved_classify)
 
-midori_classify <- classification(mresolved_classify$unique_name, db = 'tol')
+
+# do the splitting-babysitting-thing again
+mresolved_classify1 <- mresolved_classify[1:7000,]
+mresolved_classify2 <- mresolved_classify[7001:30000,]
+mresolved_classify3 <- mresolved_classify[30001:60000,]
+mresolved_classify4 <- mresolved_classify[60001:100000,]
+mresolved_classify5 <- mresolved_classify[100001:140000,]
+mresolved_classify6 <- mresolved_classify[140001:180000,]
+mresolved_classify7 <- mresolved_classify[180001:210000,]
+mresolved_classify8 <- mresolved_classify[210001:238338,]
+
+midori_classify <- classification(mresolved_classify2$unique_name, db = 'tol')
 
 # manually set temp variables to merge later
 #mclassify1 <- midori_classify
-#mclassify2 <- midori_classify
+mclassify2 <- midori_classify
 #mclassify3 <- midori_classify
 #mclassify4 <- midori_classify
 #mclassify5 <- midori_classify
