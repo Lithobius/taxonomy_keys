@@ -1,0 +1,89 @@
+query,family,ottid_species,aphia_id,scientificname,authority,status,unacceptreason,rank,valid_aphia_id,valid_name,valid_authority,parent_name_usage_id,kingdom,phylum,class,order,genus,is_marine,is_brackish,is_freshwater,is_terrestrial,is_extinct,match_type
+Hypereteone fauchaldi,Phyllodocidae,4983723,931,Phyllodocidae,"Örsted, 1843",accepted,NA,Family,931,Phyllodocidae,"Örsted, 1843",926,Animalia,Annelida,Polychaeta,Phyllodocida,NA,1,0,0,0,0,exact
+Owenavis,Cuculidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paradexiospira violacea,Serpulidae,4985914,988,Serpulidae,"Rafinesque, 1815",accepted,NA,Family,988,Serpulidae,"Rafinesque, 1815",901,Animalia,Annelida,Polychaeta,Sabellida,NA,1,1,1,0,0,exact
+Polydora magna,Spionidae,4976456,913,Spionidae,"Grube, 1850",accepted,NA,Family,913,Spionidae,"Grube, 1850",909,Animalia,Annelida,Polychaeta,Spionida,NA,1,0,0,0,0,exact
+Prionospio,Spionidae,NULL,913,Spionidae,"Grube, 1850",accepted,NA,Family,913,Spionidae,"Grube, 1850",909,Animalia,Annelida,Polychaeta,Spionida,NA,1,0,0,0,0,exact
+Prionospio multibranchiata,Spionidae,4976054,913,Spionidae,"Grube, 1850",accepted,NA,Family,913,Spionidae,"Grube, 1850",909,Animalia,Annelida,Polychaeta,Spionida,NA,1,0,0,0,0,exact
+Duplodicodrilus schmardae,Megascolecidae,839170,22960,Megascolecidae,"Rosa, 1891",accepted,NA,Family,22960,Megascolecidae,"Rosa, 1891",468019,Animalia,Annelida,Clitellata,Crassiclitellata,NA,1,1,NA,1,NA,exact
+Chtonobdella bilineata,Haemadipsidae,927383,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cambarincola gracilis,NULL,249347,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cambarincola montanus,NULL,249349,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ripistes parasita,Naididae,975578,2039,Naididae,"Ehrenberg, 1831",accepted,NA,Family,2039,Naididae,"Ehrenberg, 1831",2119,Animalia,Annelida,Clitellata,Tubificida,NA,1,1,1,1,NA,exact
+Motobdella montezuma,Erpobdellidae,5723675,160005,Erpobdellidae,"Moore, 1908",accepted,NA,Family,160005,Erpobdellidae,"Moore, 1908",160002,Animalia,Annelida,Clitellata,Arhynchobdellida,NA,0,1,1,0,0,exact
+Haementeria molesta,Glossiphoniidae,624349,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Alboglossiphonia quadrata,Glossiphoniidae,779132,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Clymenella zonalis,Maldanidae,4977389,923,Maldanidae,"Malmgren, 1867",accepted,NA,Family,923,Maldanidae,"Malmgren, 1867",183607,Animalia,Annelida,Polychaeta,NA,NA,1,0,0,0,0,exact
+Siboglinidae,"c(""Siboglinidae"", ""Siboglinidae"", ""Siboglinidae"")",NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Philobdella floridana,Hirudinidae,616322,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Moorebdellina biannulata,Piscicolidae,373544,2043,Piscicolidae,"Johnston, 1865",accepted,NA,Family,2043,Piscicolidae,"Johnston, 1865",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,1,1,0,NA,exact
+Alboglossiphonia heteroclita,Glossiphoniidae,203233,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Chtonobdella skottsbergi,Haemadipsidae,62614,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Apionsoma misakianum,Phascolosomatidae,43138,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",accepted,NA,Family,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",1268,Animalia,Annelida,NA,Sipuncula,NA,1,0,0,0,NA,exact
+Simplisetia erythraensis,Nereididae,4981618,22496,Nereididae,"Blainville, 1818",accepted,NA,Family,22496,Nereididae,"Blainville, 1818",928,Animalia,Annelida,Polychaeta,Phyllodocida,NA,1,1,1,1,0,exact
+Nicomache lokii,Maldanidae,1085510,923,Maldanidae,"Malmgren, 1867",accepted,NA,Family,923,Maldanidae,"Malmgren, 1867",183607,Animalia,Annelida,Polychaeta,NA,NA,1,0,0,0,0,exact
+Travoscolides chengannures,Megascolecidae,259972,22960,Megascolecidae,"Rosa, 1891",accepted,NA,Family,22960,Megascolecidae,"Rosa, 1891",468019,Animalia,Annelida,Clitellata,Crassiclitellata,NA,1,1,NA,1,NA,exact
+Fridericia sylvatica,Enchytraeidae,299092,2038,Enchytraeidae,"d'Udekem, 1855",accepted,NA,Family,2038,Enchytraeidae,"d'Udekem, 1855",468017,Animalia,Annelida,Clitellata,Enchytraeida,NA,1,1,1,1,NA,exact
+Duplodicodrilus acinctus,Megascolecidae,512409,22960,Megascolecidae,"Rosa, 1891",accepted,NA,Family,22960,Megascolecidae,"Rosa, 1891",468019,Animalia,Annelida,Clitellata,Crassiclitellata,NA,1,1,NA,1,NA,exact
+Hoplochaetella stuarti,Octochaetidae,875475,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tonoscolex birmanicus,Megascolecidae,5262671,22960,Megascolecidae,"Rosa, 1891",accepted,NA,Family,22960,Megascolecidae,"Rosa, 1891",468019,Animalia,Annelida,Clitellata,Crassiclitellata,NA,1,1,NA,1,NA,exact
+Haementeria gracilis,Glossiphoniidae,401396,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Haementeria ghilianii,Glossiphoniidae,902892,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Haementeria tuberculifera,Glossiphoniidae,624350,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Americobdella valdiviana,Americobdellidae,558321,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aliolimnatis africana,Hirudinidae,89387,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mesobdella gemmata,Xerobdellidae,89380,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Placobdelloides siamensis,Glossiphoniidae,123648,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Placobdelloides jaegerskioeldi,Glossiphoniidae,123649,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Treadwellius bifidus,Flabelligeridae,4985325,976,Flabelligeridae,"de Saint-Joseph, 1894",accepted,NA,Family,976,Flabelligeridae,"de Saint-Joseph, 1894",155087,Animalia,Annelida,Polychaeta,Terebellida,NA,1,0,0,0,0,exact
+Haementeria acuecueyetzin,Glossiphoniidae,511785,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Chtonobdella,Haemadipsidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella whitmani,Haemadipsidae,532382,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tritetrabdella scandens,Haemadipsidae,1031550,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Proctodrilus,Lumbricidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria officinalis,Glossiphoniidae,509176,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Alboglossiphonia papillosa,Glossiphoniidae,2847197,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Alboglossiphonia,Glossiphoniidae,NULL,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Branchiobdellida,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tyrannobdella rex,Hirudinidae,556228,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Myxobdella annandalei,Hirudinidae,556215,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnobdella mexicana,Hirudinidae,257869,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Goddardobdella elegans,Hirudinidae,257872,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octochaetus kenleei,Octochaetidae,503896,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haementeria lopezi,Glossiphoniidae,511724,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Haementeria depressa,Glossiphoniidae,800460,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Oligobdella brasiliensis,Glossiphoniidae,942427,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Haementeria paraguayensis,Glossiphoniidae,511795,160008,Glossiphoniidae,"Vaillant, 1890",accepted,NA,Family,160008,Glossiphoniidae,"Vaillant, 1890",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,NA,1,1,NA,exact
+Tritetrabdella taiwana,Haemadipsidae,448033,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gyptis pacifica,Hesionidae,987704,946,Hesionidae,"Grube, 1850",accepted,NA,Family,946,Hesionidae,"Grube, 1850",928,Animalia,Annelida,Polychaeta,Phyllodocida,NA,1,0,0,0,0,exact
+Themiste dyscritum,Themistidae,377814,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Semiscolex intermedius,Semiscolecidae,780888,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eunice antarctica,Eunicidae,773151,966,Eunicidae,"Berthold, 1827",accepted,NA,Family,966,Eunicidae,"Berthold, 1827",895,Animalia,Annelida,Polychaeta,Eunicida,NA,1,0,0,0,0,exact
+Domanibdella palmyrae,Haemadipsidae,1082089,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella pungens,Haemadipsidae,1082091,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neoterrabdella australis,Haemadipsidae,1082094,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella tanae,Haemadipsidae,555625,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Domanibdella,Haemadipsidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella mediorubra,Haemadipsidae,1082097,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella niarchosorum,Haemadipsidae,831374,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella vagans,Haemadipsidae,831371,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chtonobdella gloriosi,Haemadipsidae,1082087,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Planobdella,Haemadipsidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiobdella,Haemadipsidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ophryotrocha permanni,Dorvilleidae,399252,971,Dorvilleidae,"Chamberlin, 1919",accepted,NA,Family,971,Dorvilleidae,"Chamberlin, 1919",895,Animalia,Annelida,Polychaeta,Eunicida,NA,1,0,0,0,0,exact
+Epigamia macrophtalma,Syllidae,390013,948,Syllidae,"Grube, 1850",accepted,NA,Family,948,Syllidae,"Grube, 1850",928,Animalia,Annelida,Polychaeta,Phyllodocida,NA,1,0,0,0,0,exact
+Amynthas shinanmontis,Megascolecidae,2845402,22960,Megascolecidae,"Rosa, 1891",accepted,NA,Family,22960,Megascolecidae,"Rosa, 1891",468019,Animalia,Annelida,Clitellata,Crassiclitellata,NA,1,1,NA,1,NA,exact
+Phascolion cryptum,Phascolionidae,575837,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phascolion psammophilus,Phascolionidae,167065,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phascolosoma capitatum,Phascolosomatidae,167072,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",accepted,NA,Family,1645,Phascolosomatidae,"Stephen & Edmonds, 1972",1268,Animalia,Annelida,NA,Sipuncula,NA,1,0,0,0,NA,exact
+Eunice websteri,Eunicidae,4978390,966,Eunicidae,"Berthold, 1827",accepted,NA,Family,966,Eunicidae,"Berthold, 1827",895,Animalia,Annelida,Polychaeta,Eunicida,NA,1,0,0,0,0,exact
+Nicidion insularis,Eunicidae,4978555,966,Eunicidae,"Berthold, 1827",accepted,NA,Family,966,Eunicidae,"Berthold, 1827",895,Animalia,Annelida,Polychaeta,Eunicida,NA,1,0,0,0,0,exact
+Nicidion hentscheli,Eunicidae,4978634,966,Eunicidae,"Berthold, 1827",accepted,NA,Family,966,Eunicidae,"Berthold, 1827",895,Animalia,Annelida,Polychaeta,Eunicida,NA,1,0,0,0,0,exact
+Globulidrilus riparius,Enchytraeidae,2846803,2038,Enchytraeidae,"d'Udekem, 1855",accepted,NA,Family,2038,Enchytraeidae,"d'Udekem, 1855",468017,Animalia,Annelida,Clitellata,Enchytraeida,NA,1,1,1,1,NA,exact
+Limnobdella grandis,Hirudinidae,7911777,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Geodrilus singularis,Acanthodrilidae,7912606,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Scolelepis daphoinos,Spionidae,527100,913,Spionidae,"Grube, 1850",accepted,NA,Family,913,Spionidae,"Grube, 1850",909,Animalia,Annelida,Polychaeta,Spionida,NA,1,0,0,0,0,exact
+Aricidea belgicae,Paraonidae,4978140,903,Paraonidae,"Cerruti, 1909",accepted,NA,Family,903,Paraonidae,"Cerruti, 1909",183607,Animalia,Annelida,Polychaeta,NA,NA,1,0,0,0,0,exact
+Crangonobdella spitzbergensis,Piscicolidae,269149,2043,Piscicolidae,"Johnston, 1865",accepted,NA,Family,2043,Piscicolidae,"Johnston, 1865",2117,Animalia,Annelida,Clitellata,Rhynchobdellida,NA,1,1,1,0,NA,exact
+Chtonobdella fallax,Haemadipsidae,831379,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Siboglinidae,NULL,129096,Siboglinidae,"Caullery, 1914",accepted,NA,Family,129096,Siboglinidae,"Caullery, 1914",901,Animalia,Annelida,Polychaeta,Sabellida,NA,1,0,0,0,0,exact
