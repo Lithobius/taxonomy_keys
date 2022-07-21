@@ -1148,7 +1148,7 @@ ech_platy_nem2 <- ech_platy_nem2 %>%
 
 # ready to merge
 write_csv(ech_platy_nem2, here(rosetta, 'problems', 'resolved', 
-                                  '202207_ech_platy_nem_worms_tol-resolved.csv'))
+                                  '20220719_ech_platy_nem_worms_tol-resolved.csv'))
 ```
 
 ```{r echplatynem-problems}

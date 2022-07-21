@@ -1149,7 +1149,7 @@ small_phyla2 <- small_phyla_search %>%
 
 
 #write full
-write.csv(small_phyla2, here(rosetta, 'taxize', '20220718_small_phyla_taxonomy-full.csv'))
+write.csv(small_phyla2, here(rosetta, 'taxize', '20220718_smallphyla_taxonomy-full.csv'))
 
 # not-found list
 small_phyla_notfound <- small_phyla %>%
