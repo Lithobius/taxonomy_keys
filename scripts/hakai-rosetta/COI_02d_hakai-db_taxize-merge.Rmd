@@ -19,6 +19,7 @@ library(here)
 problems <- here('species_lists', 'hakai', '2022rosetta', 'problems')
 rosetta <- here('species_lists', 'hakai', '2022rosetta')
 tol_conflict <- here('species_lists', 'hakai', '2022rosetta', 'problems', 'tol_conflict')
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
 ```
 
 # load in previous
@@ -41,7 +42,8 @@ all_taxa <- full_join(annelid, arthropod) %>%
   full_join(chordata) %>%
   full_join(mollusca) %>%
   full_join(ech_platy_nem) %>%
-  full_join(smallphyla)
+  full_join(smallphyla) %>%
+  filter(!(is.na(rank)))
 ```
 
 
@@ -86,7 +88,11 @@ Note the second round hasn't been done yet so its just the first one for now (ju
 all_taxa_res2 <- full_join(all_taxa_res, all_taxa) %>%
   #join second round here
   #its all animals so kingdom is unnecessary
-  select(!(kingdom))
+  select(!(kingdom)) %>%
+  # cases where worms was over enthusiastic
+  filter(!(found_taxa != taxa_query & status == 'unaccepted')) %>%
+  # cases where there was more than one authority per valid id
+  distinct(found_taxa, valid_authority, .keep_all = TRUE)
 
 #save!
 write_csv(all_taxa_res2, here(rosetta, 'current_draft',
@@ -106,6 +112,25 @@ write_csv(all_freshterr, here('latest-keys', '20220721_freshwater_terrestrial.cs
 ```
 
 
+```{r database-merge}
+bold_gb_hakai <- read_csv(here(hakai_blast, 
+                              '20220718_hakai_bold_gbif_database_clean.csv'))[-1] %>%
+  select(identification, verbatim_identification, sample_id, bin, taxon_id) %>%
+  distinct()
+
+
+hakai_rosetta <- bold_gb_hakai %>%
+  left_join(all_taxa_res2, by = c('identification' = 'taxa_query')) %>%
+  relocate(found_taxa) %>%
+  distinct()
+
+
+# save!  
+write_csv(hakai_rosetta, here('latest-keys', '20220721_coi_rosetta_draft.csv'))
+
+```
+
+
 
 # scratch
 
@@ -113,7 +138,7 @@ If I need to read it back in to mess around with options
 ```{r}
 
 all_taxa_res2<-read_csv(here(rosetta, 'current_draft',
-                              '20220704_blast-db_taxonomy-all.csv'))
+                              '20220721_blast-db_taxonomy-all.csv'))
 ```
 
 
