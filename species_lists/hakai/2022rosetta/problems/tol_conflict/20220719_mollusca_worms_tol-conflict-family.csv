@@ -1,0 +1,488 @@
+taxa_query,family,ottid_species,aphia_id,scientificname,authority,status,unacceptreason,rank,valid_aphia_id,valid_name,valid_authority,parent_name_usage_id,kingdom,phylum,class,order,genus,is_marine,is_brackish,is_freshwater,is_terrestrial,is_extinct,match_type
+Rexithaerus secta,Tellinidae,624874,235,Tellinidae,"Blainville, 1814",accepted,NA,Family,235,Tellinidae,"Blainville, 1814",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,NA,NA,NA,exact
+Leukoma staminea,Veneridae,865455,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Melanella,Eulimidae,NULL,135,Eulimidae,"Philippi, 1853",accepted,NA,Family,135,Eulimidae,"Philippi, 1853",387336,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Vitreolina columbiana,Eulimidae,2896021,135,Eulimidae,"Philippi, 1853",accepted,NA,Family,135,Eulimidae,"Philippi, 1853",387336,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Margarites salmoneus,Margaritidae,2885453,564652,Margaritidae,"Blainville, 1824",accepted,NA,Family,564652,Margaritidae,"Blainville, 1824",489069,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,0,0,0,NA,exact
+Veprichlamys empressae,Pectinidae,354889,213,Pectinidae,"Rafinesque, 1815",accepted,NA,Family,213,Pectinidae,"Rafinesque, 1815",151320,Animalia,Mollusca,Bivalvia,Pectinida,NA,1,0,0,0,0,exact
+Mimachlamys crassicostata,Pectinidae,1002218,213,Pectinidae,"Rafinesque, 1815",accepted,NA,Family,213,Pectinidae,"Rafinesque, 1815",151320,Animalia,Mollusca,Bivalvia,Pectinida,NA,1,0,0,0,0,exact
+Eltopera sanguinea,Spondylidae,404621,23121,Spondylidae,"Gray, 1826",accepted,NA,Family,23121,Spondylidae,"Gray, 1826",151320,Animalia,Mollusca,Bivalvia,Pectinida,NA,1,NA,NA,NA,NA,exact
+Barbatia amygdalumtostum,Arcidae,863801,208,Arcidae,"Lamarck, 1809",accepted,NA,Family,208,Arcidae,"Lamarck, 1809",489054,Animalia,Mollusca,Bivalvia,Arcida,NA,1,1,1,NA,NA,exact
+Barbatia foliata,Arcidae,604250,208,Arcidae,"Lamarck, 1809",accepted,NA,Family,208,Arcidae,"Lamarck, 1809",489054,Animalia,Mollusca,Bivalvia,Arcida,NA,1,1,1,NA,NA,exact
+Leiosolenus curtus,Mytilidae,321580,211,Mytilidae,"Rafinesque, 1815",accepted,NA,Family,211,Mytilidae,"Rafinesque, 1815",491766,Animalia,Mollusca,Bivalvia,Mytilida,NA,1,1,1,0,0,exact
+Macridiscus aequilatera,Veneridae,258773,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Sepiella inermis,Sepiidae,307142,11723,Sepiidae,"Leach, 1817",accepted,NA,Family,11723,Sepiidae,"Leach, 1817",1454584,Animalia,Mollusca,Cephalopoda,Sepiida,NA,1,0,0,0,NA,exact
+Liotina semiclathratula,Liotiidae,281559,196896,Liotiidae,"Gray, 1850",accepted,NA,Family,196896,Liotiidae,"Gray, 1850",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Amphioctopus siamensis,Octopodidae,5505405,11782,Octopodidae,"d'Orbigny, 1840",accepted,NA,Family,11782,Octopodidae,"d'Orbigny, 1840",14672,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Akoya akoya,Calliostomatidae,993317,382180,Calliostomatidae,"Thiele, 1924 (1847)",accepted,NA,Family,382180,Calliostomatidae,"Thiele, 1924 (1847)",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Calliostoma shinagawaensis,Calliostomatidae,249393,382180,Calliostomatidae,"Thiele, 1924 (1847)",accepted,NA,Family,382180,Calliostomatidae,"Thiele, 1924 (1847)",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Diloma piperinus,Trochidae,721820,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Rossiteria nucleus,Trochidae,567716,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Lunella smaragda,Turbinidae,597326,503,Turbinidae,"Rafinesque, 1815",accepted,NA,Family,503,Turbinidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Anadara broughtonii,Arcidae,624178,208,Arcidae,"Lamarck, 1809",accepted,NA,Family,208,Arcidae,"Lamarck, 1809",489054,Animalia,Mollusca,Bivalvia,Arcida,NA,1,1,1,NA,NA,exact
+Gonatopsis okutanii,Gonatidae,10470,11743,Gonatidae,"Hoyle, 1886",accepted,NA,Family,11743,Gonatidae,"Hoyle, 1886",1545787,Animalia,Mollusca,Cephalopoda,Oegopsida,NA,1,0,0,0,NA,exact
+Argonauta nodosus,Argonautidae,331558,11785,Argonautidae,"Cantraine, 1841",accepted,NA,Family,11785,Argonautidae,"Cantraine, 1841",14673,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Chiroteuthis veranii,Chiroteuthidae,906079,11767,Chiroteuthidae,"Gray, 1849",accepted,NA,Family,11767,Chiroteuthidae,"Gray, 1849",1454594,Animalia,Mollusca,Cephalopoda,Oegopsida,NA,1,1,0,0,NA,exact
+Stigmatoteuthis hoylei,Histioteuthidae,754417,11749,Histioteuthidae,"Verrill, 1881",accepted,NA,Family,11749,Histioteuthidae,"Verrill, 1881",1545787,Animalia,Mollusca,Cephalopoda,Oegopsida,NA,1,0,0,0,NA,exact
+Loliolus japonica,Loliginidae,402105,11734,Loliginidae,"Lesueur, 1821",accepted,NA,Family,11734,Loliginidae,"Lesueur, 1821",11728,Animalia,Mollusca,Cephalopoda,Myopsida,NA,1,NA,0,0,NA,exact
+Antalis pilsbryi,Dentaliidae,432510,202,Dentaliidae,"Children, 1834",accepted,NA,Family,202,Dentaliidae,"Children, 1834",200,Animalia,Mollusca,Scaphopoda,Dentaliida,NA,1,NA,NA,NA,NA,exact
+Psilunio littoralis,Unionidae,4161701,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cafferia caffer,Unionidae,2851494,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lyogyrus limosus,Amnicolidae,1044239,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Clithon spinosum,Neritidae,198685,13588,Neritidae,"Rafinesque, 1815",accepted,NA,Family,13588,Neritidae,"Rafinesque, 1815",196314,Animalia,Mollusca,Gastropoda,Cycloneritida,NA,1,1,1,1,0,exact
+Spiralix puteana,Moitessieriidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Maoricrypta immersa,Calyptraeidae,789322,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Ergaea walshi,Calyptraeidae,162612,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Crucibulum spinosum,Calyptraeidae,2894358,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Echinolittorina lemniscata,Littorinidae,423561,119,Littorinidae,"Children, 1834",accepted,NA,Family,119,Littorinidae,"Children, 1834",14766,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Echinolittorina pascua,Littorinidae,182100,119,Littorinidae,"Children, 1834",accepted,NA,Family,119,Littorinidae,"Children, 1834",14766,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Echinolittorina riisei,Littorinidae,474116,119,Littorinidae,"Children, 1834",accepted,NA,Family,119,Littorinidae,"Children, 1834",14766,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Homalopoma rotundata,Colloniidae,160310,382202,Colloniidae,"Cossmann, 1917",accepted,NA,Family,382202,Colloniidae,"Cossmann, 1917",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Bellastraea squamifera,Turbinidae,735146,503,Turbinidae,"Rafinesque, 1815",accepted,NA,Family,503,Turbinidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Astralium provisorium,Turbinidae,1071971,503,Turbinidae,"Rafinesque, 1815",accepted,NA,Family,503,Turbinidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Pirenella conica,Potamididae,1096624,23100,Potamididae,"H. Adams & A. Adams, 1854",accepted,NA,Family,23100,Potamididae,"H. Adams & A. Adams, 1854",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,1,1,NA,NA,NA,exact
+Cerithidea balteata,Potamididae,42993,23100,Potamididae,"H. Adams & A. Adams, 1854",accepted,NA,Family,23100,Potamididae,"H. Adams & A. Adams, 1854",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,1,1,NA,NA,NA,exact
+Cerithidea quoyii,Potamididae,622176,23100,Potamididae,"H. Adams & A. Adams, 1854",accepted,NA,Family,23100,Potamididae,"H. Adams & A. Adams, 1854",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,1,1,NA,NA,NA,exact
+Pirenella alata,Potamididae,1096621,23100,Potamididae,"H. Adams & A. Adams, 1854",accepted,NA,Family,23100,Potamididae,"H. Adams & A. Adams, 1854",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,1,1,NA,NA,NA,exact
+Pirenella microptera,Potamididae,1096619,23100,Potamididae,"H. Adams & A. Adams, 1854",accepted,NA,Family,23100,Potamididae,"H. Adams & A. Adams, 1854",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,1,1,NA,NA,NA,exact
+Indothais sacellum,Muricidae,428354,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Clea helena,Nassariidae,2901697,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Boreochiton ruber,Tonicellidae,844408,385500,Tonicellidae,"Simroth, 1894",accepted,NA,Family,385500,Tonicellidae,"Simroth, 1894",385408,Animalia,Mollusca,Polyplacophora,Chitonida,NA,1,NA,NA,NA,NA,exact
+Crepidula tegulicia,Calyptraeidae,355441,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Sinistrofulgur sinistrum,Busyconidae,NULL,862828,Busyconidae,"Wade, 1917 (1867)",accepted,NA,Family,862828,Busyconidae,"Wade, 1917 (1867)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,0,0,0,0,exact
+Ferrissia,Planorbidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Physa,Physidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sepiadarium kochi,Sepiadariidae,527585,153041,Sepiadariidae,"P. Fischer, 1882",accepted,NA,Family,153041,Sepiadariidae,"P. Fischer, 1882",1454580,Animalia,Mollusca,Cephalopoda,Sepiida,NA,1,0,0,0,NA,exact
+Ferissia,Lymnaeidae,NULL,160343,Lymnaeidae,"Rafinesque, 1815",accepted,NA,Family,160343,Lymnaeidae,"Rafinesque, 1815",489336,Animalia,Mollusca,Gastropoda,NA,NA,NA,1,1,NA,0,exact
+Sericata abyssoclista,Clausiliidae,312067,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sericata albicosta,Clausiliidae,608765,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sericata bathyclista,Clausiliidae,312070,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sericata dextrorsa,Clausiliidae,312069,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sericata liebegottae,Clausiliidae,312064,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sericata tantilla,Clausiliidae,312065,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sericata torifera,Clausiliidae,312062,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Melongena corona,Melongenidae,526413,160182,Melongenidae,"Gill, 1871 (1854)",accepted,NA,Family,160182,Melongenidae,"Gill, 1871 (1854)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Pettancylus clessiniana,Planorbidae,7961919,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Astralium helicinum,Turbinidae,2885522,503,Turbinidae,"Rafinesque, 1815",accepted,NA,Family,503,Turbinidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Diloma samoaensis,Trochidae,538080,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Diloma coracina,Trochidae,150227,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Diloma nigerrima,Trochidae,150230,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Diloma zelandica,Trochidae,150232,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Diloma subrostrata,Trochidae,150234,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Scissurella costata,Scissurellidae,2886668,1730,Scissurellidae,"Gray, 1847",accepted,NA,Family,1730,Scissurellidae,"Gray, 1847",156487,Animalia,Mollusca,Gastropoda,Lepetellida,NA,1,0,0,0,0,exact
+Fluminicola coloradoensis,Lithoglyphidae,600326,715961,Lithoglyphidae,"Tryon, 1866",accepted,NA,Family,715961,Lithoglyphidae,"Tryon, 1866",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,NA,1,1,NA,NA,exact
+Physa acuta,Physidae,55904,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Physa ancillaria,Physidae,735825,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhabdotus reflexus,Bulimulidae,5758598,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hermania scabra,Philinidae,964156,161,Philinidae,"Gray, 1850 (1815)",accepted,NA,Family,161,Philinidae,"Gray, 1850 (1815)",196322,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,NA,NA,NA,NA,exact
+Ocenebra hispidula,Muricidae,774404,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Ocenebra edwardsii,Muricidae,2909166,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Ocenebra ingloria,Muricidae,2909182,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Ocenebra piantonii,Muricidae,2909164,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Ocenebra nicolai,Muricidae,2909189,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Ocenebra leukos,Muricidae,2909160,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Merica boucheti,Cancellariidae,260207,13600,Cancellariidae,"Forbes & Hanley, 1851",accepted,NA,Family,13600,Cancellariidae,"Forbes & Hanley, 1851",1055738,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,0,exact
+Pareledone felix,Megaleledonidae,31645,834050,Megaleledonidae,"Taki, 1961",accepted,NA,Family,834050,Megaleledonidae,"Taki, 1961",14672,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Duplicaria bernardii,Terebridae,330019,160424,Terebridae,"Mörch, 1852",accepted,NA,Family,160424,Terebridae,"Mörch, 1852",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Terebra formosa,Terebridae,228045,160424,Terebridae,"Mörch, 1852",accepted,NA,Family,160424,Terebridae,"Mörch, 1852",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Lophiotoma jickeli,Turridae,1000914,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",accepted,NA,Family,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Tomopleura reevii,Borsoniidae,989825,153870,Borsoniidae,"Bellardi, 1875",accepted,NA,Family,153870,Borsoniidae,"Bellardi, 1875",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Clionella kraussii,Clavatulidae,2913642,411813,Clavatulidae,"Gray, 1853",accepted,NA,Family,411813,Clavatulidae,"Gray, 1853",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Conasprella mcgintyi,Conidae,2903401,14107,Conidae,"J. Fleming, 1822",accepted,NA,Family,14107,Conidae,"J. Fleming, 1822",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,0,0,0,0,exact
+Triplostephanus fenestratus,Terebridae,718019,160424,Terebridae,"Mörch, 1852",accepted,NA,Family,160424,Terebridae,"Mörch, 1852",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Clavatulidae,Clavatulidae,NULL,411813,Clavatulidae,"Gray, 1853",accepted,NA,Family,411813,Clavatulidae,"Gray, 1853",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Lienardia nigrotincta,Clathurellidae,78088,153873,Clathurellidae,"H. Adams & A. Adams, 1858",accepted,NA,Family,153873,Clathurellidae,"H. Adams & A. Adams, 1858",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Eclogavena quadrimaculata,Cypraeidae,561905,23022,Cypraeidae,"Rafinesque, 1815",accepted,NA,Family,23022,Cypraeidae,"Rafinesque, 1815",14774,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Canarium fusiforme,Strombidae,1039288,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Canarium wilsonorum,Strombidae,2430,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Canarium microurceus,Strombidae,584382,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Lobatus galeatus,Strombidae,1039287,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Lobatus gallus,Strombidae,1039290,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Persististrombus granulatus,Strombidae,584398,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Persististrombus latus,Strombidae,462283,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Lobatus raninus,Strombidae,988788,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Lobatus peruvianus,Strombidae,462282,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Sinustrombus taurus,Strombidae,432204,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Sinustrombus sinuatus,Strombidae,2889677,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Canarium labiatum,Strombidae,462293,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Labiostrombus epidromis,Strombidae,1039286,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Doxander vittatus,Strombidae,988793,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Euprotomus vomer,Strombidae,988792,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Vokesinotus perrugatus,Muricidae,NULL,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Eupleura tampaensis,Muricidae,850830,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Mexacteon,Acteonidae,NULL,155,Acteonidae,"d'Orbigny, 1842",accepted,NA,Family,155,Acteonidae,"d'Orbigny, 1842",382223,Animalia,Mollusca,Gastropoda,NA,NA,1,NA,0,0,0,exact
+Micromelo undatus,Aplustridae,966556,411859,Aplustridae,"Gray, 1847",accepted,NA,Family,411859,Aplustridae,"Gray, 1847",382223,Animalia,Mollusca,Gastropoda,NA,NA,1,NA,NA,NA,NA,exact
+Haminoea cymbalum,Haminoeidae,578608,23052,Haminoeidae,"Pilsbry, 1895",accepted,NA,Family,23052,Haminoeidae,"Pilsbry, 1895",411892,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,1,NA,NA,NA,exact
+Flabellina trophina,Flabellinidae,20704,190,Flabellinidae,"Bergh, 1889",accepted,NA,Family,190,Flabellinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Helicarionidae,Helicarionidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anagastina zaetavalis,Hydrobiidae,430976,120,Hydrobiidae,"Stimpson, 1865",accepted,NA,Family,120,Hydrobiidae,"Stimpson, 1865",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Pseudobithynia irana,Bithyniidae,5500692,182697,Bithyniidae,"Gray, 1857",accepted,NA,Family,182697,Bithyniidae,"Gray, 1857",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,NA,1,1,NA,0,exact
+Tylomelania,Pachychilidae,NULL,411651,Pachychilidae,"P. Fischer & Crosse, 1892",accepted,NA,Family,411651,Pachychilidae,"P. Fischer & Crosse, 1892",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,0,1,1,0,NA,exact
+Roboastra tentaculata,Polyceridae,36854,177,Polyceridae,"Alder & Hancock, 1845",accepted,NA,Family,177,Polyceridae,"Alder & Hancock, 1845",412569,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Tambana,Pantheidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tambja,Polyceridae,NULL,177,Polyceridae,"Alder & Hancock, 1845",accepted,NA,Family,177,Polyceridae,"Alder & Hancock, 1845",412569,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Nembrotha kubaryana,Polyceridae,706030,177,Polyceridae,"Alder & Hancock, 1845",accepted,NA,Family,177,Polyceridae,"Alder & Hancock, 1845",412569,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Nembrotha yonowae,Polyceridae,1084193,177,Polyceridae,"Alder & Hancock, 1845",accepted,NA,Family,177,Polyceridae,"Alder & Hancock, 1845",412569,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Cyanoplax hartwegii,Lepidochitonidae,856796,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tapes conspersus,Veneridae,626119,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Anarithma metula,Mitromorphidae,463315,153871,Mitromorphidae,"T. L. Casey, 1904",accepted,NA,Family,153871,Mitromorphidae,"T. L. Casey, 1904",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,0,0,0,0,exact
+Nannodiella ravella,Clathurellidae,463318,153873,Clathurellidae,"H. Adams & A. Adams, 1858",accepted,NA,Family,153873,Clathurellidae,"H. Adams & A. Adams, 1858",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Kermia aureotincta,Raphitomidae,938457,153879,Raphitomidae,"Bellardi, 1875",accepted,NA,Family,153879,Raphitomidae,"Bellardi, 1875",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,1,NA,NA,exact
+Carinodrillia quadrilirata,Pseudomelatomidae,412787,411814,Pseudomelatomidae,"J. P. E. Morrison, 1966",accepted,NA,Family,411814,Pseudomelatomidae,"J. P. E. Morrison, 1966",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Raphitoma rubroapicata,Raphitomidae,463339,153879,Raphitomidae,"Bellardi, 1875",accepted,NA,Family,153879,Raphitomidae,"Bellardi, 1875",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,1,NA,NA,exact
+Daphniola exigua,Hydrobiidae,388128,120,Hydrobiidae,"Stimpson, 1865",accepted,NA,Family,120,Hydrobiidae,"Stimpson, 1865",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Callista erycina,Veneridae,341010,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Mancinella intermedia,Muricidae,131184,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Tenguella granulata,Muricidae,1075221,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Valvata piscinalis,Valvatidae,819588,153992,Valvatidae,"Gray, 1840",accepted,NA,Family,153992,Valvatidae,"Gray, 1840",153657,Animalia,Mollusca,Gastropoda,NA,NA,0,1,1,0,0,exact
+Nerita signata,Neritidae,132713,13588,Neritidae,"Rafinesque, 1815",accepted,NA,Family,13588,Neritidae,"Rafinesque, 1815",196314,Animalia,Mollusca,Gastropoda,Cycloneritida,NA,1,1,1,1,0,exact
+Nerita trifasciata,Neritidae,2887585,13588,Neritidae,"Rafinesque, 1815",accepted,NA,Family,13588,Neritidae,"Rafinesque, 1815",196314,Animalia,Mollusca,Gastropoda,Cycloneritida,NA,1,1,1,1,0,exact
+Lophiotoma unedo,Turridae,686508,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",accepted,NA,Family,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Lophiotoma panglaoensis,Turridae,65059,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",accepted,NA,Family,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Gemmula monilifera,Turridae,646111,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",accepted,NA,Family,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Pulmonata,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strangesta strangei,Rhytididae,163354,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Larutia sumatrensis,Scincidae,4123953,196111,Scincidae,NA,accepted,NA,Family,196111,Scincidae,NA,196110,Animalia,Chordata,NA,Squamata,NA,1,NA,NA,1,NA,exact
+Filopaludina bengalensis,Viviparidae,6353790,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Taia polyzonata,Viviparidae,212981,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limacus flavus,Limacidae,554653,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Trophonella shackletoni,Muricidae,1030058,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Typhisala grandis,Muricidae,774388,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Bedeva vinosa,Muricidae,1083220,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Muricodrupa fiscella,Muricidae,976151,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Gemophos tinctus,Buccinidae,NULL,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Indothais lacera,Muricidae,428357,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Galba,Lymnaeidae,NULL,160343,Lymnaeidae,"Rafinesque, 1815",accepted,NA,Family,160343,Lymnaeidae,"Rafinesque, 1815",489336,Animalia,Mollusca,Gastropoda,NA,NA,NA,1,1,NA,0,exact
+Nuttallina californica,Lepidochitonidae,2867749,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Firoloida desmarestia,Pterotracheidae,484143,225072,Pterotracheidae,"Rafinesque, 1814",accepted,NA,Family,225072,Pterotracheidae,"Rafinesque, 1814",387338,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Histioteuthis bonellii,Histioteuthidae,416687,11749,Histioteuthidae,"Verrill, 1881",accepted,NA,Family,11749,Histioteuthidae,"Verrill, 1881",1545787,Animalia,Mollusca,Cephalopoda,Oegopsida,NA,1,0,0,0,NA,exact
+Grimalditeuthis bonplandi,Chiroteuthidae,189909,11767,Chiroteuthidae,"Gray, 1849",accepted,NA,Family,11767,Chiroteuthidae,"Gray, 1849",1454594,Animalia,Mollusca,Cephalopoda,Oegopsida,NA,1,1,0,0,NA,exact
+Sepiolina petasus,Sepiolidae,172561,11725,Sepiolidae,"Leach, 1817",accepted,NA,Family,11725,Sepiolidae,"Leach, 1817",1454580,Animalia,Mollusca,Cephalopoda,Sepiida,NA,1,0,0,0,NA,exact
+Octopus minor,Octopodidae,711387,11782,Octopodidae,"d'Orbigny, 1840",accepted,NA,Family,11782,Octopodidae,"d'Orbigny, 1840",14672,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Amphioctopus membranaceus,Octopodidae,207560,11782,Octopodidae,"d'Orbigny, 1840",accepted,NA,Family,11782,Octopodidae,"d'Orbigny, 1840",14672,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Macaronapaeus,Enidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Heleobia parchappii,Cochliopidae,800856,411706,Cochliopidae,"Tryon, 1866",accepted,NA,Family,411706,Cochliopidae,"Tryon, 1866",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,0,NA,exact
+Jolya elongata,Mytilidae,7601,211,Mytilidae,"Rafinesque, 1815",accepted,NA,Family,211,Mytilidae,"Rafinesque, 1815",491766,Animalia,Mollusca,Bivalvia,Mytilida,NA,1,1,1,0,0,exact
+Modiolus modulaides,Mytilidae,50686,211,Mytilidae,"Rafinesque, 1815",accepted,NA,Family,211,Mytilidae,"Rafinesque, 1815",491766,Animalia,Mollusca,Bivalvia,Mytilida,NA,1,1,1,0,0,exact
+Perna perna,Mytilidae,22445,211,Mytilidae,"Rafinesque, 1815",accepted,NA,Family,211,Mytilidae,"Rafinesque, 1815",491766,Animalia,Mollusca,Bivalvia,Mytilida,NA,1,1,1,0,0,exact
+Clausinella fasciata,Veneridae,420487,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Macridiscus donacinus,Veneridae,1010512,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Venerupis aspera,Veneridae,418706,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Vesicomya stearnsii,Vesicomyidae,472965,23140,Vesicomyidae,"Dall & Simpson, 1901",accepted,NA,Family,23140,Vesicomyidae,"Dall & Simpson, 1901",14637,Animalia,Mollusca,Bivalvia,Venerida,NA,1,0,0,0,0,exact
+Gari,Psammobiidae,NULL,237,Psammobiidae,"J. Fleming, 1828",accepted,NA,Family,237,Psammobiidae,"J. Fleming, 1828",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,NA,NA,NA,exact
+Placamen isabellina,Veneridae,1049122,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Cryptonema producta,Veneridae,681497,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Lepetodrilidae,Lepetodrilidae,NULL,180906,Lepetodrilidae,"J. H. McLean, 1988",accepted,NA,Family,180906,Lepetodrilidae,"J. H. McLean, 1988",382161,Animalia,Mollusca,Gastropoda,Lepetellida,NA,1,NA,NA,NA,NA,exact
+Neripteron dilatatum,Neritidae,457779,13588,Neritidae,"Rafinesque, 1815",accepted,NA,Family,13588,Neritidae,"Rafinesque, 1815",196314,Animalia,Mollusca,Gastropoda,Cycloneritida,NA,1,1,1,1,0,exact
+Felimida binza,Chromodorididae,2875298,23003,Chromodorididae,"Bergh, 1891",accepted,NA,Family,23003,Chromodorididae,"Bergh, 1891",1370609,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Platevindex mortoni,Onchidiidae,94437,1773,Onchidiidae,"Rafinesque, 1815",accepted,NA,Family,1773,Onchidiidae,"Rafinesque, 1815",196317,Animalia,Mollusca,Gastropoda,Systellommatophora,NA,1,1,0,1,NA,exact
+Onchidium reevesii,Onchidiidae,167081,1773,Onchidiidae,"Rafinesque, 1815",accepted,NA,Family,1773,Onchidiidae,"Rafinesque, 1815",196317,Animalia,Mollusca,Gastropoda,Systellommatophora,NA,1,1,0,1,NA,exact
+Lissachatina fulica,Achatinidae,997087,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Brachypodella,Urocoptidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Brevipedella portoricensis,Urocoptidae,5973705,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Buccinanops deformis,Nassariidae,440289,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Bythiospeum haeussleri,Hydrobiidae,2915511,120,Hydrobiidae,"Stimpson, 1865",accepted,NA,Family,120,Hydrobiidae,"Stimpson, 1865",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Bythiospeum acicula,Hydrobiidae,2914842,120,Hydrobiidae,"Stimpson, 1865",accepted,NA,Family,120,Hydrobiidae,"Stimpson, 1865",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Diniatys dubius,Haminoeidae,5505717,23052,Haminoeidae,"Pilsbry, 1895",accepted,NA,Family,23052,Haminoeidae,"Pilsbry, 1895",411892,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,1,NA,NA,NA,exact
+Atys costulosa,Haminoeidae,5735245,23052,Haminoeidae,"Pilsbry, 1895",accepted,NA,Family,23052,Haminoeidae,"Pilsbry, 1895",411892,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,1,NA,NA,NA,exact
+Tayuva lilacina,Discodorididae,2875640,1761,Discodorididae,"Bergh, 1891",accepted,NA,Family,1761,Discodorididae,"Bergh, 1891",173,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Plebidonax deltoides,Psammobiidae,867457,237,Psammobiidae,"J. Fleming, 1828",accepted,NA,Family,237,Psammobiidae,"J. Fleming, 1828",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,NA,NA,NA,exact
+Elysia velutinus,Plakobranchidae,66670,411960,Plakobranchidae,"Gray, 1840",accepted,NA,Family,411960,Plakobranchidae,"Gray, 1840",411959,Animalia,Mollusca,Gastropoda,NA,NA,1,NA,NA,NA,NA,exact
+Eubranchus alexeii,Fionidae,2876137,23039,Fionidae,"Gray, 1857",accepted,NA,Family,23039,Fionidae,"Gray, 1857",412646,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Hyriopsis,Unionidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Siphonaria lateralis,Siphonariidae,338452,23118,Siphonariidae,"Gray, 1827",accepted,NA,Family,23118,Siphonariidae,"Gray, 1827",382225,Animalia,Mollusca,Gastropoda,Siphonariida,NA,1,NA,NA,NA,NA,exact
+Lamellidens,Unionidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nassarius sinarus,Nassariidae,702674,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Nassarius graphiterus,Nassariidae,2899008,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Reticunassa festiva,Nassariidae,580448,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Nassarius pumilio,Nassariidae,2899139,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Neripteron violaceum,Neritidae,937612,13588,Neritidae,"Rafinesque, 1815",accepted,NA,Family,13588,Neritidae,"Rafinesque, 1815",196314,Animalia,Mollusca,Gastropoda,Cycloneritida,NA,1,1,1,1,0,exact
+Ocenebra erinaceus,Muricidae,872938,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Parreysia,Unionidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aplus assimilis,Buccinidae,2900775,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Aplus dorbignyi,Buccinidae,2900782,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Aplus scacchianus,Buccinidae,2900779,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Pseudodon,Unionidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pseudopineria barbadensis,Urocoptidae,5973732,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Radiatula,Unionidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Semisalsa maltzani,Cochliopidae,5720316,411706,Cochliopidae,"Tryon, 1866",accepted,NA,Family,411706,Cochliopidae,"Tryon, 1866",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,0,NA,exact
+Lobatus gigas,Strombidae,145674,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Thuridilla vatae,Plakobranchidae,587527,411960,Plakobranchidae,"Gray, 1840",accepted,NA,Family,411960,Plakobranchidae,"Gray, 1840",411959,Animalia,Mollusca,Gastropoda,NA,NA,1,NA,NA,NA,NA,exact
+Eucrassatella nana,Crassatellidae,77202,23013,Crassatellidae,"Férussac, 1822",accepted,NA,Family,23013,Crassatellidae,"Férussac, 1822",23014,Animalia,Mollusca,Bivalvia,Carditida,NA,1,NA,NA,NA,NA,exact
+Periglypta corbis,Veneridae,107442,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Saxidomus purpurata,Veneridae,605472,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Tanea lineata,Naticidae,938186,145,Naticidae,"Guilding, 1834",accepted,NA,Family,145,Naticidae,"Guilding, 1834",14776,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,NA,NA,NA,exact
+Polinices coensis,Naticidae,NULL,145,Naticidae,"Guilding, 1834",accepted,NA,Family,145,Naticidae,"Guilding, 1834",14776,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,NA,NA,NA,exact
+Lentigo lentiginosus,Strombidae,462284,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Bufonaria rana,Bursidae,140400,22995,Bursidae,"Thiele, 1925",accepted,NA,Family,22995,Bursidae,"Thiele, 1925",14777,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Semicassis bisulcata,Cassidae,762724,22999,Cassidae,"Latreille, 1825",accepted,NA,Family,22999,Cassidae,"Latreille, 1825",14777,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Linatella caudata,Ranellidae,854896,10109,Ranellidae,"Gray, 1854",accepted,NA,Family,10109,Ranellidae,"Gray, 1854",14777,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Fusinus colus,Fasciolariidae,77206,23038,Fasciolariidae,"Gray, 1853",accepted,NA,Family,23038,Fasciolariidae,"Gray, 1853",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Cancellaria indentata,Cancellariidae,783401,13600,Cancellariidae,"Forbes & Hanley, 1851",accepted,NA,Family,13600,Cancellariidae,"Forbes & Hanley, 1851",1055738,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,0,exact
+Cancellaria jayana,Cancellariidae,299983,13600,Cancellariidae,"Forbes & Hanley, 1851",accepted,NA,Family,13600,Cancellariidae,"Forbes & Hanley, 1851",1055738,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,0,exact
+Admetula atopodonta,Cancellariidae,260212,13600,Cancellariidae,"Forbes & Hanley, 1851",accepted,NA,Family,13600,Cancellariidae,"Forbes & Hanley, 1851",1055738,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,0,exact
+Plicopurpura columellaris,Muricidae,935652,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Orania nodosa,Muricidae,640176,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Mancinella armigera,Muricidae,428360,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Purpura bufo,Muricidae,256027,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Acanthais callaoensis,Muricidae,954362,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Thalessa virgata,Muricidae,498785,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Thais gradata,Muricidae,586017,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Indothais javanica,Muricidae,938666,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Neorapana muricata,Muricidae,562372,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Indothais rufotincta,Muricidae,382312,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Acanthais triangularis,Muricidae,242277,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Clypeomorus bifasciata,Cerithiidae,854884,128,Cerithiidae,"J. Fleming, 1822",accepted,NA,Family,128,Cerithiidae,"J. Fleming, 1822",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,1,1,NA,1,NA,exact
+Favorinus elenalexiarum,Facelinidae,319927,191,Facelinidae,"Bergh, 1889",accepted,NA,Family,191,Facelinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Bornella stellifer,Bornellidae,1092238,412598,Bornellidae,"Bergh, 1874",accepted,NA,Family,412598,Bornellidae,"Bergh, 1874",182,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Salinator rosaceus,Amphibolidae,366189,955451,Amphibolidae,"R. Bertolani, 1981",unaccepted,NA,Family,342535,Eohypsibiidae,"Bertolani & Kristensen, 1987",955420,Animalia,Tardigrada,Eutardigrada,Parachela,NA,NA,NA,NA,NA,NA,exact
+Cornu aspersum,Helicidae,349699,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pectinidens diaphanus,Lymnaeidae,749029,160343,Lymnaeidae,"Rafinesque, 1815",accepted,NA,Family,160343,Lymnaeidae,"Rafinesque, 1815",489336,Animalia,Mollusca,Gastropoda,NA,NA,NA,1,1,NA,0,exact
+Tosatrochus attenuatus,Trochidae,NULL,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Trochus stellatus,Trochidae,NULL,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Notodoris minor,Aegiridae,2874929,531070,Aegiridae,"P. Fischer, 1883",accepted,NA,Family,531070,Aegiridae,"P. Fischer, 1883",246152,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Mopalia acuta,Mopaliidae,8791,23074,Mopaliidae,"Dall, 1889",accepted,NA,Family,23074,Mopaliidae,"Dall, 1889",385408,Animalia,Mollusca,Polyplacophora,Chitonida,NA,1,NA,NA,NA,NA,exact
+Ectenagena laubieri,Vesicomyidae,NULL,23140,Vesicomyidae,"Dall & Simpson, 1901",accepted,NA,Family,23140,Vesicomyidae,"Dall & Simpson, 1901",14637,Animalia,Mollusca,Bivalvia,Venerida,NA,1,0,0,0,0,exact
+Ectenagena nautilei,Vesicomyidae,NULL,23140,Vesicomyidae,"Dall & Simpson, 1901",accepted,NA,Family,23140,Vesicomyidae,"Dall & Simpson, 1901",14637,Animalia,Mollusca,Bivalvia,Venerida,NA,1,0,0,0,0,exact
+Mactra stultorum,Mactridae,859166,230,Mactridae,"Lamarck, 1809",accepted,NA,Family,230,Mactridae,"Lamarck, 1809",14634,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,1,NA,NA,exact
+Pomacea bridgesii,Ampullariidae,843051,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Arothron reticularis,Tetraodontidae,260993,125612,Tetraodontidae,"Bonaparte, 1831",accepted,NA,Family,125612,Tetraodontidae,"Bonaparte, 1831",10332,Animalia,Chordata,Actinopteri,Tetraodontiformes,NA,1,1,1,NA,NA,exact
+Godlewskia godlewskia,NULL,1040062,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Korotnewia korotnewi,NULL,513569,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandalia triticea,Ovulidae,2919709,1747,Ovulidae,"J. Fleming, 1822",accepted,NA,Family,1747,Ovulidae,"J. Fleming, 1822",14774,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Petaloconchus erectus,Vermetidae,348006,23139,Vermetidae,"Rafinesque, 1815",accepted,NA,Family,23139,Vermetidae,"Rafinesque, 1815",387340,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Babylonia areolata,Babyloniidae,4958669,411790,Babyloniidae,"Kuroda, Habe & Oyama, 1971",accepted,NA,Family,411790,Babyloniidae,"Kuroda, Habe & Oyama, 1971",746698,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Neptunea subdilatata,Buccinidae,140625,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Aptyxis syracusana,Fasciolariidae,2898219,23038,Fasciolariidae,"Gray, 1853",accepted,NA,Family,23038,Fasciolariidae,"Gray, 1853",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Pterygia punctata,Mitridae,4959531,23073,Mitridae,"Swainson, 1831",accepted,NA,Family,23073,Mitridae,"Swainson, 1831",1055728,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,0,exact
+Mutyca acuminata,Mitridae,2906373,23073,Mitridae,"Swainson, 1831",accepted,NA,Family,23073,Mitridae,"Swainson, 1831",1055728,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,0,exact
+Strigatella paupercula,Mitridae,7496558,23073,Mitridae,"Swainson, 1831",accepted,NA,Family,23073,Mitridae,"Swainson, 1831",1055728,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,0,exact
+Swainsonia casta,Mitridae,2906716,23073,Mitridae,"Swainson, 1831",accepted,NA,Family,23073,Mitridae,"Swainson, 1831",1055728,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,0,exact
+Cancilla abyssicola,Mitridae,2906792,23073,Mitridae,"Swainson, 1831",accepted,NA,Family,23073,Mitridae,"Swainson, 1831",1055728,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,0,exact
+Reishia luteostoma,Muricidae,864773,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Nassarius leptospirus,Nassariidae,2899010,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Reticunassa hiradoensis,Nassariidae,7496119,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Ancilla aureocallosa,Ancillariidae,7496751,993219,Ancillariidae,"Swainson, 1840",accepted,NA,Family,993219,Ancillariidae,"Swainson, 1840",411805,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,0,0,0,0,exact
+Bulbaeolidia alba,Aeolidiidae,2876024,192,Aeolidiidae,"Gray, 1827",accepted,NA,Family,192,Aeolidiidae,"Gray, 1827",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Limenandra nodosa,Aeolidiidae,863494,192,Aeolidiidae,"Gray, 1827",accepted,NA,Family,192,Aeolidiidae,"Gray, 1827",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Doriprismatica sibogae,Chromodorididae,367044,23003,Chromodorididae,"Bergh, 1891",accepted,NA,Family,23003,Chromodorididae,"Bergh, 1891",1370609,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Hypselodoris bullocki,Chromodorididae,632328,23003,Chromodorididae,"Bergh, 1891",accepted,NA,Family,23003,Chromodorididae,"Bergh, 1891",1370609,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Flabellina nobilis,Flabellinidae,2875981,190,Flabellinidae,"Bergh, 1889",accepted,NA,Family,190,Flabellinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Flabellina browni,Flabellinidae,2875944,190,Flabellinidae,"Bergh, 1889",accepted,NA,Family,190,Flabellinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Flabellina lineata,Flabellinidae,981503,190,Flabellinidae,"Bergh, 1889",accepted,NA,Family,190,Flabellinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Flabellina borealis,Flabellinidae,2875980,190,Flabellinidae,"Bergh, 1889",accepted,NA,Family,190,Flabellinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Flabellina gracilis,Flabellinidae,2875960,190,Flabellinidae,"Bergh, 1889",accepted,NA,Family,190,Flabellinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Flabellina athadona,Flabellinidae,2875939,190,Flabellinidae,"Bergh, 1889",accepted,NA,Family,190,Flabellinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Tenellia albocrusta,Fionidae,2876190,23039,Fionidae,"Gray, 1857",accepted,NA,Family,23039,Fionidae,"Gray, 1857",412646,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Doris granulosa,Dorididae,5512092,9904,Dorididae,"Rafinesque, 1815",accepted,NA,Family,9904,Dorididae,"Rafinesque, 1815",173,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Pleurobranchaea maculata,Pleurobranchaeidae,56244,412554,Pleurobranchaeidae,"Pilsbry, 1896",accepted,NA,Family,412554,Pleurobranchaeidae,"Pilsbry, 1896",412548,Animalia,Mollusca,Gastropoda,Pleurobranchida,NA,1,NA,NA,NA,NA,exact
+Cliopsis krohni,Cliopsidae,2883862,23007,Cliopsidae,"O. G. Costa, 1873",accepted,NA,Family,23007,Cliopsidae,"O. G. Costa, 1873",411912,Animalia,Mollusca,Gastropoda,Pteropoda,NA,1,NA,NA,NA,NA,exact
+Perforatella rubiginosa,Hygromiidae,555547,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pseudhesseola transcaspia,Hygromiidae,7500981,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eobania vermiculata,Helicidae,672839,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tingitana decussata,Helicidae,7500629,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Granopupa persica,Chondrinidae,6361691,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ferussacia folliculus,Ferussaciidae,117632,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyclodontina avellanedae,Odontostomidae,5973672,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anadara kagoshimensis,Arcidae,64928,208,Arcidae,"Lamarck, 1809",accepted,NA,Family,208,Arcidae,"Lamarck, 1809",489054,Animalia,Mollusca,Bivalvia,Arcida,NA,1,1,1,NA,NA,exact
+Pictorium koperbergi,Cerithiidae,2888116,128,Cerithiidae,"J. Fleming, 1822",accepted,NA,Family,128,Cerithiidae,"J. Fleming, 1822",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,1,1,NA,1,NA,exact
+Helisoma duryi,Planorbidae,124056,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhodope crucispiculata,Rhodopidae,2920928,23111,Rhodopidae,"Ihering, 1876",accepted,NA,Family,23111,Rhodopidae,"Ihering, 1876",1060136,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,0,exact
+Rhodope veranii,Rhodopidae,2915352,23111,Rhodopidae,"Ihering, 1876",accepted,NA,Family,23111,Rhodopidae,"Ihering, 1876",1060136,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,0,exact
+Brevipedella angulifera,Urocoptidae,5973704,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Allognathus grateloupi,Helicidae,5757825,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Candidula intersecta,Hygromiidae,1067680,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Unio,Unionidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Euxinolauria paulinae,NULL,5517849,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Kokotschashvilia holotricha,Hygromiidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Diodora sieboldii,Fissurellidae,2887018,111,Fissurellidae,"J. Fleming, 1822",accepted,NA,Family,111,Fissurellidae,"J. Fleming, 1822",156486,Animalia,Mollusca,Gastropoda,Lepetellida,NA,1,NA,1,NA,NA,exact
+Polybrachia sp.,Siboglinidae,581643,129096,Siboglinidae,"Caullery, 1914",accepted,NA,Family,129096,Siboglinidae,"Caullery, 1914",901,Animalia,Annelida,Polychaeta,Sabellida,NA,1,0,0,0,0,exact
+Emarginula alba,Fissurellidae,2886805,111,Fissurellidae,"J. Fleming, 1822",accepted,NA,Family,111,Fissurellidae,"J. Fleming, 1822",156486,Animalia,Mollusca,Gastropoda,Lepetellida,NA,1,NA,1,NA,NA,exact
+Nebria,Carabidae,NULL,118092,Carabidae,"Latreille, 1802",accepted,NA,Family,118092,Carabidae,"Latreille, 1802",118085,Animalia,Arthropoda,Insecta,Coleoptera,NA,1,1,1,1,NA,exact
+Polybranchia burni,Caliphyllidae,7960528,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tiara,Zalmoxidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gyrinus pulcher,Gyrinidae,5038793,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gyraulus,Planorbidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hiatula,Psammobiidae,NULL,237,Psammobiidae,"J. Fleming, 1828",accepted,NA,Family,237,Psammobiidae,"J. Fleming, 1828",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,NA,NA,NA,exact
+Mytilus unguiculatus,Mytilidae,362065,211,Mytilidae,"Rafinesque, 1815",accepted,NA,Family,211,Mytilidae,"Rafinesque, 1815",491766,Animalia,Mollusca,Bivalvia,Mytilida,NA,1,1,1,0,0,exact
+Tonicia lamellosa,Chitonidae,472461,64,Chitonidae,"Rafinesque, 1815",accepted,NA,Family,64,Chitonidae,"Rafinesque, 1815",385404,Animalia,Mollusca,Polyplacophora,Chitonida,NA,1,NA,NA,NA,NA,exact
+Palaeohelicina fischeriana,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lithophaga curta,Mytilidae,7493562,211,Mytilidae,"Rafinesque, 1815",accepted,NA,Family,211,Mytilidae,"Rafinesque, 1815",491766,Animalia,Mollusca,Bivalvia,Mytilida,NA,1,1,1,0,0,exact
+Syntrophia isis,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Talonostrea talonata,Ostreidae,2854748,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Saccostrea echinata,Ostreidae,236841,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Saccostrea,Ostreidae,NULL,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Karnekampia sulcata,Pectinidae,829382,213,Pectinidae,"Rafinesque, 1815",accepted,NA,Family,213,Pectinidae,"Rafinesque, 1815",151320,Animalia,Mollusca,Bivalvia,Pectinida,NA,1,0,0,0,0,exact
+Cochlodesma praetenue,Periplomatidae,687447,1786,Periplomatidae,"Dall, 1895",accepted,NA,Family,1786,Periplomatidae,"Dall, 1895",382318,Animalia,Mollusca,Bivalvia,NA,NA,1,NA,NA,NA,NA,exact
+Pinctada chemnitzi,Pteriidae,239920,1775,Pteriidae,"Gray, 1847 (1820)",accepted,NA,Family,1775,Pteriidae,"Gray, 1847 (1820)",489069,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,NA,NA,NA,NA,exact
+Pteria heteroptera,Pteriidae,2851890,1775,Pteriidae,"Gray, 1847 (1820)",accepted,NA,Family,1775,Pteriidae,"Gray, 1847 (1820)",489069,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,NA,NA,NA,NA,exact
+Anodontoides radiatus,Unionidae,7493217,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hyriopsis bialata,Unionidae,6340782,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Donax semiestriatus,Donacidae,496733,236,Donacidae,"J. Fleming, 1828",accepted,NA,Family,236,Donacidae,"J. Fleming, 1828",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,1,NA,NA,exact
+Spisula sachalinensis,Mactridae,275663,230,Mactridae,"Lamarck, 1809",accepted,NA,Family,230,Mactridae,"Lamarck, 1809",14634,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,1,NA,NA,exact
+Callista impar,Veneridae,341008,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Anomalocardia puella,Veneridae,103237,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Mendicula ferruginosa,Thyasiridae,816344,219,Thyasiridae,"Dall, 1900 (1895)",accepted,NA,Family,219,Thyasiridae,"Dall, 1900 (1895)",382298,Animalia,Mollusca,Bivalvia,Lucinida,NA,1,NA,NA,NA,NA,exact
+Magallana gigas,Ostreidae,987409,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Anadara,Arcidae,NULL,208,Arcidae,"Lamarck, 1809",accepted,NA,Family,208,Arcidae,"Lamarck, 1809",489054,Animalia,Mollusca,Bivalvia,Arcida,NA,1,1,1,NA,NA,exact
+Dendostrea sandvichensis,Ostreidae,249030,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Philonesia harmanni,Euconulidae,748552,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sericata lutracana,Clausiliidae,319375,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Crepipatella peruviana,Calyptraeidae,20949,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Placida verticilata,Limapontiidae,76794,23063,Limapontiidae,"Gray, 1847",accepted,NA,Family,23063,Limapontiidae,"Gray, 1847",411959,Animalia,Mollusca,Gastropoda,NA,NA,1,1,NA,NA,NA,exact
+Nacella magellanica,Nacellidae,74365,23075,Nacellidae,"Thiele, 1891",accepted,NA,Family,23075,Nacellidae,"Thiele, 1891",156481,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,0,exact
+Baicaliidae,Baicaliidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neripteron asperulatum,Neritidae,1036779,13588,Neritidae,"Rafinesque, 1815",accepted,NA,Family,13588,Neritidae,"Rafinesque, 1815",196314,Animalia,Mollusca,Gastropoda,Cycloneritida,NA,1,1,1,1,0,exact
+Heliconoides inflatus,Limacinidae,433730,13704,Limacinidae,"Gray, 1840",accepted,NA,Family,13704,Limacinidae,"Gray, 1840",411902,Animalia,Mollusca,Gastropoda,Pteropoda,NA,1,0,0,0,0,exact
+Diacavolinia strangulata,Cavoliniidae,2883898,23000,Cavoliniidae,"Gray, 1850 (1815)",accepted,NA,Family,23000,Cavoliniidae,"Gray, 1850 (1815)",411903,Animalia,Mollusca,Gastropoda,Pteropoda,NA,1,NA,NA,NA,NA,exact
+Nassarius fraterculus,Nassariidae,5722634,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Nassarius,Nassariidae,NULL,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Choanopoma gaigei,Annulariidae,542598,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Astralium mactanensis,Turbinidae,525135,503,Turbinidae,"Rafinesque, 1815",accepted,NA,Family,503,Turbinidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Semisalsa stagnorum,Cochliopidae,521055,411706,Cochliopidae,"Tryon, 1866",accepted,NA,Family,411706,Cochliopidae,"Tryon, 1866",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,0,NA,exact
+Heleobia aponensis,Cochliopidae,376199,411706,Cochliopidae,"Tryon, 1866",accepted,NA,Family,411706,Cochliopidae,"Tryon, 1866",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,0,NA,exact
+Navanax nyanyanus,Aglajidae,502119,22981,Aglajidae,"Pilsbry, 1895 (1847)",accepted,NA,Family,22981,Aglajidae,"Pilsbry, 1895 (1847)",196322,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,1,NA,NA,NA,exact
+Pila,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pleuroceriidae,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limax cinereoniger,Limacidae,559906,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Baeolidia salaamica,Aeolidiidae,4958479,192,Aeolidiidae,"Gray, 1827",accepted,NA,Family,192,Aeolidiidae,"Gray, 1827",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Thielea helicoides,Limacinidae,433728,13704,Limacinidae,"Gray, 1840",accepted,NA,Family,13704,Limacinidae,"Gray, 1840",411902,Animalia,Mollusca,Gastropoda,Pteropoda,NA,1,0,0,0,0,exact
+Gyraulus crista,Planorbidae,357722,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fluviocingula resima,Iravadiidae,253578,122,Iravadiidae,"Thiele, 1928",accepted,NA,Family,122,Iravadiidae,"Thiele, 1928",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Pellamora australis,Iravadiidae,336483,122,Iravadiidae,"Thiele, 1928",accepted,NA,Family,122,Iravadiidae,"Thiele, 1928",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Elysia atroviridis,Plakobranchidae,66664,411960,Plakobranchidae,"Gray, 1840",accepted,NA,Family,411960,Plakobranchidae,"Gray, 1840",411959,Animalia,Mollusca,Gastropoda,NA,NA,1,NA,NA,NA,NA,exact
+Pseudopeas yalaense,Subulinidae,1056520,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Migaya felis,Aglajidae,2884284,22981,Aglajidae,"Pilsbry, 1895 (1847)",accepted,NA,Family,22981,Aglajidae,"Pilsbry, 1895 (1847)",196322,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,1,NA,NA,NA,exact
+Laeviphitus,Elachisinidae,NULL,23035,Elachisinidae,"Ponder, 1985",accepted,NA,Family,23035,Elachisinidae,"Ponder, 1985",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Carminodoris armata,Discodorididae,4958367,1761,Discodorididae,"Bergh, 1891",accepted,NA,Family,1761,Discodorididae,"Bergh, 1891",173,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Gulella bicolor,Streptaxidae,456539,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Curvella usambarensis,Subulinidae,1056530,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Elysia hamatani,Plakobranchidae,649098,411960,Plakobranchidae,"Gray, 1840",accepted,NA,Family,411960,Plakobranchidae,"Gray, 1840",411959,Animalia,Mollusca,Gastropoda,NA,NA,1,NA,NA,NA,NA,exact
+Iotyrris cerithiformis,Turridae,42954,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",accepted,NA,Family,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Anularya mansuyi,Viviparidae,96207,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Margarya francheti,Viviparidae,96201,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lophiotoma albina,Turridae,165840,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",accepted,NA,Family,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Roboastra nikolae,Polyceridae,5743871,177,Polyceridae,"Alder & Hancock, 1845",accepted,NA,Family,177,Polyceridae,"Alder & Hancock, 1845",412569,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Hemistomia cockerelli,Tateidae,5735366,722759,Tateidae,"Thiele, 1925",accepted,NA,Family,722759,Tateidae,"Thiele, 1925",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Leiorhagium ajie,Tateidae,6357022,722759,Tateidae,"Thiele, 1925",accepted,NA,Family,722759,Tateidae,"Thiele, 1925",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Scalptia scalariformis,Cancellariidae,2902239,13600,Cancellariidae,"Forbes & Hanley, 1851",accepted,NA,Family,13600,Cancellariidae,"Forbes & Hanley, 1851",1055738,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,0,exact
+Lophiotoma leucotropis,Turridae,899783,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",accepted,NA,Family,152,Turridae,"H. Adams & A. Adams, 1853 (1838)",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Allognathus hispanicus,Helicidae,2879987,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dinarica pouzolzi,Helicidae,406741,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Vidovicia coerulans,Helicidae,4155521,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Patelloida mauritiana,Lottiidae,128458,7173,Lottiidae,"Gray, 1840",accepted,NA,Family,7173,Lottiidae,"Gray, 1840",391063,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,0,exact
+Patelloida omanensis,Lottiidae,356471,7173,Lottiidae,"Gray, 1840",accepted,NA,Family,7173,Lottiidae,"Gray, 1840",391063,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,0,exact
+Erginus sybariticus,Lottiidae,706108,7173,Lottiidae,"Gray, 1840",accepted,NA,Family,7173,Lottiidae,"Gray, 1840",391063,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,0,exact
+Turcica monilifera,Chilodontidae,452185,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Clypeostoma nortoni,Chilodontidae,209091,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Turbo laminiferus,Turbinidae,714356,503,Turbinidae,"Rafinesque, 1815",accepted,NA,Family,503,Turbinidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,NA,exact
+Patelloida albonotata,Lottiidae,982424,7173,Lottiidae,"Gray, 1840",accepted,NA,Family,7173,Lottiidae,"Gray, 1840",391063,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,0,exact
+Eoacmaea javanica,Eoacmaeidae,110311,411583,Eoacmaeidae,"T. Nakano & Ozawa, 2007",accepted,NA,Family,411583,Eoacmaeidae,"T. Nakano & Ozawa, 2007",391063,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,NA,exact
+Eoacmaea conoidalis,Eoacmaeidae,356469,411583,Eoacmaeidae,"T. Nakano & Ozawa, 2007",accepted,NA,Family,411583,Eoacmaeidae,"T. Nakano & Ozawa, 2007",391063,Animalia,Mollusca,Gastropoda,NA,NA,1,0,0,0,NA,exact
+Micrelenchus tesselatus,Trochidae,1064627,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Cantharidus capillaceus,Trochidae,788180,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Cantharidus dilatatus,Trochidae,326588,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Adrioinsulana conovula,Hydrobiidae,120581,120,Hydrobiidae,"Stimpson, 1865",accepted,NA,Family,120,Hydrobiidae,"Stimpson, 1865",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Ventrosia truncata,Hydrobiidae,796881,120,Hydrobiidae,"Stimpson, 1865",accepted,NA,Family,120,Hydrobiidae,"Stimpson, 1865",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Ecrobia grimmi,Hydrobiidae,663291,120,Hydrobiidae,"Stimpson, 1865",accepted,NA,Family,120,Hydrobiidae,"Stimpson, 1865",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,NA,NA,exact
+Purpura persica,Muricidae,428368,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Thais mutabilis,Muricidae,586026,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Enixotrophon maxwelli,Muricidae,345164,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Enixotrophon latus,Muricidae,345178,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Enixotrophon eos,Muricidae,345174,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Indothais malayensis,Muricidae,2909414,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Tenguella marginalba,Muricidae,506639,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Tenguella ceylonica,Muricidae,5224218,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Semiricinula tissoti,Muricidae,562375,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Balcis eburnea,Eulimidae,140192,135,Eulimidae,"Philippi, 1853",accepted,NA,Family,135,Eulimidae,"Philippi, 1853",387336,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Grandicrepidula grandis,Calyptraeidae,789321,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Maoricrypta monoxyla,Calyptraeidae,974674,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Crepidula lessoni,Calyptraeidae,789320,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Crepidula procellana,Calyptraeidae,823261,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Trochita calyptraeformis,Calyptraeidae,685600,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Crucibulum tenuis,Calyptraeidae,737408,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Crucibulum radiata,Calyptraeidae,737395,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Calyptraea aspersa,Calyptraeidae,783104,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Sigapatella,Calyptraeidae,NULL,141,Calyptraeidae,"Lamarck, 1809",accepted,NA,Family,141,Calyptraeidae,"Lamarck, 1809",387334,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Leptonetis perplexus,Hipponicidae,162604,23057,Hipponicidae,"Troschel, 1861",accepted,NA,Family,23057,Hipponicidae,"Troschel, 1861",14771,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,0,0,0,exact
+Paracrostoma huegeli,Pachychilidae,845816,411651,Pachychilidae,"P. Fischer & Crosse, 1892",accepted,NA,Family,411651,Pachychilidae,"P. Fischer & Crosse, 1892",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,0,1,1,0,NA,exact
+Myotis peninsularis,Vespertilionidae,3613676,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bridouxia tanganyicensis,Pleuroceridae,189530,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paramelania imperialis,Thiaridae,763618,196287,Thiaridae,"Gill, 1871 (1823)",accepted,NA,Family,196287,Thiaridae,"Gill, 1871 (1823)",14769,Animalia,Mollusca,Gastropoda,[unassigned] Caenogastropoda,NA,0,1,1,0,NA,exact
+Angustassiminea californica,Assimineidae,7495239,121,Assimineidae,"H. Adams & A. Adams, 1856",accepted,NA,Family,121,Assimineidae,"H. Adams & A. Adams, 1856",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,1,NA,exact
+Angustassiminea infima,Assimineidae,1002658,121,Assimineidae,"H. Adams & A. Adams, 1856",accepted,NA,Family,121,Assimineidae,"H. Adams & A. Adams, 1856",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,1,NA,exact
+Volegalea cochlidium,Melongenidae,646775,160182,Melongenidae,"Gill, 1871 (1854)",accepted,NA,Family,160182,Melongenidae,"Gill, 1871 (1854)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Limaria hemphilli,Limidae,710617,1778,Limidae,"Rafinesque, 1815",accepted,NA,Family,1778,Limidae,"Rafinesque, 1815",246153,Animalia,Mollusca,Bivalvia,Limida,NA,1,NA,NA,NA,NA,exact
+Neptunea cumingi,Buccinidae,140613,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Bistolida goodallii,Cypraeidae,1033040,23022,Cypraeidae,"Rafinesque, 1815",accepted,NA,Family,23022,Cypraeidae,"Rafinesque, 1815",14774,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Dendropoma cristatum,Vermetidae,457918,23139,Vermetidae,"Rafinesque, 1815",accepted,NA,Family,23139,Vermetidae,"Rafinesque, 1815",387340,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Buccinum verkruzeni,Buccinidae,306528,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Buccinum senshumaruae,Buccinidae,235661,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Buccinum middendorffi,Buccinidae,235658,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Buccinum leucostoma,Buccinidae,148990,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Cumia reticulata,Colubrariidae,328585,411754,Colubrariidae,"Dall, 1904",accepted,NA,Family,411754,Colubrariidae,"Dall, 1904",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,NA,NA,NA,exact
+Pareuthria fuscata,Buccinidae,555569,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Phrontis pagoda,Nassariidae,315132,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Cancellaria cooperi,Cancellariidae,685921,13600,Cancellariidae,"Forbes & Hanley, 1851",accepted,NA,Family,13600,Cancellariidae,"Forbes & Hanley, 1851",1055738,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,0,exact
+Golikovia fukueae,Buccinidae,95231,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Golikovia ennae,Buccinidae,313530,149,Buccinidae,"Rafinesque, 1815",accepted,NA,Family,149,Buccinidae,"Rafinesque, 1815",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Assiminea ovata,Assimineidae,776627,121,Assimineidae,"H. Adams & A. Adams, 1856",accepted,NA,Family,121,Assimineidae,"H. Adams & A. Adams, 1856",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,1,1,NA,exact
+Badepigrus pupoides,Anabathridae,519080,22984,Anabathridae,"Keen, 1971",accepted,NA,Family,22984,Anabathridae,"Keen, 1971",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Pisinna glabrata,Anabathridae,796371,22984,Anabathridae,"Keen, 1971",accepted,NA,Family,22984,Anabathridae,"Keen, 1971",722756,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Loripes orbiculatus,Lucinidae,381366,218,Lucinidae,"J. Fleming, 1828",accepted,NA,Family,218,Lucinidae,"J. Fleming, 1828",14627,Animalia,Mollusca,Bivalvia,Lucinida,NA,1,NA,NA,NA,NA,exact
+Nuttallia obscurata,Psammobiidae,139252,237,Psammobiidae,"J. Fleming, 1828",accepted,NA,Family,237,Psammobiidae,"J. Fleming, 1828",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,NA,NA,NA,exact
+Hiatula diphos,Psammobiidae,91538,237,Psammobiidae,"J. Fleming, 1828",accepted,NA,Family,237,Psammobiidae,"J. Fleming, 1828",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,NA,NA,NA,exact
+Iridona iridescens,Tellinidae,45585,235,Tellinidae,"Blainville, 1814",accepted,NA,Family,235,Tellinidae,"Blainville, 1814",14636,Animalia,Mollusca,Bivalvia,Cardiida,NA,1,1,NA,NA,NA,exact
+Paratapes textilis,Veneridae,126335,243,Veneridae,"Rafinesque, 1815",accepted,NA,Family,243,Veneridae,"Rafinesque, 1815",14638,Animalia,Mollusca,Bivalvia,Venerida,NA,1,1,NA,NA,NA,exact
+Crassostrea bilineata,Ostreidae,618473,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Crassostrea tulipa,Ostreidae,332853,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Saccostrea scyphophilla,Ostreidae,26483,215,Ostreidae,"Rafinesque, 1815",accepted,NA,Family,215,Ostreidae,"Rafinesque, 1815",151323,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,1,NA,NA,NA,exact
+Mimachlamys sanguinea,Pectinidae,572850,213,Pectinidae,"Rafinesque, 1815",accepted,NA,Family,213,Pectinidae,"Rafinesque, 1815",151320,Animalia,Mollusca,Bivalvia,Pectinida,NA,1,0,0,0,0,exact
+Tritonia tetraquetra,Tritoniidae,650633,183,Tritoniidae,"Lamarck, 1809",accepted,NA,Family,183,Tritoniidae,"Lamarck, 1809",412595,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,1,NA,NA,NA,exact
+Rhopalocaulis grandidieri,Veronicellidae,1013995,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tegula brunnea,Tegulidae,790758,715868,Tegulidae,"Kuroda, Habe & Oyama, 1971",accepted,NA,Family,715868,Tegulidae,"Kuroda, Habe & Oyama, 1971",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,0,exact
+Japonacteon nipponensis,Acteonidae,650641,155,Acteonidae,"d'Orbigny, 1842",accepted,NA,Family,155,Acteonidae,"d'Orbigny, 1842",382223,Animalia,Mollusca,Gastropoda,NA,NA,1,NA,0,0,0,exact
+Annularops semicana,Pomatiidae,7494703,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Endothyra incrassata,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Parachondrella aurora,Annulariidae,7494670,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Moridilla,Facelinidae,NULL,191,Facelinidae,"Bergh, 1889",accepted,NA,Family,191,Facelinidae,"Bergh, 1889",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Margaritifera marocana,Margaritiferidae,900885,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cardiophorus fasciatus,Elateridae,5076104,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neothais marginatra,Muricidae,888725,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Pruvotina,Pruvotinidae,NULL,23105,Pruvotinidae,"Heath, 1911",accepted,NA,Family,23105,Pruvotinidae,"Heath, 1911",2094,Animalia,Mollusca,Solenogastres,NA,NA,1,NA,NA,NA,NA,exact
+Plicaherpia,Phyllomeniidae,NULL,298350,Phyllomeniidae,"Salvini-Plawen, 1978",accepted,NA,Family,298350,Phyllomeniidae,"Salvini-Plawen, 1978",2094,Animalia,Mollusca,Solenogastres,NA,NA,1,NA,NA,NA,NA,exact
+Lymnaea meridensis,Lymnaeidae,852992,160343,Lymnaeidae,"Rafinesque, 1815",accepted,NA,Family,160343,Lymnaeidae,"Rafinesque, 1815",489336,Animalia,Mollusca,Gastropoda,NA,NA,NA,1,1,NA,0,exact
+Sinotaia polyzonata,Viviparidae,6353764,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chilostoma faueri,Helicidae,251796,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cocculinella,Cocculinellidae,NULL,411608,Cocculinellidae,"Moskalev, 1971",accepted,NA,Family,411608,Cocculinellidae,"Moskalev, 1971",382160,Animalia,Mollusca,Gastropoda,Lepetellida,NA,1,NA,NA,NA,NA,exact
+Dermomurex neglectus,Muricidae,971581,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Chlorostoma argyrostomum,Tegulidae,198477,715868,Tegulidae,"Kuroda, Habe & Oyama, 1971",accepted,NA,Family,715868,Tegulidae,"Kuroda, Habe & Oyama, 1971",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,NA,NA,NA,0,exact
+Muusoctopus longibrachus,Enteroctopodidae,757939,834049,Enteroctopodidae,"Strugnell, Norman, Vecchione, Guzik & Allcock, 2014",accepted,NA,Family,834049,Enteroctopodidae,"Strugnell, Norman, Vecchione, Guzik & Allcock, 2014",14672,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Muusoctopus profundorum,Enteroctopodidae,2868157,834049,Enteroctopodidae,"Strugnell, Norman, Vecchione, Guzik & Allcock, 2014",accepted,NA,Family,834049,Enteroctopodidae,"Strugnell, Norman, Vecchione, Guzik & Allcock, 2014",14672,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Muusoctopus rigbyae,Enteroctopodidae,663838,834049,Enteroctopodidae,"Strugnell, Norman, Vecchione, Guzik & Allcock, 2014",accepted,NA,Family,834049,Enteroctopodidae,"Strugnell, Norman, Vecchione, Guzik & Allcock, 2014",14672,Animalia,Mollusca,Cephalopoda,Octopoda,NA,1,NA,0,0,NA,exact
+Camachoaglaja mariagordae,Aglajidae,7497728,22981,Aglajidae,"Pilsbry, 1895 (1847)",accepted,NA,Family,22981,Aglajidae,"Pilsbry, 1895 (1847)",196322,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,1,NA,NA,NA,exact
+Carychium mexicanum,Ellobiidae,46446,198,Ellobiidae,"L. Pfeiffer, 1854 (1822)",accepted,NA,Family,198,Ellobiidae,"L. Pfeiffer, 1854 (1822)",382241,Animalia,Mollusca,Gastropoda,Ellobiida,NA,1,1,0,1,NA,exact
+Oxystele antoni,Trochidae,1004904,443,Trochidae,"Rafinesque, 1815",accepted,NA,Family,443,Trochidae,"Rafinesque, 1815",156489,Animalia,Mollusca,Gastropoda,Trochida,NA,1,1,1,NA,NA,exact
+Planorbidae,Planorbidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Amphibulima appendiculata,Amphibulimidae,721825,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Megannularia rosenbergi,Annulariidae,977003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Baeolidia japonica,Aeolidiidae,4958457,192,Aeolidiidae,"Gray, 1827",accepted,NA,Family,192,Aeolidiidae,"Gray, 1827",189,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,NA,NA,NA,NA,exact
+Acanthopleura gaimardi,Chitonidae,499347,64,Chitonidae,"Rafinesque, 1815",accepted,NA,Family,64,Chitonidae,"Rafinesque, 1815",385404,Animalia,Mollusca,Polyplacophora,Chitonida,NA,1,NA,NA,NA,NA,exact
+Graphicomassa margarita,Columbellidae,2899608,23009,Columbellidae,"Swainson, 1840",accepted,NA,Family,23009,Columbellidae,"Swainson, 1840",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Drupina grossularia,Muricidae,989630,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Gibberulus gibberulus,Strombidae,1039289,23123,Strombidae,"Rafinesque, 1815",accepted,NA,Family,23123,Strombidae,"Rafinesque, 1815",14770,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,NA,exact
+Hypselodoris,Chromodorididae,NULL,23003,Chromodorididae,"Bergh, 1891",accepted,NA,Family,23003,Chromodorididae,"Bergh, 1891",1370609,Animalia,Mollusca,Gastropoda,Nudibranchia,NA,1,0,0,0,0,exact
+Euspira,Naticidae,NULL,145,Naticidae,"Guilding, 1834",accepted,NA,Family,145,Naticidae,"Guilding, 1834",14776,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,NA,NA,NA,exact
+Enixotrophon tangaroa,Muricidae,2909023,148,Muricidae,"Rafinesque, 1815",accepted,NA,Family,148,Muricidae,"Rafinesque, 1815",15138,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,NA,NA,NA,exact
+Melanthoides,Elateridae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Laona finmarchica,Laonidae,2884537,848158,Laonidae,"Pruvot-Fol, 1954",accepted,NA,Family,848158,Laonidae,"Pruvot-Fol, 1954",196322,Animalia,Mollusca,Gastropoda,Cephalaspidea,NA,1,NA,NA,NA,NA,exact
+Psen,Crabronidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Euspira nitida,Naticidae,526818,145,Naticidae,"Guilding, 1834",accepted,NA,Family,145,Naticidae,"Guilding, 1834",14776,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,1,NA,NA,NA,exact
+Pteria gregata,Pteriidae,203832,1775,Pteriidae,"Gray, 1847 (1820)",accepted,NA,Family,1775,Pteriidae,"Gray, 1847 (1820)",489069,Animalia,Mollusca,Bivalvia,Ostreida,NA,1,NA,NA,NA,NA,exact
+Phrontis vibex,Nassariidae,2899177,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Nassarius nodifer,Nassariidae,627273,151,Nassariidae,"Iredale, 1916 (1835)",accepted,NA,Family,151,Nassariidae,"Iredale, 1916 (1835)",382214,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,1,1,NA,0,exact
+Syntomodrillia carolinae,Drilliidae,2911978,23032,Drilliidae,"Olsson, 1964",accepted,NA,Family,23032,Drilliidae,"Olsson, 1964",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,1,NA,NA,exact
+Clathrodrillia tryonii,Drilliidae,2902935,23032,Drilliidae,"Olsson, 1964",accepted,NA,Family,23032,Drilliidae,"Olsson, 1964",15140,Animalia,Mollusca,Gastropoda,Neogastropoda,NA,1,NA,1,NA,NA,exact
+Pisanianura breviaxe,Pisanianuridae,2916682,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Purpuradusta gracilis,Cypraeidae,536311,23022,Cypraeidae,"Rafinesque, 1815",accepted,NA,Family,23022,Cypraeidae,"Rafinesque, 1815",14774,Animalia,Mollusca,Gastropoda,Littorinimorpha,NA,1,NA,NA,NA,0,exact
+Caenogastropoda,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

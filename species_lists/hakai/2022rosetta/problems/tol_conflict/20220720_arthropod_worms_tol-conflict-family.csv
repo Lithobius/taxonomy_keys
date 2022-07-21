@@ -1,0 +1,440 @@
+taxa_query,family,ottid_species,aphia_id,scientificname,authority,status,unacceptreason,rank,valid_aphia_id,valid_name,valid_authority,parent_name_usage_id,kingdom,phylum,class,order,genus,is_marine,is_brackish,is_freshwater,is_terrestrial,is_extinct,match_type
+Ampithoinae,Ampithoidae,NULL,101366,Ampithoidae,"Boeck, 1871",accepted,NA,Family,101366,Ampithoidae,"Boeck, 1871",716535,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,0,0,0,NA,exact
+Protohyale jarrettae,Hyalidae,2983699,101385,Hyalidae,"Bulyčeva, 1957",accepted,NA,Family,101385,Hyalidae,"Bulyčeva, 1957",1325691,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,NA,NA,exact
+Protohyale oclairi,Hyalidae,2983669,101385,Hyalidae,"Bulyčeva, 1957",accepted,NA,Family,101385,Hyalidae,"Bulyčeva, 1957",1325691,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,NA,NA,exact
+Cumella vulgaris,Nannastacidae,3003020,110383,Nannastacidae,"Bate, 1866",accepted,NA,Family,110383,Nannastacidae,"Bate, 1866",1137,Animalia,Arthropoda,Malacostraca,Cumacea,NA,1,NA,1,0,NA,exact
+Ixodes turdus,Ixodidae,310079,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes pavlovskyi,Ixodidae,310083,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes monospinosus,Ixodidae,310081,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes asanumai,Ixodidae,310089,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Scopimera curtelsoma,Dotillidae,949613,439148,Dotillidae,"Stimpson, 1858",accepted,NA,Family,439148,Dotillidae,"Stimpson, 1858",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Ocypode cordimanus,Ocypodidae,2981539,106773,Ocypodidae,"Rafinesque, 1815",accepted,NA,Family,106773,Ocypodidae,"Rafinesque, 1815",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Chorocaris,Alvinocarididae,NULL,106779,Alvinocarididae,"Christoffersen, 1986",accepted,NA,Family,106779,Alvinocarididae,"Christoffersen, 1986",106710,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis hellerii,Portunidae,506133,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Callinectestus,Portunidae,NULL,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Microphrys bicornutus,Mithracidae,957723,439056,Mithracidae,"MacLeay, 1838",accepted,NA,Family,439056,Mithracidae,"MacLeay, 1838",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Achipteria clarencei,Achipteriidae,4684121,449178,Achipteriidae,"Thor, 1929",accepted,NA,Family,449178,Achipteriidae,"Thor, 1929",449177,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Anachipteria,Achipteriidae,NULL,449178,Achipteriidae,"Thor, 1929",accepted,NA,Family,449178,Achipteriidae,"Thor, 1929",449177,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Dentizetes,Ceratozetidae,NULL,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Diapterobates,Ceratozetidae,NULL,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Dorycranosus,Liacaridae,NULL,449171,Liacaridae,"Sellnick, 1928",accepted,NA,Family,449171,Liacaridae,"Sellnick, 1928",449170,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Euphthiracarus,Euphthiracaridae,NULL,508152,Euphthiracaridae,"Jacot, 1930",accepted,NA,Family,508152,Euphthiracaridae,"Jacot, 1930",508131,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Eupterotegaeus,Cepheidae,NULL,449196,Cepheidae,"Berlese, 1896",unaccepted,synonym,Family,450497,Compactozetidae,"Luxton, 1988",450496,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,NA,NA,NA,NA,NA,exact
+Exochocepheus,Scutoverticidae,NULL,449184,Scutoverticidae,"Grandjean, 1954",accepted,NA,Family,449184,Scutoverticidae,"Grandjean, 1954",449183,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Hermanniella,Hermanniellidae,NULL,508158,Hermanniellidae,"Grandjean, 1934",accepted,NA,Family,508158,Hermanniellidae,"Grandjean, 1934",508133,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Jornadia,Oribatulidae,NULL,449181,Oribatulidae,"Thor, 1929",accepted,NA,Family,449181,Oribatulidae,"Thor, 1929",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Lucoppia,Oribatulidae,NULL,449181,Oribatulidae,"Thor, 1929",accepted,NA,Family,449181,Oribatulidae,"Thor, 1929",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Mesotritia,Oribotritiidae,NULL,508153,Oribotritiidae,"Grandjean, 1954",accepted,NA,Family,508153,Oribotritiidae,"Grandjean, 1954",508131,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Mucronothrus,Trhypochthoniidae,NULL,508146,Trhypochthoniidae,"Willman, 1931",accepted,NA,Family,508146,Trhypochthoniidae,"Willman, 1931",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Neogymnobates,Ceratozetidae,NULL,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Neonothrus,Camisiidae,NULL,449173,Camisiidae,"Oudemans, 1900",accepted,NA,Family,449173,Camisiidae,"Oudemans, 1900",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Oribatodes,Cepheidae,NULL,449196,Cepheidae,"Berlese, 1896",unaccepted,synonym,Family,450497,Compactozetidae,"Luxton, 1988",450496,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,NA,NA,NA,NA,NA,exact
+Peloribates,Haplozetidae,NULL,508167,Haplozetidae,"Grandjean, 1936",accepted,NA,Family,508167,Haplozetidae,"Grandjean, 1936",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Pilogalumna,Galumnidae,NULL,449168,Galumnidae,"Jacot, 1925",accepted,NA,Family,449168,Galumnidae,"Jacot, 1925",150377,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Propelops,Phenopelopidae,NULL,449186,Phenopelopidae,"Petrunkevitch, 1955",accepted,NA,Family,449186,Phenopelopidae,"Petrunkevitch, 1955",449185,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Tectoribates,Oribatellidae,NULL,449176,Oribatellidae,"Jacot, 1925",accepted,NA,Family,449176,Oribatellidae,"Jacot, 1925",150381,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Trhypochthonius,Trhypochthoniidae,NULL,508146,Trhypochthoniidae,"Willman, 1931",accepted,NA,Family,508146,Trhypochthoniidae,"Willman, 1931",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Zetomimus,Ceratozetidae,NULL,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Allosuctobelba,Suctobelbidae,NULL,508164,Suctobelbidae,"Jacot, 1938",accepted,NA,Family,508164,Suctobelbidae,"Jacot, 1938",150380,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Eobrachychthonius,Brachychthoniidae,NULL,508140,Brachychthoniidae,"Thor, 1934",accepted,NA,Family,508140,Brachychthoniidae,"Thor, 1934",508127,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Cheiroseius,Ascidae,NULL,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Iugoribates gracilis,Ceratozetidae,357587,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Oribatula interrupta,Oribatulidae,3528990,449181,Oribatulidae,"Thor, 1929",accepted,NA,Family,449181,Oribatulidae,"Thor, 1929",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Diapterobates variabilis,Ceratozetidae,933180,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Hermannia reticulata,Hermanniidae,675996,449169,Hermanniidae,"Sellnick, 1928",accepted,NA,Family,449169,Hermanniidae,"Sellnick, 1928",150323,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Achipteria coleoptrata,Achipteriidae,99285,449178,Achipteriidae,"Thor, 1929",accepted,NA,Family,449178,Achipteriidae,"Thor, 1929",449177,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Cancer oregonensis,Cancridae,367679,106749,Cancridae,"Latreille, 1802",accepted,NA,Family,106749,Cancridae,"Latreille, 1802",106695,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Cancer antennarius,Cancridae,392102,106749,Cancridae,"Latreille, 1802",accepted,NA,Family,106749,Cancridae,"Latreille, 1802",106695,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Cancer branneri,Cancridae,367659,106749,Cancridae,"Latreille, 1802",accepted,NA,Family,106749,Cancridae,"Latreille, 1802",106695,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Pseudocuma simile,Pseudocumatidae,172358,110384,Pseudocumatidae,"Sars, 1878",accepted,NA,Family,110384,Pseudocumatidae,"Sars, 1878",1137,Animalia,Arthropoda,Malacostraca,Cumacea,NA,1,1,1,0,NA,exact
+Bdellodes,Bdellidae,NULL,150433,Bdellidae,NA,accepted,NA,Family,150433,Bdellidae,NA,762069,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,1,NA,exact
+Austroteneriffia,Teneriffiidae,NULL,510300,Teneriffiidae,"Sig Thor, 1911",accepted,NA,Family,510300,Teneriffiidae,"Sig Thor, 1911",762076,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,1,NA,exact
+Gonodactylellus hendersoni,Gonodactylidae,304754,196127,Gonodactylidae,"Giesbrecht, 1910",accepted,NA,Family,196127,Gonodactylidae,"Giesbrecht, 1910",155825,Animalia,Arthropoda,Malacostraca,Stomatopoda,NA,1,NA,NA,NA,NA,exact
+Gonodactylellus rubriguttatas,Gonodactylidae,304747,196127,Gonodactylidae,"Giesbrecht, 1910",accepted,NA,Family,196127,Gonodactylidae,"Giesbrecht, 1910",155825,Animalia,Arthropoda,Malacostraca,Stomatopoda,NA,1,NA,NA,NA,NA,exact
+Alpheus canalis,Alpheidae,812811,106776,Alpheidae,"Rafinesque, 1815",accepted,NA,Family,106776,Alpheidae,"Rafinesque, 1815",106709,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,1,NA,NA,exact
+Scopelocheirus schellenbergi,Scopelocheiridae,623778,176791,Scopelocheiridae,"Lowry & Stoddart, 1997",accepted,NA,Family,176791,Scopelocheiridae,"Lowry & Stoddart, 1997",176788,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,NA,NA,NA,NA,exact
+Dermacentor,Ixodidae,NULL,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Heminothrus,Camisiidae,NULL,449173,Camisiidae,"Oudemans, 1900",accepted,NA,Family,449173,Camisiidae,"Oudemans, 1900",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Rhinosuctobelba,Suctobelbidae,NULL,508164,Suctobelbidae,"Jacot, 1938",accepted,NA,Family,508164,Suctobelbidae,"Jacot, 1938",150380,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Charybdis feriata,Portunidae,513593,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis lucifera,Portunidae,468023,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Hydrachna,Hydrachnidae,NULL,1578526,Hydrachnidae,"Leach, 1815",accepted,NA,Family,1578526,Hydrachnidae,"Leach, 1815",762090,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,1,1,NA,NA,exact
+Dinothrombium,Trombidiidae,NULL,150430,Trombidiidae,NA,accepted,NA,Family,150430,Trombidiidae,NA,762085,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,1,NA,exact
+Meriola decepta,Xanthidae,7117738,106769,Xanthidae,"MacLeay, 1838",accepted,NA,Family,106769,Xanthidae,"MacLeay, 1838",106703,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Dermacentor variabilis,Ixodidae,925113,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Alonopsis elongata,Chydoridae,205252,148356,Chydoridae,"Dybowski & Grochowski, 1894",accepted,NA,Family,148356,Chydoridae,"Dybowski & Grochowski, 1894",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Crangon communis,Crangonidae,213796,106782,Crangonidae,"Haworth, 1825",accepted,NA,Family,106782,Crangonidae,"Haworth, 1825",106712,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Bosmaella japonica,Sacculinidae,458891,134764,Sacculinidae,"Lilljeborg, 1861",accepted,NA,Family,134764,Sacculinidae,"Lilljeborg, 1861",1109,Animalia,Arthropoda,Thecostraca,NA,NA,1,1,1,0,0,exact
+Munida leviantennata,Munididae,753489,562645,Munididae,"Ahyong, Baba, Macpherson & Poore, 2010",accepted,NA,Family,562645,Munididae,"Ahyong, Baba, Macpherson & Poore, 2010",106685,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Munida ofella,Munididae,230438,562645,Munididae,"Ahyong, Baba, Macpherson & Poore, 2010",accepted,NA,Family,562645,Munididae,"Ahyong, Baba, Macpherson & Poore, 2010",106685,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Paramunida granulata,Munididae,1051237,562645,Munididae,"Ahyong, Baba, Macpherson & Poore, 2010",accepted,NA,Family,562645,Munididae,"Ahyong, Baba, Macpherson & Poore, 2010",106685,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Paramysis intermedia,Mysidae,7122336,119822,Mysidae,"Haworth, 1825",accepted,NA,Family,119822,Mysidae,"Haworth, 1825",149668,Animalia,Arthropoda,Malacostraca,Mysida,NA,1,1,1,0,NA,exact
+Uropoda orbicularis,Uropodidae,158767,150330,Uropodidae,NA,accepted,NA,Family,150330,Uropodidae,NA,762047,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Eucyclopinae,Cyclopidae,NULL,106413,Cyclopidae,"Rafinesque, 1815",accepted,NA,Family,106413,Cyclopidae,"Rafinesque, 1815",1381344,Animalia,Arthropoda,Copepoda,Cyclopoida,NA,1,1,1,NA,NA,exact
+Bosmina liederi,Bosminidae,390247,106262,Bosminidae,"Baird, 1845",accepted,NA,Family,106262,Bosminidae,"Baird, 1845",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Candona candida,Candonidae,2962291,127489,Candonidae,"Kaufmann, 1900",accepted,NA,Family,127489,Candonidae,"Kaufmann, 1900",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Alona glabra,Chydoridae,287275,148356,Chydoridae,"Dybowski & Grochowski, 1894",accepted,NA,Family,148356,Chydoridae,"Dybowski & Grochowski, 1894",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Hippomedon propinquus,Lysianassidae,4671856,101395,Lysianassidae,"Dana, 1849",accepted,NA,Family,101395,Lysianassidae,"Dana, 1849",176788,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,NA,NA,NA,NA,exact
+Notodromas,Cyprididae,NULL,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Oppia nitens,Oppiidae,3529617,449174,Oppiidae,"Sellnick, 1937",accepted,NA,Family,449174,Oppiidae,"Sellnick, 1937",150380,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Poecilochirus carabi,Parasitidae,4680933,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Potamocypris unicaudata,Cyprididae,2962013,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Charybdis longicollis,Portunidae,2979047,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Xantho incisus,Xanthidae,842900,106769,Xanthidae,"MacLeay, 1838",accepted,NA,Family,106769,Xanthidae,"MacLeay, 1838",106703,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Heminothrus thori,Camisiidae,363374,449173,Camisiidae,"Oudemans, 1900",accepted,NA,Family,449173,Camisiidae,"Oudemans, 1900",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Cheirocratus sundevalli,Cheirocratidae,2982759,430450,Cheirocratidae,"d'Udekem d'Acoz, 2010",accepted,NA,Family,430450,Cheirocratidae,"d'Udekem d'Acoz, 2010",719505,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,0,0,0,NA,exact
+Androlaelaps casalis,Laelapidae,631982,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Romaleon polyodon,Cancridae,338358,106749,Cancridae,"Latreille, 1802",accepted,NA,Family,106749,Cancridae,"Latreille, 1802",106695,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Mycobates incurvatus,Mycobatidae,152756,449167,Mycobatidae,"Thor, 1937",accepted,NA,Family,449167,Mycobatidae,"Thor, 1937",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Peloribates pilosus,Haplozetidae,882327,508167,Haplozetidae,"Grandjean, 1936",accepted,NA,Family,508167,Haplozetidae,"Grandjean, 1936",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Diapterobates humeralis,Ceratozetidae,933170,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Mycobates beringianus,Mycobatidae,676012,449167,Mycobatidae,"Thor, 1937",accepted,NA,Family,449167,Mycobatidae,"Thor, 1937",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Scheloribates pallidulus,Scheloribatidae,152762,449182,Scheloribatidae,"Jacot, 1935",accepted,NA,Family,449182,Scheloribatidae,"Jacot, 1935",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Peloribates canadensis,Haplozetidae,882325,508167,Haplozetidae,"Grandjean, 1936",accepted,NA,Family,508167,Haplozetidae,"Grandjean, 1936",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Neogymnobates luteus,Ceratozetidae,357592,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Suctobelbella sarekensis,Suctobelbidae,307586,508164,Suctobelbidae,"Jacot, 1938",accepted,NA,Family,508164,Suctobelbidae,"Jacot, 1938",150380,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Eupelops septentrionalis,Phenopelopidae,675992,449186,Phenopelopidae,"Petrunkevitch, 1955",accepted,NA,Family,449186,Phenopelopidae,"Petrunkevitch, 1955",449185,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Trhypochthonius tectorum,Trhypochthoniidae,953057,508146,Trhypochthoniidae,"Willman, 1931",accepted,NA,Family,508146,Trhypochthoniidae,"Willman, 1931",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Ceratozetes gracilis,Ceratozetidae,3531266,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Svalbardia,Ceratozetidae,NULL,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Linopodes,Eupodidae,NULL,150434,Eupodidae,NA,accepted,NA,Family,150434,Eupodidae,NA,762071,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,1,NA,exact
+Camisia lapponica,Camisiidae,1011709,449173,Camisiidae,"Oudemans, 1900",accepted,NA,Family,449173,Camisiidae,"Oudemans, 1900",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Podoribates pratensis,Mochlozetidae,4686328,449194,Mochlozetidae,"Grandjean, 1960",accepted,NA,Family,449194,Mochlozetidae,"Grandjean, 1960",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Scheloribates badius,Scheloribatidae,3529034,449182,Scheloribatidae,"Jacot, 1935",accepted,NA,Family,449182,Scheloribatidae,"Jacot, 1935",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Acrogalumna longipluma,Galumnidae,1088710,449168,Galumnidae,"Jacot, 1925",accepted,NA,Family,449168,Galumnidae,"Jacot, 1925",150377,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Cosmolaelaps,Laelapidae,NULL,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Anachipteria howardi,Achipteriidae,894892,449178,Achipteriidae,"Thor, 1929",accepted,NA,Family,449178,Achipteriidae,"Thor, 1929",449177,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Proctolaelaps,Ascidae,NULL,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Veigaia kochi,Veigaiidae,3522208,150338,Veigaiidae,NA,accepted,NA,Family,150338,Veigaiidae,NA,762055,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Biscuris,Bdellidae,NULL,150433,Bdellidae,NA,accepted,NA,Family,150433,Bdellidae,NA,762069,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,1,NA,exact
+Speleorchestes,Nanorchestidae,NULL,150432,Nanorchestidae,NA,accepted,NA,Family,150432,Nanorchestidae,NA,762117,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Moritzoppia,Oppiidae,NULL,449174,Oppiidae,"Sellnick, 1937",accepted,NA,Family,449174,Oppiidae,"Sellnick, 1937",150380,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Camisia biurus,Camisiidae,1087593,449173,Camisiidae,"Oudemans, 1900",accepted,NA,Family,449173,Camisiidae,"Oudemans, 1900",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Meriola californica,Xanthidae,3554570,106769,Xanthidae,"MacLeay, 1838",accepted,NA,Family,106769,Xanthidae,"MacLeay, 1838",106703,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Gaeolaelaps,Laelapidae,NULL,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Asca,Ascidae,NULL,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Gamasellodes,Ascidae,NULL,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Zerconopsis,Ascidae,NULL,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Eviphis,Eviphididae,NULL,150332,Eviphididae,NA,accepted,NA,Family,150332,Eviphididae,NA,762057,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Allosuctobelba obtusa,Suctobelbidae,4687620,508164,Suctobelbidae,"Jacot, 1938",accepted,NA,Family,508164,Suctobelbidae,"Jacot, 1938",150380,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Ixodes texanus,Ixodidae,922652,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Alliphis,Eviphididae,NULL,150332,Eviphididae,NA,accepted,NA,Family,150332,Eviphididae,NA,762057,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Ixodes soricis,Ixodidae,3525515,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Echinonyssus,Laelapidae,NULL,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Jacquinotia edwardsi,Majidae,4667506,106760,Majidae,"Samouelle, 1819",accepted,NA,Family,106760,Majidae,"Samouelle, 1819",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Artemiauo,Artemiidae,NULL,480244,Artemiidae,"Grochowski, 1896",accepted,NA,Family,480244,Artemiidae,"Grochowski, 1896",1423528,Animalia,Arthropoda,Branchiopoda,Anostraca,NA,NA,1,1,NA,NA,exact
+Simocephalus,Colubridae,NULL,342637,Colubridae,"Oppel, 1811",accepted,NA,Family,342637,Colubridae,"Oppel, 1811",196113,Animalia,Chordata,NA,Squamata,NA,1,1,1,1,NA,exact
+Sergestes similis,Sergestidae,428941,106731,Sergestidae,"Dana, 1852",accepted,NA,Family,106731,Sergestidae,"Dana, 1852",106684,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Mytilocypris ambiguosa,Cyprididae,491094,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Veigaia nemorensis,Veigaiidae,612809,150338,Veigaiidae,NA,accepted,NA,Family,150338,Veigaiidae,NA,762055,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Veigaia,Veigaiidae,NULL,150338,Veigaiidae,NA,accepted,NA,Family,150338,Veigaiidae,NA,762055,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Ixodes scapularis,Ixodidae,621065,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis,Ixodidae,NULL,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Morelacarus,Trombiculidae,NULL,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Eumunida parva,Eumunididae,564114,562590,Eumunididae,"A. Milne-Edwards & Bouvier, 1900",accepted,NA,Family,562590,Eumunididae,"A. Milne-Edwards & Bouvier, 1900",562583,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Eumunida karubar,Eumunididae,564114,562590,Eumunididae,"A. Milne-Edwards & Bouvier, 1900",accepted,NA,Family,562590,Eumunididae,"A. Milne-Edwards & Bouvier, 1900",562583,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Ovalona glabra,Chydoridae,287275,148356,Chydoridae,"Dybowski & Grochowski, 1894",accepted,NA,Family,148356,Chydoridae,"Dybowski & Grochowski, 1894",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Eubosmina huaronensis,Bosminidae,423335,106262,Bosminidae,"Baird, 1845",accepted,NA,Family,106262,Bosminidae,"Baird, 1845",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Leydigia lousi,Chydoridae,829175,148356,Chydoridae,"Dybowski & Grochowski, 1894",accepted,NA,Family,148356,Chydoridae,"Dybowski & Grochowski, 1894",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Hoplomachus thunbergii,Metapseudidae,5799648,136155,Metapseudidae,"Lang, 1970",accepted,NA,Family,136155,Metapseudidae,"Lang, 1970",148688,Animalia,Arthropoda,Malacostraca,Tanaidacea,NA,1,NA,NA,NA,NA,exact
+Calocaris investigatoris,Axiidae,581256,106798,Axiidae,"Huxley, 1879",accepted,NA,Family,106798,Axiidae,"Huxley, 1879",477324,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,NA,NA,exact
+Diastylopsis thilenuisi,Diastylidae,556907,110380,Diastylidae,"Bate, 1856",accepted,NA,Family,110380,Diastylidae,"Bate, 1856",1137,Animalia,Arthropoda,Malacostraca,Cumacea,NA,1,1,NA,0,NA,exact
+Ixodes hirsti,Ixodidae,274040,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ampelisca eschrictii,Ampeliscidae,512226,101364,Ampeliscidae,"Krøyer, 1842",accepted,NA,Family,101364,Ampeliscidae,"Krøyer, 1842",1055693,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,NA,NA,NA,NA,exact
+Callianassa kraussi,Callianassidae,909460,106800,Callianassidae,"Dana, 1852",accepted,NA,Family,106800,Callianassidae,"Dana, 1852",477324,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,1,NA,NA,exact
+Alpheus ochrostriatus,Alpheidae,99426,106776,Alpheidae,"Rafinesque, 1815",accepted,NA,Family,106776,Alpheidae,"Rafinesque, 1815",106709,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,1,NA,NA,exact
+Macrobrachium qilianensis,Palaemonidae,616630,106788,Palaemonidae,"Rafinesque, 1815",accepted,NA,Family,106788,Palaemonidae,"Rafinesque, 1815",106715,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Hypoaspis miles,Laelapidae,91763,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Cryphiops caementarius,Palaemonidae,92502,106788,Palaemonidae,"Rafinesque, 1815",accepted,NA,Family,106788,Palaemonidae,"Rafinesque, 1815",106715,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Stratiolaelaps scimitus,Laelapidae,310322,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Otobius megnini,Argasidae,617195,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros costalis,Argasidae,5264372,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros porcinus,Argasidae,263260,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros moubata,Argasidae,896268,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros compactus,Argasidae,3525174,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros savignyi,Argasidae,614090,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros zumpti,Argasidae,3525186,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros turicata,Argasidae,263269,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Nothoaspis amazoniensis,Argasidae,426114,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ixodes acutitarsus,Ixodidae,738227,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes persulcatus,Ixodidae,493158,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes ariadnae,Ixodidae,5517344,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes frontalis,Ixodidae,22123,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes canisuga,Ixodidae,444962,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes hexagonus,Ixodidae,493147,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes vespertilionis,Ixodidae,163673,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes granulatus,Ixodidae,738231,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes laguri,Ixodidae,3525602,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes ricinus,Ixodidae,493144,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma detritum,Ixodidae,366894,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma excavatum,Ixodidae,794980,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma anatolicum,Ixodidae,827325,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma marginatum,Ixodidae,1069371,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis flava,Ixodidae,75787,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis concinna,Ixodidae,956594,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis longicornis,Ixodidae,789030,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis hystricis,Ixodidae,75477,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis japonica,Ixodidae,3525219,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Dermacentor marginatus,Ixodidae,448574,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Dermacentor reticulatus,Ixodidae,38540,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Dermacentor nuttalli,Ixodidae,779142,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Dermacentor nitens,Ixodidae,688419,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Carios faini,Argasidae,3525097,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Carios vespertilionis,Argasidae,628985,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Bothriocroton undatum,Ixodidae,735703,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Argas,Argasidae,NULL,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas striatus,Argasidae,3525083,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas persicus,Argasidae,617210,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas africolumbae,Argasidae,201408,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas walkerae,Argasidae,923092,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas brumpti,Argasidae,3525070,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas boueti,Argasidae,3525136,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Tropilaelaps mercedesae,Laelapidae,1079634,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Stratiolaelaps,Laelapidae,NULL,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Laelaps giganteus,Laelapidae,5782731,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Laelaps muricola,Laelapidae,5782730,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Scutovertex sculptus,Scutoverticidae,964685,449184,Scutoverticidae,"Grandjean, 1954",accepted,NA,Family,449184,Scutoverticidae,"Grandjean, 1954",449183,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Trhypochthonius cladonicolus,Trhypochthoniidae,240625,508146,Trhypochthoniidae,"Willman, 1931",accepted,NA,Family,508146,Trhypochthoniidae,"Willman, 1931",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Scutovertex pannonicus,Scutoverticidae,916035,449184,Scutoverticidae,"Grandjean, 1954",accepted,NA,Family,449184,Scutoverticidae,"Grandjean, 1954",449183,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Rhizoglyphus robini,Acaridae,7742,150325,Acaridae,NA,accepted,NA,Family,150325,Acaridae,NA,150317,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Nothrus borussicus,Nothridae,3528093,508148,Nothridae,"Berlese, 1896",accepted,NA,Family,508148,Nothridae,"Berlese, 1896",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Haemaphysalis bispinosa,Ixodidae,3525284,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Trombidium holosericeum,Trombidiidae,642655,150430,Trombidiidae,NA,accepted,NA,Family,150430,Trombidiidae,NA,762085,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,1,NA,exact
+Oodinychus karawaiewi,Uropodidae,7106121,150330,Uropodidae,NA,accepted,NA,Family,150330,Uropodidae,NA,762047,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Hyalomma lusitanicum,Ixodidae,448579,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Dermacentor everestianus,Ixodidae,3525417,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes holocyclus,Ixodidae,735715,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis bancrofti,Ixodidae,3525315,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes tasmani,Ixodidae,163675,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ornithodoros canestrinii,Argasidae,3525071,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ixodes apronophorus,Ixodidae,3525521,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes trianguliceps,Ixodidae,284190,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma,Ixodidae,NULL,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma asiaticum,Ixodidae,705445,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Argas reflexus,Argasidae,528616,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros lahorensis,Argasidae,387336,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Hyalomma truncatum,Ixodidae,83657,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma dromedarii,Ixodidae,1069367,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma rufipes,Ixodidae,658138,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Laelaps schatzi,Laelapidae,7102028,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Galkinius depressus,Pyrgomatidae,751027,106058,Pyrgomatidae,"Gray, 1825",accepted,NA,Family,106058,Pyrgomatidae,"Gray, 1825",106041,Animalia,Arthropoda,Thecostraca,Balanomorpha,NA,1,NA,NA,NA,0,exact
+Tropocyclops aztequei,Cyclopidae,2947580,106413,Cyclopidae,"Rafinesque, 1815",accepted,NA,Family,106413,Cyclopidae,"Rafinesque, 1815",1381344,Animalia,Arthropoda,Copepoda,Cyclopoida,NA,1,1,1,NA,NA,exact
+Dermacentor albipictus,Ixodidae,165442,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Laelaps taingueni,Laelapidae,5264862,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Aleuroglyphus ovatus,Acaridae,694334,150325,Acaridae,NA,accepted,NA,Family,150325,Acaridae,NA,150317,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Berniniella hauseri,Oppiidae,3529845,449174,Oppiidae,"Sellnick, 1937",accepted,NA,Family,449174,Oppiidae,"Sellnick, 1937",150380,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Dermacentor niveus,Ixodidae,684749,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Dermacentor silvarum,Ixodidae,507394,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis qinghaiensis,Ixodidae,8833,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes simplex,Ixodidae,735720,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Androlaelaps marshalli,Laelapidae,5782739,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Hyalomma turanicum,Ixodidae,5342642,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma scupense,Ixodidae,779916,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hyalomma impeltatum,Ixodidae,355764,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Bothriocroton concolor,Ixodidae,735709,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Bothriocroton,Ixodidae,NULL,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes cookei,Ixodidae,563398,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes cornuatus,Ixodidae,512790,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Hirsutiella zachvatkini,Trombiculidae,3532432,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Caligus warlandi,Caligidae,613660,135513,Caligidae,"Burmeister, 1835",accepted,NA,Family,135513,Caligidae,"Burmeister, 1835",1104,Animalia,Arthropoda,Copepoda,Siphonostomatoida,NA,1,1,1,NA,NA,exact
+Leptochelia dubia,Leptocheliidae,7122392,136160,Leptocheliidae,"Lang, 1973",accepted,NA,Family,136160,Leptocheliidae,"Lang, 1973",148687,Animalia,Arthropoda,Malacostraca,Tanaidacea,NA,1,1,NA,NA,NA,exact
+Alokalliapseudes macsweenyi,Kalliapseudidae,529175,136154,Kalliapseudidae,"Lang, 1956",accepted,NA,Family,136154,Kalliapseudidae,"Lang, 1956",148688,Animalia,Arthropoda,Malacostraca,Tanaidacea,NA,1,1,NA,NA,NA,exact
+Tonnacypris lutaria,Cyprididae,NULL,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Charybdis japonica,Portunidae,599983,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Coleolaelaps,Laelapidae,NULL,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Ixodes redikorzevi,Ixodidae,822315,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes arboricola,Ixodidae,468567,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes fecialis,Ixodidae,396343,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Bothriocroton hydrosauri,Ixodidae,738242,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes rubicundus,Ixodidae,494659,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes pilosus,Ixodidae,941218,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes bakeri,Ixodidae,494662,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Aclerogamasus similis,Parasitidae,NULL,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Hydrachna globosa,Hydrachnidae,1003587,1578526,Hydrachnidae,"Leach, 1815",accepted,NA,Family,1578526,Hydrachnidae,"Leach, 1815",762090,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,1,1,NA,NA,exact
+Hydrachna conjecta,Hydrachnidae,1003585,1578526,Hydrachnidae,"Leach, 1815",accepted,NA,Family,1578526,Hydrachnidae,"Leach, 1815",762090,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,1,1,NA,NA,exact
+Stylocheiron suhmii,Euphausiidae,920824,110671,Euphausiidae,"Dana, 1852",accepted,NA,Family,110671,Euphausiidae,"Dana, 1852",1128,Animalia,Arthropoda,Malacostraca,Euphausiacea,NA,1,NA,NA,NA,NA,exact
+Euphausia krohni,Euphausiidae,446888,110671,Euphausiidae,"Dana, 1852",accepted,NA,Family,110671,Euphausiidae,"Dana, 1852",1128,Animalia,Arthropoda,Malacostraca,Euphausiacea,NA,1,NA,NA,NA,NA,exact
+Awacaris japonica,Pontogeneiidae,5091383,176946,Pontogeneiidae,"Stebbing, 1906",accepted,NA,Family,176946,Pontogeneiidae,"Stebbing, 1906",719505,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,0,0,0,NA,exact
+Awacaris rhyaca,Pontogeneiidae,5091384,176946,Pontogeneiidae,"Stebbing, 1906",accepted,NA,Family,176946,Pontogeneiidae,"Stebbing, 1906",719505,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,0,0,0,NA,exact
+Awacaris yezoensis,Pontogeneiidae,5091386,176946,Pontogeneiidae,"Stebbing, 1906",accepted,NA,Family,176946,Pontogeneiidae,"Stebbing, 1906",719505,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,0,0,0,NA,exact
+Jesogammarus hebeiensis,Anisogammaridae,559858,101367,Anisogammaridae,"Bousfield, 1977",accepted,NA,Family,101367,Anisogammaridae,"Bousfield, 1977",720708,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,0,NA,exact
+Trachypenaeus curvirostris,Penaeidae,948769,106727,Penaeidae,"Rafinesque, 1815",accepted,NA,Family,106727,Penaeidae,"Rafinesque, 1815",106683,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Tubuca rhizophoriae,Ocypodidae,2981581,106773,Ocypodidae,"Rafinesque, 1815",accepted,NA,Family,106773,Ocypodidae,"Rafinesque, 1815",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Macrophthalmus latreillei,Macrophthalmidae,385379,439151,Macrophthalmidae,"Dana, 1851",accepted,NA,Family,439151,Macrophthalmidae,"Dana, 1851",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Orchomenella gerulicorbis,Uristidae,2982822,176808,Uristidae,"Hurley, 1963",accepted,NA,Family,176808,Uristidae,"Hurley, 1963",176788,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,0,0,0,0,exact
+Pallaseopsis kessleri,Pallaseidae,298573,547922,Pallaseidae,"Tachteew, 2001",accepted,NA,Family,547922,Pallaseidae,"Tachteew, 2001",720708,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,0,1,1,0,NA,exact
+Cyprinotus cingalensis,Cyprididae,2962004,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Chrissia formosa,Cyprididae,6191769,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Stenocypris hislopi,Cyprididae,NULL,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Charybdis vadorum,Portunidae,123644,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Chiromantes dehaani,Sesarmidae,912534,158047,Sesarmidae,"Dana, 1851",accepted,NA,Family,158047,Sesarmidae,"Dana, 1851",106706,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Niphargus glenniei,Niphargidae,5091695,545660,Niphargidae,"Bousfield, 1977",accepted,NA,Family,545660,Niphargidae,"Bousfield, 1977",720164,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,NA,1,1,1,NA,exact
+Idotea baltica,Idoteidae,788883,118283,Idoteidae,"Samouelle, 1819",accepted,NA,Family,118283,Idoteidae,"Samouelle, 1819",13800,Animalia,Arthropoda,Malacostraca,Isopoda,NA,1,0,1,0,NA,exact
+Macrophthalmus brevis,Macrophthalmidae,796814,439151,Macrophthalmidae,"Dana, 1851",accepted,NA,Family,439151,Macrophthalmidae,"Dana, 1851",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Charybdis erythrodactyla,Portunidae,2979068,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis rathbuni,Portunidae,2979039,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Maja kominatoensis,Majidae,1064747,106760,Majidae,"Samouelle, 1819",accepted,NA,Family,106760,Majidae,"Samouelle, 1819",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Charybdis miles,Portunidae,1077291,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis omanensis,Portunidae,2979032,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis annulata,Portunidae,1092601,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Neomysis intermedia,Mysidae,373479,119822,Mysidae,"Haworth, 1825",accepted,NA,Family,119822,Mysidae,"Haworth, 1825",149668,Animalia,Arthropoda,Malacostraca,Mysida,NA,1,1,1,0,NA,exact
+Parapenaeus indicus,Penaeidae,5787515,106727,Penaeidae,"Rafinesque, 1815",accepted,NA,Family,106727,Penaeidae,"Rafinesque, 1815",106683,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Echinogammarus bosnensis,Gammaridae,2982681,101383,Gammaridae,"Leach, 1814",accepted,NA,Family,101383,Gammaridae,"Leach, 1814",720708,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,NA,NA,exact
+Charybdis bimaculata,Portunidae,2979077,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Lucifer hanseni,Luciferidae,668867,106730,Luciferidae,"De Haan, 1849",accepted,NA,Family,106730,Luciferidae,"De Haan, 1849",106684,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,1,NA,exact
+Maja goltziana,Majidae,1064751,106760,Majidae,"Samouelle, 1819",accepted,NA,Family,106760,Majidae,"Samouelle, 1819",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Parasesarma erythrodactyla,Sesarmidae,7117799,158047,Sesarmidae,"Dana, 1851",accepted,NA,Family,158047,Sesarmidae,"Dana, 1851",106706,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Charybdis riversandersoni,Portunidae,2979043,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Parasesarma ungulatum,Sesarmidae,70966,158047,Sesarmidae,"Dana, 1851",accepted,NA,Family,158047,Sesarmidae,"Dana, 1851",106706,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Perisesarma dussumieri,Sesarmidae,2981276,158047,Sesarmidae,"Dana, 1851",accepted,NA,Family,158047,Sesarmidae,"Dana, 1851",106706,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Portunus longispinosus,Portunidae,2978959,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis acutifrons,Portunidae,2979059,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis granulata,Portunidae,2979067,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis hawaiensis,Portunidae,2979048,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Thalamita woodmasoni,Portunidae,2979142,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis callianassa,Portunidae,2979034,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Portunus granulatus,Portunidae,2979067,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Portunus spinicarpus,Portunidae,442712,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Portunus arabicus,Portunidae,2978977,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis hongkongensis,Portunidae,2979036,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis truncata,Portunidae,500659,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Charybdis anisodon,Portunidae,2979053,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Damithrax spinosissimus,Mithracidae,837649,439056,Mithracidae,"MacLeay, 1838",accepted,NA,Family,439056,Mithracidae,"MacLeay, 1838",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Callianassa ceramica,Callianassidae,2981765,106800,Callianassidae,"Dana, 1852",accepted,NA,Family,106800,Callianassidae,"Dana, 1852",477324,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,1,NA,NA,exact
+Sesarmops sinensis,Sesarmidae,834518,158047,Sesarmidae,"Dana, 1851",accepted,NA,Family,158047,Sesarmidae,"Dana, 1851",106706,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Periclimenes lamellibrachiophilus,Palaemonidae,325186,106788,Palaemonidae,"Rafinesque, 1815",accepted,NA,Family,106788,Palaemonidae,"Rafinesque, 1815",106715,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Macrophthalmus purpureocheir,Macrophthalmidae,6187539,439151,Macrophthalmidae,"Dana, 1851",accepted,NA,Family,439151,Macrophthalmidae,"Dana, 1851",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Neocaridina fukiensisu,Atyidae,2974199,148534,Atyidae,"De Haan, 1849",accepted,NA,Family,148534,Atyidae,"De Haan, 1849",148533,Animalia,Arthropoda,Malacostraca,Decapoda,NA,0,1,1,0,0,exact
+Macrophthalmus darwinensis,Macrophthalmidae,399338,439151,Macrophthalmidae,"Dana, 1851",accepted,NA,Family,439151,Macrophthalmidae,"Dana, 1851",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Micropanope nuttingi,Pseudorhombilidae,705926,414876,Pseudorhombilidae,"Alcock, 1900",accepted,NA,Family,414876,Pseudorhombilidae,"Alcock, 1900",106703,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Panopeus hartii,Panopeidae,2978869,106765,Panopeidae,"Ortmann, 1893",accepted,NA,Family,106765,Panopeidae,"Ortmann, 1893",106703,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Parapenaeopsis hungerfordi,Penaeidae,506835,106727,Penaeidae,"Rafinesque, 1815",accepted,NA,Family,106727,Penaeidae,"Rafinesque, 1815",106683,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Macrobrachium chainatense,Palaemonidae,220152,106788,Palaemonidae,"Rafinesque, 1815",accepted,NA,Family,106788,Palaemonidae,"Rafinesque, 1815",106715,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Heterocrypta occidentalis,Parthenopidae,1060964,106761,Parthenopidae,"MacLeay, 1838",accepted,NA,Family,106761,Parthenopidae,"MacLeay, 1838",106701,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Pilodius flavus,Xanthidae,37295,106769,Xanthidae,"MacLeay, 1838",accepted,NA,Family,106769,Xanthidae,"MacLeay, 1838",106703,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Maja spinigera,Majidae,1064745,106760,Majidae,"Samouelle, 1819",accepted,NA,Family,106760,Majidae,"Samouelle, 1819",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Maja japonica,Majidae,1064749,106760,Majidae,"Samouelle, 1819",accepted,NA,Family,106760,Majidae,"Samouelle, 1819",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Maja capensis,Majidae,1064753,106760,Majidae,"Samouelle, 1819",accepted,NA,Family,106760,Majidae,"Samouelle, 1819",106700,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Austruca mjoebergi,Ocypodidae,825298,106773,Ocypodidae,"Rafinesque, 1815",accepted,NA,Family,106773,Ocypodidae,"Rafinesque, 1815",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,NA,NA,NA,exact
+Synisoma acuminatum,Idoteidae,133198,118283,Idoteidae,"Samouelle, 1819",accepted,NA,Family,118283,Idoteidae,"Samouelle, 1819",13800,Animalia,Arthropoda,Malacostraca,Isopoda,NA,1,0,1,0,NA,exact
+Eugerdellaso,Desmosomatidae,NULL,118250,Desmosomatidae,"G. O. Sars, 1897",accepted,NA,Family,118250,Desmosomatidae,"G. O. Sars, 1897",155716,Animalia,Arthropoda,Malacostraca,Isopoda,NA,1,0,0,0,NA,exact
+Proasellus bardaunii,Asellidae,3000345,148665,Asellidae,"Rafinesque, 1815",accepted,NA,Family,148665,Asellidae,"Rafinesque, 1815",155713,Animalia,Arthropoda,Malacostraca,Isopoda,NA,0,1,1,0,0,exact
+Enhydrosoma apimelon,Cletodidae,5781551,115143,Cletodidae,"Scott T., 1904",accepted,NA,Family,115143,Cletodidae,"Scott T., 1904",1102,Animalia,Arthropoda,Copepoda,Harpacticoida,NA,1,NA,NA,NA,NA,exact
+Trevathana longidonta,Pyrgomatidae,5781978,106058,Pyrgomatidae,"Gray, 1825",accepted,NA,Family,106058,Pyrgomatidae,"Gray, 1825",106041,Animalia,Arthropoda,Thecostraca,Balanomorpha,NA,1,NA,NA,NA,0,exact
+Trevathana conica,Pyrgomatidae,7115587,106058,Pyrgomatidae,"Gray, 1825",accepted,NA,Family,106058,Pyrgomatidae,"Gray, 1825",106041,Animalia,Arthropoda,Thecostraca,Balanomorpha,NA,1,NA,NA,NA,0,exact
+Trevathana dongshaensis,Pyrgomatidae,7115588,106058,Pyrgomatidae,"Gray, 1825",accepted,NA,Family,106058,Pyrgomatidae,"Gray, 1825",106041,Animalia,Arthropoda,Thecostraca,Balanomorpha,NA,1,NA,NA,NA,0,exact
+Trevathana doni,Pyrgomatidae,7115589,106058,Pyrgomatidae,"Gray, 1825",accepted,NA,Family,106058,Pyrgomatidae,"Gray, 1825",106041,Animalia,Arthropoda,Thecostraca,Balanomorpha,NA,1,NA,NA,NA,0,exact
+Trevathana taiwanus,Pyrgomatidae,7115590,106058,Pyrgomatidae,"Gray, 1825",accepted,NA,Family,106058,Pyrgomatidae,"Gray, 1825",106041,Animalia,Arthropoda,Thecostraca,Balanomorpha,NA,1,NA,NA,NA,0,exact
+Acartia forticrusa,Acartiidae,5781500,104074,Acartiidae,"Sars G.O., 1903",accepted,NA,Family,104074,Acartiidae,"Sars G.O., 1903",1100,Animalia,Arthropoda,Copepoda,Calanoida,NA,1,1,0,0,NA,exact
+Caligus cheilodactyli,Caligidae,2943240,135513,Caligidae,"Burmeister, 1835",accepted,NA,Family,135513,Caligidae,"Burmeister, 1835",1104,Animalia,Arthropoda,Copepoda,Siphonostomatoida,NA,1,1,1,NA,NA,exact
+Undulacandona koreana,Candonidae,7122873,127489,Candonidae,"Kaufmann, 1900",accepted,NA,Family,127489,Candonidae,"Kaufmann, 1900",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Ilyodromus,Cyprididae,NULL,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Isocypris amplicolis,Cyprididae,2961795,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Rostratoverruca krugeri,Verrucidae,191804,106066,Verrucidae,"Darwin, 1854",accepted,NA,Family,106066,Verrucidae,"Darwin, 1854",106040,Animalia,Arthropoda,Thecostraca,Verrucomorpha,NA,1,NA,NA,NA,NA,exact
+Yamaguchiella vitiata,Tetraclitidae,5092954,106065,Tetraclitidae,"Gruvel, 1903",accepted,NA,Family,106065,Tetraclitidae,"Gruvel, 1903",106043,Animalia,Arthropoda,Thecostraca,Balanomorpha,NA,1,NA,0,0,0,exact
+Micromoina arboricola,Moinidae,5521223,148345,Moinidae,"Goulden, 1968",accepted,NA,Family,148345,Moinidae,"Goulden, 1968",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,0,1,1,0,NA,exact
+Bosmina meridionalis,Bosminidae,2960552,106262,Bosminidae,"Baird, 1845",accepted,NA,Family,106262,Bosminidae,"Baird, 1845",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Bennelongia timmsi,Cyprididae,5335598,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Bennelongia scanloni,Cyprididae,5335596,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Bennelongia ivanae,Cyprididae,5335597,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Lysigamasus,Parasitidae,NULL,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Ixodes lividus,Ixodidae,600895,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis erinacei,Ixodidae,3525293,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes rugicollis,Ixodidae,3525541,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Antricola,Argasidae,NULL,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Archegozetes longisetosus,Trhypochthoniidae,518198,508146,Trhypochthoniidae,"Willman, 1931",accepted,NA,Family,508146,Trhypochthoniidae,"Willman, 1931",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Ornithodoros faccinii,Argasidae,5743464,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Bosmina fatalis,Bosminidae,1447,106262,Bosminidae,"Baird, 1845",accepted,NA,Family,106262,Bosminidae,"Baird, 1845",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Sancassania berlesei,Acaridae,549024,150325,Acaridae,NA,accepted,NA,Family,150325,Acaridae,NA,150317,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Ascoschoengastia,Trombiculidae,NULL,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Leptotrombidium pallidum,Trombiculidae,524909,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Leptotrombidium deliense,Trombiculidae,76565,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Leptotrombidium akamushi,Trombiculidae,76563,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Walchia hayashii,Trombiculidae,446369,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Antricola mexicanus,Argasidae,617204,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas lagenoplastis,Argasidae,938683,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Argas miniatus,Argasidae,3525081,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros rostratus,Argasidae,683826,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Ornithodoros brasiliensis,Argasidae,44784,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Haemaphysalis formosensis,Ixodidae,447226,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis parva,Ixodidae,653548,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Moloha majora,Homolidae,611209,106744,Homolidae,"De Haan, 1839",accepted,NA,Family,106744,Homolidae,"De Haan, 1839",106692,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Alpheus distinguendus,Alpheidae,141343,106776,Alpheidae,"Rafinesque, 1815",accepted,NA,Family,106776,Alpheidae,"Rafinesque, 1815",106709,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,NA,1,NA,NA,exact
+Pauropus longiramus,Pauropodidae,404891,384689,Pauropodidae,"Lubbock, 1867",accepted,NA,Family,384689,Pauropodidae,"Lubbock, 1867",384688,Animalia,Arthropoda,Pauropoda,Tetramerocerata,NA,1,NA,1,1,NA,exact
+Portunus gracilimanus,Portunidae,515224,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Epimeria frankei,Epimeriidae,7118616,101379,Epimeriidae,"Boeck, 1871",accepted,NA,Family,101379,Epimeriidae,"Boeck, 1871",176976,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,NA,NA,NA,NA,exact
+Carios,Argasidae,NULL,762205,Argasidae,"Koch, 1844",accepted,NA,Family,762205,Argasidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,1,1,1,NA,exact
+Haemaphysalis inermis,Ixodidae,338042,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Jesogammarus hinumensis,Anisogammaridae,1009757,101367,Anisogammaridae,"Bousfield, 1977",accepted,NA,Family,101367,Anisogammaridae,"Bousfield, 1977",720708,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,0,NA,exact
+Homoeogammarus,Gammaridae,NULL,101383,Gammaridae,"Leach, 1814",accepted,NA,Family,101383,Gammaridae,"Leach, 1814",720708,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,NA,NA,exact
+Iberogammarus macrocarpus,Gammaridae,5091799,101383,Gammaridae,"Leach, 1814",accepted,NA,Family,101383,Gammaridae,"Leach, 1814",720708,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,NA,NA,exact
+Undulacandona,Candonidae,NULL,127489,Candonidae,"Kaufmann, 1900",accepted,NA,Family,127489,Candonidae,"Kaufmann, 1900",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Multidentorhodacarus,Rhodacaridae,NULL,150341,Rhodacaridae,NA,accepted,NA,Family,150341,Rhodacaridae,NA,762056,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,NA,NA,NA,NA,NA,exact
+Phauloppia,Oribatulidae,NULL,449181,Oribatulidae,"Thor, 1929",accepted,NA,Family,449181,Oribatulidae,"Thor, 1929",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Gaeolaelaps aculeifer,Laelapidae,158257,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Mycobates tridactylus,Mycobatidae,906388,449167,Mycobatidae,"Thor, 1937",accepted,NA,Family,449167,Mycobatidae,"Thor, 1937",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,1,1,NA,exact
+Oromurcia,Ceratozetidae,NULL,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Orchomenella acanthura,Lysianassidae,255658,101395,Lysianassidae,"Dana, 1849",accepted,NA,Family,101395,Lysianassidae,"Dana, 1849",176788,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,NA,NA,NA,NA,exact
+Scutovertex ianus,Scutoverticidae,964313,449184,Scutoverticidae,"Grandjean, 1954",accepted,NA,Family,449184,Scutoverticidae,"Grandjean, 1954",449183,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Lamellovertex caelatus,Scutoverticidae,1014941,449184,Scutoverticidae,"Grandjean, 1954",accepted,NA,Family,449184,Scutoverticidae,"Grandjean, 1954",449183,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Provertex kuehnelti,Scutoverticidae,488944,449184,Scutoverticidae,"Grandjean, 1954",accepted,NA,Family,449184,Scutoverticidae,"Grandjean, 1954",449183,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Exochocepheus hungaricus,Scutoverticidae,1014944,449184,Scutoverticidae,"Grandjean, 1954",accepted,NA,Family,449184,Scutoverticidae,"Grandjean, 1954",449183,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Nothrus pratensis,Nothridae,152753,508148,Nothridae,"Berlese, 1896",accepted,NA,Family,508148,Nothridae,"Berlese, 1896",449172,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Abyssorchomene rossi,Lysianassidae,751155,101395,Lysianassidae,"Dana, 1849",accepted,NA,Family,101395,Lysianassidae,"Dana, 1849",176788,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,NA,NA,NA,NA,exact
+Pergamasus vagabundus,Parasitidae,6167714,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Haemaphysalis punctata,Ixodidae,448577,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Leptotrombidium,Trombiculidae,NULL,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Oribatella bulanovae,Oribatellidae,407295,449176,Oribatellidae,"Jacot, 1925",accepted,NA,Family,449176,Oribatellidae,"Jacot, 1925",150381,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Macrophthalmus grandidieri,Macrophthalmidae,1039659,439151,Macrophthalmidae,"Dana, 1851",accepted,NA,Family,439151,Macrophthalmidae,"Dana, 1851",106707,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Phycomenes zostericola sp,Palaemonidae,575945,106788,Palaemonidae,"Rafinesque, 1815",accepted,NA,Family,106788,Palaemonidae,"Rafinesque, 1815",106715,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,1,1,NA,exact
+Tryphosinae intermedia,Lysianassidae,7118793,101395,Lysianassidae,"Dana, 1849",accepted,NA,Family,101395,Lysianassidae,"Dana, 1849",176788,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,NA,NA,NA,NA,exact
+Pilodius pugil,Xanthidae,2978716,106769,Xanthidae,"MacLeay, 1838",accepted,NA,Family,106769,Xanthidae,"MacLeay, 1838",106703,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Portunus pulchricristatus,Portunidae,2978961,106763,Portunidae,"Rafinesque, 1815",accepted,NA,Family,106763,Portunidae,"Rafinesque, 1815",106702,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,0,0,0,exact
+Fuscozetes fuscipes,Ceratozetidae,4685426,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Thoralus cranchii,Thoridae,314696,883967,Thoridae,"Kingsley, 1879",accepted,NA,Family,883967,Thoridae,"Kingsley, 1879",106709,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,1,NA,NA,NA,exact
+Ixodes marxi,Ixodidae,3525487,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Cultroribula,Astegistidae,NULL,508157,Astegistidae,"Balogh, 1961",accepted,NA,Family,508157,Astegistidae,"Balogh, 1961",449170,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Ceratozetes parvulus,Ceratozetidae,3531283,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Penthaleus,Penthaleidae,NULL,150426,Penthaleidae,NA,accepted,NA,Family,150426,Penthaleidae,NA,762071,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Neotrombicula microti,Trombiculidae,882329,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Spinapecruris curvirostris,Cletodidae,2949736,115143,Cletodidae,"Scott T., 1904",accepted,NA,Family,115143,Cletodidae,"Scott T., 1904",1102,Animalia,Arthropoda,Copepoda,Harpacticoida,NA,1,NA,NA,NA,NA,exact
+Eupelops terminalis,Phenopelopidae,4685338,449186,Phenopelopidae,"Petrunkevitch, 1955",accepted,NA,Family,449186,Phenopelopidae,"Petrunkevitch, 1955",449185,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Protozetomimus acutirostris,Ceratozetidae,4685552,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Dentachipteria,Achipteriidae,NULL,449178,Achipteriidae,"Thor, 1929",accepted,NA,Family,449178,Achipteriidae,"Thor, 1929",449177,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,NA,NA,exact
+Ixodes pacificus,Ixodidae,925527,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Dermacentor andersoni,Ixodidae,1043409,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Rhodacarellus silesiacus,Rhodacaridae,3520943,150341,Rhodacaridae,NA,accepted,NA,Family,150341,Rhodacaridae,NA,762056,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,NA,NA,NA,NA,NA,exact
+Pergamasus mirabilis,Parasitidae,7103923,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Acrogalumna,Galumnidae,NULL,449168,Galumnidae,"Jacot, 1925",accepted,NA,Family,449168,Galumnidae,"Jacot, 1925",150377,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Scheloribates initialis,Scheloribatidae,6165395,449182,Scheloribatidae,"Jacot, 1935",accepted,NA,Family,449182,Scheloribatidae,"Jacot, 1935",449179,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Peloptulus phaenotus,Phenopelopidae,4685411,449186,Phenopelopidae,"Petrunkevitch, 1955",accepted,NA,Family,449186,Phenopelopidae,"Petrunkevitch, 1955",449185,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Paramoera tsushimana,Pontogeneiidae,5091378,176946,Pontogeneiidae,"Stebbing, 1906",accepted,NA,Family,176946,Pontogeneiidae,"Stebbing, 1906",719505,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,0,0,0,NA,exact
+Pinnixa rectinens,Pinnotheridae,683843,106775,Pinnotheridae,"De Haan, 1833",accepted,NA,Family,106775,Pinnotheridae,"De Haan, 1833",106708,Animalia,Arthropoda,Malacostraca,Decapoda,NA,1,0,0,0,0,exact
+Herpetocypris chevreuxi,Cyprididae,2962021,146873,Cyprididae,"Baird, 1845",accepted,NA,Family,146873,Cyprididae,"Baird, 1845",127476,Animalia,Arthropoda,Ostracoda,Podocopida,NA,1,1,1,0,0,exact
+Protogamasellopsis corticalis,Rhodacaridae,3520946,150341,Rhodacaridae,NA,accepted,NA,Family,150341,Rhodacaridae,NA,762056,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,NA,NA,NA,NA,NA,exact
+Parasitus hyalinus,Parasitidae,3524750,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Parasitus fimetorum,Parasitidae,7103920,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Vulgarogamasus burchanensis,Parasitidae,5782745,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Androlaelaps,Laelapidae,NULL,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Gamasodes spiniger,Parasitidae,4680973,150335,Parasitidae,NA,accepted,NA,Family,150335,Parasitidae,NA,762054,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,1,NA,exact
+Proctolaelaps parascolyti,Ascidae,6167489,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Proctolaelaps scolyti,Ascidae,3521664,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Proctolaelaps pygmaeus,Ascidae,3521661,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Dentizetes rudentiger,Ceratozetidae,4685500,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Sphodrocepheus,Cepheidae,NULL,449196,Cepheidae,"Berlese, 1896",unaccepted,synonym,Family,450497,Compactozetidae,"Luxton, 1988",450496,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,NA,NA,NA,NA,NA,exact
+Neotrombicula,Trombiculidae,NULL,509945,Trombiculidae,"Ewing, 1929",accepted,NA,Family,509945,Trombiculidae,"Ewing, 1929",762086,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,1,NA,NA,NA,NA,exact
+Propelops alaskensis,Phenopelopidae,5782273,449186,Phenopelopidae,"Petrunkevitch, 1955",accepted,NA,Family,449186,Phenopelopidae,"Petrunkevitch, 1955",449185,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Ceratozetes cuspidatus,Ceratozetidae,3531288,449165,Ceratozetidae,"Jacot, 1925",accepted,NA,Family,449165,Ceratozetidae,"Jacot, 1925",150376,Animalia,Arthropoda,Arachnida,Sarcoptiformes,NA,1,NA,NA,1,NA,exact
+Laelaps kochi,Laelapidae,210085,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Echinonyssus isabellinus,Laelapidae,7101584,150322,Laelapidae,"Berlese, 1892",accepted,NA,Family,150322,Laelapidae,"Berlese, 1892",762060,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Asca garmani,Ascidae,733062,150321,Ascidae,NA,accepted,NA,Family,150321,Ascidae,NA,762058,Animalia,Arthropoda,Arachnida,Mesostigmata,NA,1,NA,NA,NA,NA,exact
+Ixodes affinis,Ixodidae,338040,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Haemaphysalis juxtakochi,Ixodidae,306706,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes spinipalpis,Ixodidae,493161,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes rugosus,Ixodidae,3525502,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Ixodes banksi,Ixodidae,26278,762201,Ixodidae,"Koch, 1844",accepted,NA,Family,762201,Ixodidae,"Koch, 1844",762031,Animalia,Arthropoda,Arachnida,Ixodida,NA,1,NA,NA,NA,NA,exact
+Heteromysis formosa,Mysidae,703984,119822,Mysidae,"Haworth, 1825",accepted,NA,Family,119822,Mysidae,"Haworth, 1825",149668,Animalia,Arthropoda,Malacostraca,Mysida,NA,1,1,1,0,NA,exact
+Melita formosa,Melitidae,977213,101397,Melitidae,"Bousfield, 1973",accepted,NA,Family,101397,Melitidae,"Bousfield, 1973",719496,Animalia,Arthropoda,Malacostraca,Amphipoda,NA,1,1,1,NA,NA,exact
+Australocyclops australis,Cyclopidae,2947473,106413,Cyclopidae,"Rafinesque, 1815",accepted,NA,Family,106413,Cyclopidae,"Rafinesque, 1815",1381344,Animalia,Arthropoda,Copepoda,Cyclopoida,NA,1,1,1,NA,NA,exact
+Eubosmina tubicen,Bosminidae,325481,106262,Bosminidae,"Baird, 1845",accepted,NA,Family,106262,Bosminidae,"Baird, 1845",106259,Animalia,Arthropoda,Branchiopoda,Anomopoda,NA,1,1,1,0,NA,exact
+Sarsilatona serricauda,Sididae,898162,106263,Sididae,"Baird, 1850",accepted,NA,Family,106263,Sididae,"Baird, 1850",106260,Animalia,Arthropoda,Branchiopoda,Ctenopoda,NA,1,1,1,0,NA,exact
