@@ -138,6 +138,7 @@ mresolved <- mresolved1 %>%
 
 #save intermediate just in case!
 #write_rds(mresolved, here('temp_midori.rds'))
+mresolved <- readRDS(here('temp_midori.rds'))
 
 # classify found IDs, will probably need split again
 
@@ -164,17 +165,25 @@ mresolved_classify6 <- mresolved_classify[140001:180000,]
 mresolved_classify7 <- mresolved_classify[180001:210000,]
 mresolved_classify8 <- mresolved_classify[210001:238338,]
 
-midori_classify <- classification(mresolved_classify2$unique_name, db = 'tol')
+midori_classify <- classification(mresolved_classify5$unique_name, db = 'tol')
 
 # manually set temp variables to merge later
 #mclassify1 <- midori_classify
-mclassify2 <- midori_classify
+#mclassify2 <- midori_classify
 #mclassify3 <- midori_classify
 #mclassify4 <- midori_classify
-#mclassify5 <- midori_classify
+mclassify5 <- midori_classify
 #mclassify6 <- midori_classify
 #mclassify7 <- midori_classify
 #mclassify8 <- midori_classify
+
+
+#save temp versions in case it breaks again
+write_rds(mclassify5, here('temp_midori_c5.rds'))
+write_rds(mclassify6, here('temp_midori_c6.rds'))
+write_rds(mclassify7, here('temp_midori_c7.rds'))
+write_rds(mclassify8, here('temp_midori_c8.rds'))
+
 
 #bind rows and save again
 ```
