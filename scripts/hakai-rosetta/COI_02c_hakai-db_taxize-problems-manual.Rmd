@@ -23,13 +23,22 @@ tol_conflict <- here('species_lists', 'hakai', '2022rosetta', 'problems', 'tol_c
 
 # tol-worms family level conflicts
 
-Some of the conflicts are at the family or genus level.
-First we resolve the ones we know about; if genus in fresh/terrestrial file then add anything from not-found. Then we'll see what's left, look them up at a family level, manually add them ot fresh/terrestrial. if marine, set aside for later.
+Some of the conflicts are at the family or genus level. Generally these will be due to the fact that the genus-species in question is freshwater or terrestrial and are not in worms, but at a family level, the group can be marine also. 
+
+The other issue will be typos or epithets unable to be found by fuzzy searches or species that are very invalid and over my pay grade.
+
+Here the goal will be to look at them manually: 
+- for terrestrial and freshwater species unable to be captured otherwise: get gbif/bold/tol ids, mark columns as freshwater / terrestrial
+- for marine typos, work on a key to fix them a priori next time, and fetch their valid taxonomy from WoRMS, prep to merge.
+- for problems above my pay grade, just identify them for now. In the future, we'll find taxonomists to resolve them.
+
+
+NOTE the script right now is the version before I integrated terrestrial/fresh in step 1 and needs significant revision. Maybe my weekend project heh heh.
+
+# Annelids
+
 
 ```{r annelid-loadin}
-annelid_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
-                                   '20220630_annelid_fresh-terr.csv'))
-
 annelid_family <- read_csv(here(tol_conflict,
                                         '20220630_annelid_worms_tol-conflict-family.csv'))
 
@@ -169,7 +178,7 @@ write_csv(annelid_conflicts4, here(problems, 'not_found',
 
 
 
-# arthropods
+# Arthropods
 
 ```{r arthropods-loadin}
 arthropod_freshterr <- read_csv(here(problems, 'fresh_terrestrial',

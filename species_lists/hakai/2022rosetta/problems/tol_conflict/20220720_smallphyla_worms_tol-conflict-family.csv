@@ -1,0 +1,130 @@
+taxa_query,family,ottid_species,aphia_id,scientificname,authority,status,unacceptreason,rank,valid_aphia_id,valid_name,valid_authority,parent_name_usage_id,kingdom,phylum,class,order,genus,is_marine,is_brackish,is_freshwater,is_terrestrial,is_extinct,match_type
+Tegella horrida,Calloporidae,2935710,110733,Calloporidae,"Norman, 1903",accepted,NA,Family,110733,Calloporidae,"Norman, 1903",153581,Animalia,Bryozoa,Gymnolaemata,Cheilostomatida,NA,1,1,NA,1,NA,exact
+Abietinaria,Sertulariidae,NULL,1614,Sertulariidae,"Lamouroux, 1812",accepted,NA,Family,1614,Sertulariidae,"Lamouroux, 1812",1041959,Animalia,Cnidaria,Hydrozoa,Leptothecata,NA,1,1,0,0,NA,exact
+Haliclystus sanjuanensis,Haliclystidae,309092,880517,Haliclystidae,"Haeckel, 1879",accepted,NA,Family,880517,Haliclystidae,"Haeckel, 1879",875440,Animalia,Cnidaria,Staurozoa,Stauromedusae,NA,1,0,0,0,NA,exact
+Tubulanus ruber,Tubulanidae,7502743,122321,Tubulanidae,"Bürger, 1905",accepted,NA,Family,122321,Tubulanidae,"Bürger, 1905",1451609,Animalia,Nemertea,Palaeonemertea,Tubulaniformes,NA,1,NA,NA,NA,NA,exact
+Laqueus californianus,Laqueidae,474208,147806,Laqueidae,"Thomson, 1927",accepted,NA,Family,147806,Laqueidae,"Thomson, 1927",235263,Animalia,Brachiopoda,Rhynchonellata,Terebratulida,NA,1,NA,NA,NA,NA,exact
+Mycetophyllia danaana,Mussidae,654383,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acanthastrea rotundaflora,Lobophylliidae,28686,718587,Lobophylliidae,"Fukami, Budd & Knowlton, 2012",unaccepted,synonymy,Family,739007,Lobophylliidae,"Dai & Horng, 2009",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,0,0,0,NA,exact
+Favites valenciennesi,Merulinidae,906677,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Macracanthorhynchus ingens,Oligacanthorhynchidae,562171,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Asplanchna silvestrii,Asplanchnidae,245637,134917,Asplanchnidae,"Eckstein, 1883",accepted,NA,Family,134917,Asplanchnidae,"Eckstein, 1883",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,NA,1,NA,NA,exact
+Asplanchna sieboldi,Asplanchnidae,251968,134917,Asplanchnidae,"Eckstein, 1883",accepted,NA,Family,134917,Asplanchnidae,"Eckstein, 1883",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,NA,1,NA,NA,exact
+Beauchampiella eudactylota,Euchlanidae,738316,368560,Euchlanidae,"Ehrenberg, 1838",accepted,NA,Family,368560,Euchlanidae,"Ehrenberg, 1838",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,1,1,NA,0,exact
+Poseidonemertes,Poseidonemertidae,NULL,1416264,Poseidonemertidae,"Chernyshev, 2002",accepted,NA,Family,1416264,Poseidonemertidae,"Chernyshev, 2002",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,NA,NA,0,exact
+Zygonemertes simonae,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strongylacidon bermudae,Chondropsidae,879843,168731,Chondropsidae,"Carter, 1886",accepted,NA,Family,168731,Chondropsidae,"Carter, 1886",131599,Animalia,Porifera,Demospongiae,Poecilosclerida,NA,1,0,0,0,0,exact
+Halisarca dujardini,Halisarcidae,832875,131634,Halisarcidae,"Schmidt, 1862",accepted,NA,Family,131634,Halisarcidae,"Schmidt, 1862",736910,Animalia,Porifera,Demospongiae,Chondrillida,NA,1,0,0,0,0,exact
+Mastigias sp. remengesaui,Mastigiidae,149852,135237,Mastigiidae,"Stiasny, 1920",accepted,NA,Family,135237,Mastigiidae,"Stiasny, 1920",1394398,Animalia,Cnidaria,Scyphozoa,Rhizostomeae,NA,1,0,0,0,0,exact
+Mastigias sp. remeliiki,Mastigiidae,149856,135237,Mastigiidae,"Stiasny, 1920",accepted,NA,Family,135237,Mastigiidae,"Stiasny, 1920",1394398,Animalia,Cnidaria,Scyphozoa,Rhizostomeae,NA,1,0,0,0,0,exact
+Pelophila borealis,Actinoposthiidae,5421009,379797,Actinoposthiidae,"Hooge, 2001",accepted,NA,Family,379797,Actinoposthiidae,"Hooge, 2001",2847,Animalia,Xenacoelomorpha,NA,Acoela,NA,1,NA,NA,NA,NA,exact
+Dipleuchlanis propatula,Euchlanidae,2942300,368560,Euchlanidae,"Ehrenberg, 1838",accepted,NA,Family,368560,Euchlanidae,"Ehrenberg, 1838",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,1,1,NA,0,exact
+Euryparyphes,Pamphagidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bradyscela clauda,Adinetidae,991847,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dipsastraea danai,Merulinidae,826595,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Dipsastraea favus,Merulinidae,145361,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Favites paraflexuosus,Merulinidae,98779,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Dipsastraea laxa,Merulinidae,3675701,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Pleuretra lineata,Philodinidae,790553,134913,Philodinidae,"Ehrenberg, 1838",accepted,NA,Family,134913,Philodinidae,"Ehrenberg, 1838",17968,Animalia,Rotifera,Eurotatoria,NA,NA,1,1,1,1,NA,exact
+Myopea caleum,Solenofilomorphidae,3663422,142044,Solenofilomorphidae,"Dörjes, 1968",accepted,NA,Family,142044,Solenofilomorphidae,"Dörjes, 1968",880140,Animalia,Xenacoelomorpha,NA,Acoela,NA,1,NA,NA,NA,NA,exact
+Semperella schulzei,Pheronematidae,154403,131685,Pheronematidae,"Gray, 1870",accepted,NA,Family,131685,Pheronematidae,"Gray, 1870",160632,Animalia,Porifera,Hexactinellida,Amphidiscosida,NA,1,0,0,0,0,exact
+Goniastrea stelligera,Merulinidae,50365,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Dipsastraea pallida,Merulinidae,601934,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Forskalia edwardsi,Forskaliidae,986301,135347,Forskaliidae,"Haeckel, 1888",accepted,NA,Family,135347,Forskaliidae,"Haeckel, 1888",135335,Animalia,Cnidaria,Hydrozoa,Siphonophorae,NA,1,NA,NA,NA,NA,exact
+Chrysaora,"c(""Pelagiidae"", ""Pelagiidae"")",NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dipsastraea maxima,Merulinidae,98786,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Chrysaora chesapeakei,Pelagiidae,7509042,135240,Pelagiidae,"Gegenbaur, 1856",accepted,NA,Family,135240,Pelagiidae,"Gegenbaur, 1856",135225,Animalia,Cnidaria,Scyphozoa,Semaeostomeae,NA,1,0,0,0,0,exact
+Anthopleura anjunae,Actiniidae,136455,100653,Actiniidae,"Rafinesque, 1815",accepted,NA,Family,100653,Actiniidae,"Rafinesque, 1815",853973,Animalia,Cnidaria,Anthozoa,Actiniaria,NA,1,NA,NA,NA,NA,exact
+Dendronephthya putteri,Nephtheidae,947312,146762,Nephtheidae,"Gray, 1862",accepted,NA,Family,146762,Nephtheidae,"Gray, 1862",411555,Animalia,Cnidaria,Anthozoa,Alcyonacea,NA,1,NA,NA,NA,NA,exact
+Eunicella cavolini,Gorgoniidae,115759,125275,Gorgoniidae,"Lamouroux, 1812",accepted,NA,Family,125275,Gorgoniidae,"Lamouroux, 1812",125267,Animalia,Cnidaria,Anthozoa,Alcyonacea,NA,1,NA,NA,NA,NA,exact
+Platyzoanthus mussoides,Discosomidae,145355,742313,Discosomidae,"Verrill, 1869",accepted,NA,Family,742313,Discosomidae,"Verrill, 1869",1362,Animalia,Cnidaria,Anthozoa,Corallimorpharia,NA,1,NA,NA,NA,NA,exact
+Flabellum lamellulosum,Flabellidae,191130,135075,Flabellidae,"Bourne, 1905",accepted,NA,Family,135075,Flabellidae,"Bourne, 1905",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,0,exact
+Dipsastraea truncata,Merulinidae,191138,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Ptychogena crocea,Laodiceidae,709322,1610,Laodiceidae,"Agassiz, 1862",accepted,NA,Family,1610,Laodiceidae,"Agassiz, 1862",13552,Animalia,Cnidaria,Hydrozoa,Leptothecata,NA,1,NA,NA,NA,NA,exact
+Mawia benovici,Pelagiidae,5424632,135240,Pelagiidae,"Gegenbaur, 1856",accepted,NA,Family,135240,Pelagiidae,"Gegenbaur, 1856",135225,Animalia,Cnidaria,Scyphozoa,Semaeostomeae,NA,1,0,0,0,0,exact
+Clytia hemisphaerica,Campanulariidae,33385,1606,Campanulariidae,"Johnston, 1836",accepted,NA,Family,1606,Campanulariidae,"Johnston, 1836",13552,Animalia,Cnidaria,Hydrozoa,Leptothecata,NA,1,NA,0,0,NA,exact
+Halistemma foliacea,Agalmatidae,320482,135344,Agalmatidae,"Brandt, 1834",accepted,NA,Family,135344,Agalmatidae,"Brandt, 1834",135335,Animalia,Cnidaria,Hydrozoa,Siphonophorae,NA,1,0,0,0,NA,exact
+Lilyopsis medusa,Prayidae,1068356,135340,Prayidae,"Kölliker, 1853",accepted,NA,Family,135340,Prayidae,"Kölliker, 1853",135333,Animalia,Cnidaria,Hydrozoa,Siphonophorae,NA,1,NA,0,0,0,exact
+Bernardpora stutchburyi,Poritidae,3675414,196105,Poritidae,"Gray, 1840",accepted,NA,Family,196105,Poritidae,"Gray, 1840",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,0,0,0,NA,exact
+Oceania armata,Oceaniidae,3681251,231678,Oceaniidae,"Eschscholtz, 1829",accepted,NA,Family,231678,Oceaniidae,"Eschscholtz, 1829",16352,Animalia,Cnidaria,Hydrozoa,Anthoathecata,NA,1,NA,0,0,0,exact
+Dipsastraea helianthoides,Merulinidae,826597,1579843,Merulinidae,"Milne Edwards & Haime, 1857",accepted,NA,Family,1579843,Merulinidae,"Milne Edwards & Haime, 1857",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,NA,exact
+Rhizophysa eysenhardti,Rhizophysidae,338557,135343,Rhizophysidae,"Brandt, 1835",accepted,NA,Family,135343,Rhizophysidae,"Brandt, 1835",135334,Animalia,Cnidaria,Hydrozoa,Siphonophorae,NA,1,0,0,0,NA,exact
+Pocillopora grandis,Pocilloporidae,390556,135079,Pocilloporidae,"Gray, 1840",accepted,NA,Family,135079,Pocilloporidae,"Gray, 1840",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,NA,0,0,0,exact
+Acanthastrea pachysepta,Lobophylliidae,654390,718587,Lobophylliidae,"Fukami, Budd & Knowlton, 2012",unaccepted,synonymy,Family,739007,Lobophylliidae,"Dai & Horng, 2009",1363,Animalia,Cnidaria,Anthozoa,Scleractinia,NA,1,0,0,0,NA,exact
+Cyclocanna producta,Mitrocomidae,358499,14665,Mitrocomidae,"Haeckel, 1879",accepted,NA,Family,14665,Mitrocomidae,"Haeckel, 1879",13552,Animalia,Cnidaria,Hydrozoa,Leptothecata,NA,1,NA,0,0,NA,exact
+Abrochtha meselsoni,NULL,688001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Abrochtha sonneborni,NULL,785906,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Didymodactylos carnosus,Philodinidae,693524,134913,Philodinidae,"Ehrenberg, 1838",accepted,NA,Family,134913,Philodinidae,"Ehrenberg, 1838",17968,Animalia,Rotifera,Eurotatoria,NA,NA,1,1,1,1,NA,exact
+Cephalothrix fasciculus,Cephalothricidae,208407,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Radiella sarsi,Polymastiidae,2839101,131673,Polymastiidae,"Gray, 1867",accepted,NA,Family,131673,Polymastiidae,"Gray, 1867",845494,Animalia,Porifera,Demospongiae,Polymastiida,NA,1,0,0,0,0,exact
+Asbestopluma belgicae,Cladorhizidae,2837754,131644,Cladorhizidae,"Dendy, 1922",accepted,NA,Family,131644,Cladorhizidae,"Dendy, 1922",131599,Animalia,Porifera,Demospongiae,Poecilosclerida,NA,1,0,0,0,0,exact
+Asbestopluma cupressiformis,Cladorhizidae,2837745,131644,Cladorhizidae,"Dendy, 1922",accepted,NA,Family,131644,Cladorhizidae,"Dendy, 1922",131599,Animalia,Porifera,Demospongiae,Poecilosclerida,NA,1,0,0,0,0,exact
+Asbestopluma desmophora,Cladorhizidae,2837759,131644,Cladorhizidae,"Dendy, 1922",accepted,NA,Family,131644,Cladorhizidae,"Dendy, 1922",131599,Animalia,Porifera,Demospongiae,Poecilosclerida,NA,1,0,0,0,0,exact
+Chondrocladia robertballardi,Cladorhizidae,5975662,131644,Cladorhizidae,"Dendy, 1922",accepted,NA,Family,131644,Cladorhizidae,"Dendy, 1922",131599,Animalia,Porifera,Demospongiae,Poecilosclerida,NA,1,0,0,0,0,exact
+Halichondria okadai,Halichondriidae,395419,131633,Halichondriidae,"Gray, 1867",accepted,NA,Family,131633,Halichondriidae,"Gray, 1867",845509,Animalia,Porifera,Demospongiae,Suberitida,NA,1,0,0,0,0,exact
+Chordodes morgani,Chordodidae,998436,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Stichopathes lutkeni,Antipathidae,1057618,103301,Antipathidae,"Ehrenberg, 1834",accepted,NA,Family,103301,Antipathidae,"Ehrenberg, 1834",22549,Animalia,Cnidaria,Anthozoa,Antipatharia,NA,1,NA,NA,NA,NA,exact
+Pseudosiderastrea tayami,Siderastreidae,7507399,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Scleronephthya gracillimum,Nephtheidae,338807,146762,Nephtheidae,"Gray, 1862",accepted,NA,Family,146762,Nephtheidae,"Gray, 1862",411555,Animalia,Cnidaria,Anthozoa,Alcyonacea,NA,1,NA,NA,NA,NA,exact
+Paragordius amicus,Gordiidae,7076917,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Macracanthorhynchus hirudinaceus,Oligacanthorhynchidae,567375,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oncicola luehei,Oligacanthorhynchidae,974045,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Centrorhynchus aluconis,Centrorhynchidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Plagiorhynchus transversus,Plagiorhynchidae,5972645,20380,Plagiorhynchidae,"Golvan, 1960",accepted,NA,Family,20380,Plagiorhynchidae,"Golvan, 1960",20306,Animalia,Acanthocephala,Palaeacanthocephala,Polymorphida,NA,1,NA,1,1,NA,exact
+Polyacanthorhynchus caballeroi,Polyacanthorhynchidae,1079974,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prosadenoporus spectaculum,Prosorhochmidae,5476482,122328,Prosorhochmidae,"Bürger, 1895",accepted,NA,Family,122328,Prosorhochmidae,"Bürger, 1895",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,1,0,0,0,exact
+Ptilocaulis walpersi,Axinellidae,928144,131629,Axinellidae,"Carter, 1875",accepted,NA,Family,131629,Axinellidae,"Carter, 1875",163084,Animalia,Porifera,Demospongiae,Axinellida,NA,1,0,0,0,0,exact
+Limnias ceratophylli,Flosculariidae,2942165,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Limnias melicerta,Flosculariidae,2942157,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pallisentis celatus,Quadrigyridae,751490,20302,Quadrigyridae,"Van Cleave, 1920",accepted,NA,Family,20302,Quadrigyridae,"Van Cleave, 1920",20301,Animalia,Acanthocephala,Eoacanthocephala,Gyracanthocephala,NA,1,1,1,NA,NA,exact
+Paratimea duplex,Hemiasterellidae,2839151,131670,Hemiasterellidae,"Lendenfeld, 1889",accepted,NA,Family,131670,Hemiasterellidae,"Lendenfeld, 1889",845507,Animalia,Porifera,Demospongiae,Tethyida,NA,1,0,0,0,0,exact
+Haliclona plakophila,Chalinidae,7509412,131636,Chalinidae,"Gray, 1867",accepted,NA,Family,131636,Chalinidae,"Gray, 1867",131598,Animalia,Porifera,Demospongiae,Haplosclerida,NA,1,0,0,0,0,exact
+Chaetonotus microchaetus,Chaetonotidae,521412,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus sphagnophilus,Chaetonotidae,2844466,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus laroides,Chaetonotidae,520947,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus similis,Chaetonotidae,300138,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus oculifer,Chaetonotidae,2844427,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Dasydytes papaveroi,Dasydytidae,168580,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dasydytes carvalhoae,Dasydytidae,168504,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chaetonotus dispar,Chaetonotidae,2844441,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus daphnes,Chaetonotidae,520721,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus heideri,Chaetonotidae,1046091,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Ototyphlonemertes tsukagoshii,Ototyphlonemertidae,7502655,122327,Ototyphlonemertidae,"Coe, 1940",accepted,NA,Family,122327,Ototyphlonemertidae,"Coe, 1940",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,1,NA,NA,exact
+Ototyphlonemertes nakaoae,Ototyphlonemertidae,7502645,122327,Ototyphlonemertidae,"Coe, 1940",accepted,NA,Family,122327,Ototyphlonemertidae,"Coe, 1940",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,1,NA,NA,exact
+Ototyphlonemertes lei,Ototyphlonemertidae,7502643,122327,Ototyphlonemertidae,"Coe, 1940",accepted,NA,Family,122327,Ototyphlonemertidae,"Coe, 1940",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,1,NA,NA,exact
+Ototyphlonemertes norenburgi,Ototyphlonemertidae,7502646,122327,Ototyphlonemertidae,"Coe, 1940",accepted,NA,Family,122327,Ototyphlonemertidae,"Coe, 1940",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,1,NA,NA,exact
+Ototyphlonemertes envalli,Ototyphlonemertidae,7502642,122327,Ototyphlonemertidae,"Coe, 1940",accepted,NA,Family,122327,Ototyphlonemertidae,"Coe, 1940",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,1,NA,NA,exact
+Lissodendoryx hawaiiana,Coelosphaeridae,7509514,131650,Coelosphaeridae,"Dendy, 1922",accepted,NA,Family,131650,Coelosphaeridae,"Dendy, 1922",131599,Animalia,Porifera,Demospongiae,Poecilosclerida,NA,1,0,0,0,0,exact
+Eothinia elongata,Notommatidae,460955,134923,Notommatidae,"Hudson & Gosse, 1886",accepted,NA,Family,134923,Notommatidae,"Hudson & Gosse, 1886",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,1,1,1,0,exact
+Chaetonotus jaceki,Chaetonotidae,7491496,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus subtilis,Chaetonotidae,7491507,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus borealis,Chaetonotidae,7491491,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Chaetonotus bombardus,Chaetonotidae,7491490,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Mesobiotus ethiopicus,Macrobiotidae,7485705,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mesobiotus romani,Macrobiotidae,7485739,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Micrura sp. albocephala,Lineidae,7502835,122314,Lineidae,NA,accepted,NA,Family,122314,Lineidae,NA,122305,Animalia,Nemertea,Pilidiophora,Heteronemertea,NA,1,1,1,1,NA,exact
+Beauchampia crucigera,Flosculariidae,2942150,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dissotrocha macrostyla,Philodinidae,621248,134913,Philodinidae,"Ehrenberg, 1838",accepted,NA,Family,134913,Philodinidae,"Ehrenberg, 1838",17968,Animalia,Rotifera,Eurotatoria,NA,NA,1,1,1,1,NA,exact
+Conochiloides,Conochilidae,NULL,134915,Conochilidae,NA,accepted,NA,Family,134915,Conochilidae,NA,17931,Animalia,Rotifera,Eurotatoria,Flosculariaceae,NA,1,NA,1,NA,NA,exact
+Chordodes,Chordodidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gordionus alpestris,Parachordodidae,363642,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gordionus wolterstorffii,Parachordodidae,298886,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nipponnemertes pulchra,Cratenemertidae,604573,122325,Cratenemertidae,"Friedrich, 1968",accepted,NA,Family,122325,Cratenemertidae,"Friedrich, 1968",568090,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,NA,NA,NA,exact
+Nipponemertes,Cratenemertidae,NULL,122325,Cratenemertidae,"Friedrich, 1968",accepted,NA,Family,122325,Cratenemertidae,"Friedrich, 1968",568090,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,NA,NA,NA,NA,exact
+Paramacrobiotus spatialis,Macrobiotidae,7485767,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paramacrobiotus depressus,Macrobiotidae,7485751,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paramacrobiotus celsus,Macrobiotidae,7485749,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paramacrobiotus arduus,Macrobiotidae,7485748,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sphaerirostris picae,Centrorhynchidae,4951605,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Centrorhynchus milvus,Centrorhynchidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepidodermella intermedia,Chaetonotidae,997125,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Lepidodermella minus,Chaetonotidae,997115,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",accepted,NA,Family,114416,Chaetonotidae,"Gosse, 1864 sensu Leasi & Todaro, 2008",154555,Animalia,Gastrotricha,NA,Chaetonotida,NA,1,0,1,0,NA,exact
+Mytilina ventralis,Brachionidae,937969,134918,Brachionidae,"Ehrenberg, 1838",accepted,NA,Family,134918,Brachionidae,"Ehrenberg, 1838",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,1,1,NA,NA,exact
+Lineus fuscoviridis,Lineidae,2931401,122314,Lineidae,NA,accepted,NA,Family,122314,Lineidae,NA,122305,Animalia,Nemertea,Pilidiophora,Heteronemertea,NA,1,1,1,1,NA,exact
+Prosorhochmus belizeanus,Prosorhochmidae,220036,122328,Prosorhochmidae,"Bürger, 1895",accepted,NA,Family,122328,Prosorhochmidae,"Bürger, 1895",568218,Animalia,Nemertea,Hoplonemertea,Monostilifera,NA,1,1,0,0,0,exact
+Embata,Philodinidae,NULL,134913,Philodinidae,"Ehrenberg, 1838",accepted,NA,Family,134913,Philodinidae,"Ehrenberg, 1838",17968,Animalia,Rotifera,Eurotatoria,NA,NA,1,1,1,1,NA,exact
+Eosphora ehrenbergi,Notommatidae,107179,134923,Notommatidae,"Hudson & Gosse, 1886",accepted,NA,Family,134923,Notommatidae,"Hudson & Gosse, 1886",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,1,1,1,0,exact
+Antarctotetilla leptoderma,Tetillidae,6374546,131683,Tetillidae,"Sollas, 1886",accepted,NA,Family,131683,Tetillidae,"Sollas, 1886",131606,Animalia,Porifera,Demospongiae,Tetractinellida,NA,1,0,0,0,NA,exact
+Cyrtonia tuba,Epiphanidae,958183,368564,Epiphanidae,"Harring, 1913",accepted,NA,Family,368564,Epiphanidae,"Harring, 1913",17904,Animalia,Rotifera,Eurotatoria,Ploima,NA,1,NA,1,1,NA,exact
+Heteroscleromorpha,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anthoathecata,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

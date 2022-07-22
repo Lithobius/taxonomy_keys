@@ -1,0 +1,326 @@
+taxa_query,family,ottid_species,aphia_id,scientificname,authority,status,unacceptreason,rank,valid_aphia_id,valid_name,valid_authority,parent_name_usage_id,kingdom,phylum,class,order,genus,is_marine,is_brackish,is_freshwater,is_terrestrial,is_extinct,match_type
+Hippasteria spinosa,Goniasteridae,658153,123135,Goniasteridae,"Forbes, 1841",accepted,NA,Family,123135,Goniasteridae,"Forbes, 1841",123090,Animalia,Echinodermata,Asteroidea,Valvatida,NA,1,0,0,0,0,exact
+Echinostoma hortense,Echinostomatidae,591822,108420,Echinostomatidae,"Looss, 1899",accepted,NA,Family,108420,Echinostomatidae,"Looss, 1899",108404,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Nippostrongylus brasiliensis,Heligmonellidae,369898,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sparganum,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hydatigera taeniaeformis,Taeniidae,635249,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Hymenolepis diminuta,Hymenolepididae,445201,104930,Hymenolepididae,"Ariola, 1899",accepted,NA,Family,104930,Hymenolepididae,"Ariola, 1899",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,1,NA,exact
+Leptasterias alaskensis,Asteriidae,553142,123121,Asteriidae,"Gray, 1840",accepted,NA,Family,123121,Asteriidae,"Gray, 1840",123086,Animalia,Echinodermata,Asteroidea,Forcipulatida,NA,1,0,0,0,0,exact
+Leptasterias leptodoma,Asteriidae,553152,123121,Asteriidae,"Gray, 1840",accepted,NA,Family,123121,Asteriidae,"Gray, 1840",123086,Animalia,Echinodermata,Asteroidea,Forcipulatida,NA,1,0,0,0,0,exact
+Leptasterias camtschatica,Asteriidae,553137,123121,Asteriidae,"Gray, 1840",accepted,NA,Family,123121,Asteriidae,"Gray, 1840",123086,Animalia,Echinodermata,Asteroidea,Forcipulatida,NA,1,0,0,0,0,exact
+Echinaster paucispinus,Echinasteridae,3656052,123132,Echinasteridae,"Verrill, 1867",accepted,NA,Family,123132,Echinasteridae,"Verrill, 1867",123089,Animalia,Echinodermata,Asteroidea,Spinulosida,NA,1,0,0,0,0,exact
+Echinococcus canadensis,Taeniidae,787335,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Heliaster helianthoides,Heliasteridae,781477,255069,Heliasteridae,"Viguier, 1879",accepted,NA,Family,255069,Heliasteridae,"Viguier, 1879",123086,Animalia,Echinodermata,Asteroidea,Forcipulatida,NA,1,0,0,0,0,exact
+Anatrichosoma haycocki,Anatrichosomatidae,14737,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Capillaria gastrica,Capillariidae,722814,834681,Capillariidae,"Railliet, 1915",accepted,NA,Family,834681,Capillariidae,"Railliet, 1915",22845,Animalia,Nematoda,Enoplea,Trichinellida,NA,1,1,1,1,NA,exact
+Paradeontacylix ibericus,Aporocotylidae,39663,414763,Aporocotylidae,"Odhner, 1912",accepted,NA,Family,414763,Aporocotylidae,"Odhner, 1912",108419,Animalia,Platyhelminthes,Trematoda,Diplostomida,NA,1,1,1,1,NA,exact
+Paradeontacylix balearicus,Aporocotylidae,39680,414763,Aporocotylidae,"Odhner, 1912",accepted,NA,Family,414763,Aporocotylidae,"Odhner, 1912",108419,Animalia,Platyhelminthes,Trematoda,Diplostomida,NA,1,1,1,1,NA,exact
+Diphyllobothrium nihonkaiense,Diphyllobothriidae,532092,104937,Diphyllobothriidae,"Lühe, 1910",accepted,NA,Family,104937,Diphyllobothriidae,"Lühe, 1910",515793,Animalia,Platyhelminthes,Cestoda,Diphyllobothriidea,NA,1,1,1,1,NA,exact
+Schistosomatium douthitti,Schistosomatidae,356821,108478,Schistosomatidae,"Stiles & Hassall, 1898",accepted,NA,Family,108478,Schistosomatidae,"Stiles & Hassall, 1898",108419,Animalia,Platyhelminthes,Trematoda,Diplostomida,NA,1,1,1,1,NA,exact
+Rauschoides alternata,Anoplocephalidae,920136,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paranoplocephala,Anoplocephalidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paranoplocephala omphalodes,Anoplocephalidae,920140,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lytechinus anamesus,Toxopneustidae,469434,123179,Toxopneustidae,"Troschel, 1872",accepted,NA,Family,123179,Toxopneustidae,"Troschel, 1872",510604,Animalia,Echinodermata,Echinoidea,Camarodonta,NA,1,0,0,0,0,exact
+Andrya cuniculi,Anoplocephalidae,626456,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Andrya rhopalocephala,Anoplocephalidae,437021,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Raillietina australis,Davaineidae,720909,104927,Davaineidae,"Braun, 1900",accepted,NA,Family,104927,Davaineidae,"Braun, 1900",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,NA,NA,exact
+Raillietina beveridgei,Davaineidae,133689,104927,Davaineidae,"Braun, 1900",accepted,NA,Family,104927,Davaineidae,"Braun, 1900",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,NA,NA,exact
+Raillietina mitchelli,Davaineidae,133699,104927,Davaineidae,"Braun, 1900",accepted,NA,Family,104927,Davaineidae,"Braun, 1900",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,NA,NA,exact
+Echinococcus granulosus,Taeniidae,481594,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Anoplocephaloides dentata,Anoplocephalidae,198708,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Microticola blanchardi,Anoplocephalidae,437022,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paranoplocephala etholeni,Anoplocephalidae,244572,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ctenotaenia marmotae,Anoplocephalidae,767662,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anoplocephala perfoliata,Anoplocephalidae,1027175,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anoplocephaloides kontrimavichusi,Anoplocephalidae,767664,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anoplocephaloides lemmi,Anoplocephalidae,767666,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anoplocephala magna,Anoplocephalidae,1027174,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anoplocephaloides variabilis,Anoplocephalidae,294892,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Moniezia,Anoplocephalidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Arctocestus serratus,Anoplocephalidae,626454,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Molpadia arenicola,Molpadiidae,398503,123196,Molpadiidae,"J. Müller, 1850",accepted,NA,Family,123196,Molpadiidae,"J. Müller, 1850",715684,Animalia,Echinodermata,Holothuroidea,Molpadida,NA,1,NA,NA,NA,0,exact
+Holothuria scabra,Holothuriidae,293311,123183,Holothuriidae,"Ludwig, 1894",unaccepted,NA,Family,731943,Holothuriidae,"Burmeister, 1837",1036233,Animalia,Echinodermata,Holothuroidea,Holothuriida,NA,1,NA,NA,NA,NA,exact
+Luidia sarsi,Luidiidae,24895,123129,Luidiidae,"Sladen, 1889",accepted,NA,Family,123129,Luidiidae,"Sladen, 1889",123088,Animalia,Echinodermata,Asteroidea,Paxillosida,NA,1,0,0,0,0,exact
+Leptasterias muelleri,Asteriidae,960218,123121,Asteriidae,"Gray, 1840",accepted,NA,Family,123121,Asteriidae,"Gray, 1840",123086,Animalia,Echinodermata,Asteroidea,Forcipulatida,NA,1,0,0,0,0,exact
+Trichostrongylus retortaeformis,Trichostrongylidae,64527,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Amphioplus daleus,Amphiuridae,3654163,123206,Amphiuridae,"Ljungman, 1867",accepted,NA,Family,123206,Amphiuridae,"Ljungman, 1867",1077097,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,0,exact
+Turbellaria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neolobocriconema serratum,Criconematidae,490570,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gracilacus,Tylenchulidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hemicaloosia,Hemicycliophoridae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tylenchocriconema alleni,Tylenchulidae,261837,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ophioderma panamensis,Ophiodermatidae,3654767,123197,Ophiodermatidae,"Ljungman, 1867",accepted,NA,Family,123197,Ophiodermatidae,"Ljungman, 1867",1062664,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,NA,1,0,0,0,NA,exact
+Arostrilepis horrida,Hymenolepididae,857657,104930,Hymenolepididae,"Ariola, 1899",accepted,NA,Family,104930,Hymenolepididae,"Ariola, 1899",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,1,NA,exact
+Ophiocten dubium,Ophiuridae,3654741,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura lymani,Ophiuridae,3654616,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Nearchaster aciculosus,Benthopectinidae,300728,123126,Benthopectinidae,"Verrill, 1899",accepted,NA,Family,123126,Benthopectinidae,"Verrill, 1899",123087,Animalia,Echinodermata,Asteroidea,Notomyotida,NA,1,0,0,0,0,exact
+Ophiomusium glabrum,Ophiolepididae,875656,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",accepted,NA,Family,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",1075319,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Cucumaria lubrica,Cucumariidae,213561,123187,Cucumariidae,"Ludwig, 1894",accepted,NA,Family,123187,Cucumariidae,"Ludwig, 1894",123111,Animalia,Echinodermata,Holothuroidea,Dendrochirotida,NA,1,NA,NA,NA,NA,exact
+Amphiodia urtica,Amphiuridae,3654257,123206,Amphiuridae,"Ljungman, 1867",accepted,NA,Family,123206,Amphiuridae,"Ljungman, 1867",1077097,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,0,exact
+Amphiura magellanica,Amphiuridae,339927,123206,Amphiuridae,"Ljungman, 1867",accepted,NA,Family,123206,Amphiuridae,"Ljungman, 1867",1077097,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,0,exact
+Ophiothrix aristulata,Ophiotrichidae,926179,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Ophiacantha rosea,Ophiacanthidae,914724,123204,Ophiacanthidae,"Ljungman, 1867",accepted,NA,Family,123204,Ophiacanthidae,"Ljungman, 1867",1062663,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,NA,1,NA,NA,NA,0,exact
+Echinoida,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Astropecten phragmorus,Astropectinidae,914731,123127,Astropectinidae,"Gray, 1840",accepted,NA,Family,123127,Astropectinidae,"Gray, 1840",123088,Animalia,Echinodermata,Asteroidea,Paxillosida,NA,1,0,0,0,0,exact
+Ophiothela danae,Ophiotrichidae,3654474,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Mellita grantii,Mellitidae,3651013,158063,Mellitidae,"Stefanini, 1912",accepted,NA,Family,158063,Mellitidae,"Stefanini, 1912",852321,Animalia,Echinodermata,Echinoidea,Echinolampadacea,NA,1,0,0,0,0,exact
+Mellita longifissa,Mellitidae,3651345,158063,Mellitidae,"Stefanini, 1912",accepted,NA,Family,158063,Mellitidae,"Stefanini, 1912",852321,Animalia,Echinodermata,Echinoidea,Echinolampadacea,NA,1,0,0,0,0,exact
+Asteroporpa indicus,Gorgonocephalidae,3655692,123203,Gorgonocephalidae,"Ljungman, 1867",accepted,NA,Family,123203,Gorgonocephalidae,"Ljungman, 1867",242196,Animalia,Echinodermata,Ophiuroidea,Euryalida,NA,1,0,0,0,0,exact
+Ophiernus adspersus,Ophiuridae,5506077,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophionereis dubia,Ophionereidae,5506097,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ophiothrix ciliaris,Ophiotrichidae,3654348,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Ophiothrix purpurea,Ophiotrichidae,3654376,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Ophiothrix vitrea,Ophiotrichidae,3654378,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Ophiura stellata,Ophiuridae,3654660,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura jejuna,Ophiuridae,3654607,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura platyacantha,Ophiuridae,3654669,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiosphalma fimbriatum,Ophiolepididae,3654917,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",accepted,NA,Family,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",1075319,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Ophiocoma pusilla,Ophiocomidae,3653676,152490,Ophiocomidae,"Ljungman, 1867",accepted,NA,Family,152490,Ophiocomidae,"Ljungman, 1867",1075318,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,NA,1,NA,NA,NA,NA,exact
+Amphiura velox,Amphiuridae,3653978,123206,Amphiuridae,"Ljungman, 1867",accepted,NA,Family,123206,Amphiuridae,"Ljungman, 1867",1077097,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,0,exact
+Ophiomitrella conferta,Ophiacanthidae,3655252,123204,Ophiacanthidae,"Ljungman, 1867",accepted,NA,Family,123204,Ophiacanthidae,"Ljungman, 1867",1062663,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,NA,1,NA,NA,NA,0,exact
+Ophionereis terba,Ophionereidae,758349,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ophiura irrorata,Ophiuridae,5506073,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Parandrya feodorovi,Anoplocephalidae,52638,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paranoplocephala jarrelli,Anoplocephalidae,330661,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anoplocephaloides,Anoplocephalidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Euryhaliotrema grandis,Ancyrocephalidae,707679,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Opisthorchis viverrini,Opisthorchiidae,974593,108442,Opisthorchiidae,"Looss, 1899",accepted,NA,Family,108442,Opisthorchiidae,"Looss, 1899",108410,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Dracunculus insignis,Dracunculidae,309967,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rostellascaris,Ascarididae,NA,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Holothuria leucospilota,Holothuriidae,400706,123183,Holothuriidae,"Ludwig, 1894",unaccepted,NA,Family,731943,Holothuriidae,"Burmeister, 1837",1036233,Animalia,Echinodermata,Holothuroidea,Holothuriida,NA,1,NA,NA,NA,NA,exact
+Ophioderma longicauda,Ophiodermatidae,893175,123197,Ophiodermatidae,"Ljungman, 1867",accepted,NA,Family,123197,Ophiodermatidae,"Ljungman, 1867",1062664,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,NA,1,0,0,0,NA,exact
+Contracaecum rudolphiiE,Anisakidae,5691238,19961,Anisakidae,"Railliet & Henry, 1912",accepted,NA,Family,19961,Anisakidae,"Railliet & Henry, 1912",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,1,1,1,NA,exact
+Enterobius vermicularis,Oxyuridae,332069,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pongobius hugoti,Oxyuridae,1092657,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ophiothrix trilineata,Ophiotrichidae,608030,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Stichopus hermanni,Stichopodidae,269098,123184,Stichopodidae,"Haeckel, 1896",accepted,NA,Family,123184,Stichopodidae,"Haeckel, 1896",1036229,Animalia,Echinodermata,Holothuroidea,Synallactida,NA,1,NA,NA,NA,NA,exact
+Lamprometra palmata,Mariametridae,451017,196175,Mariametridae,"AH Clark, 1909",accepted,NA,Family,196175,Mariametridae,"AH Clark, 1909",828452,Animalia,Echinodermata,Crinoidea,Comatulida,NA,1,0,0,0,NA,exact
+Parahyocrinus biscoitoi,Hyocrinidae,7671775,123155,Hyocrinidae,"Carpenter, 1884",accepted,NA,Family,123155,Hyocrinidae,"Carpenter, 1884",246674,Animalia,Echinodermata,Crinoidea,Hyocrinida,NA,1,0,0,0,0,exact
+Asteroporpa muricatopatella,Gorgonocephalidae,978339,123203,Gorgonocephalidae,"Ljungman, 1867",accepted,NA,Family,123203,Gorgonocephalidae,"Ljungman, 1867",242196,Animalia,Echinodermata,Ophiuroidea,Euryalida,NA,1,0,0,0,0,exact
+Asteroporpa hadracantha,Gorgonocephalidae,498982,123203,Gorgonocephalidae,"Ljungman, 1867",accepted,NA,Family,123203,Gorgonocephalidae,"Ljungman, 1867",242196,Animalia,Echinodermata,Ophiuroidea,Euryalida,NA,1,0,0,0,0,exact
+Astrodendrum,Gorgonocephalidae,NA,123203,Gorgonocephalidae,"Ljungman, 1867",accepted,NA,Family,123203,Gorgonocephalidae,"Ljungman, 1867",242196,Animalia,Echinodermata,Ophiuroidea,Euryalida,NA,1,0,0,0,0,exact
+Asteroporpa reticulata,Gorgonocephalidae,268472,123203,Gorgonocephalidae,"Ljungman, 1867",accepted,NA,Family,123203,Gorgonocephalidae,"Ljungman, 1867",242196,Animalia,Echinodermata,Ophiuroidea,Euryalida,NA,1,0,0,0,0,exact
+Comatula pectinata,Comatulidae,3647529,828512,Comatulidae,"Fleming, 1828",accepted,NA,Family,828512,Comatulidae,"Fleming, 1828",828511,Animalia,Echinodermata,Crinoidea,Comatulida,NA,1,0,0,0,NA,exact
+Comatula rotalaria,Comatulidae,3647555,828512,Comatulidae,"Fleming, 1828",accepted,NA,Family,828512,Comatulidae,"Fleming, 1828",828511,Animalia,Echinodermata,Crinoidea,Comatulida,NA,1,0,0,0,NA,exact
+Comatula solaris,Comatulidae,3647544,828512,Comatulidae,"Fleming, 1828",accepted,NA,Family,828512,Comatulidae,"Fleming, 1828",828511,Animalia,Echinodermata,Crinoidea,Comatulida,NA,1,0,0,0,NA,exact
+Gephyrocrinus messingi,Hyocrinidae,5694417,123155,Hyocrinidae,"Carpenter, 1884",accepted,NA,Family,123155,Hyocrinidae,"Carpenter, 1884",246674,Animalia,Echinodermata,Crinoidea,Hyocrinida,NA,1,0,0,0,0,exact
+Ophiacantha vivipara,Ophiacanthidae,3655133,123204,Ophiacanthidae,"Ljungman, 1867",accepted,NA,Family,123204,Ophiacanthidae,"Ljungman, 1867",1062663,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,NA,1,NA,NA,NA,0,exact
+Ophiactis definita,Ophiactidae,3653788,123207,Ophiactidae,"Matsumoto, 1915",accepted,NA,Family,123207,Ophiactidae,"Matsumoto, 1915",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Ophiocoma wendtii,Ophiocomidae,669482,152490,Ophiocomidae,"Ljungman, 1867",accepted,NA,Family,152490,Ophiocomidae,"Ljungman, 1867",1075318,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,NA,1,NA,NA,NA,NA,exact
+Ophiothrix accedens,Ophiotrichidae,3654344,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Allocentrotus fragilis,Strongylocentrotidae,26831,123161,Strongylocentrotidae,"Gregory, 1900",accepted,NA,Family,123161,Strongylocentrotidae,"Gregory, 1900",510604,Animalia,Echinodermata,Echinoidea,Camarodonta,NA,1,0,0,0,0,exact
+Clarkcomanthus comanthipinnus,Comatulidae,325739,828512,Comatulidae,"Fleming, 1828",accepted,NA,Family,828512,Comatulidae,"Fleming, 1828",828511,Animalia,Echinodermata,Crinoidea,Comatulida,NA,1,0,0,0,NA,exact
+Echinaster sepositus,Echinasteridae,893169,123132,Echinasteridae,"Verrill, 1867",accepted,NA,Family,123132,Echinasteridae,"Verrill, 1867",123089,Animalia,Echinodermata,Asteroidea,Spinulosida,NA,1,0,0,0,0,exact
+Encope wetmorei,Mellitidae,3651156,158063,Mellitidae,"Stefanini, 1912",accepted,NA,Family,158063,Mellitidae,"Stefanini, 1912",852321,Animalia,Echinodermata,Echinoidea,Echinolampadacea,NA,1,0,0,0,0,exact
+Encope laevis,Mellitidae,3651154,158063,Mellitidae,"Stefanini, 1912",accepted,NA,Family,158063,Mellitidae,"Stefanini, 1912",852321,Animalia,Echinodermata,Echinoidea,Echinolampadacea,NA,1,0,0,0,0,exact
+Encope perspectiva,Mellitidae,3651073,158063,Mellitidae,"Stefanini, 1912",accepted,NA,Family,158063,Mellitidae,"Stefanini, 1912",852321,Animalia,Echinodermata,Echinoidea,Echinolampadacea,NA,1,0,0,0,0,exact
+Henricia regularis,Echinasteridae,6160513,123132,Echinasteridae,"Verrill, 1867",accepted,NA,Family,123132,Echinasteridae,"Verrill, 1867",123089,Animalia,Echinodermata,Asteroidea,Spinulosida,NA,1,0,0,0,0,exact
+Heterocentrotus mammillatus,Echinometridae,312571,179653,Echinometridae,"Gray, 1855",accepted,NA,Family,179653,Echinometridae,"Gray, 1855",510604,Animalia,Echinodermata,Echinoidea,Camarodonta,NA,1,0,0,0,0,exact
+Holothuria atra,Holothuriidae,920160,123183,Holothuriidae,"Ludwig, 1894",unaccepted,NA,Family,731943,Holothuriidae,"Burmeister, 1837",1036233,Animalia,Echinodermata,Holothuroidea,Holothuriida,NA,1,NA,NA,NA,NA,exact
+Holothuria forskali,Holothuriidae,187783,123183,Holothuriidae,"Ludwig, 1894",unaccepted,NA,Family,731943,Holothuriidae,"Burmeister, 1837",1036233,Animalia,Echinodermata,Holothuroidea,Holothuriida,NA,1,NA,NA,NA,NA,exact
+Holothuria tubulosa,Holothuriidae,47180,123183,Holothuriidae,"Ludwig, 1894",unaccepted,NA,Family,731943,Holothuriidae,"Burmeister, 1837",1036233,Animalia,Echinodermata,Holothuroidea,Holothuriida,NA,1,NA,NA,NA,NA,exact
+Ophioceres incipiens,Ophiolepididae,3654983,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",accepted,NA,Family,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",1075319,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Angiostrongylus cantonensis,Angiostrongylidae,516791,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ascaridia galli,Ascaridiidae,22276,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Necator americanus,Ancylostomatidae,856981,834871,Ancylostomatidae,"Looss, 1905",accepted,NA,Family,834871,Ancylostomatidae,"Looss, 1905",834868,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Ophiura ctenophora,Ophiuridae,3654641,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura ambigua,Ophiuridae,3654630,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura ossiculata,Ophiuridae,3654692,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura meridionalis,Ophiuridae,5926340,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura clemens,Ophiuridae,3654635,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura kinbergi,Ophiuridae,3654634,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiura spinicantha,Ophiuridae,3654664,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Astriclypeus manni,Astriclypeidae,3651283,196259,Astriclypeidae,"Stefanini, 1912",accepted,NA,Family,196259,Astriclypeidae,"Stefanini, 1912",852321,Animalia,Echinodermata,Echinoidea,Echinolampadacea,NA,1,0,0,0,0,exact
+Spirocerca,Thelaziidae,NA,159669,Thelaziidae,"Skrjabin, 1915",accepted,NA,Family,159669,Thelaziidae,"Skrjabin, 1915",834793,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,NA,NA,exact
+Strongylus equinus,Strongylidae,510293,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chandlerella quiscali,Onchocercidae,157404,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Onchocerca volvulus,Onchocercidae,819809,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Agamermis,Mermithidae,NA,391379,Mermithidae,"Braun, 1883",accepted,NA,Family,391379,Mermithidae,"Braun, 1883",458805,Animalia,Nematoda,Enoplea,Mermithida,NA,1,NA,1,1,NA,exact
+Thaumamermis cosgrovei,Mermithidae,1042825,391379,Mermithidae,"Braun, 1883",accepted,NA,Family,391379,Mermithidae,"Braun, 1883",458805,Animalia,Nematoda,Enoplea,Mermithida,NA,1,NA,1,1,NA,exact
+Echinaster brasiliensis,Echinasteridae,3656042,123132,Echinasteridae,"Verrill, 1867",accepted,NA,Family,123132,Echinasteridae,"Verrill, 1867",123089,Animalia,Echinodermata,Asteroidea,Spinulosida,NA,1,0,0,0,0,exact
+Nacospatangus alta,Maretiidae,3650016,510781,Maretiidae,"Lambert, 1905",accepted,NA,Family,510781,Maretiidae,"Lambert, 1905",852322,Animalia,Echinodermata,Echinoidea,Spatangoida,NA,1,0,0,0,0,exact
+Parastichopus nigripunctatus,Stichopodidae,157338,123184,Stichopodidae,"Haeckel, 1896",accepted,NA,Family,123184,Stichopodidae,"Haeckel, 1896",1036229,Animalia,Echinodermata,Holothuroidea,Synallactida,NA,1,NA,NA,NA,NA,exact
+Moniezia benedeni,Anoplocephalidae,1027169,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Moniezia expansa,Anoplocephalidae,416825,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Drepanidotaenia lanceolata,Hymenolepididae,5137224,104930,Hymenolepididae,"Ariola, 1899",accepted,NA,Family,104930,Hymenolepididae,"Ariola, 1899",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,1,NA,exact
+Pseudanoplocephala crawfordi,Hymenolepididae,5137360,104930,Hymenolepididae,"Ariola, 1899",accepted,NA,Family,104930,Hymenolepididae,"Ariola, 1899",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,1,NA,exact
+Cladotaenia vulturi,Paruterinidae,7503089,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Echinococcus multilocularis,Taeniidae,481593,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Echinococcus shiquicus,Taeniidae,317505,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Echinococcus oligarthrus,Taeniidae,445207,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Echinococcus vogeli,Taeniidae,445206,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Echinococcus ortleppi,Taeniidae,648119,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Echinococcus equinus,Taeniidae,787330,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Echinococcus felidis,Taeniidae,786284,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Hydatigera parva,Taeniidae,386447,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Hydatigera krepkogorski,Taeniidae,4712513,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Versteria mustelae,Taeniidae,386446,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Diplogonoporus balaenopterae,Diphyllobothriidae,425216,104937,Diphyllobothriidae,"Lühe, 1910",accepted,NA,Family,104937,Diphyllobothriidae,"Lühe, 1910",515793,Animalia,Platyhelminthes,Cestoda,Diphyllobothriidea,NA,1,1,1,1,NA,exact
+Diplogonoporus grandis,Diphyllobothriidae,267473,104937,Diphyllobothriidae,"Lühe, 1910",accepted,NA,Family,104937,Diphyllobothriidae,"Lühe, 1910",515793,Animalia,Platyhelminthes,Cestoda,Diphyllobothriidea,NA,1,1,1,1,NA,exact
+Tetrancistrum nebulosi,Ancyrocephalidae,94702,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Homalogaster paloniae,Gastrodiscidae,291466,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fascioloides magna,Fasciolidae,844171,108421,Fasciolidae,"Railliet, 1895",accepted,NA,Family,108421,Fasciolidae,"Railliet, 1895",108404,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,0,1,1,1,NA,exact
+Fasciolopsis buski,Fasciolidae,664924,108421,Fasciolidae,"Railliet, 1895",accepted,NA,Family,108421,Fasciolidae,"Railliet, 1895",108404,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,0,1,1,1,NA,exact
+Fischoederius elongatus,Gastrothylacidae,420304,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fischoederius cobboldi,Gastrothylacidae,420307,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gastrothylax crumenifer,Gastrothylacidae,607356,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Calicophoron microbothrioides,Paramphistomidae,416758,238054,Paramphistomidae,"Fischoeder, 1901",accepted,NA,Family,238054,Paramphistomidae,"Fischoeder, 1901",108406,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,NA,NA,NA,0,exact
+Explanatum explanatum,Paramphistomidae,966415,238054,Paramphistomidae,"Fischoeder, 1901",accepted,NA,Family,238054,Paramphistomidae,"Fischoeder, 1901",108406,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,NA,NA,NA,0,exact
+Orthocoelium streptocoelium,Paramphistomidae,291471,238054,Paramphistomidae,"Fischoeder, 1901",accepted,NA,Family,238054,Paramphistomidae,"Fischoeder, 1901",108406,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,NA,NA,NA,0,exact
+Paramphistomum cervi,Paramphistomidae,8416,238054,Paramphistomidae,"Fischoeder, 1901",accepted,NA,Family,238054,Paramphistomidae,"Fischoeder, 1901",108406,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,NA,NA,NA,0,exact
+Ogmocotyle sikae,Notocotylidae,219556,108427,Notocotylidae,"Lühe, 1909",accepted,NA,Family,108427,Notocotylidae,"Lühe, 1909",468953,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Paragonimus westermani,Troglotrematidae,1040289,468969,Troglotrematidae,"Odhner, 1914",accepted,NA,Family,468969,Troglotrematidae,"Odhner, 1914",1578386,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,NA,1,1,NA,exact
+Paragonimus ohirai,Troglotrematidae,581956,468969,Troglotrematidae,"Odhner, 1914",accepted,NA,Family,468969,Troglotrematidae,"Odhner, 1914",1578386,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,NA,1,1,NA,exact
+Dicrocoelium chinensis,Dicrocoeliidae,727490,108469,Dicrocoeliidae,"Looss, 1899",accepted,NA,Family,108469,Dicrocoeliidae,"Looss, 1899",468959,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Dicrocoelium dendriticum,Dicrocoeliidae,509051,108469,Dicrocoeliidae,"Looss, 1899",accepted,NA,Family,108469,Dicrocoeliidae,"Looss, 1899",468959,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Koerneria sudhausi,Neodiplogasteridae,1081057,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dictyocaulus,Dictyocaulidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strongyloides fuelleborni,Strongyloididae,15567,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicocyclus,Strongylidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Onchocerca flexuosa,Onchocercidae,415708,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Haemonchus placei,Haemonchidae,245095,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Baylisascaris transfuga,Ascarididae,870354,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Mecistocirrus digitatus,Haemonchidae,331931,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Baylisascaris ailuri,Ascarididae,1016749,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Baylisascaris schroederi,Ascarididae,1016861,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Strongyloides stercoralis,Strongyloididae,920941,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Onchocerca ochengi,Onchocercidae,462292,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Dirofilaria repens,Onchocercidae,232965,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Baylisascaris procyonis,Ascarididae,345755,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Dracunculus medinensis,Dracunculidae,560721,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicocyclus nassatus,Strongylidae,727018,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mansonella ozzardi,Onchocercidae,1020921,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Bunostomum trigonocephalum,Ancylostomatidae,514762,834871,Ancylostomatidae,"Looss, 1905",accepted,NA,Family,834871,Ancylostomatidae,"Looss, 1905",834868,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Perostrongylus falciformis,Filaroididae,3587396,153291,Filaroididae,"Schulz, 1951",accepted,NA,Family,153291,Filaroididae,"Schulz, 1951",834868,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Cyathostomum catinatum,Strongylidae,107823,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicostephanus minutus,Strongylidae,536800,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Poteriostomum imparidentatum,Strongylidae,270014,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Baylisascaris columnaris,Ascarididae,197556,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Parastrongyloides trichosuri,Strongyloididae,826361,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strongyloides papillosus,Strongyloididae,588802,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strongyloides ratti,Strongyloididae,1040287,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strongyloides venezuelensis,Strongyloididae,780467,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhabditophanes,Alloionematidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oesophagostomum bifurcum,Chabertiidae,634245,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oesophagostomum stephanostomum,Chabertiidae,936903,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oesophagostomum aculeatum,Chabertiidae,217981,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Necator,Corticiaceae,NA,147623,Corticiaceae,"Herter, 1910",accepted,NA,Family,147623,Corticiaceae,"Herter, 1910",177229,Fungi,Basidiomycota,Agaricomycetes,Polyporales,NA,1,NA,NA,1,NA,exact
+Angiostrongylus vasorum,Angiostrongylidae,569850,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Meteterakis japonica,Heterakidae,4995798,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Neorhabditostomum yeni,Chabertiidae,4994329,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aelurostrongylus abstrusus,Angiostrongylidae,569857,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mammomonogamus,Syngamidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Syngamus,Syngamidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Mammomonogamus ierei,Syngamidae,7075767,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Criconema silvum,Criconematidae,4999309,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metastrongylus salmi,Metastrongylidae,223960,834873,Metastrongylidae,"Molin, 1861",accepted,NA,Family,834873,Metastrongylidae,"Molin, 1861",834868,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Marshallagia marshalli,Haemonchidae,776342,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rotylenchus uniformis,Hoplolaimidae,7075372,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicocyclus radiatus,Strongylidae,67558,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Syphacia obvelata,Oxyuridae,1092418,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Spirocerca vulpis,Thelaziidae,7074197,159669,Thelaziidae,"Skrjabin, 1915",accepted,NA,Family,159669,Thelaziidae,"Skrjabin, 1915",834793,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,NA,NA,exact
+Spirocerca lupi,Thelaziidae,482199,159669,Thelaziidae,"Skrjabin, 1915",accepted,NA,Family,159669,Thelaziidae,"Skrjabin, 1915",834793,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,NA,NA,exact
+Angiostrongylus costaricensis,Angiostrongylidae,575729,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acanthocheilonema viteae,Onchocercidae,295364,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Brugia pahangi,Onchocercidae,510894,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Cylicostephanus goldi,Strongylidae,536802,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Brugia timori,Onchocercidae,462290,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Heligmosomoides polygyrus,Heligmosomatidae,567353,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Litomosoides sigmodontis,Onchocercidae,549976,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Oesophagostomum dentatum,Chabertiidae,466069,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Parascaris equorum,Ascarididae,345765,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Syphacia muris,Oxyuridae,332024,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strongylus vulgaris,Strongylidae,585543,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Teladorsagia circumcincta,Haemonchidae,428054,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Thelazia callipaeda,Thelaziidae,195809,159669,Thelaziidae,"Skrjabin, 1915",accepted,NA,Family,159669,Thelaziidae,"Skrjabin, 1915",834793,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,NA,NA,exact
+Wuchereria bancrofti,Onchocercidae,245091,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Cooperia oncophora,Cooperiidae,970617,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hexamermis agrotis,Mermithidae,813014,391379,Mermithidae,"Braun, 1883",accepted,NA,Family,391379,Mermithidae,"Braun, 1883",458805,Animalia,Nematoda,Enoplea,Mermithida,NA,1,NA,1,1,NA,exact
+Protostrongylus rufescens,Protostrongylidae,569852,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemonchus,Haemonchidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bunostomum phlebotomum,Ancylostomatidae,492886,834871,Ancylostomatidae,"Looss, 1905",accepted,NA,Family,834871,Ancylostomatidae,"Looss, 1905",834868,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Trichostrongylus vitrinus,Trichostrongylidae,64530,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicocyclus insigne,Strongylidae,67559,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Metastrongylus pudendotectus,Metastrongylidae,223959,834873,Metastrongylidae,"Molin, 1861",accepted,NA,Family,834873,Metastrongylidae,"Molin, 1861",834868,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Syngamus trachea,Syngamidae,1017666,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Trichostrongylus axei,Trichostrongylidae,585545,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Setaria digitata,Setariidae,376707,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Loa loa,Onchocercidae,555803,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Oswaldocruzia,Molineidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nematodirus,Molineidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Marshallagia,Haemonchidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Onchocerca,Onchocercidae,NA,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Oesophagostomum quadrispinulatum,Chabertiidae,466067,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Wellcomia siamensis,Oxyuridae,147363,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Brugia,Onchocercidae,NA,22876,Onchocercidae,"Leiper, 1911",accepted,NA,Family,22876,Onchocercidae,"Leiper, 1911",22875,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Ascaridia columbae,Ascaridiidae,63212,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eurytrema pancreaticum,Dicrocoeliidae,612119,108469,Dicrocoeliidae,"Looss, 1899",accepted,NA,Family,108469,Dicrocoeliidae,"Looss, 1899",468959,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Hypodontus macropi,Chabertiidae,585537,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Macropicola ocydromi,Chabertiidae,4994097,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oesophagostomum asperum,Chabertiidae,154318,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oesophagostomum columbianum,Chabertiidae,982799,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Parascaris univalens,Ascarididae,345764,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Triodontophorus brevicauda,Strongylidae,183733,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nematodirus oiratianus,Molineidae,517095,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nematodirus spathiger,Molineidae,299823,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhigonema thysanophora,Rhigonematidae,565326,834784,Rhigonematidae,"Artigas, 1930",accepted,NA,Family,834784,Rhigonematidae,"Artigas, 1930",834783,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,1,NA,exact
+Trypanoxyuris microon,Oxyuridae,688012,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Enterobius anthropopitheci,Oxyuridae,412258,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Enterobius macaci,Oxyuridae,416711,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Murshidia linstowi,Strongylidae,830305,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Khalilia sameera,Strongylidae,738675,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Panagrolaimus paetzoldi,Panagrolaimidae,173698,153394,Panagrolaimidae,"Thorne, 1937",accepted,NA,Family,153394,Panagrolaimidae,"Thorne, 1937",458817,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,1,1,1,NA,exact
+Trichotheristus mirabilis,Xyalidae,267148,2190,Xyalidae,"Chitwood, 1951",accepted,NA,Family,2190,Xyalidae,"Chitwood, 1951",458810,Animalia,Nematoda,Chromadorea,Monhysterida,NA,1,1,1,1,NA,exact
+Crenosoma striatum,Crenosomatidae,867752,458827,Crenosomatidae,"Schulz, 1951",accepted,NA,Family,458827,Crenosomatidae,"Schulz, 1951",834868,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,NA,NA,NA,exact
+Heligmosomoides neopolygyrus,Heligmosomatidae,4992991,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Heligmosomoides glareoli,Heligmosomatidae,714570,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Angiostrongylus,Angiostrongylidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rugopharynx zeta,Chabertiidae,4993922,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Angiostrongylus malaysiensis,Angiostrongylidae,28533,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Baylisascaris devosi,Ascarididae,4168102,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Baylisascaris tasmaniensis,Ascarididae,4995841,22862,Ascarididae,"Baird, 1853",accepted,NA,Family,22862,Ascarididae,"Baird, 1853",22816,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,NA,1,1,NA,exact
+Cyathostomum pateratum,Strongylidae,727016,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Triodontophorus nipponicus,Strongylidae,3587519,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Triodontophorus serratus,Strongylidae,270016,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Haemonchus contortus,Haemonchidae,819797,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Strongyloides,Strongyloididae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicostephanus calicatus,Strongylidae,536803,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicostephanus longibursatus,Strongylidae,536801,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicodontophorus bicoronatus,Strongylidae,865060,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Coronocyclus labiatus,Strongylidae,1086347,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Setaria labiatopapillosa,Setariidae,937984,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cylicocyclus auriculatus,Strongylidae,640777,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Schistonchus caprifici,Aphelenchoididae,187753,153179,Aphelenchoididae,"Skarbilovich, 1947",accepted,NA,Family,153179,Aphelenchoididae,"Skarbilovich, 1947",227109,Animalia,Nematoda,Chromadorea,Rhabditida,NA,1,1,1,1,NA,exact
+Syphacia frederici,Oxyuridae,1092419,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Habronema muscae,Habronematidae,523802,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Habronema microstoma,Habronematidae,523801,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Parelaphostrongylus andersoni,Protostrongylidae,275087,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Diphyllobothrium ditremum,Diphyllobothriidae,1004847,104937,Diphyllobothriidae,"Lühe, 1910",accepted,NA,Family,104937,Diphyllobothriidae,"Lühe, 1910",515793,Animalia,Platyhelminthes,Cestoda,Diphyllobothriidea,NA,1,1,1,1,NA,exact
+Paragonimus kellicotti,Troglotrematidae,721952,468969,Troglotrematidae,"Odhner, 1914",accepted,NA,Family,468969,Troglotrematidae,"Odhner, 1914",1578386,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,NA,1,1,NA,exact
+Mesocestoides,Mesocestoididae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Plagiorchis maculosus,Plagiorchiidae,229395,108448,Plagiorchiidae,"Lühe, 1901",accepted,NA,Family,108448,Plagiorchiidae,"Lühe, 1901",108411,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Echinococcus,Taeniidae,NA,836271,Taeniidae,"Ludwig, 1886",accepted,NA,Family,836271,Taeniidae,"Ludwig, 1886",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,NA,NA,NA,NA,exact
+Bivitellobilharzia loxodontae,Schistosomatidae,812292,108478,Schistosomatidae,"Stiles & Hassall, 1898",accepted,NA,Family,108478,Schistosomatidae,"Stiles & Hassall, 1898",108419,Animalia,Platyhelminthes,Trematoda,Diplostomida,NA,1,1,1,1,NA,exact
+Rodentolepis fraterna,Hymenolepididae,147120,104930,Hymenolepididae,"Ariola, 1899",accepted,NA,Family,104930,Hymenolepididae,"Ariola, 1899",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,1,NA,exact
+Hymenolepis microstoma,Hymenolepididae,1004838,104930,Hymenolepididae,"Ariola, 1899",accepted,NA,Family,104930,Hymenolepididae,"Ariola, 1899",104913,Animalia,Platyhelminthes,Cestoda,Cyclophyllidea,NA,1,1,1,1,NA,exact
+Bivitellobilharzia nairi,Schistosomatidae,314917,108478,Schistosomatidae,"Stiles & Hassall, 1898",accepted,NA,Family,108478,Schistosomatidae,"Stiles & Hassall, 1898",108419,Animalia,Platyhelminthes,Trematoda,Diplostomida,NA,1,1,1,1,NA,exact
+Thysaniezia,Anoplocephalidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gigantobilharzia melanoidis,Schistosomatidae,5493218,108478,Schistosomatidae,"Stiles & Hassall, 1898",accepted,NA,Family,108478,Schistosomatidae,"Stiles & Hassall, 1898",108419,Animalia,Platyhelminthes,Trematoda,Diplostomida,NA,1,1,1,1,NA,exact
+Gigantobilharzia huronensis,Schistosomatidae,353880,108478,Schistosomatidae,"Stiles & Hassall, 1898",accepted,NA,Family,108478,Schistosomatidae,"Stiles & Hassall, 1898",108419,Animalia,Platyhelminthes,Trematoda,Diplostomida,NA,1,1,1,1,NA,exact
+Ogmocotyle,Notocotylidae,NA,108427,Notocotylidae,"Lühe, 1909",accepted,NA,Family,108427,Notocotylidae,"Lühe, 1909",468953,Animalia,Platyhelminthes,Trematoda,Plagiorchiida,NA,1,1,1,1,NA,exact
+Diphyllobothrium dendriticum,Diphyllobothriidae,416828,104937,Diphyllobothriidae,"Lühe, 1910",accepted,NA,Family,104937,Diphyllobothriidae,"Lühe, 1910",515793,Animalia,Platyhelminthes,Cestoda,Diphyllobothriidea,NA,1,1,1,1,NA,exact
+Holothuria poli,Holothuriidae,107769,123183,Holothuriidae,"Ludwig, 1894",unaccepted,NA,Family,731943,Holothuriidae,"Burmeister, 1837",1036233,Animalia,Echinodermata,Holothuroidea,Holothuriida,NA,1,NA,NA,NA,NA,exact
+Amphiura digitula,Amphiuridae,3653907,123206,Amphiuridae,"Ljungman, 1867",accepted,NA,Family,123206,Amphiuridae,"Ljungman, 1867",1077097,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,0,exact
+Liparometra articulata,Mariametridae,900103,196175,Mariametridae,"AH Clark, 1909",accepted,NA,Family,196175,Mariametridae,"AH Clark, 1909",828452,Animalia,Echinodermata,Crinoidea,Comatulida,NA,1,0,0,0,NA,exact
+Endoxocrinus parrae,Isocrinidae,269242,123154,Isocrinidae,"Gislén, 1924",accepted,NA,Family,123154,Isocrinidae,"Gislén, 1924",246656,Animalia,Echinodermata,Crinoidea,Isocrinida,NA,1,0,0,0,NA,exact
+Gnathophiurina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ophiomusium lymani,Ophiolepididae,959762,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",accepted,NA,Family,242200,Ophiolepididae,"Ljungman, 1867 (restricted)",1075319,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Arbacia crassispina,Arbaciidae,255159,123156,Arbaciidae,"Gray, 1855",accepted,NA,Family,123156,Arbaciidae,"Gray, 1855",123097,Animalia,Echinodermata,Echinoidea,Arbacioida,NA,1,0,0,0,0,exact
+Pseudechinus novaezelandiae,Temnopleuridae,3650357,123178,Temnopleuridae,"A. Agassiz, 1872",accepted,NA,Family,123178,Temnopleuridae,"A. Agassiz, 1872",510536,Animalia,Echinodermata,Echinoidea,Camarodonta,NA,1,0,0,0,0,exact
+Kalicephalus,Diaphanocephalidae,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rumbleaster eructans,Asteriidae,769829,123121,Asteriidae,"Gray, 1840",accepted,NA,Family,123121,Asteriidae,"Gray, 1840",123086,Animalia,Echinodermata,Asteroidea,Forcipulatida,NA,1,0,0,0,0,exact
+Amphiura angularis,Amphiuridae,3653849,123206,Amphiuridae,"Ljungman, 1867",accepted,NA,Family,123206,Amphiuridae,"Ljungman, 1867",1077097,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,0,exact
+Ophiura integra,Ophiuridae,7071687,123200,Ophiuridae,"Müller & Troschel, 1840",accepted,NA,Family,123200,Ophiuridae,"Müller & Troschel, 1840",242195,Animalia,Echinodermata,Ophiuroidea,Ophiurida,NA,1,0,0,0,NA,exact
+Ophiothrix caespitosa,Ophiotrichidae,608026,123208,Ophiotrichidae,"Ljungman, 1867",accepted,NA,Family,123208,Ophiotrichidae,"Ljungman, 1867",1079036,Animalia,Echinodermata,Ophiuroidea,Amphilepidida,NA,1,NA,NA,NA,NA,exact
+Dracunculus lutrae,Dracunculidae,132696,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leptopentacta elongata,Cucumariidae,7072381,123187,Cucumariidae,"Ludwig, 1894",accepted,NA,Family,123187,Cucumariidae,"Ludwig, 1894",123111,Animalia,Echinodermata,Holothuroidea,Dendrochirotida,NA,1,NA,NA,NA,NA,exact

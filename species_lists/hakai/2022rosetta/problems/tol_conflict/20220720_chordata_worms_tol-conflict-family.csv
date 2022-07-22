@@ -1,0 +1,170 @@
+taxa_query,family,ottid_species,aphia_id,scientificname,authority,status,unacceptreason,rank,valid_aphia_id,valid_name,valid_authority,parent_name_usage_id,kingdom,phylum,class,order,genus,is_marine,is_brackish,is_freshwater,is_terrestrial,is_extinct,match_type
+Ecteinascidia,Perophoridae,NULL,103447,Perophoridae,"Giard, 1872",accepted,NA,Family,103447,Perophoridae,"Giard, 1872",103435,Animalia,Chordata,Ascidiacea,Phlebobranchia,NA,1,NA,NA,NA,NA,exact
+Eulipotyphla,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sylvilagus brasiliensis,Leporidae,634572,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ostracion immaculatus,Ostraciidae,1044207,125611,Ostraciidae,"Rafinesque, 1810",accepted,NA,Family,125611,Ostraciidae,"Rafinesque, 1810",10332,Animalia,Chordata,Actinopteri,Tetraodontiformes,NA,1,1,NA,NA,NA,exact
+Sylvilagus floridanus,Leporidae,864591,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus europaeus,Leporidae,864607,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Nematolebias,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gnatholebias zonatus,NULL,1018493,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Synchiropus papilio,Callionymidae,3632757,125522,Callionymidae,"Bonaparte, 1831",accepted,NA,Family,125522,Callionymidae,"Bonaparte, 1831",1517496,Animalia,Chordata,Actinopteri,Callionymiformes,NA,1,1,1,NA,NA,exact
+Hippocampus,Syngnathidae,NULL,125606,Syngnathidae,"Bonaparte, 1831",accepted,NA,Family,125606,Syngnathidae,"Bonaparte, 1831",10327,Animalia,Chordata,Actinopteri,Syngnathiformes,NA,1,1,1,NA,NA,exact
+Glaucostegus formosensis,Rhinobatidae,444666,105712,Rhinobatidae,"Bonaparte, 1835",accepted,NA,Family,105712,Rhinobatidae,"Bonaparte, 1835",1042840,Animalia,Chordata,Elasmobranchii,Rhinopristiformes,NA,1,1,NA,NA,NA,exact
+Coreoperca herzi,Sinipercidae,114860,1517561,Sinipercidae,"Jordan & Richardson, 1910",accepted,NA,Family,1517561,Sinipercidae,"Jordan & Richardson, 1910",1517557,Animalia,Chordata,Actinopteri,Centrarchiformes,NA,0,1,1,0,NA,exact
+Labeo catla,Cyprinidae,719907,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Astyanax intermedius,Characidae,341087,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Barbus rionicus,Cyprinidae,7066408,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Capoeta heratensis,Cyprinidae,679797,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Capoeta macrolepis,Cyprinidae,7066441,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Bathyaethiops,Alestidae,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyprinus multitaeniata,Cyprinidae,310585,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Garra gymnothorax,Cyprinidae,5839001,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Garra sindhi,Cyprinidae,6142119,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Incisilabeo behri,Cyprinidae,388881,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Phoxinus lumaireul,Cyprinidae,1031056,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Rhynchocypris percnurus,Cyprinidae,44672,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Rutilus lacustris,Cyprinidae,7066940,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Rutilus prespensis,Cyprinidae,379558,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Schizothorax lissolabiata,Cyprinidae,709850,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Puntius chelynoides,Cyprinidae,198330,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Ilyodon,Goodeidae,NULL,154195,Goodeidae,"Jordan & Gilbert, 1883",accepted,NA,Family,154195,Goodeidae,"Jordan & Gilbert, 1883",10319,Animalia,Chordata,Actinopteri,Cyprinodontiformes,NA,NA,1,1,NA,NA,exact
+Comephorus baicalensis,Cottidae,1019835,125589,Cottidae,"Bonaparte, 1831",accepted,NA,Family,125589,Cottidae,"Bonaparte, 1831",11014,Animalia,Chordata,Actinopteri,Perciformes,NA,1,1,1,NA,NA,exact
+Ostracion solorensis,Ostraciidae,893596,125611,Ostraciidae,"Rafinesque, 1810",accepted,NA,Family,125611,Ostraciidae,"Rafinesque, 1810",10332,Animalia,Chordata,Actinopteri,Tetraodontiformes,NA,1,1,NA,NA,NA,exact
+Hypsolebias trilineatus,NULL,1018477,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tachysurus aurantiacus,Bagridae,804529,154645,Bagridae,"Bleeker, 1858",accepted,NA,Family,154645,Bagridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Congriscus megastomus,Congridae,182991,125427,Congridae,"Kaup, 1856",accepted,NA,Family,125427,Congridae,"Kaup, 1856",10295,Animalia,Chordata,Actinopteri,Anguilliformes,NA,1,1,NA,NA,NA,exact
+Bryconamericus lethostigmus,Characidae,573826,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Piabarchus stramineus,Characidae,7065216,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepturichthys fimbriata,Balitoridae,377085,154177,Balitoridae,"Swainson, 1839",accepted,NA,Family,154177,Balitoridae,"Swainson, 1839",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Indoreonectes keralensis,Nemacheilidae,3627986,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Nemachilichthys rueppelli,Nemacheilidae,148107,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Paracanthocobitis mooreh,Nemacheilidae,6141983,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Petruichthys brevis,Nemacheilidae,1004236,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Triplophysa stoliczkai,Nemacheilidae,502550,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Triplophysa yarkandensis,Nemacheilidae,4138459,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Chaetozone,Cirratulidae,NULL,919,Cirratulidae,"Ryckholt, 1851",accepted,NA,Family,919,Cirratulidae,"Ryckholt, 1851",155087,Animalia,Annelida,Polychaeta,Terebellida,NA,1,0,0,0,0,exact
+Tachysurus eupogon,Bagridae,876095,154645,Bagridae,"Bleeker, 1858",accepted,NA,Family,154645,Bagridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Synodontis membranacea,Mochokidae,975705,154617,Mochokidae,"Regan, 1912",accepted,NA,Family,154617,Mochokidae,"Regan, 1912",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Lobotes pacificus,Lobotidae,890162,125543,Lobotidae,"Gill, 1861",accepted,NA,Family,125543,Lobotidae,"Gill, 1861",1517548,Animalia,Chordata,Actinopteri,Acanthuriformes,NA,1,1,NA,NA,NA,exact
+Oostethus manadensis,Syngnathidae,3642139,125606,Syngnathidae,"Bonaparte, 1831",accepted,NA,Family,125606,Syngnathidae,"Bonaparte, 1831",10327,Animalia,Chordata,Actinopteri,Syngnathiformes,NA,1,1,1,NA,NA,exact
+Cheimarrichthys fosteri,Cheimarrichthyidae,685721,267019,Cheimarrichthyidae,"Regan, 1913",accepted,NA,Family,267019,Cheimarrichthyidae,"Regan, 1913",11014,Animalia,Chordata,Actinopteri,Perciformes,NA,1,1,1,NA,NA,exact
+Anematichthys apogon,Cyprinidae,328162,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Lebiasina astrigata,Lebiasinidae,278606,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tachysurus vachellii,Bagridae,203399,154645,Bagridae,"Bleeker, 1858",accepted,NA,Family,154645,Bagridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Aurigequula longispina,Leiognathidae,885825,125542,Leiognathidae,"Gill, 1893",accepted,NA,Family,125542,Leiognathidae,"Gill, 1893",1517548,Animalia,Chordata,Actinopteri,Acanthuriformes,NA,1,1,1,NA,NA,exact
+Tachysurus ussuriensis,Bagridae,804534,154645,Bagridae,"Bleeker, 1858",accepted,NA,Family,154645,Bagridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Epalzeorhynchos kalopterus,Cyprinidae,899928,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Paratilapia sp. 'manombo',Cichlidae,396150,151383,Cichlidae,"Bonaparte, 1835",accepted,NA,Family,151383,Cichlidae,"Bonaparte, 1835",1517533,Animalia,Chordata,Actinopteri,Cichliformes,NA,1,1,1,NA,NA,exact
+Glossolepis incisus,Melanotaeniidae,976546,151839,Melanotaeniidae,"Gill, 1894",accepted,NA,Family,151839,Melanotaeniidae,"Gill, 1894",10318,Animalia,Chordata,Actinopteri,Atheriniformes,NA,NA,1,1,NA,NA,exact
+Moxostoma duquesnii,Catostomidae,941351,154179,Catostomidae,"Agassiz, 1850",accepted,NA,Family,154179,Catostomidae,"Agassiz, 1850",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Bryconalestes bartoni,Alestidae,7064701,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bryconalestes tholloni,Alestidae,7064702,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyclocheilos enoplos,Cyprinidae,7066457,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Lampetra geminis,Petromyzontidae,1015586,101163,Petromyzontidae,"Bonaparte, 1831",accepted,NA,Family,101163,Petromyzontidae,"Bonaparte, 1831",10201,Animalia,Chordata,Petromyzonti,Petromyzontiformes,NA,1,1,1,NA,NA,exact
+Erimystax x-punctatus,Cyprinidae,834264,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Heptapterus panamensis,Heptapteridae,512361,267036,Heptapteridae,"Gill, 1861",accepted,NA,Family,267036,Heptapteridae,"Gill, 1861",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,1,1,1,NA,NA,exact
+Lebiasina boruca,Lebiasinidae,3624454,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lebiasina festae,Lebiasinidae,3624459,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hypostomus aspidolepis,Loricariidae,7065776,154623,Loricariidae,"Rafinesque, 1815",accepted,NA,Family,154623,Loricariidae,"Rafinesque, 1815",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,1,1,1,NA,NA,exact
+Trichomycterus guacamayoensis,Trichomycteridae,7065894,154621,Trichomycteridae,"Bleeker, 1858",accepted,NA,Family,154621,Trichomycteridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Salmostoma bacalia,Cyprinidae,541598,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Chrysichthys congicus,Claroteidae,3624334,397230,Claroteidae,"Bleeker, 1862",accepted,NA,Family,397230,Claroteidae,"Bleeker, 1862",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,1,1,1,NA,NA,exact
+Oreochromis sp. 'tarangire',Cichlidae,336601,151383,Cichlidae,"Bonaparte, 1835",accepted,NA,Family,151383,Cichlidae,"Bonaparte, 1835",1517533,Animalia,Chordata,Actinopteri,Cichliformes,NA,1,1,1,NA,NA,exact
+Pseudolaguvia tuberculatus,Sisoridae,343440,154653,Sisoridae,"Bleeker, 1858",accepted,NA,Family,154653,Sisoridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Stephanolepis auratus,Monacanthidae,3631336,125610,Monacanthidae,"Nardo, 1843",accepted,NA,Family,125610,Monacanthidae,"Nardo, 1843",10332,Animalia,Chordata,Actinopteri,Tetraodontiformes,NA,1,1,NA,NA,NA,exact
+Pagetopsis maculatus,Channichthyidae,299652,234518,Channichthyidae,"Gill, 1861",accepted,NA,Family,234518,Channichthyidae,"Gill, 1861",11014,Animalia,Chordata,Actinopteri,Perciformes,NA,1,NA,NA,NA,NA,exact
+Danio sp. 'pantheri',Cyprinidae,332650,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Cynoglossus macrolepidotus,Cynoglossidae,3640587,125578,Cynoglossidae,"Jordan, 1888",accepted,NA,Family,125578,Cynoglossidae,"Jordan, 1888",10331,Animalia,Chordata,Actinopteri,Pleuronectiformes,NA,1,1,1,NA,NA,exact
+Barbus escherichii,Cyprinidae,7066405,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Paracobitis rhadinaeus,Nemacheilidae,3628091,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Paracobitis abrishamchiani,Nemacheilidae,7066330,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Sasanidus kermanshahensis,Nemacheilidae,849277,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Ladigesocypris ghigii,Cyprinidae,571931,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Luciobarbus lorteti,Cyprinidae,3626410,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Atherina sp. 'punctuata',Atherinidae,173111,125438,Atherinidae,"Risso, 1827",accepted,NA,Family,125438,Atherinidae,"Risso, 1827",10318,Animalia,Chordata,Actinopteri,Atheriniformes,NA,1,1,1,NA,NA,exact
+Herichthys labridens,Cichlidae,722212,151383,Cichlidae,"Bonaparte, 1835",accepted,NA,Family,151383,Cichlidae,"Bonaparte, 1835",1517533,Animalia,Chordata,Actinopteri,Cichliformes,NA,1,1,1,NA,NA,exact
+Symphurus sp. 'rafinesque',Cynoglossidae,151331,125578,Cynoglossidae,"Jordan, 1888",accepted,NA,Family,125578,Cynoglossidae,"Jordan, 1888",10331,Animalia,Chordata,Actinopteri,Pleuronectiformes,NA,1,1,1,NA,NA,exact
+Champsodon,Champsodontidae,NULL,151407,Champsodontidae,"Jordan & Snyder, 1902",accepted,NA,Family,151407,Champsodontidae,"Jordan & Snyder, 1902",1517567,Animalia,Chordata,Actinopteri,Acropomatiformes,NA,1,NA,NA,NA,NA,exact
+Onigocia,Platycephalidae,NULL,125593,Platycephalidae,"Swainson, 1839",accepted,NA,Family,125593,Platycephalidae,"Swainson, 1839",11014,Animalia,Chordata,Actinopteri,Perciformes,NA,1,1,NA,NA,NA,exact
+Platysternon megacephalum,Platysternidae,619860,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ciona roulei,Cionidae,724109,103444,Cionidae,"Lahille, 1887",accepted,NA,Family,103444,Cionidae,"Lahille, 1887",103435,Animalia,Chordata,Ascidiacea,Phlebobranchia,NA,1,NA,NA,NA,NA,exact
+Rineloricaria steinbachi,Loricariidae,7065838,154623,Loricariidae,"Rafinesque, 1815",accepted,NA,Family,154623,Loricariidae,"Rafinesque, 1815",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,1,1,1,NA,NA,exact
+Astyanax belizanus,Characidae,1014923,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Synodontis thamalakanensis,Mochokidae,3623160,154617,Mochokidae,"Regan, 1912",accepted,NA,Family,154617,Mochokidae,"Regan, 1912",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Nannaethiops gracilis,NULL,3624645,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Erethistes koladynensis,Sisoridae,7066106,154653,Sisoridae,"Bleeker, 1858",accepted,NA,Family,154653,Sisoridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Lepus capensis,Leporidae,864613,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus californicus,Leporidae,923732,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus flavigularis,Leporidae,836256,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus alleni,Leporidae,638208,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus americanus,Leporidae,923734,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phascolarctos cinereus,Phascolarctidae,327624,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sylvilagus bachmani,Leporidae,634755,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sylvilagus audubonii,Leporidae,532394,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus hainanus,Leporidae,426408,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus peguensis,Leporidae,3611221,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acrobates pygmaeus,Acrobatidae,432839,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus othus,Leporidae,167569,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus granatensis,Leporidae,29167,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus arcticus,Leporidae,638196,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus corsicanus,Leporidae,29165,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Notoryctes caurinus,Notoryctidae,257243,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus tibetanus,Leporidae,3611223,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus sinensis,Leporidae,636670,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus mandshuricus,Leporidae,525087,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus timidus,Leporidae,167565,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus yarkandensis,Leporidae,192736,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus comus,Leporidae,542002,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus oiostolus,Leporidae,114754,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gonorhynchus adiscus,Cyprinidae,5925453,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Petrochromis,Cichlidae,NULL,151383,Cichlidae,"Bonaparte, 1835",accepted,NA,Family,151383,Cichlidae,"Bonaparte, 1835",1517533,Animalia,Chordata,Actinopteri,Cichliformes,NA,1,1,1,NA,NA,exact
+Nemacheilus denisoni,Nemacheilidae,5342828,826577,Nemacheilidae,"Regan, 1911",accepted,NA,Family,826577,Nemacheilidae,"Regan, 1911",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Gonorhynchus diplochilus,Cyprinidae,771979,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Puntius schanicus,Cyprinidae,3627252,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Tomistoma schlegelii,Gavialidae,1035823,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Natator depressus,Cheloniidae,895624,136999,Cheloniidae,"Oppel, 1811",accepted,NA,Family,136999,Cheloniidae,"Oppel, 1811",987094,Animalia,Chordata,NA,Testudines,NA,1,NA,NA,NA,NA,exact
+Lepus coreanus,Leporidae,575440,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus townsendii,Leporidae,747875,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lepus tolai,Leporidae,426231,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phoca fasciata,Phocidae,664065,136976,Phocidae,"Gray, 1821",accepted,NA,Family,136976,Phocidae,"Gray, 1821",148736,Animalia,Chordata,Mammalia,Carnivora,NA,1,1,1,NA,NA,exact
+Myrmecobius fasciatus,Myrmecobiidae,70811,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Distoechurus pennatus,Acrobatidae,852215,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tarsipes rostratus,Tarsipedidae,901943,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dromiciops gliroides,Microbiotheriidae,905267,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Notoryctes typhlops,Notoryctidae,306795,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Facciolella oxyrhyncha,Nettastomatidae,950729,125433,Nettastomatidae,"Kaup, 1859",accepted,NA,Family,125433,Nettastomatidae,"Kaup, 1859",10295,Animalia,Chordata,Actinopteri,Anguilliformes,NA,1,NA,NA,NA,NA,exact
+Percalates novemaculeata,NULL,113385,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Takifugu fasciatus,Tetraodontidae,598737,125612,Tetraodontidae,"Bonaparte, 1831",accepted,NA,Family,125612,Tetraodontidae,"Bonaparte, 1831",10332,Animalia,Chordata,Actinopteri,Tetraodontiformes,NA,1,1,1,NA,NA,exact
+Tachysurus tokiensis,Bagridae,804531,154645,Bagridae,"Bleeker, 1858",accepted,NA,Family,154645,Bagridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Aphanotorulus emarginatus,Loricariidae,698179,154623,Loricariidae,"Rafinesque, 1815",accepted,NA,Family,154623,Loricariidae,"Rafinesque, 1815",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,1,1,1,NA,NA,exact
+Neomonachus schauinslandi,Phocidae,180367,136976,Phocidae,"Gray, 1821",accepted,NA,Family,136976,Phocidae,"Gray, 1821",148736,Animalia,Chordata,Mammalia,Carnivora,NA,1,1,1,NA,NA,exact
+Hypostomus cochliodon,Loricariidae,440107,154623,Loricariidae,"Rafinesque, 1815",accepted,NA,Family,154623,Loricariidae,"Rafinesque, 1815",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,1,1,1,NA,NA,exact
+Gerres macracanthus,Gerreidae,142710,151456,Gerreidae,"Bleeker, 1859",accepted,NA,Family,151456,Gerreidae,"Bleeker, 1859",1517577,Animalia,Chordata,Actinopteri,Eupercaria incertae sedis,NA,1,1,1,0,NA,exact
+Lepus habessinicus,Leporidae,29169,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lacustricola hutereaui,Procatopodidae,777421,1517538,Procatopodidae,"Fowler, 1916",accepted,NA,Family,1517538,Procatopodidae,"Fowler, 1916",10319,Animalia,Chordata,Actinopteri,Cyprinodontiformes,NA,0,1,1,NA,NA,exact
+Anematichthys armatus,Cyprinidae,789513,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Pseudobagrus brevicorpus,Bagridae,804526,154645,Bagridae,"Bleeker, 1858",accepted,NA,Family,154645,Bagridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Chimarrichthys kishinouyei,Sisoridae,7066110,154653,Sisoridae,"Bleeker, 1858",accepted,NA,Family,154653,Sisoridae,"Bleeker, 1858",154157,Animalia,Chordata,Actinopteri,Siluriformes,NA,NA,1,1,NA,NA,exact
+Chanodichthys recurviceps,Cyprinidae,664352,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Vieja melanura,Cichlidae,293230,151383,Cichlidae,"Bonaparte, 1835",accepted,NA,Family,151383,Cichlidae,"Bonaparte, 1835",1517533,Animalia,Chordata,Actinopteri,Cichliformes,NA,1,1,1,NA,NA,exact
+Schizopyge dolichonema,Cyprinidae,269461,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Aperioptus gracilentus,Cobitidae,910515,154174,Cobitidae,"Swainson, 1838",accepted,NA,Family,154174,Cobitidae,"Swainson, 1838",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Cobitis matsubarai,Cobitidae,117087,154174,Cobitidae,"Swainson, 1838",accepted,NA,Family,154174,Cobitidae,"Swainson, 1838",154156,Animalia,Chordata,Actinopteri,Cypriniformes,NA,0,1,1,0,NA,exact
+Schizopyge nukiangensis,Cyprinidae,269469,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Zacco acanthogenys,Cyprinidae,5925502,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Neoniphon vexillarium,Holocentridae,589843,125458,Holocentridae,"Bonaparte, 1833",accepted,NA,Family,125458,Holocentridae,"Bonaparte, 1833",1517488,Animalia,Chordata,Actinopteri,Holocentriformes,NA,1,1,NA,NA,NA,exact
+Paretroplus petiti,Cichlidae,3636423,151383,Cichlidae,"Bonaparte, 1835",accepted,NA,Family,151383,Cichlidae,"Bonaparte, 1835",1517533,Animalia,Chordata,Actinopteri,Cichliformes,NA,1,1,1,NA,NA,exact
+Devario sp. 'giraffe',Cyprinidae,276098,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Ophichthus zophistius,Ophichthidae,483995,125434,Ophichthidae,"Günther, 1870",accepted,NA,Family,125434,Ophichthidae,"Günther, 1870",10295,Animalia,Chordata,Actinopteri,Anguilliformes,NA,1,1,1,0,NA,exact
+Notropis,Cyprinidae,NULL,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Pteronotropis harperi,Cyprinidae,338655,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Brycinus abeli,Alestidae,3625754,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Herklotsichthys spilurus,Clupeidae,367792,125464,Clupeidae,"Cuvier, 1816",accepted,NA,Family,125464,Clupeidae,"Cuvier, 1816",10297,Animalia,Chordata,Actinopteri,Clupeiformes,NA,1,1,1,NA,NA,exact
+Idiacanthus sp. 'atroventer',Stomiidae,135512,125604,Stomiidae,"Bleeker, 1859",accepted,NA,Family,125604,Stomiidae,"Bleeker, 1859",10306,Animalia,Chordata,Actinopteri,Stomiiformes,NA,1,NA,NA,NA,NA,exact
+Oreochromis mossambicus x niloticus,Cichlidae,4948850,151383,Cichlidae,"Bonaparte, 1835",accepted,NA,Family,151383,Cichlidae,"Bonaparte, 1835",1517533,Animalia,Chordata,Actinopteri,Cichliformes,NA,1,1,1,NA,NA,exact
+Labiobarbus spilopleura,Cyprinidae,372814,152825,Cyprinidae,"d'Orbigny, 1844",unaccepted,"Invalid: junior homonym of Cyprinidae Rafinesque, 1815, based on <i>Cyprinus</i> Linnaeus, 1758 [Pisces]",Family,241,Arcticidae,"Newton, 1891 (1844)",14628,Animalia,Mollusca,Bivalvia,Venerida,NA,NA,NA,NA,NA,NA,exact
+Gobiodon sp. 'exigua',Gobiidae,969956,125537,Gobiidae,"Cuvier, 1816",accepted,NA,Family,125537,Gobiidae,"Cuvier, 1816",1517500,Animalia,Chordata,Actinopteri,Gobiiformes,NA,1,1,1,NA,NA,exact
+Quietula y-cauda,Gobiidae,387066,125537,Gobiidae,"Cuvier, 1816",accepted,NA,Family,125537,Gobiidae,"Cuvier, 1816",1517500,Animalia,Chordata,Actinopteri,Gobiiformes,NA,1,1,1,NA,NA,exact
+Himantolophus,Himantolophidae,NULL,125491,Himantolophidae,"Gill, 1861",accepted,NA,Family,125491,Himantolophidae,"Gill, 1861",10316,Animalia,Chordata,Actinopteri,Lophiiformes,NA,1,NA,NA,NA,NA,exact
+Baldwinella eos,Serranidae,3633909,125561,Serranidae,"Swainson, 1839",accepted,NA,Family,125561,Serranidae,"Swainson, 1839",11014,Animalia,Chordata,Actinopteri,Perciformes,NA,1,1,1,NA,NA,exact
+Enterogona,NULL,NULL,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
