@@ -1,0 +1,83 @@
+---
+title: "Untitled"
+author: "Kate Sheridan"
+date: "7/23/2022"
+output: html_document
+---
+
+# Mifish Fish
+
+Here we are going to run the fish we got from the last script through WoRMS
+
+The pipeline for all groups is:
+1: WoRMS for higher taxonomy
+2: BOLD
+3: fetching gbif ids
+4 fetching OTL ids
+5: list of not-found
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(stringr)
+library(taxize)
+library(here)
+
+# here filepaths
+hakai_blast <- here('species_lists', 'hakai', '2021_blast-db')
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
+```
+
+```{r load-in}
+midori_fish <- read_csv(here(rosetta, 'current_draft', 
+                             '20220724_mifish_fish_filter.csv'))
+```
+
+
+```{r worms-function}
+library(worrms)
+
+## requires worrms to be loaded
+# input is vector of species names
+# use wm_records_names to extract 
+# this doesn't need the + signs
+
+# right now this breaks if not-found
+search_records_worms <- function(spnames) {
+  search <- tibble()
+  for (i in spnames) {
+    print(paste0('searching for ', i))
+    record <- wm_records_names(i, marine_only = FALSE)
+    message('done')
+    search <- append(search, record)
+  }
+  names(search) <- spnames
+  search_output <- map_dfr(.x = search, ~ data.frame(.x), .id = 'query') %>%
+    janitor::clean_names() %>%
+    select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+  return(search_output)
+}
+```
+
+# WoRMS
+
+We've already done TOL ID's in the last script, so we'll go straight to worms
+```{r worrms!}
+# check which ones are in the database
+#then replace resolved
+fish_search <- midori_fish %>%
+  select(c(query)) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", query)) %>%
+  distinct()
+
+
+# 2: worms
+fish_worms <- get_wormsid_(sci_com = fish_search$worms_query)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+annelid_worms2 <- annelid_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+```
+

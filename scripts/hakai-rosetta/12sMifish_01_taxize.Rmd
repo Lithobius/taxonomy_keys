@@ -25,6 +25,34 @@ rosetta <- here('species_lists', 'hakai', '2022rosetta')
 midori <- read_csv(here(hakai_blast, '20211216_midori_all_sp.csv'))
 ```
 
+```{r classify-exand}
+# classify expand function
+classify_expand <- function(classifyobject) {
+  expanded_classify <- classifyobject %>% 
+  compact() %>%
+  #discard( ~ nrow(.x) == 0) %>% # this caused issues in some of the lists?
+  map_dfr( ~ data.frame(.x), .id = 'query') %>%
+  filter(!(rank == 'no rank')) %>%
+  pivot_wider(id_cols = query, names_from = rank, values_from = c(name, id)) %>%
+  rename_with(~ str_replace(.x, 'name_', '')) %>%
+  rename_with(~ str_replace(.x, 'id_', 'ottid_')) %>%
+  select(query, domain, kingdom, phylum, class, subclass, 
+         order, family, genus, species, ottid_species) %>%
+  # some of these come back with c() inside the cells, we'll unbind them
+  mutate(across(.fns = ~gsub('c\\(|\\)', '', .))) %>%
+  mutate(across(.fns = ~gsub('\"', '', .))) %>%
+  separate_rows(phylum, class, subclass, order, family, 
+                genus, species, ottid_species,
+                sep = ", ") %>%
+    distinct() %>%
+    mutate(across(.cols = everything(), ~str_replace_all(., 'NULL', NA_character_)))
+  return(expanded_classify)
+}
+```
+
+
+
+
 ```{r tol_resolve}
 midori_key <- midori %>%
   select(species) %>%
@@ -138,12 +166,7 @@ mresolved <- mresolved1 %>%
 
 #save intermediate just in case!
 #write_rds(mresolved, here('temp_midori.rds'))
-mresolved <- readRDS(here('temp_midori.rds'))
-
-# classify found IDs, will probably need split again
-
-midori_notfound <- mresolved %>%
-  filter(is.na(unique_name))
+#mresolved <- readRDS(here('temp_midori.rds'))
 
 # sort out unique names
 mresolved_classify <- mresolved %>%
@@ -157,35 +180,104 @@ mresolved_classify <- as.tibble(mresolved_classify)
 
 # do the splitting-babysitting-thing again
 mresolved_classify1 <- mresolved_classify[1:7000,]
-mresolved_classify2 <- mresolved_classify[7001:30000,]
-mresolved_classify3 <- mresolved_classify[30001:60000,]
-mresolved_classify4 <- mresolved_classify[60001:100000,]
+mresolved_classify2a <- mresolved_classify[7001:20000,]
+mresolved_classify2b <- mresolved_classify[21001:30000,]
+mresolved_classify3a <- mresolved_classify[30001:40000,]
+mresolved_classify3b <- mresolved_classify[40001:50000,]
+mresolved_classify3c <- mresolved_classify[50001:60000,]
+mresolved_classify4a <- mresolved_classify[60001:70000,]
+mresolved_classify4b <- mresolved_classify[70001:80000,]
+mresolved_classify4c <- mresolved_classify[80001:90000,]
+mresolved_classify4d <- mresolved_classify[90001:100000,]
 mresolved_classify5 <- mresolved_classify[100001:140000,]
 mresolved_classify6 <- mresolved_classify[140001:180000,]
 mresolved_classify7 <- mresolved_classify[180001:210000,]
 mresolved_classify8 <- mresolved_classify[210001:238338,]
 
-midori_classify <- classification(mresolved_classify5$unique_name, db = 'tol')
+midori_classify <- classification(mresolved_classify4d$unique_name, db = 'tol')
 
 # manually set temp variables to merge later
 #mclassify1 <- midori_classify
-#mclassify2 <- midori_classify
-#mclassify3 <- midori_classify
-#mclassify4 <- midori_classify
-mclassify5 <- midori_classify
+#mclassify2a <- midori_classify
+#mclassify2b <- midori_classify
+#mclassify3a <- midori_classify
+#mclassify3b <- midori_classify
+#mclassify3c <- midori_classify
+#mclassify4a <- midori_classify
+#mclassify4b <- midori_classify
+#mclassify4c <- midori_classify
+mclassify4d <- midori_classify
+#mclassify5 <- midori_classify
 #mclassify6 <- midori_classify
 #mclassify7 <- midori_classify
 #mclassify8 <- midori_classify
 
 
 #save temp versions in case it breaks again
+#write_rds(mclassify1, here('temp_midori1.rds'))
+#write_rds(mclassify2a, here('temp_midori2a.rds'))
+#write_rds(mclassify2b, here('temp_midori2b.rds'))
+#write_rds(mclassify3a, here('temp_midori3a.rds'))
+#write_rds(mclassify3b, here('temp_midori3b.rds'))
+#write_rds(mclassify3c, here('temp_midori3c.rds'))
+#write_rds(mclassify4a, here('temp_midori4a.rds'))
+#write_rds(mclassify4b, here('temp_midori4b.rds'))
+#write_rds(mclassify4c, here('temp_midori4c.rds'))
+write_rds(mclassify4d, here('temp_midori4d.rds'))
 write_rds(mclassify5, here('temp_midori_c5.rds'))
 write_rds(mclassify6, here('temp_midori_c6.rds'))
 write_rds(mclassify7, here('temp_midori_c7.rds'))
 write_rds(mclassify8, here('temp_midori_c8.rds'))
 
 
+mclassify1 <- readRDS(here('temp_midori1.rds'))
+mclassify2a <- readRDS(here('temp_midori2a.rds'))
+mclassify2b <- readRDS(here('temp_midori2b.rds'))
+mclassify3a <- readRDS(here('temp_midori3a.rds'))
+mclassify3b <- readRDS(here('temp_midori3b.rds'))
+mclassify3c <- readRDS(here('temp_midori3c.rds'))
+mclassify4a <- readRDS(here('temp_midori4a.rds'))
+mclassify4b <- readRDS(here('temp_midori4b.rds'))
+mclassify4c <- readRDS(here('temp_midori4c.rds'))
+mclassify4d <- readRDS(here('temp_midori4d.rds'))
+mclassify5 <- readRDS(here('temp_midori_c5.rds'))
+mclassify6 <- readRDS(here('temp_midori_c6.rds'))
+mclassify7 <- readRDS(here('temp_midori_c7.rds'))
+mclassify8 <- readRDS(here('temp_midori_c8.rds'))
+
+# expand classificaction objects
+mclassify1 <- classify_expand(mclassify1)
+mclassify2a <- classify_expand(mclassify2a)
+mclassify2b <- classify_expand(mclassify2b)
+mclassify3a <- classify_expand(mclassify3a)
+mclassify3b <- classify_expand(mclassify3b)
+mclassify3c <- classify_expand(mclassify3c)
+mclassify4a <- classify_expand(mclassify4a)
+mclassify4b <- classify_expand(mclassify4b)
+mclassify4c <- classify_expand(mclassify4c)
+mclassify4d <- classify_expand(mclassify4d)
+mclassify5 <- classify_expand(mclassify5)
+mclassify6 <- classify_expand(mclassify6)
+mclassify7 <- classify_expand(mclassify7)
+mclassify8 <- classify_expand(mclassify8)
+
+
+
 #bind rows and save again
+
+mclassify_all <- mclassify1 %>%
+  bind_rows(mclassify2a, mclassify2b, mclassify3a,
+            mclassify3b, mclassify3c, mclassify4a,
+            mclassify4b, mclassify4c, mclassify4d,
+            mclassify5, mclassify6, mclassify7, mclassify8) %>%
+  # clean up tol mess, nothing after the parentheses ever matters
+  mutate(query = str_remove_all(query, '\\(.*')) %>%
+  mutate(query = trimws(query)) %>%
+    #remove duplicates, its ok if it isn't perfect
+  distinct(query, kingdom, .keep_all = TRUE)
+
+#write draft
+write.csv(mclassify_all, here(rosetta, 'current_draft', '20220724_midori_taxonomy_all.csv'))
 ```
 
 ## Problems
@@ -195,15 +287,18 @@ Here we're running what TOL didn't find through several databases to identify th
 Anything found is classified by the respective database, because at this stage we're looking to filter out not-fish. Then the remaining fish will be stripped of higher taxonomy and run through worms.
 
 ```{r problems}
-# extract 'failures'
-# mresolved9 is a rerun list of not-found
-# in a future version we'll replace this with a filtered object
-## filtered object made, redo this section with midori_notfound
-mresolved_fail <- mresolved9 %>%
-  filter(is.na(unique_name))
+# read in draft if necessary
+mclassify_all <- read_csv(here(rosetta, 'current_draft', '20220724_midori_taxonomy_all.csv'))[-1]
 
-# run through gbif
-mresolve_gbif <- get_gbifid_(sci = mresolved_fail$search_string)
+# extract 'failures'
+mresolved_fail_full <- midori_search %>%
+  filter(!(species %in% mclassify_all$query))
+
+# object to use as rolling list
+mresolved_fail <- mresolved_fail_full
+
+# run through gbif instead
+mresolve_gbif <- get_gbifid_(sci = mresolved_fail$species)
 
 mresolve_gbif2 <- map_dfr(.x= mresolve_gbif, ~ data.frame(.x), .id = 'taxa_query') %>%
   filter(matchtype == 'EXACT') %>%
@@ -218,13 +313,14 @@ mresolve_gbif2 <- map_dfr(.x= mresolve_gbif, ~ data.frame(.x), .id = 'taxa_query
          gbif_taxa = canonicalname)
   
 mresolved_fail <- mresolved_fail %>%
-  filter(!(search_string %in% mresolve_gbif2$taxa_query))
+  filter(!(species %in% mresolve_gbif2$taxa_query))
 
 # run through BOLD
-mresolve_bold <- get_boldid_(sci = mresolved_fail$search_string)
+mresolve_bold <- get_boldid_(sci = mresolved_fail$species)
 
 mresolve_bold2 <- map_dfr(.x= mresolve_bold, ~ data.frame(.x), .id = 'taxa_query') %>%
-    rename(bold_taxa = input)
+    rename(bold_taxa = input) %>%
+  filter(!(is.na(taxid)))
 
 # classify found with bold
 mresolve_bold_classify <- classification(mresolve_bold2$bold_taxa, db = 'bold')
@@ -232,23 +328,36 @@ mresolve_bold_classify <- classification(mresolve_bold2$bold_taxa, db = 'bold')
 mresolve_bold_classify2 <- map_dfr(.x= mresolve_bold_classify, ~ data.frame(.x), 
                                    .id = 'taxa_query') %>%
   distinct() %>%
-  pivot_wider(names_from = rank, values_from = name, id_cols = taxa_query)
+  pivot_wider(names_from = rank, values_from = name, id_cols = taxa_query) %>%
+  # make sure animals are populated here, the others don't matter anyway.
+  mutate(kingdom = case_when(phylum == 'Arthropoda' ~ 'Animalia',
+                             phylum == 'Annelida' ~ 'Animalia',
+                             phylum == 'Cnidaria' ~ 'Animalia',
+                             phylum == 'Chordata' ~ 'Animalia',
+                             phylum == 'Mollusca' ~ 'Animalia',
+                             phylum == 'Nemertea' ~ 'Animalia',
+                             phylum == 'Platyhelminthes' ~ 'Animalia',
+                             phylum == 'Tardigrada' ~ 'Animalia',
+                             phylum == 'Nematoda' ~ 'Animalia')) %>%
+  mutate(rank = 'species')
 
 
 mresolved_fail <- mresolved_fail %>%
-  filter(!(search_string %in% mresolve_bold2$taxa_query))
+  filter(!(species %in% mresolve_bold2$taxa_query))
 
 
 # now we'll extract the first word in each taxa here, presumably the genus, and try searching that way.
 ## Many of these issues are with insects, and what really matters is that we can sort out insects from our results.
 
-mresolved_fail_gen <- mresolved_fail %>%
-  select(search_string) %>%
+mresolved_fail_gen_full <- mresolved_fail %>%
   # extract genus names so we can test them
-  separate(search_string, into = 'genus_split', " ", 1, 
+  separate(species, into = 'genus_split', " ", 1, 
            remove = FALSE, extra = 'drop') %>%
   # remove brackets?
-  mutate(genus_split = str_remove_all(genus_split, "[\\[\\]]")) 
+  mutate(genus_split = str_remove_all(genus_split, "[\\[\\]]"))
+
+#temp to use as rolling list
+mresolved_fail_gen <- mresolved_fail_gen_full
 
 fail_gen_search <- mresolved_fail_gen %>%
   select(genus_split)%>%
@@ -272,7 +381,9 @@ mresolve_gbif_gen2 <- map_dfr(.x= mresolve_gbif_gen, ~ data.frame(.x), .id = 'ta
   
 mresolved_gbif_gen3 <- mresolved_fail_gen %>%
   left_join(mresolve_gbif_gen2, by = 'genus_split') %>%
-  filter(!(is.na(gbif_key)))
+  filter(!(is.na(gbif_key))) %>%
+  select(!(c(species.y, specieskey))) %>%
+  rename(species = species.x)
 
 mresolved_fail_gen <-mresolved_fail_gen %>%
   filter(!(genus_split %in% mresolved_gbif_gen3$genus_split))
@@ -280,7 +391,32 @@ mresolved_fail_gen <-mresolved_fail_gen %>%
 fail_gen_search <- fail_gen_search %>%
   filter(genus_split %in% mresolved_fail_gen$genus_split)
 
+# run through BOLD
+mresolve_bold_gen <- get_boldid_(sci = fail_gen_search$genus_split)
 
+mresolve_bold_gen2 <- map_dfr(.x= mresolve_bold_gen, ~ data.frame(.x), .id = 'taxa_query') %>%
+    rename(bold_taxa = input) %>%
+  filter(!(is.na(taxid))) %>%
+  select(taxa_query) %>%
+  distinct()
+
+# classify found with bold
+mresolve_bold_classify <- classification(mresolve_bold_gen12$taxa_query, db = 'bold')
+
+mresolve_bold_classify_gen2 <- map_dfr(.x= mresolve_bold_classify, ~ data.frame(.x), 
+                                   .id = 'taxa_query') %>%
+  distinct() %>%
+  pivot_wider(names_from = rank, values_from = name, id_cols = taxa_query) %>%
+  rename(genus_split = taxa_query) %>%
+  select(!(species)) %>%
+  right_join(mresolved_fail_gen_full) %>%
+  filter(!(is.na(phylum)))
+
+mresolved_fail_gen <-mresolved_fail_gen %>%
+  filter(!(genus_split %in% mresolve_bold_classify_gen2$genus_split))
+
+fail_gen_search <- fail_gen_search %>%
+  filter(genus_split %in% mresolved_fail_gen$genus_split)
 
 
 # EOL
@@ -294,49 +430,75 @@ mresolve_eol_classify <- classification(mresolve_eol_gen2$eolid, db = 'eol')
 # rotate and clean
 mresolve_eol_class2 <- map_dfr(.x = mresolve_eol_classify, ~ data.frame(.x), .id = 'eolid') %>%
   # fix the entries that doesn't have ranks 
-  mutate(rank = ifelse(name %in% c('Fungi'), 'kingdom', rank)) %>%
+  mutate(rank = ifelse(name %in% c('Fungi', 'Plantae', 'Metazoa', 'Animalia', 'Viruses'), 'kingdom', rank)) %>%
   mutate(rank = ifelse(name %in% c('Arthropoda', 'Chordata'), 'phylum', rank)) %>%
   mutate(rank = ifelse(name %in% c('Insecta', 'Reptilia'), 'class', rank)) %>%
+    mutate(rank = ifelse(name %in% c('Coleoptera'), 'order', rank)) %>%
   mutate(rank = ifelse(name %in% c('Disholandricus', 'Rossmanomyces',
                                    'Ornithuroscincus'), 'genus', rank)) %>%
   filter(rank %in% c('kingdom', 'phylum', 'class', 
                      'order', 'family', 'genus', 'species')) %>%
-  select(!(id)) %>%
+  select(!(c(id, `.x`))) %>%
   filter(!(name %in% c('Dipnotetrapodomorpha', 'Sarcopterygii'))) %>%
   distinct() %>%
   pivot_wider(id_cols = eolid, names_from = rank, values_from = name) %>%
   select(!(c(species))) %>%
+  mutate(genus = str_remove_all(genus, " .*")) %>%
   distinct(genus, .keep_all = TRUE) %>%
+  mutate(across(.cols = everything(), ~str_replace_all(., 'NULL', NA_character_))) %>%
   filter(!(is.na(genus))) %>%
-  rename(genus_split = genus)
+  rename(genus_split = genus) %>%
+  right_join(mresolved_fail_gen_full) %>%
+  filter(!(is.na(eolid)))
 
 
-mresolved_fail_gen2 <- mresolved_fail_gen %>%
-  left_join(mresolve_eol_class2, by = 'genus_split') %>%
-  filter(!(is.na(eolid))) %>%
-  rename(taxa_query = search_string)
+
+
+# Combine all found lists
+## NOTE this introduces errors with duplicates. 
+## HOWEVER it is enough to filter to fish
+mresolved_fail_gen2 <- mresolved_gbif_gen3 %>%
+  bind_rows(mresolve_eol_class2, mresolve_bold_gen2) %>%
+  select(!(c(gbif_key, acceptedusagekey, eolid, taxa_query))) %>%
+  filter(genus_split == genus) %>%
+  distinct(species, class, .keep_all = TRUE) %>%
+  select(!(genus_split)) %>%
+  bind_rows(mresolve_gbif2, mresolve_bold_classify2) %>%
+  select(!(c(gbif_key, taxa_query, tribe, gbif_taxa, subfamily))) %>%
+  filter(!(is.na(species))) %>%
+  mutate(query = species)
 
 ## extract what's still failing to look at later
-outstanding_fails <- mresolved_fail_gen %>%
-  filter(!(search_string %in% mresolved_fail_gen2$taxa_query))
+outstanding_fails <- mresolved_fail_full %>%
+  filter(!(species %in% mresolved_fail_gen2$species))
 
 write_csv(outstanding_fails, here(rosetta, 'problems',
-                                  'not_found', '20220718_midori_mifish_notfound.csv'))
-
-# consolidate problems
-problems_classified <- mresolve_gbif2 %>%
-  bind_rows(mresolve_gbif_gen2, mresolve_bold_classify2, 
-            mresolved_fail_gen2) %>%
-  mutate(kingdom = ifelse(phylum %in% c('Annelida', 'Arthropoda', 'Chordata',
-                                        'Cnidaria', 'Mollusca', 'Nematoda',
-                                        'Tardigrada'), 
-                          'Animalia', kingdom)) %>%
-  # just in case any slipped through
-  filter(!(taxa_query %in% outstanding_fails$search_string))
-
-
+                                  'not_found', '20220724_midori_mifish_notfound.csv'))
 
 ```
 
+# combine problems and fixed
+```{r}
+midori_key2 <- midori_key %>%
+  rename(query = species)
 
+midori_all <- mclassify_all %>%
+  bind_rows(mresolved_fail_gen2) %>%
+  left_join(midori_key2) %>%
+  relocate(species_verbatim)
+
+write_csv(midori_all, here(rosetta, 'current_draft', '20220724_midori_all_draft.csv'))
+
+
+# extract fish to fix up
+
+midori_fish <- midori_all %>%
+  filter(phylum == 'Chordata') %>%
+  filter(class %in% c('Actinopteri', 'Chondrichthyes', 'Elasmobranchii',
+                      'Dipnoi', 'Hyperotreti', 'Cladista', 'Myxini',
+                      'Cephalaspidomorphi', NA)) %>%
+  filter(!(order %in% c('Sauria')))
+
+write_csv(midori_fish, here(rosetta, 'current_draft', '20220724_mifish_fish_filter.csv'))
+```
 
