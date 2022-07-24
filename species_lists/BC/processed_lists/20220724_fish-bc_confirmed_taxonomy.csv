@@ -1,0 +1,293 @@
+"","species","hakai2020","hart","hakaiseine","hakaisample","terrestrial_only","freshwater_only","worms_sciname","class","order","family","genus","status","unacceptreason","is_synonym","worms_aphiaid","bold_id","gbif_key","ott_id"
+"1","Clevelandia ios",1,1,1,0,"0","0","Clevelandia ios","Actinopteri","Gobiiformes","Gobiidae","Clevelandia","accepted",NA,FALSE,280215,76486,5209085,1014036
+"2","Lepidogobius lepidus",1,1,1,1,"0","0","Lepidogobius lepidus","Actinopteri","Gobiiformes","Gobiidae","Lepidogobius","accepted",NA,FALSE,281292,125624,2379182,387080
+"3","Alos sapidissima",1,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"4","Syngnathus leptorhynchus",1,0,1,1,"0","0","Syngnathus leptorhynchus","Actinopteri","Syngnathiformes","Syngnathidae","Syngnathus","accepted",NA,FALSE,275226,78133,2332938,774443
+"5","Coryphopterus nicholsi",1,1,0,0,"0","0","Rhinogobiops nicholsii","Actinopteri","Gobiiformes","Gobiidae","Coryphopterus","unaccepted","misspelling",TRUE,282580,NA,2376639,494025
+"6","Sebastes melanops",1,1,1,0,"0","0","Sebastes melanops","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274817,10711,2335569,9604
+"7","Sebastes paucispinis",1,1,1,1,"0","0","Sebastes paucispinis","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274833,10777,2335466,582321
+"8","Enophrys bison",1,1,1,1,"0","0","Enophrys bison","Actinopteri","Perciformes","Cottidae","Enophrys","accepted",NA,FALSE,275355,125570,5201188,290389
+"9","Scorpaenichthys marmoratus",1,1,1,1,"0","0","Scorpaenichthys marmoratus","Actinopteri","Perciformes","Cottidae","Scorpaenichthys","accepted",NA,FALSE,282726,76463,5201222,786351
+"10","Scorpaenichthys marmoratus",1,1,1,1,"0","0","Scorpaenichthys marmoratus","Actinopteri","Perciformes","Cottidae","Scorpaenichthys","unaccepted",NA,FALSE,282726,76463,5201222,786351
+"11","Sebastes nebulosus",1,1,0,0,"0","0","Sebastes nebulosus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274824,1017160,2335508,1088444
+"12","Oncorhynchus tshawytscha",1,1,1,1,"0","0","Oncorhynchus tshawytscha","Actinopteri","Salmoniformes","Salmonidae","Oncorhynchus","accepted",NA,FALSE,158075,10566,5204024,730762
+"13","Oncorhynchus kisutch",1,1,1,1,"0","0","Oncorhynchus kisutch","Actinopteri","Salmoniformes","Salmonidae","Oncorhynchus","accepted",NA,FALSE,127184,23772,5204034,739917
+"14","Sebastes caurinus",1,1,1,1,"0","0","Sebastes caurinus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274780,33903,2335455,1057078
+"15","Pleuronichthys coenosus",1,0,1,1,"0","0","Pleuronichthys coenosus","Actinopteri","Pleuronectiformes","Pleuronectidae","Pleuronichthys","accepted",NA,FALSE,282290,33921,2409249,1091692
+"16","Pleuronichthys decurrens",1,0,1,0,"0","0","Pleuronichthys decurrens","Actinopteri","Pleuronectiformes","Pleuronectidae","Pleuronichthys","accepted",NA,FALSE,282292,34549,2409246,1077979
+"17","Pholis laeta",1,1,1,1,"0","0","Pholis laeta","Actinopteri","Perciformes","Pholidae","Pholis","accepted",NA,FALSE,273689,125636,5210424,106653
+"18","Sebastes diaconus",1,0,0,0,"0","0","Sebastes diaconus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,1384909,NA,8957040,7650657
+"19","Chirolophis decoratus",1,1,0,0,"0","0","Chirolophis decoratus","Actinopteri","Perciformes","Stichaeidae","Chirolophis","accepted",NA,FALSE,254576,125569,2394964,290384
+"20","Salvelinus malma",1,1,1,1,"0","0","Salvelinus malma","Actinopteri","Salmoniformes","Salmonidae","Salvelinus","accepted",NA,FALSE,254570,88751,4284020,688336
+"21","Sebastes ciliatus",1,1,0,0,"0","0","Sebastes ciliatus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274782,140880,2335476,1057071
+"22","Parophrys vetulus",1,0,1,1,"0","0","Parophrys vetulus","Actinopteri","Pleuronectiformes","Pleuronectidae","Parophrys","accepted",NA,FALSE,254393,33893,2409370,835838
+"23","Myoxocephalus polyacanthocephalus",1,1,1,0,"0","0","Myoxocephalus polyacanthocephalus","Actinopteri","Perciformes","Cottidae","Myoxocephalus","accepted",NA,FALSE,254528,101094,2333818,582925
+"24","Rhamphocottus richardsonii",1,0,0,1,"0","0","Rhamphocottus richardsonii","Actinopteri","Perciformes","Rhamphocottidae","Rhamphocottus","accepted",NA,FALSE,282578,125517,2336938,706152
+"25","Clupea pallasi",1,0,0,0,"0","0","Clupea pallasii pallasii","Actinopteri","Clupeiformes","Clupeidae","Clupea","unaccepted","misspelling",TRUE,293568,NA,4284074,421318
+"26","Anoplarchus purpurescens",1,1,1,0,"0","0","Anoplarchus purpurescens","Actinopteri","Perciformes","Stichaeidae","Anoplarchus","accepted",NA,FALSE,279633,78132,2394914,865045
+"27","Rimicola muscarum",1,1,1,1,"0","0","Rimicola muscarum","Actinopteri","Gobiesociformes","Gobiesocidae","Rimicola","accepted",NA,FALSE,282617,99728,5214482,584437
+"28","Hexagrammos decagrammus",1,1,1,1,"0","0","Hexagrammos decagrammus","Actinopteri","Perciformes","Hexagrammidae","Hexagrammos","accepted",NA,FALSE,240732,33916,2336472,305854
+"29","Brachyistius frenatus",1,1,1,1,"0","0","Brachyistius frenatus","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Brachyistius","accepted",NA,FALSE,240721,99711,2389277,29170
+"30","Ophiodon elongatus",1,1,1,1,"0","0","Ophiodon elongatus","Actinopteri","Perciformes","Hexagrammidae","Ophiodon","accepted",NA,FALSE,240745,17835,2336521,849032
+"31","Synchirus gilli",1,1,1,0,"0","0","Synchirus gilli","Actinopteri","Perciformes","Cottidae","Synchirus","accepted",NA,FALSE,282921,125638,2334298,170497
+"32","Engraulis mordax",1,0,1,1,"0","0","Engraulis mordax","Actinopteri","Clupeiformes","Engraulidae","Engraulis","accepted",NA,FALSE,272286,33922,2414024,29754
+"33","Gobiesox maeandricus",1,1,1,1,"0","0","Gobiesox maeandricus","Actinopteri","Gobiesociformes","Gobiesocidae","Gobiesox","accepted",NA,FALSE,275671,125653,2411287,622499
+"34","Gadus macrocephalus",1,1,1,1,"0","0","Gadus macrocephalus","Actinopteri","Gadiformes","Gadidae","Gadus","accepted",NA,FALSE,254538,19837,2415853,56885
+"35","Oxylebius pictus",1,1,1,1,"0","0","Oxylebius pictus","Actinopteri","Perciformes","Hexagrammidae","Oxylebius","accepted",NA,FALSE,240743,76502,2336510,131554
+"36","Citharichthys sordidus",1,0,1,0,"0","0","Citharichthys sordidus","Actinopteri","Pleuronectiformes","Paralichthyidae","Citharichthys","accepted",NA,FALSE,275694,11803,2408726,776754
+"37","Artedius fenestralis",1,1,1,1,"0","0","Artedius fenestralis","Actinopteri","Perciformes","Cottidae","Artedius","accepted",NA,FALSE,279700,142500,2333969,830121
+"38","Trichodon trichodon",1,1,1,1,"0","0","Trichodon trichodon","Actinopteri","Perciformes","Trichodontidae","Trichodon","accepted",NA,FALSE,283043,34016,5210437,1009635
+"39","Apodichthys flavidus",1,1,1,1,"0","0","Apodichthys flavidus","Actinopteri","Perciformes","Pholidae","Apodichthys","accepted",NA,FALSE,279664,125580,2390392,628665
+"40","Rhacochilus vacca",1,1,1,0,"0","0","Phanerodon vacca","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Rhacochilus","superseded combination",NA,FALSE,1577347,33902,2389313,841788
+"41","Oncorhynchus gorbuscha",1,1,1,1,"0","0","Oncorhynchus gorbuscha","Actinopteri","Salmoniformes","Salmonidae","Oncorhynchus","accepted",NA,FALSE,127182,48257,5204037,739927
+"42","Cottus asper",1,0,1,0,"0","0","Cottus asper","Actinopteri","Perciformes","Cottidae","Cottus","accepted",NA,FALSE,274368,88721,2334177,996489
+"43","Odontopyxis trispinosa",1,1,1,0,"0","0","Odontopyxis trispinosa","Actinopteri","Perciformes","Agonidae","Odontopyxis","accepted",NA,FALSE,281836,10690,2337272,865043
+"44","Sebastes maliger",1,1,1,0,"0","0","Sebastes maliger","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274815,52780,2335438,9601
+"45","Ptilichthys goodei",1,0,1,0,"0","0","Ptilichthys goodei","Actinopteri","Perciformes","Ptilichthyidae","Ptilichthys","accepted",NA,FALSE,282508,302399,2390025,728254
+"46","Hydrolagus colliei",1,0,0,0,"0","0","Hydrolagus colliei","Holocephali","Chimaeriformes","Chimaeridae","Hydrolagus","accepted",NA,NA,271406,33914,5215461,NA
+"47","Chitonotus pugetensis",1,1,1,1,"0","0","Chitonotus pugetensis","Actinopteri","Perciformes","Cottidae","Chitonotus","accepted",NA,FALSE,280162,33905,2333761,706157
+"48","Hemilepidotus hemilepidotus",1,1,1,1,"0","0","Hemilepidotus hemilepidotus","Actinopteri","Perciformes","Cottidae","Hemilepidotus","accepted",NA,FALSE,254521,125589,2333949,568667
+"49","Amphistichus rhodoterus",1,1,1,1,"0","0","Amphistichus rhodoterus","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Amphistichus","accepted",NA,FALSE,279596,76472,2389252,698628
+"50","Hexagrammos lagocephalus",1,1,1,0,"0","0","Hexagrammos lagocephalus","Actinopteri","Perciformes","Hexagrammidae","Hexagrammos","accepted",NA,FALSE,240735,125616,2336464,185870
+"51","Xiphister mucosus",1,0,1,0,"0","0","Xiphister mucosus","Actinopteri","Perciformes","Stichaeidae","Xiphister","accepted",NA,FALSE,283195,78130,2394809,557670
+"52","Lepidopsetta bilineata",1,0,1,1,"0","0","Lepidopsetta bilineata","Actinopteri","Pleuronectiformes","Pleuronectidae","Lepidopsetta","accepted",NA,FALSE,281305,33919,5213939,206083
+"53","Ammodytes hexapterus",1,1,1,0,"0","0","Ammodytes hexapterus","Actinopteri","Perciformes","Ammodytidae","Ammodytes","accepted",NA,FALSE,254510,101085,2389995,9661
+"54","Sardinops sagax",1,1,1,0,"0","0","Sardinops sagax","Actinopteri","Clupeiformes","Clupeidae","Sardinops","accepted",NA,FALSE,217452,10866,2412583,382323
+"55","Oligocottus rimensis",1,1,1,0,"0","0","Oligocottus rimensis","Actinopteri","Perciformes","Cottidae","Oligocottus","accepted",NA,FALSE,281873,125659,2333744,735818
+"56","Psettichthys melanostictus",1,0,1,1,"0","0","Psettichthys melanostictus","Actinopteri","Pleuronectiformes","Pleuronectidae","Psettichthys","accepted",NA,FALSE,282396,33913,2409051,282295
+"57","Nautichthys oculofasciatus",1,1,1,1,"0","0","Nautichthys oculofasciatus",NA,"Scorpaeniformes","Hemitripteridae","Nautichthys","accepted",NA,FALSE,254542,99713,2335124,786112
+"58","Cymatogaster aggregata",1,1,1,1,"0","0","Cymatogaster aggregata","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Cymatogaster","accepted",NA,FALSE,280461,11121,2389234,493362
+"59","Clinocottus acuticeps",1,1,1,0,"0","0","Clinocottus acuticeps","Actinopteri","Perciformes","Cottidae","Clinocottus","accepted",NA,FALSE,280218,125646,2333873,212219
+"60","Blepsias cirrhosus",1,1,1,1,"0","0","Blepsias cirrhosus",NA,"Scorpaeniformes","Hemitripteridae","Blepsias","accepted",NA,FALSE,279417,125608,2335095,446859
+"61","Anoplarchus insignis",1,1,1,0,"0","0","Anoplarchus insignis","Actinopteri","Perciformes","Stichaeidae","Anoplarchus","accepted",NA,FALSE,279632,125605,2394916,967630
+"62","Artedius lateralis",1,1,1,1,"0","0","Artedius lateralis","Actinopteri","Perciformes","Cottidae","Artedius","accepted",NA,FALSE,279702,76453,2333966,401750
+"63","Lumpenus sagitta",1,1,1,1,"0","0","Lumpenus sagitta","Actinopteri","Perciformes","Stichaeidae","Lumpenus","accepted",NA,FALSE,254579,13990,5211330,786101
+"64","Citharichthys stigmaeus",1,0,1,0,"0","0","Citharichthys stigmaeus","Actinopteri","Pleuronectiformes","Paralichthyidae","Citharichthys","accepted",NA,FALSE,275696,125498,2408737,776738
+"65","Sebastes brevispinis",1,1,0,0,"0","0","Sebastes brevispinis","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274778,10780,2335560,1057081
+"66","Oncorhynchus mykiss",1,0,1,0,"0","0","Oncorhynchus mykiss","Actinopteri","Salmoniformes","Salmonidae","Oncorhynchus","accepted",NA,FALSE,127185,16550,5204019,165368
+"67","Platichthys stellatus",1,0,1,1,"0","0","Platichthys stellatus","Actinopteri","Pleuronectiformes","Pleuronectidae","Platichthys","accepted",NA,FALSE,154781,33910,2409327,296735
+"68","Gibbonsia metzi",1,1,1,0,"0","0","Gibbonsia metzi","Actinopteri","Blenniiformes","Clinidae","Gibbonsia","accepted",NA,FALSE,280835,606344,5209312,433324
+"69","Embiotoca lateralis",1,1,1,1,"0","0","Embiotoca lateralis","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Embiotoca","accepted",NA,FALSE,240740,76474,2389287,1090031
+"70","Leptocottus armatus",1,1,1,1,"0","0","Leptocottus armatus","Actinopteri","Perciformes","Cottidae","Leptocottus","accepted",NA,FALSE,254345,59606,2333923,520272
+"71","Hypomesus pretiosus",1,0,1,1,"0","0","Hypomesus pretiosus","Actinopteri","Osmeriformes","Osmeridae","Hypomesus","accepted",NA,FALSE,279422,125619,2410871,227596
+"72","Gasterosteus aculeatus",1,1,1,0,"0","0","Gasterosteus aculeatus","Actinopteri","Perciformes","Gasterosteidae","Gasterosteus","accepted",NA,FALSE,126505,30387,4286327,401066
+"73","Oligocottus maculosus",1,1,1,1,"0","0","Oligocottus maculosus","Actinopteri","Perciformes","Cottidae","Oligocottus","accepted",NA,FALSE,281872,101369,2333746,365186
+"74","Sebastes nigrocintus",1,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"75","Microgadus proximus",1,1,1,1,"0","0","Microgadus proximus","Actinopteri","Gadiformes","Gadidae","Microgadus","accepted",NA,FALSE,275873,15708,2415888,56889
+"76","Aulorhynchus flavidus",1,1,1,1,"0","0","Aulorhynchus flavidus","Actinopteri","Perciformes","Aulorhynchidae","Aulorhynchus","accepted",NA,FALSE,279839,99726,2356481,591249
+"77","Pallasina barbata",1,0,1,1,"0","0","Pallasina barbata","Actinopteri","Perciformes","Agonidae","Pallasina","accepted",NA,FALSE,254396,110751,5201645,170501
+"78","Sebastes miniatus",1,1,1,0,"0","0","Sebastes miniatus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274820,33917,2335381,9611
+"79","Theragra chalcogramma",1,1,0,0,"0","0","Gadus chalcogrammus","Actinopteri","Gadiformes","Gadidae","Theragra","unaccepted",NA,TRUE,300735,NA,2415762,1056842
+"80","Hexagrammos stelleri",1,1,1,1,"0","0","Hexagrammos stelleri","Actinopteri","Perciformes","Hexagrammidae","Hexagrammos","accepted",NA,FALSE,254545,125577,2336480,185873
+"81","Anarrhichthys ocellatus",1,0,0,0,"0","0","Anarrhichthys ocellatus","Actinopteri","Perciformes","Anarhichadidae","Anarrhichthys","accepted",NA,FALSE,279605,140350,2392219,714035
+"82","Sebastes flavidus",1,1,1,1,"0","0","Sebastes flavidus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274795,10709,2335500,531059
+"83","Agonopsis emmelane",0,1,0,0,"0","0","Agonopsis vulsa","Actinopteri","Perciformes","Agonidae","Agonopsis","unaccepted",NA,TRUE,279522,NA,5201656,467091
+"84","Agonus acipenserinus",0,1,0,0,"0","0","Podothecus accipenserinus","Actinopteri","Perciformes","Agonidae","Agonus","unaccepted","misspelling",TRUE,254501,NA,2337133,290399
+"85","Alepisaurus ferox",0,1,0,0,"0","0","Alepisaurus ferox","Actinopteri","Aulopiformes","Alepisauridae","Alepisaurus","accepted",NA,FALSE,126333,56035,2401692,587926
+"86","Allolumpenus hypochromus",0,1,0,0,"0","0","Lumpenopsis hypochroma","Actinopteri","Perciformes","Stichaeidae","Allolumpenus","unaccepted",NA,TRUE,281437,NA,2394993,3640062
+"87","Allosmerus elongatus",0,1,0,0,"0","0","Allosmerus elongatus","Actinopteri","Osmeriformes","Osmeridae","Allosmerus","accepted",NA,FALSE,279564,10694,2410865,568680
+"88","Alopias vulpinus",0,1,0,0,"0","0","Alopias vulpinus","Elasmobranchii","Lamniformes","Alopiidae","Alopias","accepted",NA,FALSE,105836,17605,2420797,1077204
+"89","Alosa sapidissima",0,1,0,0,"0","0","Alosa sapidissima","Actinopteri","Clupeiformes","Clupeidae","Alosa","accepted",NA,FALSE,158670,13393,2412661,519453
+"90","Alosa sapidissima",0,1,0,0,"0","0","Alosa sapidissima","Actinopteri","Clupeiformes","Clupeidae","Alosa","accepted",NA,FALSE,158670,13393,2412661,519453
+"91","Amphistichus koelzi",0,1,0,0,"0","0","Amphistichus koelzi","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Amphistichus","accepted",NA,FALSE,279595,NA,2389258,30109
+"92","Anoplagonus inermis",0,1,0,0,"0","0","Anoplagonus inermis","Actinopteri","Perciformes","Agonidae","Anoplagonus","accepted",NA,FALSE,279630,393344,2337170,283935
+"93","Anoplopoma fimbria",0,1,0,1,"0","0","Anoplopoma fimbria","Actinopteri","Perciformes","Anoplopomatidae","Anoplopoma","accepted",NA,FALSE,159463,13145,2335062,441856
+"94","Anotopterus pharao",0,1,0,0,"0","0","Anotopterus pharao","Actinopteri","Aulopiformes","Anotopteridae","Anotopterus","accepted",NA,FALSE,126334,56038,2401111,511496
+"95","Antimora microlepis",0,1,0,0,"0","0","Antimora microlepis","Actinopteri","Gadiformes","Moridae","Antimora","accepted",NA,FALSE,272460,33886,2417122,1060510
+"96","Aptocyclus ventricosus",0,1,0,0,"0","0","Aptocyclus ventricosus","Actinopteri","Perciformes","Cyclopteridae","Aptocyclus","accepted",NA,FALSE,254299,31898,2336803,989887
+"97","Argyropelecus lychnus lychnus",0,1,0,0,"0","0","Argyropelecus lychnus","Actinopteri","Stomiiformes","Sternoptychidae","Argyropelecus","unaccepted",NA,TRUE,158836,NA,6169549,462614
+"98","Aristostomias scintillans",0,1,0,0,"0","0","Aristostomias scintillans","Actinopteri","Stomiiformes","Stomiidae","Aristostomias","accepted",NA,FALSE,275007,34006,5203192,273427
+"99","Artedius harringtoni",0,1,1,0,"0","0","Artedius harringtoni","Actinopteri","Perciformes","Cottidae","Artedius","accepted",NA,FALSE,279701,125642,2333963,568692
+"100","Artedius meanyi",0,1,0,0,"0","0","Ruscarius meanyi","Actinopteri","Perciformes","Cottidae","Artedius","unaccepted",NA,TRUE,282637,NA,2333930,735810
+"101","Ascelichthys rhodorus",0,1,1,1,"0","0","Ascelichthys rhodorus","Actinopteri","Perciformes","Cottidae","Ascelichthys","accepted",NA,FALSE,279706,784709,2334021,3632243
+"102","Asemichthys taylori",0,1,0,1,"0","0","Asemichthys taylori","Actinopteri","Perciformes","Cottidae","Asemichthys","accepted",NA,FALSE,316433,716933,2333756,3632127
+"103","Asterotheca alascana",0,1,0,0,"0","0","Bathyagonus alascanus","Actinopteri","Perciformes","Agonidae","Asterotheca","unaccepted",NA,TRUE,254503,NA,5201623,714017
+"104","Asterotheca infraspinata",0,1,0,0,"0","0","Bathyagonus infraspinatus","Actinopteri","Perciformes","Agonidae","Asterotheca","unaccepted",NA,TRUE,254504,NA,5201621,580260
+"105","Asterotheca pentacanthus",0,1,0,0,"0","0","Bathyagonus pentacanthus","Actinopteri","Perciformes","Agonidae","Asterotheca","unaccepted",NA,TRUE,254506,NA,5201626,714039
+"106","Atherinops affinis affinis",0,1,0,0,"0","0","Atherinops affinis","Actinopteri","Atheriniformes","Atherinidae","Atherinops","unaccepted",NA,TRUE,279812,NA,6166238,396631
+"107","Bathyagonus nigripinnis",0,1,0,0,"0","0","Bathyagonus nigripinnis","Actinopteri","Perciformes","Agonidae","Bathyagonus","accepted",NA,FALSE,254505,33907,2337089,714020
+"108","Bathylagus milleri",0,1,0,0,"0","0","Pseudobathylagus milleri","Actinopteri","Argentiniformes","Bathylagidae","Bathylagus","unaccepted",NA,TRUE,282406,NA,2410964,197413
+"109","Bathylagus ochotensis",0,1,0,0,"0","0","Lipolagus ochotensis","Actinopteri","Argentiniformes","Bathylagidae","Bathylagus","unaccepted",NA,TRUE,281374,NA,2410942,562640
+"110","Bathylagus pacificus",0,1,0,0,"0","0","Bathylagus pacificus","Actinopteri","Argentiniformes","Bathylagidae","Bathylagus","accepted",NA,FALSE,272919,91472,2410970,580257
+"111","Bathymaster signatus",0,1,0,0,"0","0","Bathymaster signatus","Actinopteri","Perciformes","Bathymasteridae","Bathymaster","accepted",NA,FALSE,254513,101098,2394455,300553
+"112","Benthalbella dentata",0,1,0,0,"0","0","Benthalbella dentata","Actinopteri","Aulopiformes","Scopelarchidae","Benthalbella","accepted",NA,FALSE,254572,33980,2401437,1095245
+"113","Benthodesmus simonyi",0,1,0,0,"0","0","Benthodesmus simonyi","Actinopteri","Scombriformes","Trichiuridae","Benthodesmus","accepted",NA,FALSE,127087,71685,2389330,429021
+"114","Blepsias bilobus",0,1,0,0,"0","0","Blepsias bilobus",NA,"Scorpaeniformes","Hemitripteridae","Blepsias","accepted",NA,FALSE,254540,110737,2335099,966549
+"115","Bothragonus swani",0,1,0,0,"0","0","Bothragonus swanii","Actinopteri","Perciformes","Agonidae","Bothragonus","unaccepted","misspelling",TRUE,279947,NA,2337160,989012
+"116","Brama japonica",0,1,0,0,"0","0","Brama japonica","Actinopteri","Scombriformes","Bramidae","Brama","accepted",NA,FALSE,273148,34007,5208088,679809
+"117","Brosmophycis marginata",0,1,0,0,"0","0","Brosmophycis marginata","Actinopteri","Ophidiiformes","Bythitidae","Brosmophycis","accepted",NA,FALSE,280000,79413,2346159,941257
+"118","Bryozoichthys marjorius",0,1,0,0,"0","0","Bryozoichthys marjorius","Actinopteri","Perciformes","Stichaeidae","Bryozoichthys","accepted",NA,FALSE,254575,NA,2394866,3639932
+"119","Carcharodon carcharias",0,1,0,0,"0","0","Carcharodon carcharias","Elasmobranchii","Lamniformes","Lamnidae","Carcharodon","accepted",NA,FALSE,105838,16843,2420694,554297
+"120","Careproctus ovigerum",0,1,0,0,"0","0","Careproctus ovigerus","Actinopteri","Perciformes","Liparidae","Careproctus","unaccepted","misspelling",TRUE,274454,NA,2336154,3631910
+"121","Caristius macropus",0,1,0,0,"0","0","Caristius macropus","Actinopteri","Scombriformes","Caristiidae","Caristius","accepted",NA,FALSE,126824,125643,2392038,224117
+"122","Caulolatilus princeps",0,1,0,0,"0","0","Caulolatilus princeps","Actinopteri","Eupercaria incertae sedis","Malacanthidae","Caulolatilus","accepted",NA,FALSE,276217,125471,2389841,694750
+"123","Ceratoscopelus townsendi",0,1,0,0,"0","0","Ceratoscopelus townsendi","Actinopteri","Myctophiformes","Myctophidae","Ceratoscopelus","accepted",NA,FALSE,272656,125476,2406036,462626
+"124","Cetorhinus maximus",0,1,0,0,"0","0","Cetorhinus maximus","Elasmobranchii","Lamniformes","Cetorhinidae","Cetorhinus","accepted",NA,FALSE,105837,92314,2420726,73671
+"125","Chaenophryne parviconus",0,1,0,0,"0","0","Chaenophryne draco","Actinopteri","Lophiiformes","Oneirodidae","Chaenophryne","unaccepted",NA,TRUE,126559,NA,2414733,45806
+"126","Chauliodus macouni",0,1,0,0,"0","0","Chauliodus macouni","Actinopteri","Stomiiformes","Stomiidae","Chauliodus","accepted",NA,FALSE,275055,33959,5203199,76509
+"127","Chirolophis nugator",0,1,0,0,"0","0","Chirolophis nugator","Actinopteri","Perciformes","Stichaeidae","Chirolophis","accepted",NA,FALSE,254577,125612,2394956,568686
+"128","Clinocottus embryum",0,1,0,0,"0","0","Clinocottus embryum","Actinopteri","Perciformes","Cottidae","Clinocottus","accepted",NA,FALSE,280220,125647,2333877,212222
+"129","Clinocottus globiceps",0,1,0,0,"0","0","Clinocottus globiceps","Actinopteri","Perciformes","Cottidae","Clinocottus","accepted",NA,FALSE,280221,125648,2333870,212225
+"130","Clupea harengus pallasi",0,1,0,0,"0","0","Clupea pallasii pallasii","Actinopteri","Clupeiformes","Clupeidae","Clupea","unaccepted",NA,TRUE,293568,NA,6166071,421318
+"131","Cololabis saira",0,1,1,0,"0","0","Cololabis saira","Actinopteri","Beloniformes","Scomberesocidae","Cololabis","accepted",NA,FALSE,280366,30380,2369261,427511
+"132","Cyclothone microdon",0,1,0,0,"0","0","Cyclothone microdon","Actinopteri","Stomiiformes","Gonostomatidae","Cyclothone","accepted",NA,FALSE,127286,59442,2347448,127390
+"133","Cynoscion nobilis",0,1,0,0,"0","0","Atractoscion nobilis","Actinopteri","Eupercaria incertae sedis","Sciaenidae","Cynoscion","unaccepted",NA,TRUE,278535,NA,2400364,720790
+"134","Cyprinus carpio",0,1,0,0,"0","0","Cyprinus carpio","Actinopteri","Cypriniformes","Cyprinidae","Cyprinus","accepted",NA,FALSE,154582,27257,4286975,429083
+"135","Dasycottus setiger",0,1,0,0,"0","0","Dasycottus setiger","Actinopteri","Perciformes","Psychrolutidae","Dasycottus","accepted",NA,FALSE,280488,101082,2334926,1098794
+"136","Delolepis gigantea",0,1,0,0,"0","0","Cryptacanthodes giganteus","Actinopteri","Perciformes","Cryptacanthodidae","Delolepis","unaccepted",NA,TRUE,276392,NA,2387410,317654
+"137","Diaphus theta",0,1,0,0,"0","0","Diaphus theta","Actinopteri","Myctophiformes","Myctophidae","Diaphus","accepted",NA,FALSE,272694,34004,2406199,169217
+"138","Engraulis mordax mordax",0,1,0,0,"0","0","Engraulis mordax","Actinopteri","Clupeiformes","Engraulidae","Engraulis","unaccepted",NA,TRUE,272286,NA,6166023,29754
+"139","Erilepis zonifer",0,1,0,0,"0","0","Erilepis zonifer","Actinopteri","Perciformes","Anoplopomatidae","Erilepis","accepted",NA,FALSE,280700,708140,2335057,3632609
+"140","Eumicrotremus orbis",0,1,0,0,"0","0","Eumicrotremus orbis","Actinopteri","Perciformes","Cyclopteridae","Eumicrotremus","accepted",NA,FALSE,254535,140428,2336849,568675
+"141","Euthynnus pelamis",0,1,0,0,"0","0","Katsuwonus pelamis","Actinopteri","Scombriformes","Scombridae","Euthynnus","unaccepted","Subsequent combination",TRUE,127018,NA,5208585,308754
+"142","Galeorhinus zyopterus",0,1,0,0,"0","0","Galeorhinus galeus","Elasmobranchii","Carcharhiniformes","Triakidae","Galeorhinus","unaccepted","synonym",TRUE,105820,NA,2418272,898984
+"143","Genyonemus lineatus",0,1,0,0,"0","0","Genyonemus lineatus","Actinopteri","Eupercaria incertae sedis","Sciaenidae","Genyonemus","accepted",NA,FALSE,280830,125526,2399573,1027240
+"144","Gibbonsia montereyensis",0,1,1,0,"0","0","Gibbonsia montereyensis","Actinopteri","Blenniiformes","Clinidae","Gibbonsia","accepted",NA,FALSE,280836,125652,5209308,257314
+"145","Gilbertidia sigalutes",0,1,0,0,"0","0","Psychrolutes sigalutes","Actinopteri","Perciformes","Psychrolutidae","Gilbertidia","unaccepted",NA,TRUE,274679,NA,2334916,1055087
+"146","Hemilepidotus spinosus",0,1,0,0,"0","0","Hemilepidotus spinosus","Actinopteri","Perciformes","Cottidae","Hemilepidotus","accepted",NA,FALSE,279413,125615,2333952,525448
+"147","Hemitripterus bolini",0,1,0,0,"0","0","Hemitripterus bolini",NA,"Scorpaeniformes","Hemitripteridae","Hemitripterus","accepted",NA,FALSE,254541,140829,2335114,5342917
+"148","Hexagrammos octogrammus",0,1,0,0,"0","0","Hexagrammos octogrammus","Actinopteri","Perciformes","Hexagrammidae","Hexagrammos","accepted",NA,FALSE,254544,110864,2336486,185862
+"149","Hexanchus griseus",0,1,0,0,"0","0","Hexanchus griseus","Elasmobranchii","Hexanchiformes","Hexanchidae","Hexanchus","accepted",NA,FALSE,105833,76504,2420569,435193
+"150","Hyperprosopon argenteum",0,1,0,0,"0","0","Hyperprosopon argenteum","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Hyperprosopon","accepted",NA,FALSE,281098,483226,2389297,550248
+"151","Hyperprosopon ellipticum",0,1,0,0,"0","0","Hyperprosopon ellipticum","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Hyperprosopon","accepted",NA,FALSE,281099,NA,2389301,30104
+"152","Hypomesus pretiosus pretiosus",0,1,0,0,"0","0","Hypomesus pretiosus","Actinopteri","Osmeriformes","Osmeridae","Hypomesus","unaccepted",NA,TRUE,279422,NA,6169857,227596
+"153","Hypsagonus quadricornis",0,1,0,0,"0","0","Hypsagonus quadricornis","Actinopteri","Perciformes","Agonidae","Hypsagonus","accepted",NA,FALSE,254508,101093,2337164,880655
+"154","Icelinus borealis",0,1,0,0,"0","0","Icelinus borealis","Actinopteri","Perciformes","Cottidae","Icelinus","accepted",NA,FALSE,281133,101081,2334359,1095234
+"155","Icelinus burchami",0,1,0,0,"0","0","Icelinus burchami","Actinopteri","Perciformes","Cottidae","Icelinus","accepted",NA,FALSE,281134,33923,2334351,1073698
+"156","Icelinus filamentosus",0,1,0,0,"0","0","Icelinus filamentosus","Actinopteri","Perciformes","Cottidae","Icelinus","accepted",NA,FALSE,281136,20499,2334357,355893
+"157","Icelinus oculatus",0,1,0,0,"0","0","Icelinus oculatus","Actinopteri","Perciformes","Cottidae","Icelinus","accepted",NA,FALSE,281139,76458,2334350,1073701
+"158","Icelinus tenuis",0,1,0,0,"0","0","Icelinus tenuis","Actinopteri","Perciformes","Cottidae","Icelinus","accepted",NA,FALSE,281142,125620,2334355,568683
+"159","Icelus spiniger",0,1,0,0,"0","0","Icelus spiniger","Actinopteri","Perciformes","Cottidae","Icelus","accepted",NA,FALSE,254525,99722,5201198,7529
+"160","Icichthys lockingtoni",0,1,0,0,"0","0","Icichthys lockingtoni","Actinopteri","Scombriformes","Centrolophidae","Icichthys","accepted",NA,FALSE,279354,59165,2398046,76501
+"161","Icosteus aenigmaticus",0,1,0,0,"0","0","Icosteus aenigmaticus","Actinopteri","Scombriformes","Icosteidae","Icosteus","accepted",NA,FALSE,281153,125452,2394445,408396
+"162","Jordania zonope",0,1,1,0,"0","0","Jordania zonope","Actinopteri","Perciformes","Cottidae","Jordania","accepted",NA,FALSE,398459,971756,2333884,355891
+"163","Lamna ditropis",0,1,0,0,"0","0","Lamna ditropis","Elasmobranchii","Lamniformes","Lamnidae","Lamna","accepted",NA,FALSE,271421,59204,5216246,950993
+"164","Lampanyctus regalis",0,1,0,0,"0","0","Lampanyctus regalis","Actinopteri","Myctophiformes","Myctophidae","Lampanyctus","accepted",NA,TRUE,301545,NA,2405645,169226
+"165","Lampanyctus ritteri",0,1,0,0,"0","0","Lampanyctus ritteri","Actinopteri","Myctophiformes","Myctophidae","Lampanyctus","accepted",NA,TRUE,301548,1146630,2405620,47677
+"166","Lampris regius",0,1,0,0,"0","0","Lampris guttatus","Actinopteri","Lampriformes","Lampridae","Lampris","unaccepted",NA,TRUE,126522,NA,2400465,788076
+"167","Lestidium ringens",0,1,0,0,"0","0","Lestidiops ringens","Actinopteri","Aulopiformes","Paralepididae","Lestidium","unaccepted",NA,TRUE,272096,NA,2401502,1016712
+"168","Leuroglossus stilbius schmidti",0,1,0,0,"0","0","Leuroglossus schmidti","Actinopteri","Argentiniformes","Bathylagidae","Leuroglossus","unaccepted",NA,TRUE,254551,NA,6169867,7517
+"169","Liparis callyodon",0,1,0,0,"0","0","Liparis callyodon","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,274505,191453,5201419,268665
+"170","Liparis cyclopus",0,1,1,1,"0","0","Liparis cyclopus","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,274509,804235,5201449,4949171
+"171","Liparis dennyi",0,1,0,0,"0","0","Liparis dennyi","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,254550,142501,5201415,254249
+"172","Liparis florae",0,1,0,0,"0","0","Liparis florae","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,274513,125573,5201520,290377
+"173","Liparis fucensis",0,1,0,0,"0","0","Liparis fucensis","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,274515,125626,5201508,714027
+"174","Liparis mucosus",0,1,1,0,"0","0","Liparis mucosus","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,274527,76464,5201509,1098784
+"175","Liparis pulchellus",0,1,0,0,"0","0","Liparis pulchellus","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,274533,99718,5201510,714030
+"176","Liparis rutteri",0,1,0,0,"0","0","Liparis rutteri","Actinopteri","Perciformes","Liparidae","Liparis","accepted",NA,FALSE,274538,125627,5201491,379312
+"177","Lumpenella longirostris",0,1,0,0,"0","0","Lumpenella longirostris","Actinopteri","Perciformes","Stichaeidae","Lumpenella","accepted",NA,FALSE,254351,11193,2394845,11743
+"178","Lumpenus maculatus",0,1,0,0,"0","0","Leptoclinus maculatus","Actinopteri","Perciformes","Stichaeidae","Lumpenus","unaccepted",NA,TRUE,127072,NA,5211314,272745
+"179","Lyconectes aleutensis",0,1,0,0,"0","0","Cryptacanthodes aleutensis","Actinopteri","Perciformes","Cryptacanthodidae","Lyconectes","unaccepted",NA,TRUE,276390,NA,2387414,7510
+"180","Macropinna microstoma",0,1,0,0,"0","0","Macropinna microstoma","Actinopteri","Argentiniformes","Opisthoproctidae","Macropinna","accepted",NA,FALSE,281482,34567,2411162,584432
+"181","Malacocottus kincaidi",0,1,0,0,"0","0","Malacocottus kincaidi","Actinopteri","Perciformes","Psychrolutidae","Malacocottus","accepted",NA,FALSE,279442,10680,2334873,568689
+"182","Mallotus villosus",0,1,0,0,"0","0","Mallotus villosus","Actinopteri","Osmeriformes","Osmeridae","Mallotus","accepted",NA,FALSE,126735,34580,5214420,399346
+"183","Melamphaes lugubris",0,1,0,0,"0","0","Melamphaes lugubris","Actinopteri","Beryciformes","Melamphaidae","Melamphaes","accepted",NA,FALSE,274932,33946,2410364,273421
+"184","Merluccius productus",0,1,0,1,"0","0","Merluccius productus","Actinopteri","Gadiformes","Merlucciidae","Merluccius","accepted",NA,FALSE,272458,11764,2415676,183169
+"185","Nansenia candida",0,1,0,0,"0","0","Nansenia candida","Actinopteri","Argentiniformes","Microstomatidae","Nansenia","accepted",NA,FALSE,272926,34000,5214216,992672
+"186","Nautichthys robustus",0,1,0,0,"0","0","Nautichthys robustus",NA,"Scorpaeniformes","Hemitripteridae","Nautichthys","accepted",NA,FALSE,254401,101138,2335121,529008
+"187","Nectoliparis pelagicus",0,1,0,0,"0","0","Nectoliparis pelagicus","Actinopteri","Perciformes","Liparidae","Nectoliparis","accepted",NA,FALSE,281641,99717,2336122,1019583
+"188","Notolepis rissoi rissoi",0,1,0,0,"0","0","Arctozenus risso","Actinopteri","Aulopiformes","Paralepididae","Notolepis","unaccepted",NA,TRUE,126352,NA,6165761,288389
+"189","Notorynchus maculatus",0,1,0,0,"0","0","Notorynchus cepedianus","Elasmobranchii","Hexanchiformes","Hexanchidae","Notorynchus","unaccepted","synonym",TRUE,217628,NA,2420606,290409
+"190","Notoscopelus resplendens",0,1,0,0,"0","0","Notoscopelus resplendens","Actinopteri","Myctophiformes","Myctophidae","Notoscopelus","accepted",NA,FALSE,158916,142466,2406106,866168
+"191","Occella impi",0,1,0,0,"0","0","Stellerina xyosterna","Actinopteri","Perciformes","Agonidae","Occella","unaccepted",NA,TRUE,254366,NA,2337204,706144
+"192","Occella verrucosa",0,1,0,0,"0","0","Chesnonia verrucosa","Actinopteri","Perciformes","Agonidae","Occella","unaccepted",NA,TRUE,254507,NA,2337178,744906
+"193","Oligocottus snyderi",0,1,0,0,"0","0","Oligocottus snyderi","Actinopteri","Perciformes","Cottidae","Oligocottus","accepted",NA,FALSE,281875,125661,2333742,735812
+"194","Oncorhynchus nerka",0,1,1,1,"0","0","Oncorhynchus nerka","Actinopteri","Salmoniformes","Salmonidae","Oncorhynchus","accepted",NA,FALSE,254569,88747,5204039,165375
+"195","Oncorhynchus keta",0,1,1,1,"0","0","Oncorhynchus keta","Actinopteri","Salmoniformes","Salmonidae","Oncorhynchus","accepted",NA,FALSE,127183,88757,5204014,739921
+"196","Oncorhynchus nerka",0,1,1,1,"0","0","Oncorhynchus nerka","Actinopteri","Salmoniformes","Salmonidae","Oncorhynchus","accepted",NA,FALSE,254569,88747,5204039,165375
+"197","Oneirodes acanthias",0,1,0,0,"0","0","Oneirodes acanthias","Actinopteri","Lophiiformes","Oneirodidae","Oneirodes","accepted",NA,FALSE,272620,78115,2414799,152131
+"198","Oneirodes eschrichti",0,1,0,0,"0","0","Oneirodes eschrichtii","Actinopteri","Lophiiformes","Oneirodidae","Oneirodes","unaccepted","misspelling",TRUE,126572,NA,2414777,3630322
+"199","Osmerus mordax dentex",0,1,0,0,"0","0","Osmerus mordax dentex","Actinopteri","Osmeriformes","Osmeridae","Osmerus","accepted",NA,NA,293648,110852,6169860,NA
+"200","Pallasina barbata aix",0,1,0,0,"0","0","Pallasina barbata","Actinopteri","Perciformes","Agonidae","Pallasina","unaccepted",NA,TRUE,254396,NA,5201646,170501
+"201","Paricelinus hopliticus",0,1,0,0,"0","0","Paricelinus hopliticus","Actinopteri","Perciformes","Cottidae","Paricelinus","accepted",NA,FALSE,282147,395152,2333927,3632193
+"202","Pentaceros richardsoni",0,1,0,0,"0","0","Pentaceros richardsoni","Actinopteri","Acropomatiformes","Pentacerotidae","Pentaceros","accepted",NA,TRUE,313240,779512,5208735,240484
+"203","Peprilus simillimus",0,1,0,0,"0","0","Peprilus simillimus","Actinopteri","Perciformes","Stromateidae","Peprilus","accepted",NA,FALSE,276563,125550,2397704,47458
+"204","Phanerodon furcatus",0,1,0,0,"0","0","Phanerodon furcatus","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Phanerodon","accepted",NA,FALSE,240730,140354,2389267,1025638
+"205","Pholis clemensi",0,1,0,0,"0","0","Pholis clemensi","Actinopteri","Perciformes","Pholidae","Pholis","accepted",NA,FALSE,273686,125635,5210431,519264
+"206","Pholis ornata",0,1,0,0,"0","0","Pholis ornata","Actinopteri","Perciformes","Pholidae","Pholis","accepted",NA,FALSE,273692,125502,5210410,1084057
+"207","Pholis schultzi",0,1,0,0,"0","0","Pholis schultzi","Actinopteri","Perciformes","Pholidae","Pholis","accepted",NA,FALSE,273693,NA,5210412,3633134
+"208","Phytichthys chirus",0,1,0,0,"0","0","Phytichthys chirus","Actinopteri","Perciformes","Stichaeidae","Phytichthys","accepted",NA,FALSE,282255,NA,2394821,3640136
+"209","Plectobranchus evides",0,1,0,0,"0","0","Plectobranchus evides","Actinopteri","Perciformes","Stichaeidae","Plectobranchus","accepted",NA,FALSE,282283,14733,2394930,155039
+"210","Polypera greeni",0,1,0,0,"0","0","Polypera greeni","Actinopteri","Perciformes","Liparidae","Polypera","accepted",NA,FALSE,315311,NA,5201440,4949180
+"211","Porichthys notatus",0,1,0,0,"0","0","Porichthys notatus","Actinopteri","Batrachoidiformes","Batrachoididae","Porichthys","accepted",NA,FALSE,275658,20115,2350817,720409
+"212","Poroclinus rothrocki",0,1,0,0,"0","0","Poroclinus rothrocki","Actinopteri","Perciformes","Stichaeidae","Poroclinus","accepted",NA,FALSE,254385,14797,2394934,584440
+"213","Poromitra crassiceps",0,1,0,0,"0","0","Poromitra crassiceps","Actinopteri","Beryciformes","Melamphaidae","Poromitra","accepted",NA,FALSE,127273,34228,2410296,190701
+"214","Prionace glauca",0,1,0,0,"0","0","Prionace glauca","Elasmobranchii","Carcharhiniformes","Carcharhinidae","Prionace","accepted",NA,FALSE,105801,12783,2417940,361523
+"215","Protomyctophum thompsoni",0,1,0,0,"0","0","Protomyctophum thompsoni","Actinopteri","Myctophiformes","Myctophidae","Protomyctophum","accepted",NA,FALSE,272732,140423,2406343,785202
+"216","Psychrolutes paradoxus",0,1,0,0,"0","0","Psychrolutes paradoxus","Actinopteri","Perciformes","Psychrolutidae","Psychrolutes","accepted",NA,FALSE,254566,99721,2334904,792014
+"217","Radulinus asprellus",0,1,0,0,"0","0","Radulinus asprellus","Actinopteri","Perciformes","Cottidae","Radulinus","accepted",NA,FALSE,282541,34012,2333754,355906
+"218","Radulinus boleoides",0,1,0,0,"0","0","Radulinus boleoides","Actinopteri","Perciformes","Cottidae","Radulinus","accepted",NA,FALSE,282542,148340,2333752,792017
+"219","Remora australis",0,1,0,0,"0","0","Remora australis","Actinopteri","Carangiformes","Echeneidae","Remora","accepted",NA,FALSE,126850,34793,2375286,665974
+"220","Rhamphocottus richardsoni",0,1,0,0,"0","0","Rhamphocottus richardsonii","Actinopteri","Perciformes","Rhamphocottidae","Rhamphocottus","unaccepted","misspelling",TRUE,282578,NA,2336939,706152
+"221","Roccus saxatilis",0,1,0,0,"0","0","Morone saxatilis","Actinopteri","Eupercaria incertae sedis","Moronidae","Roccus","unaccepted",NA,TRUE,151179,NA,2394613,223669
+"222","Ronquilus jordani",0,1,0,0,"0","0","Ronquilus jordani","Actinopteri","Perciformes","Bathymasteridae","Ronquilus","accepted",NA,FALSE,282629,11160,2394458,786110
+"223","Sebastes zacentrus",0,1,0,0,"0","0","Sebastes zacentrus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274869,10784,2335429,884539
+"224","Sagamichthys abei",0,1,0,0,"0","0","Sagamichthys abei","Actinopteri","Alepocephaliformes","Platytroctidae","Sagamichthys","accepted",NA,FALSE,234630,33975,2411063,592550
+"225","Salmo clarki clarki",0,1,0,0,"0","0","Oncorhynchus clarkii clarkii","Actinopteri","Salmoniformes","Salmonidae","Salmo","unaccepted","misspelling",NA,323483,NA,6169623,NA
+"226","Salmo gairdneri",0,1,0,0,"0","0","Oncorhynchus mykiss","Actinopteri","Salmoniformes","Salmonidae","Salmo","unaccepted",NA,TRUE,127185,NA,8197476,165368
+"227","Salmo trutta",0,1,0,0,"0","0","Salmo trutta","Actinopteri","Salmoniformes","Salmonidae","Salmo","accepted",NA,FALSE,127187,47318,8215487,688332
+"228","Sarda chiliensis",0,1,0,0,"0","0","Sarda chiliensis","Actinopteri","Scombriformes","Scombridae","Sarda","accepted",NA,FALSE,293729,52777,5712278,833178
+"229","Scomber japonicus",0,1,0,0,"0","0","Scomber japonicus","Actinopteri","Scombriformes","Scombridae","Scomber","accepted",NA,FALSE,127022,11602,7599552,70556
+"230","Scopelosaurus harryi",0,1,0,0,"0","0","Scopelosaurus harryi","Actinopteri","Aulopiformes","Notosudidae","Scopelosaurus","accepted",NA,FALSE,272082,34003,2401063,1016732
+"231","Sebastes aleutianus",0,1,0,0,"0","0","Sebastes aleutianus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274771,10783,2335422,206121
+"232","Sebastes alutus",0,1,0,0,"0","0","Sebastes alutus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,254573,10785,2335557,480735
+"233","Sebastes auriculatus",0,1,0,0,"0","0","Sebastes auriculatus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274773,140739,2335497,480729
+"234","Sebastes aurora",0,1,0,0,"0","0","Sebastes aurora","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274774,33926,2335398,480719
+"235","Sebastes babcocki",0,1,0,0,"0","0","Sebastes babcocki","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274775,10786,2335374,480716
+"236","Sebastes borealis",0,1,0,0,"0","0","Sebastes borealis","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274777,33881,2335471,561983
+"237","Sebastes crameri",0,1,0,0,"0","0","Sebastes crameri","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274785,10788,2335443,1057065
+"238","Sebastes diploproa",0,1,0,0,"0","0","Sebastes diploproa","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274787,10781,2335406,1057059
+"239","Sebastes elongatus",0,1,0,0,"0","0","Sebastes elongatus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274788,10708,2335441,531065
+"240","Sebastes emphaeus",0,1,0,0,"0","0","Sebastes emphaeus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274789,60119,2335372,531062
+"241","Sebastes entomelas",0,1,0,1,"0","0","Sebastes entomelas","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274791,16661,2335516,531068
+"242","Sebastes goodei",0,1,0,0,"0","0","Sebastes goodei","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274798,10775,2335531,531047
+"243","Sebastes helvomaculatus",0,1,0,0,"0","0","Sebastes helvomaculatus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274799,10710,2335394,531044
+"244","Sebastes jordani",0,1,0,0,"0","0","Sebastes jordani","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274806,10712,2335495,9592
+"245","Sebastes mystinus",0,1,0,0,"0","0","Sebastes mystinus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274823,160596,2335366,9616
+"246","Sebastes nigrocinctus",0,1,0,0,"0","0","Sebastes nigrocinctus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274825,160601,2335492,9619
+"247","Sebastes nigrocinctus",0,1,0,0,"0","0","Sebastes nigrocinctus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274825,160601,2335492,9619
+"248","Sebastes pinniger",0,1,1,0,"0","0","Sebastes pinniger","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274836,10778,2335525,582318
+"249","Sebastes proriger",0,1,0,0,"0","0","Sebastes proriger","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274838,10779,2335489,99006
+"250","Sebastes reedi",0,1,0,0,"0","0","Sebastes reedi","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274840,10787,2335448,98992
+"251","Sebastes ruberrimus",0,1,0,0,"0","0","Sebastes ruberrimus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274844,10776,2335415,582338
+"252","Sebastes saxicola",0,1,0,0,"0","0","Sebastes saxicola","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274848,10774,2335577,884510
+"253","Sebastes variegatus",0,1,0,0,"0","0","Sebastes variegatus","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274863,34014,2335412,884530
+"254","Sebastes wilsoni",0,1,0,0,"0","0","Sebastes wilsoni","Actinopteri","Perciformes","Sebastidae","Sebastes","accepted",NA,FALSE,274868,10713,2335485,884527
+"255","Sebastolobus alascanus",0,1,0,0,"0","0","Sebastolobus alascanus","Actinopteri","Perciformes","Sebastidae","Sebastolobus","accepted",NA,FALSE,282740,10767,2335323,309989
+"256","Sebastolobus altivelis",0,1,0,0,"0","0","Sebastolobus altivelis","Actinopteri","Perciformes","Sebastidae","Sebastolobus","accepted",NA,FALSE,282741,33887,2335322,811927
+"257","Somniosus pacificus",0,1,0,0,"0","0","Somniosus pacificus","Elasmobranchii","Squaliformes","Somniosidae","Somniosus","accepted",NA,FALSE,271654,33997,2421160,547460
+"258","Sphyraena argentea",0,1,0,0,"0","0","Sphyraena argentea","Actinopteri","Carangaria incertae sedis","Sphyraenidae","Sphyraena","accepted",NA,FALSE,273978,52786,2394265,757641
+"259","Spirinchus starksi",0,1,0,0,"0","0","Spirinchus starksi","Actinopteri","Osmeriformes","Osmeridae","Spirinchus","accepted",NA,FALSE,282843,47320,2410899,280143
+"260","Spirinchus thaleichthys",0,1,0,0,"0","0","Spirinchus thaleichthys","Actinopteri","Osmeriformes","Osmeridae","Spirinchus","accepted",NA,FALSE,282844,88732,2410897,564830
+"261","Squalus acanthias",0,1,0,0,"0","0","Squalus acanthias","Elasmobranchii","Squaliformes","Squalidae","Squalus","accepted",NA,FALSE,105923,12653,5216368,1019126
+"262","Stenobrachius leucopsarus",0,1,0,0,"0","0","Stenobrachius leucopsarus","Actinopteri","Myctophiformes","Myctophidae","Stenobrachius","accepted",NA,FALSE,254363,33993,2405766,169233
+"263","Symbolophorus californiense",0,1,0,0,"0","0","Symbolophorus californiensis","Actinopteri","Myctophiformes","Myctophidae","Symbolophorus","unaccepted",NA,TRUE,272733,NA,2406163,785193
+"264","Syngnathus griseolineatus",0,1,0,0,"0","0","Syngnathus californiensis","Actinopteri","Syngnathiformes","Syngnathidae","Syngnathus","junior subjective synonym",NA,TRUE,275218,NA,2332939,774443
+"265","Tarletonbeania crenularis",0,1,0,0,"0","0","Tarletonbeania crenularis","Actinopteri","Myctophiformes","Myctophidae","Tarletonbeania","accepted",NA,FALSE,282927,125484,2405951,692175
+"266","Tetragonurus cuvieri",0,1,0,0,"0","0","Tetragonurus cuvieri","Actinopteri","Scombriformes","Tetragonuridae","Tetragonurus","accepted",NA,FALSE,127080,18112,5209332,67040
+"267","Thaleichthys pacificus",0,1,0,1,"0","0","Thaleichthys pacificus","Actinopteri","Osmeriformes","Osmeridae","Thaleichthys","accepted",NA,FALSE,282959,10698,2410903,555682
+"268","Thunnus alalunga",0,1,0,0,"0","0","Thunnus alalunga","Actinopteri","Scombriformes","Scombridae","Thunnus","accepted",NA,FALSE,127026,15068,9694948,833194
+"269","Thunnus alalunga",0,1,0,0,"0","0","Thunnus alalunga","Actinopteri","Scombriformes","Scombridae","Thunnus","unaccepted","synonym",FALSE,127026,15068,9694948,833194
+"270","Thunnus thynnus",0,1,0,0,"0","0","Thunnus thynnus","Actinopteri","Scombriformes","Scombridae","Thunnus","accepted",NA,FALSE,127029,20666,2373980,833184
+"271","Trachipterus altivelis",0,1,0,0,"0","0","Trachipterus altivelis","Actinopteri","Lampriformes","Trachipteridae","Trachipterus","accepted",NA,FALSE,272531,125556,2400494,47472
+"272","Trachurus symmetricus",0,1,0,0,"0","0","Trachurus symmetricus","Actinopteri","Carangiformes","Carangidae","Trachurus","accepted",NA,FALSE,273305,58295,5210487,315506
+"273","Triglops macellus",0,1,0,0,"0","0","Triglops macellus","Actinopteri","Perciformes","Cottidae","Triglops","accepted",NA,FALSE,274399,140470,2334025,1095240
+"274","Triglops pingeli",0,1,0,0,"0","0","Triglops pingelii","Actinopteri","Perciformes","Cottidae","Triglops","unaccepted","misspelling",TRUE,127207,NA,NA,568671
+"275","Xeneretmus latifrons",0,1,0,0,"0","0","Xeneretmus latifrons","Actinopteri","Perciformes","Agonidae","Xeneretmus","accepted",NA,FALSE,283171,33909,2337122,1098788
+"276","Xeneretmus triacanthus",0,1,0,0,"0","0","Xeneretmus triacanthus","Actinopteri","Perciformes","Agonidae","Xeneretmus","accepted",NA,FALSE,283174,NA,2337125,3632015
+"277","Xererpes fucorum",0,1,0,0,"0","0","Apodichthys fucorum","Actinopteri","Perciformes","Pholidae","Xererpes","unaccepted",NA,TRUE,279665,NA,2390391,208945
+"278","Xiphister atropurpureus",0,1,0,0,"0","0","Xiphister atropurpureus","Actinopteri","Perciformes","Stichaeidae","Xiphister","accepted",NA,FALSE,283194,125640,2394813,1084071
+"279","Zaniolepis latipinnis",0,1,0,0,"0","0","Zaniolepis latipinnis","Actinopteri","Perciformes","Hexagrammidae","Zaniolepis","accepted",NA,FALSE,283209,140736,2336504,131552
+"280","Zaprora silenus",0,1,0,0,"0","0","Zaprora silenus","Actinopteri","Perciformes","Zaproridae","Zaprora","accepted",NA,FALSE,254353,110749,2379450,871276
+"281","Clupea pallasii",0,0,1,1,"0","0","Clupea pallasii","Actinopteri","Clupeiformes","Clupeidae","Clupea","accepted",NA,FALSE,151159,33891,4284072,421318
+"282","Rhinogobiops nicholsii",0,0,1,1,"0","0","Rhinogobiops nicholsii","Actinopteri","Gobiiformes","Gobiidae","Rhinogobiops","accepted",NA,FALSE,282580,125449,2376636,494025
+"283","Orthonopias triacis",0,0,1,0,"0","0","Orthonopias triacis","Actinopteri","Perciformes","Cottidae","Orthonopias","accepted",NA,FALSE,281935,76461,2333856,547447
+"284","Gadus chalcogrammus",0,0,1,1,"0","0","Gadus chalcogrammus","Actinopteri","Gadiformes","Gadidae","Gadus","accepted",NA,FALSE,300735,360473,2415769,1056842
+"285","Beringraja binoculata",0,0,1,0,"0","0","Beringraja binoculata","Elasmobranchii","Rajiformes","Rajidae","Beringraja","accepted",NA,TRUE,1021330,1021311,7913005,389361
+"286","Podothecus accipenserinus",0,0,1,0,"0","0","Podothecus accipenserinus","Actinopteri","Perciformes","Agonidae","Podothecus","accepted",NA,FALSE,254501,125574,2337129,290399
+"287","Damalichthys vacca",0,0,0,1,"0","0","Phanerodon vacca","Actinopteri","Ovalentaria incertae sedis","Embiotocidae","Damalichthys","superseded combination",NA,TRUE,1577347,801365,2389316,841788
+"288","Atheresthes stomias",0,0,0,1,"0","0","Atheresthes stomias","Actinopteri","Pleuronectiformes","Pleuronectidae","Atheresthes","accepted",NA,FALSE,279792,11835,2409091,786093
+"289","Bothragonus swanii",0,0,0,1,"0","0","Bothragonus swanii","Actinopteri","Perciformes","Agonidae","Bothragonus","accepted",NA,FALSE,279947,393347,2337158,989012
+"290","Entosphenus tridentatus",0,0,0,1,"0","0","Entosphenus tridentatus","Petromyzonti","Petromyzontiformes","Petromyzontidae","Entosphenus","accepted",NA,TRUE,314348,82408,2421422,243579
+"291","Squalus suckleyi",0,0,0,1,"0","0","Squalus suckleyi","Elasmobranchii","Squaliformes","Squalidae","Squalus","accepted",NA,FALSE,299224,319303,5216380,1019106
+"292","Squalus suckleyi",0,0,0,1,"0","0","Squalus suckleyi","Elasmobranchii","Squaliformes","Squalidae","Squalus","accepted",NA,TRUE,299224,319303,5216380,1019126
