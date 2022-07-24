@@ -75,7 +75,7 @@ fish_search <- midori_fish %>%
 fish_worms <- get_wormsid_(sci_com = fish_search$worms_query)
 # get_wormsid_ gives back null and length 0 elements
 ## first remove with compact and discard then map_dfr
-annelid_worms2 <- annelid_worms %>% 
+fish_worms2 <- fish_worms %>% 
   compact() %>%
   discard( ~ nrow(.x) == 0) %>%
   map_dfr( ~ data.frame(.x), .id = 'query')
