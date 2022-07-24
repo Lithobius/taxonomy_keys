@@ -1,0 +1,1237 @@
+"","name","rank","phylum","class","subclass","order","family","genus","species"
+"1","Lycodes pacificus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes pacificus"
+"2","Lumpenus sagitta","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenus","Lumpenus sagitta"
+"3","Engraulis mordax","species","Chordata","Actinopteri","Teleostei","Clupeiformes","Engraulidae","Engraulis","Engraulis mordax"
+"4","Phytichthys chirus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Phytichthys","Phytichthys chirus"
+"5","Artedius lateralis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius lateralis"
+"6","Bathymaster caeruleofasciatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Bathymaster","Bathymaster caeruleofasciatus"
+"7","Sebastes reedi","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes reedi"
+"8","Porichthys notatus","species","Chordata","Actinopteri","Teleostei","Batrachoidiformes","Batrachoididae","Porichthys","Porichthys notatus"
+"9","Ophiodon elongatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Ophiodon","Ophiodon elongatus"
+"10","Oncorhynchus nerka","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus nerka"
+"11","Sebastes caurinus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes caurinus"
+"12","Oxylebius pictus","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Oxylebius","Oxylebius pictus"
+"13","Cymatogaster aggregata","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Cymatogaster","Cymatogaster aggregata"
+"14","Anoplarchus purpurescens","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Anoplarchus","Anoplarchus purpurescens"
+"15","Embiotoca lateralis","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Embiotoca","Embiotoca lateralis"
+"16","Parophrys vetulus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Parophrys","Parophrys vetulus"
+"17","Oncorhynchus clarkii","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus clarkii"
+"18","Sebastes auriculatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes auriculatus"
+"19","Chirolophis nugator","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis","Chirolophis nugator"
+"20","Apodichthys flavidus","species","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Apodichthys","Apodichthys flavidus"
+"21","Artedius harringtoni","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius harringtoni"
+"22","Gobiesox maeandricus","species","Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Gobiesox","Gobiesox maeandricus"
+"23","Ammodytes personatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes","Ammodytes personatus"
+"24","Beringraja binoculata","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Beringraja","Beringraja binoculata"
+"25","Oligocottus maculosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus","Oligocottus maculosus"
+"26","Chirolophis decoratus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis","Chirolophis decoratus"
+"27","Ronquilus jordani","species","Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Ronquilus","Ronquilus jordani"
+"28","Clupea pallasii","species","Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Clupea","Clupea pallasii"
+"29","Sebastes melanops","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes melanops"
+"30","Platichthys stellatus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Platichthys","Platichthys stellatus"
+"31","Squalus suckleyi","species","Chordata","Elasmobranchii","Neoselachii","Squaliformes","Squalidae","Squalus","Squalus suckleyi"
+"32","Hydrolagus colliei","species","Chordata","Holocephali",NA,"Chimaeriformes","Chimaeridae","Hydrolagus","Hydrolagus colliei"
+"33","Sebastes maliger","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes maliger"
+"34","Sebastes ruberrimus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes ruberrimus"
+"35","Hippoglossus stenolepis","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossus","Hippoglossus stenolepis"
+"36","Sebastes elongatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes elongatus"
+"37","Sebastes nigrocinctus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes nigrocinctus"
+"38","Sebastes brevispinis","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes brevispinis"
+"39","Gadus macrocephalus","species","Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Gadus","Gadus macrocephalus"
+"40","Hexagrammos decagrammus","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos decagrammus"
+"41","Anoplopoma fimbria","species","Chordata","Actinopteri","Teleostei","Perciformes","Anoplopomatidae","Anoplopoma","Anoplopoma fimbria"
+"42","Atheresthes stomias","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Atheresthes","Atheresthes stomias"
+"43","Citharichthys sordidus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Citharichthys sordidus"
+"44","Sebastes pinniger","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes pinniger"
+"45","Lepidopsetta bilineata","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lepidopsetta","Lepidopsetta bilineata"
+"46","Myoxocephalus polyacanthocephalus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Myoxocephalus","Myoxocephalus polyacanthocephalus"
+"47","Sebastes flavidus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes flavidus"
+"48","Hemilepidotus spinosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus","Hemilepidotus spinosus"
+"49","Hemilepidotus hemilepidotus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus","Hemilepidotus hemilepidotus"
+"50","Sebastes helvomaculatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes helvomaculatus"
+"51","Sebastes proriger","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes proriger"
+"52","Sebastes variegatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes variegatus"
+"53","Sebastes zacentrus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes zacentrus"
+"54","Sebastes entomelas","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes entomelas"
+"55","Sebastes nebulosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes nebulosus"
+"56","Bathyraja interrupta","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja interrupta"
+"57","Sebastes diaconus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes diaconus"
+"58","Eopsetta jordani","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Eopsetta","Eopsetta jordani"
+"59","Enophrys bison","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Enophrys","Enophrys bison"
+"60","Scorpaenichthys marmoratus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Scorpaenichthys","Scorpaenichthys marmoratus"
+"61","Hippoglossoides elassodon","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossoides","Hippoglossoides elassodon"
+"62","Icelinus tenuis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus tenuis"
+"63","Leptocottus armatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Leptocottus","Leptocottus armatus"
+"64","Lyopsetta exilis","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lyopsetta","Lyopsetta exilis"
+"65","Cottidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae",NA,NA
+"66","Hexanchus griseus","species","Chordata","Elasmobranchii","Neoselachii","Hexanchiformes","Hexanchidae","Hexanchus","Hexanchus griseus"
+"67","Pleuronectiformes","order","Chordata","Actinopteri","Teleostei","Pleuronectiformes",NA,NA,NA
+"68","Merluccius productus","species","Chordata","Actinopteri","Teleostei","Gadiformes","Merlucciidae","Merluccius","Merluccius productus"
+"69","Apristurus brunneus","species","Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Pentanchidae","Apristurus","Apristurus brunneus"
+"70","Zoarcidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae",NA,NA
+"71","Malacocottus kincaidi","species","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus","Malacocottus kincaidi"
+"72","Lumpenella longirostris","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenella","Lumpenella longirostris"
+"73","Pseudobathylagus milleri","species","Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Pseudobathylagus","Pseudobathylagus milleri"
+"74","Sebastes","genus","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes",NA
+"75","Lycodes brevipes","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes brevipes"
+"76","Paraliparis paucidens","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis paucidens"
+"77","Sebastolobus altivelis","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastolobus","Sebastolobus altivelis"
+"78","Pleuronichthys coenosus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronichthys","Pleuronichthys coenosus"
+"79","Oncorhynchus tshawytscha","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus tshawytscha"
+"80","Coryphaenoides acrolepis","species","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides acrolepis"
+"81","Leuroglossus schmidti","species","Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Leuroglossus","Leuroglossus schmidti"
+"82","Notacanthus chemnitzii","species","Chordata","Actinopteri","Teleostei","Notacanthiformes","Notacanthidae","Notacanthus","Notacanthus chemnitzii"
+"83","Sardinops sagax","species","Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Sardinops","Sardinops sagax"
+"84","Pholis clemensi","species","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis clemensi"
+"85","Bathyagonus pentacanthus","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus pentacanthus"
+"86","Diaphus theta","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Diaphus","Diaphus theta"
+"87","Liparis pulchellus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis pulchellus"
+"88","Aphanopus intermedius","species","Chordata","Actinopteri","Teleostei","Scombriformes","Trichiuridae","Aphanopus","Aphanopus intermedius"
+"89","Chauliodus macouni","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Chauliodus","Chauliodus macouni"
+"90","Sebastes diploproa","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes diploproa"
+"91","Pholis laeta","species","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis laeta"
+"92","Careproctus attenuatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus attenuatus"
+"93","Glyptocephalus zachirus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Glyptocephalus","Glyptocephalus zachirus"
+"94","Paraliparis pectoralis","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis pectoralis"
+"95","Rimicola muscarum","species","Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Rimicola","Rimicola muscarum"
+"96","Odontopyxis trispinosa","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Odontopyxis","Odontopyxis trispinosa"
+"97","Artedius fenestralis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius fenestralis"
+"98","Microstomus pacificus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Microstomus","Microstomus pacificus"
+"99","Pholis ornata","species","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis ornata"
+"100","Sebastes alutus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes alutus"
+"101","Somniosus pacificus","species","Chordata","Elasmobranchii","Neoselachii","Squaliformes","Somniosidae","Somniosus","Somniosus pacificus"
+"102","Aphanopus arigato","species","Chordata","Actinopteri","Teleostei","Scombriformes","Trichiuridae","Aphanopus","Aphanopus arigato"
+"103","Careproctus cypselurus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus cypselurus"
+"104","Sebastes saxicola","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes saxicola"
+"105","Alosa sapidissima","species","Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Alosa","Alosa sapidissima"
+"106","Malacocottus zonurus","species","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus","Malacocottus zonurus"
+"107","Paraliparis","genus","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis",NA
+"108","Aulorhynchus flavidus","species","Chordata","Actinopteri","Teleostei","Perciformes","Aulorhynchidae","Aulorhynchus","Aulorhynchus flavidus"
+"109","Icelinus filamentosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus filamentosus"
+"110","Paraliparis dactylosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis dactylosus"
+"111","Sebastes borealis","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes borealis"
+"112","Melamphaes lugubris","species","Chordata","Actinopteri","Teleostei","Beryciformes","Melamphaidae","Melamphaes","Melamphaes lugubris"
+"113","Sebastes semicinctus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes semicinctus"
+"114","Clupea pallasii pallasii","subspecies","Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Clupea","Clupea pallasii"
+"115","Pleuronichthys decurrens","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronichthys","Pleuronichthys decurrens"
+"116","Stenobrachius leucopsarus","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Stenobrachius","Stenobrachius leucopsarus"
+"117","Aristostomias scintillans","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Aristostomias","Aristostomias scintillans"
+"118","Macropinna microstoma","species","Chordata","Actinopteri","Teleostei","Argentiniformes","Opisthoproctidae","Macropinna","Macropinna microstoma"
+"119","Syngnathus leptorhynchus","species","Chordata","Actinopteri","Teleostei","Syngnathiformes","Syngnathidae","Syngnathus","Syngnathus leptorhynchus"
+"120","Bathylagus pacificus","species","Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Bathylagus","Bathylagus pacificus"
+"121","Poromitra crassiceps","species","Chordata","Actinopteri","Teleostei","Beryciformes","Melamphaidae","Poromitra","Poromitra crassiceps"
+"122","Thaleichthys pacificus","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Thaleichthys","Thaleichthys pacificus"
+"123","Alepocephalus tenebrosus","species","Chordata","Actinopteri","Teleostei","Alepocephaliformes","Alepocephalidae","Alepocephalus","Alepocephalus tenebrosus"
+"124","Careproctus furcellus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus furcellus"
+"125","Sebastes paucispinis","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes paucispinis"
+"126","Bathyagonus alascanus","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus alascanus"
+"127","Psychrolutes phrictus","species","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Psychrolutes","Psychrolutes phrictus"
+"128","Agonidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae",NA,NA
+"129","Salmo salar","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salmo","Salmo salar"
+"130","Brachyistius frenatus","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Brachyistius","Brachyistius frenatus"
+"131","Synchirus gilli","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Synchirus","Synchirus gilli"
+"132","Jordania zonope","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Jordania","Jordania zonope"
+"133","Rhinogobiops nicholsii","species","Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Rhinogobiops","Rhinogobiops nicholsii"
+"134","Sebastes emphaeus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes emphaeus"
+"135","Rhamphocottus richardsonii","species","Chordata","Actinopteri","Teleostei","Perciformes","Rhamphocottidae","Rhamphocottus","Rhamphocottus richardsonii"
+"136","Asemichthys taylori","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Asemichthys","Asemichthys taylori"
+"137","Beringraja rhina","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Beringraja","Beringraja rhina"
+"138","Artedius","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius",NA
+"139","Hexagrammos stelleri","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos stelleri"
+"140","Citharichthys stigmaeus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Citharichthys stigmaeus"
+"141","Pholis","genus","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis",NA
+"142","Anarrhichthys ocellatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Anarhichadidae","Anarrhichthys","Anarrhichthys ocellatus"
+"143","Chitonotus pugetensis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Chitonotus","Chitonotus pugetensis"
+"144","Brosmophycis marginata","species","Chordata","Actinopteri","Teleostei","Ophidiiformes","Bythitidae","Brosmophycis","Brosmophycis marginata"
+"145","Nautichthys oculofasciatus","species","Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Nautichthys","Nautichthys oculofasciatus"
+"146","Triglops macellus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops macellus"
+"147","Gasterosteus aculeatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Gasterosteidae","Gasterosteus","Gasterosteus aculeatus"
+"148","Psychrolutes sigalutes","species","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Psychrolutes","Psychrolutes sigalutes"
+"149","Oncorhynchus keta","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus keta"
+"150","Ptilichthys goodei","species","Chordata","Actinopteri","Teleostei","Perciformes","Ptilichthyidae","Ptilichthys","Ptilichthys goodei"
+"151","Agonopsis vulsa","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Agonopsis","Agonopsis vulsa"
+"152","Oncorhynchus","genus","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus",NA
+"153","Anoplarchus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Anoplarchus",NA
+"154","Podothecus accipenserinus","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Podothecus","Podothecus accipenserinus"
+"155","Liparis dennyi","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis dennyi"
+"156","Xiphister mucosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Xiphister","Xiphister mucosus"
+"157","Trachipterus altivelis","species","Chordata","Actinopteri","Teleostei","Lampriformes","Trachipteridae","Trachipterus","Trachipterus altivelis"
+"158","Clevelandia ios","species","Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Clevelandia","Clevelandia ios"
+"159","Oncorhynchus kisutch","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus kisutch"
+"160","Oncorhynchus gorbuscha","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus gorbuscha"
+"161","Liparis fucensis","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis fucensis"
+"162","Cetorhinus maximus","species","Chordata","Elasmobranchii","Neoselachii","Lamniformes","Cetorhinidae","Cetorhinus","Cetorhinus maximus"
+"163","Bathyraja","genus","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja",NA
+"164","Oncorhynchus mykiss","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus mykiss"
+"165","Cyprinus carpio","species","Chordata","Actinopteri","Teleostei","Cypriniformes","Cyprinidae","Cyprinus","Cyprinus carpio"
+"166","Lepomis gibbosus","species","Chordata","Actinopteri","Teleostei","Centrarchiformes","Centrarchidae","Lepomis","Lepomis gibbosus"
+"167","Syngnathus californiensis","species","Chordata","Actinopteri","Teleostei","Syngnathiformes","Syngnathidae","Syngnathus","Syngnathus californiensis"
+"168","Phanerodon","genus","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Phanerodon",NA
+"169","Amphistichus rhodoterus","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Amphistichus","Amphistichus rhodoterus"
+"170","Mylocheilus caurinus","species","Chordata","Actinopteri","Teleostei","Cypriniformes","Cyprinidae","Mylocheilus","Mylocheilus caurinus"
+"171","Dasycottus setiger","species","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Dasycottus","Dasycottus setiger"
+"172","Anoplarchus insignis","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Anoplarchus","Anoplarchus insignis"
+"173","Ammodytes tobianus","species","Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes","Ammodytes tobianus"
+"174","Liparis florae","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis florae"
+"175","Radulinus asprellus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Radulinus","Radulinus asprellus"
+"176","Xiphister atropurpureus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Xiphister","Xiphister atropurpureus"
+"177","Oligocottus snyderi","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus","Oligocottus snyderi"
+"178","Clinocottus globiceps","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus","Clinocottus globiceps"
+"179","Eumicrotremus orbis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus","Eumicrotremus orbis"
+"180","Perca flavescens","species","Chordata","Actinopteri","Teleostei","Perciformes","Percidae","Perca","Perca flavescens"
+"181","Triglops pingelii","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops pingelii"
+"182","Icichthys lockingtoni","species","Chordata","Actinopteri","Teleostei","Scombriformes","Centrolophidae","Icichthys","Icichthys lockingtoni"
+"183","Blepsias cirrhosus","species","Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Blepsias","Blepsias cirrhosus"
+"184","Lumpenus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenus",NA
+"185","Psychrolutes paradoxus","species","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Psychrolutes","Psychrolutes paradoxus"
+"186","Ascelichthys rhodorus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Ascelichthys","Ascelichthys rhodorus"
+"187","Hyperprosopon ellipticum","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Hyperprosopon","Hyperprosopon ellipticum"
+"188","Polypera greeni","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Polypera","Polypera greeni"
+"189","Sebastes jordani","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes jordani"
+"190","Plectobranchus evides","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Plectobranchus","Plectobranchus evides"
+"191","Misgurnus anguillicaudatus","species","Chordata","Actinopteri","Teleostei","Cypriniformes","Cobitidae","Misgurnus","Misgurnus anguillicaudatus"
+"192","Chilara taylori","species","Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Chilara","Chilara taylori"
+"193","Clinocottus acuticeps","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus","Clinocottus acuticeps"
+"194","Sebastes miniatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes miniatus"
+"195","Carassius auratus","species","Chordata","Actinopteri","Teleostei","Cypriniformes","Cyprinidae","Carassius","Carassius auratus"
+"196","Cottus aleuticus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus","Cottus aleuticus"
+"197","Hexagrammos","genus","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos",NA
+"198","Ammodytes hexapterus","species","Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes","Ammodytes hexapterus"
+"199","Acipenser transmontanus","species","Chordata","Actinopteri","Chondrostei","Acipenseriformes","Acipenseridae","Acipenser","Acipenser transmontanus"
+"200","Prionace glauca","species","Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Carcharhinidae","Prionace","Prionace glauca"
+"201","Psettichthys melanostictus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Psettichthys","Psettichthys melanostictus"
+"202","Hemitripterus bolini","species","Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Hemitripterus","Hemitripterus bolini"
+"203","Hypomesus pretiosus","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Hypomesus","Hypomesus pretiosus"
+"204","Eptatretus stoutii","species","Chordata","Myxini",NA,"Myxiniformes","Myxinidae","Eptatretus","Eptatretus stoutii"
+"205","Bathyraja aleutica","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja aleutica"
+"206","Lycodapus pachysoma","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus pachysoma"
+"207","Cololabis saira","species","Chordata","Actinopteri","Teleostei","Beloniformes","Scomberesocidae","Cololabis","Cololabis saira"
+"208","Cryptacanthodes giganteus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cryptacanthodidae","Cryptacanthodes","Cryptacanthodes giganteus"
+"209","Zaprora silenus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zaproridae","Zaprora","Zaprora silenus"
+"210","Salvelinus fontinalis","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salvelinus","Salvelinus fontinalis"
+"211","Allosmerus elongatus","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Allosmerus","Allosmerus elongatus"
+"212","Lycodapus mandibularis","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus mandibularis"
+"213","Pachycara gymninium","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Pachycara","Pachycara gymninium"
+"214","Bothrocara brunneum","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara","Bothrocara brunneum"
+"215","Sebastes serranoides","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes serranoides"
+"216","Avocettina infans","species","Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae","Avocettina","Avocettina infans"
+"217","Eptatretus deani","species","Chordata","Myxini",NA,"Myxiniformes","Myxinidae","Eptatretus","Eptatretus deani"
+"218","Sebastes polyspinis","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes polyspinis"
+"219","Cryptacanthodes aleutensis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cryptacanthodidae","Cryptacanthodes","Cryptacanthodes aleutensis"
+"220","Tactostoma macropus","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Tactostoma","Tactostoma macropus"
+"221","Lycodes palearis","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes palearis"
+"222","Paraliparis rosaceus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis rosaceus"
+"223","Lycodes diapterus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes diapterus"
+"224","Careproctus georgianus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus georgianus"
+"225","Careproctus canus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus canus"
+"226","Myoxocephalus scorpius","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Myoxocephalus","Myoxocephalus scorpius"
+"227","Acantholumpenus mackayi","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Acantholumpenus","Acantholumpenus mackayi"
+"228","Lumpenus fabricii","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenus","Lumpenus fabricii"
+"229","Enophrys lucasi","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Enophrys","Enophrys lucasi"
+"230","Icelinus borealis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus borealis"
+"231","Eumicrotremus phrynoides","species","Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus","Eumicrotremus phrynoides"
+"232","Chesnonia verrucosa","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Chesnonia","Chesnonia verrucosa"
+"233","Lycodes cortezianus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes cortezianus"
+"234","Pachycara lepinium","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Pachycara","Pachycara lepinium"
+"235","Bathyagonus infraspinatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus infraspinatus"
+"236","Xeneretmus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Xeneretmus",NA
+"237","Cottus asper","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus","Cottus asper"
+"238","Sebastes aleutianus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes aleutianus"
+"239","Lampanyctus","genus","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Lampanyctus",NA
+"240","Tarletonbeania crenularis","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Tarletonbeania","Tarletonbeania crenularis"
+"241","Sebastes babcocki","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes babcocki"
+"242","Icelinus fimbriatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus fimbriatus"
+"243","Pallasina barbata","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Pallasina","Pallasina barbata"
+"244","Ruscarius meanyi","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Ruscarius","Ruscarius meanyi"
+"245","Hexagrammos lagocephalus","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos lagocephalus"
+"246","Sebastes crameri","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes crameri"
+"247","Protomyctophum thompsoni","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum","Protomyctophum thompsoni"
+"248","Sebastes rubrivinctus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes rubrivinctus"
+"249","Embassichthys bathybius","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Embassichthys","Embassichthys bathybius"
+"250","Raja","genus","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Raja",NA
+"251","Liparis cyclopus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis cyclopus"
+"252","Lestidiops ringens","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae","Lestidiops","Lestidiops ringens"
+"253","Sebastes goodei","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes goodei"
+"254","Sebastolobus alascanus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastolobus","Sebastolobus alascanus"
+"255","Arctozenus risso","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae","Arctozenus","Arctozenus risso"
+"256","Paricelinus hopliticus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Paricelinus","Paricelinus hopliticus"
+"257","Tarletonbeania","genus","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Tarletonbeania",NA
+"258","Clinocottus embryum","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus","Clinocottus embryum"
+"259","Salvelinus malma","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salvelinus","Salvelinus malma"
+"260","Bathyagonus nigripinnis","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus nigripinnis"
+"261","Lipolagus ochotensis","species","Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Lipolagus","Lipolagus ochotensis"
+"262","Myctophidae","family","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae",NA,NA
+"263","Enophrys","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Enophrys",NA
+"264","Sagamichthys abei","species","Chordata","Actinopteri","Teleostei","Alepocephaliformes","Platytroctidae","Sagamichthys","Sagamichthys abei"
+"265","Bryozoichthys marjorius","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Bryozoichthys","Bryozoichthys marjorius"
+"266","Cyclothone atraria","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone","Cyclothone atraria"
+"267","Cyclothone microdon","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone","Cyclothone microdon"
+"268","Triglops jordani","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops jordani"
+"269","Spirinchus thaleichthys","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Spirinchus","Spirinchus thaleichthys"
+"270","Pleuronectidae","family","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae",NA,NA
+"271","Gasterosteus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Gasterosteidae","Gasterosteus",NA
+"272","Triglops","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops",NA
+"273","Tarletonbeania taylori","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Tarletonbeania","Tarletonbeania taylori"
+"274","Lycenchelys crotalinus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys crotalinus"
+"275","Xenomystax atrarius","species","Chordata","Actinopteri","Teleostei","Anguilliformes","Congridae","Xenomystax","Xenomystax atrarius"
+"276","Liparis callyodon","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis callyodon"
+"277","Serrivomer jesperseni","species","Chordata","Actinopteri","Teleostei","Anguilliformes","Serrivomeridae","Serrivomer","Serrivomer jesperseni"
+"278","Hemilepidotus jordani","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus","Hemilepidotus jordani"
+"279","Benthalbella dentata","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Scopelarchidae","Benthalbella","Benthalbella dentata"
+"280","Nemichthys scolopaceus","species","Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae","Nemichthys","Nemichthys scolopaceus"
+"281","Coryphaenoides","genus","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides",NA
+"282","Citharichthys","genus","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys",NA
+"283","Limanda aspera","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Limanda","Limanda aspera"
+"284","Liparis mucosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis mucosus"
+"285","Chaenophryne draco","species","Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Chaenophryne","Chaenophryne draco"
+"286","Lepidogobius lepidus","species","Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Lepidogobius","Lepidogobius lepidus"
+"287","Stichaeidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae",NA,NA
+"288","Microgadus proximus","species","Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Microgadus","Microgadus proximus"
+"289","Xeneretmus triacanthus","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Xeneretmus","Xeneretmus triacanthus"
+"290","Gymnocanthus galeatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Gymnocanthus","Gymnocanthus galeatus"
+"291","Careproctus melanurus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus melanurus"
+"292","Liparis rutteri","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis rutteri"
+"293","Careproctus gilberti","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus gilberti"
+"294","Trichodon trichodon","species","Chordata","Actinopteri","Teleostei","Perciformes","Trichodontidae","Trichodon","Trichodon trichodon"
+"295","Scorpaenidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Scorpaenidae",NA,NA
+"296","Isopsetta isolepis","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Isopsetta","Isopsetta isolepis"
+"297","Albatrossia pectoralis","species","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Albatrossia","Albatrossia pectoralis"
+"298","Bathophilus flemingi","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Bathophilus","Bathophilus flemingi"
+"299","Antimora microlepis","species","Chordata","Actinopteri","Teleostei","Gadiformes","Moridae","Antimora","Antimora microlepis"
+"300","Lycodapus endemoscotus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus endemoscotus"
+"301","Paraliparis deani","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis deani"
+"302","Scytalina cerdale","species","Chordata","Actinopteri","Teleostei","Perciformes","Scytalinidae","Scytalina","Scytalina cerdale"
+"303","Bothrocara molle","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara","Bothrocara molle"
+"304","Sebastes ciliatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes ciliatus"
+"305","Hexagrammos octogrammus","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos octogrammus"
+"306","Mola mola","species","Chordata","Actinopteri","Teleostei","Tetraodontiformes","Molidae","Mola","Mola mola"
+"307","Mallotus villosus","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Mallotus","Mallotus villosus"
+"308","Sebastes aurora","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes aurora"
+"309","Zaproridae","family","Chordata","Actinopteri","Teleostei","Perciformes","Zaproridae",NA,NA
+"310","Poroclinus rothrocki","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Poroclinus","Poroclinus rothrocki"
+"311","Pholis schultzi","species","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis schultzi"
+"312","Spirinchus starksi","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Spirinchus","Spirinchus starksi"
+"313","Embiotocidae","family","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae",NA,NA
+"314","Anoplagonus inermis","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Anoplagonus","Anoplagonus inermis"
+"315","Lycodapus parviceps","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus parviceps"
+"316","Caulolatilus princeps","species","Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Malacanthidae","Caulolatilus","Caulolatilus princeps"
+"317","Gadidae","family","Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae",NA,NA
+"318","Clupea harengus","species","Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Clupea","Clupea harengus"
+"319","Oligocottus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus",NA
+"320","Bathyraja trachura","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja trachura"
+"321","Lumpenopsis","genus","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenopsis",NA
+"322","Icelus spiniger","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelus","Icelus spiniger"
+"323","Bathyagonus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus",NA
+"324","Trachurus symmetricus","species","Chordata","Actinopteri","Teleostei","Carangiformes","Carangidae","Trachurus","Trachurus symmetricus"
+"325","Nectoliparis pelagicus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Nectoliparis","Nectoliparis pelagicus"
+"326","Stichaeus punctatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Stichaeus","Stichaeus punctatus"
+"327","Sebastes mystinus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes mystinus"
+"328","Leptoclinus maculatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Leptoclinus","Leptoclinus maculatus"
+"329","Gobiesox","genus","Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Gobiesox",NA
+"330","Protomyctophum arcticum","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum","Protomyctophum arcticum"
+"331","Sebastes wilsoni","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes wilsoni"
+"332","Xiphister","genus","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Xiphister",NA
+"333","Lycenchelys jordani","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys jordani"
+"334","Chirolophis tarsodes","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis","Chirolophis tarsodes"
+"335","Icelinus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus",NA
+"336","Liparis","genus","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis",NA
+"337","Coryphaenoides armatus","species","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides armatus"
+"338","Bothrocara pusillum","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara","Bothrocara pusillum"
+"339","Cyclothone","genus","Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone",NA
+"340","Careproctus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus",NA
+"341","Eumicrotremus spinosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus","Eumicrotremus spinosus"
+"342","Scopelosaurus harryi","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Notosudidae","Scopelosaurus","Scopelosaurus harryi"
+"343","Hexagrammidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae",NA,NA
+"344","Stenobrachius nannochir","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Stenobrachius","Stenobrachius nannochir"
+"345","Spectrunculus grandis","species","Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Spectrunculus","Spectrunculus grandis"
+"346","Bothragonus swanii","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bothragonus","Bothragonus swanii"
+"347","Xeneretmus leiops","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Xeneretmus","Xeneretmus leiops"
+"348","Lycodapus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus",NA
+"349","Apodichthys fucorum","species","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Apodichthys","Apodichthys fucorum"
+"350","Xeneretmus latifrons","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Xeneretmus","Xeneretmus latifrons"
+"351","Lycodapus fierasfer","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus fierasfer"
+"352","Zaniolepis latipinnis","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Zaniolepis","Zaniolepis latipinnis"
+"353","Reinhardtius hippoglossoides","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Reinhardtius","Reinhardtius hippoglossoides"
+"354","Cyclothone pseudopallida","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone","Cyclothone pseudopallida"
+"355","Lepidopsetta polyxystra","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lepidopsetta","Lepidopsetta polyxystra"
+"356","Cyclothone signata","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone","Cyclothone signata"
+"357","Sebastes carnatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes carnatus"
+"358","Oligocottus rimensis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus","Oligocottus rimensis"
+"359","Theragra","genus","Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Theragra",NA
+"360","Glyptocephalus","genus","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Glyptocephalus",NA
+"361","Nezumia stelgidolepis","species","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Nezumia","Nezumia stelgidolepis"
+"362","Acanthostracion quadricornis","species","Chordata","Actinopteri","Teleostei","Tetraodontiformes","Ostraciidae","Acanthostracion","Acanthostracion quadricornis"
+"363","Soldatovia polyactocephala","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Soldatovia","Soldatovia polyactocephala"
+"364","Hippocampus erectus","species","Chordata","Actinopteri","Teleostei","Syngnathiformes","Syngnathidae","Hippocampus","Hippocampus erectus"
+"365","Bathyraja abyssicola","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja abyssicola"
+"366","Microgadus","genus","Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Microgadus",NA
+"367","Thaleichthys","genus","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Thaleichthys",NA
+"368","Gobiesocidae","family","Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae",NA,NA
+"369","Rhamdia","genus","Chordata","Actinopteri","Teleostei","Siluriformes","Heptapteridae","Rhamdia",NA
+"370","Squalus acanthias","species","Chordata","Elasmobranchii","Neoselachii","Squaliformes","Squalidae","Squalus","Squalus acanthias"
+"371","Perciformes","order","Chordata","Actinopteri","Teleostei","Perciformes",NA,NA,NA
+"372","Antimora","genus","Chordata","Actinopteri","Teleostei","Gadiformes","Moridae","Antimora",NA
+"373","Ronquilus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Ronquilus",NA
+"374","Lipariscus nanus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Lipariscus","Lipariscus nanus"
+"375","Sebastes melanostictus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes melanostictus"
+"376","Sebastolobus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastolobus",NA
+"377","Argyropelecus affinis","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Sternoptychidae","Argyropelecus","Argyropelecus affinis"
+"378","Phycis","genus","Chordata","Actinopteri","Teleostei","Gadiformes","Phycidae","Phycis",NA
+"379","Beringraja inornata","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Beringraja","Beringraja inornata"
+"380","Orthonopias triacis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Orthonopias","Orthonopias triacis"
+"381","Diodon hystrix","species","Chordata","Actinopteri","Teleostei","Tetraodontiformes","Diodontidae","Diodon","Diodon hystrix"
+"382","Alepisaurus ferox","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Alepisauridae","Alepisaurus","Alepisaurus ferox"
+"383","Gadus chalcogrammus","species","Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Gadus","Gadus chalcogrammus"
+"384","Acipenser medirostris","species","Chordata","Actinopteri","Chondrostei","Acipenseriformes","Acipenseridae","Acipenser","Acipenser medirostris"
+"385","Gibbonsia metzi","species","Chordata","Actinopteri","Teleostei","Blenniiformes","Clinidae","Gibbonsia","Gibbonsia metzi"
+"386","Salmo trutta","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salmo","Salmo trutta"
+"387","Balistes polylepis","species","Chordata","Actinopteri","Teleostei","Tetraodontiformes","Balistidae","Balistes","Balistes polylepis"
+"388","Xiphias gladius","species","Chordata","Actinopteri","Teleostei","Carangiformes","Xiphiidae","Xiphias","Xiphias gladius"
+"389","Chanos chanos","species","Chordata","Actinopteri","Teleostei","Gonorynchiformes","Chanidae","Chanos","Chanos chanos"
+"390","Salvelinus confluentus","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salvelinus","Salvelinus confluentus"
+"391","Thunnus alalunga","species","Chordata","Actinopteri","Teleostei","Scombriformes","Scombridae","Thunnus","Thunnus alalunga"
+"392","Cottus cognatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus","Cottus cognatus"
+"393","Gibbonsia montereyensis","species","Chordata","Actinopteri","Teleostei","Blenniiformes","Clinidae","Gibbonsia","Gibbonsia montereyensis"
+"394","Cyclopterus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Cyclopterus",NA
+"395","Gambusia affinis","species","Chordata","Actinopteri","Teleostei","Cyprinodontiformes","Poeciliidae","Gambusia","Gambusia affinis"
+"396","Rajiformes","order","Chordata","Elasmobranchii","Neoselachii","Rajiformes",NA,NA,NA
+"397","Bathymasteridae","family","Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae",NA,NA
+"398","Cyclopteridae","family","Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae",NA,NA
+"399","Lepidopsetta","genus","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lepidopsetta",NA
+"400","Sebastes variabilis","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes variabilis"
+"401","Bathymaster signatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Bathymaster","Bathymaster signatus"
+"402","Pleurogrammus monopterygius","species","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Pleurogrammus","Pleurogrammus monopterygius"
+"403","Macrouridae","family","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae",NA,NA
+"404","Pleuronectes quadrituberculatus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronectes","Pleuronectes quadrituberculatus"
+"405","Lamna ditropis","species","Chordata","Elasmobranchii","Neoselachii","Lamniformes","Lamnidae","Lamna","Lamna ditropis"
+"406","Hemilepidotus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus",NA
+"407","Osmeridae","family","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae",NA,NA
+"408","Squaliformes","order","Chordata","Elasmobranchii","Neoselachii","Squaliformes",NA,NA,NA
+"409","Atheresthes evermanni","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Atheresthes","Atheresthes evermanni"
+"410","Myoxocephalus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Myoxocephalus",NA
+"411","Lepomis","genus","Chordata","Actinopteri","Teleostei","Centrarchiformes","Centrarchidae","Lepomis",NA
+"412","Liparidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae",NA,NA
+"413","Gasterosteidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Gasterosteidae",NA,NA
+"414","Pholidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae",NA,NA
+"415","Rajidae","family","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae",NA,NA
+"416","Allocareproctus jordani","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Allocareproctus","Allocareproctus jordani"
+"417","Magnisudis atlantica","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae","Magnisudis","Magnisudis atlantica"
+"418","Lycenchelys","genus","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys",NA
+"419","Sebastes chlorostictus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes chlorostictus"
+"420","Peprilus simillimus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stromateidae","Peprilus","Peprilus simillimus"
+"421","Icosteus aenigmaticus","species","Chordata","Actinopteri","Teleostei","Scombriformes","Icosteidae","Icosteus","Icosteus aenigmaticus"
+"422","Paraliparis ulochir","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis ulochir"
+"423","Sebastidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae",NA,NA
+"424","Myxinidae","family","Chordata","Myxini",NA,"Myxiniformes","Myxinidae",NA,NA
+"425","Elassodiscus caudatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Elassodiscus","Elassodiscus caudatus"
+"426","Ammodytidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae",NA,NA
+"427","Ptilichthyidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Ptilichthyidae",NA,NA
+"428","Sebastes rufus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes rufus"
+"429","Coryphaenoides filifer","species","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides filifer"
+"430","Radulinus boleoides","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Radulinus","Radulinus boleoides"
+"431","Bathyraja parmifera","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja parmifera"
+"432","Platytroctidae","family","Chordata","Actinopteri","Teleostei","Alepocephaliformes","Platytroctidae",NA,NA
+"433","Symphurus atricaudus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Symphurus atricaudus"
+"434","Malacocottus aleuticus","species","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus","Malacocottus aleuticus"
+"435","Icelinus burchami","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus burchami"
+"436","Lycodapus dermatinus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus dermatinus"
+"437","Genyonemus lineatus","species","Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Sciaenidae","Genyonemus","Genyonemus lineatus"
+"438","Bathylagidae","family","Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae",NA,NA
+"439","Scombridae","family","Chordata","Actinopteri","Teleostei","Scombriformes","Scombridae",NA,NA
+"440","Sebastes chrysomelas","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes chrysomelas"
+"441","Merluccius","genus","Chordata","Actinopteri","Teleostei","Gadiformes","Merlucciidae","Merluccius",NA
+"442","Ammodytes","genus","Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes",NA
+"443","Apristurus","genus","Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Pentanchidae","Apristurus",NA
+"444","Ophichthus triserialis","species","Chordata","Actinopteri","Teleostei","Anguilliformes","Ophichthidae","Ophichthus","Ophichthus triserialis"
+"445","Amphistichus koelzi","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Amphistichus","Amphistichus koelzi"
+"446","Talismania bifurcata","species","Chordata","Actinopteri","Teleostei","Alepocephaliformes","Alepocephalidae","Talismania","Talismania bifurcata"
+"447","Nemichthys larseni","species","Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae","Nemichthys","Nemichthys larseni"
+"448","Gyrinomimus grahami","species","Chordata","Actinopteri","Teleostei","Beryciformes","Cetomimidae","Gyrinomimus","Gyrinomimus grahami"
+"449","Bathyraja violacea","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja violacea"
+"450","Paraliparis melanobranchus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis melanobranchus"
+"451","Acantholiparis opercularis","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Acantholiparis","Acantholiparis opercularis"
+"452","Amblyraja badia","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Amblyraja","Amblyraja badia"
+"453","Nautichthys robustus","species","Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Nautichthys","Nautichthys robustus"
+"454","Melanostigma pammelas","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Melanostigma","Melanostigma pammelas"
+"455","Kali indica","species","Chordata","Actinopteri","Teleostei","Scombriformes","Chiasmodontidae","Kali","Kali indica"
+"456","Anotopterus nikparini","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Anotopteridae","Anotopterus","Anotopterus nikparini"
+"457","Bassozetus zenkevitchi","species","Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Bassozetus","Bassozetus zenkevitchi"
+"458","Cyema atrum","species","Chordata","Actinopteri","Teleostei","Saccopharyngiformes","Cyematidae","Cyema","Cyema atrum"
+"459","Nautichthys","genus","Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Nautichthys",NA
+"460","Engraulidae","family","Chordata","Actinopteri","Teleostei","Clupeiformes","Engraulidae",NA,NA
+"461","Galeorhinus galeus","species","Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Triakidae","Galeorhinus","Galeorhinus galeus"
+"462","Osmerus eperlanus","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Osmerus","Osmerus eperlanus"
+"463","Paraplagusia bilineata","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Cynoglossidae","Paraplagusia","Paraplagusia bilineata"
+"464","Lotidae","family","Chordata","Actinopteri","Teleostei","Gadiformes","Lotidae",NA,NA
+"465","Trichodontidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Trichodontidae",NA,NA
+"466","Chimaeridae","family","Chordata","Holocephali",NA,"Chimaeriformes","Chimaeridae",NA,NA
+"467","Squalidae","family","Chordata","Elasmobranchii","Neoselachii","Squaliformes","Squalidae",NA,NA
+"468","Platax teira","species","Chordata","Actinopteri","Teleostei","Acanthuriformes","Ephippidae","Platax","Platax teira"
+"469","Paralichthyidae","family","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae",NA,NA
+"470","Cryptacanthodidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Cryptacanthodidae",NA,NA
+"471","Phanerodon furcatus","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Phanerodon","Phanerodon furcatus"
+"472","Clupeidae","family","Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae",NA,NA
+"473","Scomber japonicus","species","Chordata","Actinopteri","Teleostei","Scombriformes","Scombridae","Scomber","Scomber japonicus"
+"474","Osmerus dentex","species","Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Osmerus","Osmerus dentex"
+"475","Sebastes melanostomus","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes melanostomus"
+"476","Notacanthidae","family","Chordata","Actinopteri","Teleostei","Notacanthiformes","Notacanthidae",NA,NA
+"477","Bathylychnops exilis","species","Chordata","Actinopteri","Teleostei","Argentiniformes","Opisthoproctidae","Bathylychnops","Bathylychnops exilis"
+"478","Brama japonica","species","Chordata","Actinopteri","Teleostei","Scombriformes","Bramidae","Brama","Brama japonica"
+"479","Melamphaidae","family","Chordata","Actinopteri","Teleostei","Beryciformes","Melamphaidae",NA,NA
+"480","Gobiidae","family","Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae",NA,NA
+"481","Agonomalus mozinoi","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Agonomalus","Agonomalus mozinoi"
+"482","Coryphaenoides liocephalus","species","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides liocephalus"
+"483","Clidoderma asperrimum","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Clidoderma","Clidoderma asperrimum"
+"484","Radulinus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Radulinus",NA
+"485","Merlucciidae","family","Chordata","Actinopteri","Teleostei","Gadiformes","Merlucciidae",NA,NA
+"486","Alepocephalidae","family","Chordata","Actinopteri","Teleostei","Alepocephaliformes","Alepocephalidae",NA,NA
+"487","Regalecus glesne","species","Chordata","Actinopteri","Teleostei","Lampriformes","Regalecidae","Regalecus","Regalecus glesne"
+"488","Acipenseridae","family","Chordata","Actinopteri","Chondrostei","Acipenseriformes","Acipenseridae",NA,NA
+"489","Aulorhynchidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Aulorhynchidae",NA,NA
+"490","Allocyttus folletti","species","Chordata","Actinopteri","Teleostei","Zeiformes","Oreosomatidae","Allocyttus","Allocyttus folletti"
+"491","Opisthoproctidae","family","Chordata","Actinopteri","Teleostei","Argentiniformes","Opisthoproctidae",NA,NA
+"492","Scyliorhinidae","family","Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Scyliorhinidae",NA,NA
+"493","Percidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Percidae",NA,NA
+"494","Hypsagonus quadricornis","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Hypsagonus","Hypsagonus quadricornis"
+"495","Hyperprosopon argenteum","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Hyperprosopon","Hyperprosopon argenteum"
+"496","Torpedinidae","family","Chordata","Elasmobranchii","Neoselachii","Torpediniformes","Torpedinidae",NA,NA
+"497","Coryphaenoides cinereus","species","Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides cinereus"
+"498","Nemichthyidae","family","Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae",NA,NA
+"499","Paraliparis cephalus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis cephalus"
+"500","Ceratias holboelli","species","Chordata","Actinopteri","Teleostei","Lophiiformes","Ceratiidae","Ceratias","Ceratias holboelli"
+"501","Chaenophryne longiceps","species","Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Chaenophryne","Chaenophryne longiceps"
+"502","Catostomus catostomus","species","Chordata","Actinopteri","Teleostei","Cypriniformes","Catostomidae","Catostomus","Catostomus catostomus"
+"503","Salmonidae","family","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae",NA,NA
+"504","Cottus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus",NA
+"505","Gasterosteus aculeatus aculeatus","subspecies","Chordata","Actinopteri","Teleostei","Perciformes","Gasterosteidae","Gasterosteus","Gasterosteus aculeatus"
+"506","Ictalurus","genus","Chordata","Actinopteri","Teleostei","Siluriformes","Ictaluridae","Ictalurus",NA
+"507","Centrarchidae","family","Chordata","Actinopteri","Teleostei","Centrarchiformes","Centrarchidae",NA,NA
+"508","Artedius corallinus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius corallinus"
+"509","Anoplogastridae","family","Chordata","Actinopteri","Teleostei","Trachichthyiformes","Anoplogastridae",NA,NA
+"510","Lycodapus leptus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus leptus"
+"511","Halargyreus johnsonii","species","Chordata","Actinopteri","Teleostei","Gadiformes","Moridae","Halargyreus","Halargyreus johnsonii"
+"512","Lampadena urophaos","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Lampadena","Lampadena urophaos"
+"513","Bassozetus","genus","Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Bassozetus",NA
+"514","Molva molva","species","Chordata","Actinopteri","Teleostei","Gadiformes","Lotidae","Molva","Molva molva"
+"515","Lutjanus fulvus","species","Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Lutjanidae","Lutjanus","Lutjanus fulvus"
+"516","Epinephelus areolatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Serranidae","Epinephelus","Epinephelus areolatus"
+"517","Lycenchelys paxillus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys paxillus"
+"518","Stegastes partitus","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Stegastes","Stegastes partitus"
+"519","Plectroglyphidodon sindonis","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Plectroglyphidodon","Plectroglyphidodon sindonis"
+"520","Aphareus rutilans","species","Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Lutjanidae","Aphareus","Aphareus rutilans"
+"521","Stegastes planifrons","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Stegastes","Stegastes planifrons"
+"522","Clinocottus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus",NA
+"523","Tinca tinca","species","Chordata","Actinopteri","Teleostei","Cypriniformes","Cyprinidae","Tinca","Tinca tinca"
+"524","Anguilliformes","order","Chordata","Actinopteri","Teleostei","Anguilliformes",NA,NA,NA
+"525","Argyropelecus sladeni","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Sternoptychidae","Argyropelecus","Argyropelecus sladeni"
+"526","Stenobrachius","genus","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Stenobrachius",NA
+"527","Bathymaster","genus","Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Bathymaster",NA
+"528","Amphiprion perideraion","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Amphiprion","Amphiprion perideraion"
+"529","Chirolophis japonicus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis","Chirolophis japonicus"
+"530","Icelus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelus",NA
+"531","Pleuronectes","genus","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronectes",NA
+"532","Atheresthes","genus","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Atheresthes",NA
+"533","Clupea","genus","Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Clupea",NA
+"534","Phytichthys","genus","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Phytichthys",NA
+"535","Symbolophorus californiensis","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Symbolophorus","Symbolophorus californiensis"
+"536","Rimicola","genus","Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Rimicola",NA
+"537","Amphiprion","genus","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Amphiprion",NA
+"538","Benthodesmus tenuis","species","Chordata","Actinopteri","Teleostei","Scombriformes","Trichiuridae","Benthodesmus","Benthodesmus tenuis"
+"539","Anoplogaster cornuta","species","Chordata","Actinopteri","Teleostei","Trachichthyiformes","Anoplogastridae","Anoplogaster","Anoplogaster cornuta"
+"540","Paralichthys californicus","species","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Paralichthys","Paralichthys californicus"
+"541","Psettichthys","genus","Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Psettichthys",NA
+"542","Bathylagus","genus","Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Bathylagus",NA
+"543","Triglops forficatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops forficatus"
+"544","Lycodes beringi","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes beringi"
+"545","Lampanyctus jordani","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Lampanyctus","Lampanyctus jordani"
+"546","Paraliparis mento","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis mento"
+"547","Aulorhynchus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Aulorhynchidae","Aulorhynchus",NA
+"548","Coryphopterus","genus","Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Coryphopterus",NA
+"549","Apodichthys","genus","Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Apodichthys",NA
+"550","Oneirodes","genus","Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Oneirodes",NA
+"551","Scopelosaurus adleri","species","Chordata","Actinopteri","Teleostei","Aulopiformes","Notosudidae","Scopelosaurus","Scopelosaurus adleri"
+"552","Amphiprion frenatus","species","Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Pomacentridae","Amphiprion","Amphiprion frenatus"
+"553","Gilbertidia","genus","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Gilbertidia",NA
+"554","Melanonus zugmayeri","species","Chordata","Actinopteri","Teleostei","Gadiformes","Melanonidae","Melanonus","Melanonus zugmayeri"
+"555","Seriphus politus","species","Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Sciaenidae","Seriphus","Seriphus politus"
+"556","Leptagonus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Leptagonus",NA
+"557","Sebastes rastrelliger","species","Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes rastrelliger"
+"558","Triakis semifasciata","species","Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Triakidae","Triakis","Triakis semifasciata"
+"559","Stellerina xyosterna","species","Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Stellerina","Stellerina xyosterna"
+"560","Liparis gibbus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis gibbus"
+"561","Nannobrachium regale","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Nannobrachium","Nannobrachium regale"
+"562","Ophiodon","genus","Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Ophiodon",NA
+"563","Pachystomias microdon","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Pachystomias","Pachystomias microdon"
+"564","Protomyctophum","genus","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum",NA
+"565","Bothrocara","genus","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara",NA
+"566","Barbourisia rufa","species","Chordata","Actinopteri","Teleostei","Beryciformes","Barbourisiidae","Barbourisia","Barbourisia rufa"
+"567","Tetragonurus cuvieri","species","Chordata","Actinopteri","Teleostei","Scombriformes","Tetragonuridae","Tetragonurus","Tetragonurus cuvieri"
+"568","Notorynchus","genus","Chordata","Elasmobranchii","Neoselachii","Hexanchiformes","Hexanchidae","Notorynchus",NA
+"569","Chiasmodon niger","species","Chordata","Actinopteri","Teleostei","Scombriformes","Chiasmodontidae","Chiasmodon","Chiasmodon niger"
+"570","Protomyctophum crockeri","species","Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum","Protomyctophum crockeri"
+"571","Triglops scepticus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops scepticus"
+"572","Anarrhichthys","genus","Chordata","Actinopteri","Teleostei","Perciformes","Anarhichadidae","Anarrhichthys",NA
+"573","Rondeletia loricata","species","Chordata","Actinopteri","Teleostei","Beryciformes","Rondeletiidae","Rondeletia","Rondeletia loricata"
+"574","Opostomias mitsuii","species","Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Opostomias","Opostomias mitsuii"
+"575","Malacocottus","genus","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus",NA
+"576","Blenniidae","family","Chordata","Actinopteri","Teleostei","Blenniiformes","Blenniidae",NA,NA
+"577","Porichthys myriaster","species","Chordata","Actinopteri","Teleostei","Batrachoidiformes","Batrachoididae","Porichthys","Porichthys myriaster"
+"578","Paralepididae","family","Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae",NA,NA
+"579","Lycenchelys micropora","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys micropora"
+"580","Gonostomatidae","family","Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae",NA,NA
+"581","Stomiiformes","order","Chordata","Actinopteri","Teleostei","Stomiiformes",NA,NA,NA
+"582","Psychrolutidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae",NA,NA
+"583","Caristiidae","family","Chordata","Actinopteri","Teleostei","Scombriformes","Caristiidae",NA,NA
+"584","Oneirodidae","family","Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae",NA,NA
+"585","Argentina sialis","species","Chordata","Actinopteri","Teleostei","Argentiniformes","Argentinidae","Argentina","Argentina sialis"
+"586","Icosteidae","family","Chordata","Actinopteri","Teleostei","Scombriformes","Icosteidae",NA,NA
+"587","Syngnathidae","family","Chordata","Actinopteri","Teleostei","Syngnathiformes","Syngnathidae",NA,NA
+"588","Blepsias bilobus","species","Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Blepsias","Blepsias bilobus"
+"589","Monopterus cuchia","species","Chordata","Actinopteri","Teleostei","Synbranchiformes","Synbranchidae","Monopterus","Monopterus cuchia"
+"590","Zesticelus profundorum","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Zesticelus","Zesticelus profundorum"
+"591","Kathetostoma averruncus","species","Chordata","Actinopteri","Teleostei","Perciformes","Uranoscopidae","Kathetostoma","Kathetostoma averruncus"
+"592","Prosopium cylindraceum","species","Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Prosopium","Prosopium cylindraceum"
+"593","Lampris incognitus","species","Chordata","Actinopteri","Teleostei","Lampriformes","Lampridae","Lampris","Lampris incognitus"
+"594","Rhinoliparis attenuatus","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Rhinoliparis","Rhinoliparis attenuatus"
+"595","Mola tecta","species","Chordata","Actinopteri","Teleostei","Tetraodontiformes","Molidae","Mola","Mola tecta"
+"596","Tetronarce californica","species","Chordata","Elasmobranchii","Neoselachii","Torpediniformes","Torpedinidae","Tetronarce","Tetronarce californica"
+"597","Anarhichadidae","family","Chordata","Actinopteri","Teleostei","Perciformes","Anarhichadidae",NA,NA
+"598","Thalassenchelys coheni","species","Chordata","Actinopteri","Teleostei","Anguilliformes","Colocongridae","Thalassenchelys","Thalassenchelys coheni"
+"599","Cyematidae","family","Chordata","Actinopteri","Teleostei","Saccopharyngiformes","Cyematidae",NA,NA
+"600","Clinidae","family","Chordata","Actinopteri","Teleostei","Blenniiformes","Clinidae",NA,NA
+"601","Coryphaena hippurus","species","Chordata","Actinopteri","Teleostei","Carangiformes","Coryphaenidae","Coryphaena","Coryphaena hippurus"
+"602","Icelus uncinalis","species","Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelus","Icelus uncinalis"
+"603","Erilepis zonifer","species","Chordata","Actinopteri","Teleostei","Perciformes","Anoplopomatidae","Erilepis","Erilepis zonifer"
+"604","Sphyraena argentea","species","Chordata","Actinopteri","Teleostei","Carangaria incertae sedis","Sphyraenidae","Sphyraena","Sphyraena argentea"
+"605","Bathyraja minispinosa","species","Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja minispinosa"
+"606","Lycenchelys camchatica","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys camchatica"
+"607","Careproctus colletti","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus colletti"
+"608","Aptocyclus ventricosus","species","Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Aptocyclus","Aptocyclus ventricosus"
+"609","Argentinidae","family","Chordata","Actinopteri","Teleostei","Argentiniformes","Argentinidae",NA,NA
+"610","Acanthonus armatus","species","Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Acanthonus","Acanthonus armatus"
+"611","Oneirodes thompsoni","species","Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Oneirodes","Oneirodes thompsoni"
+"612","Derepodichthys alepidotus","species","Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Derepodichthys","Derepodichthys alepidotus"
+"613","Chaenophryne melanorhabdus","species","Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Chaenophryne","Chaenophryne melanorhabdus"
+"614","Rhinoliparis barbulifer","species","Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Rhinoliparis","Rhinoliparis barbulifer"
+"615","Oneirodes bulbosus","species","Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Oneirodes","Oneirodes bulbosus"
+"616","Lumpenus lampretaeformis","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenus","Lumpenus lampretaeformis"
+"617","Cebidichthys violaceus","species","Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Cebidichthys","Cebidichthys violaceus"
+"618",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Clupea","Clupea pallasii"
+"619",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Ophiodon","Ophiodon elongatus"
+"620",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Gadus","Gadus chalcogrammus"
+"621",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Eopsetta","Eopsetta jordani"
+"622",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes ruberrimus"
+"623",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Squaliformes","Squalidae","Squalus","Squalus suckleyi"
+"624",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus nerka"
+"625",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastolobus","Sebastolobus alascanus"
+"626",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Thaleichthys","Thaleichthys pacificus"
+"627",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes pacificus"
+"628",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus gorbuscha"
+"629",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus alascanus"
+"630",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus tshawytscha"
+"631",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes crameri"
+"632",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Gadus","Gadus macrocephalus"
+"633",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes alutus"
+"634",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Glyptocephalus","Glyptocephalus zachirus"
+"635",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes maliger"
+"636",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Microstomus","Microstomus pacificus"
+"637",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Atheresthes","Atheresthes stomias"
+"638",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lyopsetta","Lyopsetta exilis"
+"639",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Parophrys","Parophrys vetulus"
+"640",NA,NA,"Chordata","Holocephali",NA,"Chimaeriformes","Chimaeridae","Hydrolagus","Hydrolagus colliei"
+"641",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossoides","Hippoglossoides elassodon"
+"642",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Xeneretmus","Xeneretmus latifrons"
+"643",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus keta"
+"644",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Podothecus","Podothecus accipenserinus"
+"645",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes reedi"
+"646",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus kisutch"
+"647",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Scombridae","Scomber","Scomber japonicus"
+"648",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae",NA,NA
+"649",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes zacentrus"
+"650",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lepidopsetta","Lepidopsetta bilineata"
+"651",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes aurora"
+"652",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Merlucciidae","Merluccius","Merluccius productus"
+"653",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Psettichthys","Psettichthys melanostictus"
+"654",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Citharichthys sordidus"
+"655",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes entomelas"
+"656",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes pinniger"
+"657",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes brevispinis"
+"658",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Cymatogaster","Cymatogaster aggregata"
+"659",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossus","Hippoglossus stenolepis"
+"660",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes proriger"
+"661",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos decagrammus"
+"662",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Carcharhinidae","Prionace","Prionace glauca"
+"663",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes elongatus"
+"664",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Beringraja","Beringraja rhina"
+"665",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Scorpaenidae",NA,NA
+"666",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes flavidus"
+"667",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes","Ammodytes personatus"
+"668",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Beringraja","Beringraja binoculata"
+"669",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastolobus","Sebastolobus altivelis"
+"670",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Anoplopomatidae","Anoplopoma","Anoplopoma fimbria"
+"671",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Platichthys","Platichthys stellatus"
+"672",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus","Malacocottus kincaidi"
+"673",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zaproridae","Zaprora","Zaprora silenus"
+"674",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes palearis"
+"675",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes babcocki"
+"676",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Engraulidae","Engraulis","Engraulis mordax"
+"677",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes diploproa"
+"678",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Leuroglossus","Leuroglossus schmidti"
+"679",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja interrupta"
+"680",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Agonopsis","Agonopsis vulsa"
+"681",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes helvomaculatus"
+"682",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Microgadus","Microgadus proximus"
+"683",NA,NA,"Chordata","Actinopteri","Teleostei","Batrachoidiformes","Batrachoididae","Porichthys","Porichthys notatus"
+"684",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Radulinus","Radulinus asprellus"
+"685",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes brevipes"
+"686",NA,NA,"Chordata","Actinopteri","Teleostei","Beloniformes","Scomberesocidae","Cololabis","Cololabis saira"
+"687",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Clupea","Clupea harengus"
+"688",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae",NA,NA
+"689",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes","Ammodytes hexapterus"
+"690",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes paucispinis"
+"691",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja aleutica"
+"692",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cryptacanthodidae","Cryptacanthodes","Cryptacanthodes aleutensis"
+"693",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes variegatus"
+"694",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes",NA
+"695",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes saxicola"
+"696",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Dasycottus","Dasycottus setiger"
+"697",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes caurinus"
+"698",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Symbolophorus","Symbolophorus californiensis"
+"699",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes wilsoni"
+"700",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes nebulosus"
+"701",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Isopsetta","Isopsetta isolepis"
+"702",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes cortezianus"
+"703",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Chitonotus","Chitonotus pugetensis"
+"704",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides acrolepis"
+"705",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Prosopium","Prosopium cylindraceum"
+"706",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes borealis"
+"707",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Squaliformes","Squalidae","Squalus","Squalus acanthias"
+"708",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes jordani"
+"709",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Stenobrachius","Stenobrachius leucopsarus"
+"710",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Leptocottus","Leptocottus armatus"
+"711",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae",NA,NA
+"712",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salmo","Salmo salar"
+"713",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus","Clinocottus acuticeps"
+"714",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae",NA,NA
+"715",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae",NA,NA
+"716",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes",NA,NA,NA
+"717",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes diapterus"
+"718",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes nigrocinctus"
+"719",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Psychrolutes","Psychrolutes sigalutes"
+"720",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae",NA,NA
+"721",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Brachyistius","Brachyistius frenatus"
+"722",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Phanerodon","Phanerodon vacca"
+"723",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus","Oligocottus maculosus"
+"724",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus filamentosus"
+"725",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae",NA,NA
+"726",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes emphaeus"
+"727",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Moridae","Antimora","Antimora microlepis"
+"728",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus mandibularis"
+"729",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Gasterosteidae","Gasterosteus","Gasterosteus aculeatus"
+"730",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis pulchellus"
+"731",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Tarletonbeania","Tarletonbeania crenularis"
+"732",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronichthys","Pleuronichthys decurrens"
+"733",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Aulorhynchidae","Aulorhynchus","Aulorhynchus flavidus"
+"734",NA,NA,"Chordata","Actinopteri","Teleostei","Lampriformes","Trachipteridae","Trachipterus","Trachipterus altivelis"
+"735",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Alosa","Alosa sapidissima"
+"736",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Enophrys","Enophrys bison"
+"737",NA,NA,"Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Hemitripterus","Hemitripterus bolini"
+"738",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus pentacanthus"
+"739",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae",NA,NA
+"740",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus mykiss"
+"741",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus borealis"
+"742",NA,NA,"Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Nautichthys","Nautichthys oculofasciatus"
+"743",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Stenobrachius","Stenobrachius nannochir"
+"744",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys crotalinus"
+"745",NA,NA,"Chordata","Myxini",NA,"Myxiniformes","Myxinidae","Eptatretus","Eptatretus stoutii"
+"746",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Ronquilus","Ronquilus jordani"
+"747",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes variabilis"
+"748",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Myoxocephalus","Myoxocephalus polyacanthocephalus"
+"749",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Allosmerus","Allosmerus elongatus"
+"750",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus nigripinnis"
+"751",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides cinereus"
+"752",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Poroclinus","Poroclinus rothrocki"
+"753",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronichthys","Pleuronichthys coenosus"
+"754",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Chauliodus","Chauliodus macouni"
+"755",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae",NA,NA
+"756",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes goodei"
+"757",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae",NA,NA
+"758",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae",NA,NA
+"759",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Pentanchidae","Apristurus","Apristurus brunneus"
+"760",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes melanops"
+"761",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Clevelandia","Clevelandia ios"
+"762",NA,NA,"Chordata","Petromyzonti",NA,"Petromyzontiformes","Petromyzontidae","Entosphenus","Entosphenus tridentatus"
+"763",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Albatrossia","Albatrossia pectoralis"
+"764",NA,NA,"Chordata","Actinopteri","Teleostei","Carangiformes","Carangidae","Trachurus","Trachurus symmetricus"
+"765",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Bathymaster","Bathymaster signatus"
+"766",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus","Malacocottus zonurus"
+"767",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Cymatogaster",NA
+"768",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Scorpaenichthys","Scorpaenichthys marmoratus"
+"769",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum","Protomyctophum thompsoni"
+"770",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis ornata"
+"771",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Xiphister","Xiphister atropurpureus"
+"772",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenus","Lumpenus sagitta"
+"773",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Limanda","Limanda aspera"
+"774",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Nectoliparis","Nectoliparis pelagicus"
+"775",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone","Cyclothone microdon"
+"776",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus",NA
+"777",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis",NA
+"778",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Paricelinus","Paricelinus hopliticus"
+"779",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja minispinosa"
+"780",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae",NA,NA
+"781",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Nannobrachium","Nannobrachium regale"
+"782",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Hyperprosopon","Hyperprosopon argenteum"
+"783",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys","Citharichthys stigmaeus"
+"784",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Bryozoichthys","Bryozoichthys marjorius"
+"785",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops macellus"
+"786",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Psychrolutes","Psychrolutes paradoxus"
+"787",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes",NA,NA,NA
+"788",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Rhamphocottidae","Rhamphocottus","Rhamphocottus richardsonii"
+"789",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Bathylagus","Bathylagus pacificus"
+"790",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae",NA,NA
+"791",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Mallotus","Mallotus villosus"
+"792",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes miniatus"
+"793",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Squaliformes","Squalidae",NA,NA
+"794",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis",NA
+"795",NA,NA,"Chordata","Actinopteri","Teleostei","Beryciformes","Melamphaidae","Poromitra","Poromitra crassiceps"
+"796",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Xiphister","Xiphister mucosus"
+"797",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Odontopyxis","Odontopyxis trispinosa"
+"798",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Scombridae","Scomber","Scomber colias"
+"799",NA,NA,"Chordata","Holocephali",NA,"Chimaeriformes","Chimaeridae",NA,NA
+"800",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Anarhichadidae","Anarrhichthys","Anarrhichthys ocellatus"
+"801",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus","Hemilepidotus spinosus"
+"802",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes",NA,NA,NA
+"803",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Percidae",NA,NA
+"804",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Apodichthys","Apodichthys flavidus"
+"805",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis dennyi"
+"806",NA,NA,"Chordata","Petromyzonti",NA,"Petromyzontiformes","Petromyzontidae",NA,NA
+"807",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes",NA,NA,NA
+"808",NA,NA,"Chordata","Actinopteri","Teleostei","Ophidiiformes","Bythitidae","Brosmophycis","Brosmophycis marginata"
+"809",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Chitonotus",NA
+"810",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius fenestralis"
+"811",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja abyssicola"
+"812",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salvelinus","Salvelinus malma"
+"813",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Embiotoca","Embiotoca lateralis"
+"814",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae",NA,NA
+"815",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus tenuis"
+"816",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Xeneretmus","Xeneretmus leiops"
+"817",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Bramidae","Brama","Brama japonica"
+"818",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Oncorhynchus","Oncorhynchus clarkii"
+"819",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Tarletonbeania",NA
+"820",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Rhinogobiops","Rhinogobiops nicholsii"
+"821",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae",NA,NA
+"822",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Chesnonia","Chesnonia verrucosa"
+"823",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus","Hemilepidotus hemilepidotus"
+"824",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Diaphus","Diaphus rafinesquii"
+"825",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cryptacanthodidae",NA,NA
+"826",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae",NA,NA
+"827",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes diaconus"
+"828",NA,NA,"Chordata","Actinopteri","Teleostei","Acanthuriformes","Ephippidae","Platax","Platax teira"
+"829",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes",NA,NA,NA
+"830",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Jordania","Jordania zonope"
+"831",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes",NA,NA,NA
+"832",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Gobiesox",NA
+"833",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae",NA,NA
+"834",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos stelleri"
+"835",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus","Bathyagonus infraspinatus"
+"836",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus","Clinocottus embryum"
+"837",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Tactostoma","Tactostoma macropus"
+"838",NA,NA,"Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Blepsias","Blepsias cirrhosus"
+"839",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Reinhardtius","Reinhardtius hippoglossoides"
+"840",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Sardinops","Sardinops sagax"
+"841",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis laeta"
+"842",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Hypomesus","Hypomesus pretiosus"
+"843",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja parmifera"
+"844",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis fucensis"
+"845",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Diaphus","Diaphus theta"
+"846",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Gobiesox","Gobiesox maeandricus"
+"847",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Raja",NA
+"848",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis florae"
+"849",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Apodichthys",NA
+"850",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenella","Lumpenella longirostris"
+"851",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Lipolagus","Lipolagus ochotensis"
+"852",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara","Bothrocara brunneum"
+"853",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Xeneretmus","Xeneretmus triacanthus"
+"854",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Aulorhynchidae","Aulorhynchus",NA
+"855",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Citharichthys",NA
+"856",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lepidopsetta","Lepidopsetta polyxystra"
+"857",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis",NA
+"858",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Amphistichus",NA
+"859",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ptilichthyidae","Ptilichthys","Ptilichthys goodei"
+"860",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Bathymaster",NA
+"861",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus","Cottus aleuticus"
+"862",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Psychrolutes","Psychrolutes phrictus"
+"863",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Zaniolepis","Zaniolepis latipinnis"
+"864",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius lateralis"
+"865",NA,NA,"Chordata","Actinopteri","Teleostei","Tetraodontiformes","Molidae","Mola","Mola mola"
+"866",NA,NA,"Chordata","Actinopteri","Teleostei","Alepocephaliformes","Alepocephalidae","Talismania","Talismania bifurcata"
+"867",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Anoplagonus","Anoplagonus inermis"
+"868",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes polyspinis"
+"869",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Scorpaenichthys",NA
+"870",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cryptacanthodidae","Cryptacanthodes","Cryptacanthodes giganteus"
+"871",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Triakidae","Galeorhinus","Galeorhinus galeus"
+"872",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Anoplarchus","Anoplarchus purpurescens"
+"873",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius harringtoni"
+"874",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Gilbertidia",NA
+"875",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Plectobranchus","Plectobranchus evides"
+"876",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis","Chirolophis decoratus"
+"877",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Embassichthys","Embassichthys bathybius"
+"878",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Stenobrachius",NA
+"879",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus","Cottus asper"
+"880",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus","Eumicrotremus orbis"
+"881",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae","Lestidiops","Lestidiops ringens"
+"882",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Bathymaster","Bathymaster caeruleofasciatus"
+"883",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Trichodontidae","Trichodon","Trichodon trichodon"
+"884",NA,NA,"Chordata","Actinopteri","Teleostei","Zeiformes","Oreosomatidae","Allocyttus","Allocyttus folletti"
+"885",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus",NA
+"886",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Radulinus",NA
+"887",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus melanurus"
+"888",NA,NA,"Chordata","Actinopteri","Teleostei","Syngnathiformes","Syngnathidae","Syngnathus","Syngnathus californiensis"
+"889",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelus","Icelus spiniger"
+"890",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Leptoclinus","Leptoclinus maculatus"
+"891",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes auriculatus"
+"892",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Radulinus","Radulinus boleoides"
+"893",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Pseudobathylagus","Pseudobathylagus milleri"
+"894",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus",NA
+"895",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus","Malacocottus aleuticus"
+"896",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Hexanchiformes","Hexanchidae","Hexanchus","Hexanchus griseus"
+"897",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Spirinchus","Spirinchus starksi"
+"898",NA,NA,"Chordata","Actinopteri","Teleostei","Syngnathiformes","Syngnathidae","Syngnathus","Syngnathus leptorhynchus"
+"899",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis mucosus"
+"900",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum","Protomyctophum arcticum"
+"901",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops pingelii"
+"902",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis","Chirolophis nugator"
+"903",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos",NA
+"904",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Spirinchus","Spirinchus thaleichthys"
+"905",NA,NA,"Chordata","Myxini",NA,"Myxiniformes","Myxinidae",NA,NA
+"906",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Icosteidae","Icosteus","Icosteus aenigmaticus"
+"907",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos octogrammus"
+"908",NA,NA,"Chordata","Myxini",NA,"Myxiniformes","Myxinidae","Eptatretus","Eptatretus deani"
+"909",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum",NA
+"910",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Phytichthys","Phytichthys chirus"
+"911",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenus",NA
+"912",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastolobus",NA
+"913",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Hypsagonus","Hypsagonus quadricornis"
+"914",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus",NA
+"915",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Ascelichthys","Ascelichthys rhodorus"
+"916",NA,NA,"Chordata","Actinopteri","Teleostei","Alepocephaliformes","Platytroctidae","Sagamichthys","Sagamichthys abei"
+"917",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Hexagrammos","Hexagrammos lagocephalus"
+"918",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Engraulidae",NA,NA
+"919",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Scopelarchidae","Benthalbella","Benthalbella dentata"
+"920",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Centrolophidae","Icichthys","Icichthys lockingtoni"
+"921",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Lampanyctus","Lampanyctus regalis"
+"922",NA,NA,"Chordata","Actinopteri","Teleostei","Tetraodontiformes","Tetraodontidae","Lagocephalus",NA
+"923",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelus",NA
+"924",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Pallasina","Pallasina barbata"
+"925",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja trachura"
+"926",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus fierasfer"
+"927",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Amphistichus","Amphistichus rhodoterus"
+"928",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae",NA,NA
+"929",NA,NA,"Chordata","Actinopteri","Teleostei","Lampriformes","Regalecidae","Regalecus","Regalecus glesne"
+"930",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lepidopsetta",NA
+"931",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Squaliformes","Somniosidae","Somniosus","Somniosus pacificus"
+"932",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis pectoralis"
+"933",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae",NA,NA
+"934",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Elassodiscus","Elassodiscus caudatus"
+"935",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Osmerus","Osmerus dentex"
+"936",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae","Arctozenus","Arctozenus risso"
+"937",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Lampanyctus","Lampanyctus ritteri"
+"938",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Clinocottus","Clinocottus globiceps"
+"939",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Rhinogobiops",NA
+"940",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae",NA,NA
+"941",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis rosaceus"
+"942",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Parophrys",NA
+"943",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Aristostomias","Aristostomias scintillans"
+"944",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus",NA
+"945",NA,NA,"Chordata","Actinopteri","Chondrostei","Acipenseriformes","Acipenseridae",NA,NA
+"946",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Melanonidae","Melanonus","Melanonus zugmayeri"
+"947",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Pentanchidae","Apristurus",NA
+"948",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Derepodichthys","Derepodichthys alepidotus"
+"949",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides liocephalus"
+"950",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes chrysomelas"
+"951",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Gymnocanthus","Gymnocanthus galeatus"
+"952",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Gasterosteidae","Gasterosteus",NA
+"953",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus gilberti"
+"954",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Ruscarius","Ruscarius meanyi"
+"955",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis cyclopus"
+"956",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis deani"
+"957",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stromateidae","Peprilus","Peprilus simillimus"
+"958",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus cypselurus"
+"959",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Melanostigma","Melanostigma pammelas"
+"960",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis callyodon"
+"961",NA,NA,"Chordata","Actinopteri","Teleostei","Beryciformes","Rondeletiidae","Rondeletia","Rondeletia loricata"
+"962",NA,NA,"Chordata","Actinopteri","Teleostei","Cypriniformes","Cyprinidae","Mylocheilus","Mylocheilus caurinus"
+"963",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Beringraja","Beringraja stellulata"
+"964",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys",NA
+"965",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus dermatinus"
+"966",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae","Salmo",NA
+"967",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bothragonus","Bothragonus swanii"
+"968",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ptilichthyidae",NA,NA
+"969",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Symphurus atricauda"
+"970",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Lamniformes","Lamnidae","Lamna","Lamna ditropis"
+"971",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae",NA,NA
+"972",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis cephalus"
+"973",NA,NA,"Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Sciaenidae","Atractoscion","Atractoscion nobilis"
+"974",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus endemoscotus"
+"975",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bathyagonus",NA
+"976",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Embiotoca",NA
+"977",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis paucidens"
+"978",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys micropora"
+"979",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis rutteri"
+"980",NA,NA,"Chordata","Actinopteri","Teleostei","Ophidiiformes","Bythitidae","Brosmophycis",NA
+"981",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus canus"
+"982",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Enophrys",NA
+"983",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis",NA
+"984",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes semicinctus"
+"985",NA,NA,"Chordata","Actinopteri","Teleostei","Batrachoidiformes","Batrachoididae","Porichthys",NA
+"986",NA,NA,"Chordata","Petromyzonti",NA,"Petromyzontiformes","Petromyzontidae","Lampetra","Lampetra ayresii"
+"987",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes melanostomus"
+"988",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Lepidogobius","Lepidogobius lepidus"
+"989",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes rufus"
+"990",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes ciliatus"
+"991",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Trichodontidae",NA,NA
+"992",NA,NA,"Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Sciaenidae","Seriphus","Seriphus politus"
+"993",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Pleurogrammus","Pleurogrammus monopterygius"
+"994",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Leuroglossus","Leuroglossus stilbius"
+"995",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Allocareproctus","Allocareproctus jordani"
+"996",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Malacocottus",NA
+"997",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides filifer"
+"998",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Moridae","Halargyreus","Halargyreus johnsonii"
+"999",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Odontopyxis",NA
+"1000",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae",NA,NA
+"1001",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Leptagonus",NA
+"1002",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus pachysoma"
+"1003",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Spirinchus",NA
+"1004",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus parviceps"
+"1005",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Enophrys","Enophrys lucasi"
+"1006",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Cynoglossidae","Paraplagusia","Paraplagusia bilineata"
+"1007",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Anoplarchus","Anoplarchus insignis"
+"1008",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus","Eumicrotremus phrynoides"
+"1009",NA,NA,"Chordata","Actinopteri","Teleostei","Carangiformes","Coryphaenidae","Coryphaena","Coryphaena hippurus"
+"1010",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Microstomatidae","Nansenia","Nansenia candida"
+"1011",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Amblyraja","Amblyraja badia"
+"1012",NA,NA,"Chordata","Actinopteri","Teleostei","Beryciformes","Melamphaidae","Melamphaes","Melamphaes lugubris"
+"1013",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae",NA,NA
+"1014",NA,NA,"Chordata","Actinopteri","Teleostei","Notacanthiformes","Notacanthidae",NA,NA
+"1015",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Rimicola",NA
+"1016",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Notosudidae","Scopelosaurus","Scopelosaurus adleri"
+"1017",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae","Nemichthys","Nemichthys scolopaceus"
+"1018",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus furcellus"
+"1019",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Opostomias","Opostomias mitsuii"
+"1020",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae",NA,NA
+"1021",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus burchami"
+"1022",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Nezumia","Nezumia stelgidolepis"
+"1023",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Aulorhynchidae",NA,NA
+"1024",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae",NA,NA
+"1025",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes melanostictus"
+"1026",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes aleutianus"
+"1027",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Hemilepidotus","Hemilepidotus jordani"
+"1028",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Opisthoproctidae","Macropinna","Macropinna microstoma"
+"1029",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Oxylebius","Oxylebius pictus"
+"1030",NA,NA,"Chordata","Actinopteri","Teleostei","Trachichthyiformes","Anoplogastridae","Anoplogaster","Anoplogaster cornuta"
+"1031",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja",NA
+"1032",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae","Avocettina","Avocettina infans"
+"1033",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Gasterosteidae",NA,NA
+"1034",NA,NA,"Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Gerreidae","Diapterus",NA
+"1035",NA,NA,"Chordata","Actinopteri","Teleostei","Blenniiformes","Blenniidae","Lipophrys","Lipophrys pholis"
+"1036",NA,NA,"Chordata","Actinopteri","Teleostei","Alepocephaliformes","Platytroctidae",NA,NA
+"1037",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus","Oligocottus snyderi"
+"1038",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Asemichthys","Asemichthys taylori"
+"1039",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Rhacochilus",NA
+"1040",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Scytalinidae","Scytalina","Scytalina cerdale"
+"1041",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes rubrivinctus"
+"1042",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Lipariscus","Lipariscus nanus"
+"1043",NA,NA,"Chordata","Actinopteri","Teleostei","Blenniiformes","Clinidae",NA,NA
+"1044",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Clevelandia",NA
+"1045",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Apodichthys","Apodichthys fucorum"
+"1046",NA,NA,"Chordata","Actinopteri","Teleostei","Salmoniformes","Salmonidae",NA,NA
+"1047",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus",NA
+"1048",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus",NA
+"1049",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Uranoscopidae","Kathetostoma","Kathetostoma averruncus"
+"1050",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ptilichthyidae","Ptilichthys",NA
+"1051",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelinus","Icelinus fimbriatus"
+"1052",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenopsis","Lumpenopsis hypochroma"
+"1053",NA,NA,"Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Acanthonus","Acanthonus armatus"
+"1054",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes mystinus"
+"1055",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis schultzi"
+"1056",NA,NA,"Chordata","Holocephali",NA,"Chimaeriformes","Chimaeridae","Hydrolagus",NA
+"1057",NA,NA,"Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Blepsias","Blepsias bilobus"
+"1058",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Agonomalus","Agonomalus mozinoi"
+"1059",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys jordani"
+"1060",NA,NA,"Chordata","Actinopteri","Chondrostei","Acipenseriformes","Acipenseridae","Acipenser","Acipenser medirostris"
+"1061",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Polypera","Polypera greeni"
+"1062",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Leptocottus",NA
+"1063",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis clemensi"
+"1064",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus",NA
+"1065",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Hyperprosopon","Hyperprosopon ellipticum"
+"1066",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Merlucciidae","Merluccius",NA
+"1067",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Oligocottus","Oligocottus rimensis"
+"1068",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Ascelichthys",NA
+"1069",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Zesticelus","Zesticelus profundorum"
+"1070",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Rhinoliparis","Rhinoliparis attenuatus"
+"1071",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Bathylagidae","Bathylagus",NA
+"1072",NA,NA,"Chordata","Actinopteri","Teleostei","Alepocephaliformes","Alepocephalidae",NA,NA
+"1073",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Torpediniformes","Torpedinidae","Tetronarce","Tetronarce californica"
+"1074",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Xiphister",NA
+"1075",NA,NA,"Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Spectrunculus","Spectrunculus grandis"
+"1076",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Serrivomeridae","Serrivomer","Serrivomer jesperseni"
+"1077",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Scyliorhinidae",NA,NA
+"1078",NA,NA,"Chordata","Actinopteri","Teleostei","Saccopharyngiformes","Cyematidae",NA,NA
+"1079",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Aptocyclus","Aptocyclus ventricosus"
+"1080",NA,NA,"Chordata","Actinopteri","Teleostei","Saccopharyngiformes","Cyematidae","Cyema","Cyema atrum"
+"1081",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius","Artedius corallinus"
+"1082",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Caristiidae",NA,NA
+"1083",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Bathophilus","Bathophilus flemingi"
+"1084",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossoides",NA
+"1085",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Cottus","Cottus cognatus"
+"1086",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Ceratiidae","Ceratias","Ceratias holboelli"
+"1087",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Acantholiparis","Acantholiparis opercularis"
+"1088",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Ophiodon",NA
+"1089",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenopsis",NA
+"1090",NA,NA,"Chordata","Actinopteri","Teleostei","Beryciformes","Cetomimidae","Gyrinomimus","Gyrinomimus grahami"
+"1091",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara","Bothrocara molle"
+"1092",NA,NA,"Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Sciaenidae","Genyonemus","Genyonemus lineatus"
+"1093",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Argentinidae",NA,NA
+"1094",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Stomiidae","Pachystomias","Pachystomias microdon"
+"1095",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops scepticus"
+"1096",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides","Coryphaenoides armatus"
+"1097",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Chaenophryne","Chaenophryne draco"
+"1098",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronichthys",NA
+"1099",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rhinopristiformes","Rhinobatidae","Rhina",NA
+"1100",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus attenuatus"
+"1101",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis dactylosus"
+"1102",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Synchirus","Synchirus gilli"
+"1103",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Bathymasteridae","Ronquilus",NA
+"1104",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Rajidae","Leucoraja","Leucoraja erinaceus"
+"1105",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Liparis","Liparis gibbus"
+"1106",NA,NA,"Chordata","Actinopteri","Teleostei","Clupeiformes","Clupeidae","Sardinops",NA
+"1107",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Pallasina","Pallasina aix"
+"1108",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops jordani"
+"1109",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Pachycara","Pachycara gymninium"
+"1110",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Myoxocephalus",NA
+"1111",NA,NA,"Chordata","Actinopteri","Teleostei","Alepocephaliformes","Alepocephalidae","Alepocephalus","Alepocephalus tenebrosus"
+"1112",NA,NA,"Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Chilara","Chilara taylori"
+"1113",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Lampanyctus",NA
+"1114",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodapus","Lycodapus leptus"
+"1115",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Anoplarchus",NA
+"1116",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Plectobranchus",NA
+"1117",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Lumpenus","Lumpenus lampretaeformis"
+"1118",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus",NA
+"1119",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Protomyctophum","Protomyctophum crockeri"
+"1120",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Sternoptychidae","Argyropelecus","Argyropelecus sladeni"
+"1121",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Rajiformes","Arhynchobatidae","Bathyraja","Bathyraja violacea"
+"1122",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronectes","Pleuronectes quadrituberculatus"
+"1123",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Atheresthes","Atheresthes evermanni"
+"1124",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Atheresthes",NA
+"1125",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Chirolophis","Chirolophis tarsodes"
+"1126",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops",NA
+"1127",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Bothragonus",NA
+"1128",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Scombridae",NA,NA
+"1129",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Chaenophryne","Chaenophryne longiceps"
+"1130",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae",NA,NA
+"1131",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Chiasmodontidae","Chiasmodon","Chiasmodon niger"
+"1132",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Pleuronectes",NA
+"1133",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Stichaeus","Stichaeus punctatus"
+"1134",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone","Cyclothone atraria"
+"1135",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Triglops","Triglops forficatus"
+"1136",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Notosudidae","Scopelosaurus","Scopelosaurus harryi"
+"1137",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes",NA
+"1138",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Tetragonuridae","Tetragonurus","Tetragonurus cuvieri"
+"1139",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Rhinoliparis","Rhinoliparis barbulifer"
+"1140",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiesociformes","Gobiesocidae","Rimicola","Rimicola muscarum"
+"1141",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Synchirus",NA
+"1142",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Tarletonbeania","Tarletonbeania taylori"
+"1143",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Psychrolutes",NA
+"1144",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae",NA,NA
+"1145",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus colletti"
+"1146",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Nemichthyidae","Nemichthys","Nemichthys larseni"
+"1147",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Orectolobiformes","Rhincodontidae","Rhincodon","Rhincodon typus"
+"1148",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Coryphopterus",NA
+"1149",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Rhamphocottidae","Rhamphocottus",NA
+"1150",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara",NA
+"1151",NA,NA,"Chordata","Actinopteri","Teleostei","Syngnathiformes","Syngnathidae",NA,NA
+"1152",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Anoplopomatidae","Erilepis","Erilepis zonifer"
+"1153",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Carcharhiniformes","Triakidae","Triakis","Triakis semifasciata"
+"1154",NA,NA,"Chordata","Actinopteri","Teleostei","Carangaria incertae sedis","Sphyraenidae","Sphyraena","Sphyraena argentea"
+"1155",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Icosteidae",NA,NA
+"1156",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Scombridae","Thunnus","Thunnus alalunga"
+"1157",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes chlorostictus"
+"1158",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Glyptocephalus",NA
+"1159",NA,NA,"Chordata",NA,NA,"Scorpaeniformes","Hemitripteridae","Nautichthys","Nautichthys robustus"
+"1160",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis mento"
+"1161",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes","Ammodytes tobianus"
+"1162",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycodes","Lycodes beringi"
+"1163",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Oneirodes","Oneirodes bulbosus"
+"1164",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Icelus","Icelus uncinalis"
+"1165",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis ulochir"
+"1166",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Argentinidae","Argentina","Argentina sialis"
+"1167",NA,NA,"Chordata","Actinopteri","Teleostei","Synbranchiformes","Synbranchidae","Monopterus",NA
+"1168",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Chiasmodontidae","Kali","Kali indica"
+"1169",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Paralichthyidae","Etropus",NA
+"1170",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes carnatus"
+"1171",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Trichiuridae","Aphanopus","Aphanopus arigato"
+"1172",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Muraenidae","Gymnothorax",NA
+"1173",NA,NA,"Chordata","Actinopteri","Teleostei","Beryciformes","Barbourisiidae","Barbourisia","Barbourisia rufa"
+"1174",NA,NA,"Chordata","Actinopteri","Teleostei","Eupercaria incertae sedis","Malacanthidae","Caulolatilus","Caulolatilus princeps"
+"1175",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cryptacanthodidae","Cryptacanthodes",NA
+"1176",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Agonopsis",NA
+"1177",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zaproridae",NA,NA
+"1178",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Squaliformes",NA,NA,NA
+"1179",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Lyopsetta",NA
+"1180",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Moridae","Antimora",NA
+"1181",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae",NA,NA
+"1182",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Soldatovia","Soldatovia polyactocephala"
+"1183",NA,NA,"Chordata","Actinopteri","Teleostei","Blenniiformes","Blenniidae",NA,NA
+"1184",NA,NA,"Chordata","Actinopteri","Teleostei","Batrachoidiformes","Batrachoididae","Porichthys","Porichthys porosissimus"
+"1185",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Eopsetta",NA
+"1186",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Merlucciidae",NA,NA
+"1187",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Sebastidae","Sebastes","Sebastes rastrelliger"
+"1188",NA,NA,"Chordata","Actinopteri","Teleostei","Ophidiiformes","Ophidiidae","Bassozetus","Bassozetus zenkevitchi"
+"1189",NA,NA,"Chordata","Actinopteri","Teleostei","Batrachoidiformes","Batrachoididae","Porichthys","Porichthys myriaster"
+"1190",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Psychrolutidae","Dasycottus",NA
+"1191",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Trichiuridae","Benthodesmus","Benthodesmus pacificus"
+"1192",NA,NA,"Chordata","Actinopteri","Teleostei","Notacanthiformes","Notacanthidae","Notacanthus","Notacanthus chemnitzii"
+"1193",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Cynoglossidae","Symphurus","Symphurus atricaudus"
+"1194",NA,NA,"Chordata","Actinopteri","Teleostei","Tetraodontiformes","Molidae","Mola",NA
+"1195",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Acantholumpenus","Acantholumpenus mackayi"
+"1196",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Chaenophryne","Chaenophryne melanorhabdus"
+"1197",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cottidae","Artedius",NA
+"1198",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Ammodytidae","Ammodytes",NA
+"1199",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Stichaeidae","Phytichthys",NA
+"1200",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Alepisauridae","Alepisaurus",NA
+"1201",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus georgianus"
+"1202",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Pachycara","Pachycara lepinium"
+"1203",NA,NA,"Chordata","Elasmobranchii","Neoselachii","Torpediniformes","Torpedinidae",NA,NA
+"1204",NA,NA,"Chordata","Actinopteri","Teleostei","Argentiniformes","Opisthoproctidae",NA,NA
+"1205",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Hypomesus",NA
+"1206",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Bothrocara","Bothrocara pusillum"
+"1207",NA,NA,"Chordata","Actinopteri","Teleostei","Stomiiformes","Gonostomatidae","Cyclothone",NA
+"1208",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Colocongridae","Thalassenchelys","Thalassenchelys coheni"
+"1209",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Microgadus",NA
+"1210",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Paraliparis","Paraliparis melanobranchus"
+"1211",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Anotopteridae","Anotopterus","Anotopterus nikparini"
+"1212",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Oneirodes",NA
+"1213",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Merlucciidae","Merluccius","Merluccius bilinearis"
+"1214",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Agonidae","Stellerina","Stellerina xyosterna"
+"1215",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Zaniolepis",NA
+"1216",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Thaleichthys",NA
+"1217",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Pholidae","Pholis","Pholis picta"
+"1218",NA,NA,"Chordata","Actinopteri","Teleostei","Osmeriformes","Osmeridae","Osmerus","Osmerus eperlanus"
+"1219",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Clidoderma","Clidoderma asperrimum"
+"1220",NA,NA,"Chordata","Actinopteri","Teleostei","Anguilliformes","Congridae","Xenomystax","Xenomystax atrarius"
+"1221",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Macrouridae","Coryphaenoides",NA
+"1222",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Zoarcidae","Lycenchelys","Lycenchelys camchatica"
+"1223",NA,NA,"Chordata","Actinopteri","Teleostei","Gadiformes","Gadidae","Theragra",NA
+"1224",NA,NA,"Chordata","Actinopteri","Teleostei","Myctophiformes","Myctophidae","Lampanyctus","Lampanyctus jordani"
+"1225",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Anarhichadidae",NA,NA
+"1226",NA,NA,"Chordata","Actinopteri","Teleostei","Aulopiformes","Paralepididae","Magnisudis","Magnisudis atlantica"
+"1227",NA,NA,"Chordata","Actinopteri","Teleostei","Ovalentaria incertae sedis","Embiotocidae","Phanerodon","Phanerodon furcatus"
+"1228",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Liparidae","Careproctus","Careproctus ovigerus"
+"1229",NA,NA,"Chordata","Actinopteri","Teleostei","Lophiiformes","Oneirodidae","Oneirodes","Oneirodes thompsoni"
+"1230",NA,NA,"Chordata","Actinopteri","Teleostei","Gobiiformes","Gobiidae","Lepidogobius",NA
+"1231",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Microstomus",NA
+"1232",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Cyclopteridae","Eumicrotremus","Eumicrotremus spinosus"
+"1233",NA,NA,"Chordata","Actinopteri","Teleostei","Perciformes","Hexagrammidae","Oxylebius",NA
+"1234",NA,NA,"Chordata","Actinopteri","Teleostei","Pleuronectiformes","Pleuronectidae","Hippoglossus","Hippoglossus hippoglossus"
+"1235",NA,NA,"Chordata","Actinopteri","Teleostei","Scombriformes","Trichiuridae","Benthodesmus","Benthodesmus tenuis"
+"1236",NA,NA,"Chordata","Actinopteri","Chondrostei","Acipenseriformes","Acipenseridae","Acipenser","Acipenser transmontanus"

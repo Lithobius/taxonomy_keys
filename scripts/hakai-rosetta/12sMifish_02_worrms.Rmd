@@ -72,12 +72,130 @@ fish_search <- midori_fish %>%
 
 
 # 2: worms
-fish_worms <- get_wormsid_(sci_com = fish_search$worms_query)
+fish_worms <- get_wormsid_(sci_com = fish_search2$worms_query, marine_only = FALSE,
+                           accepted = FALSE)
 # get_wormsid_ gives back null and length 0 elements
 ## first remove with compact and discard then map_dfr
 fish_worms2 <- fish_worms %>% 
   compact() %>%
   discard( ~ nrow(.x) == 0) %>%
   map_dfr( ~ data.frame(.x), .id = 'query')
+
+
+# this cleaning step is relatively temporary until they fix the curl issue
+fish_worms2 <- fish_worms2 %>%
+  #rename(taxa = scientificname) %>%
+  left_join(fish_search, by = c('query' = 'worms_query')) %>%
+  select(!(query)) %>%
+  rename(taxa = query.y)
+
+# now match species to sciname to remove extra rows
+fish_worms2 <- fish_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(taxa, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(taxa == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+
+# extract higher and info about freshwater
+fish_records <- search_records_worms(fish_worms2$worms_sciname)
+
+# refine results to be useful
+fish_records <- fish_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(taxa_query = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
+
+
+
+# temp; I forgot to turn off marine = false so lets get the worms records I missed
+fish_search2 <- fish_search %>%
+  filter(!(query %in% fish_records$taxa_query))
+
+```
+
+```{r}
+#3: gbif+bold ids
+# now we'll search bold
+annelid_bold <- get_boldid_(sci = annelid_search$taxa_query, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+annelid_bold2 <- map_dfr(.x= annelid_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         taxa_query = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(taxa_query, bold_id, bold_taxon, rank)))
+
+# GBIF id
+annelid_gbifid <- get_gbifid_(sci = annelid_search$taxa_query, rows = 1)
+
+annelid_gbifid2 <- map_dfr(.x= annelid_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
+
+
+#4: merge all and find problems
+# join all updated fields
+annelid2 <- annelid_search %>%
+  left_join(annelid_records) %>%
+  left_join(annelid_bold2) %>%
+  left_join(annelid_gbifid2) %>%
+  left_join(annelid_tol2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
+  mutate(found_taxa = coalesce(worms_sciname, tol_sciname)) %>%
+  relocate(c('found_taxa', 'rank'), .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
+  select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
+
+#write full
+write.csv(annelid2, here(rosetta, 'taxize', '20220718_annelid_taxonomy-full.csv'))
+
+
 ```
 
