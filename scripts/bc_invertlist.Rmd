@@ -1,0 +1,68 @@
+---
+title: "bc_invertlist"
+author: "Kate Sheridan"
+date: "7/25/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(taxize)
+library(tidyverse)
+library(here)
+
+# here filepaths
+raw <- here('species_lists', 'BC', 'raw_lists')
+processed <- here('species_lists', 'BC', 'processed_lists')
+```
+
+```{r loadin}
+# OBIS/GBIF
+bigdat_invert <- read_csv(here(raw, '20220627_obis-gbif_taxa-bc.csv'))[-1] %>%
+  filter(!(is.na(species))) %>%
+  filter(!(phylum == 'Chordata' & class != 'Ascidiacea')) %>%
+  mutate(obisgbif = 1)
+
+# Hakai COI database
+invert_samples <- read_csv(here(raw, '20220716_hakai_all_marine_samples-metazoa.csv')) %>%
+  mutate(hakaisample = 1)
+
+```
+
+```{r clean}
+# obisgbif
+bigdat_invert2 <- bigdat_invert %>%
+  select(species, phylum, class, obisgbif) %>%
+  distinct()
+
+
+# hakai samples
+invert_samples2 <- invert_samples %>%
+  filter(!(phylum == 'Chordata' & class != 'Ascidiacea')) %>%
+  filter(!(is.na(species))) %>%
+  select(species, phylum, class, hakaisample) %>%
+  distinct() %>%
+  # there are some strings
+  mutate(species = str_remove_all(species, "[0-9]")) %>%
+  mutate(species = str_remove_all(species, " sp\\.")) %>%
+  mutate(species = str_remove_all(species, " FHL")) %>%
+  mutate(species = str_remove_all(species, " HAK-")) %>%
+  mutate(species = str_remove_all(species, " sensu Dorsey")) %>%
+  mutate(species = trimws(species)) %>%
+  # removing some of them make generic id's only
+  filter(grepl(' ', species)) %>%
+  distinct()
+
+
+```
+
+
+```{r combine}
+
+invert_list <- bigdat_invert2 %>%
+  full_join(invert_samples2) %>%
+  mutate(across(.cols = everything(), ~ifelse(is.na(.), 0, .))) %>%
+  mutate(verifiedbc = ifelse(hakaisample == 0, 0, 1))
+
+write_csv(invert_list, here(processed, '20220724_inverts_bc-unconfirmed.csv'))
+```
+
