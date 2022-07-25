@@ -72,7 +72,7 @@ fish_search <- midori_fish %>%
 
 
 # 2: worms
-fish_worms <- get_wormsid_(sci_com = fish_search2$worms_query, marine_only = FALSE,
+fish_worms <- get_wormsid_(sci_com = fish_search$worms_query, marine_only = FALSE,
                            accepted = FALSE)
 # get_wormsid_ gives back null and length 0 elements
 ## first remove with compact and discard then map_dfr
@@ -125,22 +125,33 @@ fish_records <- fish_records %>%
   # rank lowercase
   mutate(rank = tolower(rank))
 
+```
+
+```{r}
+# temp split, keep getting connection errors in the middle, and its a long run
+
+fish_search1a <- fish_search[1:7000,]
+fish_search1b <- fish_search[7001:11000,]
+fish_search1c <- fish_search[11001:16000,]
+fish_search1d <- fish_search[16001:20687,]
 
 
-# temp; I forgot to turn off marine = false so lets get the worms records I missed
-fish_search2 <- fish_search %>%
-  filter(!(query %in% fish_records$taxa_query))
+fish_bold2 <- readRDS('fish_bold_temp.rds')
+fish_gbifid2 <- readRDS('fish_gbif_temp.rds')
+fish_records <- readRDS('fish_worms_temp.rds')
+
 
 ```
+
 
 ```{r}
 #3: gbif+bold ids
 # now we'll search bold
-annelid_bold <- get_boldid_(sci = annelid_search$taxa_query, 
+fish_bold <- get_boldid_(sci = fish_search1d$query, 
                          includeTree = TRUE,
                          divison = 'Animalia')
 #bind up lists into a dataframe
-annelid_bold2 <- map_dfr(.x= annelid_bold, ~ data.frame(.x)) %>%
+fish_bold2 <- map_dfr(.x= fish_bold, ~ data.frame(.x)) %>%
   filter(!(is.na(input))) %>%
   filter(!(is.na(taxid))) %>%
   filter(tax_division == 'Animalia') %>%
@@ -158,10 +169,23 @@ annelid_bold2 <- map_dfr(.x= annelid_bold, ~ data.frame(.x)) %>%
          bold_taxon = taxon) %>%
   select((c(taxa_query, bold_id, bold_taxon, rank)))
 
-# GBIF id
-annelid_gbifid <- get_gbifid_(sci = annelid_search$taxa_query, rows = 1)
 
-annelid_gbifid2 <- map_dfr(.x= annelid_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
+#fish_bold1a <- fish_bold2
+#fish_bold1b <- fish_bold2
+#fish_bold1c <- fish_bold2
+fish_bold1d <- fish_bold2
+
+fish_bold2 <- fish_bold1a %>%
+  bind_rows(fish_bold1b, fish_bold1c, fish_bold1d)
+
+#write to be safe
+#saveRDS(fish_bold2, 'fish_bold_temp.rds')
+
+
+# GBIF id
+fish_gbifid <- get_gbifid_(sci = fish_search1d$query, rows = 1)
+
+fish_gbifid2 <- map_dfr(.x= fish_gbifid, ~ data.frame(.x), .id = 'taxa_query') %>%
   filter(kingdom == "Animalia") %>%
   # eliminating fuzzy matches for now
   filter(matchtype == 'EXACT') %>%
@@ -177,13 +201,24 @@ annelid_gbifid2 <- map_dfr(.x= annelid_gbifid, ~ data.frame(.x), .id = 'taxa_que
          gbif_sciname = scientificname)
 
 
+#fish_gbif1a <- fish_gbifid2
+#fish_gbif1b <- fish_gbifid2
+fish_gbif1c <- fish_gbifid2
+fish_gbif1d <- fish_gbifid2
+
+fish_gbifid2 <- fish_gbif1a %>%
+  bind_rows(fish_gbif1b, fish_gbif1c, fish_gbif1d)
+
+saveRDS(fish_gbifid2, 'fish_gbif_temp.rds')
+saveRDS(fish_records, 'fish_worms_temp.rds')
+
 #4: merge all and find problems
 # join all updated fields
-annelid2 <- annelid_search %>%
-  left_join(annelid_records) %>%
-  left_join(annelid_bold2) %>%
-  left_join(annelid_gbifid2) %>%
-  left_join(annelid_tol2) %>%
+fish2 <- fish_search %>%
+  left_join(fish_records) %>%
+  left_join(fish_bold2) %>%
+  left_join(fish_gbifid2) #%>%
+  left_join(fish_tol2) %>%
   relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
   relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
   #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
@@ -194,8 +229,21 @@ annelid2 <- annelid_search %>%
   select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
 
 #write full
-write.csv(annelid2, here(rosetta, 'taxize', '20220718_annelid_taxonomy-full.csv'))
+write.csv(fish2, here(rosetta, 'taxize', '20220718_fish_taxonomy-full.csv'))
 
+fish_records <- fish_records %>%
+  rename(query = taxa_query)
+```
+
+
+
+
+# Problems
+
+```{r}
+
+fish_search2 <- fish_search %>%
+  filter(!(query %in% fish_records$taxa_query))
 
 ```
 
