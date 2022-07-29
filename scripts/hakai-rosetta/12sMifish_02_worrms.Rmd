@@ -63,6 +63,12 @@ search_records_worms <- function(spnames) {
 
 We've already done TOL ID's in the last script, so we'll go straight to worms
 ```{r worrms!}
+# store TOL ids
+fish_tol <- midori_fish %>%
+  select(species_verbatim, query, ottid_species) %>%
+  rename(taxa_query = query)
+
+
 # check which ones are in the database
 #then replace resolved
 fish_search <- midori_fish %>%
@@ -244,7 +250,8 @@ fish2 <- midori_fish %>%
 #write full
 write.csv(fish2, here(rosetta, 'taxize', '20220727_mifish_taxonomy-full.csv'))
 
-
+# in case read in
+fish2 <- read_csv(here(rosetta, 'taxize', '20220727_mifish_taxonomy-full.csv'))[-1]
 ```
 
 
@@ -360,5 +367,70 @@ fish_records_gen <- fish_records_gen %>%
   # rank lowercase
   mutate(rank = tolower(rank))
 
+# match freshwater-only records
+fresh_gen <- fish_records_gen %>%
+  filter(rank == 'genus' & freshwater_only == 1) %>%
+  select(taxa_query, worms_sciname, worms_aphiaid, rank,
+         phylum, class, order, family, genus,
+         status, unacceptreason, freshwater_only, terrestrial_only) %>%
+  rename(genus_split = taxa_query) %>%
+  right_join(fish_search3) %>%
+  filter(!(is.na(worms_sciname))) %>%
+  select(!(c(worms_query, genus_split))) %>%
+  rename(species_verbatim = query_verbatim,
+         found_taxa = query) %>%
+  left_join(fish_tol) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  rename(ott_id = ottid_species)
+
+# add freshwater only to final
+fish2 <- fish2 %>%
+  filter(!(is.na(freshwater_only) & is.na(terrestrial_only)))%>%
+  bind_rows(fresh_gen) 
+
+#
+fish_records_gen2 <- fish_records_gen %>%
+  filter(!(rank == 'genus')) %>%
+  select(taxa_query, worms_sciname, worms_aphiaid, rank,
+         phylum, class, order, family, genus,
+         status, unacceptreason, freshwater_only, terrestrial_only) %>%
+  left_join(fish_search3, by  = c('taxa_query' = 'query')) %>%
+  select(!(c(worms_query, genus_split))) %>%
+  rename(species_verbatim = query_verbatim
+         ) %>%
+  left_join(fish_tol) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  rename(ott_id = ottid_species) %>%
+  mutate(found_taxa = worms_sciname)
+
+# bind back in
+fish2 <- fish2 %>%
+  bind_rows(fish_records_gen2)
 ```
+
+## Hybrids
+
+```{r hybrids}
+
+```
+
+
+# Still still not found
+
+```{r notfoundstill}
+fish_outstanding <- fish_search3 %>%
+  filter(!(query %in% fish2$taxa_query))
+
+fish_outstanding2 <- midori_fish %>%
+  filter(!(query %in% fish2$taxa_query))
+
+# write out
+write.csv(fish_outstanding2, here(rosetta, 'problems',
+                                  'not_found', '20220729_mifish_notfound.csv'))
+```
+
+
+
 
