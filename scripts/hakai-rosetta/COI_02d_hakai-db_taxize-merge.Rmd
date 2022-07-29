@@ -137,6 +137,9 @@ write_csv(hakai_rosetta, here('latest-keys', '20220721_coi_rosetta_draft.csv'))
 If I need to read it back in to mess around with options
 ```{r}
 
+hakai_rosetta <- read_csv(here('latest-keys', '20220721_coi_rosetta_draft.csv'))
+
+
 all_taxa_res2<-read_csv(here(rosetta, 'current_draft',
                               '20220721_blast-db_taxonomy-all.csv'))
 ```

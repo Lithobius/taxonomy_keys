@@ -14,7 +14,6 @@ library(taxize)
 library(here)
 
 # here filepaths
-# here filepaths
 problems <- here('species_lists', 'hakai', '2022rosetta', 'problems')
 rosetta <- here('species_lists', 'hakai', '2022rosetta')
 tol_conflict <- here('species_lists', 'hakai', '2022rosetta', 'problems', 'tol_conflict')
@@ -181,18 +180,16 @@ write_csv(annelid_conflicts4, here(problems, 'not_found',
 # Arthropods
 
 ```{r arthropods-loadin}
-arthropod_freshterr <- read_csv(here(problems, 'fresh_terrestrial',
-                                   '20220630_arthropod_fresh-terr.csv'))
-
 arthropod_family <- read_csv(here(tol_conflict,
-                                        '20220630_arthropod_worms_tol-conflict-family.csv'))
+                                        '20220720_arthropod_worms_tol-conflict-family.csv')) %>%
+  rename(query = taxa_query)
 
 arthropod_notfound <- read_csv(here(problems, 'not_found',
-                                        '20220624_arthropod_not-found.csv'))[-1] %>%
+                                        '20220718_arthropod_not-found.csv'))[-1] %>%
   rename(query = taxa)
 
 arthropod_notfound_tol <- read_csv(here(problems, 'not_found',
-                                        '20220630_arthropod_not_found-tol.csv')) 
+                                        '20220704_arthropod_not-found_outstanding.csv')) 
 
 arthropod_conflicts <- full_join(arthropod_notfound, arthropod_family) %>%
   relocate(query) %>%
@@ -589,4 +586,7 @@ smallphyla_conflicts4 <- smallphyla_conflicts %>%
 write_csv(smallphyla_conflicts4, here(problems, 'not_found',
                                    '20220704_smallphyla_not-found_outstanding.csv'))
 ```
+
+
+
 

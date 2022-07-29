@@ -1,0 +1,229 @@
+---
+title: "COI_03_hakai-db_intermediate-updates"
+author: "Kate Sheridan"
+date: "7/25/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(stringr)
+library(taxize)
+library(here)
+
+# here filepaths
+# here filepaths
+problems <- here('species_lists', 'hakai', '2022rosetta', 'problems')
+```
+
+```{r worms-function}
+library(worrms)
+
+## requires worrms to be loaded
+# input is vector of species names
+# use wm_records_names to extract 
+# this doesn't need the + signs
+
+# right now this breaks if not-found
+search_records_worms <- function(spnames) {
+  search <- tibble()
+  for (i in spnames) {
+    print(paste0('searching for ', i))
+    record <- wm_records_names(i, marine_only = FALSE)
+    message('done')
+    search <- append(search, record)
+  }
+  names(search) <- spnames
+  search_output <- map_dfr(.x = search, ~ data.frame(.x), .id = 'query') %>%
+    janitor::clean_names() %>%
+    select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+  return(search_output)
+}
+```
+
+# Not matched
+
+These were not matched when rosetta was deployed to an actual project. May reflect an updated database from Hakai, but for here we'll fix them manually or identify why they weren't matched; possibly a problem above.
+
+Here we will use the existing rosetta to generate entries at the species or generic level, then any that are still not found we'll check that they aren't on the problems lists.
+```{r what needs matched?}
+hakai_rosetta <- read_csv(here('latest-keys', '20220721_coi_rosetta_draft.csv'))
+
+# only need select rows; the rest can be blank for now
+rosetta_to_match <- hakai_rosetta %>%
+  select(found_taxa, identification, rank,
+         phylum, class, order, family, genus,
+         worms_aphiaid, bold_id, gbif_key, ott_id,
+         freshwater_only, terrestrial_only) %>%
+  distinct()
+
+
+not_matched <- read_csv(here(problems, 'other', '20220721_coi-notmatched.csv'))
+
+to_match <- not_matched %>%
+  rename(verbatim_identification = lca_taxon_verbatim,
+         identification = lca_taxon) %>%
+  left_join(rosetta_to_match)
+
+matched <- to_match %>%
+  filter(!(is.na(found_taxa)))
+
+still_not_matched <- to_match %>%
+  filter(is.na(found_taxa)) %>%
+  select(identification, verbatim_identification)
+
+```
+
+```{r search still not matched}
+nm_resolved <- tol_resolve(still_not_matched$identification)
+
+nm_search <- nm_resolved %>%
+  select(unique_name, search_string, ott_id, is_synonym, flags) %>%
+  mutate(search_string = str_to_sentence(search_string)) %>%
+  # remove any tol strings
+  mutate(unique_name = str_remove_all(unique_name, ' \\(genus in Holozoa\\)')) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", unique_name)) %>%
+  rename(tol_sciname = unique_name,
+         identification = search_string)
+
+nm_worms <- get_wormsid_(nm_search$worms_query, accepted = FALSE, marine_only = FALSE)
+# unpack
+nm_worms2 <- nm_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'worms_query')
+
+
+# this cleaning step is relatively temporary until they fix the curl issue
+nm_worms2 <- nm_worms2 %>%
+  left_join(nm_search) %>%
+  select(!(worms_query)) %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(tol_sciname, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+  filter(!(!(tol_sciname == scientificname))) %>%
+  select(!(c(status))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# extract higher and info about freshwater
+nm_records <- search_records_worms(nm_worms2$worms_sciname)
+
+# refine results to be useful
+nm_records <- nm_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(tol_sciname = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
+
+# run found thorugh the rest of the process
+
+#3: gbif+bold ids
+# now we'll search bold
+nm_bold <- get_boldid_(sci = nm_search$tol_sciname, 
+                         includeTree = TRUE,
+                         divison = 'Animalia')
+#bind up lists into a dataframe
+nm_bold2 <- map_dfr(.x= nm_bold, ~ data.frame(.x)) %>%
+  filter(!(is.na(input))) %>%
+  filter(!(is.na(taxid))) %>%
+  filter(tax_division == 'Animalia') %>%
+  # remove cases where input is higher taxonomy and taxon is species epthet
+  filter(!(str_detect(input, " ") == FALSE & str_detect(taxon, " ") == TRUE)) %>%
+  select(!(c(representitive_image.image, 
+             representitive_image.apectratio))) %>%
+  remove_rownames() %>%
+  relocate(input) %>%
+  distinct() %>%
+  # prep to merge with other searches
+  rename(bold_id = taxid,
+         tol_sciname = input,
+         rank = tax_rank,
+         bold_taxon = taxon) %>%
+  select((c(tol_sciname, bold_id, bold_taxon, rank)))
+
+# GBIF id
+nm_gbifid <- get_gbifid_(sci = nm_search$tol_sciname, rows = 1)
+
+nm_gbifid2 <- map_dfr(.x= nm_gbifid, ~ data.frame(.x), .id = 'tol_sciname') %>%
+  filter(kingdom == "Animalia") %>%
+  # eliminating fuzzy matches for now
+  filter(matchtype == 'EXACT') %>%
+  # strip higher taxonomy from gbif bc it doesn't match worms/bold
+  ## but keep keys!
+  select(!(c(kingdom, phylum, class, order, family, genus, species,
+             status, confidence, canonicalname, matchtype, kingdomkey,
+             # just keeping regular gbif key
+             acceptedusagekey, phylumkey, orderkey,
+             classkey, familykey, genuskey, specieskey,
+             synonym, note))) %>%
+    rename(gbif_key = usagekey,
+         gbif_sciname = scientificname)
+
+
+
+#4: merge all and find problems
+# join all updated fields
+to_match2 <- nm_search %>%
+  left_join(nm_records) %>%
+  left_join(nm_bold2) %>%
+  left_join(nm_gbifid2) %>%
+  relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
+  mutate(found_taxa = coalesce(worms_sciname, tol_sciname)) %>%
+  relocate(c('found_taxa', 'rank'), .before = 'worms_aphiaid') %>%
+  relocate('family', .before = 'genus') %>%
+  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
+  select(!(c(worms_query, worms_match, original_aphiaid))) %>%
+  distinct()
+
+to_match_resolved <- to_match %>%
+  filter(is.na(found_taxa)) %>%
+  select(identification, verbatim_identification) %>%
+  left_join(to_match2) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  bind_rows(matched) %>%
+  select(!(kingdom))
+```
+
+# Update rosetta
+
+```{r update rosetta}
+hakai_rosetta <- hakai_rosetta %>%
+  bind_rows(to_match_resolved)
+
+# write in update!
+write_csv(hakai_rosetta, here('latest-keys', '20220725_coi_rosetta_draft.csv'))
+
+```
+
+```{r update fresh-terrestrial}
+
+all_freshterr <- read_csv(here('latest-keys', '20220721_freshwater_terrestrial.csv'))
+
+all_freshterr <- all_freshterr %>%
+  bind_rows(to_match_resolved) %>%
+  filter(terrestrial_only == 1 | freshwater_only == 1)
+
+write_csv(all_freshterr, here('latest-keys', '20220725_freshwater_terrestrial.csv'))
+
+```
+
