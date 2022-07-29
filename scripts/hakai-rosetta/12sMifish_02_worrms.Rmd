@@ -8,6 +8,7 @@ output: html_document
 # Mifish Fish
 
 Here we are going to run the fish we got from the last script through WoRMS
+-
 
 The pipeline for all groups is:
 1: WoRMS for higher taxonomy
@@ -212,27 +213,38 @@ fish_gbifid2 <- fish_gbif1a %>%
 saveRDS(fish_gbifid2, 'fish_gbif_temp.rds')
 saveRDS(fish_records, 'fish_worms_temp.rds')
 
+
+
+fish_bold2 <- fish_bold2 %>%
+  rename(query = taxa_query)
+fish_gbifid2 <- fish_gbifid2 %>%
+  rename(query = taxa_query)
+
 #4: merge all and find problems
 # join all updated fields
-fish2 <- fish_search %>%
+fish2 <- midori_fish %>%
+  select(species_verbatim, query, ottid_species) %>% 
+  rename(ott_id = ottid_species) %>%
+  left_join(fish_search) %>%
   left_join(fish_records) %>%
   left_join(fish_bold2) %>%
-  left_join(fish_gbifid2) #%>%
-  left_join(fish_tol2) %>%
+  left_join(fish_gbifid2) %>%
   relocate(c('worms_aphiaid', 'bold_id', 'gbif_key', 'ott_id'), .before = 'phylum') %>%
-  relocate(c('worms_sciname', 'tol_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
+  relocate(c('worms_sciname', 'bold_taxon', 'gbif_sciname'), .before = 'phylum') %>%
   #single column for TOL and WORMS replacements; bold and gbif tend to follow TOL
-  mutate(found_taxa = coalesce(worms_sciname, tol_sciname)) %>%
-  relocate(c('found_taxa', 'rank'), .before = 'worms_aphiaid') %>%
+  mutate(found_taxa = coalesce(worms_sciname, query)) %>%
+  relocate(c('found_taxa', 'rank'), .before = 'query') %>%
   relocate('family', .before = 'genus') %>%
-  relocate(c('is_synonym', 'flags'), .before = 'valid_authority') %>%
-  select(!(c(worms_query, worms_match, original_aphiaid, taxa)))
+  relocate(c('status', 'unacceptreason', 'valid_authority'), .before = 'worms_aphiaid') %>%
+  relocate(c('phylum', 'class', 'order', 'family', 'genus',), .before = 'status') %>%
+  select(!(c(worms_query, worms_match, original_aphiaid, kingdom))) %>%
+  rename(taxa_query = query) %>%
+  distinct()
 
 #write full
-write.csv(fish2, here(rosetta, 'taxize', '20220718_fish_taxonomy-full.csv'))
+write.csv(fish2, here(rosetta, 'taxize', '20220727_mifish_taxonomy-full.csv'))
 
-fish_records <- fish_records %>%
-  rename(query = taxa_query)
+
 ```
 
 
@@ -241,9 +253,112 @@ fish_records <- fish_records %>%
 # Problems
 
 ```{r}
-
 fish_search2 <- fish_search %>%
-  filter(!(query %in% fish_records$taxa_query))
+  filter(!(query %in% fish_records$query))
+
+# we'll deal with these guys later
+hybrids <- fish_search2 %>%
+  filter(grepl(' x ', query) | grepl(' X', query))
+
+# get all possible searches at once
+fish_search3 <- fish_search2 %>%
+  filter(!(query %in% hybrids$query)) %>%
+  select(query) %>%
+  mutate(query_verbatim = query) %>%
+  # a few random strings are still here??
+  mutate(query = str_remove_all(query, ' sp\\.')) %>%
+  mutate(query = str_remove_all(query, ' gr\\.')) %>%
+  mutate(query = str_replace_all(query, c('natural gynogenetic Carassius auratus red var\\.' = 'Carassius auratus'))) %>%
+  mutate(query = trimws(query)) %>%
+  mutate(worms_query = gsub(" ", "+", query)) %>%
+  separate(query, into = 'genus_split', " ", 1, 
+           remove = FALSE, extra = 'drop')
+
+
+fish_worms3 <- get_wormsid_(fish_search3$worms_query, marine_only = FALSE,
+                            accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+fish_worms2 <- fish_worms3%>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'worms_query')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+fish_worms2 <- fish_worms2 %>%
+  left_join(fish_search3#, by = c('query' = 'worms_query')
+            )# %>%
+  relocate(found_taxa)# %>%
+  select(!(query))
+
+# now match species to sciname to remove extra rows
+fish_worms2 <- fish_worms2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(query, " ") == FALSE & str_detect(scientificname, " ") == TRUE)) %>%
+    filter(!(str_detect(query, " [a-z]* ") == FALSE & 
+               str_detect(scientificname, " [a-z]* ") == TRUE)) %>%
+  #filter(!(!(found_taxa == scientificname))) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+# there's only a few of these so lets merge them with generic level searches
+genera <- fish_search3 %>%
+  select(genus_split) %>%
+  distinct()
+fish_worms_gen <- get_wormsid_(genera$genus_split, 
+                               marine_only = FALSE,
+                               accepted = FALSE)
+
+
+
+fish_worms_gen2 <- fish_worms_gen %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'genus_split')
+
+# this cleaning step is relatively temporary until they fix the curl issue
+fish_worms_gen2 <- fish_worms_gen2 %>%
+  left_join(fish_search3)
+
+# now match species to sciname to remove extra rows
+fish_worms_gen2 <- fish_worms_gen2 %>%
+  # remove higher taxonomy with species-level hits
+  filter(!(str_detect(scientificname, " ") == TRUE)) %>%
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct()
+
+fish_worms_gen_search <- fish_worms_gen2 %>%
+  select(genus_split) %>%
+  distinct() %>%
+  rename(worms_sciname = genus_split) %>%
+  bind_rows(fish_worms2) %>%
+  select(worms_sciname) %>%
+  distinct()
+
+# now use my loop to pull anything found
+fish_records_gen <- search_records_worms(fish_worms_gen2$worms_sciname)
+
+# generate terrestrial-only and freshwater-only columns
+fish_records_gen <- fish_records_gen %>%
+  filter(kingdom == 'Animalia') %>%
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>% 
+# rename to format
+  rename(taxa_query = query,
+         worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, 
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
 
 ```
 
