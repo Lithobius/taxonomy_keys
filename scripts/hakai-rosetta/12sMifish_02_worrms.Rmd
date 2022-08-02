@@ -408,6 +408,8 @@ fish_records_gen2 <- fish_records_gen %>%
 # bind back in
 fish2 <- fish2 %>%
   bind_rows(fish_records_gen2)
+
+write.csv(fish2, here(rosetta, 'taxize', '20220729_mifish_taxonomy.csv'))
 ```
 
 ## Hybrids
