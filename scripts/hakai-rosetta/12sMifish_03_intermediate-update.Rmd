@@ -54,9 +54,22 @@ mifish_rosetta <- read_csv(here('latest-keys', '20220729_mifish_draft.csv'))[-1]
 # load in not matched list
 not_matched <- read_csv(here(problems, 'other', '20220714_mifish-notmatched.csv'))
 
+# load in replacements list
+## often these are higher taxa that aren't found yet
+mifish_replace <- read_csv(here('latest-keys', 'in_process_spreadsheets',
+                                '20220802_mifish_replacements.csv')) %>%
+  select(new_id) %>%
+  rename(taxa_query = new_id) %>%
+  distinct()
+
 # if current version has not matched rows:
 # filter them out, combine with not_matched
 ## this is not really an issue with mifish
+
+# combine lists
+not_matched <- not_matched %>%
+  bind_rows(mifish_replace) %>%
+  distinct()
 ```
 
 
@@ -181,7 +194,8 @@ to_match2 <- nm_search %>%
   distinct() %>%
   mutate(freshwater_only = as.numeric(freshwater_only)) %>%
   mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
-  select(!(kingdom))
+  select(!(kingdom)) %>%
+  rename(species_verbatim = identification)
   
 ```
 
@@ -189,10 +203,11 @@ to_match2 <- nm_search %>%
 
 ```{r bind and write}
 mifish_rosetta <- mifish_rosetta %>%
-  bind_rows(to_match2)
+  bind_rows(to_match2) %>%
+  mutate(species_verbatim = coalesce(species_verbatim, taxa_query))
 
 # write in update!
-write_csv(hakai_rosetta, here('latest-keys',
+write_csv(mifish_rosetta, here('latest-keys',
                               '20220803_mifish_fish-only_rosetta_draft.csv'))
 
 ```
