@@ -49,7 +49,9 @@ These were not matched when rosetta was deployed to an actual project. May refle
 Here we will use the existing rosetta to generate entries at the species or generic level, then any that are still not found we'll check that they aren't on the problems lists.
 ```{r what needs matched?}
 # load in current version
-mifish_rosetta <- read_csv(here('latest-keys', '20220729_mifish_draft.csv'))[-1]
+
+mifish_rosetta <- read_csv(here('latest-keys',
+                                 '20220803_mifish_fish-only_rosetta_draft.csv'))[-1]
 
 # load in not matched list
 not_matched <- read_csv(here(problems, 'other', '20220714_mifish-notmatched.csv'))
@@ -70,6 +72,9 @@ mifish_replace <- read_csv(here('latest-keys', 'in_process_spreadsheets',
 not_matched <- not_matched %>%
   bind_rows(mifish_replace) %>%
   distinct()
+
+
+table(mifish_rosetta$class)
 ```
 
 
@@ -204,7 +209,10 @@ to_match2 <- nm_search %>%
 ```{r bind and write}
 mifish_rosetta <- mifish_rosetta %>%
   bind_rows(to_match2) %>%
-  mutate(species_verbatim = coalesce(species_verbatim, taxa_query))
+  mutate(species_verbatim = coalesce(species_verbatim, taxa_query)) %>%
+  # just in case anything snuck in thorugh fuzzy search
+  filter(phylum == 'Chordata')
+
 
 # write in update!
 write_csv(mifish_rosetta, here('latest-keys',
