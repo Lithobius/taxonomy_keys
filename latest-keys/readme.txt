@@ -5,7 +5,7 @@ These are the current drafts, organized by date.
 Please notify me of errors or missing data asap with a csv of verbatim ids.
 
 How to use:
-1) verbatim_identification (COI) or taxa_query (MiFish) to match blast hit
+1) verbatim_identification (COI) or species_verbatim (MiFish) to match blast hit
 2) replace with found_taxa
 3) filter by freswater_only/terrestrial_only == 0, 
 4) select only found_taxa, verbatim_identification, rank and higher taxonomy
@@ -40,9 +40,9 @@ COI:
 			
 MIFISH: 
 
-(note august 2022: there are a few minor errors still being fixed but put on pause for ESA; taxa_query is blank for a few taxa I had to update quickly but can just be matched with found_taxa for now, and terrestrial_only populated for a few river fish and IDK why)
+(note august 2022: there are a few minor errors still being fixed, an intermediate version with updates for esa exists for a few taxa in the haida gwaii dataset, but the current version is still dated 0729; formatting etc on the intermediate is wrong, its missing columns, etc. Also some fish got true for terrestrial only and I'm going to figure out why...)
 
-The biggest difference between MiFish and COI files is that Mifish uses taxa_query instead of verbatim_identification. This is because entries were already largely clean and did not require significant modification to query.
+The biggest difference between MiFish and COI files is that Mifish uses species_verbatim instead of verbatim_identification. This is because entries were all to species in the beginning; since then I have added some higher taxonomy.
 
 1)	[date]_mifish_all_draft.csv
 		contains EVERYTHING in the Midori 12S classifier. Including bacteria, protists, plants...
@@ -52,8 +52,9 @@ The biggest difference between MiFish and COI files is that Mifish uses taxa_que
 		Contains only fish, defined as class == Actinopteri, Coelocanthi, Dipneusti, Elasmobranchii, Holocephali, Leptocardii, Myxini, and Petromyzontii
 		NOTE that in other databases than WoRMS these classes may appear as other ranks
 	contents:
+		species_verbatim: match to ID from classifier
 		found_taxa is the match from either WoRMS or Open Tree of Life
-		taxa_query is from the classifier
+		taxa_query: modified species_verbatim to search databases with
 		other than that columns are the same as COI. 
 	
 
