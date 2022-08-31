@@ -51,7 +51,7 @@ Here we will use the existing rosetta to generate entries at the species or gene
 # load in current version
 
 mifish_rosetta <- read_csv(here('latest-keys',
-                                 '20220803_mifish_fish-only_rosetta_draft.csv'))[-1]
+                                 '20220803_mifish_fish-only_rosetta_draft.csv'))#[-1]
 
 # load in not matched list
 not_matched <- read_csv(here(problems, 'other', '20220714_mifish-notmatched.csv'))
@@ -221,5 +221,27 @@ write_csv(mifish_rosetta, here('latest-keys',
 ```
 
 
+
+
+
+
+August 2022 touch up
+
+last time I updated the key there was an issue; next time I need to check closely to find the error in the code.
+New entries were added for some species, and didn't get a taxa_query
+These entries are more complete than the originals so i should keep them and delete the old ones; and get found taxa populated
+Problem is; its only keeping the first one with distinct() so we're losing the extra info. Figure this out later; it looks like the gbif column is empty generally so it might just be that the whole thing needs run for gbif again.
+
+```{r}
+library(dplyr)
+
+mifish_rosetta2 <- mifish_rosetta %>%
+  mutate(taxa_query = ifelse(is.na(taxa_query) == TRUE, found_taxa, taxa_query)) %>%
+  distinct(species_verbatim, .keep_all = TRUE)
+  
+write_csv(mifish_rosetta2, here('latest-keys',
+                              '20220831_mifish_fish-only_rosetta_draft.csv'))
+
+```
 
 

@@ -1,0 +1,183 @@
+---
+title: "general replacement script"
+author: "Kate Sheridan"
+date: "8/30/2022"
+output: html_document
+---
+
+This is a general script for using the keys with eDNA data.
+Paste the relevant chunks into your QC script.
+
+THIS CODE WILL NOT WORK AS IS! Replace all filepaths and filenames with your own.
+
+
+# Setup
+
+Add any relevant portions to your own setup chunk.
+
+```{r setup, include=FALSE}
+# not necessary if you already have tidyverse loaded
+library(dplyr)
+library(readr)
+
+
+library(here)
+# update this filepath to your own keys
+## separate subdirectories with a comma
+keys <- here("latest-keys")
+ednadata <- here("filepath_to", "edna_data")
+specieslist <- here("filepath_to", "species_lists")
+```
+
+# Load in
+
+Note that the object names are generic. If you're using multiple markers in the script, update the names to be unique
+
+```{r loadin}
+#eDNA taxonomy table;
+## this should contain a list of ASVs matched to IDs
+taxonomy_edna <- read.delim(here::here(ednadata, 'taxonomy_table_file.txt'), 
+                           h = TRUE, fill = TRUE) %>% 
+  janitor::clean_names()
+
+# often the taxonomy tables give us odd column names; remove the hanging x_ if necessary
+colnames(taxonomy_edna) <- taxonomy_edna %>%
+  colnames(.) %>% 
+  str_remove_all(string = .,
+                 pattern = "x_")
+
+
+# Latest key
+taxa_key <- read_csv(here(specieslist,
+                     'date_marker_rosetta_draft.csv'))
+
+
+
+# Known Replacements if applicable
+taxa_replace <- read_csv(here(specieslist,
+                     'date_marker_replacements.csv')) %>%
+  # remove any incomplete rows; lists still in progress
+  filter(!(is.na(new_id))) %>%
+  # other columns not needed at the moment; still improving spreadsheets!
+  select(species_old, new_id, id_note)
+
+
+```
+
+# Clean eDNA results
+
+Note that the column of eDNA IDs is called lca taxon; this may not be your column name.
+
+## for 12s
+
+```{r}
+# for mifish we only want fish
+## this should give a list of only asv# + ID
+taxonomy_edna <- taxonomy_edna %>%
+  #filter(phylum == "Chordata") %>% # this could also give us whales if we want
+  ## class is more efficient for our needs
+  # be careful with bony fish:might be written different ways
+  filter(class %in% c('Chondrichthyes', 'Actinopteri')) %>% 
+  # here filter to generic or below
+  filter(lca_rank %in% c('genus', 'species', 'subspecies')) %>%
+  #then strip only species column
+  select(query, lca_taxon) %>%
+  rename(asv = query)
+
+
+# replace from list if applicable
+# this will output ASV, taxon replaced, new taxon, and note from sheet
+# the output is ONLY ASVs that were based on ONLY taxonomy
+## NOTE currently the sheet is for BC-ONLY replacements
+## NOTE this may drop some species to genus.
+mifish_replacement <- taxonomy_edna %>%
+  filter(lca_taxon %in% taxa_replace$species_old) %>%
+  left_join(taxa_replace, by = c('lca_taxon' = 'species_old')) %>%
+  rename(lca_taxon_replaced = lca_taxon,
+         lca_taxon = new_id)
+
+
+taxonomy_edna2 <- taxonomy_edna %>%
+  # replacements back into list
+  filter(!(lca_taxon %in% mifish_replacement$lca_taxon_replaced)) %>%
+  bind_rows(mifish_replacement) %>%
+  # match
+  left_join(taxa_key, by = c('lca_taxon' = 'species_verbatim')) %>%
+  # you may not need all the columns, these are the most useful
+  ## FOUND_TAXA is your new ID
+  select(asv, found_taxa, taxa_query, lca_taxon, rank,
+         phylum, class, order, family, genus,
+         freshwater_only, terrestrial_only, status, unacceptreason,
+         worms_aphiaid, bold_id, gbif_key, ott_id,
+         lca_taxon_replaced, id_note) %>%
+  distinct() 
+
+
+# sort out not matched; key needs to be updated for these taxa
+not_matched <- taxonomy12s_2 %>%
+  filter(is.na(found_taxa)) %>%
+  select(asv, lca_taxon)
+
+
+# write out final taxonomy
+write.csv(taxonomy_edna2, here(ednadata, 'date_marker_taxonomy.csv'))
+
+```
+
+
+
+## for COI
+
+
+
+```{r}
+# filter out non-marine invertebrates
+taxonomy_edna <- taxonomy_edna %>%
+  # sometimes kingdom == 'Animalia' depending on table
+  filter(kingdom == 'Eukaryota') %>%
+  # remove not-desired phylum (You may need to add more Protists/etc for your dataset)
+  filter(!(phylum %in% c('Bacillariophyta', 'Haptista', 'Rhodophyta', 
+                         'unknown phylum', 'no identification'))) %>%
+  # remove fish, birds, mammals, etc, separately to retain tunicates, etc
+  ## marine inverts that may be classed as 'chordata'
+  filter(!(class %in% c('Chondrichthyes', 'Actinopteri', 'Mammalia', 
+                        'Aves', 'Amphibia'))) %>%
+  # filter for below-genus
+  filter(lca_rank %in% c('genus', 'species', 'subspecies')) %>%
+  # only retain relevant columns; higher taxonomy will be reassigned
+  select(query, lca_taxon)
+```
+
+
+
+
+
+# Filtering updated taxonomy
+
+Now you can use freshwater/terrestrial columns and problem keys to filter if needed
+
+```{r fresh-terrestrial}
+
+
+
+```
+
+For problem keys, either load the whole key or only the relevant problem
+These are under construction as the species on them are researched and eventually added to the replacement key
+For many of them, it may be advisable to just step back to genus.
+
+```{r problem-key}
+# finally check if any of the species are in the problem key
+problem_key <- read_csv(here(specieslist,
+                     '20220118_remove_from_splists_fish.csv')) %>%
+  # optional; only load in columns and values you want to filter by
+  select(species, not_nearshore, other_problem) %>%
+  filter(not_nearshore == 1 | other_problem == 1)
+
+#identify ASVs that may be a problem
+## this includes not-matched, species on the problem key, and freshwater/terrestrial only
+edna_problems <- taxonomy_edna2 %>%
+  filter(found_taxa %in% problem_key$species | is.na(found_taxa) | freshwater_only == 1 | terrestrial_only == 1)
+
+```
+
