@@ -70,6 +70,9 @@ Note that the column of eDNA IDs is called lca taxon; this may not be your colum
 
 ## for 12s
 
+12S takes the not-matched approach, removing anything not-matched only.
+You can add in a line from COI's 'problems' approach to remove the freshwater species before saving the taxonomy, or filter out freshwater species later.
+
 ```{r}
 # for mifish we only want fish
 ## this should give a list of only asv# + ID
@@ -114,9 +117,14 @@ taxonomy_edna2 <- taxonomy_edna %>%
 
 
 # sort out not matched; key needs to be updated for these taxa
-not_matched <- taxonomy12s_2 %>%
+not_matched <- taxonomy_edna2 %>%
   filter(is.na(found_taxa)) %>%
   select(asv, lca_taxon)
+
+# Remove not matched entries
+taxonomy_edna2 <- taxonomy_edna2 %>%
+  filter(!(lca_taxon %in% not_matched$lca_taxon))
+
 
 
 # write out final taxonomy
@@ -128,14 +136,16 @@ write.csv(taxonomy_edna2, here(ednadata, 'date_marker_taxonomy.csv'))
 
 ## for COI
 
-
+COI takes the 'problems' approach, filtering out all not matched, terrestrial, and freshwater only entries
+If you don't want to do filter for terrestrial and freshwater-only right away, use the not-matched approach from 12S to only remove entries that weren't matched.
 
 ```{r}
 # filter out non-marine invertebrates
 taxonomy_edna <- taxonomy_edna %>%
-  # sometimes kingdom == 'Animalia' depending on table
-  filter(kingdom == 'Eukaryota') %>%
+  # sometimes kingdom == 'Animalia', 'Metazoa', or 'Eukaryota' depending on table
+  filter(kingdom == 'Metazoa') %>%
   # remove not-desired phylum (You may need to add more Protists/etc for your dataset)
+  # usually only needed if kingdom == eukaryota
   filter(!(phylum %in% c('Bacillariophyta', 'Haptista', 'Rhodophyta', 
                          'unknown phylum', 'no identification'))) %>%
   # remove fish, birds, mammals, etc, separately to retain tunicates, etc
@@ -143,9 +153,49 @@ taxonomy_edna <- taxonomy_edna %>%
   filter(!(class %in% c('Chondrichthyes', 'Actinopteri', 'Mammalia', 
                         'Aves', 'Amphibia'))) %>%
   # filter for below-genus
+    ## note though that often lca rank == species, is not actually species
   filter(lca_rank %in% c('genus', 'species', 'subspecies')) %>%
   # only retain relevant columns; higher taxonomy will be reassigned
-  select(query, lca_taxon)
+  select(query, lca_taxon) %>%
+  rename(asv = query)
+
+### Optional
+# replace from list
+## note that you may need to do replacements again after the taxonomy adjustment
+# as COI matches often have special characters/etc in lca_taxon
+coi_replacement <- taxonomy_coi %>%
+  filter(lca_taxon %in% taxa_replace$species_old) %>%
+  left_join(taxa_replace, by = c('lca_taxon' = 'species_old')) %>%
+  rename(lca_taxon_replaced = lca_taxon,
+         lca_taxon = new_id)
+
+
+taxonomy_edna2 <- taxonomy_edna %>%
+  #adds any replacements if needed (optional)
+  filter(!(lca_taxon %in% edna_replacement$lca_taxon_replaced)) %>%
+  bind_rows(edna_replacement) %>%
+  left_join(taxa_key, by = c('lca_taxon' = 'verbatim_identification')) %>%
+  # you may not need all the columns, these are the most useful
+  ## FOUND_TAXA is your new ID
+  select(asv, found_taxa, lca_taxon, identification, rank,
+         phylum, class, order, family, genus, #species,
+         freshwater_only, terrestrial_only, status, unacceptreason,
+         worms_aphiaid, bold_id, gbif_key, ott_id,
+         lca_taxon_replaced, id_note) %>%
+  distinct() 
+
+#identify problems; not found, freshwater, etc
+## the is.na(found_taxa) are the entries not matched by the key
+## export if needed
+coi_problems <- taxonomy_edna2 %>%
+  filter(is.na(found_taxa) | freshwater_only == 1 | terrestrial_only == 1)
+
+# Remove relevant problems
+taxonomy_edna2 <- taxonomy_edna2 %>%
+  filter(!(lca_taxon %in% coi_problems$lca_taxon))
+
+# write out final taxonomy
+write.csv(taxonomy_coi2, here(processededna, '202208831_coi_taxonomy.csv'))
 ```
 
 
