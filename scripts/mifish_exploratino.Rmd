@@ -1,0 +1,101 @@
+---
+title: "12SMifish_scratch"
+author: "Kate Sheridan"
+date: "11/17/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(arsenal)
+library(ggplot2)
+library(eulerr)
+library(here)
+
+
+rosetta <- here('species_lists', 'hakai', '2022rosetta')
+```
+
+
+the NCBI and the midori databases gave pretty different numbers of species.
+What is going on?
+
+```{r load-in}
+ncbi_fish <- read_csv(here(rosetta, 'taxize', '20221108_fish_taxonomy-full.csv'))[-1]
+
+
+midori_fish <- read_csv(here('latest-keys', '20220831_mifish_fish-only_rosetta_draft.csv'))
+```
+
+
+
+```{r}
+# list versions
+
+ncbi_fishlist <- ncbi_fish %>%
+  filter(freshwater_only == 0) %>%
+  filter(rank == 'species') %>%
+  select(found_taxa) %>%    
+  distinct()
+
+midori_fishlist <- midori_fish %>%
+  filter(freshwater_only == 0) %>%
+  filter(rank == 'species') %>%
+  select(found_taxa) %>%    
+  distinct()
+
+
+
+venn_all <- list(
+  midoriRDP = midori_fishlist$found_taxa,
+                 NCBI = ncbi_fishlist$found_taxa
+                 )
+
+eulerfish <- euler(venn_all)
+
+
+
+
+plot(eulerfish,
+     quantities = list(type = 'counts', cex = .8, fontface = 2),
+     fills = c('white','#cbcfd4','#55804a'),
+     legend = list(labels = c(
+       #'MiFish BLAST database',
+       'Midori RDP','NCBI'), 
+                   side = 'bottom', nrow=2, ncol=2
+                   ),
+     adjust_labels = TRUE,
+     main = 'Unique fish species by database'
+     )
+
+
+```
+
+using the comparison list to determine; 
+the original midori RDP database I used was *_NUC_SP_##_srRNA_RDP
+this means it was not only 12S!
+it included partial sequences of small subunit RNA genes. This includes 18S AND 12S.
+
+This is why it was different!!!
+
+BUT my pull did not include some partial sequences; eg 
+
+```{r arsenal}
+midorincbi_compared <- comparedf(midori_fishlist, ncbi_fishlist, by = 'found_taxa') # arsenal
+  
+  # extract differences and transform to presence/absence columns
+midorincbi_diff <- diffs(midorincbi_compared, what = 'observations')
+
+midorincbi_diff <- midorincbi_diff %>%
+  mutate(version = recode(version,
+                            x = 'midori',
+                            y = 'ncbi'))
+
+
+
+
+```
+
+
+
+
