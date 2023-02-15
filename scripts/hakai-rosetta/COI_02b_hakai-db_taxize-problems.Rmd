@@ -5,6 +5,15 @@ date: '2022-06-27'
 output: html_document
 ---
 
+note here: update with junior homonym filter:
+  # filter out junior homonyms
+  group_by(gbif_sciname) %>%
+  mutate(n_found = n()) %>%
+  ungroup() %>%
+  filter(!(n_found > 1 & status != 'accepted'))
+
+
+
 This script deals with conflicts between what's found in TOL and WoRMS
 Generally, this is because the taxa is terrestrial or freshwater. 
 
