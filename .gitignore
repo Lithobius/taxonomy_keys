@@ -40,3 +40,4 @@ vignettes/*.pdf
 fish/.DS_Store
 .DS_Store
 species_lists/hakai/2021_blast-db/CO1.BOLD_genbank_combined.taxa_map.w_hakai_barcodes.sunday_lab.txt
+species_lists/ncbi/2023_ncbi/20230819_ncbi_fish_12s_tinyseq.xml

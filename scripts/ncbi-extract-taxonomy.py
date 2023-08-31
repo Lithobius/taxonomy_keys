@@ -68,7 +68,7 @@ def readNCBI(ncbi_file):
 
 
 def writeNCBI(records):
-    with open(here("./rawdata/12s_references/ncbi_test2.csv"), 'w') as out:
+    with open(here("./species_lists/ncbi/2023_ncbi/20230828_ncbi_fish_12s_extract.csv"), 'w') as out:
         ncbiwriter = csv.writer(out)
         for r in records:
             # get a regex for the most obvious offenders
@@ -84,7 +84,7 @@ def writeNCBI(records):
 if __name__ == "__main__":
 
     print("hello world")
-    ncbi_in = here("./rawdata/12s_references/20221102_ncbi_fish_12s.txt")
+    ncbi_in = here("./species_lists/ncbi/2023_ncbi/20230828_ncbi_fish_12s.txt")
     #ncbi_in = here("./rawdata/12s_references/ncbi_test.txt")
     ncbi_data = readNCBI(ncbi_in)
     writeNCBI(ncbi_data)
