@@ -76,7 +76,7 @@ if __name__ == "__main__":
     outpath = ("./species_lists/ncbi/2023_ncbi/")
     # path to txt for search terms
     #search_terms = ("20230917_12s_combined-ncbi-accn.txt")
-    search_terms = ("20230917_12s_combined-ncbi-accn2.txt")
+    search_terms = ("20230917_12s_combined-ncbi-accn_trim2.txt")
     taxonomy_out = ('20230917_12s_ncbi-taxonomy.csv')
     # get search terms
     taxonomy_by_acc(search_terms, outpath, taxonomy_out)

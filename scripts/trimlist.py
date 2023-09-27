@@ -58,11 +58,11 @@ def trim_list(to_files, to_trim, trimmed, goal):
 
 if __name__ == "__main__":
 
-    print("hello world")
-    goal = 'JN247937'
+    # don't forget to change the 'goal'
+    goal = 'AY940727'
     filepath = ("./species_lists/ncbi/2023_ncbi/")
-    infile = ("20230917_12s_combined-ncbi-accn3.txt")
-    outfile = ("20230917_12s_combined-ncbi-accn_trim.txt")
+    infile = ("20230917_12s_combined-ncbi-accn_trim.txt")
+    outfile = ("20230917_12s_combined-ncbi-accn_trim2.txt")
     trim_list(filepath, infile, outfile, goal)
 
 
