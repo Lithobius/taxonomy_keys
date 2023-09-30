@@ -469,7 +469,7 @@ fish_worms_records_df_ncbi <- fish_worms_result %>%
   distinct() %>%
   # get rid of not-fish
   filter(phylum == 'Chordata') %>%
-  filter(class %in% c("Teleostei","Elasmobranchii",
+  filter(class %in% c("Teleostei","Elasmobranchii",'Dipneusti','Coelacanthi',
                        "Chondrostei","Myxini","Holostei","Holocephali")) %>%
   mutate(ncbiworms_match = ifelse(ncbi_sp == worms_match, 'yes', 'no')) %>%
   filter(ncbiworms_match == 'yes')
@@ -767,15 +767,100 @@ fish_ncbi_missinggenera <- get_wormsid_(sci_com = unique(ncbi_missing_gen_still$
                            marine_only = FALSE, accepted = FALSE)
 # get_wormsid_ gives back null and length 0 elements
 ## first remove with compact and discard then map_dfr
-fish_worms_missinggenera2 <- fish_worms_missinggenera %>% 
+fish_ncbi_missinggenera2 <- fish_ncbi_missinggenera %>% 
   compact() %>%
   discard( ~ nrow(.x) == 0) %>%
   map_dfr( ~ data.frame(.x), .id = 'query') %>%
-  filter(!(str_detect(scientificname, " ")))
+  filter(!(str_detect(scientificname, " "))) %>%
+  filter(query == scientificname)
+
+fish_ncbi_records_missinggenera <- search_records_worms(unique(fish_ncbi_missinggenera2$scientificname))
 
 
+# refine results to be useful
+fish_ncbi_records_missinggenera_df <- fish_ncbi_records_missinggenera %>%
+  # get rid of not-fish
+  filter(phylum == 'Chordata') %>%
+  filter(class %in% c("Teleostei","Elasmobranchii",'Dipneusti','Coelacanthi',
+                       "Chondrostei","Myxini","Holostei","Holocephali")) %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, query,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank)) 
+
+missing_genera_merge <- ncbi_missing_gen_still %>% 
+  rename(worms_match = extract_gen) %>%
+  left_join(fish_ncbi_records_missinggenera_df) %>%
+  filter(!(is.na(worms_sciname))) %>%
+  mutate(freshwater_only = as.numeric(freshwater_only)) %>%
+  mutate(terrestrial_only = as.numeric(terrestrial_only)) %>%
+  bind_rows(ncbi_missing_genera_merge) %>%
+  filter(!(status %in% c('uncertain'))) %>%
+  # track these down later
+  mutate(remove_me = case_when(genus %in% c('Barbus', 'Chromis', 'Antennarius',
+                                            'Torpedo', 'Dasyatis', 'Gobiosoma') & 
+                                 status != "accepted" ~ 'yes',
+                               genus == "Hippocampus" &
+                                 worms_aphiaid != 126224 ~ 'yes',
+                               genus == "Salmostoma" &
+                                 is.na(status) ~ 'yes',
+                               genus == 'Inu' &
+                                 is.na(status) ~ 'yes')) %>%
+  filter(is.na(remove_me)) %>%
+  select(!remove_me)
+  #select(!(c(freshwater_only, terrestrial_only))) %>%
+  
+  distinct()
+  
+  
 ```
 
+```{r merge new problems and write out}
+ncbi_acc_problemfix <- ncbi_acc %>%
+  filter(ncbi_sp %in% missing_genera_merge$ncbi_sp) %>%
+  select(accession, description, desc_verbatim, ncbi_sp) %>%
+  left_join(missing_genera_merge) %>%
+  distinct() %>%
+  # if you need to check duplicates
+  #add_count(accession, name = 'n_acc') %>%
+  mutate(genus = ifelse(rank == 'genus', worms_sciname, genus))
+
+ncbi_acc_all <- ncbi_acc %>%
+  filter(!(accession %in% ncbi_acc_problemfix$accession)) %>%
+  bind_rows(ncbi_acc_problemfix) %>%
+  select(!(c(description, kingdom, phylum, 
+             valid_authority, terrestrial_only))) %>%
+  mutate(found_taxa = worms_sciname) %>%
+  mutate(hybrid = ifelse(hybrid == 'no', NA_character_, hybrid)) %>%
+  relocate(accession, rank, found_taxa, ncbi_sp, 
+           genus, family, order, class) %>%
+  # temporary post hoc removal, find origin further up later
+  add_count(accession, name = 'n_acc') %>%
+  mutate(remove_me = case_when(found_taxa %in% c('Antennarius', 'Acropoma japonicum', 'Symphodus ocellatus',
+                                                 'Paramisgurnus dabryanus', 'Hypomasticus steindachneri',
+                                                 'Sardinella jussieu', 'Plectorhinchus picus', 'Plectorhinchus gibbosus',
+                                                 'Gymnura', 'Sphyraena japonica', 'Triglops jordani', 'Labiobarbus leptocheilus', 'Barbus', 'Thunnus alalunga', 'Nothobranchius nubaensis', 'Arothron stellatus', 'Geophagus brasiliensis', 'Inu', 'Catostomus occidentalis') & 
+                                 status != 'accepted' ~ 'yes')) %>%
+  filter(is.na(remove_me)) %>%
+  add_count(accession, name = 'n_acc') 
+
+
+#write.csv(ncbi_acc, here(rosetta, '20230_fish_ncbi-worms_by-accession.csv'))
+
+saveRDS(ncbi_acc_all, here(ncbi, '20230929_fish_ncbi-acc-INPROGRESS.RDS'))
+```
 
 
 
