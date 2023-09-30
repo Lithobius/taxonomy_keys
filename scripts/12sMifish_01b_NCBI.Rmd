@@ -21,8 +21,8 @@ library(worrms)
 library(here)
 
 # here filepaths
-ncbi <- here('species_lists', 'ncbi')
-rosetta <- here('species_lists', 'hakai', '2023rosetta')
+ncbi <- here('species_lists', 'ncbi', '2023_ncbi')
+rosetta <- here('species_lists', 'rosetta', '2023rosetta')
 ```
 
 ```{r worms-function}
