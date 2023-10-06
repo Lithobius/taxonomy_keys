@@ -710,6 +710,7 @@ ncbi_acc <- ncbi_fish_gene %>%
 #write.csv(ncbi_acc, here(rosetta, '20230_fish_ncbi-worms_by-accession.csv'))
 
 saveRDS(ncbi_acc, here(ncbi, '20230929_fish_ncbi-acc.RDS'))
+#ncbi_acc <- load(here(ncbi, '20230929_fish_ncbi-acc.RDS'))
 ```
 
 # Problems NCBI
@@ -851,15 +852,65 @@ ncbi_acc_all <- ncbi_acc %>%
   mutate(remove_me = case_when(found_taxa %in% c('Antennarius', 'Acropoma japonicum', 'Symphodus ocellatus',
                                                  'Paramisgurnus dabryanus', 'Hypomasticus steindachneri',
                                                  'Sardinella jussieu', 'Plectorhinchus picus', 'Plectorhinchus gibbosus',
-                                                 'Gymnura', 'Sphyraena japonica', 'Triglops jordani', 'Labiobarbus leptocheilus', 'Barbus', 'Thunnus alalunga', 'Nothobranchius nubaensis', 'Arothron stellatus', 'Geophagus brasiliensis', 'Inu', 'Catostomus occidentalis') & 
-                                 status != 'accepted' ~ 'yes')) %>%
+                                                 'Gymnura', 'Sphyraena japonica', 'Triglops jordani', 'Labiobarbus leptocheilus', 'Barbus', 'Thunnus alalunga', 'Nothobranchius nubaensis', 'Arothron stellatus', 'Geophagus brasiliensis', 'Inu', 'Catostomus occidentalis', 'Chaetodon lunula', 'Mycteroperca acutirostris', 'Lepidotrigla abyssalis', 'Lumpenus fabricii', 'Awaous commersoni') & 
+                                 status != 'accepted' ~ 'yes',
+                               genus == "Hippocampus" &
+                                 worms_aphiaid != 126224 ~ 'yes')) %>%
   filter(is.na(remove_me)) %>%
   add_count(accession, name = 'n_acc') 
 
 
-#write.csv(ncbi_acc, here(rosetta, '20230_fish_ncbi-worms_by-accession.csv'))
+write.csv(temp_ncbi_acc_all, here(rosetta, '20230929_fish_ncbi-worms_by-accession.csv'))
 
-saveRDS(ncbi_acc_all, here(ncbi, '20230929_fish_ncbi-acc-INPROGRESS.RDS'))
+#saveRDS(ncbi_acc_all, here(ncbi, '20230929_fish_ncbi-acc-INPROGRESS.RDS'))
+#cbi_acc_all <- readRDS(here(ncbi, '20230929_fish_ncbi-acc-INPROGRESS.RDS'))
+
+#move this up later if needed
+
+temp_ncbi_acc_all <- ncbi_acc_all %>%
+    mutate(remove_me = case_when(found_taxa %in% c('Chaetodon lunula', 'Mycteroperca acutirostris
+                                                   ', 'Lepidotrigla abyssalis', 'Lumpenus fabricii', 
+                                                   'Awaous commersoni','Siganus rivulatus', 'Photostomias tantillux',
+                                                   'Scorpaenichthys marmoratus', 'Hippocampus', 'Hypsoblennius hentz',
+                                                   'Syngnathus typhle', 'Caffrogobius gilchristi', 'Antennarius commerson',
+                                                   'Alticus saliens','Sphyraena barracuda', 'Naso brevirostris', 
+                                                   'Aphanius fasciatus', 'Salanx chinensis', 'Gerres methueni', 
+                                                   'Plotosus lineatus', 'Mycteroperca acutirostris', 'Scarus coeruleus',
+                                                   'Peckoltia multispinis', 'Trachinotus blochii', 'Harengula jaguana',
+                                                   'Sciades herzbergii', 'Ophthalmolycus amberensis', 'Torpedo',
+                                                   'Hippocampus', 'Cociella crocodilus', 'Inegocia japonica',
+                                                   'Scalicus orientalis',' Parapercis clathrata', 'Brustiarius',
+                                                   'Sparus aurata', 'Tilapia', 'Osteoglossum bicirrhosum', 'Monochirus',
+                                                   'Bathyraja brachyurops', 'Schizothorax pseudoaksaiensis', 'Saurogobio',
+                                                   'Schizothorax pseudoaksaiensis', 'Salmophasia', 'Micropterus',
+                                                   'Bathyraja brachyurops', 'Umbra krameri', 'Anableps anableps',
+                                                   'Hemitripterus americanus', 'Balistes capriscus', 'Limia dominicensis',
+                                                   'Gracila albomarginata', 'Benitochromis riomuniensis',
+                                                   'Aphyosemion splendopleure', 'Parapercis clathrata') & 
+                                 status != 'accepted' & n_acc > 1 ~ 'yes',
+                                 is.na(freshwater_only) & n_acc > 1 ~ 'yes',
+                                 genus == "Hippocampus" &
+                                 worms_aphiaid != 126224 ~ 'yes',
+                                 found_taxa == "Cyprinus acutidorsalis" &
+                                 worms_aphiaid != 275332 ~ 'yes',
+                                 found_taxa == "Schizothorax pseudoaksaiensis" &
+                                 worms_aphiaid != 1019699 ~ 'yes')) %>%
+  filter(is.na(remove_me)) %>%
+  distinct() %>%
+  add_count(accession, name = 'n_acc') %>%
+  select(!(c(remove_me, n_acc)))
+
+
+
+```
+
+
+```{r}
+ncbi_worms_taxonomy <- temp_ncbi_acc_all %>%
+  select(!(c(accession, desc_verbatim))) %>%
+  distinct()
+
+write.csv(ncbi_worms_taxonomy, here(rosetta, '20230929_fish_ncbi-worms_taxonomy.csv'))
 ```
 
 
