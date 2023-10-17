@@ -1,0 +1,72 @@
+Common valid conflicts 12S
+
+FAMILY
+
+Agonidae -- poacher family
+Odontopyxis trispinosa vs Agonopsis vulsa
+Chesnonia verrucosa vs Pallasina varbata vs Occella dodecaedron
+
+Cottidae -- sculpin family
+highest hit 90% = sculpin not in database
+
+Embiotocidae -- Surfperch family
+Hyperproson argenteum vs Amphisticus argenteus -- Southern California for A. argenteus.
+
+Labridae -- Wrasse family
+Halichoeres semicinctus vs Oxyjulus californica
+
+Pleuronectidae -- flatfish
+Parophrys vetulus vs Psettichthys melanostictus vs Isopsetta isolepis all 100%-99%
+Parophrys vetulus vs Psettichthys melanostictus vs Isopsetta isolipis vs Lepidopsetta polyxystra vs L. bilineata all 98.8%
+
+
+GENUS
+
+Anoplarchus
+Anoplarchus insignis vs A. purpurescens
+
+Chirolophis
+Chirolophis nugator vs C. decoratus
+
+Cottus
+Cottus aleuticus vs C rhotheus vs perplexus vs beldingii vs....
+
+Hemilepidotus
+H. hemilepidotus vs H spinosus
+
+Hexagrammos
+Hexagrammos stelleri vs H lagocephalus vs H octogrammus
+
+Hypomesus
+Hypomesus pretiosus vs Hypomesus transpacificus
+
+Lepidopsetta
+Lepidopsetta bilineata vs L. polyxystra
+
+Liparis
+Liparis fucensis vs Liparis dennyi
+
+Myoxocephalus
+Myoxocephalus stelleri vs M. polyacanthocephalus vs M. jaok
+
+Oligocottus
+Oligocottus maculosus vs snyderi
+
+Pholis
+Pholis clemensi vs P laeta vs P fasciata vs P ornata
+
+Salvelinus
+Salvelinus alpinus vs salvelinus malma
+
+Sebastes
+caurinus vs maliger
+eos vs constellatus vs flavidus vs alutus vs alutianus vs....
+
+Syngnathus
+Syngnathus californiensis vs Syngnathus euchrous
+
+Thunnus
+Thunnus alalunga vs Thunnus orientalis
+
+Xiphister
+Xiphister mucosus vs xiphister atropurpureus
