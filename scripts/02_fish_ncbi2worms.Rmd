@@ -65,6 +65,7 @@ ncbi_fish_gene <- ncbi_fish %>%
   mutate(unverified = ifelse(str_detect(desc_verbatim, 'UNVERIFIED'), "yes", "no")) %>%
   mutate(genome = ifelse(str_detect(desc_verbatim, 'complete genome|partial genome|partiale genome|mitochondrion sequence|mitochondrial DNA|genome assembly|mitochondrial genome|mitochondrial sequence|mitochondrionial geneome|mitochondrial genes'), 
                          "yes", "no")) %>%
+  mutate(small_subunit = ifelse(str_detect(desc_verbatim, '(small subunit)'), 'yes', 'no')) %>%
   mutate(has_12s = ifelse(str_detect(desc_verbatim, '( 12s)|( 12S)|12 ribosomal|12S ribosomal'), "yes", "no")) %>%
   mutate(has_16s = ifelse(str_detect(desc_verbatim, '16s|16S|16 ribosomal'), "yes", "no")) %>%
   mutate(has_18s = ifelse(str_detect(desc_verbatim, '18s|18S|18 ribosomal'), "yes", "no")) %>%
@@ -115,7 +116,7 @@ ncbi_fish_gene <- ncbi_fish %>%
 
 # separate the dirty column to clean
 ncbi_organism <- ncbi_fish_gene %>%
-  filter(genome == 'yes' | has_12s == 'yes' | has_rrna == 'yes') %>%
+  filter(genome == 'yes' | small_subunit == 'yes' | has_12s == 'yes' | has_rrna == 'yes') %>%
   select(description) %>%
   distinct()
 ```
@@ -140,12 +141,14 @@ fish_ncbi_result <- ncbi_organism %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( cf)|( aff )|^(aff\\. )|( ncbi_sp complex)|( Group )|( group )|( group)$|( complex)$|( complex )|( complex type)|( complexnew)|( complexc)|( var\\.)|( Var)$|( clade )|( clade)$|( und)$|( undet)$|( unk)$| unnamed| sensu lato|  sesu lato|  sensu stricto|( intermediate )|Hybrid")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   # other taxonomy modifier
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( type )|( type)$|( n )|( new)$|( nov )|(nomen nudum)")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, " genotype| ecotype| morphotype| voucher| specimen| popvariant| museum|( et al)| field number|( sensu)| lineage| hybrid|( wild)|( var)$|(Natural )|( breed)|(mutant)$| except |( except)$| like |( like)$| from |( lot)$| almost| Personal| individual|( de )| Vouch| common|population| nearly|( Lot)$|paralectotype|collection|Collection|( nearly )|Individual|museum|Museum|Petshop|Hatchery|(Hatch)$|( in )|Police Station")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( type )|Type |( Type)$|( type)$|( n )|( new)$|( nov )|(nomen nudum)")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, " genotype| ecotype| morphotype| voucher| specimen| popvariant| museum|( et al)| field number|( sensu)| lineage| hybrid|( wild)|( var)$|(Natural )|( breed)|(mutant)$| except |( except)$| lot | like |( like)$| from |( lot)$| almost| Personal| individual|( de )| Vouch| common|population| nearly|( Lot)$|paralectotype|collection|Collection|( nearly )|Individual|museum|Museum|Petshop|Hatchery|(Hatch)$|( in )|Police Station|( many)$")) %>%
   # other meta-descriptors, specific collections that show up a LOT
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( collection)|( library)| Library| containing|( domain of)|( major)$|(_sample_)|AMNH|FMNH| Foundation|(University of)|(of Science)|Science|Catalog|( uncat )")) %>%
   # ways to say "fish"
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( efish)$|(eFish)$|(Fish)$||( Fish )|( fish )|( fish)$|(Fisk)$|(Ichthyology)|(Ich)$|(IDEAFish)|USNMFish|NMFish|MCZIch|MiFish|( ZMUCFisk)|FISHCARD| Fishec|Hatchery|OSUMZFish|SLSCFish|FishIRAN|Lifish|SCFish|(Ichthyology)|ichthyology|(FIchthyology)|Ichthyology|Ichthyological|CASIch")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( efish)$|(eFish)$|(Fish)$||( Fish )|( fish )|( fish)$|(Fisk)$|(Ichthyology)|(Ich)$|(IDEAFish)|USNMFish|NMFish|MCZIch|MZict|MiFish|( ZMUCFisk)|FISHCARD| Fishec|Hatchery|OSUMZFish|SLSCFish|FishIRAN|Lifish|SCFish|(Ichthyology)|ichthyology|(FIchthyology)|Ichthyology|Ichthyological|CASIch|( Univ)$|MZUSPskel|UMass")) %>%
+  # commentary
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(We noticed some discrepancies)")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   # remove some of the random lowercase letters and upper lower combos
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( [a-z{1}])$")) %>%
@@ -168,10 +171,10 @@ fish_ncbi_result <- ncbi_organism %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z])$")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z])$")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z])$")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "mitochondrial|mitochondria|mitochodrial|mitochondral|Mitochondrial| cytochrome|Cytochrome| oxidase|Oxidase| subunit|Subunit|subuinit|(cytb)|III| intergenetic| spacer| region| dehydrogenase| ribosomal| molecule| Clonal|( DNA No)| in bony fishes| gynogenic|natural | chloroplast| encoding|  product| sequence|Valsequence| ubiquinone| oxidoreductase| NADH| synthase| cyt b| cytb| Cytb| ctyb|cybt| mitchondrial| ATPase|ATP| dkisp|ssequence|RNA| Icox| synthetase| Bus| cytocrome| cytchrome|( cox)$|( cyt)$| assembly| organelle| putative| duplication| cds| scds| lcds| Icds|( cyp)$| cyp |COSeq| Taq| cox |( end)$|(apocytochrome)| intron| fragment|seqeucne|polymorphism|intergenic|NADH|Dehydrogenase")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z][A-Z]Seq)")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "mitochondrial|mitochondria|mitochodrial|mitochondral|Mitochondrial| cytochrome|Cytochrome| oxidase|Oxidase| subunit|Subunit|subuinit|(cytb)|III| intergenetic| spacer| region| dehydrogenase| ribosomal| molecule| Clonal|( DNA No)| in bony fishes| gynogenic|natural | chloroplast| encoding|  product| sequence|Valsequence| ubiquinone| oxidoreductase| NADH| synthase| cyt b| cytb| Cytb| ctyb|cybt| mitchondrial| ATPase|ATP| dkisp|ssequence|RNA| Icox| synthetase| Bus| cytocrome| cytchrome|COX|( cox)$|( cyt)$| assembly| organelle| putative| duplication| cds| scds| lcds| Icds|( cyp)$| cyp |COSeq| Taq| cox |( end)$|(apocytochrome)| intron| fragment|seqeucne|polymorphism|intergenic|NADH|Dehydrogenase| Synucal| adenine |nicotinamide|dinucleotide")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z][A-Z]Seq)|(allele)$")) %>%
   # Methods
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Miseq)| RNAThr|(Zap Express)|( Photo)$| environmental| sample|proteobacterium| biomaterial| tissue| control| contol| sequence| remnant|Bacillariophyta| transcript| artificial| culture|bacterium|enrichment|Riomix|mixedeggs|subunit|cellline|(MiFish)| plastid|( Lab )| number|(no number)|Number| system| incomplete")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Miseq)| RNAThr|(Zap Express)|( Photo)$| environmental| sample|proteobacterium| biomaterial| tissue| control| contol| sequence| remnant|Bacillariophyta| transcript| artificial| culture|bacterium|enrichment|Riomix|mixedeggs|subunit|cellline|(MiFish)| plastid|( Lab )| number|(no number)|Number| system| incomplete|ASMBLY|nuclear| pseudo|minicircle| copies|compelete| domain|hydrophlox")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z])$")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z])$")) %>%
@@ -182,44 +185,45 @@ fish_ncbi_result <- ncbi_organism %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z])$")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   # morphology
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( spot)|( spot)|( barred)|( dwarf)|( large )|( large)$|( small )| Cribrimorphlike|( pinnules)|( crescent)$|( spiral)$|(collar)|( Laser)|( Super)$|( special)$|( Illuminator)|( long )|( Long )|( Last)| stripe | blotch| deep |( scute)$| scute | shallow|Longtailed|(Gluteus)$| Pearl|(Fly)$|( papilio )|( slender)|( variant)|Dotted|Lined")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Head kidney)|(bulky head)|( brain)|( muscle)|( Muscle)|( Tissue)|(Spleen of)|(gynotic )| infected|(prey of)|( larva)|( eyes)$| nudepalp|(palp)$|(Fin)$|( gill )|symbiont|thioautotrophic|unicuspid|scraper|bullet")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( spot)|( spot)|( barred)|( dwarf)|( large )|( large)$|( small )| Cribrimorphlike|( pinnules)|( crescent)$|( spiral)$|(collar)|( Laser)|( Super)$|( special)$|( Illuminator)|( long )|( Long )|( Last)| stripe | blotch| deep |( scute)$| scute | upper | left |( left)$| shallow|Longtailed|(Gluteus)$| Pearl|(Fly)$|( papilio )|( slender)|( variant)|Dotted|Lined|(Big )")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Head kidney)| Liver|(bulky head)|( brain)|( muscle)|( Muscle)|( Tissue)|(Spleen of)|(gynotic )| infected|(prey of)|( larva)|( eyes)$| nudepalp|(palp)$|(Fin)$|( gill )|symbiont|thioautotrophic|unicuspid|scraper|bullet")) %>%
   # color
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Black)| black| chocolate|( Green)|( green)|( Red)|(Red)$|( red )|(  red)$|( rosy)|(Verde)$| orangecollar| Orange| orange |( orange)$|( yellow)|( Yellow)|( yellowback)|( yellowcollar)|( yellowpatch)|( Gold)|( albino )|( white)|( White)| blond|( neon)$|( Aoi)")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Black)| black| chocolate|( Green)|( green)|( Red)|(Red)$|( red )|(  red)$|( rosy)|(Verde)$| orangecollar| Orange| orange |( orange)$|( yellow)|( Yellow)|( yellowback)|( yellowcollar)|( yellowpatch)|( Gold)|(Gold)$|( albino )|( white)|( White)| blond|( neon)$|( Aoi)")) %>%
   # other animal names
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Tuna)|( Perche)|( blackcarp)|( carp gudgeon)|( Eel)|ironfish|( Salmon)|(Mackerel)| Puma Loach|( Porcupine)| sawfin shiner| brassy jumprock|( chimpanzeecA)|( gibbongA)|( ex Sooretamys angouya)$|( Phantom)|(barbel steed)| goldfish| LAcanthogobius|Amblyrajaradiata|Amblyrajajenseni| Cotcog|Dmacr|Gbar|Acinipo|Aoxyrinchus|Aalabamae|Dolopichthyslongicornis|Abbottinarivularis|dClupeidae|americaneel| Fish|Xenentodoncancila|TXenocephalus|Xargentea|Xfangi|Xcap|Xvar|sunflower|Zaccoplatypus|(Sturg)$|Acebrev|Aceten|Anoxypristiscuspidata|Antimorarostrata|(Goby)$|Artediellusatlanticus|Macrourusberglax|Bpeteny|Bpelopon|Bpaludin|Bpaludino||Magnisudisatlantica|( duck)$|partridge|longnosegar|Lcyanellus|Mnegrosensis|Malacorajaspinacidermis|Malacosteusniger|Mallotusvillosus|Pseudafer|Ptenuis|Bcanis|Lkasmira|Lmonostigma|QLut|Lycenchelyspaxillus|Lygro|Lycenchelyspaxillus|Lycodesluetkenii|Lycodesmcallisteri|Lycodespaamiuti|Lycodespallidus|Lycodesseminudus|Lycodessquamiventer|Lycodesgracilis|Lycodesvahlii|Lycodonusflagellicauda|Lycodonusmirabilis|roundgoby|Nezumiabairdii|Ncrysoleucas|Obladamelanura|(Ohat)$|(Obon)$|(Oarg)$|OCstomias|Oncorhynchusgorbuscha|Oneirodesheteronema")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Tuna)|( Perche)|( blackcarp)|( carp gudgeon)|( Eel)|ironfish|( Salmon)|(Mackerel)| Puma Loach|( Porcupine)| sawfin shiner| brassy jumprock|( chimpanzeecA)|( gibbongA)|( ex Sooretamys angouya)$|( Phantom)|(barbel steed)| goldfish| LAcanthogobius|Amblyrajaradiata|Amblyrajajenseni| Cotcog|Dmacr|Gbar|Acinipo|Aoxyrinchus|Aalabamae|Dolopichthyslongicornis|Abbottinarivularis|dClupeidae|americaneel| Fish|Xenentodoncancila|TXenocephalus|Xargentea|Xfangi|Xcap|Xvar|sunflower|Zaccoplatypus|(Sturg)$|Acebrev|Aceten|Anoxypristiscuspidata|Antimorarostrata|(Goby)$|Artediellusatlanticus|Macrourusberglax|Bpeteny|Bpelopon|Bpaludin|Bpaludino||Magnisudisatlantica|(AuxisThrespuram)$|( duck)$|partridge|longnosegar|Lcyanellus|Mnegrosensis|Malacorajaspinacidermis|Malacosteusniger|Mallotusvillosus|Pseudafer|Ptenuis|Bcanis|Lkasmira|Lmonostigma|QLut|Lycenchelyspaxillus|Lygro|Lycenchelyspaxillus|Lycodesluetkenii|Lycodesmcallisteri|Lycodespaamiuti|Lycodespallidus|Lycodesseminudus|Lycodessquamiventer|Lycodesgracilis|Lycodesvahlii|Lycodonusflagellicauda|Lycodonusmirabilis|roundgoby|Nezumiabairdii|Ncrysoleucas|Obladamelanura|(Ohat)$|(Obon)$|(Oarg)$|OCstomias|Oncorhynchusgorbuscha|Oneirodesheteronema")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "Pholisfasciata|Lycodespaamiuti|Lycodeseudipleurostictus|Lmelanogaster|Omykiss|OCstomias|( salmon )|Oncorhynchusgorbuscha|Sebastesmentella|Sebastesnorvegicus|Tmyops|( duck)$|Pmag|yoshinogochi| Flounder| SPlaternarius|Hippoglossoidesplatessoides| partridge|Pnigromaculatus|Ssaurus")) %>%
   
   # location modifiers
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Lake )|( Lake)|( cave)$|( spring)$|( springs)$|( river )|(river)$|( River)|( stream)|( Creek)|( creek)|( near )|( sea)$|( sea )( Sea)$|RedSea|( Pool)|( pool)$|(Pool)$|( City)|( reef )|( reef)$|( aquatic)$|( farm)|( Plateau)|( Bay)$|( Bay )|( Agua)|( Ocean)|( Isl )|( Isl)$|( Park)$|( Lake)$|Delta|( Bay)$|( stone)$|( rock )|deepwater")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Aquarium)| Province| province| state |(state)$|(plantation)$| country|coutnry|National")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Aquarium)| Province| province| state |(state)$|(plantation)$| country|coutnry|National|( Camp )|( Camp)$|( camp)$| prefecture")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Western )|( West)|(west of)|Southern|( South)|(South)$|( East)| eastern ")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( date )|(Jan)$|(Feb)$|(Mar)$|(Apr)$|(May)$|(Nov)$|(Dec)$")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   # location names
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Adan)$|Amazonas|Ampden| Adirondacks|( Australia)$|(Great Australian Bight)| Azores| Andai| Akaebi| Acla| Argis| Austria|Asaraki|Aburatsubo|Antalaha| Albanien| Almenara| Araguaia| Ariv|(Amur)$| Apom| Atlantic| Alberca|( Almond)| Alshehri|Acarareco|Amargosa|(ArutVolga)|(AlosaVolgaDelta)|(Astrakhan)|Aichi|Atachi|Asalda|Ayong|Aogaki|Akita")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Benin)|Blanes|(Brazil)|( Bidou)|( Bissiang)|( Bioko)|( Bundu)|Bambama|Biscayne|( Bush)$|(Bitter)|(Bivavotou)|(Bioko)| Beforana| Betampona|( Borneo)| Beysehir| Betari|brooksilverside|( Belisario)| Baldy|( Burn)$| Braid| Brox| Burdiehouse|Bangladesh|(Blyth)$|( Banco)$|Bellwood|Bifounda|Biafra| Bear|BigSmokey|Boise|Belize|Balidian|Balhash|Bollinger|Boone|Beira")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Cape )|Clutha|China|Croatia| Cunha| Carombe|( Carib)$|( Cap Esterias)|(Chiba Museum)|( Chiba)$|(CabotCenter)| Continental| Cayman| Caracol| Calibasis| Chiriqui| Collier|( Caroline)| Contulmo| Chao Phraya|( Cana)| Columbia| Corrantijn| Churashima| Cauvery| Clearwater| Cuyuni|| Carson|Cooscoosro|(Costa Rica)|CanoRey|Churaumi|Chittar|Churaumi|Changxing|Chisanza| Corint|(Chiba)|Chippewa|Cooper")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "Darling| Dettai|( Deja)$|(Disc)$|daAlosa|daAzov|Dzangu|Dickerson| Doce|Dhupeinen|Dinoville|dVolga|Damine|Donodagawa")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Esmeraldas)$| Eritrea| Farias|(Fukuoka Ima)|Fukushima|Funge|Fourche|Fukui")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Adan)$|Amazonas| Amazon|Ampden| Adirondacks|( Australia)$|(Great Australian Bight)| Azores| Andai| Akaebi| Acla| Argis| Austria|Asaraki|Aburatsubo|Antalaha| Albanien| Almenara| Araguaia| Ariv|(Amur)$| Apom| Atlantic| Alberca|( Almond)|AROcr|ATHcr| Alshehri|Acarareco|Amargosa|(ArutVolga)|(AlosaVolgaDelta)|(Astrakhan)|Aichi|Atachi|Asalda|Ayong|Aogaki|Akita|Aomoro|Akkeshi")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Benin)|Blanes|(Brazil)|( Bidou)|( Bissiang)|( Bioko)|( Bundu)|Bambama|Biscayne|( Bush)$|(Bitter)|(Bivavotou)|(Bioko)| Beforana| Betampona|( Borneo)| Beysehir| Betari|brooksilverside|( Belisario)| Baldy|( Burn)$| Braid| Brox| Burdiehouse|Bangladesh|(Blyth)$|( Banco)$|Bellwood|Bifounda|Biafra| Bear|BigSmokey|Boise|Belize|Balidian|Balhash|Bollinger|Boone|Beira| Biwa")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Cape )|Clutha|China|Croatia| Cunha| Carombe|( Carib)$|( Cap Esterias)|(Chiba Museum)|( Chiba)$|(CabotCenter)| Continental| Cayman| Caracol| Calibasis| Chiriqui| Collier|( Caroline)| Contulmo| Chao Phraya|( Cana)| Columbia| Corrantijn| Churashima| Charo| Cauvery| Clearwater| Cuyuni|| Carson|Cooscoosro| Calinia| CaliniaPendleton|Chitose|(Costa Rica)|CanoRey|Churaumi|Chittar|Churaumi|Changxing|Chisanza| Corint|(Chiba)|Chippewa|Cooper")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "Darling| Dettai|Dizangue|Daimyojin|( Deja)$|(Disc)$|daAlosa|daAzov|Dzangu|Dickerson| Doce|Dhupeinen|Dinoville|dVolga|Damine|Donodagawa")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Esmeraldas)$| Eric| Eritrea|Ecuadorian| Farias|(Fukuoka Ima)|Fukushima|Funge|Fourche|Fukui| Fuji|FAKUFac")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, " Girona| Gekara|(Greece)$|Guangdong|Guangxi|Guizhou|( Garcia)| Guinea| Ginbuna| Guyana| Gamba| Guama| Gifu|Galapagos| Gough| Gaus|Guatamala|Gijon|Gabon")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Hoyosa)|hauchiwayarimimizuhaze|hiironagamimizuhaze| hosomimizuhaze| Hanel|Hong Kong|( Hino)$|Haltae|(Hypso)$|Hyogo|(Hypu)$|Hiruzen|Hokkaido|( Hoki)")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, " Ivoloina|( Israel)| Ikorodu| Inji| Ijebu Ode|(Italy)|Iriomote| Izumihaze|(Iguassu)|ichimonjimimizuhaze|( Indo)$|( Ise)$|( Ito)$| Indian| India|Ichinosegawa|Iquitos| Inspire|Indonesia|Ishioka| Inabe|Iwate|Ishigaki|Ishikawa")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, " Ivoloina|( Israel)| Ikorodu| Inji| Ijebu Ode|(Italy)|Iriomote| Izumihaze|(Iguassu)|ichimonjimimizuhaze|( Indo)$|( Ise)$|( Ito)$| Indian| India|Ichinosegawa|Iquitos| Inspire|Indonesia|Ishioka| Inabe|Iwate|Ishigaki|Ishikawa| Ibia|Ichani| Ibic|Ikange")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, " JangLiaw|Japan| Jaffa|(Jian Yang)|Jiaozhou|(Jari)$")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Kirk)$|( Kocher)|(Kipar)|( Kami)|Kakuda|( Kribi)|(Kuckuk)$|(Katsutoshi Watanabe)|(Komonyatsushihaze)|(Khukh)|(Kinbuna)| Karianga|(Kapinar)| Kieth| Kisangani| Kongou|Kansas|Kumba|Kaucos| kamahiremimizuhaze|kimairamimizuhaze|komuginagamimizuhaze|( Kochi)|Korea|Kyoto|Kamaishi|( Kagoshima)|Kamenny|Komono|Kasuga|Kawanishi|Kutami|Kayumi")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Kirk)$|( Kocher)|(Kipar)|( Kami)|Kakuda|Kalwungwishi|( Kribi)|(Kuckuk)$|(Katsutoshi Watanabe)|(Komonyatsushihaze)|(Khukh)|(Kinbuna)| Karianga|(Kapinar)| Kieth| Kisangani| Kongou|Kansas|Kumba|Kaucos| kamahiremimizuhaze|kimairamimizuhaze|komuginagamimizuhaze|( Kochi)|Korea|Kyoto|Kamaishi|Kouchi|( Kagoshima)|Kamenny|Komono|Kasuga|Kawanishi|Kutami|Kayumi|Kanagawa|Kalungwishi")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Lagos)|(Lebanon)$|( LoireLac)|(Liang Cao)| Lleida||(Lobaye)| Lucien|Lakes|(Luo)$|( Lakshadweep)|( Little )|( Lola)$| Leus|LagCat|Liling|(L Rocha)|Lambarene")) %>%
     mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Muerz)|( Malibo)||(Midgleys)|(Murray)|Makuya| Mazinzi| Mfulgida| MinasBasin| MagdalenIs|( Mai)|( Mic)$|(Micnat)| MicRamrun| Mitsem| Madimba|(Madeira)| Mundemba| Machinda| Makuya|Mexico| Montenegro| Madagascar| Manjavacas| Makira| Martinique| Maranho| Moabi| Myanmar| Miya| Malinau| Manombo| Mahanara| Munday| Massana|(Masatoshi Nakamura)|( Magdalena)| Mongagu| Maroni| Martinso| Macacu| Maroa| mizuhikinagamimizuhaze| Malawi| Marten| Minztita| Moloya|Mediterranean|Monzon|Mabuchi|Mkongo|Miami")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Michmoret)| Mahesh|(Mann)$|( May)$|Miyazawa|Miyazaki|Miyagi|( Miya)$|Miyame|Miyagawa|Miyashitagawa|Miyanoura|Mvang|Matomb|Matsuo|Marumori|( Manna)|Mitogawa|( Mie )|(Mie)$|(Mogami)|Midgleys|Murray|Matsushima|Miyadu|Mundemba|Moabi|Maramec|Mikkabichouhonmachi|Madeira")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Nazilli)$| Ndombe|Ntaylori| Ngombe| Nguru| Ndop| Nakuru| Nakabo|( Negro)$| Nevada| Nakabo| Nigeria| Nanay|( Napo)$|Nkumbura|(New Caledonia)|Nagao|Numba|Numazu|Namdae|Nanegawa")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, " Orinoco|( Oba)$|Osumi|Onjuku|Obitsu|Onoda|Okarito|Otowagawa|( Oyo)$|ochokonagamimizuhaze|oguronagamimizuhaze|Okinawa|Oota|Okuhata|Obilly|Okayama|Ohozora|Ooe|Ooshiro")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, " Patrocnica| Patchogue| Pachon|(Paris)| Pampang| Patrocnica| Patchogue| Pachon|(Pingxiang)| Paraguay| Paraguaza|( Peru)|( Panama)| Piedade| Puerto Ayucucho|Paraiba do Sol|PePoAs| Paul| Platanera| Principe|Philippines| Poach|Qingdao|Poubara|Putian|Portugal|(Pacific)$|Panacea")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Michmoret)| Mahesh|(Mann)$|( May)$|Miyazawa|Miyazaki|Miyagi|Miura|Moroiso|Malebo|Massana|Mamigasaki|( Miya)$|Miyame|Miyagawa|Miyashitagawa|Miyanoura|Mvang|Matomb|Matsuo|Marumori|( Manna)|Mitogawa|( Mie )|(Mie)$|(Mogami)|Midgleys|Murray|Matsushima|Miyadu|Mundemba|Moabi|Maramec|Mikkabichouhonmachi|Madeira|Miclei|Mediterranean|Masatoshi|Mayuka")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Nazilli)$| Ndombe|Ntaylori| Ngombe| Nguru| Ndop| Nakuru| Nakabo|( Negro)$| Nevada| Nakabo| Nigeria| Nanay|( Napo)$|Nkumbura|Nagasaki|Nkapa|NewChile|(New Caledonia)|Nagao|Numba|Numazu|Namdae|Nanegawa|Nakamura")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, " Orinoco|( Oba)$|Osumi|Onjuku|Obitsu|Onoda|Okarito|Otowagawa|Oirase|( Oyo)$|ochokonagamimizuhaze|oguronagamimizuhaze|Okinawa|Oota|Okuhata|Obilly|Okayama|Ohozora|Ooe|Ooshiro")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, " Patrocnica| Patchogue| Pachon|(Paris)| Pampang| Patrocnica| Patchogue| Pachon|(Pingxiang)| Paraguay| Paraguaza|( Peru)|( Panama)| Piedade| Puerto Ayucucho|Paraiba do Sol|PePoAs| Paul| Platanera| Principe|Philippines| Pendleton| Pazo|Palime|PlumCrk| Poach|Qingdao|Poubara|Putian|Portugal|(Pacific)$|Panacea|Pueblo|Phodia")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Rio Chirgua)| Ranomafana| Rakhine|( Rio)$|(Rio Sao Francisco)|(Rio de Toca)|(Rio Supamo)| Rydak|Russia|RioMen|RioClara|RioGre|Rocha|(Rio Baia)")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Suji)|( Suiyo)|(Smith)$|( Stevens)|(Shibukawa)| Salsburger| Surinam| Stepian| Stepien|(Sanya)|(Spain)$|( sagami)|(Santa Clara)| Scorff| Sahiler| Sambava| Samou|Shizuoka|(Serra do Cip)|(sPengze)|Sao Joao| Saint|(Solim)$| Skalkaho| Sisi| Shantou| Sri Lanka|(Sao Tome)|Sarem|Santo|Santiago|( stri)|Shuangpu|Sulawesi|Sibiti|Sanyo|Sanagawa|Serigawa|Shirotorigawa|Soezawaonnsenn| Soga")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Thalye)| tanukihaze|( Tres Marias)|(Taiwanese)|Taiwan|Thai|Tocantins| Tobogan| Tominaga| Tristan|(Tristan)$|(Tristan )|Tlawng| Teramura|Tahiti| Takutu|Tamaki|Theriot|Tokai|(Tentena Poso)|Terashimogawa|TSUMAGUROSUJIHAZE|Tsotzala|Turkey|Tokyo|Tochigi|Tomoegawa|Takagi|Takise")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Ural)$|(United Kingdom)|( Urocara)|( Ulimi)| Uruguay| Ucayali| Uppertas")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Suji)|( Suiyo)|(Smith)$|( Stevens)|(Shibukawa)| Salsburger| Surinam| Stepian| Stepien|(Sanya)|(Spain)$|( sagami)|(Santa Clara)| Scorff| Sahiler| Sambava| Samou|Shizuoka|(Serra do Cip)|(sPengze)|Sao Joao| Saint|(Solim)$| Skalkaho| Sisi| Shantou| Sri Lanka|(Sao Tome)|Sarem|Santo|Santiago|Shimane|Saitama|Shibetsu|Shiranuka|Sindara|Shikotsu|( stri)|Shuangpu|Sulawesi|Sibiti|Sanyo|Sanagawa|Serigawa|Shirotorigawa|Soezawaonnsenn| Soga")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Thalye)| tanukihaze|( Tres Marias)|(Taiwanese)|Taiwan|Thai|Tocantins| Tobogan| Tominaga| Tristan|(Tristan)$|(Tristan )|Tlawng| Teramura|Tahiti| Takutu|Tamaki|Theriot|Tokai|Tiko|(Tentena Poso)|Terashimogawa|TSUMAGUROSUJIHAZE|Tsotzala|Turkey|Tokyo|Tochigi|Tomoegawa|Takagi|Takise")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Ural)$|(United Kingdom)|( Urocara)|( Ulimi)| Uruguay| Ucayali|UMass| Uppertas|USA")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Venezuela)|( Vanpoe)| Vevembe|Visayas|Vietnam|(Verde)$| Von Humboldt|Volga|Vanmar|Vanphi|Vanver")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, " Xingu|XChena")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Wainwright)$|( Whitewater)|Watanabe|Wakayama|Wakamiyajinja|Wanquan|(Woods Hole) WThail|Wallagoattu|Washington|Waitahuna")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Yoma)|(Yalta)|( Yaku)$|Yahagigawa|Yahagi|Yamashita|Yamagata|( Zagno)|( Zarco)|( Zhange)|(Zhang)$|ZlZong| Ziyadi| Zhoushan|ZunVou| Zula|Zamoko")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Yoma)|(Yalta)|YamasakiAizu|YamasakiNasu||Yamanasi|Yamanashi|Yoshino|( Yaku)$|Yahagigawa|Yahagi|Yamashita|Yamagata|( Zagno)|( Zarco)|( Zhange)|(Zhang)$|ZlZong| Ziyadi| Zhoushan|ZunVou| Zula|Zamoko")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( [a-z][a-z]Alosa)")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( [A-Z][a-z]Miyagi)")) %>%
@@ -227,30 +231,31 @@ fish_ncbi_result <- ncbi_organism %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( [A-Z][a-z][a-z])$")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( [A-z][a-z])$")) %>%
   # misc character strings that are left
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Ac)$|(Ansp)$|(Ait)$| Abrbra|( Ao)$|(Ara)$|(Ast)$|ARFu|ARQing|ARZhao|ARp|( ac)$|( Arg)$|( abri)$|( Abo)|( Asp )| Aab|( atg)$|( Ava)$|( aa)$|( ad)$|(Aa)$|(Ab)$|(Ac)$|(Al )|(Am )|(As)$|(Ain)$|(Amb)$| aaa|Axd|( Ala )| Afl|AcaSol|(Ala)$|(Ana)$|(Arg)$|(Asn)$|(Asp)$|(Aqu$)|( alpha)$|( Atl)$|(Avul)$|ASa|ASe|ASi|ASj|ASp|ASf|( azt)$|(Ant)$|(Aru)$|AcNif|(Apar)$|ALa|AsnCys|AsnTyr|( Asn )|( art)$|( atp)")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Ac)$|(Ansp)$|(Ait)$| Abrbra|( Ao)$|(Ara)$|(Ast)$|ARFu|ARQing|ARZhao|ARp|( ac)$|( Arg)$|( abri)$|( Abo)|( Asp )| Aab|( atg)$|( Ava)$|( aa)$|( ad)$|(Aa)$|(Ab)$|(Ac)$|(Al )|(Am )|(As)$|(Ain)$|(Amb)$| aaa|Axd|( Ala )|( ata)$| Afl|AcaSol|(Ala)$|(Ana)$|(Arg)$|(Asn)$|( Asn )|(Asp)$|(Aqu$)|( alpha)$|( Atl)$|(Avul)$|ASa|ASe|ASi|ASj|ASp|ASf|( azt)$|(Ant)$|(Aru)$|AcNif|(Apar)$|ALa|AsnCys|AsnTyr|( Asn )|( art)$|( atp)|AM")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Agr )")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Blk)$|(Bl)$|( bn)$|( bl)$|( bi)$|( bw)$|( bw )|( br)$|( bac)$|( Bus)$|( bp)$|( bro)$|( bri)$|( Bim)$|BAbo|BAbi|BAb| bb|( Bim)$|bajn|blike|Bfl|( bpl)$|( bvr)$|bahxm|bajxm|(Bch)$")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(CTo)$|( CrVb)|( Cr)$|(Cma)$|(Cp)$|(Cal)$|( Chab)|( Con)|( Ck)$|( Cw)$|chiTab|( chi)$|chiTro| chiPar|chiBor|chiHum|chiPzn|chiGup|chiMPur|chiPar|Cytb|cypn|( Cox)$|(Cyb)$|( cox)$|( Cyt)$|(Cys )|( Cui)$| cc|( co)$|( cyb)$|(Chi)$|CBAf|CBSo| chit| Cc|( cb)$|Cmb|( cl)$|( cg)$|Cosalb|( cha)$|CBZe|Ctri|Cti|Cxan|( Chm)$|( cn)$|Churaumi|Ccul|caixa")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(CTo)$|( CrVb)|( Cr)$|(Cma)$|(Cp)$|(Cal)$|( Chab)|( Con)|( Ck)$|( Cw)$|chiTab|( chi)$|chiTro| chiPar|chiBor|chiHum|chiPzn|chiGup|chiMPur|chiPar|Cytb|cypn|( Cox)$|(Cyb)$|( cox)$|( Cyt)$|(Cys )|( Cui)$| cc|( co)$|( cyb)$|(Chi)$|CBAf|CBSo| chit| Cc|( cb)$|Cmb|( cl)$|( cg)$|Cosalb|( cha)$|CBZe|Ctri|Cti|Cxan|( Chm)$|( cn)$|Churaumi|Ccul|caixa|(Cleu)$|Cleu | Carg")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( DaAm)$|( Dec)$|( dki)|( dkic)|( dkiart)$|( dkisp)|( Dloop)$|( Dja)$|( Dab)|( Dud)|dfob|( day)$| dd|( de)$|( da)$|( db)$|Dma|Dpunc|(Dr)$|Drb|Drcyto|Drd|(Dre)$|Dree|(Drh)$|(Dri)$|Drm|( dl)$|(Dty)$|Dcds|dbNflu|dNflu")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Ev)|( Ex)$|( eral)$|( Elp)$| ( ee)$|Ezs|(Eaw)$|( elas)$|FSc| ff|Fsb|epacxx|FRet")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( gr)$|( gr )|( Gp)$|Gbh| Glu| Gly|( Hje)$| gg|galx| Gln|( Gob)$|( galac)$|Ggs|( Hsp)|(HAx)| His| Hap|HUMed| Hvd| hva| hh|(Ha)$|(Hap)$|(Hal)$|( hap)$|Hk||Hhai|Helch|Helcu|Havi|( hwp)$|Href|(Gem)$|Gme|Gwa|Gdv|GMk|hgtl|(Hy)$|(Hn)$|(Hg)$|(Hup)$|(Hyu)$|(Hu)$|(Hue)$|Hgat|(Hgem)|Hmes|Hmcs|Hmas|Hmbs|(Hrr)$|(hrr)$|Hta|Href")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( gr)$|( gr )|( Gp)$|Gbh| Glu| Gly|GPpl|( Hje)$| gg|galx| Gln|( Gob)$|( galac)$|Ggs|( Hsp)|(HAx)| His| Hap|HUMed| Hvd| hva| hh|(Ha)$|(Hap)$|(Hal)$|( hap)$|Hk||Hhai|Helch|Helcu|Havi|HBatp|HBaltic|( hwp)$|Href|(Gem)$|Gme|Gwa|Gdv|GMk|hgtl|(Hy)$|(Hn)$|(Hg)$|(Hup)$|(Hyu)$|(Hu)$|(Hue)$|Hgat|(Hgem)|Hmes|Hmcs|Hmas|Hmbs|(Hrr)$|(hrr)$|Hta|Href")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Ila)$| ihb| Ile |ICOX|( ii)$|( iii)$|Ilike|( iso)$|imarbh|( ind)$|JUZoo| jj|ISs")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "Lbh|(Liz)$|(Lis)$|(Li)$|(La)$|(Lb)$|(Lc)$|(Ld)$|(Le)$|(Lau)$|(Lab)$|( Leu )|(Laf)|(Lra)$|(Lnas)|( Leu)$|LLamb| Lsicculus| Lsic| Lvana| Lvanb|( like)$|( liz)$|( Lg)$|(Lu)$|(Lp)$|( lin)$|( lll)|( ll)$|(Lmt)$|(Luz)$|LaGEEvo|(Leus)$|(Lgu)$|( Lys )")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( jima)$|(Kba)|(Kch)|KAst|Kx|( ks)$| kk|( kappa)$")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Mu)$|(Met)$|(Med)$|( Met )|( mar)$|( myr)$|(Ms)$|(Mir)$|(Myr)$|( mm)$|Mparis|( ma)$|( ma )|( mt)$|mtlab|Mla|Mlb|Mlc|Moct")) %>%
-   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( No)|(No)$|( Na)$|( Na )|( Nb)|(NanHai)|Nrs|Npk|Nsv|( Neo)$|(Nbre)|(Nb)$|(Nsa)$|notetop|( note)$|( ndr)$|( nd)$| naar|( nn)$|( nu)$|( Nel)$|( Nial)$|(Nili)$|(Nipo)$|(Nive)$|( nb)$|( nba)$|( ni)$|( ND)")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Ol)|OLuo|( Ot)$|OTp|( orp)$|( oti)$|( Okh)$|(Opa)$|(Ock)$|Otrna")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Phe)|( Pro)|PAs|( Ple)$|( pl)$|( Peo)$|( pit)$|( pol)$|PWh|( pp)$|( Pr)$|(Pic)$( Pen)$|PAva|Pg|(Pt)$|( pk)$|( pk )|( pr)$|(Pric)$|(Pwhe)$|Psebra|(Ping)$|QuOma")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "RStrn|rabr|(rasm)$|Rcat|(rcat)$|( reve)$||RKp|Rfal|Ryunosuke|( rfal)|(Roa)$|Rbr|Rjk")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( sa)$|( sb)$|( sn)$|( Ser)|( s)$|(St)$|  strix|( syk)$| sbar|( ss)$|( ssc)$|( st)$|( sin)$|Ssu|( Sivi)$|(solr)$|( sigma)$|( seq)$|(Seq)$|(seq)$|(sequence)$|( Sep)$|(Ssp)$|srbh|( Shi)$|(Srp)$|ScoPlu")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Tr)$|( trn)$|( trn )|(Tej)$|(Tec)$|( Te)$|( Tk)$|( Tm)$( Tf)$|( Tq)$|( Tag)|( Thr)|( Tht)$|( Thy )|( Thy)$|( Tru)$|( Tyr)$|(Trp)|(Tri)$|( Tag)$|( tons)$|( Truw)$|(Twdate)( Tpra)$|( Tfla)$|( TrTp)$|( ThorAur)|( Tas)$|(TSA)|( tru)$|(Trp)$|Tlab|TGen|( trn)$|( to )|Tde|( Tyr )")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( uu)|URoscu|( Val)| vv|(Va)$|Vxx|(Vdm)$|Vmel|Vinf|(Vly)$")) %>%
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Wol)|( Wt)$|( Wah)$|( Wah )|Waa|(Wab)$|(Wag)$|(Was)$| ww| xx|(Xec)$|XCtr|Xnov|(Xip)$|(Xin)$|( yon)$|(Yar)$|(Ying)$|Ybh| yy| zz| Zgr|( Zop)$| Zzu| Zgzun| Zgjahu| ZfedOk| Zzin| Zinzin|Zstr|Zinstr| Zp|Zprolarvae| Zphi| Zxan|( Zs)$| Zch| Zc|( zch)$|( zcm)|Zcar|Zhue|zjzj")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( jima)$|(Kba)|(Kch)|KAst|Kx|( ks)$|( kun)$| kk|( kappa)$")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Mu)$|(Met)$|(Med)$|( Met )|( mar)$|( Maen)|Mpol|Mste|( myr)$|(Ms)$|(Mir)$|(Myr)$|( mm)$|Mparis|( ma)$|( ma )|( mt)$|mtlab|Mla|Mlb|Mlc|Moct|(misc)$")) %>%
+   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( No)|(No)$|( Na)$|( Na )|( Nb)|(NanHai)|Nrs|Npk|Nsv|( Neo)$|(Nbre)|(Nb)$|(Nsa)$|notetop|( note)$|( ndr)$|( nd)$| naar|( nn)$|( nu)$|( Nel)$|( Nial)$|(Nili)$|(Nipo)$|(Nive)$|( nb)$|( nba)$|( ni)$|( ND)|NJrep")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Ol)|OLuo|( Ot)$|OTp|( orp)$|( oti)$|( Okh)$|(Opa)$|(Ock)$|Otrna|( omml )|Ommt")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Phe)|( Pro)|PAs|( Ple)$|( pl)$|( Peo)$|( pit)$|( pol)$|PWh|( pp)$|( Pr)$|(Pic)$( Pen)$|PAva|Pg|(Pt)$|( pk)$|( pk )|( pr)$|(Pric)$|(Pwhe)$|Psebra|(Ping)$|PHref|QuOma")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "RStrn|rabr|(rasm)$|Rcat|(rcat)$|( reve)$||RKp|Rfal|Ryunosuke|( rfal)|(Roa)$|Rbr|Rjk|( rep)$")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( sa)$|( sb)$|( sn)$|( Ser)|( s)$|(St)$|  strix|( syk)$| sbar|( ss)$|( ssc)$|( st)$|( sin)$|Ssu|( Sivi)$|(solr)$|( sigma)$|( seq)$|(Seq)$|(seq)$|(sequence)$|( Sep)$|(Ssp)$|srbh|( Shi)$|(Srp)$|ScoPlu|( saru)$")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Tr)$|( trn)$|( trn )|(Tej)$|(Tec)$|( Te)$|( Tk)$|( Tm)$( Tf)$|( Tq)$|( Tag)|( Thr)|( Tht)$|( Thy )|( Thy)$|( Tru)$|( Tyr)$|(Trp)|(Tri)$|( Tag)$|( tons)$|( the)$|( Truw)$|(Twdate)( Tpra)$|( Tfla)$|( TrTp)$|( ThorAur)|( Tas)$|(TSA)|( tru)$|(Trp)$|Tlab|TGen|( trn)$|( to )|Tde|( Tyr )")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( uu)|UFde|URoscu|( Univ)$|( Val)| vv|(Va)$|Vxx|(Vdm)$|Vmel|Vinf|(Vly)$")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( Wol)|( Wt)$|( Wah)$|( Wah )|Waa|(Wab)$|(Wag)$|(Was)$| ww| xx|(Xec)$|XCtr|Xnov|(Xip)$|(Xin)$|( yon)$|(Yar)$|(Ying)$|(Yo)$|Ybh| yy| zz| Zgr|( Zop)$| Zzu| Zgzun| Zgjahu| ZfedOk| Zzin| Zinzin|Zstr|Zinstr| Zp|Zprolarvae| Zphi| Zxan|( Zs)$| Zch| Zc|( zch)$|( zcm)|Zcar|Zhue|zjzj|ZHue|ZCar|ZGp")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   # random nonsense
   
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "ratrataluspat|caebaabbfdecb|deccebbcfeceae|bfeeddfdffbafc|bddbcebdeabeb|dRybinskoye|ceceeabf|cdebebddfcbaea|fdccbbad|ffafbacdabbeedfb|ffaebabfabbdf|familynameLoricariidae|Ncytidinemettl|ddfdfbecafbafdc|svcimar|eafabebccbadebdca|aebfbcafbebdbd|fbfbaeeaefedbdcf|mizuhikinagamimizuhaze|bakemimizuhaze|gomamimizuhaze|aeeedcbdceddcde|ebbdfbbacb|bfabdeddfaf")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "ratrataluspat|caebaabbfdecb|deccebbcfeceae|bfeeddfdffbafc|bddbcebdeabeb|dRybinskoye|ceceeabf|cdebebddfcbaea|fdccbbad|ffafbacdabbeedfb|ffaebabfabbdf|familynameLoricariidae|Ncytidinemettl|ddfdfbecafbafdc|svcimar|eafabebccbadebdca|aebfbcafbebdbd|fbfbaeeaefedbdcf|mizuhikinagamimizuhaze|bakemimizuhaze|gomamimizuhaze|aeeedcbdceddcde|ebbdfbbacb|bfabdeddfaf|SIObdeadbaacccbacb|SIOcbedecefccf|CDzjydj|CDzjbdj|NMAro|SIOcbaafcae|iolalali|SIOaccedfbd|parial ura|PfILFTriplExLD|omV hr LPS| withpart  at  side|ChromBimbia|SIOfaddafbafcedf|Htrbsamordcidkrdnz|Hsamcidkrdnz")) %>%
   #GO AWAY
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Fish)$|(FISHCARD)|(Lake)$|(Chiba)$|( trn)$|(Rocha)$")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "(Fish)$|(FISHCARD)|(Lake)$|(Chiba)$|( trn)$|(Rocha)$|Mediterranean|Chitose|MABIK|MZict| Asn")) %>%
   # random single lowercase letters + combos
   mutate(ncbi_sp = str_remove_all(ncbi_sp, " [a-z]{1}$")) %>%
   #mutate(ncbi_sp = str_remove_all(ncbi_sp, "([A-Z][A-Za-z])$")) %>%
@@ -294,13 +299,23 @@ fish_ncbi_result <- ncbi_organism %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( [A-z][a-z])$")) %>%
   mutate(ncbi_sp = str_remove_all(ncbi_sp, "( [A-Z][a-z][a-z])$")) %>%
   # stragglers
-  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( chi)$|( Lg)$|( like)$|( Lakshadweep)|( Geo)$|( chit)$|( scute)$|( bn)$|( Malawi)|yatremusluteus|( Sea)|( Bim)$|USNMFish|(Aa)$|(Ab)$|(Ac)$|(As)$|( bl)$|ZMUCFisk|MCZIch|( fish)$|(Fish)$|NakamuraIDEAFish|Ichthyology|Ichthyological|AzovSea|CBMChiba|(Tyr)$|(Arg)$|( Hyge)|Mnegrosensis|Magnisudisatlantica|(complete)$")) %>%
+  mutate(ncbi_sp = str_remove_all(ncbi_sp, "( chi)$|( Lg)$|( like)$|( Lakshadweep)|( Geo)$|( chit)$|( scute)$|( bn)$|( Malawi)|yatremusluteus|( Sea)|( Bim)$|USNMFish|(Aa)$|(Ab)$|(Ac)$|(As)$|( bl)$|ZMUCFisk|MCZIch|( fish)$|(Fish)$|NakamuraIDEAFish|Ichthyology|Ichthyological|AzovSea|CBMChiba|(Tyr)$|(Arg)$|( Hyge)|Mnegrosensis|Magnisudisatlantica|(complete)$|CaliniaPendleton|DFQAMINDTNTUTYAuxisThrespuram|( miu)$|( eral)$|HBatp|( rep)$|Yamanashi|MZUSPskel")) %>%
   mutate(ncbi_sp = trimws(ncbi_sp)) %>%
   mutate(ncbi_sp = str_replace_all(ncbi_sp, 
                                    c('albacaresfish' = 'albacares',
                                      'Corydoras C ' = 'Corydoras ',
                                      'Corydoras CW' = 'Corydoras ',
-                                     'monodactylusSouth' = 'monodactylus'
+                                     'monodactylusSouth' = 'monodactylus',
+                                     # 'for' errors
+                                     'Zcalinianus' = 'Zalophus calinianus',
+                                     'caliniensis' = 'californiensis',
+                                     'calinianus' = 'californianus',
+                                     'calinica' = 'californica',
+                                     'calinicus' = 'californicus',
+                                     'Bajacalinia' = 'Bajacalifornia',
+                                     # 'land' error
+                                     'Clevelia' = 'Clevelandia',
+                                     'Seriola lali' = 'Seriola lalandi'
                                      ))) 
 
 unique_sp <- fish_ncbi_result %>%
