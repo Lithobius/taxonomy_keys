@@ -51,3 +51,21 @@ mitofish-filterfastalist-log.txt
 mitofish-extract-accns-log.txt
 mitofish-extract-accns-log copy.txt
 mitofish-efetch-taxonomy-log.txt
+database12s/crabs/20240311_fish_worms_records.RDS
+database12s/crabs/20240311_worms_result.RDS
+database12s/crabs/20240212_12s_fish-ncbi-filter.fasta
+database12s/crabs/20240212_12s_ncbi-outgroups_toolong.txt
+database12s/crabs/20240223_12s_crabs-merge.fasta
+database12s/crabs/20240223_fish-short_crabs-ready.fasta
+database12s/crabs/20240212_12s_outgroups-ncbi-filter2.fasta
+database12s/crabs/20240223_outgroups-short_crabs-ready.fasta
+database12s/crabs/20240226_mitofish_12s-filter.fasta
+database12s/crabs/20240226_mitofish_ncbi-taxonomy.csv
+database12s/crabs/20240226_mitofish_by-gene.csv
+database12s/crabs/mito-all
+database12s/crabs/names.dmp
+*.accession2taxid
+species_lists/ncbi/2023_ncbi/20230917_12s_ncbi-taxonomy.csv
+LICENSE
+database12s/crabs/nodes.dmp
+database12s/crabs/mitofishdb.fasta
