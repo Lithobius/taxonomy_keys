@@ -1,0 +1,786 @@
+---
+title: "crabskey_02_ncbi2worms"
+output: html_document
+date: "2024-03-11"
+---
+
+Taking the output from the fasta extract to make a taxonomy key for only the fish in the database.
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+
+library(taxize)
+library(worrms)
+
+# here filepath
+crabs_files <- here('database12s', 'crabs')
+
+# fields
+datefield_in <- '20240310_'
+datefield_out <- '20240315_'
+```
+
+```{r worms-function}
+## requires worrms to be loaded
+# input is vector of species names
+# use wm_records_names to extract 
+# this doesn't need the + signs
+
+# right now this breaks if not-found
+search_records_worms <- function(spnames) {
+  search <- tibble()
+  for (i in spnames) {
+    print(paste0('searching for ', i))
+    record <- wm_records_names(i, marine_only = FALSE)
+    message('done')
+    search <- append(search, record)
+  }
+  names(search) <- spnames
+  search_output <- map_dfr(.x = search, ~ data.frame(.x), .id = 'query') %>%
+    janitor::clean_names() %>%
+    select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+  return(search_output)
+}
+```
+
+# load in
+```{r}
+crabs_db_raw <- read_csv(here(crabs_files, paste0(datefield_in, '12s_crabs_headers.csv')))
+```
+
+
+# NCBI accession to taxonomy match
+
+I need to do two things here; first set up the taxonomy for offtarget, then get the fish through worrms.
+
+```{r offtarget}
+ncbi_taxonomy_offtarget <- crabs_db_raw %>%
+  separate_wider_delim(taxonomy, delim = ';', names_sep = '_', too_few = 'align_start') %>%
+  select(!taxonomy_1) %>%
+  rename(kingdom = taxonomy_2,
+         phylum = taxonomy_3,
+         class = taxonomy_4,
+         order = taxonomy_5,
+         family = taxonomy_6,
+         genus = taxonomy_7) %>%
+  # remove the fish
+  filter(!(class %in% c('Actinopteri', 'Chondrichthyes', 'Hyperoartia',
+                        'Cladistia')|order %in% c('Ceratodontiformes', 'Coelacanthiformes'))) %>%
+  # clean up taxonomy 8 to be verbatim and found
+  mutate(taxa_verbatim = ifelse(taxonomy_8 %in% c(''), NA_character_, taxonomy_8)) %>%
+  mutate(taxa_verbatim = str_replace_all(taxa_verbatim, "_", " ")) %>%
+  mutate(found_taxa = str_remove_all(taxa_verbatim, "[0-9]")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "\\[|\\]|\\(|\\)|\\'|\\}|\\{|>|\\/|=|&|-|:|\\+")) %>%
+  mutate(found_taxa = trimws(found_taxa)) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = trimws(found_taxa)) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = trimws(found_taxa)) %>%
+   # remove some of the random lowercase letters and upper lower combos
+  mutate(found_taxa = str_remove_all(found_taxa, "( [a-z{1}])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z][A-Za-z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z][A-Za-zA-Za-z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z][A-Za-za-z])$")) %>%
+  mutate(found_taxa = trimws(found_taxa)) %>%
+  # sp related words
+  mutate(found_taxa = str_remove_all(found_taxa, "( sp)$|(_sp_)|( sp )|( sp\\.)|( ssp\\.)|(cf\\.)|(nom\\. nud\\.)|(aff\\.)")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "filamentous|(enrichment culture clone)|(TEchitin)|(TEdelici)|( isolate)")) %>%
+  # random nonsense
+  mutate(found_taxa = str_remove_all(found_taxa, "cfCal|(Kiy)$|EcFYyyy|(Ryu)$|MF cl|Hstp|( odomo)$|(Hal)$|(Ssk)$|DGb.")) %>%
+  # leaving periods in for a while makes some of the annoying stuff easier to find
+  # now its getting in the way though
+  mutate(found_taxa = str_remove_all(found_taxa, "\\.")) %>%
+  mutate(found_taxa = trimws(found_taxa)) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = str_remove_all(found_taxa, "([A-Z])$")) %>%
+  mutate(found_taxa = trimws(found_taxa)) %>%
+  # update unknowns
+  mutate(found_taxa = case_when(is.na(found_taxa) | found_taxa %in% c('uncultured organism', 
+                                                                      'uncultured marine organism',
+                                                                      'uncultured marine microorganism',
+                                                                      'uncultured microorganism') ~ 'Unknown organism',
+                                str_detect(found_taxa, 'cyanobacterium') ~ 'Cyanobacteria',
+                                found_taxa %in% c('uncultured prokaryote', 'bacterium', 
+                                                  'marine sponge bacterium', 'unidentified marine eubacterium',
+                                                  'unidentified marine bacterioplankton') ~ 'Unknown bacteria',
+                                str_detect(found_taxa, 'uncultured') & kingdom == 'Bacteria' ~ 'Unknown bacteria',
+                                
+                                found_taxa %in% c('uncultured archaeon') ~ 'Unknown archaea',
+                                found_taxa %in% c('uncultured eukaryote', 'uncultured picoeukaryote', 'eukaryote',
+                                                  'uncultured phototrophic eukaryote', 'uncultured stramenopile',
+                                                  'unidentified eukaryote clone',
+                                                  'uncultured marine eukaryote') ~ 'Unknown eukaryote',
+                                found_taxa %in% c('uncultured marine pelagophyte', 'uncultured alga',
+                                                  'uncultured marine dictyochophyte', 'phototrophic eukaryote',
+                                                  'uncultured marine phototrophic eukaryote', 
+                                                  'uncultured marine algae',
+                                                  'uncultured marine haptophyte', 'uncultured Streptophyta',
+                                                  'uncultured eukaryotic phytoplankton') ~ 'Unknown algae',
+                                found_taxa %in% c('uncultured protist') ~ 'Unknown protist',
+                                found_taxa %in% c('uncultured diatom') ~ phylum,
+                                found_taxa %in% c('uncultured marine chrysophyte',
+                                                  'uncultured Chrysophyceae') ~ class,
+                                TRUE ~ found_taxa)) %>%
+  mutate(common_name = case_when(
+                                 kingdom %in% c('Bacteria', 'Archaea') ~ kingdom,
+                                 class %in% c('Pelagophyceae', 'Dictyochophyceae', 
+                                              'Raphidophyceae', 'Bolidophyceae',
+                                              'Cryptophyceae') |
+                                   phylum %in% c('Pyrenomonadales') ~ 'Other algae',
+                                 # local mammal species
+                                 found_taxa == 'Odocoileus virginianus' ~ 'White-tailed deer',
+                                 found_taxa == 'Rangifer tarandus' ~ 'Caribou',
+                                 found_taxa == 'Enhydra lutris' ~ 'Sea otter',
+                                 found_taxa == 'Lutra lutra' ~ 'River otter',
+                                 found_taxa == 'Eubalaena glacialis' ~ 'North Atlantic right whale',
+                                 found_taxa == 'Eubalaena japonica' ~ 'North Pacific right whale',
+                                 found_taxa == 'Eubalaena australis' ~ 'Southern right whale',
+                                 found_taxa == 'Balaenoptera physalus' ~ 'Fin whale',
+                                 found_taxa == 'Balaena mysticetus' ~ 'Bowhead whale',
+                                 found_taxa == 'Megaptera novaeangliae' ~ 'Humpback whale',
+                                 family %in% c('Otariidae', 'Phocidae') ~ 'Seal',
+                                 genus == 'Mazama' ~ 'Brocket deer',
+                                 # food species
+                                 genus == 'Bos' ~ 'Cow',
+                                 genus == 'Felis' ~ 'Cat',
+                                 genus == 'Homo' ~ 'Human',
+                                 genus == 'Gallus' ~ 'Chicken',
+                                 family == 'Suidae' ~ 'Pig',
+                                 # birds
+                                 genus == 'Phalacrocorax' ~ 'Cormorant',
+                                 family == 'Columbidae' ~ 'Pidgeon',
+                                 family == 'Anatidae' ~ 'Duck',
+                                 family == 'Hirundinidae' ~ 'Swallow',
+                                 # larger vertebrate groupings
+                                 family == 'Cervidae' ~ 'Other deer',
+                                 family == 'Mephitidae' ~ 'Skunk',
+                                 family == 'Mustelidae' ~ 'Other mustelid',
+                                 order == 'Chiroptera' ~ 'Bat',
+                                 order == 'Rodentia' ~ 'Rodent',
+                                 class == 'Amphibia' ~ 'Amphibian',
+                                 class == 'Mammalia' ~ 'Other mammal',
+                                 # invertebrates
+                                 class == 'Asteroidea' ~ 'Sea star',
+                                 # algae, protists, bacteria/archaea
+                                 class == 'Chrysophyceae' ~ 'Golden algae',
+                                 phylum == 'Chlorophyta' | class %in% c('Mesostigmatophyceae') ~ 'Green algae',
+                                 phylum == 'Dinophyceae' ~ 'Dinoflagellate',
+                                 class == 'Dinophyceae' ~ 'Dinoflagellate',
+                                 class == 'Insecta' ~ 'Insect',
+                                 phylum == 'Rhodophyta' ~ 'Red algae',
+                                 phylum == 'Bacillariophyta' ~ 'Diatom',
+                                 phylum == 'Foraminifera' ~ 'Foraminifera',
+                                 phylum %in% c('Oomycota', 'Oomycetes') ~ 'Water mold',
+                                 found_taxa %in% c('Unknown organism', 'Unknown bacteria', 
+                                                   'Unknown eukaryote', 'Unknown archaea',
+                                                   'Unknown algae', 'Unknown protist') ~ found_taxa
+                                 )) %>%
+  select(!taxonomy_8) %>%
+  mutate(rank = 'offtarget') %>%
+  relocate(accession, found_taxa, taxa_verbatim, common_name) %>%
+  # fill in NAs
+  mutate(across(kingdom:genus, ~ na_if(., "")))
+```
+
+
+
+```{r lowest taxonomy}
+ncbi_taxonomy <- crabs_db_raw %>%
+  separate_wider_delim(taxonomy, delim = ';', names_sep = '_', too_few = 'align_start') %>%
+  select(accession, taxonomy_8) %>%
+  # only fish
+  filter(!(accession %in% ncbi_taxonomy_offtarget$accession)) %>%
+  mutate(taxonomy_extract = ifelse(taxonomy_8 %in% c(''), NA_character_, taxonomy_8)) %>%
+  mutate(taxonomy_extract = str_replace_all(taxonomy_extract, "_", " ")) %>%
+  select(!taxonomy_8) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_extract, "[0-9]")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+    # remove brackets and special characters
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "\\[|\\]|\\(|\\)|\\'|\\}|\\{|>|\\/|=|&|-|:")) %>%
+  # remove last-space capitals, round 1; two 'words'
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  # remove species and genus related terms
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( sp)$|(_sp_)|( sp )|( sp\\.)|( ssp\\.)")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Gen)|( gen n)|( gen)$|( gen )|( gen\\.)")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(cf\\. )|( aff )|(aff\\.)|( taxonomy_search complex)|( Group )|( group )|( group)$|( complex)$|( complex )|( complex type)|( complexnew)|( complexc)|( var\\.)|( Var)$|( clade )|( clade)$|( und)$|( undet)$|( unk)$| unnamed| sensu lato|  sesu lato|  sensu stricto|( intermediate )|Hybrid")) %>%
+  # museum/collection related words
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( type )|Type |( Type)$|( type)$|( n )|( new)$|( n\\.)|( nov )|(nomen nudum)|(nom\\. nud\\.)|Haplotype|Lineage|Unidentified|uncataloged|uncatalogued|(DNA No\\.)|( et al\\.)|MCZuncat")) %>%
+  # lab related words
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "Ustrain")) %>%
+    # morphology
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(large spot)|(small spot)|( Spotted)|( barred)|( dwarf)| Cribrimorphlike|( pinnules)|( crescent)$|( spiral)$|(collar)|( Laser)|( Super)$|( special)$|( Illuminator)|( long )|( Long )|( short)$|( short )|( Last)| stripe | blotch| deep |( scute)$| scute | upper | left |( left)$| shallow|Longtailed|(Gluteus)$| Pearl|(Fly)$|( papilio )|( slender)|( variant)|Dotted|Lined|(Big )|Upper|( Horn)$|(Crystal)$|(red cheek)|(red tilapia)")) %>%
+  # color
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Black)| black| chocolate|( Green)|( green)|( Red)|(Red)$|( red )|(  red)$|( rosy)|(Verde)$| orangecollar| Orange| orange |( orange)$|( yellow)|( Yellow)|( yellowback)|( yellowcollar)|( yellowpatch)|( Gold)|(Gold)$|( albino )|( white)|( White)| blond|( neon)$|( Aoi)|( Blue)|( blue )|( tan )")) %>%
+  # leaving periods in for a while makes some of the annoying stuff easier to find
+  # now its getting in the way though
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "\\.")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  # remove some of the random lowercase letters and upper lower combos
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( [a-z{1}])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z][A-Za-z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z][A-Za-zA-Za-z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z][A-Za-za-z])$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  #remove the last character if its a capital letter many times
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  # remove some of the random lowercase letters and upper lower combos
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( [a-z{1}])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z][A-Za-z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z][A-Za-zA-Za-z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z][A-Za-za-z])$")) %>%
+  #remove the last character if its a capital letter many times
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  # anything left over
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Ssk)$|(Kiv)$|(Kiy)$|EcFYyyy")) %>%
+  mutate(taxonomy_search = str_replace_all(taxonomy_search, c('auratus red' = 'auratus'))) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  # set up filters
+  mutate(hybrid = ifelse(str_detect(taxonomy_search, ' x '), 'hybrid', NA_character_))
+```
+
+# worrms
+```{r initial search}
+worms_search <- ncbi_taxonomy %>%
+  # filter out offtarget and hybrids
+  filter(is.na(hybrid) & !is.na(taxonomy_search)) %>%
+  select(taxonomy_search) %>%
+  distinct() %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxonomy_search))
+
+# 2: worms
+fish_worms <- get_wormsid_(sci_com = unique(worms_search$worms_query), 
+                           marine_only = FALSE, accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+fish_worms2 <- fish_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+
+# this cleaning step is relatively temporary until they fix the curl issue
+fish_worms_result <- fish_worms2 %>%
+  left_join(worms_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxonomy_search) %>%
+  select(!(c(authority,query))) %>%
+  #mutate(ncbi_sp = trimws(ncbi_sp)) %>%
+  # now match species to sciname to remove extra rows
+  distinct() %>%
+  # remove higher taxonomy with species-level hits
+  # A longer term solution; count number of words in ncbi_sp and scientific name and match
+  mutate(ncbi_spaces = str_count(taxonomy_search, " ")) %>%
+  mutate(worms_spaces = str_count(scientificname, " ")) %>%
+  filter(ncbi_spaces == worms_spaces) %>%
+  # good names
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname,
+        taxa_verbatim = taxonomy_search) %>%
+  distinct() %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  filter(!(n_dups > 1 & taxa_verbatim != worms_sciname)) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  add_count(taxa_verbatim, status, name = 'n_stat') %>%
+  # when there are accepted AND unassessed; some are ONLY unassessed
+  filter(!(n_dups > 1 & n_stat == 1 & status %in% c('unassessed'))) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  select(!(c(ncbi_spaces, worms_spaces, n_stat)))
+
+#saveRDS(fish_worms_result, here(crabs_files, "20240311_worms_result.RDS"))
+#fish_worms_result <- readRDS(here(ncbi, "20230929_fish_worms_result.RDS"))
+
+ # extract higher and info about freshwater
+fish_worms_records <- search_records_worms(unique(fish_worms_result$worms_sciname))
+
+# refine results to be useful
+fish_worms_records_df <- fish_worms_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, query,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank)) %>%
+  add_count(worms_match, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(worms_match, name = 'n_dups') %>%
+  # remove incorrect 'accepted' by aphiaid
+  # inculdes same-name invertebrates
+  filter(!(n_dups > 1 & worms_aphiaid %in% c(342486, 249584, 275332, 1018268, 1007204, 1525460))) %>%
+  add_count(worms_match, name = 'n_dups') %>%
+  select(!n_dups)
+
+
+
+saveRDS(fish_worms_records_df, here(crabs_files, '20240311_fish_worms_records.RDS'))
+```
+
+Now see what was missed by re-merging
+## fails
+```{r fix fails}
+worms_ncbi_remerge <- ncbi_taxonomy %>%
+  left_join(fish_worms_records_df, by = c('taxonomy_search' = 'worms_match'))
+
+fish_fail <- worms_ncbi_remerge %>%
+  filter(is.na(worms_sciname)) %>%
+  # we'll deal with hybrids separately
+  filter(is.na(hybrid)) %>%
+  #select(taxonomy_search) %>%
+  distinct() %>%
+  # temp; move this up next time
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "\\,")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "Kirinanahaze|Komonyatsushihaze|Mparis|(Ansp)$|Chao Phraya|Rio Branco| Clade")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(IDEA Fish)|(Puma Loach)|(FMNH Uncat)| barbel steed| sensu| in bony fishes| larva| golden dust| Freshwater| Brackish")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Adan)$| Adirondacks|( Australia)$|(Great Australian Bight)| Azores| Andai| Akaebi| Acla| Argis| Austria| Antalaha| Albanien| Almenara| Araguaia| Amazonas| Agua Santa|Ao Itai")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Benin)|( Bidou)|( Bissiang)|Banka|( Bioko)|( Bundu)|( Bush)$|(Bitter)|(Bivavotou)|(Bioko)| Beforana| Betampona|( Borneo)| Beysehir| Betari| Bangladesh|bakemimizuhaze|bakeaomeeso")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Cape )|(China )|( China)| Carombe|( Carib)$|( Cap Esterias)|(Chiba Museum)|( Chiba)$|(CabotCenter)| Continental| Cayman| Caracol| Calibasis| Chiriqui| Collier|( Caroline)| Contulmo| Chao Phraya|( Cana)| Columbia| Corrantijn|Corrego Seco|Corantijn| chengtui")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "Darling")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Girona| Gekara|(Greece)$|Guangdong|Guangxi|Guizhou|( Garcia)| Guinea| Ginbuna| Guyana| Gamba| Guama|gomamimizuhaze| gomahaze")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "hoshikikaiutsubo| Hoyosa| Hosoya|hauchiwayarimimizuhaze|hiironagamimizuhaze| hosomimizuhaze| Huacamayo| Humbolt")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Ivoloina|( Israel)| Ikorodu| Inji| Ijebu Ode|(Italy)| Izumihaze|(Iguassu)|ichimonjimimizuhaze| Ireng||IzumiHaze| Jari")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Kirk)$|( Kocher)|(Kipar)|(Kribi)|(Kuckuk)$|(Katsutoshi Watanabe)|(Komonyatsushihaze)|(Khukh)|(Kinbuna)| Karianga|(Kapinar)| Kieth| Kisangani| Kongou| Koliba| kamahiremimizuhaze|kimairamimizuhaze|komuginagamimizuhaze|kawakumohaze")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Lagos)|(Lebanon)$|( LoireLac)|(Liang Cao)| Lleida||(Lobaye)| Lucien|Lakes|Laos| Lucien")) %>%
+    mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Muerz)|( Malibo)||(Midgleys)|(Murray)| Mazinzi| Mfulgida| MinasBasin| MagdalenIs|( Mai)|( Mic)$|(Micnat)| MicRamrun| Mitsem| Madimba|(Madeira)| Mundemba| Machinda| Makuya|( Mexico)| Montenegro| Madagascar| Manjavacas| Makira| Martinique| Maranho| Moabi| Myanmar| Miya| Malinau| Manombo| Mahanara| Munday| Massana|(Masatoshi Nakamura)| Magdalena| Mongagu| Maroni| Martinso| Macacu| Maroa| mizuhikinagamimizuhaze|(personalMasatoshi Nakamura)| Miya")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Monzon| Magdalena| Macacu| Mongagu| Martinso| Maroni| Mato Grosso|mizuhikinagamimizuhaze|misujihaze")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Nazilli)$| Ndombe| Ngombe| Nguru| Ndop| Nakuru| Nakabo|( Negro)$| Nevada| Nakabo| Nigeria| Nanay| Nassau|nagasakitsunozame")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Orinoco|( Oba)$| Omona|Omono|( Oyo)$|ochokonagamimizuhaze|oguronagamimizuhaze")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Patrocnica| Patchogue| Pachon|(Paris)| Pampang| Patrocnica| Patchogue| Pachon|(Pingxiang)| Paraguay| Parguaza| Paraguaza|( Peru)|( Panama)| Piedade| Puerto Ayucucho|Paraiba do Sol| Pakistan|Puerto Ayacucho|Paraiba do Sul| Previsto")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Rio Chirgua)| Ranomafana| Rakhine|( Rio)$|(Rio Sao Francisco)|Rio de Toca|(Rio Supamo)|Ruosonghe| Rio da Toca|Ribeira|Rupununi| Rio Baia|ryukyuhanahaze")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Suji)|( Suiyo)|( Smith)$|( Stevens)|(Shibukawa)| Salsburger| Surinam| Stepian| Stepien|(Sanya)|(Spain)$|( sagami)|(Santa Clara)| Scorff| Sahiler| Sambava| Samou|(Serra do Cip)|(sPengze)|Sao Joao| Synaptura|shirohigesejirohaze|somewakeaitoragisu| southern")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Thalye)| tanukihaze| Tapajos|( Tres Marias)|(Taiwanese)|Tocantins| Tobogan")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Ural)$|(United Kingdom)|( Urocara)|( Ulimi)| Uruguay| Ucayali")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Venezuela)|( Vanpoe)| Vevembe| Von Humboldt|(Von Humboldt)")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Xingu")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Wainwright)$|( Whitewater)")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Yoma)|yoshinogochi| Yang|( Zagno)|( Zarco)|( Zhange)|(Zhang)$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Tht)$|personalMasatoshi Nakamura|natural gynogenetic| Miya|( Mel)$|( Li)$| Jari|IzumiHaze|(personal)$|Odsp|( Von)$| Lucien| auip|( ausc)$| Branco|narinariocellatus|( Laos)$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_replace_all(taxonomy_search, "  ", " ")) %>%
+  mutate(taxonomy_search = str_replace_all(taxonomy_search, c("ias gr mala" = "ias mala",
+                                                              'Pomacentrusminamiisosuzumedai' = 'Pomacentrus',
+                                                              'Myripristisfieldi' = 'Myripristis greenfieldi',
+                                                              'Cubicepsleggii' = 'Cubiceps whiteleggii',
+                                                              'Acanthogobius elongata' = 'Acanthogobius')))
+
+
+worms_search_fail <- fish_fail %>%
+  select(taxonomy_search) %>%
+  distinct() %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", taxonomy_search))
+
+# 2: worms
+fish_worms_fail <- get_wormsid_(sci_com = unique(worms_search_fail$worms_query), 
+                           marine_only = FALSE, accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+fish_worms_fail2 <- fish_worms_fail %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+
+# this cleaning step is relatively temporary until they fix the curl issue
+fish_worms_fail_result <- fish_worms_fail2 %>%
+  left_join(worms_search, by = c('query' = 'worms_query')) %>%
+  relocate(taxonomy_search) %>%
+  select(!(c(authority,query))) %>%
+  #mutate(ncbi_sp = trimws(ncbi_sp)) %>%
+  # now match species to sciname to remove extra rows
+  distinct() %>%
+  # remove higher taxonomy with species-level hits
+  # A longer term solution; count number of words in ncbi_sp and scientific name and match
+  mutate(ncbi_spaces = str_count(taxonomy_search, " ")) %>%
+  mutate(worms_spaces = str_count(scientificname, " ")) %>%
+  filter(ncbi_spaces == worms_spaces) %>%
+  # good names
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname,
+        taxa_verbatim = taxonomy_search) %>%
+  distinct() %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  filter(!(n_dups > 1 & taxa_verbatim != worms_sciname)) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  add_count(taxa_verbatim, status, name = 'n_stat') %>%
+  # when there are accepted AND unassessed; some are ONLY unassessed
+  filter(!(n_dups > 1 & n_stat == 1 & status %in% c('unassessed'))) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  select(!(c(ncbi_spaces, worms_spaces, n_stat)))
+
+ # extract higher and info about freshwater
+fish_worms_fail_records <- search_records_worms(unique(fish_worms_fail_result$worms_sciname))
+
+# refine results to be useful
+fish_worms_fail_records_df <- fish_worms_fail_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, query,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank))
+
+worms_fail_updated <- ncbi_taxonomy %>%
+  left_join(fish_worms_fail_records_df, by = c('taxonomy_search' = 'worms_match')) %>%
+  filter(!is.na(worms_sciname))
+
+```
+
+## fail genus
+
+Here we'll take any remaining fails and do a genus level search
+
+```{r}
+
+failgenus <- fish_fail %>%
+  filter(!(accession %in% worms_fail_updated$accession)) %>%
+  select(accession, taxonomy_search,taxonomy_extract) %>%
+  separate(taxonomy_search, into = 'genus', 
+           sep = " ", remove = FALSE, 
+           extra = 'drop')
+
+
+# 2: worms
+fish_worms_genus <- get_wormsid_(sci_com = unique(failgenus$genus), 
+                           marine_only = FALSE, accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+fish_worms_genus2 <- fish_worms_genus %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+
+# this cleaning step is relatively temporary until they fix the curl issue
+fish_worms_genus_result <- fish_worms_genus2 %>%
+  left_join(failgenus, by = c('query' = 'genus')) %>%
+  relocate(taxonomy_search) %>%
+  select(!(c(authority,query))) %>%
+  #mutate(ncbi_sp = trimws(ncbi_sp)) %>%
+  # now match species to sciname to remove extra rows
+  distinct() %>%
+  # remove higher taxonomy with species-level hits
+  # A longer term solution; count number of words in ncbi_sp and scientific name and match
+  mutate(ncbi_spaces = str_count(taxonomy_search, " ")) %>%
+  mutate(worms_spaces = str_count(scientificname, " ")) %>%
+  filter(ncbi_spaces == worms_spaces) %>%
+  # good names
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname,
+        taxa_verbatim = taxonomy_search) %>%
+  distinct() %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  filter(!(n_dups > 1 & taxa_verbatim != worms_sciname)) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  add_count(taxa_verbatim, status, name = 'n_stat') %>%
+  # when there are accepted AND unassessed; some are ONLY unassessed
+  filter(!(n_dups > 1 & n_stat == 1 & status %in% c('unassessed'))) %>%
+  add_count(taxa_verbatim, name = 'n_dups') %>%
+  select(!(c(ncbi_spaces, worms_spaces, n_stat))) %>%
+  select(!accession) %>%
+  distinct()
+
+ # extract higher and info about freshwater
+fish_worms_genus_records <- search_records_worms(unique(fish_worms_genus_result$worms_sciname))
+
+# refine results to be useful
+fish_worms_genus_records_df <- fish_worms_genus_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, query,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank)) %>%
+  select(!genus)
+
+failgenus_updated <- failgenus %>%
+  left_join(fish_worms_genus_records_df, by = c('genus' = 'worms_match')) %>%
+  add_count(accession, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(accession, name = 'n_dups') %>%
+  filter(!(n_dups > 1 & worms_aphiaid == 843623)) %>%
+  distinct() %>%
+  select(!n_dups) %>%
+  filter(!is.na(worms_sciname))
+```
+
+
+
+## hybrids
+
+```{r hybrids}
+hybrid_list <- worms_ncbi_remerge %>%
+  filter(hybrid == 'hybrid') %>%
+  select(accession, taxonomy_extract, taxonomy_search)
+
+hybrid_taxonomy <- crabs_db_raw %>%
+  filter(accession %in% hybrid_list$accession) %>%
+  separate_wider_delim(taxonomy, delim = ';', names_sep = '_', too_few = 'align_start') %>%
+  select(!taxonomy_1) %>%
+  rename(kingdom = taxonomy_2,
+         phylum = taxonomy_3,
+         class = taxonomy_4,
+         order = taxonomy_5,
+         family = taxonomy_6,
+         genus = taxonomy_7) %>%
+  left_join(hybrid_list) %>%
+  # fill in NAs
+  mutate(across(kingdom:genus, ~ na_if(., ""))) %>%
+  # set up condensed search
+  mutate(hybrid_search = case_when(!is.na(genus) ~ genus,
+                                   !is.na(family) ~ family,
+                                   !is.na(order) ~ order)) %>%
+  # account for taxonomic revisions on an accession by accession basis
+  # doing string searches could accidentally drop family to genus etc.
+  # Kareius == Platyichtys, Leiocassus = Tachysurus
+  mutate(hybrid_search = case_when(accession %in% c('OQ656299', 'OQ656297', 
+                                                    'OQ656298') ~ 'Platichthys',
+                                   accession %in% c('NC_036665', 'NC_030628') ~ 'Tachysurus',
+                                   TRUE ~ hybrid_search)) %>%
+  relocate(accession, hybrid_search, taxonomy_search) %>%
+  select(!taxonomy_8)
+
+hybrid_reduced <- hybrid_taxonomy %>%
+  select(hybrid_search, taxonomy_search) %>%
+  distinct()
+
+
+# 2: worms
+fish_worms_hybrid <- get_wormsid_(sci_com = unique(hybrid_taxonomy$hybrid_search), 
+                           marine_only = FALSE, accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+fish_worms_hybrid2 <- fish_worms_hybrid %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+
+# this cleaning step is relatively temporary until they fix the curl issue
+fish_worms_hybrid_result <- fish_worms_hybrid2 %>%
+  left_join(hybrid_reduced, by = c('query' = 'hybrid_search')) %>%
+  select(!(c(authority, taxonomy_search))) %>%
+  # now match species to sciname to remove extra rows
+  distinct() %>%
+  # remove higher taxonomy with species-level hits
+  # A longer term solution; count number of words in ncbi_sp and scientific name and match
+  mutate(ncbi_spaces = str_count(query, " ")) %>%
+  mutate(worms_spaces = str_count(scientificname, " ")) %>%
+  filter(ncbi_spaces == worms_spaces) %>%
+  # good names
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname,
+        hybrid_search = query) %>%
+  distinct() %>%
+  add_count(hybrid_search, name = 'n_dups') %>%
+  filter(!(n_dups > 1 & hybrid_search != worms_sciname)) %>%
+  add_count(hybrid_search, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(hybrid_search, name = 'n_dups') %>%
+  select(!(c(ncbi_spaces, worms_spaces))) %>%
+  distinct()
+
+ # extract higher and info about freshwater
+fish_worms_hybrid_records <- search_records_worms(unique(fish_worms_hybrid_result$worms_sciname))
+
+# refine results to be useful
+fish_worms_hybrid_records_df <- fish_worms_hybrid_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, query,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank)) %>%
+  # get rid of duplicates
+  filter(status != 'unaccepted')
+
+worms_hybrid_updated <- hybrid_taxonomy %>%
+  select(accession, hybrid_search, taxonomy_search, taxonomy_extract) %>%
+  left_join(fish_worms_hybrid_records_df, by = c('hybrid_search' = 'worms_match')) %>%
+  filter(!is.na(worms_sciname)) %>%
+  select(!c(taxonomy_search)) %>%
+  rename(taxonomy_search = hybrid_search)
+
+
+```
+
+
+# final merge
+
+merging the fish, failed fish, hybrids, and outgroups here
+
+```{r final merge}
+final_merge <- worms_ncbi_remerge %>%
+  filter(!(accession %in% worms_fail_updated$accession|
+             accession %in% worms_hybrid_updated$accession|
+             accession %in% failgenus_updated$accession)) %>%
+  bind_rows(worms_fail_updated) %>%
+  bind_rows(worms_hybrid_updated) %>%
+  bind_rows(failgenus_updated) %>%
+  distinct() %>%
+  # update columns to merge with offtarget
+  mutate(found_taxa = worms_sciname,
+         common_name = NA_character_) %>%
+  rename(taxa_verbatim = taxonomy_extract) %>%
+  relocate(accession, found_taxa, common_name, rank) %>%
+  bind_rows(ncbi_taxonomy_offtarget) %>%
+  add_count(accession, name = 'n_dups') %>%
+  # remove incorrect 'accepted' by aphiaid
+  # inculdes same-name invertebrates
+  filter(!(n_dups > 1 & worms_aphiaid %in% c(342486, 249584, 275332, 1018268, 1007204, 1525460))) %>%
+  add_count(accession, name = 'n_dups') %>%
+  select(!n_dups)
+
+write_csv(final_merge, here(crabs_files, paste0(datefield_out, '12s_crabs_taxonomy-key.csv')))
+```
+
+
+
+# previous code
+```{r}
+# not the same?
+fish_worms_records_df_fishonly <- fish_worms_result %>%
+  # get rid of not-fish
+  filter(class %in% c('Actinopteri', 'Chondrichthyes', 'Myxini', 'Hyperoartia')) %>%
+  select(ncbi_sp, worms_match) %>%
+  left_join(fish_worms_records_df) %>%
+  distinct() %>%
+  # get rid of not-fish
+  filter(phylum == 'Chordata') %>%
+  filter(class %in% c("Teleostei","Elasmobranchii",'Dipneusti','Coelacanthi',
+                       "Chondrostei","Myxini","Holostei","Holocephali")) %>%
+  mutate(ncbiworms_match = ifelse(ncbi_sp == worms_match, 'yes', 'no')) %>%
+  filter(ncbiworms_match == 'yes')
+```
+
+
+## fish
+```{r}
+# extract 'failures'
+fish_fail_worms <- worms_search %>%
+  # not found in WoRMS:
+  filter(!(for_worms %in% fish_worms_records_df_ncbi$ncbi_sp)) %>%
+  filter(kingdom == 'Metazoa') %>%
+  filter(class %in% c('Actinopteri', 'Chondrichthyes')) %>%
+  select(for_worms, species, genus, family, order, subspecies) %>%
+  mutate(hybrid = ifelse(str_detect(for_worms, " x "), 'yes', 'no')) %>%
+  mutate(try_again = case_when(hybrid == 'yes' & !is.na(genus) ~ genus,
+                                    hybrid == 'yes' & !is.na(family) ~ family,
+                                    hybrid == 'yes' & !is.na(order) ~ order,
+                               hybrid == 'no' & str_detect(for_worms, " sp\\.") ~ genus,
+                                    hybrid == 'no' ~ for_worms)) %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", try_again))
+
+#try another search
+fish_worms_tryagain <- get_wormsid_(sci_com = unique(fish_fail_worms$worms_query), 
+                           marine_only = FALSE, accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+fish_worms_tryagain2 <- fish_worms_tryagain%>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+```
+

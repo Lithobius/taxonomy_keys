@@ -42,3 +42,12 @@ fish/.DS_Store
 species_lists/hakai/2021_blast-db/CO1.BOLD_genbank_combined.taxa_map.w_hakai_barcodes.sunday_lab.txt
 species_lists/ncbi/2023_ncbi/20230819_ncbi_fish_12s_tinyseq.xml
 ncbi-efetch-taxonomy-log.txt
+trim-log.txt
+trimlist-log.txt
+update-ncbi-search_log.txt
+ncbi-outgroups-short-log.txt
+ncbi-fish-short-log.txt
+mitofish-filterfastalist-log.txt
+mitofish-extract-accns-log.txt
+mitofish-extract-accns-log copy.txt
+mitofish-efetch-taxonomy-log.txt
