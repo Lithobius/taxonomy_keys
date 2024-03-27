@@ -1,0 +1,91 @@
+"","found_taxa","common_name","biogeographical_notes","group","fish_base_url","max","mean","median","min"
+"1","Cymatogaster aggregata","Shiner perch","","Perches","https://www.fishbase.ca/summary/Cymatogaster-aggregata.html",58.66285,48.1198483548387,48.971692,32.71447
+"2","Leptocottus armatus","Pacific staghorn sculpin","","Sculpins","https://www.fishbase.ca/summary/4112",58.66285,48.6376285778689,48.992217,33.76166
+"3","Atherinops affinis","Topsmelt silverside","south to northern Van Island",NA,NA,58.38105625,41.4425704642857,38.0645,32.6256755
+"4","Acanthogobius flavimanus","Yellowfin goby","japan",NA,NA,50.137267,42.0625956666667,38.10503,37.94549
+"5","Clevelandia ios","Arrow goby","South to Rivers Inlet, BC","Other","https://www.fishbase.ca/summary/3840",51.92408,43.1907967142857,42.65886,32.9708
+"6","Syngnathus exilis","Barcheek pipefish","south to Half Moon Bay in central California",NA,NA,50.444274,46.0476165,48.9198085,38.0645
+"7","Gasterosteus aculeatus","Three-spined stickleback","","Other","https://www.fishbase.ca/summary/Gasterosteus-aculeatus.html",58.62695,49.0129995069444,49.6142415,33.60218
+"8","Syngnathus leptorhynchus","Bay pipefish","","Other","https://www.fishbase.ca/summary/Syngnathus-leptorhynchus.html",55.740587,45.8245368166667,48.7906815,32.6256755
+"9","Salmo salar","Atlantic salmon","maybe from farm or food?","Salmon","https://www.fishbase.ca/summary/salmo-salar.html",58.38105625,48.3512834625,49.1898085,32.71447
+"10","Atherinopsis californiensis","Jack silverside","south to Yaquina Bay, OR",NA,NA,50.137267,41.8779807,38.24871,33.60218
+"11","Engraulis mordax","Californian anchovy","south to northern Van Island",NA,NA,50.444274,43.9735078695652,46.69456,32.71447
+"12","Oncorhynchus tshawytscha","Chinook salmon","north to Oregon","Salmon","https://www.fishbase.ca/summary/244",58.62695,50.9577194404762,50.09155,38.31891
+"13","Clupea pallasii","Pacific herring","","Forage fish","https://www.fishbase.ca/summary/Clupea-pallasii+pallasii.html",58.66285,48.9422018208333,49.1781585,32.71447
+"14","Sebastes baramenuke","Sebastes baramenuke","japan",NA,NA,55.740587,47.06796171875,49.5247835,32.6256755
+"15","Embiotoca jacksoni","Black perch","south to Fort Bragg, CA",NA,NA,50.444274,39.103496375,36.71829,32.71447
+"16","Sebastes caurinus","Copper rockfish","",NA,NA,52.63103,49.0427289230769,50.09155,38.31891
+"17","Citharichthys stigmaeus","Speckled sanddab","","Flatfish","https://www.fishbase.ca/summary/Citharichthys-stigmaeus",55.284338,48.0909074545455,50.09155,35.37208
+"18","Lepidogobius lepidus","Bay goby","","Other","https://www.fishbase.ca/summary/Lepidogobius-lepidus.html",51.64644,48.9275739090909,50.09155,38.31891
+"19","Amphistichus rhodoterus","Redtail surfperch","Vancouver Island, British Columbia, Canada to Avila Beach, central California, USA.","Perches","https://www.fishbase.ca/summary/3624",49.171917,41.8121056666667,38.31891,37.94549
+"20","Pholis ornata","Saddleback gunnel","north to 36°","Eelpouts and pricklebacks","https://www.fishbase.ca/summary/3806",50.521548,47.1148170588235,48.495648,38.10503
+"21","Ammodytes personatus","Pacific sandlance","","Forage fish","https://www.fishbase.ca/summary/Ammodytes-personatus.html",58.3313,50.3454102727273,50.1047165,38.31891
+"22","Xiphister atropurpureus","Black prickleback","","Eelpouts and pricklebacks","https://www.fishbase.ca/summary/Xiphister-atropurpureus.html",52.63103,49.5919303888889,50.1047165,38.31891
+"23","Anoplopoma fimbria","Sablefish","","Other","https://www.fishbase.ca/summary/Anoplopoma-fimbria.html",50.444274,44.6506116,48.992217,35.36039
+"24","Ophiodon elongatus","Lingcod","","Other","https://www.fishbase.ca/summary/Ophiodon-elongatus.html",58.38105625,48.5603220416667,49.725303,38.3339
+"25","Oncorhynchus keta","Chum salmon","","Salmon","https://www.fishbase.ca/summary/Oncorhynchus-keta.html",58.62695,51.1068225833333,51.92408,32.77171
+"26","Oncorhynchus gorbuscha","pink salmon","",NA,NA,58.66285,47.5245569464286,50.466423,32.77171
+"27","Hexagrammos decagrammus","Kelp greenling","","Other","https://www.fishbase.ca/summary/Hexagrammos-decagrammus.html",54.009167,48.7274803,49.1466085,33.62125
+"28","Isopsetta isolepis","Butter sole","north to Ventura, CA","Flatfish","https://www.fishbase.ca/summary/4242",52.05342,48.5196622222222,48.951167,43.35965
+"29","Hypomesus pretiosus","Surf smelt","north to Long Beach, southern California","Forage fish","https://www.fishbase.ca/summary/Hypomesus-pretiosus.html",50.137267,46.9226221111111,48.505432,43.35965
+"30","Oncorhynchus kisutch","Coho salmon","","Salmon","https://www.fishbase.ca/summary/Oncorhynchus-kisutch.html",58.66285,50.322704015625,50.318353,33.768
+"31","Anoplarchus purpurescens","High cockscomb","","Eelpouts and pricklebacks","https://www.fishbase.ca/summary/anoplarchus-purpurescens.html",58.38105625,50.0112733854167,50.1047165,43.35965
+"32","Scorpaenichthys marmoratus","Cabezon","","Sculpins","https://www.fishbase.ca/summary/Scorpaenichthys-marmoratus.html",51.67622,41.825598,43.35965,35.36039
+"33","Merluccius productus","North Pacific hake","south to northern Van Island",NA,NA,50.137267,46.6243845,45.7452535,44.61245
+"34","Artedius harringtoni","Scalyhead sculpin","north to central cali","Sculpins","https://www.fishbase.ca/summary/Artedius-harringtoni.html",58.3313,50.4559481428571,50.117883,44.61245
+"35","Hippoglossus hippoglossus","Atlantic halibut","atlantic",NA,NA,58.385583,52.4996880416667,52.2488695,44.61245
+"36","Clinocottus acuticeps","Sharpnose sculpin","north to central cali","Sculpins","https://www.fishbase.ca/summary/Clinocottus-acuticeps.html",58.66285,54.09741905,58.3313,44.61245
+"37","Apodichthys flavidus","Penpoint gunnel","","Eelpouts and pricklebacks","https://www.fishbase.ca/summary/Apodichthys-flavidus.html",52.575011,49.3510873076923,49.195217,43.35965
+"38","Enophrys bison","Buffalo sculpin","north to Monterrey Bay","Sculpins","https://www.fishbase.ca/summary/Enophrys-bison.html",55.708572,50.5688381666667,50.2907705,43.35965
+"39","Paralabrax maculatofasciatus","Spotted sand bass","south to Monterey Bay",NA,NA,58.38105625,43.7262388375,47.490487,32.6256755
+"40","Aulorhynchus flavidus","Tube-snout","","Other","https://www.fishbase.ca/summary/3270",55.708572,50.3367518,50.137267,44.617633
+"41","Sardinops sagax","South American pilchard","",NA,NA,44.617633,36.9780943333333,33.60218,32.71447
+"42","Embiotoca lateralis","Striped seaperch","","Perches","https://www.fishbase.ca/summary/3629",52.63103,49.6273156666667,49.19295,44.617633
+"43","Pholis laeta","Crescent gunnel","north to northern California","Eelpouts and pricklebacks","https://www.fishbase.ca/summary/Pholis-laeta.html",58.66285,51.4253583428571,50.137267,48.46859
+"44","Myoxocephalus jaok","Plain sculpin","Alaska","Sculpins","https://www.fishbase.ca/summary/Myoxocephalus-jaok.html",58.3313,49.7220675555556,48.971692,38.10503
+"45","Lumpenus sagitta","Snake prickleback","north to San Francisco","Eelpouts and pricklebacks","https://www.fishbase.ca/summary/Lumpenus-sagitta.html",58.3313,52.1262019375,50.2907705,48.46859
+"46","Cottus cognatus","Slimy sculpin","freshwater","Sculpins","https://www.fishbase.ca/summary/4068",58.66285,55.111839375,55.4531555,50.499439
+"47","Oligocottus maculosus","Tidepool sculpin","north to Los Angeles County","Sculpins","https://www.fishbase.ca/summary/4128",55.740587,50.5399415714286,50.499439,33.768
+"48","Artedius lateralis","Smoothhead sculpin","","Sculpins","https://www.fishbase.ca/summary/ARTEDIUS-LATERALIS.html",52.575011,49.8048525714286,48.992217,48.69185
+"49","Hemilepidotus hemilepidotus","Red Irish lord","north to Monterrey Bay","Sculpins","https://www.fishbase.ca/summary/Hemilepidotus-jordani.html",52.575011,50.94589775,51.007815,49.19295
+"50","Cottus asper","prickly sculpin","",NA,NA,58.385583,55.3034815,55.3034815,52.22138
+"51","Pleuronichthys coenosus","C-O sole","","Flatfish","https://www.fishbase.ca/summary/4251",54.009167,50.734605375,50.2907705,48.876733
+"52","Artedius fenestralis","Padded sculpin","","Sculpins","https://www.fishbase.ca/summary/Artedius-fenestralis.html",55.248144,50.1838988333333,49.6433835,48.69185
+"53","Platichthys stellatus","Starry flounder","","Flatfish","https://www.fishbase.ca/summary/Platichthys-stellatus.html",58.66285,51.7356658552632,50.035533,46.6722
+"54","Thunnus orientalis","Pacific bluefin tuna","","Other","https://www.fishbase.ca/summary/14290",49.19295,37.2827125,33.611715,32.71447
+"55","Ascelichthys rhodorus","Rosylip sculpin","north to central CA","Sculpins","https://www.fishbase.ca/summary/4051",52.05342,50.6243185,50.6243185,49.195217
+"56","Oncorhynchus clarkii clarkii","Cutthroat trout","north to Eel River",NA,NA,46.98382,42.43321,46.69456,33.62125
+"57","Alburnus alburnus","Bleak","freshwater europe",NA,NA,58.66285,51.8892523333333,50.137267,46.86764
+"58","Salvelinus taranetzi","Salvelinus taranetzi","russia",NA,NA,58.62695,57.1124345,57.1124345,55.597919
+"59","Hexagrammos agrammus","Spotty-bellied greenling","west pacific",NA,NA,55.708572,52.07153725,51.248847,50.079883
+"60","Mugil cephalus","Flathead grey mullet","south to cali",NA,NA,58.38105625,39.8803154166667,33.60218,32.6256755
+"61","Hypsoblennius gentilis","Bay blenny","south to Monterey Bay",NA,NA,33.60218,33.1148966666667,32.9708,32.77171
+"62","Paralabrax clathratus","Kelp bass","south to WA",NA,NA,32.77171,32.74309,32.74309,32.71447
+"63","Paralabrax nebulifer","Barred sand bass","south to Santa Cruz, CA",NA,NA,50.09155,38.52591,32.77171,32.71447
+"64","Anchoa mitchilli","Bay anchovy","Atlantic",NA,NA,33.768,33.3851118333333,33.76166,32.6256755
+"65","Seriola lalandi","Yellowtail amberjack","south to BC",NA,NA,32.71447,32.71447,32.71447,32.71447
+"66","Paralichthys californicus","California flounder","south to WA",NA,NA,37.94549,34.9056325,34.481285,32.71447
+"67","Fundulus lima","Killifish","tropical",NA,NA,58.38105625,45.675928125,45.675928125,32.9708
+"68","Hypsopsetta guttulata","Diamond turbot","south to Cape Mendicino",NA,NA,33.768,33.3694,33.3694,32.9708
+"69","Limanda limanda","Common dab","european",NA,NA,58.62695,58.4464354166667,58.38105625,58.3313
+"70","Gadus chalcogrammus","Alaska pollock","north to Sarmel, CA","Other","https://www.fishbase.ca/summary/Gadus-chalcogrammus.html",58.385583,50.230403875,49.564742,37.97229
+"71","Salvelinus malma","Dolly varden","freshewater - north to Washington",NA,NA,58.66285,55.937116,58.62695,50.521548
+"72","Lepidopsetta bilineata","Pacific rock sole","",NA,NA,52.05342,50.2877118333333,50.267912,48.46859
+"73","Oncorhynchus nerka","Sockeye salmon","north of Columbia River drainage in Oregon","Salmon","https://www.fishbase.ca/summary/oncorhynchus-nerka.html",51.64644,50.7574263333333,50.488572,50.137267
+"74","Gobiesox maeandricus","Northern clingfish","","Other","https://www.fishbase.ca/summary/Gobiesox-maeandricus.html",52.05342,50.410593,50.2907705,48.9123
+"75","Rimicola muscarum","Kelp clingfish","south to Queen Charlotte Islands","","https://www.fishbase.se/summary/Rimicola-muscarum.html",52.05342,50.396532,50.2907705,48.951167
+"76","Phytichthys chirus","Ribbon prickleback","","Eelpouts and pricklebacks","https://www.fishbase.ca/summary/3791",52.05342,50.470935,50.470935,48.88845
+"77","Blepsias cirrhosus","Silverspotted sculpin","north to central CA","Sculpins","https://www.fishbase.ca/summary/4054",50.079883,49.2813415,49.2813415,48.4828
+"78","Micrometrus minimus","Dwarf perch","south to Bodega Bay, CA",NA,NA,35.36039,35.36039,35.36039,35.36039
+"79","Sebastes auriculatus","Brown rockfish","",NA,NA,35.37208,35.37208,35.37208,35.37208
+"80","Myoxocephalus stelleri","Steller's sculpin","Alaska",NA,NA,50.499439,48.4009743846154,48.924283,38.0645
+"81","Pholis crassispina","Pholis crassispina","asian species",NA,NA,50.137267,49.3100335,49.3100335,48.4828
+"82","Brachyistius frenatus","Kelp perch","south to northern BC","Perches","https://www.fishbase.ca/summary/3625",50.444274,49.3931135,48.971692,48.69185
+"83","Microgadus proximus","Pacific tomcod","borth to central cali","Other","https://www.fishbase.ca/summary/Microgadus-proximus.html",50.444274,49.78542025,50.1144085,48.46859
+"84","Gibbonsia montereyensis","Crevice kelpfish","south to BC","Other","https://www.fishbase.ca/summary/Gibbonsia-montereyensis.html",50.09155,49.19225825,48.900375,48.876733
+"85","Liparis florae","Tidepool snailfish","north to Point Conception","Snailfish","https://www.fishbase.ca/summary/Liparis-florae",48.88845,48.88845,48.88845,48.88845
+"86","Hydrolagus colliei","Spotted ratfish","","Cartilaginous fishes","https://www.fishbase.ca/summary/Hydrolagus-colliei.html",48.88845,48.88845,48.88845,48.88845
+"87","Citharichthys sordidus","Pacific sanddab","","Flatfish","https://www.fishbase.ca/summary/Citharichthys-sordidus.html",50.444274,49.415008,48.9123,48.88845
+"88","Oxylebius pictus","Painted greenling","","Other","https://www.fishbase.ca/summary/Oxylebius-pictus.html",48.992217,48.971692,48.971692,48.951167
+"89","Oncorhynchus mykiss","Rainbow trout / steelhead","",NA,NA,50.444274,50.2907705,50.2907705,50.137267
+"90","Phanerodon vacca","Pile perch",NA,NA,NA,50.499439,47.5018358823529,49.1213,35.37208
