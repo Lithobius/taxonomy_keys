@@ -45,7 +45,7 @@ def get_search_terms(termsfile):
         # make it into a list
         first = f.readline()
         data_list = first.split(",")
-        logging.info(f"{data_list}")
+        #logging.info(f"{data_list}")
         return(data_list)
 
 def fasta_by_acc(query_list, outfile_path, outfile_name, errors):
@@ -92,10 +92,11 @@ def fasta_by_acc(query_list, outfile_path, outfile_name, errors):
                         logging.info(record.id)
                     else:
                         logging.info(record.id + " was too long")
+                        seq = str(record.seq)
                         # no decimals so its already crabs ready
                         accn_mod = re.sub('\.[1-9]', '\n', record.id)
                         # write to open fasta file
-                        err.write(">"+accn_mod+seq+"\n")
+                        err.write(">"+accn_mod+"\n"+seq)
                         pass
 
 
@@ -111,16 +112,17 @@ if __name__ == "__main__":
     # Path to fasta output,
     # name of fasta file currently defined in function (change)
     fasta_out_path = ("./database12s/crabs/")
-    fasta_new = ("20240212_12s_outgroups-ncbi-filter2.fasta")
+    fasta_new = ("20241006_12s_outgroups-ncbi-filter2.fasta")
     # path to txt for search terms
     # note check if trimmed
     search_terms = (
-        "database12s/crabs/20240212_12s_outgroups-ncbi-accn_trim.txt")
-    too_long = ('20240212_12s_ncbi-outgroups_toolong.txt')
+        "database12s/crabs/20241006_12s_outgroups-ncbi-accn-trim.txt")
+    too_long = ('20241006_12s_ncbi-outgroups_toolong.txt')
     # get search terms
+    # internet says if "backend failed:" its on NCBI's side
+    # so try again later.
     query = get_search_terms(search_terms)
     fasta_by_acc(query, fasta_out_path, fasta_new, too_long)
 
 # end
 logging.info('Fin!')
- 

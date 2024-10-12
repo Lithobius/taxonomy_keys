@@ -14,13 +14,21 @@ library(here)
 # here filepaths
 crabsdb <- here('database12s', 'crabs')
 
-datefield <- '20240226_'
+datefield <- '20241010_'
 ```
 
 
 ```{r loadin}
 mitofishdb <- read_csv(here(crabsdb, '20240226_mitofish_ncbi-taxonomy.csv')) %>%
   select(!desc_verbatim)
+
+# if updating
+mitofishdb2 <- read_csv(here(crabsdb, '20241010_mitofish_ncbi-taxonomy.csv')) %>%
+  select(!desc_verbatim)
+
+mitofishdb <- mitofishdb %>%
+  bind_rows(mitofishdb2) %>%
+  distinct()
 ```
 
 ```{r}

@@ -101,11 +101,11 @@ if __name__ == "__main__":
     # Path to fasta output,
     # name of fasta file currently defined in function (change)
     fasta_out_path = ("./database12s/crabs/")
-    fasta_new = ("20240212_12s_fish-ncbi-filter.fasta")
+    fasta_new = ("20241010_12s_fish-ncbi-filter.fasta")
     # search for ncbi
     query = "((((((Myxini[Organism]) OR Actinopterygii[Organism]) OR Dipnomorpha[Organism]) OR Chondrichthyes[Organism]) OR Hyperoartia[Organism]) OR Coelacanthimorpha[Organism]) AND 12S"
     # file to save accession numbers of records that are 'too long' ; whole genomes usually.
-    too_long = ('20240212_12s_ncbi-fish_toolong.txt')
+    too_long = ('20241010_12s_ncbi-fish_toolong.txt')
     # get search terms
     fasta_by_search(query, fasta_out_path, fasta_new, too_long)
 

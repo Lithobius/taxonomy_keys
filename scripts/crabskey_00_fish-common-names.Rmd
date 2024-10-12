@@ -1,0 +1,42 @@
+---
+title: "fish_common_names"
+author: "Kate Sheridan"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+Combining lists of common names I have been using
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+
+# here filepaths
+common_in <- here('species_lists', 'common-names')
+common_out <- here('latest-keys')
+
+datefield <- '20241001_'
+```
+
+```{r loadin}
+jennmatt2023 <- read_csv(here(common_in, '20230929_12s_common-names.csv'))[-1]
+
+peco2022 <- read_csv(here(common_in, '20230327_peco_species-list.csv'))[-1]
+
+```
+
+
+
+```{r merge}
+common_names_fish <- jennmatt2023 %>%
+  full_join(peco2022) %>%
+  add_count(found_taxa, name= 'n_dups') %>%
+  mutate(remove = case_when(is.na(biogeographical_notes) & n_dups > 1 ~ 'x')) %>%
+  filter(is.na(remove)) %>%
+  add_count(found_taxa, name= 'n_dups')
+```
+
+```{r}
+write.csv(common_names_fish, here(common_out, paste0(datefield, 'fish_common-names.csv')))
+```
+

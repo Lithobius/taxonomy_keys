@@ -12,7 +12,7 @@ We're just going to extract all the accessions so that we have a well rounded li
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(here)
-datefield <- '20240212_'
+datefield <- '20241001_'
 ```
 
 # load in
@@ -43,6 +43,10 @@ top10_mifish <- read.delim(here("database12s", "referencefiles",
 
 reblast_mifish <- read.delim(here("database12s", "referencefiles",
                                   "20231023_reblast_out-parsed.tsv"), 
+                           h = TRUE, fill = TRUE) 
+
+reblast_mifish_incl2023 <- read.delim(here("database12s", "referencefiles",
+                                  "20240925_reblast_out-parsed.tsv"), 
                            h = TRUE, fill = TRUE) 
 
 
@@ -76,7 +80,10 @@ reblast_accns <- reblast_mifish %>%
   distinct() %>%
   filter(!(accession %in% c('', fish_list$accession)))
 
-
+reblast_accns_incl2023 <- reblast_mifish_incl2023 %>%
+  select(description, accession) %>%
+  distinct() %>%
+  filter(!(accession %in% c('', fish_list$accession)))
 ```
 
 
@@ -86,6 +93,7 @@ reblast_accns <- reblast_mifish %>%
 notfish <- top10_mifish_accns%>%
   rbind(top500_mifish_accns) %>%
   rbind(reblast_accns) %>%
+  rbind(reblast_accns_incl2023) %>%
   distinct(accession, .keep_all = TRUE) %>%
   mutate(remove = case_when(str_detect(description, 'Ammodytes|Amphistichus|Artedius|Aulorhynchus|Brosmophycis')|
                               str_detect(description, 'Citharichthys|Clevelandia|Chimaera|Engraulis')|
@@ -114,4 +122,5 @@ write_file(ncbi_string,
                        paste0(datefield, '12s_outgroups-ncbi-accn.txt')))
 
 ```
+
 

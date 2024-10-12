@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # extract accession numbers
     get_terms_fasta(mitofish_fasta)
     # outfile
-    search_terms = here("./database12s/crabs/20240226_mitofish-accns.txt")
+    search_terms = here("./database12s/crabs/20241010_mitofish-accns.txt")
     save_accns(search_terms)
 
 # end
