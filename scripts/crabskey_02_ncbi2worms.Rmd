@@ -18,8 +18,8 @@ library(worrms)
 crabs_files <- here('database12s', 'crabs')
 
 # fields
-datefield_in <- '20240310_'
-datefield_out <- '20240315_'
+datefield_in <- '20241010_'
+datefield_out <- '20241010_'
 ```
 
 ```{r worms-function}
@@ -262,6 +262,16 @@ ncbi_taxonomy <- crabs_db_raw %>%
   # anything left over
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Ssk)$|(Kiv)$|(Kiy)$|EcFYyyy")) %>%
   mutate(taxonomy_search = str_replace_all(taxonomy_search, c('auratus red' = 'auratus'))) %>%
+    mutate(taxonomy_search = case_when(taxonomy_search == 'Psedoliparis' ~ 'Pseudoliparis',
+                                # taxonomic revision of polyptera greeni
+                                taxonomy_search == 'Polyperai' ~ 'Liparis greeni',
+                                taxonomy_search == 'Polyptera greeni' 
+                                ~ 'Liparis greeni',
+                                taxonomy_search %in% 
+                                  c('Brachymystax tsinlingensis',
+                                    'Macquaria wujalwujalensis') 
+                                ~ taxonomy_search,
+                                TRUE ~ taxonomy_search)) %>%
   mutate(taxonomy_search = trimws(taxonomy_search)) %>%
   # set up filters
   mutate(hybrid = ifelse(str_detect(taxonomy_search, ' x '), 'hybrid', NA_character_))
@@ -318,7 +328,7 @@ fish_worms_result <- fish_worms2 %>%
   add_count(taxa_verbatim, name = 'n_dups') %>%
   select(!(c(ncbi_spaces, worms_spaces, n_stat)))
 
-#saveRDS(fish_worms_result, here(crabs_files, "20240311_worms_result.RDS"))
+#saveRDS(fish_worms_result, here(crabs_files, "20241010_worms_result.RDS"))
 #fish_worms_result <- readRDS(here(ncbi, "20230929_fish_worms_result.RDS"))
 
  # extract higher and info about freshwater
@@ -356,7 +366,7 @@ fish_worms_records_df <- fish_worms_records %>%
 
 
 
-saveRDS(fish_worms_records_df, here(crabs_files, '20240311_fish_worms_records.RDS'))
+saveRDS(fish_worms_records_df, here(crabs_files, '20241010_fish_worms_records.RDS'))
 ```
 
 Now see what was missed by re-merging
@@ -417,7 +427,8 @@ fish_fail <- worms_ncbi_remerge %>%
                                                               'Pomacentrusminamiisosuzumedai' = 'Pomacentrus',
                                                               'Myripristisfieldi' = 'Myripristis greenfieldi',
                                                               'Cubicepsleggii' = 'Cubiceps whiteleggii',
-                                                              'Acanthogobius elongata' = 'Acanthogobius')))
+                                                              'Acanthogobius elongata' = 'Acanthogobius',
+                                                              'Yarrellafordi' = 'Yarrella blackfordi')))
 
 
 worms_search_fail <- fish_fail %>%

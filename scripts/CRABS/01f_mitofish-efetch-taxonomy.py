@@ -74,7 +74,7 @@ if __name__ == "__main__":
     outpath = ("./database12s/crabs/")
     # path to txt for search terms
     #search_terms = ("20230917_12s_combined-ncbi-accn.txt")
-    search_terms = ("20241010_mitofish-accns.txt")
+    search_terms = ("20241010_mitofish-accns_newonly-trim.txt")
     taxonomy_out = ('20241010_mitofish_ncbi-taxonomy.csv')
     # get search terms
     taxonomy_by_acc(search_terms, outpath, taxonomy_out)

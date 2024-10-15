@@ -12,6 +12,8 @@
 # move to folder for data download/processing
 cd database12s/crabs
 
+pwd
+
 # 9 export
 # exports databse into a format for taxonomy assignment
 # in format chose the one you want based on the program you will use
@@ -23,8 +25,8 @@ cd database12s/crabs
 ### Note I don't see accession or species in DAD format
 ## dads: >KY250421 Oncorhynchus Oncorhynchus_masou
 ## idt: >Eukaryota;Chordata;Actinopteri;Gadiformes;Gadidae;Gadus;Gadus_macrocephalus
-crabs tax_format --input 20240310_dbcleaned.tsv --output blastdb/20240310_12s_crabs.fasta --format rdp
+crabs tax_format --input 20241010_dbcleaned.tsv --output blastdb/20241010_12s_crabs.fasta --format rdp
 
 # makeblastdb from ncbi command line tools
 # manual and instructions: https://www.ncbi.nlm.nih.gov/books/NBK569861/
-makeblastdb -in blastdb/20240310_12s_crabs.fasta -out blastdb/crabs-mifish -title 20240310_crabs-mifish -dbtype nucl -parse_seqids
+makeblastdb -in blastdb/20241010_12s_crabs.fasta -out blastdb/crabs-mifish -title 20241010_crabs-mifish -dbtype nucl -parse_seqids

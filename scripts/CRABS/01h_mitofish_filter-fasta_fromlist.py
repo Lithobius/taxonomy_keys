@@ -62,10 +62,10 @@ def fastamatch(list_in, fasta_in, fasta_out):
 if __name__ == "__main__":
 
     # input list of accessions that passed QC
-    asvlist = here('./database12s/crabs/20240226_mitofish_12s.txt')
+    asvlist = here('./database12s/crabs/20241010_mitofish_12s.txt')
     # input FASTA
     fasta = here('./database12s/crabs/mitofishdb.fasta')
-    new_fasta = here('./database12s/crabs/20240226_mitofish_12s-filter.fasta')
+    new_fasta = here('./database12s/crabs/20241010_mitofish_12s-filter.fasta')
     # run fasta function
     fastamatch(asvlist, fasta, new_fasta)
 
