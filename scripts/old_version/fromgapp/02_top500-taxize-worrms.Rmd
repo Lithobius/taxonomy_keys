@@ -1,0 +1,222 @@
+---
+title: "top500"
+output: html_document
+date: "2023-04-12"
+---
+
+This script takes the top 500 list and runs it through gbif via taxize and worms via worrms
+
+to do: update column headers to be useful, coalesce into found-species column
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(worrms)
+library(taxize)
+library(here)
+
+
+# here filepaths
+splists <- here('processeddata', 'species_lists', 'from_data')
+```
+
+This function pulls from worms using worrms
+```{r worms-function}
+## requires worrms to be loaded
+# input is vector of species names
+# use wm_records_names to extract 
+# this doesn't need the + signs
+
+# right now this breaks if not-found
+search_records_worms <- function(spnames) {
+  search <- tibble()
+  for (i in spnames) {
+    print(paste0('searching for ', i))
+    record <- wm_records_names(i, marine_only = FALSE)
+    message('done')
+    search <- append(search, record)
+  }
+  names(search) <- spnames
+  search_output <- map_dfr(.x = search, ~ data.frame(.x), .id = 'query') %>%
+    janitor::clean_names() %>%
+    select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+  return(search_output)
+}
+```
+
+
+```{r load-in}
+top500_mifish <- read.delim(here("rawdata", "top500_20230405",
+                                   "blast_96_sim_LCA_besthit", "12S_ASV_sequences.length_var.blast.out"), 
+                           h = TRUE, fill = TRUE) %>% 
+  # standardize names and remove overhanging x
+  janitor::clean_names() %>%
+  rename_with(., ~str_remove_all(string = .,
+                 pattern = "x_")) %>%
+  separate_wider_delim(taxonomy, delim = ' / ', 
+                       names = c('kingdom', 'phylum', 'class', 'order', 
+                                 'family', 'genus', 'species')) %>%
+  # column to match existing scripts
+  rename(asv = query_id) %>%
+  filter(kingdom == "Eukaryota")
+```
+
+
+
+```{r}
+top500_sp <- top500_mifish %>%
+  filter(class %in% c("Actinopteri", "Chondrichthyes"))  %>% 
+  select(c("species")) %>%
+  distinct()
+
+# use gbif/ncbi to resolve the initial round of dirty names
+top500_ncbi <- get_ids_(top500_sp$species, db = c("gbif", "ncbi"))
+
+# results to dataframe
+top500_ids2 <- tibble(taxa_query = names(top500_ncbi$ncbi),
+                      gbif = top500_ncbi$gbif, 
+                      ncbi = top500_ncbi$ncbi) %>%
+  # remove from lists
+  unnest_longer(c(gbif, ncbi), keep_empty = TRUE) %>%
+  # remove from next layer of lists
+  unpack(cols = everything(), names_sep = "_") %>%
+  # eliminating fuzzy matches for now
+  filter(gbif_matchtype == 'EXACT') %>%
+  select(taxa_query, gbif_canonicalname, ncbi_scientificname, ncbi_commonname,
+         gbif_usagekey, ncbi_uid, gbif_status) %>%
+  mutate(gbif_status = tolower(gbif_status)) %>%
+  add_count(taxa_query) %>%
+  filter(!(n > 1 & gbif_status != 'accepted')) %>%
+  select(!(n)) %>%
+  rename(gbif_name = gbif_canonicalname,
+         ncbi_name = ncbi_scientificname) 
+
+ 
+# update species list with gbif results  
+top500_sp <- top500_sp %>%
+  left_join(top500_ids2, by = c('species' = 'taxa_query')) %>%
+  rename(verbatim_name = species) %>%
+  mutate(taxa_query = coalesce(gbif_name, verbatim_name)) %>%
+  distinct() %>%
+  mutate(worms_query = gsub(" ", "+", taxa_query))
+
+# generate search for worms, given curl error
+top500_search <- top500_sp %>%
+  select(taxa_query, worms_query) %>%
+  distinct()
+  
+  
+# worms id
+# we only want to search for species that are in worms, or we'll get errors
+top500_worms <- get_wormsid_(sci_com = top500_search$worms_query, marine_only = FALSE,
+                           accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+top500_worms2 <- top500_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'worms_query') %>%
+  rename(worms_status = status) %>%
+  # remove unnecessary subspecies
+  ## either TWO plus signs in query (subspecies query, keep subspecies result) OR
+  ## ONE space in results (species query = species result)
+  filter((str_detect(worms_query, regex("(\\+)[a-z]*(\\+)"))) |
+           str_detect(scientificname, regex("^[A-Z,a-z]+(\\s)[a-z]*$"))
+           ) %>%
+  rename(worms_sciname = scientificname,
+         worms_aphiaid = AphiaID) %>%
+  select(!(authority)) %>%
+  distinct() %>%
+  # remove unaccepted duplicates
+  add_count(worms_sciname) %>%
+  filter(!(n > 1 & worms_status != "accepted")) %>%
+  select(!(n))
+  
+
+top500_records <- search_records_worms(top500_worms2$worms_sciname)
+
+
+# refine results to be useful
+top500_records2 <- top500_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         worms_match = scientificname,
+         worms_name = valid_name,
+         worms_status = status,
+         taxa_query = query
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, aphia_id,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_name, worms_aphiaid)) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank)) %>%
+  # remove unaccepted duplicates
+  add_count(worms_name) %>%
+  filter(!(n > 1 & worms_status != "accepted")) %>%
+  select(!(n))
+
+
+
+# update species list with worms results
+top500_sp_worms <- top500_sp %>%
+  left_join(top500_records2) %>%
+  # one column for found results
+  mutate(found_taxa = coalesce(worms_name, taxa_query),
+         worms_status = coalesce(unacceptreason, worms_status)) %>%
+  relocate(found_taxa, worms_name) %>%
+  select(!(c(worms_query, worms_match, unacceptreason, rank,
+             valid_authority, terrestrial_only, taxa_query))) 
+
+
+# fill in higher taxonomy from worms if possible
+# make list of higher taxonomy found
+found_higher <- top500_sp_worms %>%
+  filter(!(is.na(worms_name))) %>%
+  select(kingdom, phylum, class, order, family, genus) %>%
+  distinct() %>%
+  mutate(genus_extract = genus)
+
+# match found genera with found higher taxonomy
+found_genera <- top500_sp_worms %>%
+  filter(is.na(worms_name)) %>%
+  select(found_taxa) %>%
+  # first word in string is genus, presumably
+  separate_wider_delim(found_taxa, delim = " ", 
+                       names = c("genus_extract"), 
+                       too_many = 'drop', cols_remove = FALSE) %>%
+  left_join(found_higher)
+
+# update found species list with the matched genera
+top500_sp_worms <- top500_sp_worms %>%
+  # join only by one column
+  left_join(found_genera, by = 'found_taxa') %>%
+  # coalesce and remove duplicates
+  mutate(kingdom = coalesce(kingdom.x, kingdom.y),
+         phylum = coalesce(phylum.x, phylum.y),
+         class = coalesce(class.x, class.y),
+         order = coalesce(order.x, order.y),
+         family = coalesce(family.x, family.y),
+         genus = coalesce(genus.x, genus.y, genus_extract)) %>%
+  select(!(c(kingdom.x, kingdom.y, phylum.x, phylum.y,
+             order.x, order.y, class.x, class.y,
+             family.x, family.y, genus.x, genus.y,
+             genus_extract))) %>%
+  # get rid of anything not found at this point
+  filter(!(is.na(kingdom)))
+
+
+```
+
+
+
+```{r}
+write_csv(top500_sp_worms, here(splists, '20230501_gapp-1b-pacific_fish-top500-worrms.csv'))
+```
+

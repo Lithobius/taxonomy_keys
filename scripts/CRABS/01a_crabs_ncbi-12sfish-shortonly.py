@@ -6,10 +6,10 @@ This script queries NCBI using Biopython.
 
 Here we will use a search query and download a fasta of results below 500,000 base pairs into a FASTA, with accession numbers indicating that it was above that into a text file to be queried later.
 
+Updated for Crabs 1.0.0 release
 
-Any license info also goes here
 Author: "Kate Sheridan"
-Version: "0.1.0"
+Version: "0.2.0"
 Status: dev
 insert copyright, license, additional credits etc if necessary
 """

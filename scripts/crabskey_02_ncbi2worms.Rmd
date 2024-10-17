@@ -740,7 +740,11 @@ final_merge <- worms_ncbi_remerge %>%
   # inculdes same-name invertebrates
   filter(!(n_dups > 1 & worms_aphiaid %in% c(342486, 249584, 275332, 1018268, 1007204, 1525460))) %>%
   add_count(accession, name = 'n_dups') %>%
-  select(!n_dups)
+  select(!n_dups) %>%
+    mutate(kingdom = case_when(found_taxa %in% c('Unknown bacteria') ~ 'Bacteria',
+                             kingdom %in% c('Animalia') ~ 'Eukaryota',
+                             phylum %in% c('Chordata') ~ 'Eukaryota',
+                             TRUE ~ kingdom))
 
 write_csv(final_merge, here(crabs_files, paste0(datefield_out, '12s_crabs_taxonomy-key.csv')))
 ```
