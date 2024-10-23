@@ -53,9 +53,9 @@ def name_extract(raw_fasta, csv2write):
 if __name__ == "__main__":
 
     # input FASTA
-    fasta = here("./database12s/crabs/blastdb/20241010_12s_crabs.fasta")
+    fasta = here("./database12s/crabs/blastdb_make/20241015_crabs_mifish.fasta")
     # csv to write out
-    new_csv = here("./database12s/crabs/20241010_12s_crabs_headers.csv")
+    new_csv = here("./database12s/crabs/20241015_12s_crabs_headers.csv")
     # run fasta function
     name_extract(fasta, new_csv)
 

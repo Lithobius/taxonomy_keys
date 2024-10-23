@@ -17,7 +17,5 @@ cd database12s/
 # uses pairwise global alignment to test if
 # any of the references just had the primers trimmed out
 # this appends to pcr results
+# this also adds the taxonomy in the process, elimitating a step from the past pipeline
 crabs --pairwise-global-alignment --amplicons crabs/20241015_crabs3_pcrout.txt --input crabs/20241015_12s_crabs-merge.txt --output crabs/20241015_crabs4_pgaout.txt --percent-identity .9 --coverage .9 --forward GTCGGTAAAACTCGTGCCAGC --reverse CATAGTGGGGTATCTAATCCCAGTTTG #--all-start-positions
-
-
-crabs pga  --speed medium ----filter_method relaxed

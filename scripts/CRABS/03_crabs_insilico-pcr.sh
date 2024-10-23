@@ -17,3 +17,5 @@ cd database12s/
 # 12S	MiFish-U, FW:GTCGGTAAAACTCGTGCCAGC, R:CATAGTGGGGTATCTAATCCCAGTTTG
 # NOTE: check python version if error
 crabs --in-silico-pcr --input crabs/20241015_12s_crabs-merge.txt --output crabs/20241015_crabs3_pcrout.txt --forward GTCGGTAAAACTCGTGCCAGC --reverse CATAGTGGGGTATCTAATCCCAGTTTG --untrimmed crabs/20201015_crabs3_untrimmed.txt --mismatch 6
+
+crabs --in-silico-pcr --input crabs/20241015_12s_crabs-merge.txt --output crabs/20241015_crabs3_pcrout2.txt --forward GTCGGTAAAACTCGTGCCAGC --reverse CATAGTGGGGTATCTAATCCCAGTTTG --untrimmed crabs/20201015_crabs3_untrimmed.txt --mismatch 3

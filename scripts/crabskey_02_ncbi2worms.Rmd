@@ -18,8 +18,8 @@ library(worrms)
 crabs_files <- here('database12s', 'crabs')
 
 # fields
-datefield_in <- '20241010_'
-datefield_out <- '20241010_'
+datefield_in <- '20241015_'
+datefield_out <- '20241015_'
 ```
 
 ```{r worms-function}
@@ -67,7 +67,7 @@ ncbi_taxonomy_offtarget <- crabs_db_raw %>%
          genus = taxonomy_7) %>%
   # remove the fish
   filter(!(class %in% c('Actinopteri', 'Chondrichthyes', 'Hyperoartia',
-                        'Cladistia')|order %in% c('Ceratodontiformes', 'Coelacanthiformes'))) %>%
+                        'Cladistia', 'Myxini')|order %in% c('Ceratodontiformes', 'Coelacanthiformes'))) %>%
   # clean up taxonomy 8 to be verbatim and found
   mutate(taxa_verbatim = ifelse(taxonomy_8 %in% c(''), NA_character_, taxonomy_8)) %>%
   mutate(taxa_verbatim = str_replace_all(taxa_verbatim, "_", " ")) %>%
@@ -109,7 +109,12 @@ ncbi_taxonomy_offtarget <- crabs_db_raw %>%
   mutate(found_taxa = case_when(is.na(found_taxa) | found_taxa %in% c('uncultured organism', 
                                                                       'uncultured marine organism',
                                                                       'uncultured marine microorganism',
-                                                                      'uncultured microorganism') ~ 'Unknown organism',
+                                                                      'uncultured microorganism', 'unidentified',
+                                                                      'unidentified microorganism', 
+                                                                      'unidentified soil organism',
+                                                                      'fish environmental sample',
+                                                                      'Lucina environmental sample',
+                                                                      'environmental clone') ~ 'Unknown organism',
                                 str_detect(found_taxa, 'cyanobacterium') ~ 'Cyanobacteria',
                                 found_taxa %in% c('uncultured prokaryote', 'bacterium', 
                                                   'marine sponge bacterium', 'unidentified marine eubacterium',
@@ -124,16 +129,20 @@ ncbi_taxonomy_offtarget <- crabs_db_raw %>%
                                 found_taxa %in% c('uncultured marine pelagophyte', 'uncultured alga',
                                                   'uncultured marine dictyochophyte', 'phototrophic eukaryote',
                                                   'uncultured marine phototrophic eukaryote', 
-                                                  'uncultured marine algae',
+                                                  'uncultured marine algae', 'Haptophyta environmental samples',
                                                   'uncultured marine haptophyte', 'uncultured Streptophyta',
+                                                  'uncultured euglenozoan', 'uncultured Emiliania', 
                                                   'uncultured eukaryotic phytoplankton') ~ 'Unknown algae',
-                                found_taxa %in% c('uncultured protist') ~ 'Unknown protist',
+                                found_taxa %in% c('uncultured protist', 'uncultured alveolate') ~ 'Unknown protist',
                                 found_taxa %in% c('uncultured diatom') ~ phylum,
                                 found_taxa %in% c('uncultured marine chrysophyte',
                                                   'uncultured Chrysophyceae') ~ class,
+                                found_taxa %in% c('uncultured fungus') ~ 'Unknown fungi',
+                                found_taxa %in% c('Actinopterygii') ~ 'Unknown fish',
                                 TRUE ~ found_taxa)) %>%
   mutate(common_name = case_when(
-                                 kingdom %in% c('Bacteria', 'Archaea') ~ kingdom,
+                                 kingdom %in% c('Bacteria', 'Archaea', 'Viruses') ~ kingdom,
+                                 phylum %in% c('Ciliophora', 'Euglenozoa') ~ 'Protist',
                                  class %in% c('Pelagophyceae', 'Dictyochophyceae', 
                                               'Raphidophyceae', 'Bolidophyceae',
                                               'Cryptophyceae') |
@@ -162,6 +171,7 @@ ncbi_taxonomy_offtarget <- crabs_db_raw %>%
                                  family == 'Columbidae' ~ 'Pidgeon',
                                  family == 'Anatidae' ~ 'Duck',
                                  family == 'Hirundinidae' ~ 'Swallow',
+                                 family == 'Gaviidae' ~ 'Loon',
                                  # larger vertebrate groupings
                                  family == 'Cervidae' ~ 'Other deer',
                                  family == 'Mephitidae' ~ 'Skunk',
@@ -176,15 +186,21 @@ ncbi_taxonomy_offtarget <- crabs_db_raw %>%
                                  class == 'Chrysophyceae' ~ 'Golden algae',
                                  phylum == 'Chlorophyta' | class %in% c('Mesostigmatophyceae') ~ 'Green algae',
                                  phylum == 'Dinophyceae' ~ 'Dinoflagellate',
+                                 phylum == 'Porifera' ~ 'Sponge',
+                                 phylum == 'Annelida' ~ 'Annelid worm',
                                  class == 'Dinophyceae' ~ 'Dinoflagellate',
                                  class == 'Insecta' ~ 'Insect',
+                                 class == 'Magnoliopsida' ~ 'Flowering plant',
+                                 class == 'Bivalvia' ~ 'Bivalve',
+                                 class %in% c('Malacostraca') ~ 'Marine crustacean',
                                  phylum == 'Rhodophyta' ~ 'Red algae',
+                                 phylum == 'Ascomycota' ~ 'Sac fungi',
                                  phylum == 'Bacillariophyta' ~ 'Diatom',
                                  phylum == 'Foraminifera' ~ 'Foraminifera',
                                  phylum %in% c('Oomycota', 'Oomycetes') ~ 'Water mold',
                                  found_taxa %in% c('Unknown organism', 'Unknown bacteria', 
-                                                   'Unknown eukaryote', 'Unknown archaea',
-                                                   'Unknown algae', 'Unknown protist') ~ found_taxa
+                                                   'Unknown eukaryote', 'Unknown archaea', 'Unknown fish',
+                                                   'Unknown algae', 'Unknown protist', 'Unknown fungi') ~ found_taxa
                                  )) %>%
   select(!taxonomy_8) %>%
   mutate(rank = 'offtarget') %>%
@@ -220,21 +236,52 @@ ncbi_taxonomy <- crabs_db_raw %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
   # remove species and genus related terms
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "( sp)$|(_sp_)|( sp )|( sp\\.)|( ssp\\.)")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Gen)|( gen n)|( gen)$|( gen )|( gen\\.)")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(cf\\. )|( aff )|(aff\\.)|( taxonomy_search complex)|( Group )|( group )|( group)$|( complex)$|( complex )|( complex type)|( complexnew)|( complexc)|( var\\.)|( Var)$|( clade )|( clade)$|( und)$|( undet)$|( unk)$| unnamed| sensu lato|  sesu lato|  sensu stricto|( intermediate )|Hybrid")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(cf\\. )|( aff )|(aff\\.)|( taxonomy_search complex)|( Group )|( group )|( group)$|( complex)$|( complex )|( complex type)|( complexnew)|( complexc)|( var\\.)|( Var)$|( clade )|( clade)$|( und)$|( undet)$|( unk)$| unnamed| sensu lato|  sesu lato|  sensu stricto|( intermediate )|Hybrid|environmental sample")) %>%
   # museum/collection related words
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( type )|Type |( Type)$|( type)$|( n )|( new)$|( n\\.)|( nov )|(nomen nudum)|(nom\\. nud\\.)|Haplotype|Lineage|Unidentified|uncataloged|uncatalogued|(DNA No\\.)|( et al\\.)|MCZuncat")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( type )|Type |( Type)$|( type)$|( n )|( new)$|( n\\.)|( nov )|(nomen nudum)|(nom\\. nud\\.)|Haplotype|Lineage| lineage|Unidentified|uncataloged|uncatalogued|(DNA No\\.)|( et al\\.)|MCZuncat| population")) %>%
   # lab related words
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "Ustrain")) %>%
     # morphology
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(large spot)|(small spot)|( Spotted)|( barred)|( dwarf)| Cribrimorphlike|( pinnules)|( crescent)$|( spiral)$|(collar)|( Laser)|( Super)$|( special)$|( Illuminator)|( long )|( Long )|( short)$|( short )|( Last)| stripe | blotch| deep |( scute)$| scute | upper | left |( left)$| shallow|Longtailed|(Gluteus)$| Pearl|(Fly)$|( papilio )|( slender)|( variant)|Dotted|Lined|(Big )|Upper|( Horn)$|(Crystal)$|(red cheek)|(red tilapia)")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(large spot)|(small spot)|( Spotted)|( barred)|( dwarf)| Cribrimorphlike|( pinnules)|( crescent)$|( spiral)$|(collar)|( Laser)|( Super)$|( special)$|( Illuminator)|( long )|( Long )|( short)$|( short )|( Last)| stripe | blotch| deep |( scute)$| scute | upper | left |( left)$| shallow|Longtailed|(Gluteus)$| Pearl|(Fly)$|( papilio )|( slender)|( variant)|Dotted|Lined|(Big )|Upper|( Horn)$|(Crystal)$|(red cheek)|redeye|(red tilapia)|( elongate)|( plain)$|( plain )|deepwater|( scraper)$|mudfeeder|(bulky head)")) %>%
   # color
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Black)| black| chocolate|( Green)|( green)|( Red)|(Red)$|( red )|(  red)$|( rosy)|(Verde)$| orangecollar| Orange| orange |( orange)$|( yellow)|( Yellow)|( yellowback)|( yellowcollar)|( yellowpatch)|( Gold)|(Gold)$|( albino )|( white)|( White)| blond|( neon)$|( Aoi)|( Blue)|( blue )|( tan )")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Black)| black| chocolate|( Green)|( green)|( Red)|(Red)$|( red )|(  red)$|( rosy)|(Verde)$| orangecollar| Orange| orange |( orange)$|( yellow)|( Yellow)|( yellowback)|( yellowcollar)|( yellowpatch)|( Gold)|(Gold)$|( gold)$|( albino )|( white)|( White)| blond|( neon)$|( Aoi)|( Blue)|( blue )|( blue)$|( tan )")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
   # leaving periods in for a while makes some of the annoying stuff easier to find
   # now its getting in the way though
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "\\.")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "\\,")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "Kirinanahaze|Komonyatsushihaze|Mparis|(Ansp)$|Chao Phraya|Rio Branco| Clade")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(IDEA Fish)|FISHCARD|(Puma Loach)|(FMNH Uncat)| barbel steed| sensu| in bony fishes| larva| golden dust| Freshwater| Brackish| limnetic|environmental sample| Lake| River| Island|( litoral)$|( profundal)| Profundal| South| North| East| West")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Adan)$| Adirondacks|( Australia)$|(Great Australian Bight)| Azores| Andai| Akaebi| Acla| Argis| Austria| Antalaha| Albanien| Almenara| Araguaia| Amazonas| Agua Santa|Ao Itai|AzovSea| Atabapo")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Benin)|( Bidou)|( Bissiang)|Banka|( Bioko)|( Bundu)|( Bush)$|(Bitter)|(Bivavotou)|(Bioko)| Beforana| Betampona|( Borneo)| Beysehir| Betari| Bangladesh|bakemimizuhaze|bakeaomeeso| Bodenbalchen")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Cape )|(China )|( China)| Carombe|( Carib)$|( Cap Esterias)|(Chiba Museum)|( Chiba)$|(CabotCenter)| Continental| Cayman| Caracol| Calibasis| Chiriqui| Collier|( Caroline)| Contulmo| Chao Phraya|( Cana)| Columbia| Corrantijn|Corrego Seco|Corantijn| chengtui|Csp| Chala")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "Darling")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Girona| Gekara|(Greece)$|Guangdong|Guangxi|Guizhou|( Garcia)| Guinea| Ginbuna| Guyana| Gamba| Guama|gomamimizuhaze| gomahaze| Grande")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "hoshikikaiutsubo| Hoyosa| Hikari|HoMal|HorChn|HoThi| Hosoya|hauchiwayarimimizuhaze|hiironagamimizuhaze| hosomimizuhaze| Huacamayo| Humbolt")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Ivoloina|( Israel)| Ikorodu| Inji| Ijebu Ode|(Italy)| Izumihaze|(Iguassu)|ichimonjimimizuhaze| Ireng||IzumiHaze| Jari| Jorai")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Kirk)$| Kalungwishi|( Kocher)|(Kipar)|(Kribi)|(Kuckuk)$|(Katsutoshi Watanabe)|(Komonyatsushihaze)|(Khukh)|(Kinbuna)| Karianga|(Kapinar)| Kieth| Kisangani| Kongou| Koliba| kamahiremimizuhaze|kimairamimizuhaze|komuginagamimizuhaze|kawakumohaze")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Lagos)|(Lebanon)$|( LoireLac)|(Liang Cao)| Lleida||(Lobaye)| Lucien|Lakes|Laos| Lucien|Lobaye| lineage| Lucerne")) %>%
+    mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Muerz)|( Malibo)||(Midgleys)|(Murray)| Mazinzi| Mfulgida| MinasBasin| MagdalenIs|( Mai)|( Mic)$|(Micnat)| MicRamrun| Mitsem| Madimba|(Madeira)| Mundemba| Machinda| Makuya|( Mexico)| Montenegro| Madagascar| Manjavacas| Makira| Martinique| Maranho| Moabi| Myanmar| Miya| Malinau| Manombo| Mahanara| Munday| Massana|(Masatoshi Nakamura)| Magdalena| Mongagu| Maroni| Martinso| Macacu| Maroa| mizuhikinagamimizuhaze|(personalMasatoshi Nakamura)| Miya")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Monzon| Magdalena| Macacu| Mongagu| Martinso| Maroni| Mato Grosso|mizuhikinagamimizuhaze|misujihaze|Maracaibo| Mahanara|Malinau|Manombo|Mazaruni| Myanmar| Munday|MidgleysLakes|MidgleysMurray| Maroa|( Mai)")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Nazilli)$| Ndombe| Ngombe| Nguru| Ndop| Nakuru| Nakabo|( Negro)$| Nevada| Nakabo| Nigeria| Nanay| Nassau|nagasakitsunozame|NanHai|Nihonkai")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Orinoco|( Oba)$| Omona|Omono|( Oyo)$|ochokonagamimizuhaze|oguronagamimizuhaze")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Patrocnica| Patchogue| Pachon|(Paris)| Pampang| Patrocnica| Patchogue| Pachon|(Pingxiang)| Paraguay| Parguaza| Paraguaza|( Peru)|( Panama)| Piedade| Puerto Ayucucho|Paraiba do Sol| Pakistan|Puerto Ayacucho|Paraiba do Sul| Previsto| Phantom|( Puri)$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Rio Chirgua)|Rio Parana| Ranomafana| Rakhine|( Rio)$|(Rio Sao Francisco)|Rio de Toca|(Rio Supamo)|Ruosonghe| Rio da Toca|Ribeira|Rupununi| Rio Baia|ryukyuhanahaze| Rhine| Rhone")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Suji)|( Suiyo)|( Smith)$|( Stevens)|(Shibukawa)| Salsburger| Surinam| Stepian| Stepien|(Sanya)|(Spain)$|( sagami)|(Santa Clara)| Scorff| Sahiler| Sambava| Samou|(Serra do Cip)|(sPengze)|Sao Joao| Synaptura|shirohigesejirohaze|somewakeaitoragisu| southern|Stuartgranti Maleri|Schwebbalchen|Sarnerfelchen|Southland")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Thalye)| tanukihaze| Tapajos|( Tres Marias)|(Taiwanese)|Tocantins| Tobogan|TallinnMarket| Tokai")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Ural)$|(United Kingdom)|( Urocara)|( Ulimi)| Uruguay| Ucayali")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Venezuela)|( Vanpoe)| Vevembe| Von Humboldt|(Von Humboldt)|VolgaDelta|(Volga)$| Volta|Vierwaldstaettersee|VietNam")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Xingu")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Wainwright)$|( Whitewater)| Walen")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Yoma)|yoshinogochi| Yang|( Zagno)|( Zarco)|( Zhange)|(Zhang)$|Zugeralbeli")) %>%
+  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Tht)$|personalMasatoshi Nakamura|natural gynogenetic| Miya|( Mel)$|( Li)$| Jari|IzumiHaze|(personal)$|Odsp|( Von)$| Lucien| auip|( ausc)$| Branco|narinariocellatus|( Laos)$|OKNBlk|( bw)$|( da)$|( db)$|( dc)$|( dd)$|( de)$|( gr)$|Lobaye| Hje| Vzg| WBngl|BCITrub")) %>%
   mutate(taxonomy_search = trimws(taxonomy_search)) %>%
   # remove some of the random lowercase letters and upper lower combos
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "( [a-z{1}])$")) %>%
@@ -259,9 +306,21 @@ ncbi_taxonomy <- crabs_db_raw %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_replace_all(taxonomy_search, "  ", " ")) %>%
   # anything left over
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Ssk)$|(Kiv)$|(Kiy)$|EcFYyyy")) %>%
-  mutate(taxonomy_search = str_replace_all(taxonomy_search, c('auratus red' = 'auratus'))) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Ssk)$|(Kiv)$|(Kiy)$|EcFYyyy|(Dja)$|Fishec|( Thun)$|Vierwaldstattersee")) %>%
+  mutate(taxonomy_search = str_replace_all(taxonomy_search, c('auratus red' = 'auratus',
+                                                              ' C ' = ' ',
+                                                              ' CW ' = ' ',
+                                                              ' rock ' = ' ',
+                                                              ' gr ' = ' ',
+                                                              ' Thunersee' = ''))) %>%
+  mutate(taxonomy_search = str_replace_all(taxonomy_search, c("ias gr mala" = "ias mala",
+                                                              'Pomacentrusminamiisosuzumedai' = 'Pomacentrus',
+                                                              'Myripristisfieldi' = 'Myripristis greenfieldi',
+                                                              'Cubicepsleggii' = 'Cubiceps whiteleggii',
+                                                              'Acanthogobius elongata' = 'Acanthogobius',
+                                                              'Yarrellafordi' = 'Yarrella blackfordi'))) %>%
     mutate(taxonomy_search = case_when(taxonomy_search == 'Psedoliparis' ~ 'Pseudoliparis',
                                 # taxonomic revision of polyptera greeni
                                 taxonomy_search == 'Polyperai' ~ 'Liparis greeni',
@@ -328,7 +387,7 @@ fish_worms_result <- fish_worms2 %>%
   add_count(taxa_verbatim, name = 'n_dups') %>%
   select(!(c(ncbi_spaces, worms_spaces, n_stat)))
 
-#saveRDS(fish_worms_result, here(crabs_files, "20241010_worms_result.RDS"))
+saveRDS(fish_worms_result, here(crabs_files, "20241010_worms_result.RDS"))
 #fish_worms_result <- readRDS(here(ncbi, "20230929_fish_worms_result.RDS"))
 
  # extract higher and info about freshwater
@@ -382,34 +441,8 @@ fish_fail <- worms_ncbi_remerge %>%
   #select(taxonomy_search) %>%
   distinct() %>%
   # temp; move this up next time
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "\\,")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "Kirinanahaze|Komonyatsushihaze|Mparis|(Ansp)$|Chao Phraya|Rio Branco| Clade")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(IDEA Fish)|(Puma Loach)|(FMNH Uncat)| barbel steed| sensu| in bony fishes| larva| golden dust| Freshwater| Brackish")) %>%
-  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Adan)$| Adirondacks|( Australia)$|(Great Australian Bight)| Azores| Andai| Akaebi| Acla| Argis| Austria| Antalaha| Albanien| Almenara| Araguaia| Amazonas| Agua Santa|Ao Itai")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Benin)|( Bidou)|( Bissiang)|Banka|( Bioko)|( Bundu)|( Bush)$|(Bitter)|(Bivavotou)|(Bioko)| Beforana| Betampona|( Borneo)| Beysehir| Betari| Bangladesh|bakemimizuhaze|bakeaomeeso")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Cape )|(China )|( China)| Carombe|( Carib)$|( Cap Esterias)|(Chiba Museum)|( Chiba)$|(CabotCenter)| Continental| Cayman| Caracol| Calibasis| Chiriqui| Collier|( Caroline)| Contulmo| Chao Phraya|( Cana)| Columbia| Corrantijn|Corrego Seco|Corantijn| chengtui")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "Darling")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Girona| Gekara|(Greece)$|Guangdong|Guangxi|Guizhou|( Garcia)| Guinea| Ginbuna| Guyana| Gamba| Guama|gomamimizuhaze| gomahaze")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "hoshikikaiutsubo| Hoyosa| Hosoya|hauchiwayarimimizuhaze|hiironagamimizuhaze| hosomimizuhaze| Huacamayo| Humbolt")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Ivoloina|( Israel)| Ikorodu| Inji| Ijebu Ode|(Italy)| Izumihaze|(Iguassu)|ichimonjimimizuhaze| Ireng||IzumiHaze| Jari")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Kirk)$|( Kocher)|(Kipar)|(Kribi)|(Kuckuk)$|(Katsutoshi Watanabe)|(Komonyatsushihaze)|(Khukh)|(Kinbuna)| Karianga|(Kapinar)| Kieth| Kisangani| Kongou| Koliba| kamahiremimizuhaze|kimairamimizuhaze|komuginagamimizuhaze|kawakumohaze")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Lagos)|(Lebanon)$|( LoireLac)|(Liang Cao)| Lleida||(Lobaye)| Lucien|Lakes|Laos| Lucien")) %>%
-    mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Muerz)|( Malibo)||(Midgleys)|(Murray)| Mazinzi| Mfulgida| MinasBasin| MagdalenIs|( Mai)|( Mic)$|(Micnat)| MicRamrun| Mitsem| Madimba|(Madeira)| Mundemba| Machinda| Makuya|( Mexico)| Montenegro| Madagascar| Manjavacas| Makira| Martinique| Maranho| Moabi| Myanmar| Miya| Malinau| Manombo| Mahanara| Munday| Massana|(Masatoshi Nakamura)| Magdalena| Mongagu| Maroni| Martinso| Macacu| Maroa| mizuhikinagamimizuhaze|(personalMasatoshi Nakamura)| Miya")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Monzon| Magdalena| Macacu| Mongagu| Martinso| Maroni| Mato Grosso|mizuhikinagamimizuhaze|misujihaze")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Nazilli)$| Ndombe| Ngombe| Nguru| Ndop| Nakuru| Nakabo|( Negro)$| Nevada| Nakabo| Nigeria| Nanay| Nassau|nagasakitsunozame")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Orinoco|( Oba)$| Omona|Omono|( Oyo)$|ochokonagamimizuhaze|oguronagamimizuhaze")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Patrocnica| Patchogue| Pachon|(Paris)| Pampang| Patrocnica| Patchogue| Pachon|(Pingxiang)| Paraguay| Parguaza| Paraguaza|( Peru)|( Panama)| Piedade| Puerto Ayucucho|Paraiba do Sol| Pakistan|Puerto Ayacucho|Paraiba do Sul| Previsto")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Rio Chirgua)| Ranomafana| Rakhine|( Rio)$|(Rio Sao Francisco)|Rio de Toca|(Rio Supamo)|Ruosonghe| Rio da Toca|Ribeira|Rupununi| Rio Baia|ryukyuhanahaze")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Suji)|( Suiyo)|( Smith)$|( Stevens)|(Shibukawa)| Salsburger| Surinam| Stepian| Stepien|(Sanya)|(Spain)$|( sagami)|(Santa Clara)| Scorff| Sahiler| Sambava| Samou|(Serra do Cip)|(sPengze)|Sao Joao| Synaptura|shirohigesejirohaze|somewakeaitoragisu| southern")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Thalye)| tanukihaze| Tapajos|( Tres Marias)|(Taiwanese)|Tocantins| Tobogan")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Ural)$|(United Kingdom)|( Urocara)|( Ulimi)| Uruguay| Ucayali")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Venezuela)|( Vanpoe)| Vevembe| Von Humboldt|(Von Humboldt)")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, " Xingu")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Wainwright)$|( Whitewater)")) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( Yoma)|yoshinogochi| Yang|( Zagno)|( Zarco)|( Zhange)|(Zhang)$")) %>%
-  mutate(taxonomy_search = trimws(taxonomy_search)) %>%
-  mutate(taxonomy_search = str_remove_all(taxonomy_search, "(Tht)$|personalMasatoshi Nakamura|natural gynogenetic| Miya|( Mel)$|( Li)$| Jari|IzumiHaze|(personal)$|Odsp|( Von)$| Lucien| auip|( ausc)$| Branco|narinariocellatus|( Laos)$")) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, 'Farias|( cat)$|Jorai|Kalwungwishi|Massana| Andaman|ironfish|Ntumbachushi|Malawi|Mansha|Lubudi|Luongo| Limnetic| Lufupa|( Cross)| false|Potaro| Honduras| spotted|Parauchenipterus|abtuna| Benue|Nickerie|Sindara|Yap Trench| Paragua|Musashino|watergum| clarence| northern| rosewood|Morella|RMalagarassi| Inga|Iwanda| undescribed|Aare| Gabon| Lucerne|( purple)$|( stone)$|(Amazon)$|(Pacific)$')) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, '( bn)$|Pdch| Hsp|Fin$')) %>%
   mutate(taxonomy_search = trimws(taxonomy_search)) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
@@ -417,21 +450,38 @@ fish_fail <- worms_ncbi_remerge %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = trimws(taxonomy_search)) %>%
+  mutate(taxonomy_search = str_remove_all(taxonomy_search, "( [a-z{1}])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = str_remove_all(taxonomy_search, "([A-Z])$")) %>%
   mutate(taxonomy_search = trimws(taxonomy_search)) %>%
   mutate(taxonomy_search = str_replace_all(taxonomy_search, "  ", " ")) %>%
-  mutate(taxonomy_search = str_replace_all(taxonomy_search, c("ias gr mala" = "ias mala",
-                                                              'Pomacentrusminamiisosuzumedai' = 'Pomacentrus',
-                                                              'Myripristisfieldi' = 'Myripristis greenfieldi',
-                                                              'Cubicepsleggii' = 'Cubiceps whiteleggii',
-                                                              'Acanthogobius elongata' = 'Acanthogobius',
-                                                              'Yarrellafordi' = 'Yarrella blackfordi')))
+  mutate(taxonomy_search = case_when(taxonomy_search == 'Tropheopschest' ~ 'Tropheops',
+                                     taxonomy_search == 'tiopterus labiosus' ~ 'Paristiopterus labiosus',
+                                     taxonomy_search == 'Salmospot' ~ 'Salmo',
+                                     taxonomy_search == 'Sabanejewiata' ~ 'Sabanejewia larvata',
+                                     taxonomy_search == 'Atherininae Atherinomorus' ~ 'Atherinomorus',
+                                     taxonomy_search == 'Pterygoplichthys disjunctivuspardalis' ~ 'Pterygoplichthys',
+                                     taxonomy_search == 'Neochromiswoodi' ~ 'Neochromis greenwoodi',
+                                     taxonomy_search == 'Scolichthyswayi' ~ 'Scolichthys greenwayi',
+                                     taxonomy_search %in% c('Haplochromis kribensis', 
+                                                            'Haplochromis unicuspid', 
+                                                            'Haplochromisblack', 'Haplochromis nshere',
+                                                            'Haplochromis lutotu', 
+                                                            'Haplochromis unicuspid rubripinnis', 
+                                                            'Haplochromis Namatembi') ~ 'Haplochromis',
+                                     taxonomy_search == 'Quietula ycauda' ~ 'Quietula y-cauda',
+                                     taxonomy_search == 'Galaxias paucispondylusland' ~ 'Galaxias paucispondylus',
+                                     #note erschenmeyers doesn't agree with this
+                                     taxonomy_search == 'Platycaranx malabaricus' ~ 'Carangoides malabaricus',
+                                     taxonomy_search == 'Platycaranx chrysophrys' ~ 'Carangoides chrysophrys',
+                                     taxonomy_search == 'Ferdauia ferdau' ~ 'Carangoides ferdau',
+                                     taxonomy_search == 'Turrum gymnostethus' ~ 'Carangoides gymnostethus',
+                                     TRUE ~ taxonomy_search))
 
 
-worms_search_fail <- fish_fail %>%
+ worms_search_fail <- fish_fail %>%
   select(taxonomy_search) %>%
   distinct() %>%
   ## temporary issue requires replacing whitespace with '+'
@@ -502,9 +552,11 @@ fish_worms_fail_records_df <- fish_worms_fail_records %>%
   # rank lowercase
   mutate(rank = tolower(rank))
 
-worms_fail_updated <- ncbi_taxonomy %>%
+worms_fail_updated <- fish_fail %>%
+  select(accession, taxonomy_extract, taxonomy_search) %>%
   left_join(fish_worms_fail_records_df, by = c('taxonomy_search' = 'worms_match')) %>%
-  filter(!is.na(worms_sciname))
+  filter(!is.na(worms_sciname)) %>%
+  distinct()
 
 ```
 
@@ -513,7 +565,6 @@ worms_fail_updated <- ncbi_taxonomy %>%
 Here we'll take any remaining fails and do a genus level search
 
 ```{r}
-
 failgenus <- fish_fail %>%
   filter(!(accession %in% worms_fail_updated$accession)) %>%
   select(accession, taxonomy_search,taxonomy_extract) %>%
@@ -715,6 +766,44 @@ worms_hybrid_updated <- hybrid_taxonomy %>%
 
 ```
 
+# annoying failures
+
+I don't know why some of these just don't want to be found
+```{r}
+# 2: worms
+fish_worms_annoying <- wm_record(id = c(282537))
+
+# refine results to be useful
+fish_worms_annoying_df <- fish_worms_annoying %>%
+  janitor::clean_names() %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank)) %>%
+  # get rid of duplicates
+  filter(status != 'unaccepted')
+
+fish_annoying_ready <- fish_fail %>%
+  select(accession, taxonomy_extract, taxonomy_search) %>%
+  filter(taxonomy_search %in% fish_worms_annoying_df$worms_sciname) %>%
+  left_join(fish_worms_annoying_df, by = c('taxonomy_search' = 'worms_sciname')) %>%
+  mutate(worms_sciname = taxonomy_search)
+
+```
+
+
 
 # final merge
 
@@ -724,10 +813,12 @@ merging the fish, failed fish, hybrids, and outgroups here
 final_merge <- worms_ncbi_remerge %>%
   filter(!(accession %in% worms_fail_updated$accession|
              accession %in% worms_hybrid_updated$accession|
-             accession %in% failgenus_updated$accession)) %>%
+             accession %in% failgenus_updated$accession|
+             accession %in% fish_annoying_ready$accession)) %>%
   bind_rows(worms_fail_updated) %>%
   bind_rows(worms_hybrid_updated) %>%
   bind_rows(failgenus_updated) %>%
+  bind_rows(fish_annoying_ready) %>%
   distinct() %>%
   # update columns to merge with offtarget
   mutate(found_taxa = worms_sciname,
