@@ -12,4 +12,5 @@
 # move to folder for data download/processing
 cd database12s/crabs
 
-clustalo -i blastdb_make/20241015_crabs_mifish.fasta -o amplificationefficiency/20241028_crabs_mifish_align.fasta -v --threads=15
+clustalo -i blastdb_make/20241015_crabs_mifish.fasta -o amplificationefficiency/20241028_crabs_mifish_align.fasta -v
+|
