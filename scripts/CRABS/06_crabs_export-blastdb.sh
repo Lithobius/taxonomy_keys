@@ -42,3 +42,14 @@ crabs --export --input 20241015_crabs6_filtered.txt --output blastdb_make/202410
 # makeblastdb from ncbi command line tools
 # manual and instructions: https://www.ncbi.nlm.nih.gov/books/NBK569861/
 makeblastdb -in blastdb_make/20241015_crabs_mifish.fasta -out blastdb_make/crabs-mifish -title 20241015_crabs-mifish -dbtype nucl -parse_seqids
+
+### Not dereplicated
+###### This didn't seem to make much of a difference
+## Make DB with fasta
+
+crabs --filter --input 20241015_crabs4_pgaout.txt --output 20241015_crabs6_filtered_nodereplicate.txt --minimum-length 15 --maximum-length 30000 --maximum-n 5 --rank-na 7
+
+crabs --export --input 20241015_crabs6_filtered_nodereplicate.txt --output blastdb_nodereplicate/20241015_crabs_nodereplicate.fasta --export-format rdp
+# makeblastdb from ncbi command line tools
+# manual and instructions: https://www.ncbi.nlm.nih.gov/books/NBK569861/
+makeblastdb -in blastdb_nodereplicate/20241015_crabs_nodereplicate.fasta -out blastdb_nodereplicate/crabs-mifish -title 20241015_crabs-mifish -dbtype nucl -parse_seqids
