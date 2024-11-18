@@ -1,0 +1,30 @@
+---
+title: "coi_2024"
+author: "Kate Sheridan"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+
+datefield <- '20241117_'
+```
+
+
+```{r}
+edna_blast <- read_delim(here('species_lists', 'hakai', '2024coi',
+                                '20241114_coi-reblast_out-parsed.tsv'),
+                           delim = '\t') %>%
+  rename(asv = seed_asv_reads)
+
+accessionlist <- edna_blast %>%
+  select(accession) %>%
+  filter(!is.na(accession)) %>%
+  distinct()
+
+write_delim(accessionlist, file = here('species_lists', 'hakai', '2024coi', paste0(datefield, 'coi_accessions.txt')),
+          col_names = FALSE)
+```
+

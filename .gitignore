@@ -103,3 +103,7 @@ database12s/temp/nodes.dmp
 database12s/temp/mitofishdb.fasta
 database12s/referencefiles/existing_outgroups/20240212_12s_outgroups-ncbi-filter2.fasta
 species_lists/ncbi/2023_ncbi/20230917_12s_ncbi-taxonomy.csv
+coi-efetch-taxonomy-log.txt
+crabsdb-extractfasta_log.txt
+crabsdb-extractfasta_log.txt
+database12s/crabs/20241010_fish_worms_records.RDS
