@@ -10,11 +10,13 @@ library(tidyverse)
 library(here)
 
 datefield <- '20241117_'
+
+coi_files <- here('species_lists', 'hakai', '2024coi')
 ```
 
 
 ```{r}
-edna_blast <- read_delim(here('species_lists', 'hakai', '2024coi',
+edna_blast <- read_delim(here(coi_files,
                                 '20241114_coi-reblast_out-parsed.tsv'),
                            delim = '\t') %>%
   rename(asv = seed_asv_reads)
@@ -26,5 +28,306 @@ accessionlist <- edna_blast %>%
 
 write_delim(accessionlist, file = here('species_lists', 'hakai', '2024coi', paste0(datefield, 'coi_accessions.txt')),
           col_names = FALSE)
+```
+
+Now run coi_udpate2024_efetch-taxonomy.py
+
+
+
+```{r after efetch}
+library(worrms)
+library(taxize)
+
+coi_raw <- read_csv(here(coi_files, '2024117_coi_ncbi-taxonomy.csv'))
+
+coi_taxa_prepped <- coi_raw %>%
+  # remove rownames from restarting
+  filter(!accession == 'accession') %>%
+  # remove decimals
+  mutate(accession = str_remove_all(accession, "\\.[1-9]")) %>%
+  # prepare taxonomy to split
+  mutate(taxonomy = str_remove_all(taxonomy, "\\[|\\]|\\'")) %>%
+  separate_wider_delim(taxonomy, delim = ', ', names_sep = '_', too_few = 'align_start') %>%
+  rename(kingdom = taxonomy_1,
+         taxa_verbatim = organism)
+```
+
+We're keeping outgroups simple because it really doesn't matter beyond "algae" or "bacteria".
+```{r outgroups}
+coi_outgroups <- coi_taxa_prepped %>%
+  filter(!taxonomy_2 == 'Metazoa') %>%
+  mutate(found_taxa = case_when(kingdom %in% c('Bacteria', 'Archaea',
+                                               'Viruses') ~ kingdom,
+                                taxonomy_2 %in% c('Fungi') ~ taxonomy_2,
+                                taxonomy_2 %in% c('Sar', 'Rhodophyta',
+                                                  'Haptista') ~ 'Algae',
+                                taxonomy_2 %in% c('Amoebozoa') ~ 'Other protist',
+                                taxonomy_2 %in% c('Viridiplantae') ~ 'Green plant',
+                                taxonomy_2 %in% c('environmental samples',
+                                                  'Eukaryota incertae sedis') ~ 'Unknown organism')) %>%
+  relocate(found_taxa) %>%
+  select(accession, found_taxa, taxa_verbatim, kingdom, taxonomy_2) %>%
+  rename(phylum = taxonomy_2)
+```
+
+```{r metazoa}
+coi_metazoa <- coi_taxa_prepped %>%
+  filter(taxonomy_2 == 'Metazoa') %>%
+  mutate(updated_taxa = case_when(taxonomy_3 == 'environmental samples' ~ 'Unknown organism',
+                                  taxonomy_6 == 'environmental samples' ~ 'Unknown organism',
+                                  TRUE ~ taxa_verbatim)) %>%
+  # remove all numbers
+  mutate(updated_taxa = str_remove_all(updated_taxa, '[0-9]')) %>%
+  mutate(updated_taxa = str_replace_all(updated_taxa, '_', ' ')) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, '-|,')) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, 'BOLD:|USNM|USGS')) %>%
+  # versions of "sp" etc
+  mutate(updated_taxa = str_remove_all(updated_taxa, 'sp\\.|n\\.|cf\\.|aff\\.|Morph$')) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, '\\.')) %>%
+  # anything in parentheses or quotes
+  mutate(updated_taxa = str_remove_all(updated_taxa, "\\'.*\\'")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "\\(.*\\)")) %>%
+  mutate(updated_taxa = trimws(updated_taxa)) %>%
+  # random words
+  mutate(updated_taxa = str_remove_all(updated_taxa, 'Anem$|NuCnid|caab$|BCnid|FuerteventuraLanzarote|XKSa|Plg')) %>%
+  # trim random capitals
+  mutate(updated_taxa = trimws(updated_taxa)) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "( [a-z{1}])$")) %>%
+  mutate(updated_taxa = trimws(updated_taxa)) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = trimws(updated_taxa)) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "( [a-z{1}])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  mutate(updated_taxa = trimws(updated_taxa)) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z][A-Za-z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z][A-Za-zA-Za-z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z][A-Za-za-z])$")) %>%
+  mutate(updated_taxa = str_remove_all(updated_taxa, "([A-Z])$")) %>%
+  # fix any double spaces
+  mutate(updated_taxa = str_replace_all(updated_taxa, '  ', ' ')) %>%
+  mutate(updated_taxa = trimws(updated_taxa)) %>%
+  relocate(updated_taxa) %>%
+  # any last messed up ones or hybrids
+  mutate(updated_taxa = case_when(updated_taxa == 'Haliotis discus hannai x Haliotis iris' ~ 'Haliotis',
+                                  updated_taxa == 'Synchaeta tremula/oblonga' ~ 'Synchaeta',
+                                  updated_taxa == 'Tubulanus Palaeo' ~ 'Tubulanus',
+                                  # taxonomy updates and conflicts
+                                  updated_taxa == 'Haliclystus sanjuanensis' ~ 'Haliclystus',
+                                  updated_taxa == 'Callyspongia siphonella' ~ 'Callyspongia (Callyspongia) siphonella',
+                                  updated_taxa == 'Oikopleura intermedia' ~ 'Oikopleura (Coecaria) intermedia',
+                                  updated_taxa == 'Tedania pillarriosae' ~ 'Tedania (Tedania) pilarriosae',
+                                  TRUE ~ updated_taxa)) %>%
+  mutate(found_taxa = case_when(updated_taxa == 'Unknown organism' ~ updated_taxa,
+                                taxonomy_7 == 'Actinopterygii' ~ 'Fish',
+                                taxonomy_7 == 'Amphibia' ~ 'Amphibian',
+                                taxonomy_13 == 'Serpentes' ~ 'Snake',
+                                taxonomy_6 == 'Insecta' ~ 'Insect',
+                                taxonomy_6 == 'Chilopoda' ~ 'Centipede',
+                                taxonomy_6 == 'Arachnida' ~ 'Arachnid',
+                                updated_taxa %in% c('Synchaeta kitina', 'Chaetonotus microchaetus') ~ 'Freshwater'))
+
+coi_metazoa_terfresh <- coi_metazoa %>%
+  filter(!is.na(found_taxa)) %>%
+  mutate(kingdom = "Animalia") %>%
+  # phylum issues
+  rename(phylum = taxonomy_4) %>%
+  mutate(phylum = case_when(taxonomy_5 %in% c('Gastrotricha', 'Rotifera') ~ taxonomy_5,
+                            found_taxa == 'Unknown organism' ~ NA_character_,
+                            TRUE ~ phylum)) %>%
+  # class issues
+  rename(class = taxonomy_5) %>%
+  mutate(class = case_when(found_taxa == 'Unknown organism' ~ NA_character_,
+                           class == 'Vertebrata' ~ taxonomy_7,
+                           taxonomy_6 %in% c('Chilopoda', 'Arachnida',
+                                             'Insecta') ~ taxonomy_6,
+                           TRUE ~ class)) %>%
+  # order issues
+  rename(order = taxonomy_7) %>%
+  mutate(order = case_when(taxonomy_8 %in% c('Neoptera') ~ taxonomy_10,
+                           taxonomy_8 %in% c('Lithobiomorpha', 'Squamata') ~ taxonomy_8,
+                           order == 'Actinopterygii' ~ taxonomy_11,
+                           order == 'Amphibia' ~ taxonomy_9,
+                           TRUE ~ order)) %>%
+  # family issues
+  # first prevent genera from being overwritten
+  mutate(genus = case_when(taxonomy_13 %in% c('Hilaira', 'Haasiella',
+                                              'Pristimantis') ~ taxonomy_13)) %>%
+  rename(family = taxonomy_13) %>%
+  mutate(family = case_when(family %in% c('Aphidoidea', 'Chrysomeloidea',
+                                          'Formicoidea', 'Mugilomorphae',
+                                          'Proctotrupoidea') ~ taxonomy_14,
+                            family %in% c('Apoidea', 'Pentatomomorpha',
+                                          'Serpentes') ~ taxonomy_15,
+                            family %in% c('Danioninae', 'Pristimantis') ~ taxonomy_12,
+                            family %in% c('Hilaira') ~ taxonomy_11,
+                            family %in% c('Haasiella') ~ taxonomy_9,
+                            phylum == 'Gastrotricha' ~ taxonomy_8,
+                            TRUE ~ family)) %>%
+  # genus
+  mutate(genus = case_when(phylum == 'Gastrotricha' ~ taxonomy_9,
+                           updated_taxa %in% c('Carabidae', 'Cecidomyiidae',
+                                               'Proctotrupidae', 'Unknown organism',
+                                               'Trombidiformes', 'Lepidoptera') ~ NA_character_,
+                           !is.na(taxonomy_17) ~ taxonomy_17,
+                           !is.na(taxonomy_16) ~ taxonomy_16,
+                           !is.na(taxonomy_15) ~ taxonomy_15,
+                           !is.na(taxonomy_14) ~ taxonomy_14,
+                           !is.na(taxonomy_12) ~ taxonomy_12,
+                           !is.na(taxonomy_11) ~ taxonomy_11,
+                           !is.na(taxonomy_10) ~ taxonomy_10,
+                           TRUE ~ genus)) %>%
+  select(!c(taxonomy_2, taxonomy_3, taxonomy_6, taxonomy_8,
+            taxonomy_17, taxonomy_16, taxonomy_15, taxonomy_14,
+            taxonomy_12, taxonomy_11, taxonomy_10, taxonomy_9))
+
+coi_search <- coi_metazoa %>%
+  # no environmental samples or whales
+  filter(is.na(found_taxa)) %>%
+  select(updated_taxa) %>%
+  distinct() %>%
+  ## temporary issue requires replacing whitespace with '+'
+  mutate(worms_query = gsub(" ", "+", updated_taxa))
+```
+## search worrms
+
+```{r worms-function}
+## requires worrms to be loaded
+# input is vector of species names
+# use wm_records_names to extract 
+# this doesn't need the + signs
+
+# right now this breaks if not-found
+search_records_worms <- function(spnames) {
+  search <- tibble()
+  for (i in spnames) {
+    print(paste0('searching for ', i))
+    record <- wm_records_names(i, marine_only = FALSE)
+    message('done')
+    search <- append(search, record)
+  }
+  names(search) <- spnames
+  search_output <- map_dfr(.x = search, ~ data.frame(.x), .id = 'query') %>%
+    janitor::clean_names() %>%
+    select(!(c(url, taxon_rank_id, citation, lsid, modified)))
+  return(search_output)
+}
+```
+
+
+```{r worms search}
+# 2: worms
+coi_worms <- get_wormsid_(sci_com = unique(coi_search$worms_query), 
+                           marine_only = FALSE, accepted = FALSE)
+# get_wormsid_ gives back null and length 0 elements
+## first remove with compact and discard then map_dfr
+coi_worms2 <- coi_worms %>% 
+  compact() %>%
+  discard( ~ nrow(.x) == 0) %>%
+  map_dfr( ~ data.frame(.x), .id = 'query')
+
+
+# this cleaning step is relatively temporary until they fix the curl issue
+coi_worms_result <- coi_worms2 %>%
+  left_join(coi_search, by = c('query' = 'worms_query')) %>%
+  relocate(updated_taxa) %>%
+  select(!(c(authority,query))) %>%
+  #mutate(ncbi_sp = trimws(ncbi_sp)) %>%
+  # now match species to sciname to remove extra rows
+  distinct() %>%
+  # remove higher taxonomy with species-level hits
+  # A longer term solution; count number of words in ncbi_sp and scientific name and match
+  mutate(ncbi_spaces = str_count(updated_taxa, " ")) %>%
+  mutate(worms_spaces = str_count(scientificname, " ")) %>%
+  filter(ncbi_spaces == worms_spaces) %>%
+  # good names
+  rename(worms_aphiaid = AphiaID,
+        worms_sciname = scientificname) %>%
+  distinct() %>%
+  add_count(updated_taxa, name = 'n_dups') %>%
+  filter(!(n_dups > 1 & updated_taxa != worms_sciname)) %>%
+  add_count(updated_taxa, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(updated_taxa, name = 'n_dups') %>%
+  add_count(updated_taxa, status, name = 'n_stat') %>%
+  # when there are accepted AND unassessed; some are ONLY unassessed
+  filter(!(n_dups > 1 & n_stat == 1 & status %in% c('unassessed'))) %>%
+  add_count(updated_taxa, name = 'n_dups') %>%
+  select(!(c(ncbi_spaces, worms_spaces, n_stat)))
+
+ # extract higher and info about freshwater
+coi_worms_records <- search_records_worms(unique(coi_worms_result$worms_sciname))
+
+# refine results to be useful
+coi_worms_records_df <- coi_worms_records %>%
+  # only animal hits
+  filter(kingdom == 'Animalia') %>%
+  # generate terrestrial-only and freshwater-only columns
+  mutate(freshwater_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_freshwater == 1),  "1", "0")) %>%
+    mutate(terrestrial_only = ifelse((is_marine %in% c(0, NA) ==TRUE) & (is_brackish %in% c(0,NA) == TRUE) & (is_terrestrial == 1),  "1", "0")) %>%
+  distinct() %>%
+  # rename to format
+  rename(worms_aphiaid = valid_aphia_id,
+         original_aphiaid =aphia_id,
+         worms_match = scientificname,
+         worms_sciname = valid_name
+         ) %>%
+  # remove unneeded columns
+  select(!(c(authority, parent_name_usage_id, is_freshwater, query,
+             is_terrestrial, is_marine, is_brackish, is_extinct, match_type))) %>%
+  relocate(c(worms_sciname, worms_aphiaid), .before = original_aphiaid) %>%
+  # rank lowercase
+  mutate(rank = tolower(rank)) %>%
+  add_count(worms_match, name = 'n_dups') %>%
+  # remove duplicate unaccepted etc
+  filter(!(n_dups > 1 & status %in% c('unaccepted', 'junior homonym', 'junior objective synonym'))) %>%
+  add_count(worms_match, name = 'n_dups') %>%
+  # remove incorrect 'accepted' by aphiaid
+  # inculdes same-name invertebrates
+  filter(!(n_dups > 1 & worms_aphiaid %in% c(342486, 249584, 275332, 1018268, 1007204, 1525460))) %>%
+  add_count(worms_match, name = 'n_dups') %>%
+  select(!n_dups)
+```
+
+## merge all
+
+```{r failes}
+worms_ncbi_remerge <- coi_search %>%
+  # check here for failed searches with NA in worms sciname
+  left_join(coi_worms_records_df, by = c('updated_taxa' = 'worms_match')) %>%
+  select(!c(worms_query)) %>%
+  rename(found_taxa = worms_sciname) %>%
+  # duplicate
+  filter(!(found_taxa == 'Eryma' & updated_taxa == 'Clytia')) %>%
+  mutate(rank = ifelse(rank == 'subspecies', 'species', rank))
+
+
+coi_all <- coi_metazoa %>%
+  filter(updated_taxa %in% worms_ncbi_remerge$updated_taxa) %>%
+  select(accession, updated_taxa, taxa_verbatim) %>%
+  left_join(worms_ncbi_remerge) %>%
+  bind_rows(coi_metazoa_terfresh) %>%
+  bind_rows(coi_outgroups) %>%
+  select(!c(updated_taxa, worms_aphiaid, original_aphiaid,
+            valid_authority, status, unacceptreason)) %>%
+  mutate(rank = ifelse(is.na(rank), 'offtarget', rank))
+
+write_csv(coi_all, here(coi_files, paste0(datefield, 'coi_key_hg.csv')))
+
 ```
 

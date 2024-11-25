@@ -132,11 +132,40 @@ NOTE you need python 3.9+ at least to avoid a few specific errors
 Here we will be running an in-silico pcr. We provide the file as well as the primers, and it will test each sequence forward and reverse and reverse complement for the primers, then trim out and export the portion of the sequence that would amplify.
 It also saves the untrimmed sequences as well, i'll assess these later.
 
+You can specify threads or it will autodetect.
+
 ## 4: Pairwise global alignment
 input: trimmed pcr output, merged sequences from 2
 output: aligned sequences appended to pcr output
 
+This catches sequences that might be missed via in silico pcr by aligning them with the amplicons from the in-silico pcr. Then anything with a successful alignment is part of the database.
 
+NOTE: THIS TAKES A LONG TIME. Last run took 4 days 12 hours, and included 'outgroups'.
 
+## 5: filter
+Step 1 Dereplicate
+input: pga output
+output: dereplicated sequences
 
+options for this include: one per species, all unique sequences ignoring taxonomy, and all unique sequences per species. The last one is the recommended option, and what we use.
 
+Step 2 Subset
+input: dereplicated sequences
+output: subset of those
+
+I don't do this currently, but it can constrain the database to only specific taxa or sequences before export. It might be a good idea to filter out some known 'bad' sequences at some point though.
+
+## 6: export
+input: filtered dataset
+output: blast db, FASTA, etc.
+
+It is possible to export directly as a blast database, however I had issues with my BLAST not recognizing the output as having taxonomy.
+
+Previously I export as a FASTA for RDP and use makeblastdb on that. Doing this again seemed to work.
+
+There are other formats you can export to, and I'll check back with this later to see if any of them are "better"
+
+## 7: visualizations
+
+CRABS has several visualizations built in.
+--diversity-figure gives you a bar chart of how many sequences you have at a specified taxonomic level

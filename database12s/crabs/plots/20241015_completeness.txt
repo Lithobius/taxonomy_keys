@@ -1,0 +1,3 @@
+#target species	species barcodes in reference database	genus barcodes in reference database	NCBI species within genus	genus completeness	family barcodes in reference database	NCBI genera within family	family completeness	genus list in reference database	family list in reference database
+Clupea pallasii	606	621	2	50.0	2086	18	5.555555555555555	{'Clupea pallasii'}	{'Clupea'}
+Salmo salar	29	101	59	1.694915254237288	1041	7	14.285714285714285	{'Salmo salar'}	{'Salmo'}
