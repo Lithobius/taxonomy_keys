@@ -1,0 +1,126 @@
+---
+title: "ch1_customdb-outgroups"
+output: html_document
+date: "2023-09-05"
+---
+
+This list comes from the top 500 list from a 12S BLAST in GAPP combined with the top 10 list provided to us from the initial blast of Chapter 1, and the reblasted sequences from Chapter 1 as well.
+
+We're just going to extract all the accessions so that we have a well rounded list, then extract the taxonomy from NCBI later
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+datefield <- '20241001_'
+```
+
+# load in
+```{r loadin}
+top500_mifish <- read.delim(here("database12s", "referencefiles",
+                                  "2023_GAPP_12S_ASV_sequences.length_var.blast.out"), 
+                           h = TRUE, fill = TRUE) %>% 
+  # standardize names and remove overhanging x
+  janitor::clean_names() %>%
+  rename_with(., ~str_remove_all(string = .,
+                 pattern = "x_")) %>%
+  separate_wider_delim(taxonomy, delim = ' / ', 
+                       names = c('kingdom', 'phylum', 'class', 'order', 
+                                 'family', 'genus', 'species')) %>%
+  rename(accession = subject_accession)
+
+
+top10_mifish <- read.delim(here("database12s", "referencefiles",
+                                  "202211_12S_ASV_sequences.length_var.blast.out.txt"), 
+                           h = TRUE, fill = TRUE) %>%
+    # standardize names and remove overhanging x
+  janitor::clean_names() %>%
+  rename_with(., ~str_remove_all(string = .,
+                 pattern = "x_")) %>%
+  rename(accession = subject_accession)
+
+
+
+reblast_mifish <- read.delim(here("database12s", "referencefiles",
+                                  "20231023_reblast_out-parsed.tsv"), 
+                           h = TRUE, fill = TRUE) 
+
+reblast_mifish_incl2023 <- read.delim(here("database12s", "referencefiles",
+                                  "20240925_reblast_out-parsed.tsv"), 
+                           h = TRUE, fill = TRUE) 
+
+
+
+
+
+```
+
+# extract and merge accessions
+```{r}
+fish_list <- top500_mifish %>%
+  select(accession, class, species) %>%
+  distinct() %>%
+  filter(class %in% c('Actinopteri'))
+
+
+top500_mifish_accns <- top500_mifish %>%
+  select(subject, accession) %>%
+  distinct() %>%
+  filter(!(accession %in% c('', fish_list$accession))) %>%
+  rename(description = subject)
+
+top10_mifish_accns <- top10_mifish %>%
+  select(subject, accession) %>%
+  distinct() %>%
+  filter(!(accession %in% c('', fish_list$accession))) %>%
+  rename(description = subject)
+
+reblast_accns <- reblast_mifish %>%
+  select(description, accession) %>%
+  distinct() %>%
+  filter(!(accession %in% c('', fish_list$accession)))
+
+reblast_accns_incl2023 <- reblast_mifish_incl2023 %>%
+  select(description, accession) %>%
+  distinct() %>%
+  filter(!(accession %in% c('', fish_list$accession)))
+```
+
+
+# combine + make search
+
+```{r combine lists}
+notfish <- top10_mifish_accns%>%
+  rbind(top500_mifish_accns) %>%
+  rbind(reblast_accns) %>%
+  rbind(reblast_accns_incl2023) %>%
+  distinct(accession, .keep_all = TRUE) %>%
+  mutate(remove = case_when(str_detect(description, 'Ammodytes|Amphistichus|Artedius|Aulorhynchus|Brosmophycis')|
+                              str_detect(description, 'Citharichthys|Clevelandia|Chimaera|Engraulis')|
+                              str_detect(description, 'Gobiesox|Gasterosteus|Gibbonsia')|
+                              str_detect(description, 'Hemilepidotus|Hydrolagus|Hyperoplus|Icosteus|Liparis')|
+                              str_detect(description, 'Mola|Masturus|Polypera')|
+                              str_detect(description, 'Rhacochilus|Syngnathus|Scomber')~ 'x')) %>%
+  filter(is.na(remove)) %>%
+  select(!c(remove, description)) %>%
+  distinct() %>%
+# make NCBI search 
+  mutate(ncbi_search = paste(accession, "[ACCN]", sep = ""))
+
+ncbi_string <- toString(notfish$ncbi_search) %>%
+  gsub(' ', '',.)
+
+
+```
+
+```{r save}
+# paste into search here: https://www.ncbi.nlm.nih.gov/nuccore/advanced
+# It's probably too long haha...
+# or save
+write_file(ncbi_string, 
+           file = here("database12s", "crabs",
+                       paste0(datefield, '12s_outgroups-ncbi-accn.txt')))
+
+```
+
+

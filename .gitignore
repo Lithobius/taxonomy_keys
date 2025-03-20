@@ -107,3 +107,6 @@ coi-efetch-taxonomy-log.txt
 crabsdb-extractfasta_log.txt
 crabsdb-extractfasta_log.txt
 database12s/crabs/20241010_fish_worms_records.RDS
+/database12s/crabs/blastdb_export
+/database12s/crabs/blastdb_make
+/database12s/crabs/blastdb_nodereplicate
